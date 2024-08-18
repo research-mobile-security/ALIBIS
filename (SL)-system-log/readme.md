@@ -6,7 +6,7 @@ This service is used to store and display system logs:
 
 **Service Logs → Kafka Message Queue → Logstash → Elastic Search → Kibana**.
 
-<img src="https://github.com/thanhlam2110/metaLeak-ml-elk/blob/master/readme-image/metaLeak-ml-overview.png">
+<img src="https://github.com/research-mobile-security/REALME/blob/main/(SL)-system-log/readme-image/metaLeak-ml-overview.png">
 
 ## 2. Source code
 Edit the IP address with your host IP in the line below in the `docker-compose.yml` file to access Kafka remotely
