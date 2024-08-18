@@ -1,0 +1,19 @@
+# Use the official Python image
+FROM python:3.10
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the server code and protobuf files to the container
+COPY server.py /app/
+COPY upload_pb2.py /app/
+COPY upload_pb2_grpc.py /app/
+COPY upload.proto /app/
+# Install required dependencies
+RUN pip install grpcio grpcio-tools pandas
+
+# Expose the port used by the server
+EXPOSE 50051
+
+# Run the server
+CMD ["python", "server.py"]
