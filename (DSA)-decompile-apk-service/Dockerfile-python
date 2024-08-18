@@ -1,0 +1,65 @@
+# Use Ubuntu 22.04 as the base image
+FROM ubuntu:22.04
+
+# Set non-interactive mode
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Update and install dependencies including wget, unzip, rsync, git
+RUN apt-get update && apt-get install -y \
+    default-jre \
+    default-jdk \
+    python3 \
+    git \
+    wget \
+    unzip \
+    rsync \
+    gnupg \
+    net-tools \
+    nano \
+    iputils-ping \
+    telnet \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set Python 3 as default
+RUN python3 -m pip install confluent_kafka pandas pyarrow
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
+# Create necessary directories
+RUN mkdir -p /root/decompile/apk
+RUN mkdir -p /root/decompile/java
+RUN mkdir -p /var/log/decompile
+
+# Copy procyon-decompiler-0.6.0.jar from host to container
+COPY procyon-decompiler-0.6.0.jar /root/apk-tool/procyon-decompiler-0.6.0.jar
+
+# Copy decompile.py script to the container
+COPY decompile.py /root/decompile.py
+
+# Set execute permissions for the Python scripts
+RUN chmod +x /root/decompile.py
+
+# Clone dex2jar from GitHub and build
+WORKDIR /root/apk-tool
+RUN git clone https://github.com/pxb1988/dex2jar.git
+WORKDIR /root/apk-tool/dex2jar
+RUN ./gradlew distZip
+WORKDIR /root/apk-tool/dex2jar/dex-tools/build/distributions/
+RUN unzip dex-tools-2.x.zip
+WORKDIR /root/apk-tool/dex2jar/dex-tools-2.x/
+RUN chmod -R 777 /root/apk-tool/*
+
+# Set working directory
+RUN touch /root/decompile/decompile-apk.log
+RUN chmod -R 777 /root/decompile/*
+WORKDIR /root/decompile
+
+# Copy the entry point script
+COPY decompile.py /root/decompile.py
+
+# Make the script executable
+RUN chmod +x /root/decompile.py
+
+# Run the entry point script to continuously check for APK files and perform conversion with dynamic timeout
+# Run the script and add an infinite loop to keep the container running
+CMD ["/bin/sh", "-c", "/root/decompile.py && while true; do sleep 60; done"]

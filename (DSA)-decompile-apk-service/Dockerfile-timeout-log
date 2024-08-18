@@ -1,0 +1,118 @@
+# Use Ubuntu 22.04 as the base image
+FROM ubuntu:22.04
+
+# Set non-interactive mode
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Update and install dependencies including wget, unzip, rsync, git
+RUN apt-get update && apt-get install -y \
+    default-jre \
+    default-jdk \
+    python3 \
+    git \
+    wget \
+    unzip \
+    zip \
+    rsync \
+    gnupg \
+    net-tools \
+    nano \
+    iputils-ping \
+    telnet \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set Python 3 as default
+RUN python3 -m pip install kafka-python
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
+# Create necessary directories
+RUN mkdir -p /root/decompile/apk
+RUN mkdir -p /root/decompile/java
+RUN mkdir -p /var/log/decompile
+
+# Copy procyon-decompiler-0.6.0.jar from host to container
+COPY procyon-decompiler-0.6.0.jar /root/apk-tool/procyon-decompiler-0.6.0.jar
+# Copy send_to_kafka.py script to the container
+COPY send_to_kafka.py /root/send_to_kafka.py
+
+# Set execute permissions for the Python script
+RUN chmod +x /root/send_to_kafka.py
+# Clone dex2jar from GitHub and build
+WORKDIR /root/apk-tool
+RUN git clone https://github.com/pxb1988/dex2jar.git
+WORKDIR /root/apk-tool/dex2jar
+RUN ./gradlew distZip
+WORKDIR /root/apk-tool/dex2jar/dex-tools/build/distributions/
+RUN unzip dex-tools-2.x.zip
+WORKDIR /root/apk-tool/dex2jar/dex-tools-2.x/
+RUN chmod -R 777 /root/apk-tool/*
+
+# Set working directory
+RUN touch /root/decompile/decompile-apk.log
+RUN chmod -R 777 /root/decompile/*
+
+# Add timeout calculation and check function
+RUN echo '#!/bin/bash\n' \
+    'MAX_FILESIZE_1=30\n' \
+    'MAX_FILESIZE_2=60\n' \
+    'MAX_FILESIZE_3=100\n' \
+    'MAX_FILESIZE_4=200\n' \
+    'calculate_timeout() {\n' \
+    '    local filesize=$1\n' \
+    '    local timeout\n' \
+    '    if [ $filesize -lt $MAX_FILESIZE_1 ]; then\n' \
+    '        timeout=60\n' \
+    '    elif [ $filesize -lt $MAX_FILESIZE_2 ]; then\n' \
+    '        timeout=120\n' \
+    '    elif [ $filesize -lt $MAX_FILESIZE_3 ]; then\n' \
+    '        timeout=180\n' \
+    '    elif [ $filesize -lt $MAX_FILESIZE_4 ]; then\n' \
+    '        timeout=240\n' \
+    '    else\n' \
+    '        timeout=300\n' \
+    '    fi\n' \
+    '    echo $timeout\n' \
+    '}\n' \
+    'check_timeout_process() {\n' \
+    '    local file=$1\n' \
+    '    local filename=$(basename -- "$file")\n' \
+    '    local filesize=$(stat -c%s "$file")\n' \
+    '    local timeout=$(calculate_timeout $filesize)\n' \
+    '    echo "Checking timeout for $filename with size $filesize MB and timeout $timeout minutes."\n' \
+    '    if [ -z "$decompile_jar" ]; then\n' \
+    '        # Your existing decompile logic here\n' \
+    '        # Check if timeout expired\n' \
+    '        timeout_expired=$(find "$file" -mmin +$timeout | wc -l)\n' \
+    '        if [ "$timeout_expired" -eq 0 ]; then\n' \
+    '            echo "Timeout expired for $filename. No new lines appended to decompile-apk.log. Exiting."\n' \
+    '            exit 1\n' \
+    '        fi\n' \
+    '        # Continue with the rest of your logic\n' \
+    '        echo "Finish decompile $filename"\n' \
+    '        # Run Python script to send message to Kafka for 'Finish decompile'\n' \
+    '        python /root/send_to_kafka.py '192.168.1.20:29093' 'decompile-log' "Finish decompile $filename"\n' \
+    '    else\n' \
+    '        # Handle case when decompile_jar is not empty\n' \
+    '        echo "Already exists decompile of $filename"\n' \
+    '        # Run Python script to send message to Kafka for 'Already exists decompile'\n' \
+    '        python /root/send_to_kafka.py '192.168.1.20:29093' 'decompile-log' "Already exists decompile $filename"\n' \
+    '    fi\n' \
+    '}\n' \
+    'while true; do \n' \
+    '    for file in /root/decompile/apk/*.apk; do \n' \
+    '        if [ -f "$file" ]; then \n' \
+    '            filename=$(basename "$file" .apk); \n' \
+    '            row=$(grep "$filename" /root/decompile/decompile.csv); \n' \
+    '            apk_name=$(echo "$row" | awk -F',' '{print $1}'); \n' \
+    '            decompile_jar=$(echo "$row" | awk -F',' '{print $2}'); \n' \
+    '            decompile_java=$(echo "$row" | awk -F',' '{print $3}'); \n' \
+    '            check_timeout_process "$file"\n' \
+    '        fi; \n' \
+    '    done; \n' \
+    '    sleep 10; \n' \
+    'done' > /root/decompile/timeout-check.sh && \
+    chmod +x /root/decompile/timeout-check.sh
+
+# Run the timeout check process in the foreground
+CMD ["/bin/bash", "-c", "/root/decompile/timeout-check.sh"]
