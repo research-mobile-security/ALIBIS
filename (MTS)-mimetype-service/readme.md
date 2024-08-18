@@ -1,6 +1,6 @@
 ## 1. Introduction
 
-The **MimeType service** is part of the **MetaLeak-LLM-based** system architecture.
+The **(MTS)-mimetype-service** is part of the **REALME** system architecture.
 
 This service is used to collect mime types that are related to images **(image/* and */*)** along with their corresponding supported **actions** by the apps.
 
@@ -8,7 +8,7 @@ This service is used to collect mime types that are related to images **(image/*
 
 ## 2. Source code
 
-The **MimeType service** takes an input APK file and returns mime types and actions in JSON format. The result is written in a CSV file in the corresponding apk_name position.
+The **(MTS)-mimetype-service** takes an input APK file and returns mime types and actions in JSON format. The result is written in a CSV file in the corresponding apk_name position.
 
 For example: 
 

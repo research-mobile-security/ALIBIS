@@ -1,6 +1,6 @@
 ## 1. Introduction
 
-The **DECOMPILE-APK service** is part of the **MetaLeak-LLM-based** system architecture.
+The **(DSA)-decompile-apk-service** is part of the **REALME** system architecture.
 
 This service is used to decompile the APK in a directory _/root/decompile/apk/_  from **.apk → *.jar → JAVA source code**.
 
@@ -8,9 +8,9 @@ This service is used to decompile the APK in a directory _/root/decompile/apk/_ 
 
 ## 2. Source code
 
-The **DECOMPILE-APK service** runs as a docker container, continuously monitoring the directory _/root/decompile/apk/_ and automatically performs the decompile process when an APK file exists.
+The **(DSA)-decompile-apk-service** runs as a docker container, continuously monitoring the directory _/root/decompile/apk/_ and automatically performs the decompile process when an APK file exists.
 
-After completing the decompile process, the **DECOMPILE-APK service** updates the _decompile.csv_ file (used in the **RECEIVE-APK service**) with the value _"DONE"_ in the **"decompile_jar"** and **"decompile_java"** columns at the corresponding **apk_name** position. Conversely, if the decompile process timeout, the **"decompile_jar"** and **"decompile_java"** columns are updated with the value _"TIMEOUT"_.
+After completing the decompile process, the **(DSA)-decompile-apk-service** updates the _decompile.csv_ file (used in the **(RAS)-receive-apk-service**) with the value _"DONE"_ in the **"decompile_jar"** and **"decompile_java"** columns at the corresponding **apk_name** position. Conversely, if the decompile process timeout, the **"decompile_jar"** and **"decompile_java"** columns are updated with the value _"TIMEOUT"_.
 
 <img src="https://github.com/research-mobile-security/REALME/blob/main/(DSA)-decompile-apk-service/readme-image/csv.png">
 

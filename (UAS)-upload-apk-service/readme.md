@@ -1,6 +1,6 @@
 ## 1. Introduction
 
-The **UPLOAD-APK service** is part of the **MetaLeak-LLM-based** system architecture.
+The **(UAS)-upload-apk-service** is part of the **REALME** system architecture.
 
 This service is used to upload APK files stored in a specific directory at the Client to the Server.
 
@@ -8,9 +8,9 @@ This service is used to upload APK files stored in a specific directory at the C
 
 ## 2. Source code
 
-The **UPLOAD-APK service** utilizes the GRPC protocol (http/2) to increase upload speed.
+The **(UAS)-upload-apk-service** utilizes the GRPC protocol (http/2) to increase upload speed.
 
-After completing the upload of a file, the **UPLOAD-APK service** updates the **"upload_to_reverse"** column with the value **"DONE"** at the corresponding app position in the CSV file, as shown below.
+After completing the upload of a file, the **(UAS)-upload-apk-service** updates the **"upload_to_reverse"** column with the value **"DONE"** at the corresponding app position in the CSV file, as shown below.
 
 <img src="https://github.com/research-mobile-security/REALME/blob/main/(UAS)-upload-apk-service/readme-image/csv.png">
 
