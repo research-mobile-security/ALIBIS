@@ -14,9 +14,14 @@ The architecture of REALME is as follows:
     - (UAS)-upload-apk-service
 - Server-side:
     - Filter Module
+        - (RAS)-receive-apk-service
+        - (MTS)-mimetype-service
     - Decompile Module
+        - (DSA)-decompile-apk-service
     - EXIF-related Code Block Extraction Module
+        - (CES)-code-extraction-service
+        - (JMS)-json2mongoDB-service
     - Code Summarization Module
-
+        - (CSS)-code-summarization-service
 ## 3. Citation
 If you use REALME results, please cite the following information. Thank.
