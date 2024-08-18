@@ -26,8 +26,8 @@ In this step, the algorithm iterates through all files in the directory .\\exif-
 
 In this step, the algorithm divides the apps into 3 groups based on how the app's code blocks handle EXIF metadata:
 
-    - Group 1: using *android.media.ExifInterface (method-1)* & *androidx.exifinterface.media (method-2)*
-    - Group 2: using a *self-developed function*
+    - Group 1: using **android.media.ExifInterface (method-1)** & **androidx.exifinterface.media (method-2)**
+    - Group 2: using a **self-developed function**
 
 <img src="https://github.com/research-mobile-security/REALME/blob/main/(CES)-code-extraction-service/readme-image/step-3.png">
 
