@@ -18,6 +18,7 @@ The architecture of REALME is as follows:
         - (MTS)-mimetype-service
     - Decompile Module
         - (DSA)-decompile-apk-service
+    - System Log
     - EXIF-related Code Block Extraction Module
         - (CES)-code-extraction-service
         - (JMS)-json2mongoDB-service
