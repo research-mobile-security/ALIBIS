@@ -1,4 +1,6 @@
-## 1. Introduction
+## 1. Citation
+If you use REALME results, please cite the following information. Thank you.
+## 2. Introduction
 
 This is the source code of the paper **REALME: Risk Estimation in Android Apps for Leakage of Metadata**.
 
@@ -10,7 +12,7 @@ The architecture of REALME is as follows:
 
 <img src="https://github.com/research-mobile-security/REALME/blob/main/images/realme-architecture-1.png">
 
-## 2. Source code
+## 3. Source code
 
 **REALME** is designed in a microservice architecture, so let's see the detailed source code of each service as follows:
 
@@ -28,5 +30,3 @@ The architecture of REALME is as follows:
         - (JMS)-json2mongoDB-service
     - Code Summarization Module
         - (CSS)-code-summarization-service
-## 3. Citation
-If you use REALME results, please cite the following information. Thank you.
