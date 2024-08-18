@@ -11,3 +11,4 @@ The architecture of REALME is as follows:
 **REALME** is designed in a microservice architecture, so let's see the detailed source code of each service as follows:
 
 ## 3. Citation
+If you use REALME results, please cite the following information. Thank.
