@@ -1,0 +1,508 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="256" ns0:versionName="1.37" ns0:installLocation="0" package="com.steam.collagepe">
+	<uses-sdk ns0:minSdkVersion="18" ns0:targetSdkVersion="26"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.RECORD_VIDEO"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_USER_PRESENT"/>
+	<uses-permission ns0:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+	<uses-permission ns0:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+	<uses-permission ns0:name="android.permission.DISABLE_KEYGUARD"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="18"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<permission ns0:name="com.steam.collagepe.permission.SERVICE" ns0:protectionLevel="0x00000000"/>
+	<uses-permission ns0:name="com.steam.collagepe.permission.SERVICE"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+	<permission ns0:name="com.steam.collagepe.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.steam.collagepe.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<application ns0:theme="@7F1000B4" ns0:label="@7F0F0074" ns0:icon="@7F080400" ns0:name="com.steam.collagepe.application.PhotoEditorApp" ns0:process="com.steam.collagepe" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="true">
+		<meta-data ns0:name="Channel" ns0:value="101"/>
+		<meta-data ns0:name="gomo_firebase_channel" ns0:value="101"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0010"/>
+		<meta-data ns0:name="applovin.sdk.key" ns0:value="qD_ETVvkH-t5fGbcApv4KRy7REkKxaLmoL_Gru-7ssCV7o7Ha1MvSJ1uXlDTJZE6vDMk5KrxB1RIpTZOZxI1EJ"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:taskAffinity=".googleAd" ns0:multiprocess="true" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F1000D3" ns0:label="@7F0F0074" ns0:name="com.steam.collagepe.camera.SMainActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.IMAGE_CAPTURE_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.MOTION_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.MOTION_CAPTURE_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.CAPTURE_TO_EDIT_AND_PUBLISH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0F0334" ns0:icon="@7F080415" ns0:name="com.steam.collagepe.image.SPictureViewActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x00000420">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.MOTION_VIEW_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.jb.zcamera.image.compose.PictureTextActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:label="@7F0F0165" ns0:name="com.steam.collagepe.activity.SImageEditActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.IAMGE_EDIT_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.IAMGE_EDIT_AND_PUBLISH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.jb.zcamera.image.folder.FolderSelectActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.activity.BeutyActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="false"/>
+		<activity ns0:name="com.jb.zcamera.activity.SettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.CameraSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.FeedbackActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.AboutActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.steam.collagepe.filterstore.activity.SFilterStoreActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.steam.collagepe.store.activity.SStoreActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.steam.collagepe.store.activity.SStoreMoreActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.cutout_store.CutoutStoreActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.image.collage.CollageSelectActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.activity.FilterDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.activity.TempletDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.cutout_store.CutoutDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.activity.MyFilterActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.vip.VipMainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.vip.VipAgreeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.vip.VipRecoverResultActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.FacebookActiveActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.ChristmasActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030010" ns0:label="@7F0F0074" ns0:name="com.facebook.FacebookActivity"/>
+		<receiver ns0:name="com.appsflyer.MultipleInstallBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.jiubang.commerce.buychannel.GaTrackerReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.jb.zcamera.analytic.ReferrerInfoReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.steam.collagepe.facebooksdk.SFBBroadcastReceiver">
+			<intent-filter>
+				<action ns0:name="com.facebook.platform.AppCallResultBroadcast"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.steam.collagepe.background.SOnAlarmReceiver">
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.TASK_LOOPER_ALARM_ACTION"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.steam.collagepe.background.SOnStatistic19AlarmReceiver">
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.TASK_LOOPER_STATISTIC19_ALARM_ACTION"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.jb.zcamera.camera.ProcessVideoService"/>
+		<meta-data ns0:name="APPKEY" ns0:value="T0IAYKH5AT6Y55HFSPOBD5AW"/>
+		<activity ns0:theme="@7F1000D3" ns0:label="@7F0F01DF" ns0:icon="@7F080415" ns0:name="com.steam.collagepe.gallery.common.SGalleryActivity" ns0:exported="true" ns0:taskAffinity=".Gallery" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="media/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="media/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.IMAGE_PICK_TO_EDIT_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.IMAGE_PICK_TO_EDIT_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.IMAGE_PICK_TO_EDIT_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="media/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.PICK_TO_EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.PICK_TO_PIP_EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.action.PICK_TO_EDIT_AND_PUBLISH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.jb.zcamera.gallery.view.SetPasswordActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="com.jb.zcamera.gallery.view.ConfirmPasswordActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.steam.collagepe.gallery.encrypt.SEncryptMediaProvider" ns0:exported="false" ns0:authorities="com.steam.collagepe.image.encryptMedia"/>
+		<activity ns0:name="com.facebook.ads.InterstitialAdActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.ad.UcWebActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.image.activity.MoreInfoActivity" ns0:launchMode="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.setting.ZeroPlusActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.gift.LotteryWheelActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService" ns0:enabled="true"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.CommunityMainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.CommunityLoginActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.TopicDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.WinnersActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ShowDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.CommunityMessageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.MessageWebActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ConfirmReleaseActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.AccountSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000BB" ns0:name="com.jb.zcamera.community.activity.PersonalPicturePWActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.OthersActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.LikeMessageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000BB" ns0:name="com.jb.zcamera.community.activity.ShareMultiMediaActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ShowReportActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ShowWinnersActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ClipPictureActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.WebPActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.VideoEditActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.image.collage.CollageActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.theme.ThemeDetailActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.sticker.StickerDetailActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:label="@7F0F0074" ns0:icon="@7F080400" ns0:name="com.steam.collagepe.widget.SMainWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F120004"/>
+		</receiver>
+		<receiver ns0:label="@7F0F01DF" ns0:icon="@7F080415" ns0:name="com.steam.collagepe.widget.SGalleryWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F120002"/>
+		</receiver>
+		<service ns0:label="Intelligent Preload Service" ns0:name="com.jiubang.commerce.service.IntelligentPreloadService" ns0:process=":com.jiubang.commerce.service.IntelligentPreloadService"/>
+		<receiver ns0:name="com.jiubang.commerce.receiver.BootBroadcastReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:label="@7F0F0043" ns0:icon="@7F0807C0" ns0:name="com.steam.collagepe.widget.SImageWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.widget.chang.folder.action"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F120003"/>
+		</receiver>
+		<service ns0:name="com.steam.collagepe.widget.SWidgetService" ns0:permission="android.permission.BIND_REMOTEVIEWS"/>
+		<receiver ns0:name="com.steam.collagepe.download.SDownloadClickReceiver"/>
+		<service ns0:name="com.steam.collagepe.download.SDownloadManagerService"/>
+		<receiver ns0:name="com.steam.collagepe.theme.SThemeApplyBrocastReceiver">
+			<intent-filter>
+				<action ns0:name="com.steam.collagepe.theme.free_theme_apply"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.jb.zcamera.image.shareimage.ShareImageActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.vip.subscription.SVipActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.cutout.CutoutActivity" ns0:taskAffinity=".recommend" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.image.collage.shapecollage.ShapeCollageStoreActivity" ns0:taskAffinity=".recommend" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.image.collage.shapecollage.edit.ShapeCollageEditActivity" ns0:taskAffinity=".recommend" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.jb.ga0.commerce.util.io.MultiprocessSharedPreferences" ns0:exported="false" ns0:authorities="com.steam.collagepe.commerce.MultiprocessSharedPreferences"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.intowow.sdk.WebViewActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.intowow.sdk.InterstitialAdActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x00000480"/>
+		<receiver ns0:name="com.intowow.sdk.ScheduleReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.intowow.sdk.prefetch"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="CRYSTAL_ID" ns0:value="7aa0b49c504c4369a29f913afe8f4785"/>
+		<service ns0:name="com.steam.collagepe.application.PersistentProcessService" ns0:exported="true"/>
+		<receiver ns0:name="com.steam.collagepe.application.PersistentProcessReceiver"/>
+		<service ns0:name="com.steam.collagepe.application.PersistentProcessService$InnerService1"/>
+		<service ns0:name="com.steam.collagepe.application.SecondProcessService" ns0:process=":process2"/>
+		<receiver ns0:name="com.steam.collagepe.application.SecondProcessReceiver" ns0:process=":process2"/>
+		<service ns0:name="com.steam.collagepe.application.SecondProcessService$InnerService2" ns0:process=":process2"/>
+		<service ns0:name="com.cs.bd.daemon.JobSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<receiver ns0:name="com.cs.bd.daemon.receiver.BootCompleteReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+				<action ns0:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+				<action ns0:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+			</intent-filter>
+			<intent-filter ns0:priority="999">
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.USER_PRESENT"/>
+				<action ns0:name="android.intent.action.WALLPAPER_CHANGED"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_RESTARTED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REPLACED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+			<intent-filter ns0:priority="99999">
+				<action ns0:name="android.provider.Telephony.SECRET_CODE"/>
+				<data ns0:scheme="android_secret_code"/>
+			</intent-filter>
+			<intent-filter ns0:priority="99999">
+				<action ns0:name="android.intent.action.NEW_OUTGOING_CALL"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jiubang.alock.ACTION_LOCKER_ACCOUNT_CHANGE"/>
+				<action ns0:name="com.jiubang.alocker.theme.change"/>
+				<action ns0:name="com.jiubang.alocker.monitor.vip"/>
+				<action ns0:name="com.jiubang.alocker.refresh.vip"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.jb.zcamera.pip.gpuimage.camera.PipCameraActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.pip.activity.PipFreeStyleActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.pip.activity.pip.PipRealTimeCameraActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.pip.activity.PipProcessActivity" ns0:screenOrientation="1"/>
+		<provider ns0:name="com.gau.go.gostaticsdk.StaticDataContentProvider" ns0:authorities="com.steam.collagepe.staticsdkprovider"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_color" ns0:resource="@7F060153"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F080437"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="false"/>
+		<service ns0:name="com.steam.collagepe.firebase.message.FcmMessagingService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.steam.collagepe.firebase.message.FcmInstanceIDService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.jiubang.commerce.receiver.AppBroadcastReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_ADDED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REPLACED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REMOVED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.jiubang.commerce.buychannel.MPSharedPreferences" ns0:exported="false" ns0:authorities="com.steam.collagepe.commerce.MPSharedPreferences"/>
+		<activity ns0:name="com.mopub.mobileads.MoPubActivity" ns0:taskAffinity=".MoPubSdk" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MraidActivity" ns0:taskAffinity=".MoPubSdk" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.common.MoPubBrowser" ns0:taskAffinity=".MoPubSdk" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MraidVideoPlayerActivity" ns0:taskAffinity=".MoPubSdk" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.RewardedMraidActivity" ns0:taskAffinity=".MoPubSdk" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.fullscreen.activity.ClearTaskActivity"/>
+		<receiver ns0:name="com.jb.zcamera.report.CrashReportReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.steam.photoeditor.report.CRASH_REPORT"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.jb.zcamera.floatcandidphoto.service.CandidFloatService"/>
+		<service ns0:name="com.jb.zcamera.floatcandidphoto.service.CandidPhotoService"/>
+		<activity ns0:name="com.jb.zcamera.activity.ToolSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.floatcandidphoto.FloatPictureViewActivity" ns0:launchMode="1" ns0:configChanges="0x00000420"/>
+		<activity ns0:name="com.jb.zcamera.fullscreen.activity.FullscreenAdmobBannerActivity" ns0:taskAffinity=".fullscreen" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:name="com.steam.collagepe.firebase.NotificationBroadcastReceiver"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryFullscreenTakeoverActivity" ns0:taskAffinity=".flurry" ns0:configChanges="0x00000FB0"/>
+		<service ns0:name="com.gomo.abtestcenter.statics.SchedulerStaticsService"/>
+		<activity ns0:theme="@7F1001A7" ns0:name="com.jb.zcamera.dailyrecommend.DailyRecommendActivity" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:screenOrientation="1"/>
+		<service ns0:name="com.jb.zcamera.dailyrecommend.service.DailyRecommendAlarmService"/>
+		<activity ns0:name="com.jb.zcamera.launcher.PolicyActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.launcher.PolicySettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.adcolony.sdk.AdColonyInterstitialActivity" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.adcolony.sdk.AdColonyAdViewActivity" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.aerserv.sdk.view.AerServFullScreenAdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.aerserv.sdk.view.ASVastInterstitialActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.aerserv.sdk.view.ASWebviewInterstitialActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.aerserv.sdk.view.ASVpaidInterstitalActivity" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.inmobi.rendering.InMobiAdActivity" ns0:configChanges="0x00000DB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.smaato.soma.interstitial.InterstitialActivity" ns0:configChanges="0x000004A0" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.smaato.soma.video.VASTAdActivity" ns0:configChanges="0x000004A0" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.smaato.soma.ExpandedBannerActivity" ns0:configChanges="0x000004A0" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.applovin.adview.AppLovinInterstitialActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.applovin.adview.AppLovinConfirmationActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F100135" ns0:label="@7F0F0464" ns0:name="com.hp.mss.hpprint.activity.PrintPreview" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F100136" ns0:label="@7F0F0462" ns0:name="com.hp.mss.hpprint.activity.PrintHelp" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F100137" ns0:label="@7F0F033B" ns0:name="com.hp.mss.hpprint.activity.PrintPluginManagerActivity"/>
+		<activity ns0:theme="@7F100137" ns0:label="@7F0F0465" ns0:name="com.hp.mss.hpprint.activity.PrintServicePluginInformation" ns0:launchMode="1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.steam.collagepe"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.steam.collagepe.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@7F1000C7" ns0:label="" ns0:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.jiubang.commerce.ad.url.AdUrlPreParseLoadingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jiubang.commerce.ad.h5.H5AdActivity" ns0:screenOrientation="1"/>
+		<service ns0:label="Ad Service" ns0:name="com.jiubang.commerce.service.AdService"/>
+		<service ns0:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"/>
+		<service ns0:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService" ns0:process=":filedownloader"/>
+		<service ns0:name="com.gomo.firebasesdk.notification.ClickService"/>
+		<service ns0:name="com.gomo.firebasesdk.notification.DeleteService"/>
+		<receiver ns0:name="com.gomo.firebasesdk.statistic.AlarmStatisticReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.firebase.STATISTIC"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<receiver ns0:name="com.go.news.engine.abtest.ABTestReceiver">
+			<intent-filter>
+				<action ns0:name="com.go.news.abtest"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.go.news.engine.ConfigManager$BasisConfigReceiver">
+			<intent-filter>
+				<action ns0:name="com.go.news.basisconfig"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F100231" ns0:name="com.go.news.activity.BaseActivity"/>
+		<activity ns0:theme="@7F100126" ns0:name="com.go.news.activity.news.NewsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100126" ns0:name="com.go.news.activity.detail.TopicNewsPagerActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100126" ns0:name="com.go.news.activity.detail.ListNewsPagerActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100126" ns0:name="com.go.news.activity.detail.NewsBrowserActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.monet.bidder.AdActivity" ns0:multiprocess="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F100126" ns0:name="com.go.news.activity.news.SourcesNewsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100126" ns0:name="com.go.news.activity.discover.DiscoverActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100126" ns0:name="com.go.news.activity.detail.BrowserActivity" ns0:screenOrientation="1"/>
+		<service ns0:name="com.jb.commerce.fwad.api.FwadServiceProxy"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryShareActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryTileAdActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryBrowserActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.ads.adunit.AdUnitActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.ads.adunit.AdUnitTransparentActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.ads.adunit.AdUnitTransparentSoftwareActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.steam.collagepe.crashlyticsinitprovider" ns0:initOrder="100"/>
+	</application>
+</manifest>

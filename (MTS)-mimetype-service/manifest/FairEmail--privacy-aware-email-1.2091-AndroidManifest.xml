@@ -1,0 +1,440 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2091" ns0:versionName="1.2091" ns0:installLocation="1" ns0:compileSdkVersion="34" ns0:compileSdkVersionCodename="14" package="eu.faircode.email" platformBuildVersionCode="34" platformBuildVersionName="14">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="34"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC"/>
+	<uses-permission ns0:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.READ_PROFILE" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="com.vivo.notification.permission.BADGE_ICON"/>
+	<uses-feature ns0:name="android.software.app_widgets" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.fingerprint" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.INSERT"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.GET_CONTENT"/>
+			<category ns0:name="android.intent.category.OPENABLE"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.provider.MediaStore.RECORD_SOUND"/>
+		</intent>
+		<package ns0:name="com.android.vending"/>
+		<package ns0:name="org.sufficientlysecure.keychain"/>
+		<package ns0:name="org.sufficientlysecure.keychain.debug"/>
+		<package ns0:name="eu.faircode.netguard"/>
+		<package ns0:name="com.google.android.gm"/>
+		<intent>
+			<action ns0:name="org.openintents.openpgp.IOpenPgpService2"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.PROCESS_TEXT"/>
+			<data ns0:mimeType="text/plain"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.TTS_SERVICE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.MAIN"/>
+			<category ns0:name="android.intent.category.HOME"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.android.vending.billing.InAppBillingService.BIND"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<permission ns0:name="eu.faircode.email.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="eu.faircode.email.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<application ns0:theme="@7F130010" ns0:label="@7F120028" ns0:icon="@7F100000" ns0:name="eu.faircode.email.ApplicationEx" ns0:description="@7F120028" ns0:allowBackup="false" ns0:largeHeap="false" ns0:supportsRtl="true" ns0:extractNativeLibs="true" ns0:fullBackupContent="false" ns0:resizeableActivity="true" ns0:networkSecurityConfig="@7F150006" ns0:roundIcon="@7F100001" ns0:appCategory="7" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:forceDarkAllowed="false" ns0:requestLegacyExternalStorage="true" ns0:dataExtractionRules="@7F150003" ns0:enableOnBackInvokedCallback="true">
+		<meta-data ns0:name="android.webkit.WebView.MetricsOptOut" ns0:value="true"/>
+		<meta-data ns0:name="android.webkit.WebView.EnableSafeBrowsing" ns0:value="false"/>
+		<meta-data ns0:name="android.allow_multiple_resumed_activities" ns0:value="true"/>
+		<meta-data ns0:name="com.bugsnag.android.API_KEY" ns0:value="9d2d57476a0614974449a3ec33f2604a"/>
+		<activity ns0:theme="@7F130263" ns0:label="@7F120028" ns0:name="eu.faircode.email.ActivityMain" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:description="@7F120028" ns0:resizeableActivity="true">
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F150008"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.APP_EMAIL"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="eu.faircode.email.REFRESH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="message"/>
+				<data ns0:host="eu.faircode.email"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="message"/>
+				<data ns0:host="email.faircode.eu"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="link.fairemail.net"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="eu.faircode.email.ActivitySetup" ns0:exported="false" ns0:taskAffinity="eu.faircode.email.SETUP" ns0:launchMode="2" ns0:parentActivityName="eu.faircode.email.ActivityMain" ns0:resizeableActivity="true"/>
+		<activity ns0:name="eu.faircode.email.ActivitySignature" ns0:exported="false" ns0:taskAffinity="eu.faircode.email.SETUP" ns0:launchMode="2" ns0:parentActivityName="eu.faircode.email.ActivitySetup" ns0:resizeableActivity="true"/>
+		<activity ns0:name="eu.faircode.email.ActivityWidget" ns0:exported="true" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="eu.faircode.email.ActivityWidgetSync" ns0:exported="true" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="eu.faircode.email.ActivityWidgetUnified" ns0:exported="true" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="eu.faircode.email.ActivityView" ns0:exported="false" ns0:launchMode="2" ns0:parentActivityName="eu.faircode.email.ActivityMain" ns0:resizeableActivity="true"/>
+		<activity ns0:theme="@7F130263" ns0:label="@7F120029" ns0:icon="@7F100000" ns0:name="eu.faircode.email.ActivitySearch" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PROCESS_TEXT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/plain"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="eu.faircode.email.search"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F12001C" ns0:icon="@7F080B88" ns0:name="eu.faircode.email.ActivityAnswer" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PROCESS_TEXT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/plain"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F120028" ns0:name="eu.faircode.email.ActivityCompose" ns0:exported="true" ns0:launchMode="2" ns0:description="@7F120028" ns0:parentActivityName="eu.faircode.email.ActivityView" ns0:resizeableActivity="true">
+			<meta-data ns0:name="android.service.chooser.chooser_target_service" ns0:value="androidx.sharetarget.ChooserTargetServiceCompat"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="mailto"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SENDTO"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="mailto"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130263" ns0:label="@7F12002A" ns0:icon="@7F100000" ns0:name="eu.faircode.email.ActivitySendSelf" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:resizeableActivity="true">
+			<meta-data ns0:name="android.service.chooser.chooser_target_service" ns0:value="androidx.sharetarget.ChooserTargetServiceCompat"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="mailto"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SENDTO"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="mailto"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="eu.faircode.email.ActivityClear" ns0:exported="false" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:resizeableActivity="true"/>
+		<activity ns0:name="eu.faircode.email.ActivityError" ns0:exported="false" ns0:launchMode="2" ns0:resizeableActivity="true"/>
+		<activity ns0:label="@7F120028" ns0:icon="@7F100000" ns0:name="eu.faircode.email.ActivityEML" ns0:exported="true" ns0:launchMode="3" ns0:description="@7F120028" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="message/rfc822"/>
+				<data ns0:host="*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="*/*"/>
+				<data ns0:host="*"/>
+				<data ns0:pathPattern="/.*\.eml"/>
+				<data ns0:pathPattern="/.*\..*\.eml"/>
+				<data ns0:pathPattern="/.*\..*\..*\.eml"/>
+				<data ns0:pathPattern="/.*\..*\..*\..*\.eml"/>
+				<data ns0:pathPattern="/.*\..*\..*\..*\..*\.eml"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F120028" ns0:icon="@7F100000" ns0:name="eu.faircode.email.ActivityDSN" ns0:exported="true" ns0:launchMode="3" ns0:description="@7F120028" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="message/delivery-status"/>
+				<data ns0:mimeType="message/disposition-notification"/>
+				<data ns0:mimeType="text/rfc822-headers"/>
+				<data ns0:host="*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F120028" ns0:icon="@7F100000" ns0:name="eu.faircode.email.ActivityAMP" ns0:exported="true" ns0:launchMode="3" ns0:description="@7F120028" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="text/x-amp-html"/>
+				<data ns0:host="*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F120028" ns0:icon="@7F100000" ns0:name="eu.faircode.email.ActivityDmarc" ns0:enabled="false" ns0:exported="true" ns0:launchMode="3" ns0:description="@7F120028" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="text/xml"/>
+				<data ns0:mimeType="application/xml"/>
+				<data ns0:host="*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:icon="@7F100000" ns0:name="eu.faircode.email.ActivityBilling" ns0:exported="false" ns0:taskAffinity="eu.faircode.email.BILLING" ns0:launchMode="2" ns0:resizeableActivity="true"/>
+		<activity ns0:theme="@7F130263" ns0:label="@7F120028" ns0:icon="@7F100000" ns0:name="eu.faircode.email.ActivityRationale" ns0:permission="android.permission.START_VIEW_PERMISSION_USAGE" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:description="@7F120028" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW_PERMISSION_USAGE"/>
+				<action ns0:name="android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="net.openid.appauth.RedirectUriReceiverActivity" ns0:exported="true" ns0:taskAffinity="eu.faircode.email.SETUP" ns0:resizeableActivity="true">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="oauth.faircode.eu"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="eu.faircode.email"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="msauth.eu.faircode.email" ns0:host="auth"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="msauth" ns0:host="eu.faircode.email" ns0:path="/xSLzBBuLJunOQPB89rtzM54FXx4="/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130264" ns0:name="net.openid.appauth.AuthorizationManagementActivity" ns0:exported="false" ns0:taskAffinity="eu.faircode.email.SETUP" ns0:launchMode="2" ns0:configChanges="0x00000DB0" ns0:resizeableActivity="true"/>
+		<service ns0:name="eu.faircode.email.ServiceSynchronize" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="eu.faircode.email.ServiceSend" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="eu.faircode.email.ServiceUI" ns0:exported="false"/>
+		<service ns0:name="eu.faircode.email.ServiceExternal" ns0:exported="true" ns0:foregroundServiceType="0x00000001">
+			<intent-filter>
+				<action ns0:name="eu.faircode.email.POLL"/>
+				<action ns0:name="eu.faircode.email.ENABLE"/>
+				<action ns0:name="eu.faircode.email.DISABLE"/>
+				<action ns0:name="eu.faircode.email.INTERVAL"/>
+				<action ns0:name="eu.faircode.email.RULE"/>
+				<action ns0:name="eu.faircode.email.TEMPLATE"/>
+				<action ns0:name="eu.faircode.email.DISCONNECT.ME"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F120028" ns0:icon="@7F080BC3" ns0:name="eu.faircode.email.ServiceTileClear" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F120028" ns0:icon="@7F080BAA" ns0:name="eu.faircode.email.ServiceTileSynchronize" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F12011B" ns0:icon="@7F080B59" ns0:name="eu.faircode.email.ServiceTileUnseen" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F120028" ns0:name="eu.faircode.email.ServicePowerControl" ns0:permission="android.permission.BIND_CONTROLS" ns0:enabled="false" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.controls.ControlsProviderService"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="eu.faircode.email.WidgetUnifiedService" ns0:permission="android.permission.BIND_REMOTEVIEWS" ns0:exported="true"/>
+		<provider ns0:name="eu.faircode.email.FileProviderEx" ns0:exported="false" ns0:authorities="eu.faircode.email" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150004"/>
+		</provider>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="eu.faircode.email.androidx-startup">
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.profileinstaller.ProfileInstallerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<receiver ns0:label="@7F1208DA" ns0:name="eu.faircode.email.Widget" ns0:exported="true">
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F150009"/>
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:label="@7F1208DB" ns0:name="eu.faircode.email.WidgetUnified" ns0:exported="true">
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F15000B"/>
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:label="@7F1208DC" ns0:name="eu.faircode.email.WidgetSync" ns0:exported="true">
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F15000A"/>
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="eu.faircode.email.ReceiverAutoStart" ns0:exported="true">
+			<intent-filter ns0:priority="1000">
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<receiver ns0:name="androidx.profileinstaller.ProfileInstallReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SKIP_FILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="6.0.1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.bugsnag.android.BUILD_UUID" ns0:value="119a3b2b-b93f-48f9-be9f-8a78a8bec147"/>
+	</application>
+</manifest>

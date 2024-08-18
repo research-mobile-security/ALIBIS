@@ -1,0 +1,160 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="198400" ns0:versionName="4.7.4" ns0:installLocation="0" package="com.agilesoftresource" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+	<uses-sdk ns0:minSdkVersion="10" ns0:targetSdkVersion="19"/>
+	<supports-screens ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.RESTART_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<application ns0:label="@7F07003D" ns0:icon="@7F02009F" ns0:name="com.agilesoftresource.ui.AndroZipApplication" ns0:allowBackup="false" ns0:largeHeap="true">
+		<service ns0:name="com.avg.toolkit.TKService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.avg.toolkit.TKS_ACTION"/>
+			</intent-filter>
+		</service>
+		<activity ns0:label="AndroZip" ns0:name="com.agilesoftresource.ui.MainView" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/zip"/>
+				<data ns0:mimeType="multipart/x-zip"/>
+				<data ns0:mimeType="application/x-rar-compressed"/>
+				<data ns0:mimeType="application/octet-stream"/>
+				<data ns0:mimeType="application/x-gzip"/>
+				<data ns0:mimeType="application/gzip"/>
+				<data ns0:mimeType="application/x-gunzip"/>
+				<data ns0:mimeType="application/gzipped"/>
+				<data ns0:mimeType="application/x-gzip-compressed"/>
+				<data ns0:mimeType="application/gzip-compressed"/>
+				<data ns0:mimeType="application/x-compressed"/>
+				<data ns0:mimeType="application/x-compress"/>
+				<data ns0:mimeType="gzip/document"/>
+				<data ns0:mimeType="application/octet-stream"/>
+				<data ns0:mimeType="application/x-tar"/>
+				<data ns0:mimeType="application/tar"/>
+				<data ns0:mimeType="application/x-7z-compressed"/>
+				<data ns0:mimeType="application/x-bzip"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.agilesoftresource.TO.FOLDER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="com.agilesoftresource/search"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<data ns0:mimeType="*/*"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/zip"/>
+				<data ns0:mimeType="multipart/x-zip"/>
+				<data ns0:mimeType="application/x-rar-compressed"/>
+				<data ns0:mimeType="application/octet-stream"/>
+				<data ns0:mimeType="application/x-gzip"/>
+				<data ns0:mimeType="application/gzip"/>
+				<data ns0:mimeType="application/x-gunzip"/>
+				<data ns0:mimeType="application/gzipped"/>
+				<data ns0:mimeType="application/gzip-compressed"/>
+				<data ns0:mimeType="application/x-gzip-compressed"/>
+				<data ns0:mimeType="application/x-compressed"/>
+				<data ns0:mimeType="application/x-compress"/>
+				<data ns0:mimeType="gzip/document"/>
+				<data ns0:mimeType="application/octet-stream"/>
+				<data ns0:mimeType="application/x-tar"/>
+				<data ns0:mimeType="application/tar"/>
+				<data ns0:mimeType="application/x-7z-compressed"/>
+				<data ns0:mimeType="application/x-bzip"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.agilesoftresource.ui.OneCloudReceiver">
+			<intent-filter>
+				<action ns0:name="com.box.android.EDIT_FILE"/>
+				<action ns0:name="com.box.android.CREATE_FILE"/>
+				<action ns0:name="com.box.android.VIEW_FILE"/>
+				<data ns0:mimeType="*/*"/>
+				<data ns0:mimeType="application/zip"/>
+				<data ns0:mimeType="application/x-rar-compressed"/>
+				<data ns0:mimeType="application/x-gzip"/>
+				<data ns0:mimeType="application/gzip"/>
+				<data ns0:mimeType="application/x-gunzip"/>
+				<data ns0:mimeType="application/gzipped"/>
+				<data ns0:mimeType="application/gzip-compressed"/>
+				<data ns0:mimeType="application/x-compressed"/>
+				<data ns0:mimeType="application/x-gzip-compressed"/>
+				<data ns0:mimeType="application/x-compress"/>
+				<data ns0:mimeType="gzip/document"/>
+				<data ns0:mimeType="application/octet-stream"/>
+				<data ns0:mimeType="application/x-tar"/>
+				<data ns0:mimeType="application/tar"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:label="AndroZip Text Reader" ns0:name="com.agilesoftresource.ui.TextActivity" ns0:launchMode="2" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/plain"/>
+				<data ns0:mimeType="text/xml"/>
+				<data ns0:mimeType="application/xml-dtd"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.agilesoftresource.ui.Preferences" ns0:configChanges="0x000000B0"/>
+		<activity ns0:label="AndroZip AppManager" ns0:name="com.agilesoftresource.appmanager.AppManagerA" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.agilesoftresource.appmanager.AppManagerMain" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.agilesoftresource.appmanager.AppManagerPreferences" ns0:configChanges="0x000004B0"/>
+		<activity ns0:label="@7F07003D" ns0:name="com.agilesoftresource.tm.applist.TaskManagerMain" ns0:configChanges="0x000004B0"/>
+		<activity ns0:label="@7F07003D" ns0:name="com.agilesoftresource.tm.applist.DetailsView" ns0:configChanges="0x000004B0"/>
+		<activity ns0:label="@7F07003D" ns0:name="com.agilesoftresource.tm.applist.IgnoreList" ns0:configChanges="0x000004B0"/>
+		<activity ns0:label="@7F07003D" ns0:name="com.agilesoftresource.search.SearchUI" ns0:configChanges="0x000004B0"/>
+		<activity ns0:label="@7F07003D" ns0:name="com.agilesoftresource.search.SearchListUI" ns0:configChanges="0x000004B0"/>
+		<meta-data ns0:name="ADMOB_PUBLISHER_ID" ns0:value="a151d204e573428"/>
+		<provider ns0:name="com.agilesoftresource.util.AndroZipProvider" ns0:authorities="com.agilesoftresource.androzip"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.dropbox.client2.android.AuthActivity" ns0:launchMode="2" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<data ns0:scheme="db-t4n8hf9pmbjnt2q"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.agilesoftresource.cloud.dropbox.DownloaderService" ns0:permission="com.asrazpaid.cloud.dropbox.DOWNLOADER" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.agilesoftresource.cloud.dropbox.UploadService" ns0:permission="com.asrazpaid.cloud.dropbox.DOWNLOADER" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.avg.toolkit.recurringTasks.AlarmReceiver"/>
+		<receiver ns0:name="com.avg.toolkit.recurringTasks.RecurringTaskAlarmReceiver"/>
+		<receiver ns0:name="com.avg.toolkit.recurringTasks.BootReceiver">
+			<intent-filter ns0:priority="2000">
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.avg.toolkit.marketing.MarketReferrerReceiver">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.avg.toolkit.uid.SharedIdReceiver" ns0:enabled="true">
+			<intent-filter>
+				<action ns0:name="com.avg.action.send_your_id"/>
+				<action ns0:name="com.avg.action.take_id"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.avg.toolkit.ads.ocm.OcmAlarmReceiver">
+			<intent-filter>
+				<action ns0:name="com.avg.action.ocm_alarm"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.avg.toolkit.zen.GlobalLoginReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.avg.zen.action.GLOBAL_LOGIN_STATUS_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0003"/>
+		<activity ns0:theme="@7F0C005D" ns0:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+	</application>
+</manifest>

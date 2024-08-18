@@ -1,0 +1,668 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:sharedUserId="com.thinkyeah" ns0:versionCode="2933" ns0:versionName="4.2.9" ns0:installLocation="0" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.thinkyeah.galleryvault" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_DOCUMENTS"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+	<permission ns0:name="com.thinkyeah.galleryvault.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.thinkyeah.galleryvault.permission.C2D_MESSAGE"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.telephony" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.screen.portrait" ns0:required="false"/>
+	<queries>
+		<package ns0:name="com.thinkyeah.smartlockfree"/>
+		<package ns0:name="com.thinkyeah.smartlock"/>
+		<package ns0:name="com.facebook.katana"/>
+		<package ns0:name="com.facebook.orca"/>
+		<package ns0:name="com.zhiliaoapp.musically"/>
+		<package ns0:name="com.instagram.android"/>
+		<package ns0:name="com.twitter.android"/>
+		<package ns0:name="com.whatsapp"/>
+		<package ns0:name="com.xvideostudio.videoeditor"/>
+		<package ns0:name="collage.photocollage.collagemaker.photoeditor.photogrid"/>
+		<intent>
+			<action ns0:name="android.settings.MANAGE_APP_ALL_FILES_ACCESS_PERMISSION"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.OPEN_DOCUMENT_TREE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.settings.ACCESSIBILITY_SETTINGS"/>
+		</intent>
+		<package ns0:name="com.android.vending"/>
+		<package ns0:name="com.huawei.appmarket"/>
+		<package ns0:name="com.samsung.android.lool"/>
+		<package ns0:name="com.samsung.android.sm"/>
+		<intent>
+			<action ns0:name="android.intent.action.MAIN"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.GET_CONTENT"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+		</intent>
+		<intent>
+			<action ns0:name="androidx.browser.customtabs.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="http"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="market"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+		</intent>
+		<package ns0:name="com.amazon.venezia"/>
+		<package ns0:name="com.sec.android.app.samsungapps"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.digitalturbine.ignite.cl.IgniteRemoteService"/>
+		</intent>
+	</queries>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="true"/>
+	<uses-permission ns0:name="oppo.permission.OPPO_COMPONENT_SAFE"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+	<permission ns0:name="com.thinkyeah.galleryvault.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.thinkyeah.galleryvault.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<application ns0:theme="@7F130039" ns0:label="@7F12007C" ns0:icon="@7F0F0000" ns0:name="com.thinkyeah.galleryvault.application.MainApplication" ns0:manageSpaceActivity="com.thinkyeah.galleryvault.main.ui.activity.SubLockingActivity" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:networkSecurityConfig="@7F150004" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FirstOpenSplashActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.OneTimeOfferPurchaseActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.WebBrowserNavigationActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<meta-data ns0:name="com.thinkyeah.galleryvault.common.glide.GVGlideModule" ns0:value="GlideModule"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.LockingActivity" ns0:excludeFromRecents="true"/>
+		<activity-alias ns0:label="@7F12007C" ns0:name="com.thinkyeah.galleryvault.LockingActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="com.thinkyeah.galleryvault.main.ui.activity.LockingActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.LockCoverActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.SubLockingActivity" ns0:excludeFromRecents="true" ns0:launchMode="1"/>
+		<activity-alias ns0:name="com.thinkyeah.galleryvault.ui.SubLockingActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:targetActivity="com.thinkyeah.galleryvault.main.ui.activity.SubLockingActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="thgv" ns0:host="open"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.EditImageActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.AlertMessageDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:label="@7F120036" ns0:icon="@7F0F0000" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.AddByShareActivity" ns0:exported="true" ns0:taskAffinity="com.thinkyeah.galleryvault.main.ui.activity.AddByShareActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000000A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="audio/*"/>
+				<data ns0:mimeType="application/*"/>
+				<data ns0:mimeType="multipart/*"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="@7F120328" ns0:icon="@7F0F0000" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.DownloadByShareActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:configChanges="0x000000A0" ns0:targetActivity="com.thinkyeah.galleryvault.main.ui.activity.AddByShareActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:theme="@7F13003A" ns0:label="@7F12007C" ns0:icon="@7F0F0000" ns0:name="com.thinkyeah.galleryvault.ui.AddByShareActivity4InternalUse" ns0:exported="true" ns0:excludeFromRecents="true" ns0:configChanges="0x000000A0" ns0:targetActivity="com.thinkyeah.galleryvault.main.ui.activity.AddByShareActivity">
+			<intent-filter>
+				<action ns0:name="com.thinkyeah.galleryvault.action.SEND"/>
+				<action ns0:name="com.thinkyeah.galleryvault.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:label="@7F1203CE" ns0:icon="@7F0F0002" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.AddByCameraActivity" ns0:enabled="false" ns0:exported="true" ns0:taskAffinity=".main.ui.activity.AddByCameraActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:configChanges="0x000000A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F1203CE" ns0:icon="@7F0F0002" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.AddByCamera2Activity" ns0:exported="true" ns0:taskAffinity=".main.ui.activity.AddByCamera2Activity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.HowToAddByCameraTipActivity" ns0:taskAffinity=".main.ui.activity.HowToAddByCameraTipActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.PrivateCameraSettingActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F13003A" ns0:icon="@7F0F0000" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.OpenFileFromOutsideActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.thinkyeah.galleryvault.action.OPEN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13003A" ns0:icon="@7F0F0000" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.OpenFileWith3rdPartyViewerActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ShareActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.EditActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.main.MainActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:theme="@7F130039" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.MainLaunchActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.main.FakeMainActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FakeMainLaunchActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.SettingActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.NavigationPinCodeActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.NavigationAccountEmailActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.NavigationAccountActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.LoginWithGoogleAccountActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ConfirmPasswordForRestoreDataActivity" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.filelist.FileListActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FolderListActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.RecycleBinActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.RecycleBinIntroActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.fileview.ImageViewActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.fileview.ImagePreviewActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.slideshow.FadeSlideShowActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.fileview.video.VideoViewActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.TutorialActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.setting.ChoosePasswordActivity" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.setting.ChoosePasswordOutsideActivity" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.setting.ConfirmPasswordActivity" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FaqActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FaqArticleActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.MessageActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.AboutActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.PrivacyPolicyActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.common.ui.activity.SimpleWebBrowserActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.LogCollectActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="gvdebug" ns0:host="debug"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ThinkAccountActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ChooseLanguageActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FileAntiLostTipActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FixSdcardIssueActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FindLostFileActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.TransferSpaceActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.AddFileInSdcardTipActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.TipDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.RequireDocumentApiPermissionActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.MultiSelectTip4DocumentSelectorActivity" ns0:taskAffinity="com.thinkyeah.galleryvault.main.ui.activity.MultiSelectTip4DocumentSelectorActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.HowToEnableDocumentApiPermissionActivity" ns0:taskAffinity="com.thinkyeah.galleryvault.HowToEnableDocumentApiPermissionActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.HowToEnableDocumentUIActivity" ns0:taskAffinity="com.thinkyeah.galleryvault.HowToEnableExplorerForMiuiActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FixSdcardIssueDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.DeveloperActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.GvAdsDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.AdsServerConfigDisplayDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.AppConfigDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.MiscInfoDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.LoginDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.PushMsgDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.DownloadDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.CloudDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.ThemeDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.BillingDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.DefaultAppsActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.HideIconActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ChooseRecentOutsideImagesActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.WebBrowserActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.WebBrowserManageTabActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.DetectActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.DownloadFromAppActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.InjectJsTestActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.WebBrowserEditUrlActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.WebBrowserHistoryActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.WebBrowserImageDownloadSelectListActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.WebBrowserMediaDownloadSelectListActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.browser.ui.activity.WebBrowserVideoDownloadSelectListActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FileSelectDetailViewActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.BreakInAlertsActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.BreakInAlertsListActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.BreakInAlertsDetailActivity" ns0:excludeFromRecents="true"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.L10nSupportActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.SetFolderCoverActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.license.ui.activity.LicenseUpgradeActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FakePasswordActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.BackupAndRestoreActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.CommonGuideActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.download.ui.activity.DownloadSelectActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.download.ui.activity.DownloadManagerActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.VideoPlayerSettingActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.cloud.ui.activity.CloudFolderListActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.cloud.ui.activity.CloudFileListActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ChooseInsideFileActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ChooseInsideFolderActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ChooseOutsideFileActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.SortFolderActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.AddFilesActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.UnhideFilesActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.EncryptionUpgradeActivity" ns0:taskAffinity="com.thinkyeah.galleryvault.EncryptionUpgradeActivity" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.IconDisguiseActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.DeviceMigrationActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.DeviceMigrationSrcActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.DeviceMigrationDestQRScannerActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.DeviceMigrationDestActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.TaskResultActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FolderLockSettingActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130039" ns0:name="com.thinkyeah.feedback.ui.activity.FeedbackActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.wxapi.WXPayEntryActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.wxapi.WXEntryActivity" ns0:exported="true" ns0:taskAffinity="com.thinkyeah.galleryvault" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.EditWithPhotoCollageActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.RequestMustPermissionsActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.AppExitingActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130039" ns0:name="com.thinkyeah.common.runtimepermissionguide.ui.RuntimePermissionRequestActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ChooseLockPatternActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.EnterAdsActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.debug.WechatLoginDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1302E8" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.PushEmptyActivity" ns0:taskAffinity=".main.ui.activity.PushEmptyActivity" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.AutoBackupService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.EncryptionUpgradeService"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.VideoDurationUpgradeService"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.ClearTempPathIntentService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.ClearExpiredRecycleBinIntentService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.thinkyeah.galleryvault.discovery.browser.service.ClearWebBrowserHistoriesService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.thinkyeah.galleryvault.download.service.DownloadService"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.RefreshAllEncryptFilesMetaDataService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.PreloadDocumentApiPermissionGuideService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.DeviceMigrationSrcService"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.DeviceMigrationDestService"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.PrivateCameraService"/>
+		<service ns0:name="com.thinkyeah.galleryvault.main.service.TrackBrokenBlueFileIntentService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<receiver ns0:name="com.thinkyeah.galleryvault.main.receiver.SdcardMountReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.thinkyeah.galleryvault.main.receiver.SystemEventReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.LOCALE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.thinkyeah.galleryvault.main.receiver.PackageEventReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_ADDED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REMOVED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REPLACED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.thinkyeah.galleryvault.main.receiver.MyPackageReplacedReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.thinkyeah.galleryvault.main.receiver.FullyRemovePackageEventReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.thinkyeah.galleryvault.receiver.AntiUninstallDeviceAdminReciever" ns0:permission="android.permission.BIND_DEVICE_ADMIN" ns0:exported="true" ns0:description="@7F120202">
+			<meta-data ns0:name="android.app.device_admin" ns0:resource="@7F150000"/>
+			<intent-filter>
+				<action ns0:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+				<action ns0:name="android.app.action.DEVICE_ADMIN_DISABLED"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="763a022c0e8abd213713a631d766f8b6db2f16ec"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.cloud.ui.activity.debug.CloudSettingActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.cloud.ui.activity.debug.CloudTasksManagerActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.cloud.ui.activity.debug.CloudImagePreviewActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.main.ui.activity.CloudSyncIntroductionActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.main.ui.activity.CloudSyncPrincipleActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.main.ui.activity.LinkGoogleDriveActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.main.ui.activity.LinkGoogleDriveOutsideActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.cloudsync.main.ui.activity.CloudSyncStatusActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.cloudsync.main.ui.activity.CloudSyncNotificationDialogActivity" ns0:taskAffinity=".cloudsync.main.ui.activity.CloudSyncNotificationDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.LoginActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.EnableCloudSyncInMobileNetworkActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.UpgradePromotionDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.thinkyeah.galleryvault.cloudsync.fssync.service.GVFsSyncService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.thinkyeah.galleryvault.main.receiver.NetworkChangeReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+				<action ns0:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.thinkyeah.galleryvault.discovery.messenger.ui.activity.ChooseWhatsAppMediaItemsActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.ShareToGalleryVaultActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.RateStartsActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.PrivacySettingActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.BindNotificationDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130039" ns0:name="com.thinkyeah.common.ad.think.ui.ThinkAppWallActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.StorageUsageActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.duplicatefiles.ui.activity.DuplicateFilesMainActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.duplicatefiles.ui.activity.GuideToPromoteAppDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.duplicatefiles.ui.activity.DuplicateFilesImageViewActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.VideoDurationUpgradeActivity" ns0:taskAffinity=".main.ui.activity.VideoDurationUpgradeActivity" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.DarkModeSettingActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.PatternLockSettingActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130048" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.PromoteDarkModeActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.GVLicensePromotionActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.RemoveAdsDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.ads.GvAppOpenSplashActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13003A" ns0:name="com.thinkyeah.galleryvault.main.ui.activity.FolderPasswordActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.galleryvault.main.ui.activity.SortFileActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F08028E"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_color" ns0:resource="@7F060086"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_channel_id" ns0:value="Firebase Notification"/>
+		<service ns0:label="@7F12007C" ns0:name="com.thinkyeah.galleryvault.main.service.AppNotificationListenerService" ns0:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.notification.NotificationListenerService"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.thinkyeah.galleryvault.common.ThFileProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150001"/>
+		</provider>
+		<activity ns0:name="com.alipay.sdk.app.H5PayActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:screenOrientation="3" ns0:configChanges="0x000000E0"/>
+		<activity ns0:name="com.alipay.sdk.app.H5AuthActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:screenOrientation="3" ns0:configChanges="0x000004E0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.alipay.sdk.app.PayResultActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:configChanges="0x000004E0">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.alipay.sdk.app.AlipayResultActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F1304CF" ns0:name="com.facebook.FacebookActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity" ns0:excludeFromRecents="true"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true" ns0:excludeFromRecents="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.thinkyeah.galleryvault"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13015A" ns0:label="" ns0:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="1751108900880384.000000"/>
+		<meta-data ns0:name="com.facebook.sdk.ClientToken" ns0:value="00f9b37286981d8a7e66b859e09e1826"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="com.google.android.gms.ads.AD_MANAGER_APP" ns0:value="true"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@7F1302E5" ns0:name="com.adtiny.director.AdsDebugActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1302E8" ns0:name="com.adtiny.director.EmptyHeldActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-6555956274372099~8746834810"/>
+		<service ns0:name="com.thinkyeah.tcloud.service.CloudTransferService" ns0:exported="false"/>
+		<service ns0:name="com.thinkyeah.tcloud.service.CloudDriveCleanService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<provider ns0:name="com.thinkyeah.common.appcomm.AppCommContentProvider" ns0:exported="true" ns0:authorities="com.thinkyeah.galleryvault.AppCommContentProvider"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.thinkyeah.common.appcomm.EmptyActivity" ns0:exported="true" ns0:taskAffinity="com.thinkyeah.common.appcomm.EmptyActivity" ns0:excludeFromRecents="true" ns0:launchMode="3"/>
+		<activity ns0:name="com.thinkyeah.feedback.ui.activity.BaseFeedbackActivity" ns0:exported="true"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.CommonGuideDialogActivity" ns0:taskAffinity="com.thinkyeah.common.permissionguide.CommonGuideActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity-alias ns0:theme="@7F130196" ns0:name="com.thinkyeah.common.permissionguide.activity.BlackBackgroundCommonGuideDialogActivity" ns0:taskAffinity="com.thinkyeah.common.permissionguide.CommonGuideActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:targetActivity="com.thinkyeah.common.permissionguide.activity.CommonGuideDialogActivity"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.CommonAnimGuideEnableDialogActivity" ns0:taskAffinity="com.thinkyeah.common.permissionguide.CommonAnimGuideEnableDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.CommonAnimGuideTapAndEnableDialogActivity" ns0:taskAffinity="com.thinkyeah.common.permissionguide.CommonAnimGuideTapAndEnableDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.MeizuAntiKilledGuideDialogActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.MiuiOldAndHuaweiNewAntiKilledGuideDialogActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.MiuiAntiKilledGuideDialogActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.OppoAntiKilledGuideDialogActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.OnePlusAntiKilledGuideDialogActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.HuaweiAntiKilledGuideDialogActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.VivoAntiKilledGuideDialogActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.runtimepermissionguide.ui.RuntimePermissionGuideActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130197" ns0:name="com.thinkyeah.common.permissionguide.activity.DataDocumentGuideDialogActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.thinkyeah.common.permissionguide.activity.PermissionRequestAutoCloseActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<service ns0:name="com.thinkyeah.thinkcast.dlna.service.HttpServerService"/>
+		<activity ns0:theme="@7F1302E7" ns0:label="@7F12007D" ns0:icon="@7F0F0001" ns0:name="com.thinkyeah.galleryvault.icondisguise.calculator.CalculatorStartActivity" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1302E7" ns0:name="com.thinkyeah.galleryvault.icondisguise.calculator.CalculatorGBActivity" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1302E7" ns0:name="com.thinkyeah.galleryvault.icondisguise.calculator.CalculatorLActivity" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130048" ns0:name="com.thinkyeah.common.appupdate.UpdateByGpFlexibleDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130048" ns0:name="com.thinkyeah.common.appupdate.UpdateDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:name="com.thinkyeah.common.ad.think.AdThinkPackageEventReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_ADDED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1302E8" ns0:name="com.thinkyeah.common.ui.activity.MarketUrlRedirectActivity" ns0:excludeFromRecents="true"/>
+		<meta-data ns0:name="delivery_metrics_exported_to_big_query_enabled" ns0:value="true"/>
+		<service ns0:name="com.thinkyeah.common.push.service.PushFirebaseMessagingService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.thinkyeah.common.push.receiver.PushDismissBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.thinkyeah.push.intent.DISMISS"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.thinkyeah.common.ThFileProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.core.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150001"/>
+		</provider>
+		<meta-data ns0:name="applovin.sdk.key" ns0:value="CdGloK6afS5hMSXgO5ZAl0daKCixiX4IdhFMbJz5r1NfU9TDLBEwCPFSUBo3aDWMQGCDuDx_7TTZyc0KzN7BaC"/>
+		<activity ns0:theme="@7F1304FB" ns0:label="Mediation Test Suite" ns0:name="com.google.android.ads.mediationtestsuite.activities.HomeActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1304DC" ns0:name="com.google.android.ads.mediationtestsuite.activities.NetworkDetailActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1304DE" ns0:label="@7F1203E0" ns0:name="com.google.android.ads.mediationtestsuite.activities.ConfigurationItemDetailActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1304DE" ns0:name="com.google.android.ads.mediationtestsuite.activities.ConfigurationItemsSearchActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<provider ns0:name="com.google.firebase.perf.provider.FirebasePerfProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.firebaseperfprovider" ns0:initOrder="101"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:name="com.adcolony.sdk.AdColonyInterstitialActivity" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.ironsource.sdk.controller.ControllerActivity" ns0:exported="false" ns0:configChanges="0x00000480" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.ironsource.sdk.controller.InterstitialActivity" ns0:exported="false" ns0:configChanges="0x00000480" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.ironsource.sdk.controller.OpenUrlActivity" ns0:exported="false" ns0:configChanges="0x00000480" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.tapjoy.TJAdUnitActivity" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.tapjoy.TJContentActivity" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.inmobi.ads.rendering.InMobiAdActivity" ns0:configChanges="0x40000FB4" ns0:hardwareAccelerated="true"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<meta-data ns0:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" ns0:value="GlideModule"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.com.squareup.picasso"/>
+		<activity ns0:name="com.vungle.warren.ui.VungleActivity" ns0:launchMode="1" ns0:configChanges="0x00000FA0"/>
+		<provider ns0:name="com.vungle.warren.utility.VungleProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.vungle-provider"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.1.0"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.ads.OutOfContextTestingActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.unity3d.services.core.configuration.AdsSdkInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.unity3d.services.identifiers.UnitySharedLibraryInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:name="com.tapjoy.mraid.view.ActionHandler" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.tapjoy.mraid.view.Browser" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:name="com.google.android.gms.analytics.AnalyticsReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.applovin.sdk.AppLovinInitProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.applovininitprovider" ns0:initOrder="101"/>
+		<activity ns0:name="com.applovin.adview.AppLovinFullscreenActivity" ns0:exported="false" ns0:launchMode="1" ns0:screenOrientation="3" ns0:configChanges="0x40000FB4" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.applovin.sdk.AppLovinWebViewActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1304BE" ns0:name="com.applovin.mediation.MaxDebuggerActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1304BE" ns0:name="com.applovin.mediation.MaxDebuggerDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1304BE" ns0:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1304BE" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1304BE" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1304BE" ns0:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1304BE" ns0:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1304B5" ns0:name="com.applovin.creative.MaxCreativeDebuggerActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1304B5" ns0:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" ns0:configChanges="0x40000FB4"/>
+		<service ns0:name="com.applovin.impl.sdk.utils.AppKilledService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<service ns0:name="com.applovin.impl.adview.activity.FullscreenAdService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<activity ns0:name="com.adcolony.sdk.AdColonyAdViewActivity" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.thinkyeah.galleryvault.AudienceNetworkContentProvider"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0013"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<provider ns0:name="com.ironsource.lifecycle.IronsourceLifecycleProvider" ns0:authorities="com.thinkyeah.galleryvault.IronsourceLifecycleProvider"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.services.ads.adunit.AdUnitActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@7F130543" ns0:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130543" ns0:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130543" ns0:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130543" ns0:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130542" ns0:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130542" ns0:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130542" ns0:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130542" ns0:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130541" ns0:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130541" ns0:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" ns0:launchMode="0"/>
+		<activity ns0:theme="@7F130546" ns0:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" ns0:launchMode="0" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13053A" ns0:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.adapter.PangleAdInterstitialActivity"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F1302E6" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="11003"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<activity ns0:name="com.fyber.inneractive.sdk.activities.InneractiveInternalBrowserActivity" ns0:screenOrientation="13" ns0:configChanges="0x00000DA0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.fyber.inneractive.sdk.activities.InneractiveFullscreenAdActivity" ns0:configChanges="0x00000DA0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.fyber.inneractive.sdk.activities.InneractiveRichMediaVideoPlayerActivityCore" ns0:configChanges="0x00000DA0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.fyber.inneractive.sdk.activities.InternalStoreWebpageActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="4" ns0:configChanges="0x00000DA0"/>
+		<activity ns0:name="com.fyber.inneractive.sdk.activities.FyberReportAdActivity" ns0:screenOrientation="13" ns0:configChanges="0x00000DA0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.mbridge.msdk.interstitial.view.MBInterstitialActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130516" ns0:name="com.mbridge.msdk.activity.MBCommonActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x00000090"/>
+		<activity ns0:name="com.mbridge.msdk.out.LoadingActivity"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F15000B"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

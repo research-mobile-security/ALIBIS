@@ -1,0 +1,399 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="512" ns0:versionName="2.2.66.2" ns0:installLocation="0" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.atomicadd.fotos" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="33"/>
+	<uses-feature ns0:name="android.hardware.nfc" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.network" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.screen.portrait" ns0:required="false"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.NFC"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<queries>
+		<package ns0:name="com.google.android.apps.maps"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.android.vending.billing.InAppBillingService.BIND"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<permission ns0:name="com.atomicadd.fotos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.atomicadd.fotos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<application ns0:label="@7F130067" ns0:icon="@7F100000" ns0:name="com.atomicadd.fotos.FotosApp" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<service ns0:name="com.atomicadd.fotos.push.MyGcmListenerService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F14025C" ns0:name="com.atomicadd.fotos.FotosSplashScreen" ns0:exported="true" ns0:configChanges="0x000005B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1401F5" ns0:label="@7F130067" ns0:name="com.atomicadd.fotos.moments.MomentsActivity" ns0:exported="true" ns0:configChanges="0x000005B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140015" ns0:label="@7F1302C6" ns0:name="com.atomicadd.fotos.SettingsActivity" ns0:exported="true">
+			<intent-filter ns0:label="@7F1302C6">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F130066" ns0:host="@7F13005F" ns0:pathPrefix="@7F130065"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030007" ns0:name="com.atomicadd.fotos.SlideshowActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1401FC" ns0:label="@7F130303" ns0:name="com.atomicadd.fotos.MovieActivity" ns0:exported="true" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="rtsp"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="application/sdp"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:mimeType="video/mpeg4"/>
+				<data ns0:mimeType="video/mp4"/>
+				<data ns0:mimeType="video/3gp"/>
+				<data ns0:mimeType="video/3gpp"/>
+				<data ns0:mimeType="video/3gpp2"/>
+				<data ns0:mimeType="video/x-ms-wmv"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.atomicadd.fotos.WallPaperActivity" ns0:exported="true" ns0:configChanges="0x000004A0">
+			<intent-filter ns0:label="@7F1302C4">
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F130067">
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:label="" ns0:name="com.atomicadd.fotos.edit.EditActivity" ns0:exported="true" ns0:configChanges="0x000004A0">
+			<intent-filter ns0:label="@7F130021">
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.dropbox.core.android.AuthActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x00000090">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="db-p7w6zox8qc6ft48"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.travel.MapsActivity" ns0:exported="true">
+			<intent-filter ns0:label="@7F130275">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F130066" ns0:host="@7F13005F" ns0:pathPrefix="@7F130060"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140015" ns0:label="" ns0:name="com.atomicadd.fotos.locked.PasswordActivity" ns0:windowSoftInputMode="0x00000005"/>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.ViewImagesActivity" ns0:exported="true" ns0:configChanges="0x000005B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.locked.LockedImagesActivity"/>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.MessageActivity"/>
+		<activity ns0:theme="@7F140015" ns0:label="@7F13013B" ns0:name="com.atomicadd.fotos.feed.PostActivity"/>
+		<activity ns0:theme="@7F140015" ns0:label="@7F130096" ns0:name="com.atomicadd.fotos.feed.CommentsActivity"/>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.feed.MessageActivity"/>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.feed.PeopleSearchActivity"/>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.feed.PeopleBriefsActivity"/>
+		<activity ns0:theme="@7F140015" ns0:label="@7F130258" ns0:name="com.atomicadd.fotos.feed.NotificationsActivity"/>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.feed.PostsActivity" ns0:exported="true">
+			<intent-filter ns0:label="@7F130067">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="@7F13013A" ns0:pathPrefix="@7F130138"/>
+				<data ns0:scheme="https" ns0:host="@7F13013A" ns0:pathPrefix="@7F130137"/>
+				<data ns0:scheme="@7F130066" ns0:host="@7F13005F" ns0:pathPrefix="@7F130138"/>
+				<data ns0:scheme="@7F130066" ns0:host="@7F13005F" ns0:pathPrefix="@7F130137"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F130307" ns0:name="com.atomicadd.fotos.feed.DiscoverActivity"/>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.feed.ProfileActivity" ns0:exported="true">
+			<intent-filter ns0:label="@7F130067">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="@7F13013A" ns0:pathPrefix="@7F130139"/>
+				<data ns0:scheme="https" ns0:host="@7F13013A" ns0:pathPrefix="@7F130136"/>
+				<data ns0:scheme="@7F130066" ns0:host="@7F13005F" ns0:pathPrefix="@7F130139"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140015" ns0:label="" ns0:name="com.atomicadd.fotos.OptionalTextActivity" ns0:windowSoftInputMode="0x00000005"/>
+		<activity ns0:label="@7F1302B9" ns0:icon="@7F080152" ns0:name="com.atomicadd.fotos.ShareToSecureVaultActivity" ns0:exported="true" ns0:configChanges="0x000005B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.locked.RecycleBinActivity"/>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.moments.FragmentHostActivity"/>
+		<activity ns0:name="com.atomicadd.fotos.cloud.cloudview.ViewCloudImagesActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.transfer.TransferActivity"/>
+		<activity ns0:theme="@7F140015" ns0:label="@7F1302B1" ns0:name="com.atomicadd.fotos.search.SearchActivity"/>
+		<activity ns0:theme="@7F140015" ns0:label="@7F13026F" ns0:name="com.atomicadd.fotos.prints.ProductsActivity" ns0:exported="true">
+			<intent-filter ns0:label="@7F13026F">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F130066" ns0:host="@7F13005F" ns0:pathPrefix="@7F130064"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.prints.PrintEditActivity" ns0:exported="true">
+			<intent-filter ns0:label="@7F13026F">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F130066" ns0:host="@7F13005F" ns0:pathPrefix="@7F130061"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140015" ns0:name="com.atomicadd.fotos.prints.PrintProductActivity" ns0:exported="true">
+			<intent-filter ns0:label="@7F13026F">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F130066" ns0:host="@7F13005F" ns0:pathPrefix="@7F130063"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140015" ns0:label="@7F1302CF" ns0:name="com.atomicadd.fotos.prints.CheckoutActivity"/>
+		<activity ns0:theme="@7F140015" ns0:label="@7F13025E" ns0:name="com.atomicadd.fotos.prints.OrdersActivity"/>
+		<activity ns0:theme="@7F140015" ns0:label="@7F1300DB" ns0:name="com.atomicadd.fotos.RewardActivity"/>
+		<meta-data ns0:name="com.google.android.gms.wallet.api.enabled" ns0:value="true"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="3.000000"/>
+		<meta-data ns0:name="firebase_performance_logcat_enabled" ns0:value="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000B"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-7882211028598893~6825715509"/>
+		<meta-data ns0:name="applovin.sdk.key" ns0:value="I4rOoRxoMh7uvHHxT65-cJAO5vwc_yOH1Dfqfbb0HkuB_A7XGCWuVgHbZBCZ8arApV-S5aTNIMZHWgqnuKfN0x"/>
+		<meta-data ns0:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.maps.v2.API_KEY" ns0:value="@7F1301B0"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.atomicadd.fotos.util.firebase.FirebaseAuthRegistrarLazy" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.atomicadd.fotos.util.firebase.CrashlyticsRegistrarLazy" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.atomicadd.fotos.providers.AppInitProvider" ns0:exported="false" ns0:authorities="com.atomicadd.fotos.init" ns0:initOrder="10000"/>
+		<provider ns0:name="com.atomicadd.fotos.providers.MediaProvider" ns0:exported="false" ns0:authorities="com.atomicadd.fotos.media" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="com.atomicadd.fotos.providers.ProxyProvider" ns0:exported="false" ns0:authorities="com.atomicadd.fotos.proxy" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="com.atomicadd.fotos.providers.FileMediaProvider" ns0:exported="false" ns0:authorities="com.atomicadd.fotos.file" ns0:grantUriPermissions="true"/>
+		<receiver ns0:name="com.atomicadd.fotos.receivers.InstallReferReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.atomicadd.fotos.receivers.ShareReceiver" ns0:exported="true"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F130127"/>
+		<activity ns0:theme="@7F1401DB" ns0:label="" ns0:name="com.firebase.ui.auth.KickoffActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1401DB" ns0:label="" ns0:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1401DB" ns0:label="" ns0:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F130197" ns0:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F130188" ns0:name="com.firebase.ui.auth.ui.email.EmailActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F130190" ns0:name="com.firebase.ui.auth.ui.phone.PhoneActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000015"/>
+		<activity ns0:label="@7F130199" ns0:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F13019A" ns0:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F13019A" ns0:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F1401DB" ns0:label="" ns0:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F130188" ns0:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F130152" ns0:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F130067" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F130128"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.GenericIdpActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="genericidp" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.RecaptchaActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="recaptcha" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.ads.OutOfContextTestingActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050004" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.huawei.hms.client.appid" ns0:value="appid=101540977"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F160001"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="7"/>
+	</application>
+</manifest>

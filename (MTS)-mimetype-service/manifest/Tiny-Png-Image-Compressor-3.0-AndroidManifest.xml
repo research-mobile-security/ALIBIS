@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="11" ns0:versionName="3.0" ns0:compileSdkVersion="29" ns0:compileSdkVersionCodename="10" package="com.bloomers.tinypng" platformBuildVersionCode="29" platformBuildVersionName="10">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<application ns0:theme="@7F0E0006" ns0:label="@7F0D002C" ns0:icon="@7F0C0000" ns0:name="com.bloomers.tinypng.AppController" ns0:allowBackup="true" ns0:supportsRtl="true" ns0:fullBackupContent="@7F100000" ns0:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+		<activity ns0:theme="@7F0E01F9" ns0:name="com.bloomers.tinypng.Activites.MainActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0E00E6" ns0:name="com.bloomers.tinypng.Activites.SplashActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F090008"/>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="109377a5d0260314c872fe1309291a2e56900ad6"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-4720087595652542~4354752915"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.bloomers.tinypng.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.bloomers.tinypng.mobileadsinitprovider" ns0:initOrder="100"/>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.bloomers.tinypng.crashlyticsinitprovider" ns0:initOrder="90"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

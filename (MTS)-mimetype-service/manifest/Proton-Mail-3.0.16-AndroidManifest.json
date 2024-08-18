@@ -1,0 +1,870 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "938",
+    "@ns0:versionName": "3.0.16",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "ch.protonmail.android",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "23",
+      "@ns0:targetSdkVersion": "31"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.POST_NOTIFICATIONS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_IMAGES"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_VIDEO"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.READ_CONTACTS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.GET_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "android.permission.USE_BIOMETRIC"
+      },
+      {
+        "@ns0:name": "android.permission.USE_FINGERPRINT"
+      },
+      {
+        "@ns0:name": "android.permission.SCHEDULE_EXACT_ALARM"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "ch.protonmail.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.telephony",
+        "@ns0:required": "false"
+      }
+    ],
+    "queries": {
+      "intent": [
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.BROWSABLE"
+          },
+          "data": {
+            "@ns0:scheme": "http"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.DIAL"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:scheme": "https"
+          }
+        }
+      ],
+      "package": {
+        "@ns0:name": "me.proton.android.calendar"
+      }
+    },
+    "permission": {
+      "@ns0:name": "ch.protonmail.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "@ns0:protectionLevel": "0x00000002"
+    },
+    "application": {
+      "@ns0:theme": "@7F1301CC",
+      "@ns0:label": "@7F120041",
+      "@ns0:icon": "@7F0F0000",
+      "@ns0:name": "ch.protonmail.android.core.ProtonMailApplication",
+      "@ns0:taskAffinity": "",
+      "@ns0:allowBackup": "false",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:networkSecurityConfig": "@7F150000",
+      "@ns0:roundIcon": "@7F0F0001",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "provider": [
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "ch.protonmail.android.androidx-startup",
+          "meta-data": [
+            {
+              "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.profileinstaller.ProfileInstallerInitializer",
+              "@ns0:value": "androidx.startup"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "ch.protonmail.android.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F150001"
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "ch.protonmail.android.firebaseinitprovider",
+          "@ns0:initOrder": "100"
+        },
+        {
+          "@ns0:name": "io.sentry.android.core.SentryPerformanceProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "ch.protonmail.android.SentryPerformanceProvider",
+          "@ns0:initOrder": "200"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "ch.protonmail.android.receivers.LocaleChangeReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.LOCALE_CHANGED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.receivers.OnBootReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.api.segments.event.AlarmReceiver"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.receivers.NotificationReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "protonmail_notif_action_archive"
+              },
+              {
+                "@ns0:name": "protonmail_notif_action_delete"
+              },
+              {
+                "@ns0:name": "protonmail_notif_action_trash"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.receivers.TimeChangedReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.TIME_SET"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BATTERY_OKAY"
+              },
+              {
+                "@ns0:name": "android.intent.action.BATTERY_LOW"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIME_SET"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+          "@ns0:enabled": "@7F050009",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.impl.background.systemalarm.UpdateProxies"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "androidx.profileinstaller.ProfileInstallReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "androidx.profileinstaller.action.INSTALL_PROFILE"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "androidx.profileinstaller.action.SKIP_FILE"
+              }
+            }
+          ]
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "ch.protonmail.android.notifications.data.remote.fcm.PMFirebaseMessagingService",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.api.services.MessagesService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.api.segments.event.EventUpdaterService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.storage.AttachmentClearingService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.storage.MessageBodyClearingService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.api.services.ConnectivityService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.google.firebase.messaging.FirebaseMessagingService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "intent-filter": {
+            "@ns0:priority": "-500",
+            "action": {
+              "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.iid.Registrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+          "@ns0:enabled": "@7F050009",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemjob.SystemJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "@7F05000B",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.foreground.SystemForegroundService",
+          "@ns0:enabled": "@7F05000A",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "backend:com.google.android.datatransport.cct.CctBackendFactory",
+            "@ns0:value": "cct"
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:name": "ch.protonmail.android.ViewTestActivity"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.util.HiltViewTestActivity"
+        },
+        {
+          "@ns0:theme": "@7F1301D3",
+          "@ns0:name": "ch.protonmail.android.mailbox.presentation.ui.MailboxActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "0",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:maxRecents": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.app.shortcuts",
+            "@ns0:resource": "@7F150002"
+          }
+        },
+        {
+          "@ns0:label": "@7F12025E",
+          "@ns0:name": "ch.protonmail.android.settings.presentation.AttachmentStorageActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.details.presentation.ui.SwitchUserAndOpenMessageDetailsActivity"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.details.presentation.ui.MessageDetailsActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:parentActivityName": "ch.protonmail.android.mailbox.presentation.ui.MailboxActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": ".mailbox.presentation.ui.MailboxActivity"
+          }
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.activities.messageDetails.MessageViewHeadersActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:parentActivityName": "ch.protonmail.android.details.presentation.ui.MessageDetailsActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": ".details.presentation.ui.MessageDetailsActivity"
+          }
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.activities.composeMessage.ComposeMessageActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000015",
+          "@ns0:parentActivityName": "ch.protonmail.android.mailbox.presentation.ui.MailboxActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": ".mailbox.presentation.ui.MailboxActivity"
+          },
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "text/plain"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "android.intent.action.SENDTO"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "mailto"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.compose.presentation.ui.SetMessageExpirationActivity"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.compose.presentation.ui.SetMessagePasswordActivity"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.activities.AddAttachmentsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000480"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.activities.SearchActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000004"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.contacts.ContactsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:label": "@7F120444",
+          "@ns0:name": "ch.protonmail.android.settings.presentation.SettingsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:label": "@7F12001E",
+          "@ns0:name": "ch.protonmail.android.settings.presentation.AccountSettingsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.settings.presentation.EditSettingsItemActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:parentActivityName": "ch.protonmail.android.settings.presentation.SettingsActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": ".settings.presentation.SettingsActivity"
+          }
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.settings.pin.CreatePinActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:label": "@7F120449",
+          "@ns0:name": "ch.protonmail.android.settings.pin.ChangePinActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.settings.pin.ValidatePinActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:label": "@7F12012F",
+          "@ns0:name": "ch.protonmail.android.contacts.details.presentation.ContactDetailsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000020"
+        },
+        {
+          "@ns0:label": "@7F12012F",
+          "@ns0:name": "ch.protonmail.android.contacts.details.edit.EditContactDetailsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:label": "@7F120178",
+          "@ns0:name": "ch.protonmail.android.settings.presentation.DefaultAddressActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:label": "@7F120496",
+          "@ns0:name": "ch.protonmail.android.settings.swipe.SwipeChooserActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:label": "@7F1200CE",
+          "@ns0:name": "ch.protonmail.android.settings.pin.PinSettingsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:label": "@7F120255",
+          "@ns0:name": "ch.protonmail.android.labels.presentation.ui.LabelsManagerActivity",
+          "@ns0:exported": "false",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:label": "@7F120330",
+          "@ns0:name": "ch.protonmail.android.settings.presentation.NotificationSettingsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:label": "@7F120332",
+          "@ns0:name": "ch.protonmail.android.settings.presentation.SnoozeNotificationsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:label": "@7F1204AC",
+          "@ns0:name": "ch.protonmail.android.contacts.groups.details.ContactGroupDetailsActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:label": "@7F1204AC",
+          "@ns0:name": "ch.protonmail.android.contacts.groups.edit.ContactGroupEditCreateActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:label": "@7F1204AB",
+          "@ns0:name": "ch.protonmail.android.contacts.groups.edit.chooser.AddressChooserActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.labels.presentation.ui.ParentFolderPickerActivity",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.settings.presentation.ui.ThemeChooserActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "me.proton.core.auth.presentation.ui.AuthHelpActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.auth.presentation.ui.ChooseAddressActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1301CB",
+          "@ns0:name": "me.proton.core.auth.presentation.ui.AddAccountActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1301D6",
+          "@ns0:name": "me.proton.core.crypto.validator.presentation.ui.CryptoValidatorErrorDialogActivity"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.onboarding.newuser.presentation.NewUserOnboardingActivity"
+        },
+        {
+          "@ns0:name": "ch.protonmail.android.onboarding.existinguser.presentation.ExistingUserOnboardingActivity"
+        },
+        {
+          "@ns0:name": "me.proton.core.auth.presentation.ui.LoginActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.auth.presentation.ui.SecondFactorActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.auth.presentation.ui.TwoPassModeActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.auth.presentation.ui.CreateAddressActivity"
+        },
+        {
+          "@ns0:name": "me.proton.core.usersettings.presentation.ui.UpdateRecoveryEmailActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.usersettings.presentation.ui.PasswordManagementActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1301D6",
+          "@ns0:name": "me.proton.core.auth.presentation.ui.ConfirmPasswordActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.auth.presentation.ui.signup.SignupActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1301C7",
+          "@ns0:name": "me.proton.core.humanverification.presentation.ui.HumanVerificationActivity"
+        },
+        {
+          "@ns0:name": "me.proton.core.payment.presentation.ui.PaymentOptionsActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "me.proton.core.payment.presentation.ui.BillingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "me.proton.core.payment.presentation.ui.PaymentTokenApprovalActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "me.proton.core.plan.presentation.ui.UpgradeActivity"
+        },
+        {
+          "@ns0:theme": "@7F1301D6",
+          "@ns0:name": "me.proton.core.plan.presentation.ui.UnredeemedPurchaseActivity"
+        },
+        {
+          "@ns0:theme": "@7F1301C3",
+          "@ns0:name": "me.proton.core.report.presentation.ui.BugReportActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1301D6",
+          "@ns0:name": "me.proton.core.presentation.ui.alert.ForceUpdateActivity"
+        },
+        {
+          "@ns0:theme": "@7F130121",
+          "@ns0:name": "androidx.biometric.DeviceCredentialHandlerActivity",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1302FB",
+          "@ns0:name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+          "@ns0:exported": "false",
+          "@ns0:stateNotNeeded": "true"
+        }
+      ],
+      "activity-alias": {
+        "@ns0:name": "ch.protonmail.android.activities.SplashActivity",
+        "@ns0:targetActivity": "ch.protonmail.android.mailbox.presentation.ui.MailboxActivity"
+      },
+      "meta-data": {
+        "@ns0:name": "com.google.android.gms.version",
+        "@ns0:value": "@7F0A000F"
+      }
+    }
+  }
+}

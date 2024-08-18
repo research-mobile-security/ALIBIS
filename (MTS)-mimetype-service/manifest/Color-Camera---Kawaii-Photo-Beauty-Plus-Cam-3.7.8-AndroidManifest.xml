@@ -1,0 +1,160 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="721" ns0:versionName="3.7.8" ns0:installLocation="0" ns0:compileSdkVersion="28" ns0:compileSdkVersionCodename="9" package="com.selfiecamera.sweet.selfie.camera" platformBuildVersionCode="721" platformBuildVersionName="3.7.8">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER_HINTS"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.READ_LOGS"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.PACKAGE_USAGE_STATS"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<application ns0:theme="@7F0F000A" ns0:label="@7F0E002F" ns0:icon="@7F0800E9" ns0:name="com.hawk.android.app.HiApplication" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="false" ns0:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.selfiecamera.sweet.selfie.camera.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F110001"/>
+		</provider>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.splash.GuideActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.splash.SplashActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:resizeableActivity="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.MainActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.camera.CameraActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.camera.mask.MaskPreviewActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.hawk.android.hicamera.edit.EditImageActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.hawk.android.hicamera.setting.SettingActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0F000C" ns0:label="@7F0E0156" ns0:icon="@7F08005B" ns0:name="com.hawk.android.hicamera.gallery.GalleryActivity" ns0:exported="true" ns0:taskAffinity=".AliceGallery" ns0:launchMode="1" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.gallery.album.AlbumPicActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.megagame.MaterialMegagameActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.edit.mode.square.SquareActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.camera.PreviewActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.hawk.android.ui.base.PermissionAccessActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<meta-data ns0:name="UMENG_APPKEY" ns0:value="5876e7df99f0c774fa0012e8"/>
+		<meta-data ns0:name="UMENG_CHANNEL" ns0:value="google"/>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="d3773b27d3eeb003e9f4f0698884546eca53055f"/>
+		<activity ns0:name="com.hawk.android.hicamera.setting.storage.SelectStorageActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<receiver ns0:name="com.hawk.android.service.KeepAppActiveReceiver">
+			<intent-filter>
+				<action ns0:name="alice.hicamera.keepappactive"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.hawk.android.hicamera.share.ShareActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0F000C" ns0:label="@7F0E0195" ns0:name="com.hawk.android.hicamera.setting.privacy.PrivacyActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.loading.LoadActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.camera.mask.MaskCameraActivity" ns0:clearTaskOnLaunch="true" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000023"/>
+		<meta-data ns0:name="com.hawk.android.download.DownloadModule" ns0:value="WinkModule"/>
+		<meta-data ns0:name="facebook_index_id" ns0:value="@7F0E00CA"/>
+		<meta-data ns0:name="facebook_share_id" ns0:value="@7F0E00CB"/>
+		<meta-data ns0:name="facebook_edit_id" ns0:value="@7F0E00C9"/>
+		<meta-data ns0:name="edmob_index_id" ns0:value="@7F0E009E"/>
+		<meta-data ns0:name="edmob_share_id" ns0:value="@7F0E009F"/>
+		<meta-data ns0:name="edmob_edit_id" ns0:value="@7F0E009D"/>
+		<meta-data ns0:name="admob_appid" ns0:value="@7F0E002B"/>
+		<activity ns0:theme="@7F0F000C" ns0:name="com.hawk.android.hicamera.setting.feedback.FeedbackActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<meta-data ns0:name="CHANNEL" ns0:value="1001"/>
+		<meta-data ns0:name="IS_CN" ns0:value="false"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F0E00C8"/>
+		<activity ns0:theme="@7F0F021A" ns0:label="@7F0E002F" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F0E00CC"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.selfiecamera.sweet.selfie.camera.FacebookInitProvider"/>
+		<receiver ns0:name="com.ultralad.ser.ska">
+			<intent-filter>
+				<action ns0:name="android.intent.action.USER_PRESENT"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+				<action ns0:name="com.xdandroid.hellodaemon.CANCEL_JOB_ALARM_SUB"/>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+				<action ns0:name="android.net.wifi.RSSI_CHANGED"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_ADDED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REMOVED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:label="" ns0:name="com.ScreenActivity" ns0:process=":service" ns0:taskAffinity=":screen" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.mopub.common.privacy.ConsentDialogActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.common.MoPubBrowser" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MoPubActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MraidActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.RewardedMraidActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MraidVideoPlayerActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:taskAffinity="com.google.android.gms.ads" ns0:multiprocess="true" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.inmobi.rendering.InMobiAdActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x00000DB0" ns0:hardwareAccelerated="true" ns0:resizeableActivity="false"/>
+		<provider ns0:name="com.baron.MPSharedPreferences.MPConfigProvider" ns0:authorities="com.selfiecamera.sweet.selfie.camera.mpconfigprovider"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.selfiecamera.sweet.selfie.camera.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.internal.ipc.RemoteANActivity" ns0:exported="false" ns0:process=":adnw" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService" ns0:exported="false"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsMessengerService" ns0:exported="false" ns0:process=":adnw"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.selfiecamera.sweet.selfie.camera.AudienceNetworkContentProvider"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0008"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="android.support.VERSION" ns0:value="26.1.0"/>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.selfiecamera.sweet.selfie.camera.crashlyticsinitprovider" ns0:initOrder="90"/>
+	</application>
+</manifest>

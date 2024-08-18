@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:label="@7F0B001E" ns0:sharedUserId="com.ghostsq.commander.userId" ns0:versionCode="447" ns0:versionName="1.62.3" ns0:installLocation="0" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.ghostsq.commander" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="33"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="true"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.ACCESS_SUPERUSER"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<application ns0:label="@7F0B001E" ns0:icon="@7F090000" ns0:process="com.ghostsq.commander" ns0:launchMode="2" ns0:allowBackup="true" ns0:largeHeap="true" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="12451000"/>
+		<activity ns0:theme="@7F0C0004" ns0:label="@7F0B001E" ns0:name="com.ghostsq.commander.FileCommander" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000002">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<data ns0:mimeType="*/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<data ns0:mimeType="*/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="ftp"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="file"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="inode/directory"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:mimeType="application/x-zip-compressed"/>
+				<data ns0:mimeType="application/zip"/>
+				<data ns0:pathPattern=".*.zip"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH_LONG_PRESS"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0B01E5" ns0:name="com.ghostsq.commander.TextViewer" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x000000A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0B0087" ns0:name="com.ghostsq.commander.Editor" ns0:exported="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0B0130" ns0:name="com.ghostsq.commander.PictureViewer" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0B0137" ns0:name="com.ghostsq.commander.Prefs"/>
+		<activity ns0:label="@7F0B0137" ns0:name="com.ghostsq.commander.smb.Prefs"/>
+		<activity ns0:name="com.ghostsq.commander.sftp.Prefs"/>
+		<activity ns0:label="@7F0B00D7" ns0:name="com.ghostsq.commander.sftp.KeysActivity"/>
+		<activity ns0:label="@7F0B00A8" ns0:name="com.ghostsq.commander.FileTypes" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0B01E1" ns0:name="com.ghostsq.commander.toolbuttons.ToolButtonsProps"/>
+		<activity ns0:theme="@7F0C0000" ns0:label="@7F0B0048" ns0:name="com.ghostsq.commander.ServerForm"/>
+		<activity ns0:theme="@7F0C0000" ns0:label="@7F0B012D" ns0:name="com.ghostsq.commander.root.EditRootPermissions"/>
+		<activity ns0:theme="@7F0C0000" ns0:label="@7F0B012D" ns0:name="com.ghostsq.commander.adapters.EditFTPPermissions"/>
+		<activity ns0:theme="@7F0C0000" ns0:label="@7F0B00FB" ns0:name="com.ghostsq.commander.MultRename"/>
+		<provider ns0:name="com.ghostsq.commander.FileProvider" ns0:exported="true" ns0:authorities="com.ghostsq.commander.FileProvider"/>
+		<provider ns0:name="com.ghostsq.commander.StreamProvider" ns0:exported="true" ns0:authorities="com.ghostsq.commander.StreamProvider"/>
+		<service ns0:name="com.ghostsq.commander.StreamServer"/>
+		<service ns0:name="com.ghostsq.commander.BackgroundWork"/>
+		<meta-data ns0:name="com.sec.android.support.multiwindow" ns0:value="true"/>
+	</application>
+</manifest>

@@ -1,0 +1,187 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="20200327" ns0:versionName="2020.03.27" ns0:compileSdkVersion="29" ns0:compileSdkVersionCodename="10" package="com.rarlab.rar" platformBuildVersionCode="29" platformBuildVersionName="10">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<permission ns0:name="com.rarlab.rar.openadsdk.permission.TT_PANGOLIN" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.rarlab.rar.openadsdk.permission.TT_PANGOLIN"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="true"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.REORDER_TASKS"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+	</queries>
+	<application ns0:theme="@7F100007" ns0:label="RAR" ns0:icon="@7F0D0026" ns0:name="com.szyfzfrar.rar.base.BaseApplication" ns0:allowBackup="false" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:networkSecurityConfig="@7F120003" ns0:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+		<activity ns0:theme="@7F100211" ns0:name="com.szyfzfrar.rar.ui.SplashActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.szyfzfrar.rar.ui.UserAgreementActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.MainActivity" ns0:launchMode="2" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="file"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.szyfzfrar.rar.ui.FilePreviewActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.SearchActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.PreviewFileActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.DocActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.PastFilePreviewActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.ImageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.ImageSetActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.MusicActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.PictureActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.VideoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.WechatFileActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.ComSetActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.TransferActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.WaitComActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.SelectPathActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.AddComFileActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.UnComSetActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.PayVipActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.AboutMeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.SuggestActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.HelpActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.ShareAppActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.TransferRecordActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.HistoryActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.ShowImageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.ImageHistoryActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.VideoHistoryActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.VideoAndImageComSetActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.ImageComQualityActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.ImageComSizeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.ShowVideoComActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.VideoComActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.FileShowActivity" ns0:launchMode="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.PdfActivity"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.PhotoVIewActivity"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.LoginActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.szyfzfrar.rar.ui.RegisterActivity" ns0:screenOrientation="1"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.rarlab.rar.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120004"/>
+		</provider>
+		<activity ns0:name="com.tencent.smtt.sdk.VideoActivity" ns0:exported="false" ns0:launchMode="2" ns0:configChanges="0x000004A0" ns0:alwaysRetainTaskState="true">
+			<intent-filter>
+				<action ns0:name="com.tencent.smtt.tbs.video.PLAY"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="AGENCY_CHANNEL" ns0:value="yuxu"/>
+		<meta-data ns0:name="UMENG_CHANNEL" ns0:value="yingyongbao"/>
+		<meta-data ns0:name="UMENG_APPKEY" ns0:value="5a39404c8f4a9d4bb800045f"/>
+		<meta-data ns0:name="COMPANY_NAME" ns0:value="深圳市远方卓越科技有限公司"/>
+		<meta-data ns0:name="KEFU_QQ" ns0:value=" QQ3530947368"/>
+		<receiver ns0:name="com.szyfzfrar.rar.receiver.AppRegister" ns0:permission="com.tencent.mm.plugin.permission.SEND">
+			<intent-filter>
+				<action ns0:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F100160" ns0:name="com.baidu.video.ui.MediaPlayerActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.rarlab.rar.wxapi.WXPayEntryActivity" ns0:exported="true" ns0:launchMode="1"/>
+		<service ns0:name="com.tencent.tbs.one.optional.TBSOneStandaloneService" ns0:process=":standalone"/>
+		<provider ns0:name="com.qq.e.comm.GDTFileProvider" ns0:exported="false" ns0:authorities="com.rarlab.rar.gdt.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120002"/>
+		</provider>
+		<provider ns0:name="com.bytedance.sdk.openadsdk.TTFileProvider" ns0:exported="false" ns0:authorities="com.rarlab.rar.TTFileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120001"/>
+		</provider>
+		<provider ns0:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider" ns0:exported="false" ns0:authorities="com.rarlab.rar.TTMultiProvider"/>
+		<provider ns0:name="com.fanneng.android.web.SuperWebX5FileProvider" ns0:exported="false" ns0:authorities="com.rarlab.rar.SuperWebX5FileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120005"/>
+		</provider>
+		<activity ns0:theme="@7F10020A" ns0:name="com.fanneng.android.web.file.ActionActivity" ns0:exported="false" ns0:launchMode="0" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000003"/>
+		<receiver ns0:name="com.fanneng.android.web.file.RealDownLoader$NotificationBroadcastReceiver"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:name="com.alipay.sdk.app.H5PayActivity" ns0:exported="false" ns0:screenOrientation="3" ns0:configChanges="0x000000E0"/>
+		<activity ns0:name="com.alipay.sdk.app.H5AuthActivity" ns0:exported="false" ns0:screenOrientation="3" ns0:configChanges="0x000004E0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.alipay.sdk.app.PayResultActivity" ns0:exported="true" ns0:launchMode="3" ns0:configChanges="0x000004E0">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.alipay.sdk.app.AlipayResultActivity" ns0:exported="true" ns0:launchMode="2"/>
+		<service ns0:name="com.qq.e.comm.DownloadService" ns0:exported="false" ns0:multiprocess="true"/>
+		<activity ns0:name="com.qq.e.ads.ADActivity" ns0:multiprocess="true" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.qq.e.ads.PortraitADActivity" ns0:multiprocess="true" ns0:screenOrientation="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.qq.e.ads.LandscapeADActivity" ns0:multiprocess="true" ns0:screenOrientation="6" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.qq.e.ads.RewardvideoPortraitADActivity" ns0:multiprocess="true" ns0:configChanges="0x000004B0">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+		</activity>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.qq.e.ads.RewardvideoLandscapeADActivity" ns0:multiprocess="true" ns0:screenOrientation="0" ns0:configChanges="0x000004B0">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+		</activity>
+		<activity ns0:theme="@android:01030011" ns0:name="com.qq.e.ads.DialogActivity" ns0:multiprocess="true"/>
+		<meta-data ns0:name="ZEUS_PLUGIN_PANGLE" ns0:value="{                 apiVersionCode:5102,                 packageName:com.byted.pangle,                 minPluginVersion:5102,                 internalPath:1763780556,                 internalVersionCode:5102             }"/>
+		<meta-data ns0:name="ZEUS_PLUGIN_com.byted.csj.ext" ns0:value="{apiVersionCode:999,packageName:com.byted.csj.ext,minPluginVersion:1000,maxPluginVersion:999999999,internalPath:'',internalVersionCode:-1, appKey:'',appSecretKey:''}"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity" ns0:exported="false" ns0:launchMode="0" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity" ns0:exported="false" ns0:launchMode="0" ns0:screenOrientation="1" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T" ns0:exported="false" ns0:launchMode="0" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity" ns0:exported="false" ns0:launchMode="0" ns0:screenOrientation="0" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity" ns0:exported="false" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T" ns0:exported="false" ns0:launchMode="2" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity" ns0:exported="false" ns0:launchMode="2" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<provider ns0:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager" ns0:exported="false" ns0:process=":downloader" ns0:authorities="com.rarlab.rar.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"/>
+		<provider ns0:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager" ns0:exported="false" ns0:authorities="com.rarlab.rar.pangle.servermanager.main"/>
+		<provider ns0:name="com.bytedance.pangle.provider.MainProcessProviderProxy" ns0:exported="false" ns0:authorities="com.rarlab.rar.pangle.provider.proxy.main"/>
+		<provider ns0:name="com.bytedance.pangle.FileProvider" ns0:exported="false" ns0:authorities="com.rarlab.rar.pangle.fileprovider" ns0:grantUriPermissions="true"/>
+		<activity ns0:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity" ns0:exported="false"/>
+		<activity ns0:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.ss.android.downloadlib.activity.TTDelegateActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.ss.android.downloadlib.activity.JumpKllkActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<receiver ns0:name="com.ss.android.downloadlib.core.download.DownloadReceiver" ns0:exported="false"/>
+		<service ns0:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<service ns0:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" ns0:exported="false" ns0:process=":downloader">
+			<intent-filter>
+				<action ns0:name="com.ss.android.socialbase.downloader.remote"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService" ns0:exported="false"/>
+		<service ns0:name="com.ss.android.socialbase.downloader.downloader.DownloadService" ns0:exported="false"/>
+		<service ns0:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService" ns0:exported="false"/>
+		<service ns0:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" ns0:exported="false"/>
+		<meta-data ns0:name="ZEUS_PLUGIN_LIVE" ns0:value="{                 apiVersionCode:2050,                 packageName:com.byted.live.lite,                 minPluginVersion:205000,                 maxPluginVersion:209999,                 appKey:'9f64a31d9d0456d845733718c4c6934d',                 appSecretKey:'eb7fc60ac5ed4708e13d9c7f8e4096a7',                 isSupportLibIsolate:true,                 internalPath:'plugins/zeusliveplugin.apk',                 internalVersionCode:5  }"/>
+		<meta-data ns0:name="LIVE_API_VERSION_CODE" ns0:value="2050"/>
+		<activity ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity" ns0:exported="false" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat" ns0:exported="false" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_T" ns0:exported="false" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_T_SingleTask1" ns0:exported="false" ns0:launchMode="2" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_T_SingleTop1" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Behind" ns0:exported="false" ns0:screenOrientation="3" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_T" ns0:exported="false" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_Portrait" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.bytedance.android.openliveplugin.stub.activity.Stub_Standard_Activity_DouyinWebAuthorizeActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityProxy" ns0:exported="true"/>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_SingleTask2" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004E0" ns0:windowSoftInputMode="0x00000012"/>
+	</application>
+</manifest>

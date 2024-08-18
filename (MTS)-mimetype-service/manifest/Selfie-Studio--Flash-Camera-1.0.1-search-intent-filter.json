@@ -1,0 +1,64 @@
+{
+    "root": {
+        "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+        "intent-filter": [
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MAIN"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.CHOOSER"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.SEND"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.PACKAGE_ADDED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.PACKAGE_REMOVED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.PACKAGE_REPLACED"
+                    }
+                ],
+                "data": {
+                    "@ns0:scheme": "package"
+                }
+            }
+        ]
+    }
+}

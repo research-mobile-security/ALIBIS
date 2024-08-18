@@ -1,0 +1,227 @@
+{
+    "root": {
+        "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+        "intent-filter": [
+            {
+                "action": {
+                    "@ns0:name": "android.intent.maros.gallery.action.NOTIFICATION_ACTION"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MAIN"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.LAUNCHER"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.APP_GALLERY"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": [
+                    {
+                        "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                    },
+                    {
+                        "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.BROWSABLE"
+                    }
+                ],
+                "data": [
+                    {
+                        "@ns0:scheme": "http"
+                    },
+                    {
+                        "@ns0:scheme": "https"
+                    },
+                    {
+                        "@ns0:scheme": "content"
+                    },
+                    {
+                        "@ns0:scheme": "file"
+                    },
+                    {
+                        "@ns0:mimeType": "application/vnd.google.panorama360+jpg"
+                    },
+                    {
+                        "@ns0:mimeType": "image/*"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.GET_CONTENT"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.OPENABLE"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    }
+                ],
+                "data": [
+                    {
+                        "@ns0:mimeType": "image/*"
+                    },
+                    {
+                        "@ns0:mimeType": "video/*"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.PICK"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": [
+                    {
+                        "@ns0:mimeType": "image/*"
+                    },
+                    {
+                        "@ns0:mimeType": "video/*"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.GET_CONTENT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                "data": {
+                    "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.PICK"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": [
+                    {
+                        "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                    },
+                    {
+                        "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.maros.gallery.action.EXCLUDE_ACTION"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.maros.gallery.action.RESET_PIN_ACTION"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.maros.gallery.action.HELP_ACTION"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.maros.gallery.action.ABOUT_ACTION"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.maros.gallery.action.MORE_APPS_ACTION"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.google.android.gms.appinvite.ACTION_PREVIEW"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "@ns0:priority": "-500",
+                "action": {
+                    "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+                }
+            },
+            {
+                "data": {
+                    "@ns0:scheme": "tagmanager.c.com.maros.gallery"
+                },
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.BROWSABLE"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+                },
+                "category": {
+                    "@ns0:name": "com.maros.gallery"
+                }
+            },
+            {
+                "@ns0:priority": "-500",
+                "action": {
+                    "@ns0:name": "com.google.firebase.INSTANCE_ID_EVENT"
+                }
+            }
+        ]
+    }
+}

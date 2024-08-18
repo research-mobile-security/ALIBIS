@@ -1,0 +1,1112 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "501901150",
+    "@ns0:versionName": "v8.5.0.0.G050.0",
+    "@ns0:compileSdkVersion": "30",
+    "@ns0:compileSdkVersionCodename": "11",
+    "@package": "com.tclhz.gallery",
+    "@platformBuildVersionCode": "30",
+    "@platformBuildVersionName": "11",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "26",
+      "@ns0:targetSdkVersion": "30"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.BLUETOOTH"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_MEDIA_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.NFC"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "com.tct.smart.tlink.permission.DLNA_CAST"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "tct.datahub.provider.teyeid.permission"
+      },
+      {
+        "@ns0:name": "com.tcl.mirrorsource.permission.MULTI_SCREEN_SHARE"
+      },
+      {
+        "@ns0:name": "com.tcl.associateassistant.permission.MULTI_SCREEN_SHARE"
+      },
+      {
+        "@ns0:name": "com.tct.iris.permission.CONTROL_NXTVISION"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      },
+      {
+        "@ns0:name": "com.google.android.gms.permission.AD_ID"
+      }
+    ],
+    "permission": [
+      {
+        "@ns0:label": "@7F1302E3",
+        "@ns0:name": "com.tcl.gallery.preload.media.permission",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1302E2"
+      },
+      {
+        "@ns0:label": "Photo Clean Permission",
+        "@ns0:name": "com.tclhz.gallery.LAUNCH_PHOTO_CLEAN",
+        "@ns0:protectionLevel": "0x00000000"
+      }
+    ],
+    "queries": {
+      "intent": {
+        "action": {
+          "@ns0:name": "android.intent.action.SEND"
+        },
+        "data": {
+          "@ns0:mimeType": "image/*"
+        }
+      },
+      "package": {
+        "@ns0:name": "com.verizon.fivegcamera"
+      }
+    },
+    "uses-feature": {
+      "@ns0:glEsVersion": "0x00020000",
+      "@ns0:required": "true"
+    },
+    "application": {
+      "@ns0:theme": "@7F14000D",
+      "@ns0:label": "@7F130059",
+      "@ns0:icon": "@7F0F0000",
+      "@ns0:name": "com.tcl.gallery.app.GalleryApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:roundIcon": "@7F0F0000",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "@ns0:allowNativeHeapPointerTagging": "false",
+      "service": [
+        {
+          "@ns0:name": "com.tcl.gallery.action.service.DelayDeleteMediaItemIntentService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.data.service.ClassifyService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.data.service.MemoryCreateService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "tct.gpdatahub.sdk.gpupload.job.JobsService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.app.preload.PreLoadMediaService",
+          "@ns0:permission": "com.tcl.gallery.preload.media.permission",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.tcl.gallery.preload.mediaitem"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.tct.smart.switchdata.DataService",
+          "@ns0:permission": "com.tct.smart.switchphone.permission.SWITCH_DATA",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.tct.smart.switchdata.ACTION_SWITCH_DATA"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.photoeditor.inpainting.InpaintingService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:process": ":inpainting"
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.data.database.negativeScreen.service.ScreenService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.tcl.imageclear.service.ImagePreScanService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "com.tcl.imageclear.service.ImgBgScanService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.inpainting.InpaintingService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:process": ":inpainting"
+        },
+        {
+          "@ns0:name": "com.google.mlkit.common.internal.MlKitComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.mlkit.vision.label.defaults.thin.ThinLabelRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "backend:com.google.android.datatransport.cct.CctBackendFactory",
+            "@ns0:value": "cct"
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "tct.theme.apply",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "tct_datahub",
+          "@ns0:value": "tct_teye_app"
+        },
+        {
+          "@ns0:name": "com.google.android.geo.API_KEY",
+          "@ns0:value": "AIzaSyBWWgqt8oEdoFdTlwA4kSHzLYPXKNWDzWI"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0B0010"
+        }
+      ],
+      "uses-library": [
+        {
+          "@ns0:name": "org.apache.http.legacy",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "androidx.window.extensions",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "androidx.window.sidecar",
+          "@ns0:required": "false"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F140127",
+          "@ns0:name": "com.tcl.gallery.app.PermissionActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000D80",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.OPENABLE"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "com.tct.gallery.GET_CONTENT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "@ns0:label": "@7F130328",
+              "action": {
+                "@ns0:name": "android.intent.action.ATTACH_DATA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ]
+            },
+            {
+              "@ns0:label": "@7F1300C9",
+              "action": {
+                "@ns0:name": "com.android.camera.action.CROP"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.ALTERNATIVE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F140128",
+          "@ns0:name": "com.tcl.gallery.app.GalleryActivity",
+          "@ns0:configChanges": "0x00000D80",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.APP_GALLERY"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "com.tcl.gallery.app.GalleryActivity"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "android.app.shortcuts",
+            "@ns0:resource": "@7F16000D"
+          }
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:label": "@7F130367",
+          "@ns0:name": "com.tcl.gallery.view.album.AlbumDetailActivity",
+          "@ns0:configChanges": "0x00000D80",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.tcl.gallery.view.album.albumDetail"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F140122",
+          "@ns0:label": "@7F130059",
+          "@ns0:name": "com.tcl.gallery.filtershow.FilterShowActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000F80",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F1400F4",
+          "@ns0:name": "com.tcl.gallery.collage.CollageProcessActivity",
+          "@ns0:screenOrientation": "14",
+          "@ns0:configChanges": "0x00000F00"
+        },
+        {
+          "@ns0:theme": "@7F14034C",
+          "@ns0:name": "com.tcl.gallery.view.video.MovieActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.multipick.MultiPickActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.multipick.replace.ReplaceMomentMediaItemActivity",
+          "@ns0:screenOrientation": "14"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.albums.select.album.SelectMediaAlbumActivity",
+          "@ns0:configChanges": "0x00000D00"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.albums.select.mediaitem.SelectMediaItemActivity",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000D00"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.albums.others.OthersMediaAlbumActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.albums.select.others.SelectOthersMediaAlbumActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.singlepick.SinglePickActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.moments.select.SelectMomentMediaItemActivity"
+        },
+        {
+          "@ns0:theme": "@7F140000",
+          "@ns0:name": "com.tcl.gallery.action.ActionActivity",
+          "@ns0:configChanges": "0x00000F00"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.details.DetailsActivity",
+          "@ns0:configChanges": "0x00000D00"
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.wallpaper.WallpaperActivity",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@7F14034C",
+          "@ns0:label": "@7F130142",
+          "@ns0:name": "com.tcl.gallery.view.video.edit.VideoEditActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000D80",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": {
+            "@ns0:label": "@7F1300C9",
+            "action": {
+              "@ns0:name": "com.android.camera.action.TRIM"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": [
+              {
+                "@ns0:scheme": "content"
+              },
+              {
+                "@ns0:scheme": "file"
+              },
+              {
+                "@ns0:mimeType": "video/*"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@7F140164",
+          "@ns0:name": "com.tcl.gallery.settings.SettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F140164",
+          "@ns0:name": "com.tcl.gallery.settings.PrivacyActivity",
+          "@ns0:configChanges": "0x00000F80"
+        },
+        {
+          "@ns0:theme": "@7F1400EE",
+          "@ns0:name": "com.tcl.gallery.burstshot.BurstShotActivity",
+          "@ns0:configChanges": "0x00000DB0"
+        },
+        {
+          "@ns0:theme": "@7F14027A",
+          "@ns0:name": "com.tcl.gallery.view.internalPreview.InternalPreviewActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000F80"
+        },
+        {
+          "@ns0:theme": "@7F14027A",
+          "@ns0:name": "com.tcl.gallery.imageclear.ImageClearPicPreviewActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x00000F80"
+        },
+        {
+          "@ns0:theme": "@7F140121",
+          "@ns0:name": "com.tcl.gallery.view.externalPreview.ExternalPreviewActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000F80",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "rtsp"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "com.android.camera.action.REVIEW"
+                }
+              ],
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                },
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.smartalbums.smartmoments.SmartAlbumShowActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F14027A",
+          "@ns0:name": "com.tcl.gallery.smartalbums.smartItemPreview.SmartItemPreviewActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.smartalbums.locationalbum.LocationAlbumActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.faces.FaceAlbumActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.explore.moreAlbum.peopleAlbum.PeopleAlbumActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.explore.moreAlbum.peopleAlbum.details.PeopleAlbumDetailsActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F14027A",
+          "@ns0:name": "com.tcl.gallery.explore.moreAlbum.peopleAlbum.details.PeopleItemPreview.PeopleItemPreviewActivity",
+          "@ns0:configChanges": "0x00000F80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.explore.locationalbum.LocationAlbumActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.explore.moreAlbum.categoryAlbum.CategoryAlbumActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F1400F3",
+          "@ns0:name": "com.tcl.gallery.explore.categoryMoment.CategoryMomentActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F1400F3",
+          "@ns0:name": "com.tcl.gallery.explore.categoryMoment.categoryVideo.videoShow.CategoryVideoActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F14027A",
+          "@ns0:name": "com.tcl.gallery.explore.categoryMoment.categoryItemPreview.CategoryItemPreviewActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000F80"
+        },
+        {
+          "@ns0:theme": "@7F14000F",
+          "@ns0:name": "com.tcl.gallery.explore.categoryMoment.categoryVideo.videoShow.SaveCategoryActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F140127",
+          "@ns0:name": "com.tcl.gallery.view.album.TrampolineActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.explore.moreAlbum.memoryAlbum.MemoryAlbumActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F1400F3",
+          "@ns0:name": "com.tcl.gallery.explore.memoryMoment.MemoryMomentActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "0",
+          "@ns0:configChanges": "0x00000D80",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.tcl.gallery.explore.memoryMoment"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F14027A",
+          "@ns0:name": "com.tcl.gallery.explore.memoryMoment.memoryItemPreview.MemoryItemPreviewActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000F80"
+        },
+        {
+          "@ns0:theme": "@7F140001",
+          "@ns0:name": "com.tcl.gallery.action.memoryAction.MemoryActionActivity",
+          "@ns0:screenOrientation": "14",
+          "@ns0:configChanges": "0x00000D00"
+        },
+        {
+          "@ns0:theme": "@7F1400F3",
+          "@ns0:name": "com.tcl.gallery.explore.memoryMoment.memoryVideo.videoShow.MemoryVideoActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F1400F3",
+          "@ns0:name": "com.tcl.gallery.explore.memoryMoment.memoryVideo.videoEdit.MemoryVideoEditActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F14000F",
+          "@ns0:name": "com.tcl.gallery.explore.memoryMoment.memoryVideo.videoShow.SaveMemoryActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.memoryvideo.preview.edit.imageschoose.coverImage.MemoryVideoCoverImageActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.memoryvideo.preview.edit.imageschoose.photoChoose.MemoryVideoPhotoChooseActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.memoryvideo.preview.edit.imageschoose.photoChoose.photoAdd.MemoryVideoPhotoAddActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.faces.details.FacesAlbumDetailsActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F14027A",
+          "@ns0:name": "com.tcl.gallery.faces.details.faceItemPreview.FaceItemPreviewActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140001",
+          "@ns0:name": "com.tcl.gallery.action.sceneaction.SceneActionActivity",
+          "@ns0:screenOrientation": "14",
+          "@ns0:configChanges": "0x00000D00"
+        },
+        {
+          "@ns0:theme": "@7F140274",
+          "@ns0:name": "com.tcl.gallery.albums.trash.TrashAlbumActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F14027A",
+          "@ns0:name": "com.tcl.gallery.albums.trash.TrashItemPreviewActivity",
+          "@ns0:configChanges": "0x00000F80"
+        },
+        {
+          "@ns0:theme": "@7F140128",
+          "@ns0:name": "com.tcl.gallery.smartalbums.search.SearchActivity",
+          "@ns0:configChanges": "0x00000D80",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@7F140273",
+          "@ns0:name": "com.tcl.gallery.details.DetailsFastPreviewActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F140151",
+          "@ns0:name": "com.tcl.gallery.quickbrowse.QuickBrowseActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000F80"
+        },
+        {
+          "@ns0:theme": "@7F140001",
+          "@ns0:name": "com.tcl.gallery.app.ProxyActivity",
+          "@ns0:configChanges": "0x00000F80"
+        },
+        {
+          "@ns0:theme": "@7F140275",
+          "@ns0:name": "com.tcl.gallery.explore.LabeledPhotoDetails.LabeledDetailsActivity",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F14027A",
+          "@ns0:name": "com.tcl.gallery.explore.LabeledPhotoDetails.LabeledItemPreview.LabeledItemPreviewActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F14026D",
+          "@ns0:name": "com.tcl.gallery.data.CastActionChangeActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.tclhz.gallery.action.CastActionChange"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F14017C",
+          "@ns0:name": "com.tcl.gallery.smartshot.SmartShotActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000F00"
+        },
+        {
+          "@ns0:theme": "@7F140273",
+          "@ns0:name": "com.tcl.gallery.noti.NotificationProxyActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F140277",
+          "@ns0:name": "com.tct.videocut.activity.CutEditActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000E00",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": {
+            "data": {
+              "@ns0:scheme": "cut",
+              "@ns0:host": "tct.video.cut",
+              "@ns0:path": "/video"
+            },
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@7F14013D",
+          "@ns0:name": "com.tcl.gallery.photoeditor.ui.activity.PhotoEditorActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000D00",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.EDIT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "action_nextgen_edit"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "action_gallery_edit"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.imgeditor.IMGEditorActivity"
+        },
+        {
+          "@ns0:theme": "@7F14013B",
+          "@ns0:name": "com.tcl.gallery.imgeditor.text.floatingeditor.FloatEditorActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:windowSoftInputMode": "0x00000005"
+        },
+        {
+          "@ns0:theme": "@7F140129",
+          "@ns0:name": "com.tcl.imageclear.activity.ImageClearMainActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x00000D00"
+        },
+        {
+          "@ns0:theme": "@7F14012A",
+          "@ns0:name": "com.tcl.imageclear.activity.ImageClearImgListActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@7F14012A",
+          "@ns0:name": "com.tcl.imageclear.activity.ImageClearSuccessActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000D80"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.tcl.gallery.app.GalleryInitProvider",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.tclhz.gallery"
+        },
+        {
+          "@ns0:name": "tct.gpdatahub.sdk.gpupload.provider.DataProvider",
+          "@ns0:permission": "tct.datahub.provider.teyeid.permission",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.tclhz.gallery.DataProvider"
+        },
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.tclhz.gallery.fileProvider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F160006"
+          }
+        },
+        {
+          "@ns0:name": "com.tct.videocut.InitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.tclhz.gallery.tct-video-edit-cut-init"
+        },
+        {
+          "@ns0:name": "com.tcl.gallery.data.database.contentProvider.MemoryDataContentProvider",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.tcl.gallery.memory.contentProvider"
+        },
+        {
+          "@ns0:name": "com.tcl.imageclear.provider.ExportInfoProvider",
+          "@ns0:permission": "com.tclhz.gallery.LAUNCH_PHOTO_CLEAN",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.tclhz.gallery.photo_clean"
+        },
+        {
+          "@ns0:name": "com.tcl.scenerecognize.SceneRecognizeProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.tcl.scenerecognize.beta"
+        },
+        {
+          "@ns0:name": "com.google.mlkit.common.internal.MlKitInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.tclhz.gallery.mlkitinitprovider",
+          "@ns0:initOrder": "99"
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.tclhz.gallery.firebaseinitprovider",
+          "@ns0:initOrder": "100",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "androidx.lifecycle.ProcessLifecycleOwnerInitializer",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.tclhz.gallery.lifecycle-process"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.tcl.gallery.noti.TooManyPicsReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "ac_req_dismiss_notification"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.tcl.imageclear.receiver.CancelScanReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "ac_cancel_silence_scan"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+          "@ns0:exported": "false"
+        }
+      ],
+      "activity-alias": {
+        "@ns0:name": "com.tcl.imageclear.PhotoCleanMainActivity",
+        "@ns0:permission": "com.tclhz.gallery.LAUNCH_PHOTO_CLEAN",
+        "@ns0:exported": "true",
+        "@ns0:targetActivity": "com.tcl.imageclear.activity.ImageClearMainActivity",
+        "intent-filter": {
+          "action": {
+            "@ns0:name": "com.tclhz.gallery.action.OPEN_PHOTO_CLEAN"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.DEFAULT"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="13" ns0:versionName="2.0.4" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="camera.beauty.photo.editor" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="23" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<queries>
+		<package ns0:name="com.android.vending"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<uses-feature ns0:glEsVersion="0x00030001" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<permission ns0:name="camera.beauty.photo.editor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="camera.beauty.photo.editor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<application ns0:theme="@7F130059" ns0:label="@7F120023" ns0:icon="@7F0F00C2" ns0:name="com.coocent.camera12.MainApplication" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:extractNativeLibs="false" ns0:usesCleartextTraffic="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:label="@7F120023" ns0:name="com.coocent.camera12.activity.LaunchActivity" ns0:exported="true" ns0:launchMode="0" ns0:screenOrientation="5" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000012">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:name="com.coocent.camera12.activity.HomeActivity" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="5" ns0:configChanges="0x000006A0">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:name="com.coocent.camera12.activity.MainCameraActivity" ns0:exported="false" ns0:launchMode="1" ns0:screenOrientation="5" ns0:configChanges="0x000006A0">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130009" ns0:name="com.coocent.camera.fa.SettingsActivity" ns0:exported="false" ns0:screenOrientation="5" ns0:configChanges="0x000006A0">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130009" ns0:name="com.coocent.camera.fa.SaveVideoOrPhotoActivity" ns0:exported="false" ns0:screenOrientation="5">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130280" ns0:name="net.coocent.android.xmlparser.PrivacyActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.400000"/>
+		<meta-data ns0:name="design_width" ns0:value="752"/>
+		<meta-data ns0:name="design_height" ns0:value="1334"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0009"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-7245540296893717~5498253978"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="camera.beauty.photo.editor.androidx-startup">
+			<meta-data ns0:name="com.coocent.camera.fa.startup.PrefsDataStoreInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.coocent.camera.fa.startup.AdornsConfigSyncInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.coocent.camera.fa.startup.LutFilterConfigSyncInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="net.coocent.android.xmlparser.initializer.PromotionNativeInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.coocent.promotion.ads.admob.AdmobInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.coocent.camera.facear.FaceArInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.profileinstaller.ProfileInstallerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="camera.beauty.photo.editor.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150004"/>
+		</provider>
+		<activity ns0:theme="@7F130281" ns0:name="com.coocent.photos.gallery.home.LibCameraHomeActivity" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130147" ns0:name="com.coocent.photos.gallery.detail.LibMediaDetailActivity" ns0:exported="false" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130281" ns0:name="com.coocent.photos.gallery.album.LibCameraAlbumActivity" ns0:exported="false" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130281" ns0:name="com.coocent.photos.gallery.detail.LibCameraDetailActivity" ns0:exported="false" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130281" ns0:name="com.coocent.photos.gallery.home.LibFileManagerHomeActivity" ns0:exported="false" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130281" ns0:name="com.coocent.photos.gallery.detail.LibFileManagerDetailActivity" ns0:exported="false" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:name="com.coocent.photos.gallery.simple.ui.select.CGallerySelectActivity" ns0:exported="true" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130147" ns0:name="com.coocent.photos.gallery.simple.ui.detail.SelectDetailActivity" ns0:exported="false" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130147" ns0:name="com.coocent.photos.gallery.common.lib.ui.detail.GalleryDetailActivity" ns0:exported="false" ns0:screenOrientation="2">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:name="com.coocent.photos.gallery.common.lib.ui.picker.GalleryPickerActivity" ns0:exported="false" ns0:screenOrientation="2">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130281" ns0:name="com.coocent.photos.gallery.common.lib.ui.view.ActionViewActivity" ns0:exported="false" ns0:screenOrientation="2"/>
+		<activity ns0:name="com.coocent.photos.gallery.simple.ui.select.CGallerySelectWithTimeActivity" ns0:exported="false" ns0:process=":selectProcess" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.coocent.photos.gallery.simple.ui.detail.camera.CameraSimpleDetailActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:name="com.coocent.photos.gallery.simple.ui.children.CutoutAlbumChildrenActivity" ns0:exported="false" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130147" ns0:name="com.coocent.photos.gallery.simple.ui.detail.cutout.CutoutDetailActivity" ns0:exported="false" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F13015D" ns0:name="com.coocent.lib.photos.editor.PhotoEditorActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x000006A0" ns0:windowSoftInputMode="0x00000022">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130153" ns0:name="com.coocent.lib.photos.editor.activity.ZoomImageActivity" ns0:screenOrientation="1" ns0:transitionName="zoomImage"/>
+		<activity ns0:theme="@7F130152" ns0:name="com.coocent.lib.photos.editor.activity.EditorSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F130152" ns0:name="com.coocent.lib.photos.editor.activity.StorageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F130164" ns0:name="net.coocent.android.xmlparser.gift.GiftListActivity"/>
+		<activity ns0:theme="@7F130280" ns0:name="net.coocent.android.xmlparser.gift.GiftWithGameActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F130280" ns0:name="net.coocent.android.xmlparser.activity.ReInstallActivity"/>
+		<activity ns0:theme="@7F1301B1" ns0:name="net.coocent.android.xmlparser.activity.ExitRateActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1301B2" ns0:name="net.coocent.android.xmlparser.feedback.FeedbackActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1301B6" ns0:name="net.coocent.android.xmlparser.activity.PromotionInterstitialActivity" ns0:screenOrientation="-1"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<service ns0:name="com.coocent.photos.imageprocs.ProcessingService"/>
+		<activity ns0:theme="@7F1301F6" ns0:name="com.coocent.lib.photos.stickershop.activity.StickerShopActivity" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F1304AF" ns0:name="com.coocent.lib.photos.stickershop.activity.FreeBackgroundActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1304AF" ns0:name="com.coocent.lib.photos.stickershop.activity.PosterShopActivity"/>
+		<activity ns0:theme="@7F1304AF" ns0:name="com.coocent.lib.photos.stickershop.activity.SplicingShopActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1304B4" ns0:name="com.coocent.lib.photos.stickershop.activity.ShopDetailActivity" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F1301F6" ns0:name="com.coocent.lib.photos.stickershop.activity.StickerShowActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1301F6" ns0:name="com.coocent.lib.photos.stickershop.activity.AllPosterActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1301F6" ns0:name="com.coocent.lib.photos.stickershop.activity.ShopActivity" ns0:screenOrientation="2"/>
+		<meta-data ns0:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT" ns0:value="true"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.coocent.promotion.ads.helper.AppOpenAdsActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000DB0">
+			<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+			<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		</activity>
+		<activity ns0:theme="@7F130274" ns0:name="com.coocent.pinview.ForgotPinActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A4"/>
+		<activity ns0:name="androidx.compose.ui.tooling.PreviewActivity" ns0:exported="true"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="camera.beauty.photo.editor.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<receiver ns0:name="androidx.profileinstaller.ProfileInstallReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SKIP_FILE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F1302D2" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="11002"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F150008"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

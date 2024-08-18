@@ -1,0 +1,162 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "1700",
+    "@ns0:versionName": "1.7.0",
+    "@ns0:installLocation": "0",
+    "@package": "com.moblynx.cameraics",
+    "@platformBuildVersionCode": "22",
+    "@platformBuildVersionName": "5.1.1-1819727",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "11",
+      "@ns0:targetSdkVersion": "19"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.location.gps",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.location",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.location.network",
+        "@ns0:required": "false"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F080005",
+      "@ns0:label": "@7F090034",
+      "@ns0:icon": "@7F030001",
+      "@ns0:name": "com.moblynx.cameraics.CameraAppImpl",
+      "@ns0:hardwareAccelerated": "true",
+      "uses-library": {
+        "@ns0:name": "com.google.android.media.effects",
+        "@ns0:required": "false"
+      },
+      "receiver": {
+        "@ns0:name": "com.moblynx.cameraics.CameraButtonIntentReceiver",
+        "intent-filter": {
+          "action": {
+            "@ns0:name": "android.intent.action.CAMERA_BUTTON"
+          }
+        }
+      },
+      "activity": [
+        {
+          "@ns0:name": "com.moblynx.cameraics.Camera",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000023",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F090108",
+          "@ns0:icon": "@7F030004",
+          "@ns0:name": "com.moblynx.cameraics.VideoCamera",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000023",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F090168",
+          "@ns0:name": "com.moblynx.cameraics.panorama.PanoramaActivity",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000023"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        }
+      ],
+      "meta-data": {
+        "@ns0:name": "com.google.android.gms.version",
+        "@ns0:value": "@7F0B0000"
+      }
+    }
+  }
+}

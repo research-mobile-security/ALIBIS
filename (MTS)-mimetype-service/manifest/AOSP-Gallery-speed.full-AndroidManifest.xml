@@ -1,0 +1,231 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="5020000" ns0:versionName="speed.full" package="com.aosp.speed.gallery" platformBuildVersionCode="23" platformBuildVersionName="6.0-2166767">
+	<original-package ns0:name="com.android.gallery3d"/>
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="23"/>
+	<permission ns0:name="com.android.gallery3d.permission.GALLERY_PROVIDERzdry" ns0:protectionLevel="0x00000003"/>
+	<uses-permission ns0:name="android.permission.NFC"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.android.gallery3d.permission.GALLERY_PROVIDERzdry"/>
+	<uses-permission ns0:name="android.permission.READ_SMS"/>
+	<uses-permission ns0:name="android.permission.SEND_SMS"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_STORAGE"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="false" ns0:normalScreens="true" ns0:largeScreens="true"/>
+	<application ns0:theme="@7F0F0025" ns0:label="@7F0E01A6" ns0:icon="@7F030001" ns0:name="com.android.gallery3d.app.GalleryAppImpl" ns0:restoreAnyVersion="true" ns0:logo="@7F030001" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:uiOptions="0x00000001" ns0:supportsRtl="true">
+		<uses-library ns0:name="com.google.android.media.effects" ns0:required="false"/>
+		<activity ns0:theme="@7F0F0025" ns0:label="@7F0E01A6" ns0:name="com.android.gallery3d.app.GalleryActivity" ns0:configChanges="0x000004A0"/>
+		<activity-alias ns0:label="@7F0E01A6" ns0:name="com.lenovo.gallery.app.GalleryActivity" ns0:configChanges="0x000004A0" ns0:targetActivity="com.android.gallery3d.app.GalleryActivity">
+			<intent-filter ns0:priority="1000">
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme=""/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/webp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/vnd.wap.wbmp"/>
+				<data ns0:mimeType="application/vnd.google.panorama360+jpg"/>
+			</intent-filter>
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/mpeg4"/>
+				<data ns0:mimeType="video/mp4"/>
+				<data ns0:mimeType="video/3gp"/>
+				<data ns0:mimeType="video/3gpp"/>
+				<data ns0:mimeType="video/3gpp2"/>
+				<data ns0:mimeType="application/sdp"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F0F0026" ns0:label="@7F0E0176" ns0:name="com.android.gallery3d.app.GalleryActivityForCameraReview" ns0:taskAffinity="com.android.gallery3d.app.GalleryActivityForCameraReview" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="10" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<action ns0:name="com.lenovo.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme=""/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/webp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/vnd.wap.wbmp"/>
+				<data ns0:mimeType="video/mpeg4"/>
+				<data ns0:mimeType="video/mp4"/>
+				<data ns0:mimeType="video/3gp"/>
+				<data ns0:mimeType="video/3gpp"/>
+				<data ns0:mimeType="video/3gpp2"/>
+				<data ns0:mimeType="application/sdp"/>
+				<data ns0:mimeType="application/vnd.google.panorama360+jpg"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0F0025" ns0:label="@7F0E01A6" ns0:name="com.android.gallery3d.app.GalleryActivityForScreenShot" ns0:taskAffinity="com.android.gallery3d.app.GalleryActivityForScreenShot" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="lenovo.intent.action.START_SCREENSHOT_FOLDER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030055" ns0:name="com.android.gallery3d.app.Gallery">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="@7F0E01A6" ns0:name="com.cooliris.media.Gallery" ns0:configChanges="0x000004A0" ns0:targetActivity="com.android.gallery3d.app.GalleryActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@android:01030055" ns0:label="@7F0E01B0" ns0:icon="@7F030000" ns0:name="com.android.camera.CameraActivity" ns0:taskAffinity="com.android.camera.CameraActivity"/>
+		<activity-alias ns0:label="@7F0E01B0" ns0:name="com.android.camera.CameraLauncher" ns0:targetActivity="com.android.camera.CameraActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:label="@7F0E01A6" ns0:name="com.android.gallery3d.ingest.IngestActivity" ns0:taskAffinity="" ns0:launchMode="3" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+			</intent-filter>
+			<meta-data ns0:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" ns0:resource="@7F070001"/>
+		</activity>
+		<service ns0:name="com.android.gallery3d.ingest.IngestService"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.gallery3d.app.Wallpaper" ns0:configChanges="0x000004A0">
+			<intent-filter ns0:label="@7F0E01B3">
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F0E01A6">
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.wallpaper.preview" ns0:resource="@7F070004"/>
+		</activity>
+		<activity ns0:theme="@7F0F0023" ns0:label="@7F0E02DB" ns0:name="com.android.gallery3d.app.TrimVideo" ns0:uiOptions="0x00000000">
+			<intent-filter ns0:label="@7F0E01BE">
+				<action ns0:name="com.android.camera.action.TRIM"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<permission ns0:name="com.android.gallery3d.filtershow.permission.READzdry" ns0:protectionLevel="0x00000002"/>
+		<permission ns0:name="com.android.gallery3d.filtershow.permission.WRITEzdry" ns0:protectionLevel="0x00000002"/>
+		<provider ns0:name="com.android.gallery3d.filtershow.provider.SharedImageProvider" ns0:readPermission="com.android.gallery3d.filtershow.permission.READzdry" ns0:writePermission="com.android.gallery3d.filtershow.permission.WRITEzdry" ns0:authorities="com.android.gallery3d.filtershow.provider.SharedImageProviderzdry" ns0:grantUriPermissions="true"/>
+		<service ns0:name="com.android.gallery3d.filtershow.pipeline.ProcessingService" ns0:exported="false"/>
+		<activity ns0:theme="@7F0F0023" ns0:label="@7F0E0002" ns0:name="com.android.gallery3d.filtershow.FilterShowActivity" ns0:configChanges="0x000004A0" ns0:uiOptions="0x00000000">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="action_nextgen_edit"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0F0023" ns0:label="@7F0E0043" ns0:name="com.android.gallery3d.filtershow.crop.CropActivity" ns0:configChanges="0x000004A0" ns0:uiOptions="0x00000000">
+			<intent-filter ns0:label="@7F0E01BE">
+				<action ns0:name="com.android.camera.action.CROP"/>
+				<action ns0:name="com.lenovo.gallery.action.CROP"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.ALTERNATIVE"/>
+				<category ns0:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+			</intent-filter>
+		</activity>
+		<uses-library ns0:name="com.google.android.media.effects" ns0:required="false"/>
+		<activity ns0:theme="@7F0F0027" ns0:name="com.android.gallery3d.settings.GallerySettings" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.android.gallery3d.provider.GalleryProvider" ns0:permission="com.android.gallery3d.permission.GALLERY_PROVIDERzdry" ns0:exported="true" ns0:authorities="com.android.gallery3d.providerzdry" ns0:syncable="false" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="com.android.photos.data.PhotoProvider" ns0:exported="false" ns0:authorities="com.android.gallery3d.photoproviderzdry" ns0:syncable="false"/>
+		<activity ns0:name="com.android.gallery3d.gadget.WidgetClickHandler"/>
+		<activity ns0:theme="@7F0F002B" ns0:name="com.android.gallery3d.app.DialogPicker" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0F002B" ns0:name="com.android.gallery3d.app.AlbumPicker" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0F0022" ns0:name="com.android.gallery3d.gadget.WidgetTypeChooser" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0F001B" ns0:name="com.lenovo.gallery.gif.GifPlayerActivity" ns0:hardwareAccelerated="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.android.gallery3d.app.PackagesMonitor$AsyncService"/>
+		<service ns0:name="com.android.gallery3d.gadget.WidgetService" ns0:permission="android.permission.BIND_REMOTEVIEWS"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.gallery3d.gadget.WidgetConfigure" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.android.gallery3d.app.BatchService"/>
+		<service ns0:name="com.android.camera.MediaSaveService"/>
+		<service ns0:name="com.lenovo.gallery.service.GalleryServiceForCameraReview" ns0:exported="true"/>
+		<activity ns0:theme="@7F0F0025" ns0:name="com.android.gallery3d.app.GalleryActivityForFilter" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0F0025" ns0:label="@7F0E0187" ns0:name="com.lenovo.gallery.watermark.WatermarkActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:uiOptions="0x00000001"/>
+		<meta-data ns0:name="lenovo_app_suskey" ns0:value="full"/>
+	</application>
+</manifest>

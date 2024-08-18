@@ -1,0 +1,178 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="9" ns0:versionName="1.0.9" ns0:compileSdkVersion="32" ns0:compileSdkVersionCodename="12" package="tapstudio.photoremove.unwanted.object" platformBuildVersionCode="32" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="20" ns0:targetSdkVersion="31"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<application ns0:theme="@7F0D000A" ns0:label="@7F0C0038" ns0:icon="@7F0B0000" ns0:name="com.oscamera.library.code.ui.CameraApplication" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:appComponentFactory="android.support.v4.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.cameraselie15image.singleselector.constant.CustomGlideMoudle" ns0:value="GlideModule"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@7F0D0000" ns0:name="com.oscamera.library.code.ui.MainSelfie15Activity" ns0:exported="false" ns0:clearTaskOnLaunch="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:resizeableActivity="false">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D0000" ns0:name="com.oscamera.library.code.ui.SplashSpActivity" ns0:exported="false" ns0:clearTaskOnLaunch="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.cameraselie15image.singleselector.RecordVideoSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0D0128" ns0:name="com.oscamera.library.code.ui.ShowVideoCamSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0D0128" ns0:name="com.oscamera.library.code.ui.CamPhotoShowSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0D00AD" ns0:name="com.cameraselie15image.singleselector.ImgCameraProductionSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:resizeableActivity="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D00AD" ns0:name="com.cameraselie15image.singleselector.ShowCamProImgSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0D00CC" ns0:name="com.oscamera.library.code.ui.SettingsCamSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.edit.imageeditlibrary.editimage.EditPhotoCamSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020" ns0:resizeableActivity="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.cameraselie15sdk.common.ShowShareFileSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0D00AF" ns0:name="com.cameraselie15sdk.common.imageanim.PhotoShowCamViewSelfie15Activity" ns0:exported="false" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.edit.imageeditlibrary.editimage.FilterShop.FilterCamShopSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.oscamera.library.code.feedback.FeedBackCamSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.oscamera.library.code.feedback.FeedBackCamMoreActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0D0000" ns0:name="com.oscamera.library.code.ui.SplashSelfieCameraOS15Activity" ns0:exported="true" ns0:screenOrientation="1" ns0:resizeableActivity="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D0000" ns0:name="com.oscamera.library.code.privacy.PrivacyCamSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.oscamera.library.code.privacy.HelpCamSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="tapstudio.photoremove.unwanted.object" ns0:host="privacy_help"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.oscamera.library.code.privacy.PrivacyDetailCamSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0D00AD" ns0:name="com.oscamera.library.code.ui.Cam12CamManageStickerActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.oscamera.library.code.billing.PrimeCamSelfie15Activity" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.oscamera.library.code.billing.PrimeDetailCamSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F0D00AE" ns0:name="com.oscamera.library.code.billing.PrimeDialogCamSelfie15Activity" ns0:exported="false" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.oscamera.library.code.ui.HomeCamSelfie15Activity" ns0:exported="false" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.oscamera.library.code.ui.SplashCamSelfie15Activity" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<service ns0:name="com.oscamera.library.code.service.NotificationService" ns0:exported="false" ns0:process=":push"/>
+		<service ns0:name="com.oscamera.library.code.feedback.GetFeedBackService" ns0:exported="false"/>
+		<service ns0:name="com.oscamera.library.code.service.NotificationJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="true"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="tapstudio.photoremove.unwanted.object.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F0F0000"/>
+		</provider>
+		<service ns0:name="com.oscamera.library.code.live.AliveJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="true"/>
+		<activity ns0:theme="@7F0D00AE" ns0:name="com.oscamera.library.code.live.CamCam12PixelActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:resizeableActivity="false"/>
+		<receiver ns0:name="com.oscamera.library.code.live.CHSelfReceiver" ns0:exported="false" ns0:process=":process1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.USER_PRESENT"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.oscamera.library.code.live.CHSelfReceiver$CHAutoStartReceiver" ns0:exported="false" ns0:process=":process1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="tapstudio.photoremove.unwanted.object.firebaseinitprovider" ns0:initOrder="100"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.sdkauta.ad.service.Cam12AdIntentService" ns0:exported="false"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService" ns0:exported="false"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsMessengerService" ns0:exported="false" ns0:process=":adnw"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.internal.ipc.RemoteANActivity" ns0:exported="false" ns0:process=":adnw" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService" ns0:exported="false"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsMessengerService" ns0:exported="false" ns0:process=":adnw"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="fb113122951356672"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F090004"/>
+		<activity ns0:theme="@7F0D0001" ns0:name="com.blankj.utilcode.util.PermissionUtils$PermissionActivity" ns0:exported="false" ns0:multiprocess="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000003"/>
+		<provider ns0:name="com.blankj.utilcode.util.Utils$FileProvider4UtilCode" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="tapstudio.photoremove.unwanted.object.utilcode.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F0F0004"/>
+		</provider>
+		<service ns0:name="com.blankj.utilcode.util.MessengerUtils$ServerService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="tapstudio.photoremove.unwanted.object.messenger"/>
+			</intent-filter>
+		</service>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F0F0005"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F0F0006"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F0F0007"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

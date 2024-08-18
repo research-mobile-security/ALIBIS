@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="8" ns0:versionName="1.1.4" package="com.bytedance.android.everfilter" platformBuildVersionCode="24" platformBuildVersionName="7.000000">
+	<uses-sdk ns0:minSdkVersion="15" ns0:targetSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+	<application ns0:theme="@7F09003D" ns0:label="@7F070030" ns0:icon="@7F030000" ns0:name="com.bytedance.android.everfilter.App" ns0:allowBackup="true" ns0:supportsRtl="true">
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F070031"/>
+		<activity ns0:theme="@7F0900A3" ns0:name="com.bytedance.android.everfilter.MainActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="everfilter"/>
+				<data ns0:scheme="http" ns0:host="everphoto.me"/>
+				<data ns0:scheme="https" ns0:host="everphoto.me"/>
+				<data ns0:scheme="http" ns0:host="everfilter.me"/>
+				<data ns0:scheme="https" ns0:host="everfilter.me"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0900EC" ns0:label="@7F070030" ns0:name="com.bytedance.android.everfilter.ShinKaiActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.bytedance.android.everfilter.ui.web.WebActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<provider ns0:name="com.facebook.FacebookContentProvider" ns0:exported="true" ns0:authorities="com.facebook.app.FacebookContentProvider1893196507570668"/>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="c902ef7641ba26ce0281d0a4c7c52a2fb2230427"/>
+		<activity ns0:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000014"/>
+		<service ns0:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.twitter.sdk.android.core.identity.OAuthActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F070060" ns0:icon="@7F0200B0" ns0:name="com.twitter.sdk.android.core.identity.ShareEmailActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F090194" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+	</application>
+</manifest>

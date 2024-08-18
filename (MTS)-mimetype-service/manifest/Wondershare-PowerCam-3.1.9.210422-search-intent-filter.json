@@ -1,0 +1,126 @@
+{
+    "root": {
+        "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+        "intent-filter": [
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MAIN"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.SEND"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*",
+                    "@ns0:scheme": "file",
+                    "@ns0:host": ".share.ShareActivity"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.EDIT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.MEDIA_EJECT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.MEDIA_MOUNTED"
+                    }
+                ],
+                "data": {
+                    "@ns0:scheme": "file"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.baidu.android.pushservice.action.FB_MESSAGE"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "io.presage.PresageService.PIVOT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "io.presage.intent.action.LAUNCH_WEBVIEW"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+                    },
+                    {
+                        "@ns0:name": "android.net.wifi.WIFI_STATE_CHANGED"
+                    },
+                    {
+                        "@ns0:name": "io.presage.receiver.NetworkChangeReceiver.ONDESTROY"
+                    }
+                ]
+            },
+            {
+                "@ns0:priority": "-500",
+                "action": {
+                    "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+                }
+            }
+        ]
+    }
+}

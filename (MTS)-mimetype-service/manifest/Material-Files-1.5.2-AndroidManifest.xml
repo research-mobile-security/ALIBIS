@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="31" ns0:versionName="1.5.2" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="me.zhanghai.android.files" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="31"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="30"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<application ns0:theme="@7F1202A9" ns0:label="@7F110028" ns0:icon="@7F0E0004" ns0:allowBackup="true" ns0:supportsRtl="true" ns0:extractNativeLibs="true" ns0:fullBackupContent="true" ns0:resizeableActivity="true" ns0:roundIcon="@7F0E0004" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:requestRawExternalStorageAccess="true">
+		<activity ns0:name="me.zhanghai.android.files.filelist.FileListActivity" ns0:exported="true" ns0:visibleToInstantApps="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="inode/directory"/>
+				<data ns0:mimeType="resource/folder"/>
+				<data ns0:mimeType="vnd.android.document/directory"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F11002C">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/gzip"/>
+				<data ns0:mimeType="application/java-archive"/>
+				<data ns0:mimeType="application/rar"/>
+				<data ns0:mimeType="application/zip"/>
+				<data ns0:mimeType="application/vnd.android.package-archive"/>
+				<data ns0:mimeType="application/vnd.debian.binary-package"/>
+				<data ns0:mimeType="application/x-bzip2"/>
+				<data ns0:mimeType="application/x-compress"/>
+				<data ns0:mimeType="application/x-cpio"/>
+				<data ns0:mimeType="application/x-deb"/>
+				<data ns0:mimeType="application/x-debian-package"/>
+				<data ns0:mimeType="application/x-gtar"/>
+				<data ns0:mimeType="application/x-gtar-compressed"/>
+				<data ns0:mimeType="application/x-java-archive"/>
+				<data ns0:mimeType="application/x-lzma"/>
+				<data ns0:mimeType="application/x-tar"/>
+				<data ns0:mimeType="application/x-xz"/>
+				<data ns0:mimeType="@7F11015F"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.OPEN_DOCUMENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="me.zhanghai.android.files.intent.action.VIEW_DOWNLOADS"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F140002"/>
+		</activity>
+		<activity ns0:theme="@7F1202D7" ns0:name="me.zhanghai.android.files.filelist.OpenFileActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:documentLaunchMode="2">
+			<intent-filter>
+				<action ns0:name="me.zhanghai.android.files.intent.action.OPEN_FILE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1202D7" ns0:label="@7F110050" ns0:icon="@7F080086" ns0:name="me.zhanghai.android.files.filelist.EditFileActivity" ns0:autoRemoveFromRecents="true"/>
+		<activity ns0:theme="@7F1202D7" ns0:label="@7F1100C1" ns0:icon="@7F0801C4" ns0:name="me.zhanghai.android.files.filelist.OpenFileAsDialogActivity" ns0:autoRemoveFromRecents="true"/>
+		<activity ns0:theme="@7F1202D7" ns0:label="@7F110236" ns0:name="me.zhanghai.android.files.storage.AddStorageDialogActivity"/>
+		<activity ns0:theme="@7F1202D7" ns0:label="@7F110239" ns0:name="me.zhanghai.android.files.storage.EditDeviceStorageDialogActivity"/>
+		<activity ns0:theme="@7F1202D7" ns0:label="@7F11022C" ns0:name="me.zhanghai.android.files.storage.AddDocumentTreeActivity"/>
+		<activity ns0:theme="@7F1202D7" ns0:label="@7F11023C" ns0:name="me.zhanghai.android.files.storage.EditDocumentTreeDialogActivity"/>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F110250" ns0:name="me.zhanghai.android.files.storage.EditFtpServerActivity"/>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F110269" ns0:name="me.zhanghai.android.files.storage.EditSftpServerActivity"/>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F11022F" ns0:name="me.zhanghai.android.files.storage.AddLanSmbServerActivity"/>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F11027C" ns0:name="me.zhanghai.android.files.storage.EditSmbServerActivity"/>
+		<activity ns0:theme="@7F1202D7" ns0:label="@7F1101B1" ns0:name="me.zhanghai.android.files.navigation.EditBookmarkDirectoryDialogActivity"/>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F11014C" ns0:name="me.zhanghai.android.files.ftpserver.FtpServerActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="me.zhanghai.android.files.intent.action.MANAGE_FTP_SERVER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F110220" ns0:name="me.zhanghai.android.files.settings.SettingsActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.APPLICATION_PREFERENCES"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F110281" ns0:name="me.zhanghai.android.files.storage.StorageListActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F11021B" ns0:name="me.zhanghai.android.files.settings.StandardDirectoryListActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F11020C" ns0:name="me.zhanghai.android.files.settings.BookmarkDirectoryListActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F110023" ns0:name="me.zhanghai.android.files.about.AboutActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1202D7" ns0:name="me.zhanghai.android.files.filejob.FileJobActionDialogActivity" ns0:autoRemoveFromRecents="true"/>
+		<activity ns0:theme="@7F1202D7" ns0:name="me.zhanghai.android.files.filejob.FileJobConflictDialogActivity" ns0:autoRemoveFromRecents="true"/>
+		<activity ns0:theme="@7F1202A9" ns0:label="@7F110289" ns0:name="me.zhanghai.android.files.viewer.text.TextEditorActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/ecmascript"/>
+				<data ns0:mimeType="application/javascript"/>
+				<data ns0:mimeType="application/json"/>
+				<data ns0:mimeType="application/typescript"/>
+				<data ns0:mimeType="application/x-sh"/>
+				<data ns0:mimeType="application/x-shellscript"/>
+				<data ns0:mimeType="application/xml"/>
+				<data ns0:mimeType="text/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1202AA" ns0:label="@7F11015D" ns0:name="me.zhanghai.android.files.viewer.image.ImageViewerActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="me.zhanghai.android.files.filejob.FileJobService"/>
+		<service ns0:name="me.zhanghai.android.files.ftpserver.FtpServerService"/>
+		<service ns0:label="@7F11014C" ns0:icon="@7F0801D3" ns0:name="me.zhanghai.android.files.ftpserver.FtpServerTileService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.service.quicksettings.TOGGLEABLE_TILE" ns0:value="true"/>
+		</service>
+		<provider ns0:name="me.zhanghai.android.files.app.AppProvider" ns0:exported="false" ns0:authorities="@7F110029"/>
+		<provider ns0:name="me.zhanghai.android.files.file.FileProvider" ns0:exported="false" ns0:authorities="@7F110120" ns0:grantUriPermissions="true"/>
+		<receiver ns0:name="me.zhanghai.android.files.filejob.FileJobReceiver"/>
+		<receiver ns0:name="me.zhanghai.android.files.ftpserver.FtpServerReceiver"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="false"/>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="me.zhanghai.android.files.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A000C"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="me.zhanghai.android.files.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+	</application>
+</manifest>

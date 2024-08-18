@@ -1,0 +1,326 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="34040420" ns0:versionName="4.4.2" ns0:installLocation="0" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.cyworld.camera" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<queries>
+		<intent>
+			<action ns0:name="com.onestore.ipc.iap.IapService.ACTION"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="onestore"/>
+		</intent>
+	</queries>
+	<uses-feature ns0:name="android.software.live_wallpaper" ns0:required="false"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.telephony" ns0:required="false"/>
+	<permission ns0:name="com.cyworld.camera.permission.MAPS_RECEIVE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.cyworld.camera.permission.MAPS_RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F120015" ns0:label="@7F110087" ns0:icon="@7F0E0000" ns0:name="com.cyworld.camera.CyameraApp" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:resizeableActivity="false" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.400000"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-5764417516463217~3397682482"/>
+		<meta-data ns0:name="iap:api_version" ns0:value="4"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0008"/>
+		<meta-data ns0:name="com.google.android.maps.v2.API_KEY" ns0:value="@7F1102A6"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F1101FF"/>
+		<meta-data ns0:name="android.webkit.WebView.EnableSafeBrowsing" ns0:value="true"/>
+		<activity ns0:theme="@7F120014" ns0:name="com.cyworld.cymera.CameraMain" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<action ns0:name="com.cyworld.camera.action.IMAGE_CAPTURE"/>
+				<action ns0:name="com.cyworld.camera.action.IMAGE_EDIT"/>
+				<action ns0:name="com.cyworld.camera.action.IMAGE_PICK"/>
+				<action ns0:name="com.cyworld.camera.action.ACTION_CROP"/>
+				<action ns0:name="com.cyworld.camera.action.SELF_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F1101F7">
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="cymera"/>
+				<data ns0:host="main"/>
+				<data ns0:host="sns"/>
+				<data ns0:host="itemshop"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="com.cyworld.camera"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F12013D" ns0:label="@7F110353" ns0:name="com.cyworld.camera.photoalbum.PhotoBoxActivity" ns0:exported="true" ns0:taskAffinity="com.cyworld.camera.gallery" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F12013D" ns0:name="com.cyworld.camera.photoalbum.PhotoBoxSubListActivity" ns0:taskAffinity="com.cyworld.camera.gallery" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F12013C" ns0:name="com.cyworld.camera.common.viewer.ImageViewerActivity" ns0:taskAffinity="com.cyworld.camera.gallery" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1202C1" ns0:name="com.cyworld.cymera.CymeraCamera" ns0:launchMode="@7F0A000A" ns0:screenOrientation="1" ns0:configChanges="0x00000020" ns0:parentActivityName="com.cyworld.cymera.ui2.component.home.HomeActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.cyworld.cymera.ui2.component.home.HomeActivity"/>
+		</activity>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F120011" ns0:label="" ns0:name="com.cyworld.cymera.ui2.component.home.HomeActivity" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:alwaysRetainTaskState="true"/>
+		<activity ns0:theme="@7F120011" ns0:label="" ns0:name="com.cyworld.cymera.ui2.component.intro.IntroActivity" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:alwaysRetainTaskState="true"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.skcomms.nextmem.auth.ui.activity.login.SettingPasswordActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F1201A7" ns0:label="@7F1105A7" ns0:name="com.skcomms.nextmem.auth.ui.activity.login.LoginActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000013"/>
+		<activity ns0:theme="@7F1201D7" ns0:label="@7F1105A2" ns0:name="com.skcomms.nextmem.auth.ui.activity.login.FindPasswordActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000015"/>
+		<activity ns0:theme="@7F1201D7" ns0:label="@7F1105A2" ns0:name="com.skcomms.nextmem.auth.ui.activity.login.ForwardEmailHostActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.skcomms.nextmem.auth.ui.activity.login.DeleteAccountActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.skcomms.nextmem.auth.ui.activity.common.WebviewActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002" ns0:parentActivityName="com.cyworld.cymera.ui2.component.home.HomeActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.cyworld.cymera.ui2.component.home.HomeActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.skcomms.nextmem.auth.ui.activity.login.SettingMyEmailActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.setting.SettingAnotherActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.setting.SettingMenuActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.setting.SettingNoticeActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002" ns0:parentActivityName="com.cyworld.cymera.ui2.component.home.HomeActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.cyworld.cymera.ui2.component.home.HomeActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.setting.SettingNoticeItemActivity" ns0:exported="false" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002" ns0:parentActivityName="com.cyworld.cymera.ui2.component.home.HomeActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.cyworld.cymera.ui2.component.home.HomeActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.setting.FeedbackActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000034"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.setting.ServiceInfoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.setting.SettingOpenSourceInfoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.acitivity.CymeraNoticeActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002" ns0:parentActivityName="com.cyworld.cymera.ui2.component.home.HomeActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.cyworld.cymera.ui2.component.home.HomeActivity"/>
+		</activity>
+		<activity ns0:theme="@7F120485" ns0:label="@7F110087" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.profile.ProfileActivity" ns0:screenOrientation="1" ns0:parentActivityName="com.cyworld.cymera.ui2.component.home.HomeActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.cyworld.cymera.ui2.component.home.HomeActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.skcomms.nextmem.auth.ui.activity.login.IntroActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1201B1" ns0:name="com.cyworld.cymera.sns.itemshop.ItemShopCategoryActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F1201B1" ns0:name="com.cyworld.cymera.sns.itemshop.ItemShopSpecialActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002" ns0:parentActivityName="com.cyworld.cymera.ui2.component.home.HomeActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.cyworld.cymera.ui2.component.home.HomeActivity"/>
+		</activity>
+		<activity ns0:theme="@7F120015" ns0:name="com.cyworld.cymera.sns.itemshop.ItemShopHomeActivity" ns0:screenOrientation="1" ns0:parentActivityName="com.cyworld.cymera.ui2.component.home.HomeActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.cyworld.cymera.ui2.component.home.HomeActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.itemshop.ItemShopMyItemActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F1201B1" ns0:name="com.cyworld.cymera.sns.itemshop.search.ItemshopSearchActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.itemshop.ItemShopDetailDialogActivity" ns0:exported="false" ns0:launchMode="0" ns0:screenOrientation="1" ns0:parentActivityName="com.cyworld.cymera.ui2.component.home.HomeActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.cyworld.cymera.ui2.component.home.HomeActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1201A7" ns0:name="com.cyworld.cymera.sns.itemshop.view.CustomAdActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:name="com.skplanet.dodo.IapWeb" ns0:excludeFromRecents="true" ns0:configChanges="0x000024A4" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F120014" ns0:label="@7F1101F8" ns0:icon="@7F0E0004" ns0:name="com.cyworld.cymera.ui.ShortcutCollageActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120014" ns0:label="@7F1101F9" ns0:icon="@7F0E0005" ns0:name="com.cyworld.cymera.ui.ShortcutFilterActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120014" ns0:label="@7F1101FB" ns0:icon="@7F0E000B" ns0:name="com.cyworld.cymera.ui.ShortcutStickerActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120014" ns0:label="@7F1101FA" ns0:icon="@7F0E000A" ns0:name="com.cyworld.cymera.ui.ShortcutInstafitActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120015" ns0:name="com.cyworld.cymera.ui.PostSaveActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120016" ns0:name="com.cyworld.cymera.ui.PermissionGuideActivity" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.cyworld.cymera.database.CymeraPhotoContentProvider" ns0:exported="false" ns0:authorities="Cymera.CymeraPhotoContentProvider"/>
+		<service ns0:name="com.cyworld.cymera.NotiManageService" ns0:exported="false"/>
+		<service ns0:name="cymera.push.CymeraFcmListenerService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F110087" ns0:name="com.cyworld.camera.Wallpaper" ns0:permission="android.permission.BIND_WALLPAPER" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.wallpaper.WallpaperService"/>
+			</intent-filter>
+			<meta-data ns0:name="android.service.wallpaper" ns0:resource="@7F140001"/>
+		</service>
+		<receiver ns0:label="@7F1106CE" ns0:name="com.cyworld.cymera.widget.CameraWidgetProvider" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F140000"/>
+		</receiver>
+		<receiver ns0:label="@7F1106CF" ns0:name="com.cyworld.cymera.widget.GalleryWidgetProvider" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F140003"/>
+		</receiver>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.cyworld.camera.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140002"/>
+		</provider>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crash.component.FirebaseCrashRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.cyworld.camera.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.cyworld.camera.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.cyworld.camera.AudienceNetworkContentProvider"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.cyworld.camera"/>
+			</intent-filter>
+		</activity>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.cyworld.camera.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.cyworld.camera.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.cyworld.camera.lifecycle-process"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+	</application>
+</manifest>

@@ -1,0 +1,228 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "11",
+    "@ns0:versionName": "3.1",
+    "@package": "tool.photo.gallery",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "14",
+      "@ns0:targetSdkVersion": "26"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.GET_TASKS"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@android:0103006D",
+      "@ns0:label": "@7F0E0023",
+      "@ns0:icon": "@7F070071",
+      "@ns0:name": "com.samsung.photodesk.PhotoDeskApplication",
+      "@ns0:logo": "@7F070085",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "activity": [
+        {
+          "@ns0:name": "com.samsung.photodesk.Intro",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.photodesk.PhotoDeskActivity",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.CREATE_SHORTCUT"
+              },
+              {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              }
+            ],
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.photodesk.ImageViewActivity",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "com.android.camera.action.REVIEW"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/jpeg"
+                },
+                {
+                  "@ns0:mimeType": "image/jpg"
+                },
+                {
+                  "@ns0:mimeType": "image/gif"
+                },
+                {
+                  "@ns0:mimeType": "image/png"
+                },
+                {
+                  "@ns0:mimeType": "image/x-ms-bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/vnd.wap.wbmp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.photodesk.SettingActivity"
+        },
+        {
+          "@ns0:name": "com.samsung.photodesk.ThemeSetActivity"
+        },
+        {
+          "@ns0:theme": "@android:0103000A",
+          "@ns0:name": "com.samsung.photodesk.SlideShowActivity"
+        },
+        {
+          "@ns0:name": "com.mobcells.AppGridView",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:name": "com.mobcells.HView",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:name": "com.mobcells.Webview",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@7F0F00B2",
+          "@ns0:label": "",
+          "@ns0:name": "pub.devrel.easypermissions.AppSettingsDialogHolderActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "receiver": {
+        "@ns0:name": "com.samsung.photodesk.util.BroadcastReceiverUtil",
+        "intent-filter": {
+          "action": [
+            {
+              "@ns0:name": "android.intent.action.MEDIA_CHECKING"
+            },
+            {
+              "@ns0:name": "android.intent.action.MEDIA_MOUNTED"
+            },
+            {
+              "@ns0:name": "android.intent.action.MEDIA_UNMOUNTED"
+            },
+            {
+              "@ns0:name": "android.intent.action.MEDIA_REMOVED"
+            },
+            {
+              "@ns0:name": "android.intent.action.MEDIA_EJECT"
+            },
+            {
+              "@ns0:name": "android.intent.action.MEDIA_SCANNER_STARTED"
+            },
+            {
+              "@ns0:name": "android.intent.action.MEDIA_SCANNER_FINISHED"
+            },
+            {
+              "@ns0:name": "android.intent.action.MEDIA_SCANNER_SCAN_FILE"
+            }
+          ],
+          "data": {
+            "@ns0:scheme": "file"
+          }
+        }
+      },
+      "meta-data": [
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F090005"
+        },
+        {
+          "@ns0:name": "UMENG_APPKEY",
+          "@ns0:value": "5bbc606ff1f556464e000428"
+        },
+        {
+          "@ns0:name": "UMENG_CHANNEL",
+          "@ns0:value": "Google Play"
+        },
+        {
+          "@ns0:name": "android.support.VERSION",
+          "@ns0:value": "26.1.0"
+        }
+      ]
+    }
+  }
+}

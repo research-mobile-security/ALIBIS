@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2" ns0:versionName="1.1" package="com.photoedit.gallerylock.album.photohide">
+	<uses-sdk ns0:minSdkVersion="17" ns0:targetSdkVersion="26"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<application ns0:theme="@7F0E000C" ns0:label="@7F0D0028" ns0:icon="@7F0700EA" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true">
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.SplashScreenActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.MainActivity1" ns0:screenOrientation="1" ns0:configChanges="0x00000580" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.GalleryAlbumItemActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.ImageSlideShowActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.FullScreenGalleryActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.PersonalMediaActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.FullScreenActivityForPersonalMedia" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.SlideShowPersonalMediaActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.PasswordChangeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.ChangeSecurityQueActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.MomentdetailItemActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.CropActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.StraightningActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.PrivateActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000580"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.ActivitySetting" ns0:screenOrientation="1"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.photoedit.gallerylock.album.photohide.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F100000"/>
+		</provider>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.ActivityEditor" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.ShowPrivateImageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.photoedit.gallerylock.album.photohide.UI.SlideShowPrivateImageActivity" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="9abb4f45315f0c1ae1929cbaf6f9b698c74e820b"/>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.photoedit.gallerylock.album.photohide.crashlyticsinitprovider" ns0:initOrder="100"/>
+		<meta-data ns0:name="android.support.VERSION" ns0:value="26.1.0"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F0E014C" ns0:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F090007"/>
+		<meta-data ns0:name="android.arch.lifecycle.VERSION" ns0:value="27.0.0-SNAPSHOT"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

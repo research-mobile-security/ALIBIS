@@ -1,0 +1,944 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "902047071",
+    "@ns0:versionName": "2.10.0.494.0-aosp-902047071g",
+    "@ns0:compileSdkVersion": "31",
+    "@ns0:compileSdkVersionCodename": "12",
+    "@package": "com.amazon.clouddrive.photos",
+    "@platformBuildVersionCode": "31",
+    "@platformBuildVersionName": "12",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "22",
+      "@ns0:targetSdkVersion": "31"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_CONTACTS"
+      },
+      {
+        "@ns0:name": "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_MEDIA_LOCATION"
+      },
+      {
+        "@ns0:name": "amazon.permission.COLLECT_METRICS"
+      },
+      {
+        "@ns0:name": "com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.amazon.dcp.sso.permission.MANAGE_COR_PFM"
+      },
+      {
+        "@ns0:name": "com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"
+      },
+      {
+        "@ns0:name": "com.google.android.gms.permission.AD_ID"
+      },
+      {
+        "@ns0:name": "com.amazon.dcp.metrics.permission.METRICS_PERMISSION"
+      },
+      {
+        "@ns0:name": "com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"
+      },
+      {
+        "@ns0:name": "android.permission.GET_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.USE_CREDENTIALS"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.AUTHENTICATE_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "com.amazon.identity.auth.device.perm.AUTH_SDK"
+      },
+      {
+        "@ns0:name": "com.amazon.identity.permission.GENERIC_IPC"
+      },
+      {
+        "@ns0:name": "com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"
+      },
+      {
+        "@ns0:name": "com.amazon.dcp.sso.permission.account.changed"
+      },
+      {
+        "@ns0:name": "com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"
+      },
+      {
+        "@ns0:name": "com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      }
+    ],
+    "queries": {
+      "intent": [
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SEND"
+          },
+          "data": {
+            "@ns0:mimeType": "image/*"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SEND"
+          },
+          "data": {
+            "@ns0:mimeType": "text/plain"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "com.amazon.identity.action.BOOTSTRAP_SSO"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "com.amazon.dcp.sso.action.session.users.changed"
+          }
+        }
+      ],
+      "package": {
+        "@ns0:name": "com.amazon.dee.app"
+      }
+    },
+    "permission": [
+      {
+        "@ns0:name": "com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.amazon.identity.auth.device.perm.AUTH_SDK",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.amazon.dcp.sso.permission.account.changed",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER",
+        "@ns0:protectionLevel": "0x00000003"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:glEsVersion": "0x00020000",
+        "@ns0:required": "true"
+      },
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F13000B",
+      "@ns0:label": "@7F120091",
+      "@ns0:icon": "@7F0E0000",
+      "@ns0:name": "com.amazon.photos.PhotosApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:fullBackupContent": "@7F150000",
+      "@ns0:roundIcon": "@7F0E0002",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "activity": [
+        {
+          "@ns0:name": "com.amazon.photos.activity.LauncherActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1",
+          "@ns0:noHistory": "false",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "amazonphotos"
+              }
+            },
+            {
+              "@ns0:autoVerify": "true",
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:host": "www.amazon.com"
+                },
+                {
+                  "@ns0:host": "www.amazon.ca"
+                },
+                {
+                  "@ns0:host": "www.amazon.mx"
+                },
+                {
+                  "@ns0:host": "www.amazon.com.mx"
+                },
+                {
+                  "@ns0:host": "www.amazon.co.uk"
+                },
+                {
+                  "@ns0:host": "www.amazon.de"
+                },
+                {
+                  "@ns0:host": "www.amazon.fr"
+                },
+                {
+                  "@ns0:host": "www.amazon.it"
+                },
+                {
+                  "@ns0:host": "www.amazon.es"
+                },
+                {
+                  "@ns0:host": "www.amazon.co.jp"
+                },
+                {
+                  "@ns0:host": "www.amazon.cn"
+                },
+                {
+                  "@ns0:host": "www.amazon.in"
+                },
+                {
+                  "@ns0:host": "www.amazon.com.au"
+                },
+                {
+                  "@ns0:host": "www.amazon.com.br"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/launcher"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/all"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/people"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/places"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/albums"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/foryou"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/more"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/settings"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/legal"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/family"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/thisday"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/stories"
+                },
+                {
+                  "@ns0:pathPrefix": "/photos/memories"
+                }
+              ]
+            },
+            {
+              "@ns0:autoVerify": "true",
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:host": "photos.amazon.com"
+                },
+                {
+                  "@ns0:host": "photos.amazon.ca"
+                },
+                {
+                  "@ns0:host": "photos.amazon.mx"
+                },
+                {
+                  "@ns0:host": "photos.amazon.com.mx"
+                },
+                {
+                  "@ns0:host": "photos.amazon.co.uk"
+                },
+                {
+                  "@ns0:host": "photos.amazon.de"
+                },
+                {
+                  "@ns0:host": "photos.amazon.fr"
+                },
+                {
+                  "@ns0:host": "photos.amazon.it"
+                },
+                {
+                  "@ns0:host": "photos.amazon.es"
+                },
+                {
+                  "@ns0:host": "photos.amazon.co.jp"
+                },
+                {
+                  "@ns0:host": "photos.amazon.cn"
+                },
+                {
+                  "@ns0:host": "photos.amazon.in"
+                },
+                {
+                  "@ns0:host": "photos.amazon.com.au"
+                },
+                {
+                  "@ns0:host": "photos.amazon.com.br"
+                },
+                {
+                  "@ns0:pathPrefix": "/launcher"
+                },
+                {
+                  "@ns0:pathPrefix": "/all"
+                },
+                {
+                  "@ns0:pathPrefix": "/people"
+                },
+                {
+                  "@ns0:pathPrefix": "/places"
+                },
+                {
+                  "@ns0:pathPrefix": "/albums"
+                },
+                {
+                  "@ns0:pathPrefix": "/foryou"
+                },
+                {
+                  "@ns0:pathPrefix": "/more"
+                },
+                {
+                  "@ns0:pathPrefix": "/settings"
+                },
+                {
+                  "@ns0:pathPrefix": "/legal"
+                },
+                {
+                  "@ns0:pathPrefix": "/family"
+                },
+                {
+                  "@ns0:pathPrefix": "/thisday"
+                },
+                {
+                  "@ns0:pathPrefix": "/stories"
+                },
+                {
+                  "@ns0:pathPrefix": "/memories"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "app"
+                },
+                {
+                  "@ns0:host": "com.amazon.photos"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.amazon.photos.prints.activity.PrintsActivity"
+        },
+        {
+          "@ns0:theme": "@7F13039A",
+          "@ns0:name": "com.amazon.identity.auth.device.activity.GetAuthenticatorResultsActivity"
+        },
+        {
+          "@ns0:label": "Amazon AuthPortal",
+          "@ns0:name": "com.amazon.identity.auth.device.AuthPortalUIActivity",
+          "@ns0:permission": "com.amazon.identity.auth.device.perm.AUTH_SDK",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "@7F0B0007",
+          "@ns0:allowTaskReparenting": "true"
+        },
+        {
+          "@ns0:label": "Amazon Auth Challenge",
+          "@ns0:name": "com.amazon.identity.auth.device.activity.AuthChallengeHandleActivity",
+          "@ns0:permission": "com.amazon.identity.auth.device.perm.AUTH_SDK",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "@7F0B0007"
+        },
+        {
+          "@ns0:label": "Sign up and enroll",
+          "@ns0:name": "com.amazon.identity.auth.device.activity.ActorSignUpAndEnrollActivity",
+          "@ns0:permission": "com.amazon.identity.auth.device.perm.AUTH_SDK",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "@7F0B0007"
+        },
+        {
+          "@ns0:label": "Enroll actor UI",
+          "@ns0:name": "com.amazon.identity.auth.device.activity.ActorEnrollActivity",
+          "@ns0:permission": "com.amazon.identity.auth.device.perm.AUTH_SDK",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "@7F0B0007"
+        },
+        {
+          "@ns0:label": "Update Pin Preference UI",
+          "@ns0:name": "com.amazon.identity.auth.device.activity.ActorUpdatePinPreferenceActivity",
+          "@ns0:permission": "com.amazon.identity.auth.device.perm.AUTH_SDK",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "@7F0B0007"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:label": "@7F120091",
+          "@ns0:name": "ly.img.android.pesdk.ui.activity.CameraPreviewActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:label": "@7F120091",
+          "@ns0:name": "ly.img.android.pesdk.ui.activity.PhotoEditorActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000430",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:label": "@7F120091",
+          "@ns0:name": "ly.img.android.pesdk.ui.activity.VideoEditorActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000430",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:label": "@7F120091",
+          "@ns0:name": "ly.img.android.pesdk.ui.activity.EditorActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000430",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.amazon.photos.core.activity.HomeActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.amazon.photos.core.activity.OnboardingActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.amazon.photos.core.activity.RNPlaygroundActivity",
+          "@ns0:exported": "false",
+          "@ns0:parentActivityName": "com.amazon.photos.core.activity.HomeActivity"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.android.billingclient.api.ProxyBillingActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000005B0"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "io.branch.sdk.BranchKey",
+          "@ns0:value": "key_live_kjKgQDN98W8u7e1JzpVJ6ppfyAefpMBl"
+        },
+        {
+          "@ns0:name": "io.branch.sdk.BranchKey.test",
+          "@ns0:value": "key_test_fpRkPzIW417s9b2VvkGH4mjkvrnegLzC"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0B000E"
+        },
+        {
+          "@ns0:name": "com.google.android.play.billingclient.version",
+          "@ns0:value": "5.0.0"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.amazon.photos.infrastructure.AccountStateReceiver",
+          "@ns0:permission": "com.amazon.dcp.sso.permission.account.changed",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.amazon.dcp.sso.action.account.removed"
+              },
+              {
+                "@ns0:name": "com.amazon.dcp.sso.action.secondary.account.removed"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.TIME_SET"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.amazon.dcp.sso.action.session.users.changed"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MEDIA_SCANNER_FINISHED"
+              },
+              "data": {
+                "@ns0:scheme": "file"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.hardware.action.NEW_PICTURE"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.hardware.action.NEW_VIDEO"
+              },
+              "data": {
+                "@ns0:mimeType": "video/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BATTERY_OKAY"
+              },
+              {
+                "@ns0:name": "android.intent.action.BATTERY_LOW"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIME_SET"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+          "@ns0:enabled": "@7F050004",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.impl.background.systemalarm.UpdateProxies"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+            }
+          }
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.amazon.photos.auth.PhotosMAPInformationProvider",
+          "@ns0:permission": "com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.amazon.identity.auth.device.MapInfoProvider.Photos"
+        },
+        {
+          "@ns0:name": "ly.img.android.IMGLYAutoInit",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.amazon.clouddrive.photos.IMGLYAutoInit"
+        },
+        {
+          "@ns0:name": "com.reactnativecommunity.webview.RNCWebViewFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.amazon.clouddrive.photos.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F150001"
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.amazon.clouddrive.photos.firebaseinitprovider",
+          "@ns0:initOrder": "100",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.amazon.photos.core.provider.PhotosFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.amazon.photos.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F150003"
+          }
+        },
+        {
+          "@ns0:name": "androidx.lifecycle.ProcessLifecycleOwnerInitializer",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.amazon.clouddrive.photos.lifecycle-process"
+        }
+      ],
+      "uses-library": {
+        "@ns0:name": "com.amazon.client.metrics.api",
+        "@ns0:required": "false"
+      },
+      "service": [
+        {
+          "@ns0:name": "com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.amazon.identity.action.BOOTSTRAP_SSO"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.amazon.identity.auth.device.storage.DirtyDataSyncingService",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.amazon.identity.action.SYNC_DIRTY_DATA"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.amazon.identity.action.CLEAN_DATA"
+            }
+          }
+        },
+        {
+          "@ns0:name": "ly.img.android.pesdk.backend.operator.headless.RenderService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:foregroundServiceType": "0x00000002"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.foreground.SystemForegroundService",
+          "@ns0:exported": "false",
+          "@ns0:foregroundServiceType": "0x00000001"
+        },
+        {
+          "@ns0:name": "com.google.firebase.messaging.FirebaseMessagingService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "intent-filter": {
+            "@ns0:priority": "-500",
+            "action": {
+              "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.iid.Registrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "backend:com.google.android.datatransport.cct.CctBackendFactory",
+            "@ns0:value": "cct"
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.amazon.photos.core.notifications.fcm.FirebaseMessagingServiceImpl",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+          "@ns0:enabled": "@7F050004",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemjob.SystemJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "@7F050006",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        }
+      ]
+    }
+  }
+}

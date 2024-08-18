@@ -1,0 +1,328 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1553728120" ns0:versionName="2.0" package="com.wPhotoEditor2019_8177192" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+	<uses-sdk ns0:minSdkVersion="17" ns0:targetSdkVersion="27"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.microphone"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.QUICKBOOT_POWERON"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.NFC"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission ns0:name="com.android.alarm.permission.SET_ALARM"/>
+	<uses-feature ns0:name="android.hardware.location.gps"/>
+	<uses-feature ns0:name="android.hardware.location.network"/>
+	<uses-feature ns0:name="android.hardware.bluetooth" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.bluetooth_le" ns0:required="false"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<permission ns0:name="com.wPhotoEditor2019_8177192.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="org.fossasia.phimpme.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<application ns0:theme="@7F10000A" ns0:label="@7F0F0067" ns0:icon="@7F080073" ns0:name="org.fossasia.phimpme.MyApplication" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="true">
+		<activity ns0:theme="@7F10013E" ns0:name="org.fossasia.phimpme.opencamera.Camera.CameraActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.VOICE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.VOICE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0F07A5" ns0:icon="@7F0800FE" ns0:name="org.fossasia.phimpme.opencamera.Camera.TakePhoto" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:label="@7F0F0067" ns0:icon="@7F080073" ns0:name="org.fossasia.phimpme.opencamera.Camera.MyWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F120004"/>
+		</receiver>
+		<receiver ns0:label="@7F0F07A5" ns0:icon="@7F0800FE" ns0:name="org.fossasia.phimpme.opencamera.Camera.MyWidgetProviderTakePhoto">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F120005"/>
+		</receiver>
+		<service ns0:label="@7F0F00B3" ns0:icon="@7F080111" ns0:name="org.fossasia.phimpme.opencamera.Camera.MyTileService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F0F072F" ns0:icon="@7F080139" ns0:name="org.fossasia.phimpme.opencamera.Camera.MyTileServiceVideo" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F0F0767" ns0:icon="@7F0800E2" ns0:name="org.fossasia.phimpme.opencamera.Camera.MyTileServiceFrontCamera" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F10013E" ns0:name="org.fossasia.phimpme.gallery.activities.SplashScreen" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F0F0067">
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F0F0067">
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="vn.mbm.phimp.me.leafpic.OPEN_ALBUM"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F120003"/>
+		</activity>
+		<activity ns0:theme="@7F10013E" ns0:name="org.fossasia.phimpme.gallery.activities.LFMainActivity" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.albumsAct"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F10013E" ns0:label="@7F0F0067" ns0:name="org.fossasia.phimpme.gallery.activities.SingleMediaActivity" ns0:configChanges="0x00000788" ns0:parentActivityName="org.fossasia.phimpme.gallery.activities.LFMainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="com.google.android.voicesearch.SELF_NOTE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="org.fossasia.phimpme.gallery.activities.LFMainActivity"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.albumPhoto"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F10013E" ns0:label="@7F0F0772" ns0:name="org.fossasia.phimpme.gallery.activities.SettingsActivity" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SETTING"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.APPLICATION_PREFERENCES"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F10013E" ns0:label="@7F0F0021" ns0:name="org.fossasia.phimpme.gallery.activities.AboutActivity" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ABOUT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F10013E" ns0:label="@7F0F0763" ns0:name="org.fossasia.phimpme.gallery.activities.SecurityActivity" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SECURITY"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F10013E" ns0:label="@7F0F0166" ns0:name="org.fossasia.phimpme.gallery.activities.ExcludedAlbumsActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ExcludedAlbums"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F10000C" ns0:name="org.fossasia.phimpme.editor.EditImageActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F10013E" ns0:name="com.yalantis.ucrop.UCropActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F10000C" ns0:label="Preview" ns0:name="org.fossasia.phimpme.opencamera.Camera.PhotoActivity"/>
+		<activity ns0:theme="@7F10000C" ns0:label="Upload History" ns0:name="org.fossasia.phimpme.uploadhistory.UploadHistory"/>
+		<meta-data ns0:name="org.fossasia.phimpme.gallery.CustomGlideModule" ns0:value="GlideModule"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.wPhotoEditor2019_8177192.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120002"/>
+		</provider>
+		<activity ns0:theme="@7F10000C" ns0:name="org.fossasia.phimpme.share.SharingActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000030" ns0:largeHeap="true"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0007"/>
+		<activity ns0:theme="@7F10013E" ns0:name="org.fossasia.phimpme.accounts.AccountActivity" ns0:launchMode="2" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="org.fossasia.phimpme"/>
+				<data ns0:scheme="pdk4910600717739247160"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F10013E" ns0:name="org.fossasia.phimpme.share.drupal.DrupalLogin"/>
+		<activity ns0:theme="@7F10013E" ns0:name="org.fossasia.phimpme.share.wordpress.WordpressLoginActivity"/>
+		<activity ns0:theme="@7F10000C" ns0:name="org.fossasia.phimpme.share.nextcloud.NextCloudAuth"/>
+		<activity ns0:theme="@7F10000C" ns0:label="@7F0F07B3" ns0:name="org.fossasia.phimpme.share.owncloud.OwnCloudActivity"/>
+		<activity ns0:name="org.fossasia.phimpme.gallery.activities.MainMenuActivity"/>
+		<receiver ns0:name="com.appsgeyser.sdk.datasdk.DataSdksReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver"/>
+		<meta-data ns0:name="showEula" ns0:value="false"/>
+		<meta-data ns0:name="onesignal_app_id" ns0:value="03d81243-a93f-4a2d-a4d1-eab330f82c03"/>
+		<meta-data ns0:name="onesignal_google_project_number" ns0:value="str:REMOTE"/>
+		<receiver ns0:name="com.onesignal.GcmBroadcastReceiver" ns0:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter ns0:priority="999">
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.spitchenko.appsgeyser"/>
+			</intent-filter>
+			<intent-filter ns0:priority="999">
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="org.fossasia.phimpme"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.onesignal.NotificationOpenedReceiver"/>
+		<service ns0:name="com.onesignal.GcmIntentService"/>
+		<service ns0:name="com.onesignal.SyncService"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.onesignal.PermissionsActivity"/>
+		<activity ns0:theme="@7F10013E" ns0:name="com.appsgeyser.sdk.ui.AboutDialogActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.onesignal.NotificationRestoreService"/>
+		<receiver ns0:name="com.onesignal.BootUpReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.onesignal.UpgradeReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000A" ns0:name="com.appsgeyser.sdk.push.MessageViewer" ns0:excludeFromRecents="true"/>
+		<activity ns0:theme="@android:0103000A" ns0:name="com.appsgeyser.sdk.PausedContentInfoActivity"/>
+		<activity ns0:label="Loading..." ns0:name="com.appsgeyser.sdk.BrowserActivity"/>
+		<service ns0:name="com.yandex.metrica.MetricaService" ns0:enabled="true" ns0:exported="true" ns0:process=":Metrica">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="com.yandex.metrica.IMetricaService"/>
+				<data ns0:scheme="metrica"/>
+			</intent-filter>
+			<meta-data ns0:name="metrica:api:level" ns0:value="58"/>
+		</service>
+		<receiver ns0:name="com.yandex.metrica.MetricaEventHandler" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:label="beacon" ns0:name="org.altbeacon.beacon.service.BeaconService" ns0:enabled="true" ns0:exported="false" ns0:isolatedProcess="false"/>
+		<service ns0:name="org.altbeacon.beacon.BeaconIntentProcessor" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="org.altbeacon.beacon.service.ScanJob" ns0:permission="android.permission.BIND_JOB_SERVICE">
+			<meta-data ns0:name="immediateScanJobId" ns0:value="208352939"/>
+			<meta-data ns0:name="periodicScanJobId" ns0:value="208352940"/>
+		</service>
+		<service ns0:name="org.altbeacon.bluetooth.BluetoothTestJob" ns0:permission="android.permission.BIND_JOB_SERVICE">
+			<meta-data ns0:name="jobId" ns0:value="1799803768"/>
+		</service>
+		<activity ns0:theme="@android:01030005" ns0:name="com.silvermob.sdk.InterstitalActivity" ns0:configChanges="0x000000A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.silvermob.sdk.InAppWebView" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F10013C" ns0:name="com.appsgeyser.sdk.datasdk.DataSdkActivity" ns0:configChanges="0x000000A0"/>
+		<activity ns0:name="com.appsgeyser.sdk.AdActivity"/>
+		<receiver ns0:name="com.appsgeyser.sdk.push.OneSignalStarterReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.appnext.core.AdsService" ns0:multiprocess="true"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.appnext.ads.interstitial.InterstitialActivity" ns0:multiprocess="true" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.appnext.ads.fullscreen.FullscreenActivity" ns0:multiprocess="true" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<service ns0:name="com.appnext.base.services.OperationService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.appnext.base.services.ReceiverService" ns0:persistent="true" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.appnext.base.receivers.imp.bootreceiver" ns0:enabled="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="unityplayer.ForwardNativeEventsToDalvik" ns0:value="true"/>
+		<activity ns0:name="com.mopub.mobileads.MoPubActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MraidActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.common.MoPubBrowser" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MraidVideoPlayerActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.RewardedMraidActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.ads.list3d.List3DActivity"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.startapp.android.publish.adsCommon.activities.OverlayActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.adsCommon.activities.FullScreenActivity" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.PeriodicMetaDataService"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.InfoEventService"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.PeriodicJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<receiver ns0:name="com.startapp.android.publish.common.metaData.BootCompleteListener">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.onesignal.GcmIntentJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.SyncJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.RestoreJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.RestoreKickoffJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.tappx.sdk.android.AdActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F10014F" ns0:name="com.tappx.sdk.android.InterstitialAdActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.tappx.sdk.android.VideoAdActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.tappx.sdk.android.PrivacyConsentActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.appnext.core.ResultActivity" ns0:excludeFromRecents="true" ns0:launchMode="1"/>
+	</application>
+</manifest>

@@ -1,0 +1,247 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1520800425" ns0:versionName="2.8.0.85_230220" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.asus.filemanager" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="31" ns0:targetSdkVersion="31"/>
+	<permission ns0:label="provider read pomission" ns0:name="com.asus.filemanager.provider.OpenFileProvider.PERMISSION.READ" ns0:protectionLevel="0x00000002"/>
+	<permission ns0:label="provider write pomission" ns0:name="com.asus.filemanager.provider.OpenFileProvider.PERMISSION.WRITE" ns0:protectionLevel="0x00000002"/>
+	<permission ns0:name="com.asus.filemanager.provider.PreferenceProvider.permission.READ_PREFERENCE" ns0:protectionLevel="0x00000003"/>
+	<permission ns0:name="com.asus.filemanager.provider.PreferenceProvider.permission.WRITE_PREFERENCE" ns0:protectionLevel="0x00000003"/>
+	<uses-feature ns0:name="asus.software.zenui"/>
+	<uses-feature ns0:name="asus.software.zenui.six"/>
+	<uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.android.email.permission.READ_ATTACHMENT"/>
+	<uses-permission ns0:name="android.permission.EXPAND_STATUS_BAR"/>
+	<uses-permission ns0:name="android.permission.INTERACT_ACROSS_USERS"/>
+	<uses-permission ns0:name="android.permission.MANAGE_USERS"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="com.android.gallery3d.permission.READ_PICASA"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.asus.filemanager.provider.OpenFileProvider.PERMISSION.READ"/>
+	<uses-permission ns0:name="com.asus.filemanager.provider.OpenFileProvider.PERMISSION.WRITE"/>
+	<uses-permission ns0:name="com.asus.permission.APPLY_THEME"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="com.asus.vzwhelp.provider.permission"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.LOCAL_MAC_ADDRESS"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="com.asus.faceunlockservice.permission.NORMAL_USE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<application ns0:theme="@android:0103013F" ns0:label="@7F110175" ns0:icon="@7F0E0000" ns0:name="com.asus.filemanager.activity.FileManagerApplication" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:extractNativeLibs="false" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:localeConfig="@7F140006">
+		<activity ns0:theme="@7F12060F" ns0:label="@7F110175" ns0:name="com.asus.filemanager.activity.FileManagerActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x00000D80">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F140005"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="application/zip"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="application/zip"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="application/rar"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="application/rar"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="filemanager"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F14000A"/>
+			<intent-filter>
+				<action ns0:name="com.asus.datatransfer"/>
+				<category ns0:name="com.asus.datatransfer"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F110175" ns0:name="com.asus.filemanager.activity.FileManagerGetContent" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.asus.filemanager.action.MULTIPLE_SELECTION"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F12060F" ns0:name="com.asus.filemanager.activity.TutorialActivity"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F11032D" ns0:name="com.asus.filemanager.activity.HttpServerActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F110330" ns0:name="com.asus.filemanager.activity.StorageAnalyzerActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F12060F" ns0:name="com.asus.filemanager.activity.AnalyzerAllFilesActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F11015D" ns0:name="com.asus.filemanager.activity.AnalyzerDupFilesActivity" ns0:configChanges="0x00000480"/>
+		<provider ns0:name="com.asus.filemanager.provider.FileManagerProvider" ns0:exported="false" ns0:authorities="com.asus.filemanager.provider"/>
+		<provider ns0:name="com.asus.filemanager.provider.SuggestionsProvider" ns0:exported="false" ns0:authorities="com.asus.filemanager.SuggestionsProvider"/>
+		<provider ns0:name="com.asus.filemanager.samba.provider.PCAccountInfoProvider" ns0:exported="false" ns0:authorities="com.asus.filemanager.samba.PCAccountInfoProvider" ns0:syncable="false"/>
+		<provider ns0:name="com.asus.filemanager.provider.SearchHistoryProvider" ns0:exported="false" ns0:authorities="com.asus.filemanager.SearchHistoryProvider"/>
+		<provider ns0:name="com.asus.filemanager.provider.OpenFileProvider" ns0:readPermission="com.asus.filemanager.provider.OpenFileProvider.PERMISSION.READ" ns0:writePermission="com.asus.filemanager.provider.OpenFileProvider.PERMISSION.WRITE" ns0:exported="true" ns0:authorities="com.asus.filemanager.OpenFileProvider" ns0:grantUriPermissions="false">
+			<grant-uri-permission ns0:pathPrefix="/file"/>
+		</provider>
+		<provider ns0:name="com.asus.filemanager.provider.PreferenceProvider" ns0:readPermission="com.asus.filemanager.provider.PreferenceProvider.permission.READ_PREFERENCE" ns0:writePermission="com.asus.filemanager.provider.PreferenceProvider.permission.WRITE_PREFERENCE" ns0:exported="true" ns0:authorities="com.asus.filemanager.provider.preferenceprovider"/>
+		<activity ns0:theme="@7F12055A" ns0:name="com.asus.service.asuscloud.ASUSAccountLoginActivity" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F120013" ns0:label="@7F110062" ns0:name="com.asus.service.asuscloud.AccountIntegrateActivity" ns0:exported="false" ns0:launchMode="3" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F120013" ns0:label="@7F110062" ns0:name="com.asus.service.DropboxAuthenticator.DbxLoginActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<data ns0:scheme="db-xjj1ilibw8bryog"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.asus.service.OneDriveAuthenticator.SDAuthenticatorActivity" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.asus.service.BaiduPCS.BaiduAuthenticatorActivity" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.asus.service.yandex.YandexAuthenticatorActivity" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F120013" ns0:label="@7F110062" ns0:name="com.asus.service.AccountAuthenticator.helper.TokenHelperActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480"/>
+		<service ns0:name="com.asus.service.AccountAuthenticator.helper.TokenHelperService" ns0:exported="false"/>
+		<service ns0:name="com.asus.service.cloudstorage.CloudStorageService" ns0:enabled="true" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.asus.filemanager.service.DummyForegroundService" ns0:exported="false"/>
+		<activity ns0:theme="@7F120013" ns0:name="com.asus.service.cloudstorage.googleDrive.GoogleDriveAuthentication" ns0:configChanges="0x00000480"/>
+		<receiver ns0:name="com.asus.service.cloudstorage.AccountsChangedReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="asus.filemanager.LOGIN_ACCOUNTS_CHANGED"/>
+				<action ns0:name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F120434" ns0:name="com.asus.service.cloudstorage.dumgr.ProgressInfoActivity" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F110024" ns0:name="com.asus.filemanager.activity.FileManagerAboutActivity"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F110037" ns0:name="com.asus.filemanager.activity.AddCloudAccountActivity"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F1100DC" ns0:name="com.asus.filemanager.activity.CategorySortingActivity"/>
+		<activity ns0:theme="@7F12060F" ns0:name="com.asus.filemanager.activity.FileManagerEULATemplActivity"/>
+		<activity ns0:theme="@7F1206AB" ns0:name="com.asus.filemanager.activity.ViewPagerActivity" ns0:launchMode="2" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F110032" ns0:name="com.asus.filemanager.activity.FileManagerSettingActivity"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A000C"/>
+		<receiver ns0:name="com.asus.filemanager.receiver.MediaScannerBroadcastReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.asus.filemanager.check_large_file"/>
+				<data ns0:scheme="*"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F110036" ns0:name="com.asus.filemanager.hiddenzone.activity.HiddenZoneSetupActivity"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F11032E" ns0:name="com.asus.filemanager.hiddenzone.activity.SetupPasswordActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F11032E" ns0:name="com.asus.filemanager.hiddenzone.activity.UnlockActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F11032E" ns0:name="com.asus.filemanager.hiddenzone.activity.SetupAccountActivity"/>
+		<activity ns0:theme="@7F12060F" ns0:label="@7F110032" ns0:name="com.asus.filemanager.hiddenzone.activity.HiddenZoneSettingActivity"/>
+		<meta-data ns0:name="support_theme_change" ns0:value="true"/>
+		<receiver ns0:name="com.asus.filemanager.theme.ThemeChangeReceiver" ns0:permission="com.asus.permission.APPLY_THEME" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="asus.intent.action.THEME_CHANGE"/>
+				<action ns0:name="com.asus.themeapp.THEME_CHANGE"/>
+				<action ns0:name="com.asus.themeapp.THEME_CHANGE_DIY"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="firebase_analytics_collection_enabled" ns0:value="false"/>
+		<receiver ns0:name="com.google.android.gms.analytics.AnalyticsReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.asus.filemanager.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050008" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050007" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.asus.filemanager.firebaseinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+	</application>
+</manifest>

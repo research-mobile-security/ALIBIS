@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="12" ns0:versionName="2.3.2" ns0:compileSdkVersion="28" ns0:compileSdkVersionCodename="9" package="com.dokidevs.pholder" platformBuildVersionCode="12" platformBuildVersionName="2.3.2">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="28"/>
+	<uses-feature ns0:name=" android.hardware.camera" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<application ns0:theme="@7F11000E" ns0:label="@7F10002B" ns0:icon="@7F0F0000" ns0:name="com.dokidevs.pholder.PholderApplication" ns0:allowBackup="false" ns0:supportsRtl="false" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity ns0:name="com.dokidevs.pholder.gallery.GalleryActivity" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F11000F" ns0:name="com.dokidevs.pholder.slideshow.SlideshowActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="com.dokidevs.pholder.camera.CameraActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F100092" ns0:name="com.dokidevs.pholder.settings.SettingsActivity"/>
+		<activity ns0:name="com.dokidevs.pholder.settings.DirectoryListActivity"/>
+		<activity ns0:label="@7F100067" ns0:name="com.dokidevs.pholder.info.InfoActivity"/>
+		<service ns0:name="com.dokidevs.pholder.service.FileIntentService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.dokidevs.pholder.service.MediaIntentService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.dokidevs.pholder.service.GeocoderIntentService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.dokidevs.pholder.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140000"/>
+		</provider>
+		<meta-data ns0:name="com.google.android.geo.API_KEY" ns0:value="@7F100064"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="firebase_analytics_collection_deactivated" ns0:value="@7F050004"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="@7F050005"/>
+		<meta-data ns0:name="google_analytics_adid_collection_enabled" ns0:value="false"/>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.dokidevs.pholder.crashlyticsinitprovider" ns0:initOrder="90"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.dokidevs.pholder.firebaseinitprovider" ns0:initOrder="100"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000F"/>
+	</application>
+</manifest>

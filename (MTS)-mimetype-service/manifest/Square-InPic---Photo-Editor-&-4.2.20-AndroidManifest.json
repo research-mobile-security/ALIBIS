@@ -1,0 +1,299 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "1440220",
+    "@ns0:versionName": "4.2.20",
+    "@ns0:installLocation": "0",
+    "@ns0:compileSdkVersion": "28",
+    "@ns0:compileSdkVersionCodename": "9",
+    "@package": "com.studio8apps.instasizenocrop",
+    "@platformBuildVersionCode": "28",
+    "@platformBuildVersionName": "9",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "16",
+      "@ns0:targetSdkVersion": "28"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:glEsVersion": "0x00020000",
+        "@ns0:required": "true"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F0F0135",
+      "@ns0:label": "@7F0E0030",
+      "@ns0:icon": "@7F070117",
+      "@ns0:name": "com.studio8apps.instasizenocrop.utility.BaseApp",
+      "@ns0:allowBackup": "true",
+      "@ns0:logo": "@7F070001",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:networkSecurityConfig": "@7F120000",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "meta-data": [
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F090004"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.APPLICATION_ID",
+          "@ns0:value": "ca-app-pub-8953295938601539~4725649201"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "io.fabric.ApiKey",
+          "@ns0:value": "6f85c667a6e9f7fc6580586b0059c4b488ec9d72"
+        }
+      ],
+      "uses-library": {
+        "@ns0:name": "org.apache.http.legacy",
+        "@ns0:required": "false"
+      },
+      "activity": [
+        {
+          "@ns0:label": "@7F0E0030",
+          "@ns0:name": "com.studio8apps.instasizenocrop.StartActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F0F0135",
+          "@ns0:label": "@7F0E0030",
+          "@ns0:name": "com.studio8apps.instasizenocrop.MainActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.studio8apps.instasizenocrop.StartActivity"
+          },
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.SEND"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "image/*"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.studio8apps.instasizenocrop.CollageActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.studio8apps.instasizenocrop.StartActivity"
+          }
+        },
+        {
+          "@ns0:theme": "@7F0F0135",
+          "@ns0:label": "@7F0E0026",
+          "@ns0:name": "com.studio8apps.instasizenocrop.PreferencesActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.studio8apps.instasizenocrop.StartActivity"
+          }
+        },
+        {
+          "@ns0:label": "@7F0E002E",
+          "@ns0:name": "com.studio8apps.instasizenocrop.FolderListActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.studio8apps.instasizenocrop.StartActivity"
+          }
+        },
+        {
+          "@ns0:name": "com.studio8apps.instasizenocrop.PictureSelectActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.studio8apps.instasizenocrop.StartActivity"
+          }
+        },
+        {
+          "@ns0:label": "@7F0E001B",
+          "@ns0:name": "com.studio8apps.instasizenocrop.AboutActivity"
+        },
+        {
+          "@ns0:label": "@7F0E0083",
+          "@ns0:name": "com.studio8apps.instasizenocrop.LicensesActivity"
+        },
+        {
+          "@ns0:label": "@7F0E00A6",
+          "@ns0:name": "com.studio8apps.instasizenocrop.PromoActivity"
+        },
+        {
+          "@ns0:theme": "@7F0F0135",
+          "@ns0:label": "@7F0E006D",
+          "@ns0:name": "com.studio8apps.instasizenocrop.ActivityFilters",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0F0135",
+          "@ns0:label": "@7F0E002D",
+          "@ns0:name": "com.studio8apps.instasizenocrop.ActivityAdjust",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0F0133",
+          "@ns0:label": "@7F0E0060",
+          "@ns0:name": "com.studio8apps.instasizenocrop.crop.CropActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:label": "@7F0E00BC",
+          "@ns0:name": "com.studio8apps.instasizenocrop.ShareActivity",
+          "@ns0:screenOrientation": "1",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.studio8apps.instasizenocrop.StartActivity"
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.studio8apps.instasizenocrop.provider.ImageProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.studio8apps.instasizenocrop.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F120001"
+          }
+        },
+        {
+          "@ns0:name": "com.crashlytics.android.CrashlyticsInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.studio8apps.instasizenocrop.crashlyticsinitprovider",
+          "@ns0:initOrder": "90"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.MobileAdsInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.studio8apps.instasizenocrop.mobileadsinitprovider",
+          "@ns0:initOrder": "100"
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.studio8apps.instasizenocrop.firebaseinitprovider",
+          "@ns0:initOrder": "100"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.iid.Registrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="14" ns0:versionName="1.4" ns0:compileSdkVersion="29" ns0:compileSdkVersionCodename="10" package="photography.redgallery.tools" platformBuildVersionCode="29" platformBuildVersionName="10">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<application ns0:label="@7F110038" ns0:icon="@7F0F0000" ns0:name="photography.redgallery.tools.util.GalleryPref" ns0:allowBackup="false" ns0:supportsRtl="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:theme="@7F12004D" ns0:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
+		<activity ns0:theme="@7F120102" ns0:name="photography.redgallery.tools.activity.splashscreen" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120102" ns0:name="photography.redgallery.tools.activity.MainActivity"/>
+		<activity ns0:theme="@7F120102" ns0:name="photography.redgallery.tools.activity.AboutActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120102" ns0:name="photography.redgallery.tools.activity.AlbumActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1200F8" ns0:name="photography.redgallery.tools.activity.ItemActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F120102" ns0:name="photography.redgallery.tools.activity.videoplayscreen" ns0:launchMode="2" ns0:configChanges="0x00000D80" ns0:supportsPictureInPicture="true"/>
+		<activity ns0:theme="@7F1200FD" ns0:name="photography.redgallery.tools.activity.FileExplorerActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1200FE" ns0:name="photography.redgallery.tools.activity.FileOperationDialogActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1200EB" ns0:name="photography.redgallery.tools.activity.ExifEditorActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F1200E9" ns0:label="@7F11005D" ns0:name="photography.redgallery.tools.activity.EditImageActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1200F9" ns0:label="@7F11014A" ns0:name="photography.redgallery.tools.activity.SetWallpaperActivity" ns0:launchMode="1" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1200EA" ns0:label="@7F110064" ns0:name="photography.redgallery.tools.activity.ExcludePathsActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F120100" ns0:label="@7F110149" ns0:name="photography.redgallery.tools.activity.VirtualAlbumsActivity" ns0:launchMode="1"/>
+		<activity ns0:name="photography.redgallery.tools.IntentReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="photography.redgallery.tools.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140001"/>
+		</provider>
+		<service ns0:name="photography.redgallery.tools.data.fileOperations.Copy"/>
+		<service ns0:name="photography.redgallery.tools.data.fileOperations.Delete"/>
+		<service ns0:name="photography.redgallery.tools.data.fileOperations.Move"/>
+		<service ns0:name="photography.redgallery.tools.data.fileOperations.NewDirectory"/>
+		<service ns0:name="photography.redgallery.tools.data.fileOperations.Rename"/>
+		<activity ns0:theme="@7F120102" ns0:name="photography.redgallery.tools.activity.VideoListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120102" ns0:name="photography.redgallery.tools.activity.SettingscreenActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120102" ns0:name="photography.redgallery.tools.PicturesDataview.FullScreenViewActivity" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="@7F110032"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="photography.redgallery.tools.lifecycle-process"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="photography.redgallery.tools.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="photography.redgallery.tools.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0010"/>
+		<provider ns0:name="androidx.work.impl.WorkManagerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="photography.redgallery.tools.workmanager-init" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

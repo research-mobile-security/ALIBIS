@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1" ns0:versionName="1.0" ns0:compileSdkVersion="30" ns0:compileSdkVersionCodename="11" package="de.ultrareface.appreface" platformBuildVersionCode="30" platformBuildVersionName="11">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="30"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F0F01E5" ns0:label="@7F0E001C" ns0:icon="@7F0C0000" ns0:name="de.ultrareface.appreface.Kifopero" ns0:allowBackup="true" ns0:supportsRtl="true" ns0:fullBackupContent="@7F110000" ns0:usesCleartextTraffic="true" ns0:roundIcon="@7F0C0001" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity ns0:name="de.ultrareface.appreface.ByriosdActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="posture"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="de.ultrareface.appreface.NjugoerActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="de.ultrareface.appreface.MainActivity" ns0:screenOrientation="1"/>
+		<receiver ns0:name="com.appsflyer.SingleInstallBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F0E0041"/>
+		<activity ns0:theme="@7F0F02E6" ns0:label="@7F0E001C" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F0E0042"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.de.ultrareface.appreface"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F090008"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="de.ultrareface.appreface.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F110006"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

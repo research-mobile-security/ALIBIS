@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2" ns0:versionName="1.1" ns0:compileSdkVersion="29" ns0:compileSdkVersionCodename="10" package="com.xiaomiCamera.redmik20pro" platformBuildVersionCode="29" platformBuildVersionName="10">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="29"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F13000C" ns0:label="@7F120022" ns0:icon="@7F080173" ns0:name="com.xiaomiredmik20pro.hdcameram01.xiaomi_MyApp" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:name="com.Exit_Activity"/>
+		<activity ns0:name="com.xiaomiredmik20pro.hdcameram01.xiaomi_Activitystart" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xiaomiredmik20pro.hdcameram01.xiaomi_EditImageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xiaomiredmik20pro.hdcameram01.xiaomi_GalleryappActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xiaomiredmik20pro.hdcameram01.xiaomi_ExitActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xiaomi_moreapp" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1301CC" ns0:name="com.xiaomiredmik20pro.hdcameram01.xiaomi_Splace" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1301CC" ns0:name="com.xiaomiredmik20pro.hdcameram01.xiaomi_CameraActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xiaomiredmik20pro.hdcameram01.xiaomi_SelectImageListActivity" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="@7F120001"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.xiaomiCamera.redmik20pro.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150001"/>
+		</provider>
+		<activity ns0:theme="@7F130192" ns0:name="com.yalantis.ucrop.UCropActivity" ns0:screenOrientation="1"/>
+		<activity ns0:label="@7F120022" ns0:name="com.bluefishapp.blureffect.xiaomi_bluMainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:label="@7F120072" ns0:name="com.bluefishapp.blureffect.xiaomi_bluFinishedWork" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.bluefishapp.blureffect.shapeblur.activity.xiaomi__bluShapeBlurActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.bluefishapp.blureffect.xiaomi_bluMyCreationActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.bluefishapp.blureffect.xiaomi_bluShareActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.pip.xiaomi_Activity_Image_Editor"/>
+		<activity ns0:name="com.pip.xiaomi_Activitypipimage"/>
+		<activity ns0:name="com.ketch.xiaomi_ActivitySketch" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.mlsdev.rximagepicker.HiddenActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.xiaomiCamera.redmik20pro.AudienceNetworkContentProvider"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.xiaomiCamera.redmik20pro.mobileadsinitprovider" ns0:initOrder="100"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.xiaomiCamera.redmik20pro.firebaseinitprovider" ns0:initOrder="100"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0008"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

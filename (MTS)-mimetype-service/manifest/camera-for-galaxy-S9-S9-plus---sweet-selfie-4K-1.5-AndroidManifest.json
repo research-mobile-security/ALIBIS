@@ -1,0 +1,118 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "5",
+    "@ns0:versionName": "1.5",
+    "@package": "com.selfieplus.galaxy.camera.s9",
+    "@platformBuildVersionCode": "23",
+    "@platformBuildVersionName": "6.0-2438415",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "17",
+      "@ns0:targetSdkVersion": "25"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F0A00AE",
+      "@ns0:label": "@7F080030",
+      "@ns0:icon": "@7F030000",
+      "@ns0:name": "net.ijoysoft.camera.App",
+      "@ns0:allowBackup": "false",
+      "@ns0:supportsRtl": "false",
+      "activity": [
+        {
+          "@ns0:theme": "@7F0A0130",
+          "@ns0:name": "net.ijoysoft.camera.activity.PermissionActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "net.ijoysoft.camera.activity.CameraActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000000A0"
+        },
+        {
+          "@ns0:name": "net.ijoysoft.camera.activity.ShowImgActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0A00AE",
+          "@ns0:name": "com.ijoysoft.editor.ui.PhotoEditor",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.ijoysoft.appwall.GiftActivity"
+        },
+        {
+          "@ns0:name": "com.ijoysoft.appwall.GiftShowActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@7F0A0137",
+          "@ns0:name": "com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "UMENG_APPKEY",
+          "@ns0:value": "589855e275ca351e15000684"
+        },
+        {
+          "@ns0:name": "UMENG_CHANNEL",
+          "@ns0:value": "googleplay"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0C0006"
+        },
+        {
+          "@ns0:name": "",
+          "@ns0:value": "1"
+        }
+      ]
+    }
+  }
+}

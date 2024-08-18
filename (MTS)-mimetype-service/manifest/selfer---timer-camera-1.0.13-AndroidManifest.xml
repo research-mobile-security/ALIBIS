@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="27" ns0:versionName="1.0.13" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.appsmotor.photoeverysecond" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<application ns0:label="selfer" ns0:icon="@7F0A0000" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity ns0:theme="@7F0C0000" ns0:name="com.appsmotor.photoeverysecond.MainActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x40003FB4" ns0:windowSoftInputMode="0x00000010" ns0:hardwareAccelerated="true">
+			<meta-data ns0:name="io.flutter.embedding.android.NormalTheme" ns0:resource="@7F0C0001"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="flutterEmbedding" ns0:value="2"/>
+		<meta-data ns0:name="firebase_analytics_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:io.flutter.plugins.firebase.firebaseremoteconfig.FlutterFirebaseAppRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@android:01030007" ns0:name="io.flutter.plugins.urllauncher.WebViewActivity" ns0:exported="false"/>
+		<provider ns0:name="dev.fluttercommunity.plus.share.ShareFileProvider" ns0:exported="false" ns0:authorities="com.appsmotor.photoeverysecond.flutter.share_provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F0E0000"/>
+		</provider>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.appsmotor.photoeverysecond.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F070001"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F0C000C" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:enabled="false" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="11000"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F0E0001"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

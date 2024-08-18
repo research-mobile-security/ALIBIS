@@ -1,0 +1,493 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="9000336" ns0:versionName="5.2.5.1 P3 Gemini" ns0:installLocation="0" ns0:compileSdkVersion="32" ns0:compileSdkVersionCodename="12" package="com.fourchars.lmpfree" platformBuildVersionCode="32" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+	<uses-permission ns0:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+		</intent>
+		<package ns0:name="com.facebook.katana"/>
+	</queries>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<application ns0:theme="@7F130051" ns0:label="@7F120086" ns0:icon="@7F0F001B" ns0:name="com.fourchars.lmpfree.utils.instance.ApplicationMain" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:fullBackupContent="false" ns0:resizeableActivity="true" ns0:networkSecurityConfig="@7F150002" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:theme="@7F130053" ns0:name="gui.purchasement.consumable.ConsumableFullscreenActivity" ns0:exported="true" ns0:excludeFromRecents="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="www.lockmypix.com" ns0:pathPrefix="/consume1"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="consume1"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1301E9" ns0:name="gui.purchasement.consumable.ConsumableDialogActivity" ns0:exported="true" ns0:excludeFromRecents="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="www.lockmypix.com" ns0:pathPrefix="/consume2"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="consume2"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1301E9" ns0:name="gui.purchasement.subscriptions.SubscriptionInfoDialogActivity" ns0:exported="true" ns0:excludeFromRecents="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130051" ns0:name="com.fourchars.lmpfree.gui.photoeditor.EditPhotoActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x000004A4"/>
+		<activity ns0:theme="@7F130077" ns0:name="com.fourchars.lmpfree.gui.photoeditor.ImageCropper" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x000004A4"/>
+		<activity ns0:theme="@7F130053" ns0:name="gui.purchasement.subscriptions.SubscriptionFullscreenActivity" ns0:exported="true" ns0:excludeFromRecents="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A4">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="www.lockmypix.com" ns0:pathPrefix="/purchase"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="app" ns0:host="purchase"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="purchase"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="www.lockmypix.com" ns0:pathPrefix="/cmprt"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="app" ns0:host="cmprt"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1301EA" ns0:name="gui.purchasement.dialog.RoundedDialogActivity" ns0:exported="true" ns0:excludeFromRecents="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1301E8" ns0:name="gui.purchasement.subscriptions.SubscriptionDialogActivity" ns0:exported="true" ns0:excludeFromRecents="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1300AC" ns0:label="@7F120086" ns0:name="gui.SplashScreenActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="@7F120426" ns0:icon="@7F0F0018" ns0:name="gui.SplashScreenActivity9" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F120455" ns0:icon="@7F0F0015" ns0:name="gui.SplashScreenActivity8" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F120036" ns0:icon="@7F0F0012" ns0:name="gui.SplashScreenActivity7" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F120035" ns0:icon="@7F0F000F" ns0:name="gui.SplashScreenActivity6" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F120034" ns0:icon="@7F0F000C" ns0:name="gui.SplashScreenActivity5" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F120033" ns0:icon="@7F0F0009" ns0:name="gui.SplashScreenActivity4" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F120032" ns0:icon="@7F0F0006" ns0:name="gui.SplashScreenActivity3" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F120031" ns0:icon="@7F0F0003" ns0:name="gui.SplashScreenActivity2" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F120030" ns0:icon="@7F0F0000" ns0:name="gui.SplashScreenActivity1" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F120086" ns0:icon="@7F0F001C" ns0:name="gui.SplashScreenActivity10" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="gui.SplashScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F1300AC" ns0:name="com.fourchars.lmpfree.gui.AuthorizationActivity" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1300AC" ns0:name="com.fourchars.lmpfree.gui.fakelogin.FakeTimeActivity" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1300AC" ns0:name="com.fourchars.lmpfree.gui.fakelogin.FakeCalendar" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1300AC" ns0:name="com.fourchars.lmpfree.gui.fakelogin.FakeRadioActivity" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1300AC" ns0:name="com.fourchars.lmpfree.gui.fakelogin.FakeImageActivity" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1300AC" ns0:name="com.fourchars.lmpfree.gui.fakelogin.FakeCalculatorActivity" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1300AC" ns0:name="com.fourchars.lmpfree.gui.fakelogin.FakeLightBulbActivity" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1301EC" ns0:name="com.fourchars.lmpfree.utils.material3Dialogs.MaterialUnsecurePasswordDialog" ns0:exported="true" ns0:excludeFromRecents="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1300AC" ns0:name="com.fourchars.lmpfree.gui.fakelogin.FakeBaseActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="gui.MainActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.fourchars.lmpfree.gui.SubMainActivity" ns0:exported="false" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="com.fourchars.lmpfree.gui.note.NoteActivity" ns0:exported="true" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="notes"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.fourchars.lmpfree.gui.note.AddEditNoteActivity" ns0:exported="false" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130096" ns0:name="com.fourchars.lmpfree.gui.gallery.SelectMedia" ns0:exported="true" ns0:configChanges="0x000004A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="addmedia"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="gui.settings.SettingsDuplicates" ns0:exported="true" ns0:configChanges="0x000004A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="duplicates"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="gui.settings.Settings" ns0:exported="true" ns0:configChanges="0x000004A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="settings"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="com.fourchars.lmpfree.gui.settings.SettingsVideo" ns0:exported="true" ns0:configChanges="0x000004A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="settingsvideo"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="gui.settings.SettingsIntruder" ns0:exported="true" ns0:configChanges="0x000004A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="settingsintruder"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="gui.RecycleBinActivity" ns0:exported="true" ns0:configChanges="0x000004A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="recyclebin"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="gui.settings.SettingsExtended" ns0:exported="true" ns0:configChanges="0x000004A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="settingsextended"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="com.fourchars.lmpfree.gui.CloudActivity" ns0:exported="true" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="cloud"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="gui.settings.SettingsDesign" ns0:exported="true" ns0:configChanges="0x000004A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="settingsdesign"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="com.fourchars.lmpfree.utils.filechooser.FileChooser" ns0:exported="false" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130054" ns0:name="com.fourchars.lmpfree.gui.FilemanagerActivity" ns0:exported="false" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F1301DD" ns0:name="com.fourchars.lmpfree.gui.ChangePin" ns0:exported="false" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F1301E5" ns0:name="com.fourchars.lmpfree.gui.CustomCamera" ns0:exported="true" ns0:configChanges="0x000005A0"/>
+		<activity ns0:theme="@7F13043C" ns0:name="gui.VideoPlaybackActivityExo" ns0:exported="false" ns0:configChanges="0x000005A0"/>
+		<activity ns0:theme="@7F13024D" ns0:name="com.fourchars.lmpfree.gui.onboarding.OnBoardingBase" ns0:exported="false" ns0:configChanges="0x000004A4"/>
+		<activity ns0:theme="@7F1300AC" ns0:label="@7F120086" ns0:name="com.fourchars.lmpfree.gui.ShareWithLmp" ns0:exported="true" ns0:configChanges="0x000004A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="com.fourchars.lmpfree.gui.settings.About" ns0:exported="false" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130054" ns0:name="com.fourchars.lmpfree.gui.PinRecoveryActivity" ns0:exported="true" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000022">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="pinrecovery"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130054" ns0:name="com.fourchars.lmpfree.gui.PinRecoveryEmailActivity" ns0:exported="true" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000022">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="pinrecoveryemail"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1300AC" ns0:name="com.fourchars.lmpfree.gui.RegistrationCompleted" ns0:exported="false" ns0:configChanges="0x00000424" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:theme="@7F1303D3" ns0:name="com.fourchars.lmpfree.gui.GalleryUtilsHelperActivity" ns0:exported="false" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="com.fourchars.lmpfree.gui.Helpdesk" ns0:exported="true" ns0:configChanges="0x000004A4" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lmp" ns0:host="helpdesk"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130235" ns0:name="haibison.android.lockpattern.LockPatternActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<receiver ns0:name="com.fourchars.lmpfree.utils.receiver.OnBootReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.fourchars.lmpfree.utils.receiver.ScreenStatusReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SCREEN_OFF"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F130381" ns0:name="com.yalantis.ucrop.UCropActivity" ns0:exported="true" ns0:screenOrientation="1"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.fourchars.lmpfree.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150007"/>
+		</provider>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-8389096381336727~7977341767"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B001A"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<service ns0:name="utils.services.CloudMessagingService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.fourchars.lmpfree.utils.services.EncryptionService"/>
+		<service ns0:name="com.fourchars.lmpfree.utils.services.CloudService"/>
+		<service ns0:name="com.fourchars.lmpfree.utils.services.BackupService"/>
+		<service ns0:name="com.fourchars.lmpfree.utils.services.ImportService"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F08028D"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_color" ns0:resource="@android:0106000B"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_channel_id" ns0:value="@7F120205"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="com.google.android.gms.ads.AD_MANAGER_APP" ns0:value="true"/>
+		<meta-data ns0:name="applovin.sdk.key" ns0:value="Z53SDTpnVpG_w93p2iGfKM2IzSMJQINLEGLamBKzU4-DdppoyuopD0FH6mXUoxkCGz2TuGoZs4RdHSZsbRB5EZ"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.GenericIdpActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="genericidp" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.RecaptchaActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="recaptcha" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.fourchars.lmpfree.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.ads.OutOfContextTestingActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.fourchars.lmpfree.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050007" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.fourchars.lmpfree.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<provider ns0:name="com.applovin.sdk.AppLovinInitProvider" ns0:exported="false" ns0:authorities="com.fourchars.lmpfree.applovininitprovider" ns0:initOrder="101"/>
+		<activity ns0:name="com.applovin.adview.AppLovinFullscreenActivity" ns0:exported="false" ns0:launchMode="1" ns0:screenOrientation="3" ns0:configChanges="0x40000FB4" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.applovin.sdk.AppLovinWebViewActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1305AF" ns0:name="com.applovin.mediation.MaxDebuggerActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1305AF" ns0:name="com.applovin.mediation.MaxDebuggerDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1305AF" ns0:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1305AF" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1305AF" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1305AF" ns0:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1305AF" ns0:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1305A6" ns0:name="com.applovin.creative.MaxCreativeDebuggerActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F1305A6" ns0:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" ns0:configChanges="0x40000FB4"/>
+		<service ns0:name="com.applovin.impl.sdk.utils.AppKilledService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<service ns0:name="com.applovin.impl.adview.activity.FullscreenAdService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.mikepenz.iconics.IconicsContentProvider" ns0:enabled="@7F050008" ns0:exported="false" ns0:authorities="com.fourchars.lmpfree.iconics.core.provider" ns0:initOrder="100"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.fourchars.lmpfree.AudienceNetworkContentProvider"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.fourchars.lmpfree.com.squareup.picasso"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.fourchars.lmpfree.lifecycle-process"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F15000F"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

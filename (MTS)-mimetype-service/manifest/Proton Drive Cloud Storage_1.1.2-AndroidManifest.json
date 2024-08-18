@@ -1,0 +1,500 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "32",
+    "@ns0:versionName": "1.1.2",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "me.proton.android.drive",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "23",
+      "@ns0:targetSdkVersion": "33"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.POST_NOTIFICATIONS"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.USE_BIOMETRIC"
+      },
+      {
+        "@ns0:name": "android.permission.USE_FINGERPRINT"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "me.proton.android.drive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      }
+    ],
+    "queries": {
+      "intent": {
+        "action": {
+          "@ns0:name": "android.intent.action.VIEW"
+        },
+        "data": {
+          "@ns0:scheme": "https"
+        }
+      }
+    },
+    "permission": {
+      "@ns0:name": "me.proton.android.drive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "@ns0:protectionLevel": "0x00000002"
+    },
+    "application": {
+      "@ns0:theme": "@7F1401AF",
+      "@ns0:label": "@7F130036",
+      "@ns0:icon": "@7F100000",
+      "@ns0:name": "me.proton.android.drive.App",
+      "@ns0:taskAffinity": "",
+      "@ns0:allowBackup": "false",
+      "@ns0:supportsRtl": "true",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:roundIcon": "@7F100001",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "activity": [
+        {
+          "@ns0:theme": "@7F1401B6",
+          "@ns0:name": "me.proton.android.drive.ui.MainActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "@7F130111",
+                "@ns0:host": "@7F130110"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                }
+              ],
+              "data": {
+                "@ns0:mimeType": "*/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                }
+              ],
+              "data": {
+                "@ns0:mimeType": "*/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F1401AA",
+          "@ns0:name": "me.proton.core.auth.presentation.ui.AuthHelpActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1401AA",
+          "@ns0:name": "me.proton.core.auth.presentation.ui.ChooseAddressActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1401AA",
+          "@ns0:name": "me.proton.core.auth.presentation.ui.CreateAddressActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1401B0",
+          "@ns0:name": "me.proton.core.auth.presentation.ui.AddAccountActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1401AA",
+          "@ns0:name": "me.proton.core.auth.presentation.ui.LoginActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.auth.presentation.ui.signup.SignupActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1401AA",
+          "@ns0:name": "me.proton.core.auth.presentation.ui.TwoPassModeActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1401AA",
+          "@ns0:name": "me.proton.core.auth.presentation.ui.SecondFactorActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.payment.presentation.ui.BillingActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.payment.presentation.ui.PaymentOptionsActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.payment.presentation.ui.PaymentTokenApprovalActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1401AF",
+          "@ns0:name": "me.proton.core.report.presentation.ui.BugReportActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1401B9",
+          "@ns0:name": "me.proton.core.presentation.ui.alert.ForceUpdateActivity",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:theme": "@7F1401B9",
+          "@ns0:name": "me.proton.core.crypto.validator.presentation.ui.CryptoValidatorErrorDialogActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "me.proton.core.usersettings.presentation.ui.UpdateRecoveryEmailActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.usersettings.presentation.ui.PasswordManagementActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "me.proton.core.auth.presentation.ui.ConfirmPasswordActivity"
+        },
+        {
+          "@ns0:theme": "@7F1401AE",
+          "@ns0:name": "me.proton.core.humanverification.presentation.ui.HumanVerificationActivity"
+        },
+        {
+          "@ns0:name": "me.proton.core.plan.presentation.ui.UpgradeActivity"
+        },
+        {
+          "@ns0:theme": "@7F1401B9",
+          "@ns0:name": "me.proton.core.plan.presentation.ui.UnredeemedPurchaseActivity"
+        },
+        {
+          "@ns0:name": "androidx.compose.ui.tooling.PreviewActivity",
+          "@ns0:exported": "true"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "me.proton.android.drive.androidx-startup",
+          "meta-data": [
+            {
+              "@ns0:name": "me.proton.android.drive.initializer.DocumentsProviderInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "me.proton.android.drive.initializer.NotificationChannelInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "me.proton.android.drive.initializer.SentryInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "me.proton.android.drive.initializer.AccountStateHandlerInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "me.proton.android.drive.initializer.AccountRemovedHandlerInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "me.proton.android.drive.initializer.LoggerInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "me.proton.android.drive.initializer.UncaughtExceptionHandlerInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "me.proton.core.crypto.validator.presentation.init.CryptoValidatorInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.profileinstaller.ProfileInstallerInitializer",
+              "@ns0:value": "androidx.startup"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "me.proton.android.drive.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F160000"
+          }
+        },
+        {
+          "@ns0:name": "me.proton.core.drive.documentsprovider.data.DriveDocumentsProvider",
+          "@ns0:permission": "android.permission.MANAGE_DOCUMENTS",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "me.proton.android.drive.documents",
+          "@ns0:grantUriPermissions": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.action.DOCUMENTS_PROVIDER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "me.proton.core.drive.documentsprovider.data.DriveFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "me.proton.android.drive.files",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "leakcanary.internal.PlumberInstaller",
+          "@ns0:enabled": "@7F050006",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "me.proton.android.drive.plumber-installer"
+        },
+        {
+          "@ns0:name": "io.sentry.android.core.SentryInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "me.proton.android.drive.SentryInitProvider"
+        },
+        {
+          "@ns0:name": "io.sentry.android.core.SentryPerformanceProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "me.proton.android.drive.SentryPerformanceProvider",
+          "@ns0:initOrder": "200"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "me.proton.android.drive.receiver.NotificationBroadcastReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BATTERY_OKAY"
+              },
+              {
+                "@ns0:name": "android.intent.action.BATTERY_LOW"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIME_SET"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+          "@ns0:enabled": "@7F050002",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.impl.background.systemalarm.UpdateProxies"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.profileinstaller.ProfileInstallReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "androidx.profileinstaller.action.INSTALL_PROFILE"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "androidx.profileinstaller.action.SKIP_FILE"
+              }
+            }
+          ]
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "io.sentry.auto-init",
+          "@ns0:value": "false"
+        },
+        {
+          "@ns0:name": "drive.documentsprovider.icon",
+          "@ns0:resource": "@7F100000"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+          "@ns0:enabled": "@7F050002",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemjob.SystemJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "@7F050004",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.foreground.SystemForegroundService",
+          "@ns0:enabled": "@7F050003",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        }
+      ]
+    }
+  }
+}

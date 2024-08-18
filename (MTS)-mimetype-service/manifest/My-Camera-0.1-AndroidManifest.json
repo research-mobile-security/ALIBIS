@@ -1,0 +1,153 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "1",
+    "@ns0:versionName": "0.1",
+    "@ns0:installLocation": "0",
+    "@package": "com.zirodiv.mycamera",
+    "@platformBuildVersionCode": "22",
+    "@platformBuildVersionName": "5.1.1-1819727",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "16",
+      "@ns0:targetSdkVersion": "19"
+    },
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.microphone",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:glEsVersion": "0x00020000",
+        "@ns0:required": "true"
+      }
+    ],
+    "application": {
+      "@ns0:label": "MyCamera",
+      "@ns0:icon": "@7F020000",
+      "@ns0:name": "org.qtproject.qt5.android.bindings.QtApplication",
+      "@ns0:hardwareAccelerated": "true",
+      "activity": {
+        "@ns0:label": "MyCamera",
+        "@ns0:name": "org.qtproject.qt5.android.bindings.QtActivity",
+        "@ns0:launchMode": "1",
+        "@ns0:screenOrientation": "1",
+        "@ns0:configChanges": "0x40000FF4",
+        "intent-filter": {
+          "action": {
+            "@ns0:name": "android.intent.action.MAIN"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.LAUNCHER"
+          }
+        },
+        "meta-data": [
+          {
+            "@ns0:name": "android.app.lib_name",
+            "@ns0:value": "Qamera"
+          },
+          {
+            "@ns0:name": "android.app.qt_sources_resource_id",
+            "@ns0:resource": "@7F040004"
+          },
+          {
+            "@ns0:name": "android.app.repository",
+            "@ns0:value": "default"
+          },
+          {
+            "@ns0:name": "android.app.qt_libs_resource_id",
+            "@ns0:resource": "@7F040003"
+          },
+          {
+            "@ns0:name": "android.app.bundled_libs_resource_id",
+            "@ns0:resource": "@7F040002"
+          },
+          {
+            "@ns0:name": "android.app.bundle_local_qt_libs",
+            "@ns0:value": "1"
+          },
+          {
+            "@ns0:name": "android.app.bundled_in_lib_resource_id",
+            "@ns0:resource": "@7F040001"
+          },
+          {
+            "@ns0:name": "android.app.bundled_in_assets_resource_id",
+            "@ns0:resource": "@7F040000"
+          },
+          {
+            "@ns0:name": "android.app.use_local_qt_libs",
+            "@ns0:value": "1"
+          },
+          {
+            "@ns0:name": "android.app.libs_prefix",
+            "@ns0:value": "/data/local/tmp/qt/"
+          },
+          {
+            "@ns0:name": "android.app.load_local_libs",
+            "@ns0:value": "plugins/platforms/android/libqtforandroid.so:plugins/bearer/libqandroidbearer.so:lib/libQt5QuickParticles.so:plugins/mediaservice/libqtmedia_android.so:lib/libQt5MultimediaQuick_p.so"
+          },
+          {
+            "@ns0:name": "android.app.load_local_jars",
+            "@ns0:value": "jar/QtAndroid.jar:jar/QtAndroid-bundled.jar:jar/QtAndroidBearer.jar:jar/QtAndroidBearer-bundled.jar:jar/QtMultimedia.jar:jar/QtMultimedia-bundled.jar"
+          },
+          {
+            "@ns0:name": "android.app.static_init_classes",
+            "@ns0:value": "org.qtproject.qt5.android.multimedia.QtMultimediaUtils:org.qtproject.qt5.android.multimedia.QtMultimediaUtils"
+          },
+          {
+            "@ns0:name": "android.app.ministro_not_found_msg",
+            "@ns0:value": "@7F050002"
+          },
+          {
+            "@ns0:name": "android.app.ministro_needed_msg",
+            "@ns0:value": "@7F050001"
+          },
+          {
+            "@ns0:name": "android.app.fatal_error_msg",
+            "@ns0:value": "@7F050000"
+          },
+          {
+            "@ns0:name": "android.app.background_running",
+            "@ns0:value": "false"
+          }
+        ]
+      }
+    }
+  }
+}

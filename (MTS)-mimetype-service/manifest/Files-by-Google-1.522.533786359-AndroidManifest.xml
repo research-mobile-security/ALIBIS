@@ -1,0 +1,418 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="480538" ns0:versionName="1.522.533786359" ns0:compileSdkVersion="34" ns0:compileSdkVersionCodename="VanillaIceCream" package="com.google.android.apps.nbu.files" platformBuildVersionCode="34" platformBuildVersionName="VanillaIceCream">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="34"/>
+	<permission ns0:name="com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<permission ns0:name="com.google.android.apps.nbu.files.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.apps.nbu.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<uses-permission ns0:name="com.google.android.apps.nbu.files.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+	<uses-permission ns0:name="android.permission.PACKAGE_USAGE_STATS"/>
+	<uses-permission ns0:name="android.permission.GET_PACKAGE_SIZE"/>
+	<uses-permission ns0:name="com.android.vending.p2p.APP_INSTALL_API"/>
+	<uses-permission ns0:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC" ns0:minSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT" ns0:maxSdkVersion="27"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-feature ns0:name="android.hardware.screen.portrait" ns0:required="false"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<queries>
+		<package ns0:name="com.google.android.apps.maps"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+	</queries>
+	<application ns0:theme="@7F1405D6" ns0:label="@7F1301AB" ns0:icon="@7F100002" ns0:name="com.google.android.apps.nbu.files.Files_Application" ns0:manageSpaceActivity="com.google.android.apps.nbu.files.managespace.ManageSpaceActivity" ns0:backupAgent="com.google.android.apps.nbu.files.backup.FilesBackupAgent" ns0:allowBackup="true" ns0:restoreAnyVersion="true" ns0:supportsRtl="true" ns0:fullBackupOnly="false" ns0:usesCleartextTraffic="false" ns0:networkSecurityConfig="@7F16000B" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:gwpAsanMode="1" ns0:localeConfig="@7F16000A">
+		<property ns0:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_SPLITS_ENABLED" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.backup.api_key" ns0:value="dummy_key"/>
+		<meta-data ns0:name="com.google.android.partnersetup.RLZ_BOUNTY_ACCESS_POINT" ns0:value="yf"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0045"/>
+		<meta-data ns0:name="com.google.mlkit.vision.DEPENDENCIES" ns0:value="document_detect,document_crop,document_enhance,custom_ica,tflite_dynamite"/>
+		<meta-data ns0:name="com.motorola.allow_activities_on_small_external_display" ns0:value="false"/>
+		<meta-data ns0:name="firebase_performance_collection_deactivated" ns0:value="true"/>
+		<provider ns0:name="com.google.android.libraries.storage.storagelib.FileProvider" ns0:exported="false" ns0:authorities="com.google.android.apps.nbu.files.provider" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="1:236667214070:android:75ed92bde4e7c371.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@7F140228" ns0:label="@7F13003E" ns0:icon="@7F100002" ns0:name="com.google.android.apps.nbu.files.home.HomeActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.nbu.files.LAUNCH_STORAGE_CARDS"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.nbu.files.LAUNCH_CLEAN_TAB"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:priority="100">
+				<action ns0:name="android.os.storage.action.MANAGE_STORAGE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F16000C"/>
+		</activity>
+		<service ns0:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" ns0:enabled="false" ns0:exported="false" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+			</intent-filter>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.apps.nbu.files.device" ns0:resource="@7F120010"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.nbu.files.device" ns0:resource="@7F120011"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.nbu.files.uidevice" ns0:resource="@7F120012"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.auth_account" ns0:resource="@7F120013"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.consentverifier" ns0:resource="@7F12001A"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" ns0:resource="@7F12001B"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms" ns0:resource="@7F120017"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.droidguard" ns0:resource="@7F120014"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.feedback" ns0:resource="@7F120015"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.gcm" ns0:resource="@7F120016"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.measurement" ns0:resource="@7F120018"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.usagereporting" ns0:resource="@7F120019"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.notifications.platform" ns0:resource="@7F12001D"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.internal.growth.growthkit" ns0:resource="@7F12001C"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.performance.primes" ns0:resource="@7F12001E"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" ns0:resource="@7F12001F"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.surveys" ns0:resource="@7F120020"/>
+		</service>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.nbu.files.device" ns0:resource="@7F160000"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.nbu.files.uidevice" ns0:resource="@7F160001"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" ns0:resource="@7F160002"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.notifications.platform" ns0:resource="@7F160004"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.internal.growth.growthkit" ns0:resource="@7F160003"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" ns0:resource="@7F160005"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.surveys" ns0:resource="@7F160006"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.advancedbrowsing.browser.AdvancedBrowsingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.advancedbrowsing.picker.AdvancedBrowsingPickerActivity" ns0:exported="false"/>
+		<service ns0:name="com.google.android.apps.nbu.files.appmanager.AppsUsageJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:label="Backup service" ns0:name="com.google.android.apps.nbu.files.backup.BackupService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.documentbrowser.browselanding.documentsprovider.DocumentsProviderBrowserActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.documentbrowser.filebrowser.FileBrowserRegularActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F1402B5" ns0:name="com.google.android.apps.nbu.files.documentbrowser.filebrowser.SearchActivity" ns0:exported="false" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000004"/>
+		<activity ns0:theme="@7F1401B2" ns0:name="com.google.android.apps.nbu.files.documentbrowser.filebrowser.junkfilesreview.JunkFilesReviewActivity" ns0:exported="false" ns0:launchMode="2" ns0:parentActivityName="com.google.android.apps.nbu.files.home.HomeActivity"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.documentbrowser.filebrowser.p2pbrowser.FileBrowserP2pActivity" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F1401B2" ns0:name="com.google.android.apps.nbu.files.documentbrowser.filebrowser.reviewbrowser.CardReviewActivity" ns0:exported="false" ns0:launchMode="2" ns0:configChanges="0x00000480" ns0:parentActivityName="com.google.android.apps.nbu.files.home.HomeActivity"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.documentbrowser.fileinfoscreen.FileInfoActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1401ED" ns0:name="com.google.android.apps.nbu.files.documentbrowser.filepreview.FilePreviewActivity" ns0:exported="false" ns0:configChanges="0x00000F80"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.documentbrowser.folderinfoscreen.FolderInfoActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.documentbrowser.pdf.ui.PdfPreviewActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.favorites.browser.FavoritesActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F08018E"/>
+		<meta-data ns0:name="firebase_messaging_auto_init_enabled" ns0:value="false"/>
+		<service ns0:name="com.google.android.apps.nbu.files.firebase.messaging.FilesFirebaseMessagingService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.google.android.apps.nbu.files.gateway.pdf.EnablePdfPreviewActivityReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.google.android.apps.nbu.files.googleguide.GoogleGuideContentProvider" ns0:permission="com.google.android.gms.permission.GROWTH" ns0:exported="true" ns0:authorities="com.google.android.apps.nbu.files.googleguide.GoogleGuideContentProvider"/>
+		<activity ns0:theme="@7F1405D6" ns0:label="@7F13003E" ns0:name="com.google.android.apps.nbu.files.home.placeholder.PlaceholderActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.home.placeholder.BlankActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.android.apps.nbu.files.libraries.safestorage.SafeContentProvider" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.google.android.apps.nbu.files.libraries.safestorage.provider" ns0:grantUriPermissions="false"/>
+		<activity ns0:theme="@7F1404F7" ns0:name="com.google.android.apps.nbu.files.managespace.ManageSpaceActivity" ns0:exported="false"/>
+		<service ns0:name="com.google.android.apps.nbu.files.mediaconsumption.audio.service.AudioService" ns0:exported="false" ns0:description="@7F130055" ns0:foregroundServiceType="0x00000002"/>
+		<receiver ns0:name="com.google.android.apps.nbu.files.mediastore.receiver.ContentChangeListenerReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.apps.nbu.files.mediastore.MediaStoreScanService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.google.android.apps.nbu.files.mediastore.MediaStoreContentChangeListenerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.apps.nbu.files.naagrik.bulkimport.receiver.NaagrikBulkImportBootCompleteReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.apps.nbu.files.naagrik.bulkimport.NaagrikBulkImportService" ns0:exported="false" ns0:description="@7F1302E1" ns0:foregroundServiceType="0x00000001"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.google.android.apps.nbu.files.naagrik.documentstorage.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F160008"/>
+		</provider>
+		<activity ns0:theme="@7F14024F" ns0:name="com.google.android.apps.nbu.files.naagrik.importer.edit.NaagrikSinglePageEditorActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.naagrik.importer.NaagrikDocumentImporterActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.naagrik.organise.preview.NaagrikDocumentPreviewActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F1402B5" ns0:name="com.google.android.apps.nbu.files.naagrik.organise.search.NaagrikSearchActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000004"/>
+		<receiver ns0:name="com.google.android.apps.nbu.files.notifications.receiver.BootCompleteReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.android.apps.nbu.files.notifications.receiver.NotificationClearReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.nbu.files.NOTIFICATION_CANCELED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.android.apps.nbu.files.notifications.receiver.ClearAllNotificationsOnAppUpdateReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:label="Notification service" ns0:name="com.google.android.apps.nbu.files.notifications.NotificationService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<provider ns0:name="com.google.android.apps.nbu.files.offlinesharing.foldersharing.FolderSharingContentProvider" ns0:permission="com.google.android.gms.permission.GROWTH" ns0:exported="true" ns0:authorities="com.google.android.apps.nbu.files.offlinesharing.foldersharing.provider"/>
+		<service ns0:label="@7F13020F" ns0:icon="@7F0802DE" ns0:name="com.google.android.apps.nbu.files.quicksettings.StorageAssistantTileService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.safefolder.auth.SafeFolderAuthActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.safefolder.browser.SafeFolderBrowserActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.safefolder.settings.SafeFolderSettingsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F14029B" ns0:name="com.google.android.apps.nbu.files.settings.about.AboutActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1401B2" ns0:name="com.google.android.apps.nbu.files.settings.language.LanguagePickerActivity" ns0:exported="false" ns0:noHistory="true"/>
+		<receiver ns0:name="com.google.android.apps.nbu.files.settings.language.LanguageBroadcastReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F14029B" ns0:name="com.google.android.apps.nbu.files.settings.notifications.NotificationsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F14029B" ns0:name="com.google.android.apps.nbu.files.settings.SettingsActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.settings.FriendListActivity" ns0:exported="false" ns0:parentActivityName="com.google.android.apps.nbu.files.settings.SettingsActivity"/>
+		<activity ns0:theme="@7F14021F" ns0:name="com.google.android.apps.nbu.files.snoozing.settings.SnoozedCardListActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.storagevisualbreakdown.browser.StorageBreakdownActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.apps.nbu.files.toastintegration.receiver.ToastDonationReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.tos.TosActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.apps.nbu.files.trash.manager.impl.TrashDbMigrationBootCompleteReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.trash.ui.TrashActivity" ns0:exported="false" ns0:launchMode="2" ns0:parentActivityName="com.google.android.apps.nbu.files.home.HomeActivity"/>
+		<activity ns0:theme="@7F1405D6" ns0:name="com.google.android.apps.nbu.files.update.client.ui.forceupdate.impl.ForceUpdateActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1404F3" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<service ns0:name="com.google.android.libraries.directboot.DirectBootHelperService" ns0:enabled="false" ns0:exported="false" ns0:process="" ns0:directBootAware="false"/>
+		<receiver ns0:name="com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"/>
+				<action ns0:name="com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"/>
+				<action ns0:name="com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"/>
+				<action ns0:name="com.google.android.libraries.internal.growth.growthkit.SYNC"/>
+				<action ns0:name="com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"/>
+				<action ns0:name="com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"/>
+				<action ns0:name="com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"/>
+				<action ns0:name="com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.libraries.internal.growth.growthkit.internal.jobs.impl.GrowthKitJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.google.android.libraries.internal.growth.growthkit.internal.jobs.impl.GrowthKitBelowLollipopJobService" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.libraries.internal.growth.growthkit.tiktok.GrowthKitBootCompletedListener_Receiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="android.support.v7.app.AppLocalesMetadataHolderService" ns0:enabled="false" ns0:exported="false">
+			<meta-data ns0:name="autoStoreLocales" ns0:value="true"/>
+		</service>
+		<provider ns0:name="com.google.mlkit.common.internal.MlKitInitProvider" ns0:exported="false" ns0:authorities="com.google.android.apps.nbu.files.mlkitinitprovider" ns0:initOrder="99"/>
+		<service ns0:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.document.detect.internal.DocumentDetectionRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.document.crop.internal.DocumentCroppingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.document.enhance.internal.DocumentEnhancementRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.label.custom.thin.CustomLabelRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" ns0:exported="false" ns0:process=":primes_lifeboat"/>
+		<receiver ns0:name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" ns0:exported="true" ns0:process="">
+			<intent-filter>
+				<action ns0:name="android.accounts.action.ACCOUNT_REMOVED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" ns0:permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" ns0:exported="true" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.phenotype.UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F140444" ns0:label="@7F1303CB" ns0:name="com.google.android.libraries.social.licenses.LicenseMenuActivity" ns0:exported="true"/>
+		<activity ns0:theme="@7F140444" ns0:label="@7F1303CB" ns0:name="com.google.android.libraries.social.licenses.LicenseActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F140356" ns0:name="com.google.android.libraries.surveys.internal.view.SurveyActivity" ns0:exported="true" ns0:process="@7F13048C" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x000005A0" ns0:windowSoftInputMode="0x00000010">
+			<meta-data ns0:name="distractionOptimized" ns0:value="true"/>
+		</activity>
+		<service ns0:name="com.google.apps.tiktok.concurrent.AndroidFuturesService" ns0:exported="false"/>
+		<service ns0:name="com.google.apps.tiktok.concurrent.InternalForegroundService" ns0:exported="false" ns0:foregroundServiceType="0x00000800"/>
+		<receiver ns0:name="com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.phenotype.UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F140216" ns0:name="com.google.apps.tiktok.nav.gateway.GatewayActivity" ns0:exported="true" ns0:taskAffinity="" ns0:excludeFromRecents="true"/>
+		<activity-alias ns0:name="com.google.android.apps.nbu.files.gateway.storagevolume.StorageVolumeActivity" ns0:exported="true" ns0:targetActivity="com.google.apps.tiktok.nav.gateway.GatewayActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content" ns0:host="com.android.apps.nbu.files.storagevolume"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.google.android.apps.nbu.files.gateway.storagebreakdown.StorageBreakdownActivity" ns0:exported="true" ns0:targetActivity="com.google.apps.tiktok.nav.gateway.GatewayActivity">
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.nbu.files.VIEW_STORAGE_BREAKDOWN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.google.android.apps.nbu.files.gateway.preview.PreviewActivity" ns0:exported="true" ns0:targetActivity="com.google.apps.tiktok.nav.gateway.GatewayActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="audio/*"/>
+				<data ns0:mimeType="application/ogg"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.google.android.apps.nbu.files.gateway.pdf.PdfPreviewIntentGatewayHandler" ns0:exported="true" ns0:targetActivity="com.google.apps.tiktok.nav.gateway.GatewayActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/pdf"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.google.android.apps.nbu.files.gateway.filebrowserp2p.FileBrowserP2pIntentGatewayHandler" ns0:exported="true" ns0:targetActivity="com.google.apps.tiktok.nav.gateway.GatewayActivity">
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.nbu.files.SELECT_FILES_TO_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.google.android.apps.nbu.files.gateway.downloads.DownloadsActivity" ns0:exported="true" ns0:targetActivity="com.google.apps.tiktok.nav.gateway.GatewayActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW_DOWNLOADS"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.google.android.apps.nbu.files.gateway.deeplink.FilesGoDeepLink" ns0:exported="true" ns0:targetActivity="com.google.apps.tiktok.nav.gateway.GatewayActivity">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="filesgo.google.com" ns0:pathPattern=".*"/>
+				<data ns0:scheme="https" ns0:host="files.google.com" ns0:pathPattern=".*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbg-app" ns0:host="com.google.android.apps.nbu.files" ns0:pathPattern=".*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.google.android.apps.nbu.files.gateway.browse.BrowseGatewayHandler" ns0:exported="true" ns0:targetActivity="com.google.apps.tiktok.nav.gateway.GatewayActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.document/root" ns0:scheme="content"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.settings.VIEW_TRASH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.build.data.PropertiesServiceHolder" ns0:enabled="false" ns0:exported="false" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.build.data.Properties"/>
+			</intent-filter>
+			<meta-data ns0:name="com.google.android.build.data.properties" ns0:resource="@7F120007"/>
+		</service>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F16000F"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

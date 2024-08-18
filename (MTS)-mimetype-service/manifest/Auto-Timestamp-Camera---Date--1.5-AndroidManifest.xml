@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="6" ns0:versionName="1.5" ns0:compileSdkVersion="32" ns0:compileSdkVersionCodename="12" package="com.phototoolsmaker.timestampcamerafree.autodatetimestamp" platformBuildVersionCode="32" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="17" ns0:targetSdkVersion="32"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION" ns0:maxSdkVersion="28"/>
+	<queries>
+		<package ns0:name="com.facebook.katana"/>
+	</queries>
+	<application ns0:theme="@7F110008" ns0:label="@7F10001F" ns0:icon="@7F0E0001" ns0:name="androidx.multidex.MultiDexApplication" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:roundIcon="@7F0E0003" ns0:appComponentFactory="whateverString" ns0:requestLegacyExternalStorage="true">
+		<provider ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.utils.GenericFileProvider" ns0:exported="false" ns0:authorities="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.FileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130001"/>
+		</provider>
+		<activity ns0:theme="@7F1100F5" ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.activities.StampCamera_SplashActivity" ns0:exported="true" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.activities.MainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1100F5" ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.activities.StampCamera_MainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.activities.StampCamera_BaseActivity"/>
+		<activity ns0:theme="@7F1100F5" ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.activities.StampCamera_StampPositionActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.activities.StampCamera_StampSettingsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.activities.StampCamera_AddFontFormat" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1100F5" ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.activities.StampCamera_AddStampOnPhotoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1100F5" ns0:name="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.autotimestampcamera.signaturewatermark.activities.StampCamera_ImageGalleryActivity" ns0:screenOrientation="1"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.lifecycle-trojan"/>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.crashlyticsinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.phototoolsmaker.timestampcamerafree.autodatetimestamp.AudienceNetworkContentProvider"/>
+		<meta-data ns0:name="ADMOB_ALLOW_LOCATION_FOR_ADS" ns0:value="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0008"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F130008"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="6"/>
+	</application>
+</manifest>

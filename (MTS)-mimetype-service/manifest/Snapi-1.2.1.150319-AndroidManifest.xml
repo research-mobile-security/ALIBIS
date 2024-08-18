@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="150319" ns0:versionName="1.2.1.150319" package="com.eyesight.app.camera">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="20"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<application ns0:label="@7F050000" ns0:icon="@7F020000" ns0:allowBackup="true">
+		<activity ns0:label="@7F050000" ns0:name="com.eyesight.app.camera.MainActivity" ns0:screenOrientation="0" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>

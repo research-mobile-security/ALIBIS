@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1" ns0:versionName="1.0" package="de.zinformatik.gallerycamera" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+	<uses-sdk ns0:minSdkVersion="8" ns0:targetSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<application ns0:theme="@7F070077" ns0:label="@7F05000F" ns0:icon="@7F02003C" ns0:allowBackup="true">
+		<activity ns0:label="@7F05000F" ns0:name="de.zinformatik.gallerycamera.UsageActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F05000F" ns0:name="de.zinformatik.gallerycamera.GetPictureActivity">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="RecyclerViewTestActivity" ns0:name="android.support.v7.widget.TestActivity"/>
+	</application>
+</manifest>

@@ -1,0 +1,560 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "245",
+    "@ns0:versionName": "4.4.1",
+    "@ns0:installLocation": "0",
+    "@ns0:compileSdkVersion": "28",
+    "@ns0:compileSdkVersionCodename": "9",
+    "@package": "com.kakao.cheez",
+    "@platformBuildVersionCode": "28",
+    "@platformBuildVersionName": "9",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "19",
+      "@ns0:targetSdkVersion": "28"
+    },
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:glEsVersion": "0x00030000",
+        "@ns0:required": "true"
+      }
+    ],
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "com.google.android.providers.gsf.permission.READ_GSERVICES"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F12000B",
+      "@ns0:label": "@7F110038",
+      "@ns0:icon": "@7F0F0000",
+      "@ns0:name": "com.kakao.selka.MainApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "false",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:roundIcon": "@7F0F0001",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "service": [
+        {
+          "@ns0:name": "com.kakao.selka.push.CheezFirebaseMessagingService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.kakao.selka.manager.ItemSyncService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.kakao.selka.item.StickerDownloadService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.kakao.selka.item.MusicDownloadService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.messaging.FirebaseMessagingService",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "@ns0:priority": "-500",
+            "action": {
+              "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.iid.Registrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "@7F1100C7",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F150000"
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.kakao.cheez.firebaseinitprovider",
+          "@ns0:initOrder": "100"
+        },
+        {
+          "@ns0:name": "androidx.lifecycle.ProcessLifecycleOwnerInitializer",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.kakao.cheez.lifecycle-process"
+        },
+        {
+          "@ns0:name": "com.crashlytics.android.CrashlyticsInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.kakao.cheez.crashlyticsinitprovider",
+          "@ns0:initOrder": "90"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.kakao.kinsight.sdk.android.ReferralReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.kakao.selka.CheezAlarmReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.kakao.cheez.action.GROWING"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver",
+          "@ns0:permission": "android.permission.INSTALL_PACKAGES",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            }
+          }
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F120012",
+          "@ns0:name": "com.kakao.selka.activity.StartActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "@7F11011A",
+                "@ns0:host": "main"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "@7F11011C",
+                "@ns0:host": "main"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "@7F11011A",
+                "@ns0:host": "event"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "android.app.shortcuts",
+            "@ns0:resource": "@7F150001"
+          }
+        },
+        {
+          "@ns0:theme": "@7F12001A",
+          "@ns0:name": "com.kakao.selka.activity.KakaoLoginActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F12001A",
+          "@ns0:name": "com.kakao.selka.activity.AgreementActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F12000D",
+          "@ns0:icon": "@7F0F0000",
+          "@ns0:name": "com.kakao.selka.activity.CameraActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:scheme": "@7F11011A",
+                "@ns0:host": "camera"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:scheme": "@7F11011B",
+                "@ns0:host": "camera",
+                "@ns0:path": "/"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:scheme": "@7F11011A",
+                "@ns0:host": "kakaotalk",
+                "@ns0:path": "/profile"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12001A",
+          "@ns0:name": "com.kakao.selka.activity.GalleryActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:scheme": "@7F11011A",
+              "@ns0:host": "gallery"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F120013",
+          "@ns0:name": "com.kakao.selka.activity.VideotabBridgeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120013",
+          "@ns0:name": "com.kakao.selka.activity.ImageBridgeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120013",
+          "@ns0:name": "com.kakao.selka.activity.TrimSpeedActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120010",
+          "@ns0:name": "com.kakao.selka.activity.EditEffectActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F12000F",
+          "@ns0:name": "com.kakao.selka.activity.EditActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120018",
+          "@ns0:name": "com.kakao.selka.activity.BrowserActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              }
+            ],
+            "data": {
+              "@ns0:scheme": "@7F11011A",
+              "@ns0:host": "notice"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F12001B",
+          "@ns0:label": "@7F110141",
+          "@ns0:name": "com.kakao.selka.activity.SettingsActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120018",
+          "@ns0:label": "@7F110123",
+          "@ns0:name": "com.kakao.selka.activity.SettingNotificationActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.NOTIFICATION_PREFERENCES"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F120018",
+          "@ns0:label": "@7F110137",
+          "@ns0:name": "com.kakao.selka.activity.SettingLocationActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120018",
+          "@ns0:label": "@7F11010C",
+          "@ns0:name": "com.kakao.selka.activity.PolicyActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120018",
+          "@ns0:label": "@7F110124",
+          "@ns0:name": "com.kakao.selka.activity.SignOutActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120019",
+          "@ns0:label": "@7F1100F0",
+          "@ns0:name": "com.kakao.selka.activity.MyStickersActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120015",
+          "@ns0:name": "com.kakao.selka.activity.ExportPreviewActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F120011",
+          "@ns0:name": "com.kakao.selka.activity.TalkSlotActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.kakao.cheez.action.AGIF_CAPTURE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:scheme": "@7F11011A",
+              "@ns0:host": "kakaotalk"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F120018",
+          "@ns0:label": "@7F11012E",
+          "@ns0:name": "com.kakao.selka.activity.LabActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:parentActivityName": "com.kakao.selka.activity.SettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F120016",
+          "@ns0:name": "com.kakao.selka.uploadtalkprofile.UploadTalkProfileActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:label": "@7F110066",
+          "@ns0:name": "com.kakao.auth.authorization.authcode.KakaoWebViewActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.kakao.sdk.Phase",
+          "@ns0:value": "@7F1100D9"
+        },
+        {
+          "@ns0:name": "com.kakao.sdk.AppKey",
+          "@ns0:value": "@7F1100D8"
+        },
+        {
+          "@ns0:name": "io.fabric.ApiKey",
+          "@ns0:value": "9fa8ea3f1d0359693af24b2442ecb9b0c61f9ba0"
+        },
+        {
+          "@ns0:name": "KINSIGHT_APP_KEY",
+          "@ns0:value": "8b5ff8e5943c724b53c04744df577ac8"
+        },
+        {
+          "@ns0:name": "android.max_aspect",
+          "@ns0:value": "2.100000"
+        },
+        {
+          "@ns0:name": "com.bumptech.glide.integration.okhttp3.OkHttpGlideModule",
+          "@ns0:value": "GlideModule"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0B000E"
+        },
+        {
+          "@ns0:name": "com.bumptech.glide.integration.webp.WebpGlideModule",
+          "@ns0:value": "GlideModule"
+        },
+        {
+          "@ns0:name": "com.android.dynamic.apk.fused.modules",
+          "@ns0:value": "base"
+        },
+        {
+          "@ns0:name": "com.android.vending.splits",
+          "@ns0:value": "@7F150002"
+        },
+        {
+          "@ns0:name": "com.android.vending.derived.apk.id",
+          "@ns0:value": "6"
+        }
+      ]
+    }
+  }
+}

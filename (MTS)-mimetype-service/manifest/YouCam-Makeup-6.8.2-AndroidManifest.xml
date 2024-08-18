@@ -1,0 +1,957 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="60820" ns0:versionName="6.8.2" ns0:installLocation="0" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.cyberlink.youcammakeup" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="24" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<queries>
+		<provider ns0:authorities="com.facebook.katana.provider.PlatformProvider"/>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<package ns0:name="com.perfectcorp.ycn"/>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+		</intent>
+		<package ns0:name="com.facebook.katana"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.browse.MediaBrowserService"/>
+		</intent>
+	</queries>
+	<supports-screens ns0:smallScreens="false" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.network" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<application ns0:theme="@7F13002B" ns0:label="@7F120151" ns0:icon="@7F0F0000" ns0:name="com.cyberlink.youcammakeup.Globals" ns0:hasCode="true" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="false" ns0:extractNativeLibs="true" ns0:usesCleartextTraffic="true" ns0:resizeableActivity="false" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<provider ns0:name="com.facebook.FacebookContentProvider" ns0:exported="true" ns0:authorities="@7F120C69"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-4019389791682108~3979686473"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000A"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F120C67"/>
+		<meta-data ns0:name="com.facebook.sdk.ClientToken" ns0:value="@7F120901"/>
+		<activity ns0:theme="@7F13013E" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.ShareInWrapperActivity" ns0:exported="true" ns0:configChanges="0x40000FFB">
+			<intent-filter ns0:label="@7F120C6E" ns0:icon="@7F0F0000">
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/plain"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13002D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.DeepLinkActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x40000FFB">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12015C"/>
+				<data ns0:scheme="@7F120161"/>
+				<data ns0:host="@7F120986"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="@7F12099B" ns0:path=""/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="@7F12099B" ns0:path="/"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="@7F12099B" ns0:pathPrefix="@7F120980"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="@7F120981" ns0:path=""/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="@7F120981" ns0:path="/"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="@7F120981" ns0:pathPrefix="@7F120980"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120559" ns0:host="@7F12035B"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12015C"/>
+				<data ns0:scheme="@7F120161"/>
+				<data ns0:host="@7F120995"/>
+				<data ns0:host="@7F12098D"/>
+				<data ns0:host="@7F120997"/>
+				<data ns0:host="@7F12098E"/>
+				<data ns0:host="@7F12098F"/>
+				<data ns0:host="@7F12098C"/>
+				<data ns0:host="@7F120987"/>
+				<data ns0:host="@7F12097D"/>
+				<data ns0:host="@7F120996"/>
+				<data ns0:host="@7F120B87"/>
+				<data ns0:host="@7F120D61"/>
+				<data ns0:host="@7F120906"/>
+				<data ns0:host="@7F120708"/>
+				<data ns0:host="@7F120707"/>
+				<data ns0:host="@7F1200BE"/>
+				<data ns0:host="@7F120ACD"/>
+				<data ns0:host="@7F120982"/>
+				<data ns0:host="@7F1200BB"/>
+				<data ns0:host="@7F1208D8"/>
+				<data ns0:host="@7F120989"/>
+				<data ns0:host="@7F120733"/>
+				<data ns0:host="@7F120726"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="@7F120998" ns0:pathPrefix="@7F120999"/>
+				<data ns0:host="@7F12097F" ns0:pathPrefix="@7F120999"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12015C" ns0:host="@7F12098B"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.cyberlink.youcammakeup.activity.NftRedirectActivity"/>
+		<activity ns0:name="com.cyberlink.youcammakeup.activity.TestAllocateMemoryActivity"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ChinaBcProfileActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ChinaBcLoginActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AgingCameraActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AgingTimeTravelActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AgingHomeActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AgingPreviewActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AgingPickerActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@7F1307FC" ns0:label="@7F120151" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F13041D" ns0:name="com.cyberlink.youcammakeup.activity.SplashActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13041D" ns0:name="com.cyberlink.youcammakeup.activity.SplashActivityForResult" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13041D" ns0:name="com.cyberlink.youcammakeup.activity.SplashActivityForLeave" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:name="com.cyberlink.youcammakeup.activity.OpeningTutorialActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13041B" ns0:name="com.cyberlink.youcammakeup.activity.GpuBenchmarkActivity" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.CameraActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.HairCameraActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.LandscapeCollageShareActivity" ns0:launchMode="2" ns0:screenOrientation="6" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.LiveCameraActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.CameraPostActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ShopCameraActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.LivePreviewActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:name="com.cyberlink.youcammakeup.activity.VideoPlayActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:name="com.cyberlink.youcammakeup.activity.BrandWallActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.CameraLandscapeActivity" ns0:launchMode="2" ns0:screenOrientation="0" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.LauncherActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB">
+			<intent-filter ns0:label="@7F120C6E" ns0:icon="@7F0F0000">
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F120C6E" ns0:icon="@7F0F0000">
+				<action ns0:name="com.perfectcorp.action.BCPOST"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="video/mp4"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.LibraryPickerActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.LibraryPickerActivityForIntent" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.BackgroundPickerActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F130343" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.EditViewActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:label="@7F120C65" ns0:name="com.cyberlink.youcammakeup.activity.EditViewActivityForIntent" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.cyberlink.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.NoticeActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ExtraDownloadActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ExtraDownloadCategoryActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.BeautyTipCategoryActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.BeautyTipFilmActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.VideoPlaybackActivity" ns0:launchMode="2" ns0:screenOrientation="4" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.MoreMakeupActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.SponsorConsultActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.WebViewerExActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.SingleTopWebViewerExActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.PromotionWebViewerActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FCB" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F130473" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.SettingActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F130473" ns0:name="com.cyberlink.youcammakeup.activity.NotificationSettingsActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F130473" ns0:name="com.cyberlink.youcammakeup.activity.PrivacySettingsActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:name="com.cyberlink.youcammakeup.activity.CountryPickerActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:name="com.cyberlink.youcammakeup.activity.AboutActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:name="com.cyberlink.youcammakeup.activity.LookSharingActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F130473" ns0:name="com.cyberlink.youcammakeup.activity.TestSettingActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F130473" ns0:name="com.cyberlink.youcammakeup.activity.TestSettingActivity2" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.cyberlink.youcammakeup.activity.BCRegisterActivity" ns0:launchMode="2" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.PhotoQRCodeActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.LandscapePhotoQRCodeActivity" ns0:launchMode="2" ns0:screenOrientation="6" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.skincare.SkinCareAiActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.skincare.emulationremoval.EmulationRemovalActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.skincare.SkinCareAiDailyActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ShopCartWebViewActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13041D" ns0:name="com.cyberlink.youcammakeup.activity.DataProcessingActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013F" ns0:name="com.cyberlink.youcammakeup.activity.ActionSelectActivity" ns0:launchMode="2" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.QRCodeWebViewActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.SharePageWebViewActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FCB" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.IbonWebViewActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FCB" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.LookHowToWebViewActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ExpiredWebViewActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.SendMailProgressActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F130473" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ConsultationSecretPageActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F130473" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ConsultationSettingActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:name="com.cyberlink.youcammakeup.activity.ConsultationCountryActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.IAPWebViewActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AiCamActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AiRecommendCameraActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.BarcodeCamActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AiBaCameraActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AiBaPostActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AiBaTryLookCameraActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AiBaPhotoScanActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ShadeFinderCameraActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.SmashboxAIDetectCameraActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.SmashboxAIResultWebViewActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.SmashboxAITryProductCameraActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AiBaEditViewActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.CameraLiveAudienceActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.PhotoOutputSizeInfoActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.AdvertisementActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.IAPTestModeActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.TestEnvironmentActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.ShowDialogSettingActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.BadLightingSettingActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.ABTestingInfoActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.ContentVersionInfoActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.ShowAllCameraInfoActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.youcammakeup.activity.ShadeGroupFinderActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13041A" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.Y4BEditFeedbackActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13041A" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.Y4BPreviewFeedbackActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AiBaResultPageActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.AiBaPhotoPickerActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13002E" ns0:name="com.cyberlink.youcammakeup.activity.PromoteSubscribeActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F130599" ns0:label="@7F120151" ns0:name="com.cyberlink.youcammakeup.activity.ApplyEffectTestActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB" ns0:windowSoftInputMode="0x00000020"/>
+		<receiver ns0:name="com.cyberlink.youcammakeup.referral.ReferralReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.cyberlink.youcammakeup.unit.dau.DauPromoteReceiver" ns0:exported="true"/>
+		<service ns0:name="com.cyberlink.youcammakeup.referral.ReferralIntentService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.cyberlink.youcammakeup.unit.dau.DauPromoteService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.pf.common.restart.RestartService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false" ns0:process=":r"/>
+		<provider ns0:name="com.pf.common.PfFileProvider" ns0:exported="false" ns0:authorities="@7F12090F" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150001"/>
+		</provider>
+		<service ns0:name="com.pf.heartbeat.HeartbeatService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<receiver ns0:name="com.pf.heartbeat.HeartbeatReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.cyberlink.beautycircle.controller.authenticator.AuthenticatorService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F150000"/>
+		</service>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.MainActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.DeepLinkActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12034A"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12035A"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12035A"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120349"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120349"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120346"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120346"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120362"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120362"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120361"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120361"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120363"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120363"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12036A"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12036A"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12035E"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12035E"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120342"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120342"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120345"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120345"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120365"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120365"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12034B"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12034B"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120348"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120348"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12034C"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12034C"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12034D"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12034D"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12034E"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12034E"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120340"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120340"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120344"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120344"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120359"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120359"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120368"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120368"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120558" ns0:host="@7F120367"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120367"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120371"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120371"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12033F"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12033F"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12035C"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12035C"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12033E"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12033E"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12034F"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12034F"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120372"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120372"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120343"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120343"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12036C"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12036C"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12036D"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12035D"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120347"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120351"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120354"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120355"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120353"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120366"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120351"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120354"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120355"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120353"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120366"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120370"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120370"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12036E"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12036E"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12036B"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12036B"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120356"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120356"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120559" ns0:host="@7F120F42"/>
+				<data ns0:scheme="@7F120F41" ns0:host="@7F120F42"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12033B"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F12033D"/>
+				<data ns0:scheme="@7F120559" ns0:host="@7F12033D"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F12033D"/>
+				<data ns0:scheme="@7F120F41" ns0:host="@7F12033D"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120341"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.DeveloperActivity" ns0:launchMode="0" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.SystemInfoActivity" ns0:launchMode="0" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PostActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PostCommentActivity" ns0:launchMode="0" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PhotoViewerActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PostPhotoViewerActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.BcWebViewerActivity" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.NonBcWebViewerActivity" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.ShopCheckoutActivity" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.RegisterActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013F" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.BCRegisterActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.LikeListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.EngagementListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.RegisterVerifyActivity" ns0:launchMode="0" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.RegisterForgetPasswordActivity" ns0:launchMode="0" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.RegisterChangePasswordActivity" ns0:launchMode="0" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.BeautyProfileActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.AboutInfoActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PfProductReviewActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PhotoPickerActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13041A" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.EditFeedbackActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13041A" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PreviewFeedbackActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.CircleActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.CircleEditorActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.EditCircleActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.SelectCategoryActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.SelectReportActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.EditNotificationActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.EditCommentActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.EditAboutActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.CropImageActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.UserProfileActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.AutoPlaySettingActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13002B" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.CloudAlbumSettingActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.CloudAlbumDetailActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.CountryActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.MeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.FollowerMessageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.ConnectionHistoryActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PreferenceInfoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PreferenceListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.KeyValueInfoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.DeepLinkHistoryActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.HotTopicActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.EventPostsActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013E" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.ShareInActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@android:01030010" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.WbShareActivity" ns0:launchMode="2" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013E" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.WritePostOptionActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F13013E" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.ShareInPostActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.BCNotificationActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.UserListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PostListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.GeneralWaterFallActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PostGroupActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.CircleGroupActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.PfSearchActivity" ns0:exported="false" ns0:launchMode="0" ns0:screenOrientation="1">
+			<intent-filter ns0:label="@7F120C6E" ns0:icon="@7F0F0000">
+				<action ns0:name="android.intent.action.SEARCH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="@7F12055A" ns0:host="@7F120360"/>
+				<data ns0:scheme="@7F120187" ns0:host="@7F120360"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.ContestActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.ContestShareActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.FreeSampleListActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.FreeSampleActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.FreeSampleFillDataActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.FreeSampleResultActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.AutoPostActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.YouTubeActivity" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.VideoPlayActivity" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.BeautyBuzzActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013E" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.AddPostTagActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F13013E" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.WritePostActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F13013E" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.WriteProductReviewActivity"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.InviteFriendsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveAudienceActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveReplayActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveEpgActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveCoinActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveCoinHistoryActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveCoinBalanceActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveCouponExchangeActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveMyCouponWalletActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveRedeemRewardActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.LiveTestActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.cyberlink.beautycircle.controller.activity.PfWebShopActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.ChallengeActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.ChallengePhotoPickerActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.AccountBlockActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.cyberlink.beautycircle.controller.activity.DiscoverWebShopActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.EmailPreferenceActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.EmailVerifyActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.PollWebViewerActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.QuizWebViewerActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.DeleteAccountActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.EmailSubscriptionsActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13013D" ns0:name="com.cyberlink.beautycircle.controller.activity.PfPageSearchActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x40000FFB"/>
+		<activity ns0:theme="@7F13013D" ns0:label="@7F120151" ns0:name="com.cyberlink.beautycircle.controller.activity.DataCollectionActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<service ns0:name="com.cyberlink.beautycircle.service.notification.LocalNotificationServices" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.cyberlink.beautycircle.service.notification.OnGoingLiveNotificationService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.cyberlink.beautycircle.service.CloudAlbumService"/>
+		<service ns0:name="com.cyberlink.beautycircle.service.WritePostService"/>
+		<receiver ns0:name="com.cyberlink.beautycircle.service.notification.LocalNotificationReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="applovin.sdk.key" ns0:value="@7F120159"/>
+		<activity ns0:theme="@7F13002A" ns0:name="com.pfAD.activity.AppOpenAdActivity" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@7F13044D" ns0:label="@7F120151" ns0:name="com.pfAD.activity.RewardVideoPlayActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13064D" ns0:label="@7F120151" ns0:name="com.cyberlink.you.activity.ChatDialogActivity" ns0:screenOrientation="1" ns0:configChanges="0x00002004" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.StickerShopAcitvity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.StickerShopDetailActivity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.ShowTextInfoActivity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.SelectUsersActivity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.ScrollTextViewActivity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.SelectXmppServerActivity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.ChatListActivity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.LogBrowserActivity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.AboutPageActivity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.MessageSettingActivity"/>
+		<activity ns0:theme="@7F130646" ns0:name="com.cyberlink.you.activity.CreateGroupActivity"/>
+		<activity ns0:theme="@7F130646" ns0:label="@7F120151" ns0:name="com.cyberlink.you.activity.SharePostActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F130646" ns0:label="@7F120151" ns0:name="com.cyberlink.you.activity.VideoPlaybackActivity" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@android:0103000A" ns0:label="@7F120151" ns0:name="com.cyberlink.you.activity.ShowMediaActivity" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F130646" ns0:label="@7F120151" ns0:name="com.cyberlink.you.activity.ForwardActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F130646" ns0:label="@7F120151" ns0:name="com.cyberlink.you.activity.PendingChatListActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F130646" ns0:label="@7F120151" ns0:name="com.cyberlink.you.pages.photoimport.PhotoImportActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F130646" ns0:label="@7F120151" ns0:name="com.cyberlink.you.pages.photoimport.VideoImportActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F130646" ns0:label="@7F120151" ns0:name="com.cyberlink.you.pages.photoimport.TouchImageActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<service ns0:label="@7F120151" ns0:name="com.cyberlink.you.service.WaitAckService"/>
+		<service ns0:name="com.cyberlink.you.MonitorService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.pf.common.push.FirebaseMessagingServicePf" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.pf.common.LocaleChangeReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.LOCALE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.cyberlink.youcammakeup"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.google.firebase.perf.provider.FirebasePerfProvider" ns0:exported="false" ns0:authorities="com.cyberlink.youcammakeup.firebaseperfprovider" ns0:initOrder="101"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<meta-data ns0:name="flutterProjectType" ns0:value="module"/>
+		<meta-data ns0:name="flutterEmbedding" ns0:value="2"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.cyberlink.youcammakeup.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.applovin.sdk.AppLovinInitProvider" ns0:exported="false" ns0:authorities="com.cyberlink.youcammakeup.applovincontentprovider" ns0:initOrder="101" ns0:grantUriPermissions="true"/>
+		<activity ns0:name="com.applovin.adview.AppLovinFullscreenActivity" ns0:exported="false" ns0:launchMode="1" ns0:screenOrientation="3" ns0:configChanges="0x00000FB4" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.applovin.sdk.AppLovinWebViewActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F1307EB" ns0:name="com.applovin.mediation.MaxDebuggerActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F1307EB" ns0:name="com.applovin.mediation.MaxDebuggerDetailActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F1307EB" ns0:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F1307EB" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F1307EB" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F1307EB" ns0:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" ns0:configChanges="0x000006A0"/>
+		<service ns0:name="com.applovin.impl.sdk.utils.AppKilledService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<service ns0:name="com.applovin.impl.adview.activity.FullscreenAdService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@7F1305D5" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.cyberlink.youcammakeup.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.cyberlink.youcammakeup.AudienceNetworkContentProvider"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.cyberlink.youcammakeup.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.cyberlink.youcammakeup.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050004" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F150009"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

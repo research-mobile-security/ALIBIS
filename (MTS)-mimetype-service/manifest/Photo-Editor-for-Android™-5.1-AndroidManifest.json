@@ -1,0 +1,325 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "51",
+    "@ns0:versionName": "5.1",
+    "@ns0:compileSdkVersion": "28",
+    "@ns0:compileSdkVersionCodename": "9",
+    "@package": "com.photoeditor.freecameraeffects",
+    "@platformBuildVersionCode": "28",
+    "@platformBuildVersionName": "9",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "18",
+      "@ns0:targetSdkVersion": "28"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      }
+    ],
+    "uses-feature": {
+      "@ns0:name": "android.hardware.camera",
+      "@ns0:required": "false"
+    },
+    "application": {
+      "@ns0:theme": "@7F0C0005",
+      "@ns0:label": "@7F0B0027",
+      "@ns0:icon": "@7F0A0000",
+      "@ns0:name": "com.photoeditor.freecameraeffects.MyApplication",
+      "@ns0:allowBackup": "true",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "activity": [
+        {
+          "@ns0:label": "@7F0B0027",
+          "@ns0:name": "com.photoeditor.freecameraeffects.MainActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x40000FFF",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:label": "Add to Photo Editor for Android",
+          "@ns0:name": "com.photoeditor.freecameraeffects.ShareActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.SEND"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "image/*"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@android:0103006C",
+          "@ns0:name": "com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:0103006C",
+          "@ns0:name": "com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:0103006C",
+          "@ns0:name": "com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000020"
+        },
+        {
+          "@ns0:theme": "@android:0103006C",
+          "@ns0:name": "com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:0103006C",
+          "@ns0:name": "com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:0103006C",
+          "@ns0:name": "com.dsphotoeditor.sdk.activity.DsPhotoEditorAppsActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.ironsource.sdk.controller.ControllerActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.ironsource.sdk.controller.InterstitialActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.ironsource.sdk.controller.OpenUrlActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:name": "com.mopub.mobileads.MoPubActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.mopub.mobileads.MraidActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.mopub.common.MoPubBrowser",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.mopub.mobileads.MraidVideoPlayerActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.mopub.mobileads.RewardedMraidActivity",
+          "@ns0:configChanges": "0x000004A0"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.notificationhelper.NotifReceiver"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.CampaignTrackingReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver",
+          "@ns0:permission": "android.permission.INSTALL_PACKAGES",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F080004"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.APPLICATION_ID",
+          "@ns0:value": "ca-app-pub-8864837529516714~1842626187"
+        },
+        {
+          "@ns0:name": "android.max_aspect",
+          "@ns0:value": "2.100000"
+        },
+        {
+          "@ns0:name": "com.samsung.android.icon_container.has_icon_container",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.flag.rtb_enabled",
+          "@ns0:value": "true"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.photoeditor.freecameraeffects.fileProvider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F0E0000"
+          }
+        },
+        {
+          "@ns0:name": "com.crashlytics.android.CrashlyticsInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.photoeditor.freecameraeffects.crashlyticsinitprovider",
+          "@ns0:initOrder": "90"
+        },
+        {
+          "@ns0:name": "com.squareup.picasso.PicassoProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.photoeditor.freecameraeffects.com.squareup.picasso"
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.photoeditor.freecameraeffects.firebaseinitprovider",
+          "@ns0:initOrder": "100"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.MobileAdsInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.photoeditor.freecameraeffects.mobileadsinitprovider",
+          "@ns0:initOrder": "100"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.google.android.gms.analytics.CampaignTrackingService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.iid.Registrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        }
+      ]
+    }
+  }
+}

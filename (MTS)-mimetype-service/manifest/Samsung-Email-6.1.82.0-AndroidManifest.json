@@ -1,0 +1,3013 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "618200000",
+    "@ns0:versionName": "6.1.82.0",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "com.samsung.android.email.provider",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "26",
+      "@ns0:targetSdkVersion": "33"
+    },
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.telephony",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "com.samsung.android.api.version.2601"
+      },
+      {
+        "@ns0:name": "com.samsung.feature.samsung_experience_mobile"
+      },
+      {
+        "@ns0:glEsVersion": "0x00020000",
+        "@ns0:required": "true"
+      }
+    ],
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.DEVICE_POWER"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_MEDIA_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_PRIVILEGED_PHONE_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_APN_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.BIND_DEVICE_ADMIN"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SECURE_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.MASTER_CLEAR"
+      },
+      {
+        "@ns0:name": "android.permission.CLEAR_APP_USER_DATA"
+      },
+      {
+        "@ns0:name": "android.permission.STORAGE_INTERNAL"
+      },
+      {
+        "@ns0:name": "android.permission.USE_CREDENTIALS"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.INTERACT_ACROSS_USERS_FULL"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.email.permission.ACCESS_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.email.plus.permission.ACCESS_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+      },
+      {
+        "@ns0:name": "android.permission.GET_TASKS"
+      },
+      {
+        "@ns0:name": "android.permission.REAL_GET_TASKS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_SYNC_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.AUTHENTICATE_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SYNC_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.READ_CONTACTS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_OWNER_DATA"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.GET_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_PROFILE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_PROFILE"
+      },
+      {
+        "@ns0:name": "com.samsung.helphub.permission.HELP"
+      },
+      {
+        "@ns0:name": "com.sec.knox.permission.KLMS_AGENT"
+      },
+      {
+        "@ns0:name": "android.permission.GET_INTENT_SENDER_INTENT"
+      },
+      {
+        "@ns0:name": "android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "@ns0:name": "android.permission.SCHEDULE_EXACT_ALARM"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_IMAGES"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_VIDEO"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "com.samsung.android.email.permission.ACCESS_VZW_STORE_DEMO_MODE_RECEIVER"
+      },
+      {
+        "@ns0:name": "com.sec.android.inputmethod.permission.KEYBOARD_SETTING"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_CONTACTS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_CALENDAR"
+      },
+      {
+        "@ns0:name": "android.permission.READ_CALENDAR"
+      },
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.gallery3d.READ"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.gallery3d.WRITE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scloud.cloudagent.permission.READ"
+      },
+      {
+        "@ns0:name": "com.samsung.cmh.data.READ"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_USERS"
+      },
+      {
+        "@ns0:name": "android.permission.INTERACT_ACROSS_USERS"
+      },
+      {
+        "@ns0:name": "android.permission.sec.MDM_EMAIL"
+      },
+      {
+        "@ns0:name": "android.permission.sec.MDM_EXCHANGE"
+      },
+      {
+        "@ns0:name": "android.permission.sec.MDM_SECURITY"
+      },
+      {
+        "@ns0:name": "android.permission.sec.MDM_SMARTCARD"
+      },
+      {
+        "@ns0:name": "android.permission.sec.SMIME_CERTIFICATE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.knox.permission.KNOX_EMAIL"
+      },
+      {
+        "@ns0:name": "com.samsung.android.knox.permission.KNOX_EXCHANGE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.knox.permission.KNOX_LDAP"
+      },
+      {
+        "@ns0:name": "com.samsung.android.knox.permission.KNOX_SECURITY"
+      },
+      {
+        "@ns0:name": "com.samsung.android.knox.permission.KNOX_CERT_PROVISIONING"
+      },
+      {
+        "@ns0:name": "com.samsung.android.knox.permission.SMIME_CERTIFICATE_INTERNAL"
+      },
+      {
+        "@ns0:name": "com.sec.enterprise.permission.MDM_PROXY_ADMIN_INTERNAL"
+      },
+      {
+        "@ns0:name": "com.samsung.android.knox.permission.KNOX_PROXY_ADMIN_INTERNAL"
+      },
+      {
+        "@ns0:name": "android.permission.POST_NOTIFICATIONS"
+      },
+      {
+        "@ns0:name": "com.samsung.wmanager.ENABLE_NOTIFICATION"
+      },
+      {
+        "@ns0:name": "com.samsung.accessory.permission.TRANSPORTING_NOTIFICATION_ITEM"
+      },
+      {
+        "@ns0:name": "com.sec.android.email.LiveDemoUnit"
+      },
+      {
+        "@ns0:name": "com.sec.android.email.permission.DEBUG"
+      },
+      {
+        "@ns0:name": "com.sec.permission.READ_POLICIES"
+      },
+      {
+        "@ns0:name": "com.sec.permission.WRITE_POLICIES"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SETTINGS"
+      },
+      {
+        "@ns0:name": "com.sec.android.settings.permission.SOFT_RESET"
+      },
+      {
+        "@ns0:name": "android.permission.READ_SYNC_STATS"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.KILL_BACKGROUND_PROCESSES"
+      },
+      {
+        "@ns0:name": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+      },
+      {
+        "@ns0:name": "android.permission.MOUNT_FORMAT_FILESYSTEMS"
+      },
+      {
+        "@ns0:name": "android.permission.EXPAND_STATUS_BAR"
+      },
+      {
+        "@ns0:name": "com.sec.android.email.permission.EMAILBROADCAST"
+      },
+      {
+        "@ns0:name": "android.permission.READ_USER_DICTIONARY"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_USER_DICTIONARY"
+      },
+      {
+        "@ns0:name": "com.sec.android.provider.logsprovider.permission.READ_LOGS"
+      },
+      {
+        "@ns0:name": "com.sec.android.provider.logsprovider.permission.WRITE_LOGS"
+      },
+      {
+        "@ns0:name": "com.samsung.android.providers.context.permission.WRITE_EXCHANGE_EMAIL"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.gallery3d.READ_SNS"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.gallery3d.WRITE_SNS"
+      },
+      {
+        "@ns0:name": "com.samsung.systemui.POPUP_UI_PERMISSION"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.myfiles.permission.WRITE"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.myfiles.permission.READ"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.myfiles.permission.MOVE_TO_KNOX_BY_DND"
+      },
+      {
+        "@ns0:name": "com.sec.android.email.service.BROADCAST_DETECT"
+      },
+      {
+        "@ns0:name": "com.wssnps.permission.COM_WSSNPS"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.twdvfs.DVFS_BOOSTER_PERMISSION"
+      },
+      {
+        "@ns0:name": "com.sec.android.email.ACCOUNT_CREATION_PERMISSION"
+      },
+      {
+        "@ns0:name": "com.sec.android.email.EMAIL_ACCOUNT_SETUP"
+      },
+      {
+        "@ns0:name": "com.sec.android.provider.badge.permission.WRITE"
+      },
+      {
+        "@ns0:name": "com.sec.android.provider.badge.permission.READ"
+      },
+      {
+        "@ns0:name": "android.permission.SEM_ACCESS_WIFI_SECURED_INFO"
+      },
+      {
+        "@ns0:name": "com.infraware.provider.SNoteProvider.permission.READ"
+      },
+      {
+        "@ns0:name": "com.infraware.provider.SNoteProvider.permission.WRITE"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_ADMIN"
+      },
+      {
+        "@ns0:name": "com.sec.smartcard.pinservice.permission.SMARTCARD_PIN_ACCESS"
+      },
+      {
+        "@ns0:name": "com.sec.smartcard.pinservice.permission.SMARTCARD_CRYPTO"
+      },
+      {
+        "@ns0:name": "android.permission.NFC"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_GPS"
+      },
+      {
+        "@ns0:name": "com.samsung.clipboardsaveservice.CLIPBOARDSAVESERVICE_PERMISSION"
+      },
+      {
+        "@ns0:name": "com.samsung.android.sdk.email.permission.READ_ADDONPROVIDER"
+      },
+      {
+        "@ns0:name": "com.sec.android.email.permission.LDAP"
+      },
+      {
+        "@ns0:name": "com.sec.knox.ssoagent.USE_KNOX"
+      },
+      {
+        "@ns0:name": "com.sec.android.permission.USE_GSCALER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.app.assistantmenu.permission.ADVERTISE_ASSISTANTMENU"
+      },
+      {
+        "@ns0:name": "com.google.android.gm.permission.READ_GMAIL"
+      },
+      {
+        "@ns0:name": "com.samsung.android.permission.GET_SECRET_PACKAGE_LIST"
+      },
+      {
+        "@ns0:name": "com.samsung.android.sdk.email.permission.ADDON_SELECTED_BROADCAST"
+      },
+      {
+        "@ns0:name": "com.samsung.android.sdk.email.permission.RESTRICT_EXTERNAL_ACCESS"
+      },
+      {
+        "@ns0:name": "android.permission.UPDATE_APP_OPS_STATS"
+      },
+      {
+        "@ns0:name": "android.permission.REORDER_TASKS"
+      },
+      {
+        "@ns0:name": "com.android.launcher.permission.INSTALL_SHORTCUT"
+      },
+      {
+        "@ns0:name": "com.android.launcher.permission.UNINSTALL_SHORTCUT"
+      },
+      {
+        "@ns0:name": "com.samsung.android.permission.LOCK_TASK_MODE"
+      },
+      {
+        "@ns0:name": "com.samsung.helphub.permission.ADVERTISE_HELP_PAGE"
+      },
+      {
+        "@ns0:name": "com.sec.spp.permission.TOKEN_9b8ae417e6835f44740630fcd61343fe1ece18a8697ec9c35d06365779866599412b266395047446e6096d9221bff18c9e37d9e683feffd2363ecbee937801cac10cf674c5d6ed4ac550093a9be3ab12aa7783125afd0f759065bb0a4ef7874af5a52e01e2f4f568285b06a8158aefb12e4f9af5bbaa2dffa24d8084e4bb9f71"
+      },
+      {
+        "@ns0:name": "cn.richinfo.automail.permission.ACCESS_ACTIVITY"
+      },
+      {
+        "@ns0:name": "com.sec.permission.ACCESSBILITY_SHARING"
+      },
+      {
+        "@ns0:name": "com.samsung.WATCH_APP_TYPE.Companion"
+      },
+      {
+        "@ns0:name": "android.permission.INVOKE_CARRIER_SETUP"
+      },
+      {
+        "@ns0:name": "com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.email.permission.ACTION_UPDATE_SENDING_FAILED_STATE_BROADCAST"
+      },
+      {
+        "@ns0:name": "com.sec.enterprise.knox.shareddevice.permission.notify"
+      },
+      {
+        "@ns0:name": "com.samsung.android.app.spage.permission.WRITE_CARD_DATA"
+      },
+      {
+        "@ns0:name": "com.samsung.android.app.spage.permission.READ_CARD_DATA"
+      },
+      {
+        "@ns0:name": "com.samsung.android.email.plus.SEND_BROADCAST"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.dexonpc.file_transmit_canceled"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.dexonpc.file_transmit_finished"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.dexonpc.file_transmit_finished_download"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.dexonpc.dstFolder"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.dexonpc.START_DRAG"
+      },
+      {
+        "@ns0:name": "dexonpc.app.action.permission.KMS_FILETRANSFER_DRAG_FILEINFO"
+      },
+      {
+        "@ns0:name": "android.permission.READ_LOGS"
+      },
+      {
+        "@ns0:name": "android.permission.REQUEST_PASSWORD_COMPLEXITY"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.ai.search.permission.READ"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.ai.search.permission.WRITE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.ai.search.permission.UPDATE_INDEX"
+      }
+    ],
+    "permission": [
+      {
+        "@ns0:label": "@7F1107BF",
+        "@ns0:name": "com.sec.android.email.service.BROADCAST_DETECT",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1107BE"
+      },
+      {
+        "@ns0:label": "@7F110244",
+        "@ns0:name": "com.sec.android.email.EMAIL_ACCOUNT_SETUP",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1102C5"
+      },
+      {
+        "@ns0:label": "@7F1107C8",
+        "@ns0:name": "com.sec.android.email.permission.LDAP",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1107BB"
+      },
+      {
+        "@ns0:label": "@7F1107BD",
+        "@ns0:name": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1107BC"
+      },
+      {
+        "@ns0:label": "@7F1107BA",
+        "@ns0:name": "com.sec.android.email.LiveDemoUnit",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1107B9"
+      },
+      {
+        "@ns0:label": "@7F1107B5",
+        "@ns0:name": "com.sec.android.email.ACCOUNT_CREATION_PERMISSION",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1107B4"
+      },
+      {
+        "@ns0:label": "@7F110842",
+        "@ns0:name": "com.samsung.android.sdk.email.permission.RESTRICT_EXTERNAL_ACCESS",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F110841"
+      },
+      {
+        "@ns0:label": "@7F110486",
+        "@ns0:name": "com.samsung.android.sdk.email.permission.WRITE_EMAILCONTRACT",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F110A33"
+      },
+      {
+        "@ns0:label": "@7F110486",
+        "@ns0:name": "com.samsung.android.sdk.email.permission.READ_EMAILCONTRACT",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F110815"
+      },
+      {
+        "@ns0:label": "@7F1107CD",
+        "@ns0:name": "com.samsung.android.sdk.email.permission.READ_ADDONPROVIDER",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1107CC"
+      },
+      {
+        "@ns0:label": "@7F1107CF",
+        "@ns0:name": "com.samsung.android.sdk.email.permission.WRITE_ADDONPROVIDER",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1107CE"
+      },
+      {
+        "@ns0:label": "@7F1107B7",
+        "@ns0:name": "com.sec.android.email.permission.EMAILBROADCAST",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1107B6"
+      },
+      {
+        "@ns0:label": "@7F110486",
+        "@ns0:name": "com.samsung.android.email.permission.ACCESS_VZW_STORE_DEMO_MODE_RECEIVER",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F110815"
+      },
+      {
+        "@ns0:label": "@7F1107B8",
+        "@ns0:name": "com.samsung.android.email.permission.ACTION_UPDATE_SENDING_FAILED_STATE_BROADCAST",
+        "@ns0:protectionLevel": "0x00000003",
+        "@ns0:description": "@7F1107B8"
+      },
+      {
+        "@ns0:name": "com.sec.enterprise.knox.shareddevice.permission.notify",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.samsung.android.email.plus.SEND_BROADCAST",
+        "@ns0:protectionLevel": "0x00000003"
+      }
+    ],
+    "queries": {
+      "intent": [
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.MAIN"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.GET_CONTENT"
+          },
+          "data": {
+            "@ns0:mimeType": "*/*"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:scheme": "https"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.BROWSABLE"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.support.customtabs.action.CustomTabsService"
+          }
+        }
+      ],
+      "package": [
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enar"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enbg"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enbn"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.encs"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enda"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.ende"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enes"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enfa"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enfi"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enfr"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.engu"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enhe"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enhi"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enhr"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enhu"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enid"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enit"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enja"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enko"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enmr"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.ennl"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enno"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enpl"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enpt"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enptbr"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enro"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enru"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.ensr"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.ensv"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enta"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.ente"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.entr"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.envi"
+        },
+        {
+          "@ns0:name": "com.samsung.sr.nmt.apps.t2t.languagepack.enzh"
+        },
+        {
+          "@ns0:name": "com.google.android.apps.maps"
+        }
+      ]
+    },
+    "application": {
+      "@ns0:theme": "@7F120025",
+      "@ns0:label": "@7F1102F6",
+      "@ns0:icon": "@7F0E0003",
+      "@ns0:name": "com.samsung.android.email.provider.Email",
+      "@ns0:allowBackup": "false",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:requiredAccountType": "com.samsung.android.email",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:networkSecurityConfig": "@7F14000E",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "@ns0:preserveLegacyExternalStorage": "true",
+      "meta-data": [
+        {
+          "@ns0:name": "com.samsung.android.resolver.ranking_priority",
+          "@ns0:value": "6000"
+        },
+        {
+          "@ns0:name": "com.samsung.android.supports_pop_over",
+          "@ns0:value": "false"
+        },
+        {
+          "@ns0:name": "SamsungBasicInteraction",
+          "@ns0:value": "SEP11"
+        },
+        {
+          "@ns0:name": "com.samsung.accessory.wmanager.forward_notificaiton_to_watch_by_self",
+          "@ns0:value": "com.samsung.wemail"
+        },
+        {
+          "@ns0:name": "DisplayCutoutBackground",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.keepalive.density",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.multidisplay.keep_process_alive",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.multiwindow.enable",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.notification.blockable",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "android.nfc.disable_beam_default",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0A000D"
+        },
+        {
+          "@ns0:name": "com.google.android.geo.API_KEY",
+          "@ns0:value": "AIzaSyCNoexPSgSAdb7yulC_Wm4HzDifqcFFU0Y"
+        },
+        {
+          "@ns0:name": "com.samsung.android.icon_container.has_icon_container",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.icon_container.feature_appicon",
+          "@ns0:value": "ADAPTIVEICON_SHADOW"
+        },
+        {
+          "@ns0:name": "com.samsung.android.support.executable",
+          "@ns0:resource": "@7F140007"
+        },
+        {
+          "@ns0:name": "help_page",
+          "@ns0:resource": "@7F140009"
+        },
+        {
+          "@ns0:name": "help_explicit_db_name",
+          "@ns0:value": "help_supported_4_email"
+        },
+        {
+          "@ns0:name": "com.samsung.android.bixby.capsuleId",
+          "@ns0:value": "viv.emailApp"
+        },
+        {
+          "@ns0:name": "android.content.APP_RESTRICTIONS",
+          "@ns0:resource": "@7F140001"
+        },
+        {
+          "@ns0:name": "backup_name",
+          "@ns0:resource": "@7F140002"
+        },
+        {
+          "@ns0:name": "backup_content_uri",
+          "@ns0:value": "content://com.samsung.android.email.provider.backup"
+        },
+        {
+          "@ns0:name": "sdp",
+          "@ns0:value": "enabled"
+        },
+        {
+          "@ns0:name": "support",
+          "@ns0:value": "accountsettings;inline;attachment;readsync;flagsync;deletesync;reply;replyall;forward;newemail;"
+        },
+        {
+          "@ns0:name": "com.sec.android.easyMover.progressIntent",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.spage.card.info",
+          "@ns0:resource": "@7F140003"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.spage.version",
+          "@ns0:value": "1.3.01.0"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.spage.version_code",
+          "@ns0:value": "130100000"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.bixby2.companionApp",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.bixby2.version",
+          "@ns0:value": "@7F11089C"
+        },
+        {
+          "@ns0:name": "SPDE.build.signature",
+          "@ns0:value": "6159bbdb7130ef3eade066d5f53da7b1102bcaa2/120041407/release/EmailProvider-600000-6.1.82"
+        },
+        {
+          "@ns0:name": "SPDE.env.version",
+          "@ns0:value": "7.2.2/G33.2.15/1.1.3"
+        }
+      ],
+      "uses-library": [
+        {
+          "@ns0:name": "com.google.android.maps",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "org.apache.http.legacy",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "com.sec.android.app.multiwindow",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "SmpsManager",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "com.sec.smartcard.auth",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "semextendedformat",
+          "@ns0:required": "false"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F120025",
+          "@ns0:name": "com.samsung.android.email.ui.activity.MessageListXL",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00001DF0",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "@ns0:resizeableActivity": "true",
+          "layout": {
+            "@ns0:minHeight": "263.000000dip",
+            "@ns0:defaultWidth": "72.000005%",
+            "@ns0:defaultHeight": "72.000005%"
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F11046B"
+            },
+            {
+              "@ns0:name": "com.samsung.android.sdk.multiwindow.freeform.launch_in_focusedstack",
+              "@ns0:value": "true"
+            },
+            {
+              "@ns0:name": "com.samsung.android.dex.launchwidth",
+              "@ns0:value": "72%"
+            },
+            {
+              "@ns0:name": "com.samsung.android.dex.launchheight",
+              "@ns0:value": "72%"
+            },
+            {
+              "@ns0:name": "assistant",
+              "@ns0:resource": "@7F140006"
+            },
+            {
+              "@ns0:name": "android.app.searchable",
+              "@ns0:resource": "@7F140021"
+            },
+            {
+              "@ns0:name": "android.app.shortcuts",
+              "@ns0:resource": "@7F140025"
+            }
+          ],
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.APP_EMAIL"
+                }
+              ]
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "com.samsung.android.intent.action.SHROTCUT"
+                },
+                {
+                  "@ns0:name": "com.samsung.android.email.help.CONFIGURE_SIGNATURE"
+                }
+              ],
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "android.intent.action.MAIN"
+                }
+              ],
+              "category": {
+                "@ns0:name": "samung.android.intent.category.APP_EMAIL"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEARCH"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F120316",
+          "@ns0:label": "@7F1108A8",
+          "@ns0:name": "com.samsung.android.email.ui.activity.SearchActivity",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x000000A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.SEARCH"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F110473"
+            },
+            {
+              "@ns0:name": "android.app.searchable",
+              "@ns0:resource": "@7F140020"
+            },
+            {
+              "@ns0:name": "android.app.default_searchable",
+              "@ns0:value": ".activity.SearchActivity"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.ui.messageview.core.view.SemFileViewActivity",
+          "@ns0:permission": "com.sec.android.app.myfiles.permission.MOVE_TO_KNOX_BY_DND",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "@ns0:resizeableActivity": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110476"
+          },
+          "intent-filter": [
+            {
+              "@ns0:label": "@7F1102F6",
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*",
+                "@ns0:scheme": "file",
+                "@ns0:host": "*",
+                "@ns0:pathPattern": ".*\\.eml"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "@ns0:label": "@7F1102F6",
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:mimeType": "message/rfc822"
+                },
+                {
+                  "@ns0:mimeType": "application/eml"
+                }
+              ],
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "@ns0:label": "@7F1102F6",
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "message/rfc822"
+                },
+                {
+                  "@ns0:mimeType": "application/eml"
+                }
+              ],
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.ui.messageview.popupview.SemViewActivity",
+          "@ns0:configChanges": "0x00001D80",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "@ns0:resizeableActivity": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110479"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.ui.messageview.core.view.SemSelectGroup",
+          "@ns0:configChanges": "0x00001DA0",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110478"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120180",
+          "@ns0:label": "@7F1102F6",
+          "@ns0:name": "com.samsung.android.email.composer.activity.MessageCompose",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "com.samsung.android.email.provider.composer",
+          "@ns0:screenOrientation": "2",
+          "@ns0:configChanges": "0x00001FF0",
+          "@ns0:windowSoftInputMode": "0x00000014",
+          "@ns0:documentLaunchMode": "2",
+          "@ns0:maxRecents": "21",
+          "@ns0:resizeableActivity": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.composer.intent.action.FORWARD"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.composer.intent.action.REPLY_ALL"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.composer.intent.action.REPLY"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "com.samsung.android.email.provider.executable.SENDTO"
+                },
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "android.intent.action.SENDTO"
+                },
+                {
+                  "@ns0:name": "android.nfc.action.NDEF_DISCOVERED"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "mailto"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.intent.action.MEETING_RESPONSE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.intent.action.CALENDAR_MEETING_RESPONSE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.intent.action.PROPOSE_NEW_TIME"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.intent.action.CALENDAR_PROPOSE_NEW_TIME"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.intent.action.CALENDAR_MEETING_FORWARD"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.provider.executable.LAUNCH_COMPOSER"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.support.executable"
+              }
+            }
+          ],
+          "meta-data": [
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F11046A"
+            },
+            {
+              "@ns0:name": "android.service.chooser.chooser_target_service",
+              "@ns0:value": "com.samsung.android.email.composer.service.EmailChooserTargetService"
+            },
+            {
+              "@ns0:name": "com.samsung.android.sdk.multiwindow.freeform.launch_in_focusedstack",
+              "@ns0:value": "true"
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:name": "com.samsung.android.email.composer.activity.DrawingActivity",
+          "@ns0:configChanges": "0x00000DF0",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110460"
+          }
+        },
+        {
+          "@ns0:theme": "@7F1201F0",
+          "@ns0:label": "@7F1104EC",
+          "@ns0:name": "com.samsung.android.email.composer.activity.SelectMapActivity",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00001DC0",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "@ns0:finishOnCloseSystemDialogs": "false",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110475"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120004",
+          "@ns0:name": "com.samsung.android.email.composer.activity.AccountSettingsHtmlSignature",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00001FF0",
+          "@ns0:windowSoftInputMode": "0x00000011",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.composer.activity.AccountSettingsHtmlSignature"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11045C"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120183",
+          "@ns0:name": "com.samsung.android.email.widget.EmailWidgetSettings",
+          "@ns0:exported": "false",
+          "@ns0:taskAffinity": "",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00001900",
+          "@ns0:allowTaskReparenting": "true",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_CONFIGURE"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "com.sec.android.app.skipWidgetConfigure",
+              "@ns0:value": "true"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F110461"
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12000C",
+          "@ns0:label": "@7F110966",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.GlobalActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "4",
+          "@ns0:configChanges": "0x00001DF0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.ui.SELECT_ACCOUNT_GLOBAL"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110464"
+          }
+        },
+        {
+          "@ns0:theme": "@7F12000C",
+          "@ns0:label": "@7F110966",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.VerizonActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00001DF0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.ui.SELECT_ACCOUNT_VZW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11047E"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:name": "com.samsung.android.email.common.ui.VZWWebViewActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.commonutil.VZW_WEBVIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110480"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.KoreaActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00001DF0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.ui.SELECT_ACCOUNT_KOR"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110466"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:label": "@7F11023A",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.LoginActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00001DF0",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.email.ui.CREATE_ACCOUNT"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ui.CREATE_ACCOUNT_EAS"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ui.CREATE_ACCOUNT_AFTER_O_OS_FROM_GEAR"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.help.ACCOUNT_SETUP"
+              }
+            ],
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110469"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120005",
+          "@ns0:label": "@7F110237",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.IncomingOutgoingActivity",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110465"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120005",
+          "@ns0:label": "@7F11024C",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.ExchangeActivity",
+          "@ns0:configChanges": "0x00001DB0",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110462"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120005",
+          "@ns0:label": "@7F11023B",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.OptionsActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110470"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:label": "@7F110281",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.NamesActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11046C"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120002",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.AccountSettingsXL",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x000004F0",
+          "@ns0:hardwareAccelerated": "@7F050001",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.email.ui.activity.setup.ACCOUNT_MANAGER_ENTRY"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ui.activity.setup.ACCOUNT_SETTINGS"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ui.activity.setup.AccountSettingsXL.intent.action.ACTION_EXTERNAL_ACCOUNT_SETTINGS"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ui.activity.setup.AccountSettings.intent.action.ACTION_EXTERNAL_ACCOUNT_SETTINGS"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ui.help.MANAGE_EMAIL_FILTER"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ui.activity.setup.GENERAL_SETTINGS"
+              }
+            ],
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11045D"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:label": "@7F1101D3",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.AccountSecurity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11045B"
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002B",
+          "@ns0:label": "@7F1104EB",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.ChinaActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00001DA0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.ui.ACCOUNT_PRESETUP"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11045F"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:label": "@7F1105B6",
+          "@ns0:icon": "@7F0801A0",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.LDAPClientSettings",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000005",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.CREATE_ACCOUNT_LDAP"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.email.EDIT_ACCOUNT_LDAP"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110468"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:label": "@7F1105B6",
+          "@ns0:icon": "@7F0801A0",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.LDAPAccountsList",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.EDIT_LDAP"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110467"
+          }
+        },
+        {
+          "@ns0:theme": "@7F12000D",
+          "@ns0:label": "",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.AccountAboutEmail",
+          "@ns0:configChanges": "0x000004F0",
+          "@ns0:hardwareAccelerated": "@7F050001",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110459"
+          }
+        },
+        {
+          "@ns0:theme": "@7F12000D",
+          "@ns0:label": "",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.OpenSourceLicenseActivity",
+          "@ns0:configChanges": "0x000004F0",
+          "@ns0:hardwareAccelerated": "@7F050001",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11045A"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:label": "@7F110966",
+          "@ns0:name": "com.samsung.android.email.ui.activity.UpgradeAccounts",
+          "@ns0:configChanges": "0x000004A0",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11047D"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120005",
+          "@ns0:label": "@7F1108AD",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.SecurityCertificates",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.mdm.cert.install"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110474"
+          }
+        },
+        {
+          "@ns0:theme": "@7F1201F4",
+          "@ns0:label": "@7F1102F7",
+          "@ns0:icon": "@7F0803A5",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.VZWSetupWizard",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.activity.setup.ACCOUNT_SETUP_BASICS"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11047F"
+          }
+        },
+        {
+          "@ns0:theme": "@android:0103000B",
+          "@ns0:label": "@7F1104EB",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.SSLCertValidationActivity",
+          "@ns0:configChanges": "0x00000480",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11047A"
+          }
+        },
+        {
+          "@ns0:theme": "@android:0103000B",
+          "@ns0:label": "@7F1104EB",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.SyncErrorActivity",
+          "@ns0:configChanges": "0x00000480",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11047B"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120176",
+          "@ns0:label": "@7F1104EB",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.ReceiverBlankActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000480",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.email.setup.NOTISETUP"
+              },
+              {
+                "@ns0:name": "com.sec.android.intent.action.SEC_APPLICATION_SETTINGS"
+              }
+            ],
+            "category": [
+              {
+                "@ns0:name": "com.sec.android.intent.category.SEC_APPLICATION_SETTINGS"
+              },
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110472"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:label": "@7F11076A",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.OAuthWebViewActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00001DF0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.intent.action.startOAuthAuthorization"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11046F"
+          }
+        },
+        {
+          "@ns0:theme": "@7F1202C5",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.OAuthCustomTabsActivity",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "com.samsung.android.email.ui.oauth",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x00001DF0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "com.googleusercontent.apps.217779251543-nh8q39o370t9lqejmh8oq0jin76h32c3"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "samsungemailoauth",
+                "@ns0:host": "com.samsung.android.email.provider"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11046D"
+          }
+        },
+        {
+          "@ns0:theme": "@7F1202AC",
+          "@ns0:name": "com.samsung.android.email.ui.setup.activity.OAuthTokensActivity",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "com.samsung.android.email.ui.oauth",
+          "@ns0:configChanges": "0x00001DF0",
+          "intent-filter": {
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11046E"
+          }
+        },
+        {
+          "@ns0:theme": "@7F12017E",
+          "@ns0:name": "com.samsung.android.email.ui.settings.activity.PermissionActivity",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.spv.ACTION_VIEW_DETAIL"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110471"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120176",
+          "@ns0:name": "com.samsung.android.email.newsecurity.notification.SemNotificationActivity",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110477"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120176",
+          "@ns0:label": "@7F1104EB",
+          "@ns0:name": "com.samsung.android.email.provider.intelligence.bixby2.BixbyAppLinkActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000480",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:scheme": "applink",
+              "@ns0:host": "com.samsung.android.email.provider"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F11045E"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.ui.controller.FragmentNameHandler",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F110463"
+          }
+        },
+        {
+          "@ns0:theme": "@7F120315",
+          "@ns0:name": "com.samsung.android.email.composer.activity.TaskEdgeActivity",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000480"
+        },
+        {
+          "@ns0:theme": "@7F120187",
+          "@ns0:name": "androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "",
+          "@ns0:multiprocess": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F120383",
+          "@ns0:name": "androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "@ns0:priority": "-100",
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F120383",
+          "@ns0:name": "androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "@ns0:priority": "-100",
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F120382",
+          "@ns0:name": "androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "@ns0:priority": "-100",
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.samsung.android.email.ui.service.PopImapAuthenticatorService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.accounts.AccountAuthenticator"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.accounts.AccountAuthenticator",
+              "@ns0:resource": "@7F140011"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104D7"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.ui.service.EasAuthenticatorService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.accounts.AccountAuthenticator"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.accounts.AccountAuthenticator",
+              "@ns0:resource": "@7F140005"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104C6"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.ui.service.LdapAuthenticatorService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.accounts.AccountAuthenticator"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.accounts.AccountAuthenticator",
+              "@ns0:resource": "@7F14000C"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104D2"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.composer.common.EmailChooserTargetService",
+          "@ns0:permission": "android.permission.BIND_CHOOSER_TARGET_SERVICE",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.chooser.ChooserTargetService"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104C8"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.widget.WidgetService",
+          "@ns0:permission": "android.permission.BIND_REMOTEVIEWS",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104DB"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.EmailProviderBroadcastProcessorIntentService",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104CA"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.composer.htmleditor.EmailBroadcastSendIntentService",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104C7"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.provider.attachment.AttachmentDownloadService",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.START_DOWNLOAD_ATTACHMENT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104C2"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.EmailProviderBluetoothIntentService",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104C9"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.ldap.LDAPService",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.provider.ldap.LDAPService"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104D4"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.AccountCreationService",
+          "@ns0:permission": "com.sec.android.email.ACCOUNT_CREATION_PERMISSION",
+          "@ns0:exported": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104C1"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.DefaultAccountService",
+          "@ns0:enabled": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104C5"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.ldap.LDAPInterfaceService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.email.provider.service.ILDAPInterface"
+              },
+              {
+                "@ns0:name": "edm.intent.action.internal.BIND_LDAPSERVICE"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104D3"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.vzwdemomode.VzwStoreDemoModeIntentService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104DA"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.legacy.mail.legacypush.ImapPushService",
+          "@ns0:enabled": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104CF"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.syncadapter.PopImapSyncAdapterService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.SyncAdapter"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.content.SyncAdapter",
+              "@ns0:resource": "@7F140032"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104D8"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.syncadapter.LDAPSyncAdapterService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.SyncAdapter"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.content.SyncAdapter",
+              "@ns0:resource": "@7F140030"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104D1"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.syncadapter.EmailSyncAdapterService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.SyncAdapter"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.content.SyncAdapter",
+              "@ns0:resource": "@7F14002F"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104CC"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.syncadapter.ContactsSyncAdapterService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.SyncAdapter"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.content.SyncAdapter",
+              "@ns0:resource": "@7F14002E"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104C4"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.syncadapter.CalendarSyncAdapterService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.SyncAdapter"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.content.SyncAdapter",
+              "@ns0:resource": "@7F14002D"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104C3"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.syncadapter.TasksSyncAdapterService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.SyncAdapter"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.content.SyncAdapter",
+              "@ns0:resource": "@7F140033"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104D9"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.syncadapter.NotesSyncAdapterService",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.SyncAdapter"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.content.SyncAdapter",
+              "@ns0:resource": "@7F140031"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104D6"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.MailService",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104D5"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.EmailService",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104CB"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.common.fbe.service.FBEEmailService",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":fbeprocess",
+          "@ns0:directBootAware": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104CE"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.controller.InternalBroadcastService",
+          "@ns0:permission": "com.samsung.android.focus.addon.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104D0"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.common.fbe.service.FBEBroadcastService",
+          "@ns0:permission": "com.samsung.android.focus.addon.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "false",
+          "@ns0:process": ":fbeprocess",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104CD"
+          }
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.sec.android.diagmonagent.log.ged.scheduler.GEDJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.samsung.android.email.provider.provider.attachment.AttachmentProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.attachmentprovider;com.samsung.android.email.attachmentstatusprovider",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.provider.attachment.AttachmentPreviewProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.attachment.preview",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:label": "@7F1102F6",
+          "@ns0:name": "com.samsung.android.email.provider.provider.database.EmailProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.provider;com.samsung.android.email.notifier",
+          "path-permission": [
+            {
+              "@ns0:readPermission": "com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER",
+              "@ns0:pathPrefix": "/device_search"
+            },
+            {
+              "@ns0:readPermission": "com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER",
+              "@ns0:pathPrefix": "/device_search_account"
+            },
+            {
+              "@ns0:readPermission": "com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER",
+              "@ns0:pathPrefix": "/device_search_message"
+            },
+            {
+              "@ns0:readPermission": "com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER",
+              "@ns0:pathPrefix": "/device_search_mailbox"
+            },
+            {
+              "@ns0:readPermission": "com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER",
+              "@ns0:pathPrefix": "/device_search_body"
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F1105A5",
+          "@ns0:name": "com.samsung.android.email.provider.provider.database.NoteProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:multiprocess": "false",
+          "@ns0:authorities": "com.samsung.android.email.note"
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.mdm.MDMProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.mdm.provider;com.samsung.android.email.ldap.provider"
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.common.fbe.provider.FBEProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:process": ":fbeprocess",
+          "@ns0:authorities": "com.samsung.android.email.provider.fbeprovider",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.provider.fileprovider.EmailFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.samsung.android.email.provider.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140013"
+          }
+        },
+        {
+          "@ns0:label": "sCloud Test Provider",
+          "@ns0:name": "com.samsung.android.scloud.oem.lib.ClientProvider",
+          "@ns0:readPermission": "com.samsung.android.scloud.backup.lib.read",
+          "@ns0:writePermission": "com.samsung.android.scloud.backup.lib.write",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.provider.backup",
+          "@ns0:syncable": "false"
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.devicesearch.DeviceSearchIndexProvider",
+          "@ns0:permission": "com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.provider.devicesearch.DeviceSearchIndexProvider",
+          "@ns0:syncable": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.intent.action.DEVICE_SEARCH"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.ldap.LdapDirectoryProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.directory.provider",
+          "meta-data": {
+            "@ns0:name": "android.content.ContactDirectory",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.exchange.provider.ExchangeDirectoryProvider",
+          "@ns0:readPermission": "android.permission.READ_CONTACTS",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.exchange.directory.provider",
+          "meta-data": {
+            "@ns0:name": "android.content.ContactDirectory",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.common.accessory.homecard.OtherProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.otherprovider"
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.newsecurity.notification.NotificationProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.notification.provider",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.service.syncadapter.SyncAdapterServiceProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.samsung.android.email.syncadapter.provider"
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.common.autoretry.AutoRetryProvider",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.samsung.android.email.autoretry.provider"
+        },
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.samsung.android.email.provider.androidx-startup",
+          "meta-data": [
+            {
+              "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+              "@ns0:value": "androidx.startup"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.bixby2.provider.CapsuleProvider",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.email.provider.CapsuleProvider"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.samsung.android.email.newsecurity.notification.SemNotificationBroadcastReceiver",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_EMERGENCY_MODE_ENABLED_FOR_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_EMERGENCY_MODE_ENABLING_FOR_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_BOOTCOMPLETED_FOR_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_LOCALE_CHANGED_FOR_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_MY_PACKAGE_REPLACED_FOR_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_CLEAR_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_CLEAR_COUNT_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_CLEAR_SEND_FAIL_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_DELETE_MESSAGE_BY_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_ADD_ACCOUNT_FOR_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_REMOVE_ACCOUNT_FOR_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_READ_MESSAGES"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_DELETE_MESSAGES"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_REMOVE_VIP"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ACTION_MAILBOX_CHANGED"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.RemoveReminder"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.ConfirmReminder"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.DismissReminder"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.DeleteMessage"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B9"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.sync.common.oauth.Profile.ProfileBroadcastReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B7"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.controller.ExternalBroadcastGateway",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "@ns0:directBootAware": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.settings.FONT_SIZE_CHANGED"
+              },
+              {
+                "@ns0:name": "android.settings.FONT_SIZE_CHANGED"
+              },
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.LOCKED_BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.USER_UNLOCKED"
+              },
+              {
+                "@ns0:name": "android.intent.action.MY_PACKAGE_REPLACED"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+              },
+              {
+                "@ns0:name": "com.samsung.intent.action.DEVICE_FILENODE_FULL"
+              },
+              {
+                "@ns0:name": "com.samsung.intent.action.DEVICE_FILENODE_NOT_FULL"
+              },
+              {
+                "@ns0:name": "android.intent.action.LOCALE_CHANGED"
+              },
+              {
+                "@ns0:name": "android.accounts.LOGIN_ACCOUNTS_CHANGED"
+              },
+              {
+                "@ns0:name": "android.accounts.action.ACCOUNT_REMOVED"
+              },
+              {
+                "@ns0:name": "android.bluetooth.device.action.BOND_STATE_CHANGED"
+              },
+              {
+                "@ns0:name": "com.samsung.intent.action.EMERGENCY_STATE_CHANGED"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.RESTART_ON_RESUME"
+              },
+              {
+                "@ns0:name": "com.samsung.android.intent.action.SET_RECV_HOST"
+              },
+              {
+                "@ns0:name": "com.samsung.android.intent.action.GET_RECV_HOST"
+              },
+              {
+                "@ns0:name": "com.samsung.android.intent.action.CREATE_ACCOUNT"
+              },
+              {
+                "@ns0:name": "com.samsung.android.intent.action.REMOVE_ALL_ACCOUNT_FROM_SKT_DM"
+              },
+              {
+                "@ns0:name": "com.sec.android.gate.GATE"
+              },
+              {
+                "@ns0:name": "com.samsung.intent.action.BCS_REQUEST"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.ACTION_SYNC_SCHEDULE_CHANGE"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.ACTION_AUTO_RETRY_ALARM"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.RescheduleReminder"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.TriggerReminder"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.Watchdog"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.exchange.fbe.Watchdog"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B1"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.EnterpriseDMReceiver",
+          "@ns0:permission": "com.samsung.android.knox.permission.KNOX_EMAIL",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.EMAIL_INSTALL_CERT_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.EMAIL_RENAME_CERTIFICATE_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.EMAIL_ENABLE_MSG_COMPOSE_INTERNAL"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B0"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.policyaccountreceiver.MdmReceiver",
+          "@ns0:permission": "com.samsung.android.knox.permission.KNOX_EMAIL",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.CREATE_EMAILACCOUNT_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.DELETE_EMAILACCOUNT_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.DELETE_NOT_VALIDATED_EMAILACCOUNT_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.CREATE_LDAPACCOUNT_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.GET_EMAIL_DEVICEID_REQUEST_INTERNAL"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B5"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.EmailProviderSoftResetReceiver",
+          "@ns0:permission": "com.sec.android.settings.permission.SOFT_RESET",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.intent.action.SETTINGS_SOFT_RESET"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104AE"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.MdmSMIMEReceiver",
+          "@ns0:permission": "com.samsung.android.knox.permission.SMIME_CERTIFICATE_INTERNAL",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.FORCE_SMIME_CERTIFICATE_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.RELEASE_SMIME_CERTIFICATE_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.FORCE_SMIME_CERTIFICATE_FOR_SIGNING_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.RELEASE_SMIME_CERTIFICATE_FOR_SIGNING_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.FORCE_SMIME_CERTIFICATE_FOR_ENCRYPTION_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.RELEASE_SMIME_CERTIFICATE_FOR_ENCRYPTION_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.knox.intent.action.ENFORCE_SMIME_ALIAS_INTERNAL"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B6"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.common.receiver.SdcardReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "intent-filter": [
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.MEDIA_MOUNTED"
+                },
+                {
+                  "@ns0:name": "android.intent.action.MEDIA_EJECT"
+                },
+                {
+                  "@ns0:name": "android.intent.action.MEDIA_UNMOUNTED"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "file"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.os.storage.action.VOLUME_STATE_CHANGED"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B8"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.EmailProviderOtherBroadcastReceiver",
+          "@ns0:permission": "com.sec.android.email.permission.EMAILBROADCAST",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.READ_EMAIL_ITEM_FROM_OTHER_SYSTEM_APP"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.UNREAD_EMAIL_ITEM_FROM_OTHER_SYSTEM_APP"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.DELETE_EMAIL_ITEM_FROM_OTHER_SYSTEM_APP"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.REFRESH_EMAIL_ITEM_FROM_OTHER_SYSTEM_APP"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.REFRESH_EMAIL_ITEM_FROM_OTHER_DEVICE"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104AD"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.KerberosProviderBroadcast",
+          "@ns0:permission": "com.sec.enterprise.knox.shareddevice.permission.notify",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":service",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sec.enterprise.knox.shareddevice.notify"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B3"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.vzwdemomode.VzwStoreDemoModeReceiver",
+          "@ns0:permission": "com.samsung.android.email.permission.ACCESS_VZW_STORE_DEMO_MODE_RECEIVER",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.email.intent.action.VZW_STORE_DEMO_MODE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104BB"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.EmailPushReceiver",
+          "@ns0:permission": "android.permission.BROADCAST_WAP_PUSH",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.provider.Telephony.WAP_PUSH_RECEIVED"
+            },
+            "data": {
+              "@ns0:mimeType": "application/vnd.wap.emn+wbxml"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104AF"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.LiveDemoUnitReceiver",
+          "@ns0:permission": "com.sec.android.email.LiveDemoUnit",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sec.android.email.LiveDemoUnit"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B4"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.BackupAndRestoreService",
+          "@ns0:permission": "com.wssnps.permission.COM_WSSNPS",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.intent.action.REQUEST_BACKUP_EMAIL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.intent.action.REQUEST_RESTORE_EMAIL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.service.BACKUP_TO_EMAIL_LOCATION_FINISH"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104AA"
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.service.VoiceCommandReceiver",
+          "@ns0:exported": "true",
+          "@ns0:process": ":gateway",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sec.voice"
+            },
+            "category": {
+              "@ns0:name": "com.sec.voice.DEFAULT"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "voicecommand",
+              "@ns0:resource": "@7F140034"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104BA"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.common.receiver.EmailBroadcastSendReceiver",
+          "@ns0:permission": "com.sec.android.email.permission.EMAILBROADCAST",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.REPLY_FROM_OTHER_DEVICE"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.COMPOSE_FROM_OTHER_DEVICE"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.REPLY_FROM_OTHER_SYSTEM_APP"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.SEND_BACKGROUND_SENT_INTERNAL"
+              },
+              {
+                "@ns0:name": "com.samsung.android.email.intent.action.REPLY_BACKGROUND_SENT_INTERNAL"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104AC"
+          }
+        },
+        {
+          "@ns0:label": "@7F1103F6",
+          "@ns0:name": "com.samsung.android.email.provider.SecurityPolicy$PolicyAdmin",
+          "@ns0:permission": "android.permission.BIND_DEVICE_ADMIN",
+          "@ns0:exported": "true",
+          "@ns0:description": "@7F1103F5",
+          "meta-data": [
+            {
+              "@ns0:name": "android.app.device_admin",
+              "@ns0:resource": "@7F140004"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104AB"
+            }
+          ],
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.app.action.DEVICE_ADMIN_ENABLED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.widget.WidgetProvider",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.appwidget.provider",
+              "@ns0:resource": "@7F140035"
+            },
+            {
+              "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+              "@ns0:value": "@7F1104BC"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.email.provider.intelligence.homecard.HomeCardReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.app.spage.action.CARD_UPDATE"
+              },
+              {
+                "@ns0:name": "com.samsung.android.app.spage.action.CARD_INSTANT_UPDATE"
+              },
+              {
+                "@ns0:name": "com.samsung.android.app.spage.action.CARD_EVENT"
+              },
+              {
+                "@ns0:name": "com.samsung.android.app.spage.action.CARD_ENABLED"
+              },
+              {
+                "@ns0:name": "com.samsung.android.app.spage.action.CARD_DISABLED"
+              },
+              {
+                "@ns0:name": "com.samsung.android.app.spage.action.MULTI_INSTANCE_PREFERENCE_UPDATE"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.email.provider.core.components.name.metadata",
+            "@ns0:value": "@7F1104B2"
+          }
+        }
+      ]
+    }
+  }
+}

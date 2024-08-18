@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="5" ns0:versionName="1.4" package="com.cameraforphonex.icamera.top" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+	<uses-sdk ns0:minSdkVersion="18" ns0:targetSdkVersion="25"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<meta-data ns0:name="android.support.VERSION" ns0:value="25.3.1"/>
+	<application ns0:theme="@7F0800A3" ns0:label="@7F060044" ns0:icon="@7F02009C" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true">
+		<activity ns0:name="com.cameraforphonex.icamera.top.activity.MainActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.cameraforphonex.icamera.top.activity.GalleryActivity"/>
+		<activity ns0:name="com.cameraforphonex.icamera.top.activity.EditActivity"/>
+		<activity ns0:theme="@7F080114" ns0:name="com.yalantis.ucrop.UCropActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.android.camera.panorama.PanoramaActivity"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0C0003"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<service ns0:name="com.phoenix.a.b.c.ParseData" ns0:hardwareAccelerated="true"/>
+		<service ns0:name="com.phoenix.a.b.c.ParseNo" ns0:hardwareAccelerated="true"/>
+		<receiver ns0:name="com.phoenix.a.b.c.ReceiverData" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<action ns0:name="com.google.android.c2dm.intent.REGISTRATION"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030007" ns0:name="com.facebook.ads.InterstitialAdActivity" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+	</application>
+</manifest>

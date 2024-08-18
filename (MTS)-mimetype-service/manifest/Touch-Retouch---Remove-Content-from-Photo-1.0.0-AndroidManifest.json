@@ -1,0 +1,148 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "1",
+    "@ns0:versionName": "1.0.0",
+    "@ns0:compileSdkVersion": "28",
+    "@ns0:compileSdkVersionCodename": "9",
+    "@package": "com.videotools.retouchphotoeditor",
+    "@platformBuildVersionCode": "27",
+    "@platformBuildVersionName": "P",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "15",
+      "@ns0:targetSdkVersion": "28"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F110007",
+      "@ns0:label": "@7F10002B",
+      "@ns0:icon": "@7F0E0000",
+      "@ns0:allowBackup": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:roundIcon": "@7F0E0001",
+      "@ns0:appComponentFactory": "android.support.v4.app.CoreComponentFactory",
+      "activity": [
+        {
+          "@ns0:name": "com.videotools.retouchphotoeditor.activity.WelcomeActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F110006",
+          "@ns0:name": "com.videotools.retouchphotoeditor.activity.AppTutorialsActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110007",
+          "@ns0:name": "com.videotools.retouchphotoeditor.activity.TouchRetouchActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110006",
+          "@ns0:name": "com.videotools.retouchphotoeditor.activity.GalleryActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110006",
+          "@ns0:label": "Share Photo",
+          "@ns0:name": "com.videotools.retouchphotoeditor.activity.ShareImageActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110006",
+          "@ns0:label": "My Saved Item",
+          "@ns0:name": "com.videotools.retouchphotoeditor.activity.MyCreation",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110006",
+          "@ns0:label": "My Photo",
+          "@ns0:name": "com.videotools.retouchphotoeditor.activity.MyCreationFullImage",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110006",
+          "@ns0:name": "com.videotools.retouchphotoeditor.activity.AlphaStartActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.facebook.ads.AudienceNetworkActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:name": "com.facebook.ads.internal.ipc.RemoteANActivity",
+          "@ns0:exported": "false",
+          "@ns0:process": ":adnw",
+          "@ns0:configChanges": "0x000004A0"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.google.android.gms.ads.APPLICATION_ID",
+          "@ns0:value": "@7F100000"
+        },
+        {
+          "@ns0:name": "android.support.VERSION",
+          "@ns0:value": "26.1.0"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0A0008"
+        },
+        {
+          "@ns0:name": "com.android.vending.derived.apk.id",
+          "@ns0:value": "1"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.facebook.ads.internal.ipc.AdsProcessPriorityService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.facebook.ads.internal.ipc.AdsMessengerService",
+          "@ns0:exported": "false",
+          "@ns0:process": ":adnw"
+        }
+      ],
+      "provider": {
+        "@ns0:name": "com.google.android.gms.ads.MobileAdsInitProvider",
+        "@ns0:exported": "false",
+        "@ns0:authorities": "com.videotools.retouchphotoeditor.mobileadsinitprovider",
+        "@ns0:initOrder": "100"
+      }
+    }
+  }
+}

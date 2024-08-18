@@ -1,0 +1,969 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "413010004",
+    "@ns0:versionName": "13.10.4",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "com.oneplus.filemanager",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "28",
+      "@ns0:targetSdkVersion": "33"
+    },
+    "compatible-screens": null,
+    "uses-permission": [
+      {
+        "@ns0:name": "com.oplus.permission.safe.PRIVATE"
+      },
+      {
+        "@ns0:name": "com.oplus.permission.safe.BACKUP"
+      },
+      {
+        "@ns0:name": "com.heytap.synergy.permission.USE_SYNERGY"
+      },
+      {
+        "@ns0:name": "com.oplus.permission.safe.CONNECTIVITY"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_MEDIA_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_CACHE_FILESYSTEM"
+      },
+      {
+        "@ns0:name": "android.permission.BATTERY_STATS"
+      },
+      {
+        "@ns0:name": "android.permission.DEVICE_POWER"
+      },
+      {
+        "@ns0:name": "android.permission.RECOVERY"
+      },
+      {
+        "@ns0:name": "android.permission.REQUEST_INSTALL_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.REBOOT"
+      },
+      {
+        "@ns0:name": "heytap.permission.cloud.ACCESS_CLOUD"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.QUERY_ALL_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "com.oplus.permission.safe.SECURITY"
+      },
+      {
+        "@ns0:name": "com.android.permission.GET_INSTALLED_APPS"
+      },
+      {
+        "@ns0:name": "com.oplus.permission.safe.APP_MANAGER"
+      },
+      {
+        "@ns0:name": "com.oplus.permission.safe.AUTHENTICATE"
+      },
+      {
+        "@ns0:name": "oplus.permission.OPLUS_COMPONENT_SAFE"
+      },
+      {
+        "@ns0:name": "cn.wps.moffice.lite.permission.BIND_SNAPSHOT_SERVICE"
+      }
+    ],
+    "queries": {
+      "package": [
+        {
+          "@ns0:name": "com.oplus.aiunit.core"
+        },
+        {
+          "@ns0:name": "com.oplus.aiunit"
+        },
+        {
+          "@ns0:name": "com.oplus.services"
+        },
+        {
+          "@ns0:name": "com.coloros.assistantscreen"
+        },
+        {
+          "@ns0:name": "com.oplus.account"
+        },
+        {
+          "@ns0:name": "com.heytap.usercenter"
+        },
+        {
+          "@ns0:name": "com.heytap.vip"
+        },
+        {
+          "@ns0:name": "com.oppo.usercenter"
+        },
+        {
+          "@ns0:name": "com.oneplus.account"
+        },
+        {
+          "@ns0:name": "com.oplus.vip"
+        },
+        {
+          "@ns0:name": "com.oppo.service.account"
+        },
+        {
+          "@ns0:name": "com.coloros.ocs.opencapabilityservice"
+        },
+        {
+          "@ns0:name": "com.oplus.ocs"
+        }
+      ],
+      "provider": {
+        "@ns0:authorities": "com.oplus.statistics.provider"
+      }
+    },
+    "permission": {
+      "@ns0:name": "android.permission.STATUS_BAR_SERVICE"
+    },
+    "application": {
+      "@ns0:theme": "@7F12002F",
+      "@ns0:label": "@7F11003C",
+      "@ns0:icon": "@7F080407",
+      "@ns0:name": "com.oplus.filemanager.MainApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:resizeableActivity": "true",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "@ns0:requestRawExternalStorageAccess": "true",
+      "meta-data": [
+        {
+          "@ns0:name": "versionCommit",
+          "@ns0:value": "e626277"
+        },
+        {
+          "@ns0:name": "versionDate",
+          "@ns0:value": "230423"
+        },
+        {
+          "@ns0:name": "AppPlatformKey",
+          "@ns0:value": "ATBGAiEAnAFOLvZ1i0H5Z0IwDytxhx3WnMhSvGQMZVucCdlz4QUCIQDPDaEuWZfYBsdYh4oJAt3J4sxem5Bkq7ZJ0fDmyAPzPWGOMb1lcG9uYSxnZXQJAAAA"
+        },
+        {
+          "@ns0:name": "AppCode",
+          "@ns0:value": "20016"
+        },
+        {
+          "@ns0:name": "OplusPermissionKey",
+          "@ns0:value": "XIechWLeCAZ+ITAHwcFAjXqI6IpA+U4jRpdP+cUxdVznQGRFeqgOwiHJEt3o5PUtZQziDp8U7YhU8LmyXLItDqCzMa70o0uKvgmuSV+NBG4rnVeVvmlOFwjii8vd6mEjRzJodQeRCqqrHRYlJ11nWT95k1bL8PWy1sanY+mJARqYnLvPu1hHNzaEhUf5BxatWsU8PD3ILJx/N52Qh+xIb9vJDdU8pVsIJrEb5ywbmao8gOSznKTdfBpCNDy0y6qCRtdZEjz/m2owLABnIesw7odL0keeEsrg00Vj/pbyqy5hatRpIsmZykn0pRUgs9MVmJHlm3UGf0PrThFHQ+TGcA== 1 com.oneplus.filemanager C6E8150AA5BBAF523CA1E2D9E356008E1728A12FE20C3C7875A446AFB7C579F9 906"
+        },
+        {
+          "@ns0:name": "FixUidSdkVers",
+          "@ns0:value": "[30][31]"
+        },
+        {
+          "@ns0:name": "FolderPickSaveFile",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.oplus.aiunit.auth_style",
+          "@ns0:value": "0"
+        },
+        {
+          "@ns0:name": "com.oplus.ocs.card.AUTH_CODE",
+          "@ns0:value": "ADBGAiEAr54Xt9mbIP066z/cvLKbaOwioY06VN0VGRZx4Ql3Mr4CIQDRPRj3wODJXFw6vPltj+SEeyjn1xzvQAO5Wn3HtGFbU2vdbnk="
+        },
+        {
+          "@ns0:name": "color.support.options",
+          "@ns0:value": "@7F110097"
+        },
+        {
+          "@ns0:name": "android.nfc.disable_beam_default",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "color_material_enable",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "upgrade_product_code",
+          "@ns0:value": "20183"
+        },
+        {
+          "@ns0:name": "com.oplus.ocs.aiunit.authentication_style",
+          "@ns0:value": "interOcs"
+        },
+        {
+          "@ns0:name": "coui.support.appcompat.version",
+          "@ns0:value": "13.2.3-betaf8f6efd"
+        },
+        {
+          "@ns0:name": "cardwidget.support.client.version.code",
+          "@ns0:value": "10212"
+        },
+        {
+          "@ns0:name": "sau_aar_type",
+          "@ns0:value": "coui"
+        },
+        {
+          "@ns0:name": "sau_aar_version_code",
+          "@ns0:value": "3003"
+        },
+        {
+          "@ns0:name": "sau_aar_version_name",
+          "@ns0:value": "3.0.3-beta38c556d"
+        },
+        {
+          "@ns0:name": "upd_base_account",
+          "@ns0:value": "2.3.3.2"
+        },
+        {
+          "@ns0:name": "com.oplus.support:api-adapter",
+          "@ns0:value": "13.0.0-SNAPSHOT"
+        },
+        {
+          "@ns0:name": "com.oplus.tingle:tingle",
+          "@ns0:value": "3.1.0"
+        },
+        {
+          "@ns0:name": "com.oplus.epona:epona",
+          "@ns0:value": "2.6.2"
+        },
+        {
+          "@ns0:name": "dependencies:implementation:com.oplus.appprovider:settings",
+          "@ns0:value": "2.1.1"
+        },
+        {
+          "@ns0:name": "dependencies:implementation:com.oplus.utils:reflect",
+          "@ns0:value": "2.1.1"
+        },
+        {
+          "@ns0:name": "com.oplus.utils:loggerUtils",
+          "@ns0:value": "1.0.1"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F12002B",
+          "@ns0:name": "com.oplus.filemanager.category.album.ui.AlbumActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001"
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:name": "com.oplus.filemanager.category.albumset.ui.AlbumSetActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": [
+            {
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "oplus.intent.action.filemanager.FILE_GALLERT_VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12002B",
+          "@ns0:name": "com.oplus.filemanager.category.apk.ui.ApkActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": [
+            {
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "oplus.intent.action.filemanager.FILE_APK_VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:name": "com.oplus.filemanager.category.audiovideo.ui.CategoryAudioActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": [
+            {
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "oplus.intent.action.filemanager.FILE_MEDIA_VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:name": "com.filemanager.categorycompress.ui.CategoryCompressActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "oppo.intent.action.FILE_COMPRESS_VIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:label": "@7F110347",
+          "@ns0:name": "com.oplus.filemanager.category.document.ui.DocumentActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": [
+            {
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "oplus.intent.action.filemanager.FILE_DOCUMENT_VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:name": "com.oplus.filemanager.category.globalsearch.ui.GlobalSearchActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "filemanager.intent.action.GLOBAL_SEARCH"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002B",
+          "@ns0:name": "com.filemanager.compresspreview.ui.CompressPreviewActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": {
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": [
+              {
+                "@ns0:mimeType": "application/x-rar-compressed"
+              },
+              {
+                "@ns0:mimeType": "application/zip"
+              },
+              {
+                "@ns0:mimeType": "application/java-archive"
+              },
+              {
+                "@ns0:mimeType": "text/uri-list"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002B",
+          "@ns0:name": "com.oplus.filebrowser.FileBrowserActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": [
+            {
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "oplus.intent.action.filemanager.BROWSER_FILE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12002B",
+          "@ns0:name": "com.oplus.filebrowser.otg.OtgFileBrowserActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001"
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:name": "com.oplus.filemanager.filechoose.ui.folderpicker.FolderPickerActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "oplus.intent.action.ACTION_FILEMANAGER_SAVE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:name": "com.oplus.filemanager.filechoose.ui.singlepicker.SinglePickerActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA3",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": [
+            {
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ]
+            },
+            {
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "oplus.intent.action.filemanager.ACTION_FILEMANAGER_SELECT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:label": "@7F110028",
+          "@ns0:name": "com.oplus.filemanager.filechoose.ui.filepicker.FilePickerActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "com.oneplus.filemanager.encrytion",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": {
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:label": "@7F110396",
+          "@ns0:name": "com.oplus.filemanager.keymove.ui.AKeyToMoveActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": [
+            {
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "oplus.intent.action.filemanager.AKEY_TO_MOVE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:label": "@7F110347",
+          "@ns0:name": "com.filemanager.recyclebin.ui.RecycleBinActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001"
+        },
+        {
+          "@ns0:theme": "@7F12002C",
+          "@ns0:name": "com.filemanager.setting.ui.SettingActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001"
+        },
+        {
+          "@ns0:theme": "@7F12002C",
+          "@ns0:name": "com.filemanager.setting.ui.about.SettingAboutActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001"
+        },
+        {
+          "@ns0:theme": "@7F12002C",
+          "@ns0:name": "com.filemanager.setting.ui.function.SettingFunctionActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001"
+        },
+        {
+          "@ns0:theme": "@7F12002B",
+          "@ns0:name": "com.filemanager.setting.ui.opensourcelicense.OpenSourceActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001"
+        },
+        {
+          "@ns0:theme": "@7F12002A",
+          "@ns0:name": "com.filemanager.superapp.ui.superapp.SuperAppActivity",
+          "@ns0:permission": "com.oplus.permission.safe.SECURITY",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "oplus.intent.action.filemanager.SOURCES_DOC"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "text/*"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002D",
+          "@ns0:name": "com.oplus.filemanager.main.ui.MainActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DF0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "ACTION_FILEMANAGER_BROWSE_CHECK_PASSWORD"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "oplus.intent.action.filemanager.OPEN_FILEMANAGER"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": [
+            {
+              "@ns0:name": "oldComponentName",
+              "@ns0:resource": "@7F030029"
+            },
+            {
+              "@ns0:name": "oldComponentNameVersion",
+              "@ns0:value": "1"
+            },
+            {
+              "@ns0:name": "android.app.shortcuts",
+              "@ns0:resource": "@7F140001"
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@android:01030055",
+          "@ns0:name": "com.oplus.filemanager.main.ui.UsbAttachedActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.hardware.usb.action.USB_DEVICE_ATTACHED"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.hardware.usb.action.USB_DEVICE_ATTACHED",
+            "@ns0:resource": "@7F140002"
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002B",
+          "@ns0:name": "com.oplus.filemanager.filelabel.list.LabelFileListActivity",
+          "@ns0:permission": "com.oplus.permission.safe.ASSISTANT",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "oplus.intent.action.filemanager.LABEL_FILE_LIST"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002C",
+          "@ns0:name": "com.filemanager.setting.ui.privacy.SettingPrivacyActivity",
+          "@ns0:permission": "oppo.permission.OPPO_COMPONENT_SAFE",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001"
+        },
+        {
+          "@ns0:theme": "@7F12002C",
+          "@ns0:name": "com.filemanager.setting.ui.privacy.UserInformationListActivity",
+          "@ns0:permission": "oppo.permission.OPPO_COMPONENT_SAFE",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001"
+        },
+        {
+          "@ns0:theme": "@7F1204A2",
+          "@ns0:label": "",
+          "@ns0:name": "com.oplus.filemanager.cardwidget.activity.CardWidgetOpenFileActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:uiOptions": "0x00000001",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.oplus.filemanager.cardwidget.open.file"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F12002E",
+          "@ns0:name": "com.oplus.filemanager.cardwidget.label.LabelCardSettingActivity",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "3",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.oplus.filemanager.card.label.settings"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.oneplus.filemanager",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140003"
+          }
+        },
+        {
+          "@ns0:name": "com.filemanager.recyclebin.db.RecycleProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.oneplus.filemanager.recycleprovider",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "com.oplus.filemanager.provider.FileManagerProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.oneplus.filemanager.filemanagerprovider",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "com.oplus.filemanager.provider.FileDataProvider",
+          "@ns0:permission": "oplus.permission.OPLUS_COMPONENT_SAFE",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "false",
+          "@ns0:authorities": "com.oneplus.filemanager.filedata"
+        },
+        {
+          "@ns0:name": "com.oplus.filemanager.provider.MyFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.oneplus.filemanager.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140003"
+          }
+        },
+        {
+          "@ns0:name": "com.oplus.filemanager.cardwidget.provider.RecentCardImageFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.oplus.filemanager.recent.cardwidget.image",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+              "@ns0:resource": "@7F140003"
+            },
+            {
+              "@ns0:name": "color.support.FILE_PROVIDER_PATHS",
+              "@ns0:resource": "@7F140003"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.oplus.filemanager.cardwidget.label.LabelCardWidgetProvider",
+          "@ns0:permission": "com.oplus.permission.safe.ASSISTANT",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.oplus.filemanager.label.files.cardwidget",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appcard.action.APPCARD_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.card.provider",
+            "@ns0:resource": "@7F140005"
+          }
+        },
+        {
+          "@ns0:name": "com.heytap.usercenter.accountsdk.utils.UCAccountSDKInitProvider",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.oneplus.filemanager.UCAccountSDKInitProvider"
+        },
+        {
+          "@ns0:name": "com.oplus.tingle.ipc.internal.TingleProvider",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.oneplus.filemanager.tingle",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.oplus.epona.internal.EponaProvider",
+          "@ns0:permission": "com.oplus.permission.safe.SECURITY",
+          "@ns0:exported": "true",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.oneplus.filemanager.oplus.epona",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.oneplus.filemanager.androidx-startup",
+          "meta-data": [
+            {
+              "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+              "@ns0:value": "androidx.startup"
+            }
+          ]
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.oplus.filemanager.backuprestore.FileLabelBRPluginService",
+          "@ns0:permission": "com.oplus.permission.safe.BACKUP",
+          "@ns0:exported": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "uniqueID",
+              "@ns0:value": "1430"
+            },
+            {
+              "@ns0:name": "version",
+              "@ns0:value": "1"
+            },
+            {
+              "@ns0:name": "backup_name_resId",
+              "@ns0:value": "@7F11003C"
+            },
+            {
+              "@ns0:name": "backup_icon_resId",
+              "@ns0:value": "@7F080407"
+            },
+            {
+              "@ns0:name": "isVendorSupport",
+              "@ns0:value": "true"
+            }
+          ],
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.oplus.br.service"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.default"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.oplus.filemanager.recent.service.RecentDbRefreshService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.oplus.filemanager.pcconnect.PCConnectService",
+          "@ns0:permission": "com.oplus.permission.safe.PROTECT",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "oplus.intent.action.filemanager.ACTION_PCCONNECT_SERVICE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        }
+      ],
+      "uses-library": [
+        {
+          "@ns0:name": "androidx.window.extensions",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "androidx.window.sidecar",
+          "@ns0:required": "false"
+        }
+      ],
+      "receiver": {
+        "@ns0:name": "com.heytap.usercenter.accountsdk.utils.app.UserCenterOperateReceiver",
+        "@ns0:exported": "false",
+        "intent-filter": {
+          "action": {
+            "@ns0:name": "com.usercenter.action.receiver.SUPPORT_LOGIN"
+          }
+        }
+      }
+    }
+  }
+}

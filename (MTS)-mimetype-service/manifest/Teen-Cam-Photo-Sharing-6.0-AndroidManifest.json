@@ -1,0 +1,355 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "6",
+    "@ns0:versionName": "6.0",
+    "@ns0:installLocation": "2",
+    "@package": "mobi.teencamandroid.camera",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "10",
+      "@ns0:targetSdkVersion": "17"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_PHONE_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.GET_TASKS"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "android.permission.GET_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "mobi.teencamandroid.camera.permission.C2D_MESSAGE"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "mobi.teencamandroid.camera.permission.MAPS_RECEIVE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "com.google.android.providers.gsf.permission.READ_GSERVICES"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      }
+    ],
+    "permission": [
+      {
+        "@ns0:name": "mobi.teencamandroid.camera.permission.C2D_MESSAGE",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:name": "mobi.teencamandroid.camera.permission.MAPS_RECEIVE",
+        "@ns0:protectionLevel": "0x00000002"
+      }
+    ],
+    "uses-feature": {
+      "@ns0:glEsVersion": "0x00020000",
+      "@ns0:required": "true"
+    },
+    "application": {
+      "@ns0:label": "@7F09017B",
+      "@ns0:icon": "@7F0200CD",
+      "@ns0:name": "mobi.teencamandroid.camera.MainApplication",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "service": [
+        {
+          "@ns0:name": "com.scringo.push.ScringoGCMIntentService"
+        },
+        {
+          "@ns0:name": "com.scringo.service.ScringoService"
+        },
+        {
+          "@ns0:name": "com.scringo.push.ScringoGCMIntentService"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:name": "com.scringo.features.radar.ScringoRadarActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.feed.ScringoFeedActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoProfileActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoFollowersActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.inbox.ScringoInboxActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.inbox.ScringoChatActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.invite.ScringoInviteActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.twitter.ScringoTwitterActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.invite.ScringoFindFriendsActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.feedback.ScringoFeedbackActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.inbox.ScringoSendToActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoProfileBridge",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoProfileEditBio",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.feedback.ScringoFeedbackRootActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.inbox.ScringoSystemMessageActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.invite.ScringoFindFriendsRootActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.invite.ScringoSuggestionsActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.apps.ScringoAppDiscoveryActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.chatroom.ScringoChatroomActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.chatroom.ScringoTopicActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoSignUpRootActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoSignUpActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoLoginRootActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoLoginActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoSignUpSettingsActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoForgotPasswordActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.profile.ScringoChangePasswordActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.quiz.ScringoQuizzesActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.quiz.ScringoQuizActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.scringo.features.quiz.ScringoQuizIntroActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.facebook.LoginActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:01030009",
+          "@ns0:label": "@7F09017B",
+          "@ns0:name": "mobi.teencamandroid.camera.MainActivity",
+          "@ns0:screenOrientation": "-1",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.CHOOSER"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F0A009C",
+          "@ns0:name": "com.aviary.android.feather.FeatherActivity",
+          "@ns0:process": ":standalone",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:hardwareAccelerated": "true",
+          "@ns0:largeHeap": "true"
+        },
+        {
+          "@ns0:theme": "@7F0A009D",
+          "@ns0:label": "@7F090185",
+          "@ns0:name": "mobi.teencamandroid.camera.ImageInfoActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:noHistory": "true"
+        },
+        {
+          "@ns0:name": "com.google.ads.AdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.facebook.sdk.ApplicationId",
+          "@ns0:value": "@7F090000"
+        },
+        {
+          "@ns0:name": "com.google.android.maps.v2.API_KEY",
+          "@ns0:value": "AIzaSyAWKndLcj-zpbMLKWCgzHDUiC37OvgZHnU"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.scringo.push.ScringoGCMBroadcastReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+              },
+              {
+                "@ns0:name": "com.google.android.c2dm.intent.REGISTRATION"
+              }
+            ],
+            "category": {
+              "@ns0:name": "mobi.teencamandroid.camera"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.aviary.android.feather.library.receivers.AviarySystemReceiver",
+          "@ns0:exported": "true",
+          "@ns0:process": ":aviary_sample_system_receiver",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.PACKAGE_ADDED"
+              },
+              {
+                "@ns0:name": "android.intent.action.PACKAGE_REMOVED"
+              },
+              {
+                "@ns0:name": "android.intent.action.PACKAGE_REPLACED"
+              }
+            ],
+            "data": {
+              "@ns0:scheme": "package"
+            }
+          }
+        }
+      ],
+      "provider": {
+        "@ns0:name": "com.aviary.android.feather.library.providers.FeatherContentProvider",
+        "@ns0:exported": "false",
+        "@ns0:process": ":standalone",
+        "@ns0:authorities": "mobi.teencamandroid.camera.HiResProvider"
+      }
+    }
+  }
+}

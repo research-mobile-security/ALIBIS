@@ -1,0 +1,392 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="374" ns0:versionName="3.7.4" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.weixikeji.secretshoot.googleV2" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.UNINSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.MAIN"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.OPEN_DOCUMENT"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.OPEN_DOCUMENT_TREE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.settings.PICTURE_IN_PICTURE_SETTINGS"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<package ns0:name="com.facebook.katana"/>
+	</queries>
+	<uses-feature ns0:name="android.software.leanback" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<application ns0:theme="@7F13002C" ns0:label="@7F120065" ns0:icon="@7F0F0000" ns0:name="com.weixikeji.secretshoot.MyApplication" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:extractNativeLibs="false" ns0:usesCleartextTraffic="true" ns0:networkSecurityConfig="@7F150005" ns0:appCategory="2" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:hasFragileUserData="true" ns0:requestLegacyExternalStorage="true" ns0:preserveLegacyExternalStorage="true">
+		<activity ns0:name="com.weixikeji.secretshoot.activity.SplashActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity-alias ns0:label="@7F120065" ns0:icon="@7F0F0000" ns0:name="com.weixikeji.secretshoot.DefaultEntry" ns0:enabled="true" ns0:exported="true" ns0:targetActivity="com.weixikeji.secretshoot.activity.SplashActivity" ns0:autoRemoveFromRecents="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F150009"/>
+		</activity-alias>
+		<activity-alias ns0:label="Calculator" ns0:icon="@7F0F0002" ns0:name="com.weixikeji.secretshoot.ReplaceCalculator" ns0:enabled="false" ns0:exported="true" ns0:targetActivity="com.weixikeji.secretshoot.activity.SplashActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="Browser" ns0:icon="@7F0F0001" ns0:name="com.weixikeji.secretshoot.ReplaceBrowser" ns0:enabled="false" ns0:exported="true" ns0:targetActivity="com.weixikeji.secretshoot.activity.SplashActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="Compass" ns0:icon="@7F0F0003" ns0:name="com.weixikeji.secretshoot.ReplaceCompass" ns0:enabled="false" ns0:exported="true" ns0:targetActivity="com.weixikeji.secretshoot.activity.SplashActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.MainActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x40000000">
+			<intent-filter>
+				<data ns0:scheme="https" ns0:host="secret-shoot.firebaseapp.com/"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="um.5f81238680455950e4a5f968"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.WebActivity" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000012" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.AboutUsActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.OtherSettingsActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.UserActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.SystemNoticeActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.SuperBlackActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.BuyVipActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.VideoRecorderActivity" ns0:taskAffinity="com.weixikeji.secretshootV2.newtask" ns0:excludeFromRecents="true" ns0:allowTaskReparenting="true" ns0:hardwareAccelerated="true"/>
+		<activity-alias ns0:label="One-tap Lock" ns0:icon="@7F0F0008" ns0:name="com.weixikeji.secretshoot.OneKeyRecMov" ns0:enabled="false" ns0:exported="true" ns0:targetActivity="com.weixikeji.secretshoot.activity.VideoRecorderActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.PictureTakeActivity" ns0:taskAffinity="com.weixikeji.secretshootV2.newtask" ns0:excludeFromRecents="true" ns0:allowTaskReparenting="true" ns0:hardwareAccelerated="true"/>
+		<activity-alias ns0:label="One-click Lock" ns0:icon="@7F0F0007" ns0:name="com.weixikeji.secretshoot.OneKeyTakePic" ns0:enabled="false" ns0:exported="true" ns0:clearTaskOnLaunch="true" ns0:launchMode="3" ns0:targetActivity="com.weixikeji.secretshoot.activity.PictureTakeActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.AudioRecorderActivity" ns0:taskAffinity="com.weixikeji.secretshootV2.newtask" ns0:excludeFromRecents="true" ns0:allowTaskReparenting="true"/>
+		<activity-alias ns0:label="Audio" ns0:icon="@7F0F0006" ns0:name="com.weixikeji.secretshoot.OneKeyRecAudio" ns0:enabled="false" ns0:exported="true" ns0:targetActivity="com.weixikeji.secretshoot.activity.AudioRecorderActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.StorageSettingsActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.SinglePictureViewActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.LoginActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.RegisterActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.AccountManageActivity" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.ModifyPsdActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.ForgetPsdActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.GesturePsdManagerActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.GesturePsdSetActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.GesturePsdVerifyActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.OneKeySettingsActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.OneKeySettings2Activity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.VideoSettingsActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.FloatBtnSelActivity"/>
+		<activity ns0:theme="@7F13039E" ns0:name="com.weixikeji.secretshoot.activity.QuickShootPermissionActivity"/>
+		<activity ns0:theme="@7F130142" ns0:name="com.weixikeji.secretshoot.activity.DlgActivity" ns0:taskAffinity="com.weixikeji.secretshootV2.newtask" ns0:launchMode="3" ns0:configChanges="0x000004A0" ns0:allowTaskReparenting="true"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.PictureSettingsActivity" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.BackstageRecorderActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.BackstageCameraHelpActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.MediaFileActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.MarkSettingsActivity" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F13039E" ns0:name="com.weixikeji.secretshoot.activity.FloatBallOneKeyActivity" ns0:exported="true" ns0:taskAffinity="com.weixikeji.secretshootV2.newtask" ns0:launchMode="3" ns0:screenOrientation="3" ns0:allowTaskReparenting="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="Float Tree" ns0:icon="@7F0F0005" ns0:name="com.weixikeji.secretshoot.OneKeyFloatBall" ns0:enabled="false" ns0:exported="true" ns0:excludeFromRecents="true" ns0:targetActivity="com.weixikeji.secretshoot.activity.FloatBallOneKeyActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F13039E" ns0:name="com.weixikeji.secretshoot.activity.SuperBlackOneKeyActivity" ns0:taskAffinity="com.weixikeji.secretshootV2.newtask" ns0:launchMode="3" ns0:screenOrientation="3" ns0:allowTaskReparenting="true"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.GuideActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.ReplaceIconActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.SalesActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.InvitedListActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.MsgActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.FreezeListActivity"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.BlackActivity" ns0:taskAffinity="com.weixikeji.secretshootV2.newtask" ns0:launchMode="3" ns0:configChanges="0x000004A0" ns0:allowTaskReparenting="true"/>
+		<activity ns0:name="com.weixikeji.secretshoot.activity.BlackLanActivity" ns0:taskAffinity="com.weixikeji.secretshootV2.newtask" ns0:launchMode="3" ns0:screenOrientation="6" ns0:configChanges="0x000004A0" ns0:allowTaskReparenting="true"/>
+		<activity ns0:theme="@7F1302E9" ns0:name="com.donkingliang.imageselector.ImageSelectorActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1302E9" ns0:name="com.donkingliang.imageselector.PreviewActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1302E9" ns0:name="com.donkingliang.imageselector.ClipImageActivity"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.DesktopWidgetService" ns0:foregroundServiceType="0x000000C0"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.QuickShootService" ns0:foregroundServiceType="0x000000C0"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.FloatBallService" ns0:foregroundServiceType="0x000000C0"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.BackstageCameraService" ns0:foregroundServiceType="0x000000C0"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.NotificationBarService" ns0:foregroundServiceType="0x000000C0"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.GooglePayService"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.AudioService" ns0:foregroundServiceType="0x00000080"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.SuperBlackService"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.MusicService"/>
+		<service ns0:name="com.weixikeji.secretshoot.service.AppInitService"/>
+		<service ns0:label="@7F120086" ns0:icon="@7F08021F" ns0:name="com.weixikeji.secretshoot.service.QuickBlackScreenService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.service.quicksettings.ACTIVE_TILE" ns0:value="true"/>
+		</service>
+		<service ns0:label="@7F1202DC" ns0:icon="@7F080220" ns0:name="com.weixikeji.secretshoot.service.QuickTakeFrontVideoService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.service.quicksettings.ACTIVE_TILE" ns0:value="true"/>
+		</service>
+		<service ns0:label="@7F1202DD" ns0:icon="@7F080221" ns0:name="com.weixikeji.secretshoot.service.QuickTakeRearVideoService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.service.quicksettings.ACTIVE_TILE" ns0:value="true"/>
+		</service>
+		<service ns0:label="@7F120065" ns0:name="com.weixikeji.secretshoot.service.AccessibilityOverlayService" ns0:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.accessibilityservice.AccessibilityService"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accessibilityservice" ns0:resource="@7F150000"/>
+		</service>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.weixikeji.secretshoot.googleV2.FileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150002"/>
+		</provider>
+		<receiver ns0:name="com.weixikeji.secretshoot.widget.BackstageCameraWidget" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+				<action ns0:name="BackstageCameraWidget_action_refresh_status"/>
+				<action ns0:name="BackstageCameraWidget_action_refresh_icon"/>
+				<action ns0:name="BackstageCameraWidget_click_action_session_mode"/>
+				<action ns0:name="BackstageCameraWidget_click_action_toggle_capture"/>
+				<action ns0:name="BackstageCameraWidget_click_action_dark_screen"/>
+				<action ns0:name="BackstageCameraWidget_click_action_camera_sleep"/>
+				<action ns0:name="BackstageCameraWidget_click_action_camera_switch"/>
+				<action ns0:name="BackstageCameraWidget_click_action_camera_service_close"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F150001"/>
+		</receiver>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="ScopedStorage" ns0:value="true"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F120168"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-6441001241227159~3384974644"/>
+		<meta-data ns0:name="applovin.sdk.key" ns0:value="XKf_T0qfv5qQbZaOQvRNihA4ux1yaghToS9nsRNg8CRfoTqw00wGr-8ofqymlVCC-9z9QtpFIvVgcVt2zVhQXN"/>
+		<activity ns0:theme="@7F130517" ns0:label="@7F120065" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F120169"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.weixikeji.secretshoot.googleV2"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.brouken.player.PlayerActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x00000FF0" ns0:supportsPictureInPicture="true"/>
+		<activity ns0:theme="@7F1302D7" ns0:label="@7F1202C6" ns0:name="com.brouken.player.SettingsActivity" ns0:exported="true" ns0:screenOrientation="14" ns0:parentActivityName="com.brouken.player.PlayerActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.APPLICATION_PREFERENCES"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13051F" ns0:name="com.yhao.floatwindow.FloatActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000003"/>
+		<provider ns0:name="com.donkingliang.imageselector.provider.ImageSelectorProvider" ns0:exported="false" ns0:authorities="com.weixikeji.secretshoot.googleV2.imageSelectorProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150003"/>
+		</provider>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0018"/>
+		<activity ns0:theme="@7F130197" ns0:label="" ns0:name="com.firebase.ui.auth.KickoffActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F130197" ns0:label="" ns0:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F130197" ns0:label="" ns0:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F1201D7" ns0:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F1201C8" ns0:name="com.firebase.ui.auth.ui.email.EmailActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F1201D0" ns0:name="com.firebase.ui.auth.ui.phone.PhoneActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000015"/>
+		<activity ns0:label="@7F1201D9" ns0:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F1201DA" ns0:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F1201DA" ns0:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F130197" ns0:label="" ns0:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F1201C8" ns0:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F120190" ns0:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity" ns0:exported="false"/>
+		<provider ns0:name="com.firebase.ui.auth.data.client.AuthUiInitProvider" ns0:exported="false" ns0:authorities="com.weixikeji.secretshoot.googleV2.authuiinitprovider" ns0:initOrder="90"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.GenericIdpActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="genericidp" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.RecaptchaActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="recaptcha" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<provider ns0:name="com.applovin.sdk.AppLovinInitProvider" ns0:exported="false" ns0:authorities="com.weixikeji.secretshoot.googleV2.applovininitprovider" ns0:initOrder="101"/>
+		<activity ns0:name="com.applovin.adview.AppLovinFullscreenActivity" ns0:exported="false" ns0:launchMode="1" ns0:screenOrientation="3" ns0:configChanges="0x40000FB4" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.applovin.sdk.AppLovinWebViewActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130506" ns0:name="com.applovin.mediation.MaxDebuggerActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130506" ns0:name="com.applovin.mediation.MaxDebuggerDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130506" ns0:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130506" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130506" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130506" ns0:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130506" ns0:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<service ns0:name="com.applovin.impl.sdk.utils.AppKilledService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<service ns0:name="com.applovin.impl.adview.activity.FullscreenAdService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.weixikeji.secretshoot.googleV2.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.ads.OutOfContextTestingActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.weixikeji.secretshoot.googleV2.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.weixikeji.secretshoot.googleV2.AudienceNetworkContentProvider"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.weixikeji.secretshoot.googleV2.lifecycle-process"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.weixikeji.secretshoot.googleV2.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.weixikeji.secretshoot.googleV2.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F15000F"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="3"/>
+	</application>
+</manifest>

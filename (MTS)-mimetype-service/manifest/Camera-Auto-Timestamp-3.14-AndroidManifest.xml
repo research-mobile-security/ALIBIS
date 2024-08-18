@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="131" ns0:versionName="3.14" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.ascendapps.cameraautotimestamp" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="24" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.android.vending.billing.InAppBillingService.BIND"/>
+		</intent>
+	</queries>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.screen.landscape" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<application ns0:theme="@7F1100CF" ns0:label="@7F100031" ns0:icon="@7F080106" ns0:name="com.ascendapps.cameraautotimestamp.CameraAutoTimestampApp" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:extractNativeLibs="false" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A000A"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-8097880665194900~9249967679"/>
+		<receiver ns0:name="com.ascendapps.cameratimestamp.AutostartService" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.ascendapps.cameratimestamp.CameraReciver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.camera.NEW_PICTURE"/>
+				<action ns0:name="android.hardware.action.NEW_PICTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.ascendapps.cameratimestamp.CameraReciverN" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.ascendapps.NEW_PICTURE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.ascendapps.cameratimestamp.UserPresentReciver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.USER_PRESENT"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1100CF" ns0:label="@7F100031" ns0:name="com.ascendapps.cameratimestamp.CameraAutoTimestampPermissionsActivity" ns0:exported="true" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1100CF" ns0:label="@7F1000D5" ns0:name="com.ascendapps.middletier.ui.SelectFolderActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F11016F" ns0:name="com.ascendapps.cameratimestamp.DialogActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100CF" ns0:name="com.ascendapps.cameratimestamp.WritePermissionsActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100CF" ns0:name="com.ascendapps.cameratimestamp.CameraAutoTimestampPermissionsActivity2" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100CF" ns0:label="@7F1000DD" ns0:name="com.ascendapps.cameratimestamp.CameraAutoTimestampAboutUsActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100CF" ns0:name="com.ascendapps.cameratimestamp.CameraAutoTimestampAppDetailActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100CF" ns0:label="@7F1000DD" ns0:name="com.ascendapps.cameratimestamp.AlbumsActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100CF" ns0:label="@7F1000DD" ns0:name="com.ascendapps.cameratimestamp.ManualTimestampActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100D6" ns0:label="@7F1000D9" ns0:name="com.aditya.filebrowser.SimpleFileChooser" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F11016E" ns0:name="com.aditya.filebrowser.utils.Permissions"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<service ns0:name="com.ascendapps.cameraautotimestamp.CameraJobSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.ascendapps.cameratimestamp.CameraServiceN" ns0:enabled="true"/>
+		<activity ns0:theme="@7F1100D6" ns0:name="com.aditya.filebrowser.FileBrowser">
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F130004"/>
+		</activity>
+		<activity ns0:theme="@7F1100D6" ns0:name="com.aditya.filebrowser.FileChooser">
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F130004"/>
+		</activity>
+		<activity ns0:theme="@7F1100D6" ns0:name="com.aditya.filebrowser.FileBrowserWithCustomHandler">
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F130004"/>
+		</activity>
+		<activity ns0:theme="@7F11021C" ns0:name="com.journeyapps.barcodescanner.CaptureActivity" ns0:clearTaskOnLaunch="true" ns0:stateNotNeeded="true" ns0:screenOrientation="6" ns0:windowSoftInputMode="0x00000003"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.ascendapps.cameraautotimestamp.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+	</application>
+</manifest>

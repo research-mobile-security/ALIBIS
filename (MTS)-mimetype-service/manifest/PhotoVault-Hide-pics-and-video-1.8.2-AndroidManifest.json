@@ -1,0 +1,895 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "182001",
+    "@ns0:versionName": "1.8.2",
+    "@ns0:compileSdkVersion": "31",
+    "@ns0:compileSdkVersionCodename": "12",
+    "@package": "com.sneakergif.secretgallery2",
+    "@platformBuildVersionCode": "31",
+    "@platformBuildVersionName": "12",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "21",
+      "@ns0:targetSdkVersion": "31"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.USE_FINGERPRINT"
+      },
+      {
+        "@ns0:name": "com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "com.google.android.gms.permission.AD_ID"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      }
+    ],
+    "queries": {
+      "intent": [
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.MAIN"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.LAUNCHER"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.BROWSABLE"
+          },
+          "data": {
+            "@ns0:scheme": "https"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.support.customtabs.action.CustomTabsService"
+          }
+        }
+      ]
+    },
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.front",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.microphone",
+        "@ns0:required": "false"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F11000D",
+      "@ns0:label": "@7F10003D",
+      "@ns0:icon": "@7F08019A",
+      "@ns0:name": "com.sneaker.application.SneakerApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:vmSafeMode": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:networkSecurityConfig": "@7F130001",
+      "@ns0:roundIcon": "@7F08019A",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "@ns0:preserveLegacyExternalStorage": "true",
+      "activity": [
+        {
+          "@ns0:label": "@7F10003D",
+          "@ns0:name": "com.sneaker.activities.sneaker.SplashActivity2",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.image.ImagePreviewActivity",
+          "@ns0:screenOrientation": "-1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.setting.InfoActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.web.WebViewActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.setting.CheckCodeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.lock.app.PatternPreferencesActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.lock.app.PatternUnlockActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.lock.app.ManagerPatternActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F11023E",
+          "@ns0:name": "com.sneaker.activities.sneaker.HomeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101D7",
+          "@ns0:name": "com.sneaker.activities.setting.FileInfoActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.dir.CustomDirPickerActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.image.SystemDirPickerActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.image.ImagePickerActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.video.VideoPickerActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110240",
+          "@ns0:name": "com.sneaker.activities.dir.DirectoryDetailActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.result.OperateSuccessActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.recylerbin.RecyclerBinActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.login.SignInAndRegisterActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000002"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.disguise.FlabbyBirdActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.disguise.DisguiseSettingActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.found.FindBackImageActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.lock.AppPatternLockActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.setting.SettingPreferenceActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.permission.RequestPermissionActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F11000C",
+          "@ns0:name": "com.sneaker.lock.GetBackPatternActivity",
+          "@ns0:windowSoftInputMode": "0x00000002"
+        },
+        {
+          "@ns0:label": "@7F1002D1",
+          "@ns0:name": "com.sneaker.activities.backup.BackupAndRestoreActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.SEND"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "*/*"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.migrate.DeviceMigrateActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.migrate.OldDeviceActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.migrate.NewDeviceActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.permission.RequestSdCardWritePermissionActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.disguise.ChangeIconActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.lock.DirectoryLockActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.lock.dir.DirectoryLockSetActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.wx.WxSubscribeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.lock.LockSettingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.lock.AppFingerprintLockActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.user.UserInfoActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.user.EditMottoActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.user.EditNicknameActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110241",
+          "@ns0:name": "com.sneaker.activities.camera.CameraActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.premium.PremiumStateActivity"
+        },
+        {
+          "@ns0:theme": "@7F1101D7",
+          "@ns0:label": "@7F10002B",
+          "@ns0:name": "com.sneaker.activities.ReceiveShareActivity",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "video/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "video/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.video.PlayerActivity2",
+          "@ns0:screenOrientation": "10",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@7F110211",
+          "@ns0:name": "com.sneaker.activities.wx.WxPayEntryActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.wx.WxEntryActivity"
+        },
+        {
+          "@ns0:theme": "@7F1101CB",
+          "@ns0:label": "@7F1000FF",
+          "@ns0:name": "com.sneaker.activities.pay.SelectPayTypeActivity"
+        },
+        {
+          "@ns0:theme": "@7F11000C",
+          "@ns0:name": "com.sneaker.activities.login.LoginDialog"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.premium.BuyPremiumActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.SelectTypeActivity"
+        },
+        {
+          "@ns0:theme": "@7F11000B",
+          "@ns0:name": "com.sneaker.activities.user.UserProfileActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.user.UserDeleteActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.premium.PremiumTrialActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.ad.IntermediateAdActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.user.UpdateUsernameActivity"
+        },
+        {
+          "@ns0:label": "@7F10016E",
+          "@ns0:name": "com.sneaker.activities.operation.DianwanWebViewActivity",
+          "@ns0:documentLaunchMode": "1"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.operation.DianwanLoadingActivity"
+        },
+        {
+          "@ns0:theme": "@7F1101CB",
+          "@ns0:label": "@7F1000FF",
+          "@ns0:name": "com.sneaker.activities.privacy.PrivacyHintActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.transfer.TransferListActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.activities.cloud.CloudSettingActivity"
+        },
+        {
+          "@ns0:name": "com.sneaker.util.performance.memory.test.java.ActivityLeakMaker$LeakedActivity"
+        },
+        {
+          "@ns0:theme": "@7F1101D5",
+          "@ns0:name": "com.yalantis.ucrop.UCropActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.android.billingclient.api.ProxyBillingActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000005B0"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "activity-alias": [
+        {
+          "@ns0:label": "@7F100062",
+          "@ns0:icon": "@7F080116",
+          "@ns0:name": "com.jiandan.terence.sneaker.calculator",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:targetActivity": "com.sneaker.activities.sneaker.SplashActivity2",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F1000AF",
+          "@ns0:icon": "@7F080130",
+          "@ns0:name": "com.jiandan.terence.sneaker.compass",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.sneaker.activities.sneaker.SplashActivity2",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F100377",
+          "@ns0:icon": "@7F080113",
+          "@ns0:name": "com.jiandan.terence.sneaker.clock",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.sneaker.activities.sneaker.SplashActivity2",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F1003B1",
+          "@ns0:icon": "@7F08013D",
+          "@ns0:name": "com.jiandan.terence.sneaker.weather",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.sneaker.activities.sneaker.SplashActivity2",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F10013E",
+          "@ns0:icon": "@7F0800ED",
+          "@ns0:name": "com.jiandan.terence.sneaker.fake",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.sneaker.activities.sneaker.SplashActivity2",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F10003D",
+          "@ns0:name": "com.jiandan.terence.sneaker.splash",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.sneaker.activities.sneaker.SplashActivity2",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F10003D",
+          "@ns0:name": "com.sneakergif.secretgallery2.wxapi.WXPayEntryActivity",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.sneaker.activities.wx.WxPayEntryActivity"
+        }
+      ],
+      "uses-library": {
+        "@ns0:name": "org.apache.http.legacy",
+        "@ns0:required": "false"
+      },
+      "provider": [
+        {
+          "@ns0:name": "com.sneaker.provider.DataProvider",
+          "@ns0:authorities": "com.sneakergif.secretgallery2.contentprovider"
+        },
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.sneakergif.secretgallery2.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F130004"
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.perf.provider.FirebasePerfProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.sneakergif.secretgallery2.firebaseperfprovider",
+          "@ns0:initOrder": "101"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.MobileAdsInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.sneakergif.secretgallery2.mobileadsinitprovider",
+          "@ns0:initOrder": "100"
+        },
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.sneakergif.secretgallery2.androidx-startup",
+          "meta-data": {
+            "@ns0:name": "androidx.work.WorkManagerInitializer",
+            "@ns0:value": "androidx.startup"
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.sneakergif.secretgallery2.firebaseinitprovider",
+          "@ns0:initOrder": "100",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "androidx.lifecycle.ProcessLifecycleOwnerInitializer",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.sneakergif.secretgallery2.lifecycle-process"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.sneaker.receivers.AnalyzeReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.jiandan.terence.activities.sneaker.ACTION_ANALYZE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BATTERY_OKAY"
+              },
+              {
+                "@ns0:name": "android.intent.action.BATTERY_LOW"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIME_SET"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+          "@ns0:enabled": "@7F050013",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.impl.background.systemalarm.UpdateProxies"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+          "@ns0:exported": "false"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "UMENG_APPKEY",
+          "@ns0:value": "5c1f3386f1f5566726000322"
+        },
+        {
+          "@ns0:name": "UMENG_CHANNEL",
+          "@ns0:value": "Google-V"
+        },
+        {
+          "@ns0:name": "android.app.default_searchable",
+          "@ns0:value": "com.apkgetter.SearchResultsActivity"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.APPLICATION_ID",
+          "@ns0:value": "ca-app-pub-4789689474141768~8040708130"
+        },
+        {
+          "@ns0:name": "com.google.android.play.billingclient.version",
+          "@ns0:value": "4.0.0"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0A0020"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.sneaker.service.BackUpService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "com.sneaker.service.RestoreService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "com.sneaker.service.InfoInitService"
+        },
+        {
+          "@ns0:name": "com.sneaker.service.FileSendService"
+        },
+        {
+          "@ns0:name": "com.sneaker.service.FileReceiveService"
+        },
+        {
+          "@ns0:name": "com.sneaker.service.RestoreByUriService"
+        },
+        {
+          "@ns0:name": "com.sneaker.service.BackUpByUriService"
+        },
+        {
+          "@ns0:name": "com.jiandan.terence.imageprocess.services.FileDeleteService"
+        },
+        {
+          "@ns0:name": "com.kwai.koom.javaoom.monitor.analysis.HeapAnalysisService",
+          "@ns0:process": ":heap_analysis"
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.AdService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+          "@ns0:enabled": "@7F050013",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemjob.SystemJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "@7F050015",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.foreground.SystemForegroundService",
+          "@ns0:enabled": "@7F050014",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+          "@ns0:permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+          "@ns0:exported": "true",
+          "@ns0:visibleToInstantApps": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "backend:com.google.android.datatransport.cct.CctBackendFactory",
+            "@ns0:value": "cct"
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        }
+      ]
+    }
+  }
+}

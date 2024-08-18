@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2" ns0:versionName="2.3" ns0:installLocation="0" ns0:compileSdkVersion="30" ns0:compileSdkVersionCodename="11" package="com.newhdrcamerafilters.snapstoryportraithdcamera6" platformBuildVersionCode="30" platformBuildVersionName="11">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="30"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.microphone"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<application ns0:theme="@7F0C0001" ns0:label="@7F0B0009" ns0:icon="@7F050022" ns0:name="com.mrgenius.camera.MyApplication" ns0:allowBackup="true" ns0:largeHeap="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<meta-data ns0:name="applovin.sdk.key" ns0:value="7-_DKfq25vkTizVuEuQ9ErVlKMGWye40gc4QHDEVeS_1Qbdv6DIpqOwg-CSerrFWgCIVWCuTopbCxVdni8xQxH"/>
+		<activity ns0:label="@7F0B0009" ns0:name="com.mrgenius.camera.MainActivity" ns0:clearTaskOnLaunch="true" ns0:screenOrientation="0" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0B0148" ns0:icon="@7F050019" ns0:name="com.mrgenius.camera.TakePhoto" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:screenOrientation="0" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:label="@7F0B0009" ns0:icon="@7F050018" ns0:name="com.mrgenius.camera.MyWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F0E0001"/>
+		</receiver>
+		<receiver ns0:label="@7F0B0148" ns0:icon="@7F050019" ns0:name="com.mrgenius.camera.MyWidgetProviderTakePhoto">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F0E0002"/>
+		</receiver>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-9416371795792794~3052289732"/>
+		<activity ns0:name="com.mrgenius.camera.SplashScreen">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.newhdrcamerafilters.snapstoryportraithdcamera6.lifecycle-process"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.newhdrcamerafilters.snapstoryportraithdcamera6.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F070001"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F0E0003"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="6"/>
+	</application>
+</manifest>

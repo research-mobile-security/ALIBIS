@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2019" ns0:versionName="01.01.2019" package="com.superfine.cameraforsamsunggalaxy" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+	<uses-sdk ns0:minSdkVersion="17" ns0:targetSdkVersion="26"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.microphone"/>
+	<meta-data ns0:name="android.support.VERSION" ns0:value="26.0.0-alpha1"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<application ns0:theme="@7F090002" ns0:label="@7F070020" ns0:icon="@7F020029" ns0:allowBackup="true" ns0:largeHeap="true">
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0C0000"/>
+		<activity ns0:label="@7F070020" ns0:name="com.superfine.fujicamera2019.MainActivity" ns0:screenOrientation="0" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F07011B" ns0:icon="@7F02002C" ns0:name="com.superfine.fujicamera2019.TakePhoto" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:screenOrientation="0" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:label="@7F070020" ns0:icon="@7F020029" ns0:name="com.superfine.fujicamera2019.MyWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F050001"/>
+		</receiver>
+		<receiver ns0:label="@7F07011B" ns0:icon="@7F02002C" ns0:name="com.superfine.fujicamera2019.MyWidgetProviderTakePhoto">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F050002"/>
+		</receiver>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.ads.list3d.List3DActivity"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.startapp.android.publish.adsCommon.activities.OverlayActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.adsCommon.activities.FullScreenActivity" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.PeriodicMetaDataService"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.InfoEventService"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.PeriodicJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<receiver ns0:name="com.startapp.android.publish.common.metaData.BootCompleteListener">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+	</application>
+</manifest>

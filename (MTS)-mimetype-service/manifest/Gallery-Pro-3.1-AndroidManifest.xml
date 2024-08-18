@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="31" ns0:versionName="3.1" ns0:compileSdkVersion="32" ns0:compileSdkVersionCodename="12" package="cm.gallery.gallerypro" platformBuildVersionCode="32" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<application ns0:theme="@7F1200F1" ns0:label="@7F11002F" ns0:icon="@7F0800A7" ns0:name="com.mobile.gallery.ui.CustomFontApp" ns0:allowBackup="false" ns0:supportsRtl="true" ns0:roundIcon="@7F0800A7" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:theme="@7F12017F" ns0:name="com.mobile.gallery.ui.FirstActivity" ns0:exported="true" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1201F9" ns0:name="com.mobile.gallery.ui.LoadingActivity"/>
+		<activity ns0:theme="@7F12017F" ns0:name="com.mobile.gallery.ui.SplashActivity"/>
+		<activity ns0:theme="@7F120104" ns0:name="com.mobile.gallery.ui.MainActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F120109" ns0:name="com.mobile.gallery.ui.AlbumActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F120105" ns0:name="com.mobile.gallery.ui.ItemActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F12010C" ns0:name="com.mobile.gallery.ui.VideoPlayerActivity" ns0:launchMode="2" ns0:configChanges="0x00000D80" ns0:supportsPictureInPicture="true"/>
+		<activity ns0:theme="@7F120107" ns0:name="com.mobile.gallery.ui.SettingsActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F12010A" ns0:name="com.mobile.gallery.ui.FileExplorerActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F12010B" ns0:name="com.mobile.gallery.ui.FileOperationDialogActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1200F6" ns0:name="com.mobile.gallery.ui.ExifEditorActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F1200F4" ns0:label="@7F110061" ns0:name="com.mobile.gallery.ui.EditImageActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F120106" ns0:label="@7F11014A" ns0:name="com.mobile.gallery.ui.SetWallpaperActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1200F5" ns0:label="@7F110074" ns0:name="com.mobile.gallery.ui.ExcludePathsActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F12010D" ns0:label="@7F110149" ns0:name="com.mobile.gallery.ui.VirtualAlbumsActivity" ns0:launchMode="1"/>
+		<activity ns0:name="com.mobile.gallery.IntentReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="cm.gallery.gallerypro.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140001"/>
+		</provider>
+		<service ns0:name="com.mobile.gallery.data.fileOperations.Copy"/>
+		<service ns0:name="com.mobile.gallery.data.fileOperations.Delete"/>
+		<service ns0:name="com.mobile.gallery.data.fileOperations.Move"/>
+		<service ns0:name="com.mobile.gallery.data.fileOperations.NewDirectory"/>
+		<service ns0:name="com.mobile.gallery.data.fileOperations.Rename"/>
+		<activity ns0:name="com.zhihu.matisse.ui.MatisseActivity"/>
+		<activity ns0:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity"/>
+		<activity ns0:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="cm.gallery.gallerypro.com.squareup.picasso"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="cm.gallery.gallerypro.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0013"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F120232" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:enabled="false" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F140007"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

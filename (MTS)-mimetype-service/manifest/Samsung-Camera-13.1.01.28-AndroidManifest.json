@@ -1,0 +1,1577 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "1310128000",
+    "@ns0:versionName": "13.1.01.28",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "com.sec.android.app.camera",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "33",
+      "@ns0:targetSdkVersion": "33"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.MODIFY_AUDIO_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.POST_NOTIFICATIONS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_VIDEO"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_IMAGES"
+      },
+      {
+        "@ns0:name": "android.permission.USE_BIOMETRIC"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_WIFI_MULTICAST_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "android.permission.EXPAND_STATUS_BAR"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_CONNECT"
+      },
+      {
+        "@ns0:name": "android.permission.MODIFY_PHONE_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.CAPTURE_AUDIO_HOTWORD"
+      },
+      {
+        "@ns0:name": "android.permission.MODIFY_AUDIO_ROUTING"
+      },
+      {
+        "@ns0:name": "android.permission.QUERY_ALL_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.GET_TASKS"
+      },
+      {
+        "@ns0:name": "android.permission.DELETE_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.INJECT_EVENTS"
+      },
+      {
+        "@ns0:name": "com.samsung.accessibility.permission.WRITE_SETTINGS"
+      },
+      {
+        "@ns0:name": "com.samsung.android.providers.media.READ"
+      },
+      {
+        "@ns0:name": "com.samsung.android.providers.media.WRITE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.permission.SEM_MEDIA_CONTENTS"
+      },
+      {
+        "@ns0:name": "com.samsung.android.permission.SEC_MEDIA_CONTENTS"
+      },
+      {
+        "@ns0:name": "android.permission.DEVICE_POWER"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_MEDIA_STORAGE"
+      },
+      {
+        "@ns0:name": "com.samsung.cmh.data.READ"
+      },
+      {
+        "@ns0:name": "com.samsung.cmh.data.WRITE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.app.assistantmenu.permission.ADVERTISE_ASSISTANTMENU"
+      },
+      {
+        "@ns0:name": "com.samsung.android.bixby.agent.permission.RECEIVE_BIXBY_VIEW_STATE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.voicewakeup.permission.READ_SETTING_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.permisson.DOUBLE_CLICK"
+      },
+      {
+        "@ns0:name": "com.samsung.android.provider.filterprovider.permission.READ_FILTER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.provider.filterprovider.permission.WRITE_FILTER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+      },
+      {
+        "@ns0:name": "com.samsung.android.permission.SSRM_NOTIFICATION_PERMISSION"
+      },
+      {
+        "@ns0:name": "com.samsung.permission.SSENSOR"
+      },
+      {
+        "@ns0:name": "com.samsung.permission.HRM_EXT"
+      },
+      {
+        "@ns0:name": "com.samsung.accessory.saproviders.sacameracontrolprovider.CAMERA_CONTROLLER_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.voicenote.Controller"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.apex.permission.ACCESS_APEX_SERVICE"
+      },
+      {
+        "@ns0:name": "com.sec.android.settings.permission.SOFT_RESET"
+      },
+      {
+        "@ns0:name": "com.samsung.sea.retailagent.permission.RETAILMODE"
+      },
+      {
+        "@ns0:name": "com.sec.enterprise.knox.MDM_CONTENT_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.sec.spp.permission.TOKEN_995c646f7bcc2b7a0c9c4b92bbba541bd837d56c2ac3eb8b465f2faf8ca0596b9363a768e0d73340c055b9ad332b4dd1e167912add627fec17e1ed8e354f264dd3e5d773506336ca4f6d4a0deaa296d852b43e629cfd00c329c5ed38d2e1f199bf02f32774b04449b69109ae3a9104569780cfd4c42f1396e515dd49d31a94af"
+      },
+      {
+        "@ns0:name": "com.sec.android.cover.ledback.LED_BACK_SDK_SERVICE"
+      },
+      {
+        "@ns0:name": "com.sec.android.diagmonagent.permission.DIAGMON"
+      },
+      {
+        "@ns0:name": "com.sec.android.diagmonagent.permission.PROVIDER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.app.tips.permission.USE_INTENT_SERVICE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.camera.core2.data.READ"
+      },
+      {
+        "@ns0:name": "com.samsung.android.camera.core2.data.WRITE"
+      },
+      {
+        "@ns0:name": "com.samsung.keyguard.SHORTCUT_PERMISSION"
+      },
+      {
+        "@ns0:name": "com.samsung.android.rubin.app.ui.permission.LAUNCH_RUBIN_SETTING"
+      },
+      {
+        "@ns0:name": "com.samsung.android.permission.CHANGE_DISPLAY_COLOR"
+      },
+      {
+        "@ns0:name": "android.permission.CONTROL_KEYGUARD"
+      },
+      {
+        "@ns0:name": "android.permission.CONFIGURE_WIFI_DISPLAY"
+      },
+      {
+        "@ns0:name": "android.permission.SET_ANIMATION_SCALE"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_USERS"
+      },
+      {
+        "@ns0:name": "android.permission.INTERACT_ACROSS_USERS_FULL"
+      },
+      {
+        "@ns0:name": "android.permission.UPDATE_APP_OPS_STATS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.STATUS_BAR"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SECURE_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_PRIVILEGED_PHONE_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.REQUEST_DELETE_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.CONTROL_DISPLAY_BRIGHTNESS"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNAL_SYSTEM_WINDOW"
+      },
+      {
+        "@ns0:name": "android.permission.READ_SEARCH_INDEXABLES"
+      },
+      {
+        "@ns0:name": "com.samsung.android.settings.intelligence.READ_SETTINGS_SEARCH_DATA_PROVIDER"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "com.sec.face.provider.FaceProvider.data.READ"
+      },
+      {
+        "@ns0:name": "com.sec.face.provider.FaceProvider.data.WRITE"
+      },
+      {
+        "@ns0:name": "com.samsung.provider.gppm.data.START"
+      },
+      {
+        "@ns0:name": "com.samsung.provider.gppm.data.READ"
+      },
+      {
+        "@ns0:name": "com.samsung.provider.gppm.data.WRITE"
+      },
+      {
+        "@ns0:name": "com.sec.android.gallery3d.provider2.READ"
+      },
+      {
+        "@ns0:name": "com.sec.android.gallery3d.provider2.WRITE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.permission.SUPPORTED_FEATURE_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.ai.suggestion.permission.SUGGESTION_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.ai.image.permission.BIND_IMAGE_SERVICE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.ai.image.permission.IMAGE_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.ai.text.permission.TEXT_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.ai.asr.permission.BIND_SPEECH_RECOGNITION_SERVICE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.scs.ai.texttospeech.permission.BIND_TEXT_TO_SPEECH"
+      },
+      {
+        "@ns0:name": "com.samsung.android.app.deepsky.donation.provider.permission.DONATE_ACTION"
+      },
+      {
+        "@ns0:name": "com.samsung.android.app.deepsky.permission.ACCESS_SERVICE"
+      },
+      {
+        "@ns0:name": "com.samsung.android.app.deepsky.feedback.provider.permission.SUBMIT_FEEDBACK"
+      },
+      {
+        "@ns0:name": "com.samsung.android.sdk.ocr.permission.PROVIDE_OCR_RESOURCE"
+      }
+    ],
+    "permission": [
+      {
+        "@ns0:name": "com.sec.android.app.camera.permission.READ_IMAGE_VIDEO_INFO",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:name": "com.sec.android.app.camera.permission.CameraSettingProvider.READ_WRITE",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:name": "com.samsung.android.camera.core2.data.READ",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.samsung.android.camera.core2.data.WRITE",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.samsung.android.camera.core2.processor.work.REQUEST_WORK",
+        "@ns0:protectionLevel": "0x00000003"
+      }
+    ],
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:normalScreens": "true"
+    },
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus"
+      }
+    ],
+    "queries": {
+      "provider": [
+        {
+          "@ns0:authorities": "com.samsung.provider.gppm"
+        },
+        {
+          "@ns0:name": "com.samsung.android.globalpostprocmgr.provider.GlobalPostProcProvider",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.provider.gppm"
+        }
+      ]
+    },
+    "application": {
+      "@ns0:label": "@7F12018A",
+      "@ns0:icon": "@7F0F0001",
+      "@ns0:name": "com.sec.android.app.camera.CameraApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:resizeableActivity": "true",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "meta-data": [
+        {
+          "@ns0:name": "android.max_aspect",
+          "@ns0:value": "2.100000"
+        },
+        {
+          "@ns0:name": "com.sec.android.sdk.cover.MODE",
+          "@ns0:value": "0"
+        },
+        {
+          "@ns0:name": "com.samsung.android.icon_container.has_icon_container",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.bixby.pathRuleAppName",
+          "@ns0:value": "Camera"
+        },
+        {
+          "@ns0:name": "com.samsung.android.bixby.capsuleId",
+          "@ns0:value": "viv.cameraApp"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.bixby2.companionApp",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "SamsungBasicInteraction",
+          "@ns0:value": "SEP10"
+        },
+        {
+          "@ns0:name": "com.samsung.android.supports_pop_over",
+          "@ns0:value": "false"
+        },
+        {
+          "@ns0:name": "com.samsung.android.hasZippedOverlays",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.samsung.android.icon_container.feature_appicon",
+          "@ns0:value": "COLOR_NO_ADAPTIVE"
+        },
+        {
+          "@ns0:name": "theming-meta",
+          "@ns0:resource": "@7F150006"
+        },
+        {
+          "@ns0:name": "com.samsung.android.support.executable",
+          "@ns0:resource": "@7F150004"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0B00F1"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.bixby2.version",
+          "@ns0:value": "@7F120491"
+        },
+        {
+          "@ns0:name": "com.google.ar.core.min_apk_version",
+          "@ns0:value": "191106000"
+        },
+        {
+          "@ns0:name": "com.samsung.android.app.sdk.deepsky.versionName",
+          "@ns0:value": "2.3.6"
+        },
+        {
+          "@ns0:name": "SPDE.build.signature",
+          "@ns0:value": "bc2dc58a6e80a194f541576f644232fc0e8e46c8/111259514/hal3-release/SamsungCamera-1328000-13.1.01"
+        },
+        {
+          "@ns0:name": "SPDE.env.version",
+          "@ns0:value": "7.2.1/G33.1.13/1.0.9"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.sec.android.app.camera.receiver.LazyBootCompleteReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.intent.action.LAZY_BOOT_COMPLETE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.sec.android.app.camera.receiver.CameraButtonIntentReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.CAMERA_BUTTON"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.sec.android.app.camera.receiver.SettingSoftResetReceiver",
+          "@ns0:permission": "com.sec.android.settings.permission.SOFT_RESET",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.intent.action.SETTINGS_SOFT_RESET"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.sec.android.app.camera.receiver.DemoResetReceiver",
+          "@ns0:permission": "com.samsung.sea.retailagent.permission.RETAILMODE",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.sea.rm.DEMO_RESET_STARTED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.sec.android.app.camera.receiver.SmartSwitchReceiver",
+          "@ns0:permission": "com.wssnps.permission.COM_WSSNPS",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.intent.action.REQUEST_BACKUP_CAMERA"
+              },
+              {
+                "@ns0:name": "com.samsung.android.intent.action.REQUEST_RESTORE_CAMERA"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.sec.android.app.camera.receiver.PackageDataClearedReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.PACKAGE_DATA_CLEARED"
+            },
+            "data": {
+              "@ns0:scheme": "package",
+              "@ns0:ssp": "com.samsung.android.app.cameraassistant"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.camera.core2.processor.receiver.RecoveryDraftImageWorkReceiver",
+          "@ns0:permission": "com.samsung.android.camera.core2.processor.work.REQUEST_WORK",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.android.camera.core2.processor.work.action.RECOVERY_DRAFT_IMAGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BATTERY_OKAY"
+              },
+              {
+                "@ns0:name": "android.intent.action.BATTERY_LOW"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIME_SET"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+          "@ns0:enabled": "@7F050001",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.impl.background.systemalarm.UpdateProxies"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+            }
+          }
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F13000D",
+          "@ns0:label": "@7F1201F2",
+          "@ns0:icon": "@7F0F0001",
+          "@ns0:name": "com.sec.android.app.camera.Camera",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "android.task.camera",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:launchMode": "0",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x00001FF3",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "@ns0:visibleToInstantApps": "true",
+          "@ns0:showWhenLocked": "true",
+          "layout": {
+            "@ns0:minWidth": "@7F07075C",
+            "@ns0:minHeight": "@7F07075B"
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "assistant",
+              "@ns0:resource": "@7F150002"
+            },
+            {
+              "@ns0:name": "com.samsung.android.rotation.animation.disable",
+              "@ns0:value": "true"
+            },
+            {
+              "@ns0:name": "com.samsung.android.support.REMOTE_ACTION",
+              "@ns0:resource": "@7F150003"
+            },
+            {
+              "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+              "@ns0:value": "true"
+            },
+            {
+              "@ns0:name": "android.app.shortcuts",
+              "@ns0:resource": "@7F15000C"
+            }
+          ],
+          "intent-filter": [
+            {
+              "@ns0:label": "@7F1201F2",
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+              ]
+            },
+            {
+              "@ns0:label": "@7F1201F2",
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.support.executable"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.samsung.android.support.REMOTE_ACTION"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F130162",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.DummyActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000620"
+        },
+        {
+          "@ns0:theme": "@7F130162",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.CameraAssistantNoticeActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000620"
+        },
+        {
+          "@ns0:theme": "@7F13000E",
+          "@ns0:name": "com.sec.android.app.camera.EditNameActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x00001F53",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:label": "@7F1201F2",
+          "@ns0:name": "com.sec.android.app.camera.executor.AssistantActionActivity",
+          "@ns0:exported": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000620",
+          "intent-filter": [
+            {
+              "@ns0:label": "@7F1201ED",
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAMERA"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.VOICE"
+                }
+              ]
+            },
+            {
+              "@ns0:label": "@7F1201F2",
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.VOICE"
+                }
+              ]
+            },
+            {
+              "@ns0:label": "@7F1201F2",
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.VOICE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F13000B",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.SettingReceiverActivity",
+          "@ns0:exported": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000620",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sec.android.intent.action.SEC_APPLICATION_SETTINGS"
+            },
+            "category": {
+              "@ns0:name": "com.sec.android.intent.category.SEC_APPLICATION_SETTINGS"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000B",
+          "@ns0:label": "@7F1204E3",
+          "@ns0:name": "com.sec.android.app.camera.setting.CameraSettingActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004A3",
+          "@ns0:parentActivityName": "com.sec.android.app.camera.Camera",
+          "@ns0:showWhenLocked": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000B",
+          "@ns0:name": "com.sec.android.app.camera.setting.SubCameraSettingActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004A3",
+          "@ns0:parentActivityName": "com.sec.android.app.camera.setting.CameraSettingActivity",
+          "@ns0:showWhenLocked": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000B",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.setting.ProPictureFormatActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000006A3",
+          "@ns0:parentActivityName": "com.sec.android.app.camera.setting.SubCameraSettingActivity",
+          "@ns0:showWhenLocked": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000B",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.setting.HighEfficiencyVideoActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000006A3",
+          "@ns0:parentActivityName": "com.sec.android.app.camera.setting.SubCameraSettingActivity",
+          "@ns0:showWhenLocked": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000B",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.setting.SwipeShutterButtonToActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000006A3",
+          "@ns0:parentActivityName": "com.sec.android.app.camera.setting.CameraSettingActivity",
+          "@ns0:showWhenLocked": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000B",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.setting.WatermarkActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004A3",
+          "@ns0:parentActivityName": "com.sec.android.app.camera.setting.CameraSettingActivity",
+          "@ns0:showWhenLocked": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000B",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.setting.SceneOptimizerActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004A3",
+          "@ns0:parentActivityName": "com.sec.android.app.camera.setting.CameraSettingActivity",
+          "@ns0:showWhenLocked": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000B",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.RequestPermissionActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:configChanges": "0x000004A3"
+        },
+        {
+          "@ns0:theme": "@7F130009",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.setting.aboutpage.AboutCameraActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004A3"
+        },
+        {
+          "@ns0:theme": "@7F130009",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.setting.aboutpage.PermissionsActivity",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:configChanges": "0x000004A3",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.samsung.android.spv.ACTION_VIEW_DETAIL"
+              },
+              {
+                "@ns0:name": "com.sec.android.app.secsetupwizard.APP_PERMISSIONS_FOR_CHINA"
+              }
+            ],
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F130009",
+          "@ns0:label": "",
+          "@ns0:name": "com.sec.android.app.camera.setting.aboutpage.OpenSourceLicenseActivity",
+          "@ns0:exported": "false",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004A3"
+        },
+        {
+          "@ns0:theme": "@7F13000D",
+          "@ns0:name": "com.sec.android.app.camera.cropper.MyFilterActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "4",
+          "@ns0:largeHeap": "true",
+          "@ns0:showWhenLocked": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000D",
+          "@ns0:name": "com.sec.android.app.camera.cropper.DocumentScanActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "4",
+          "@ns0:largeHeap": "true",
+          "@ns0:showWhenLocked": "true",
+          "meta-data": {
+            "@ns0:name": "com.samsung.keyguard.SHOW_WHEN_LOCKED_SHORTCUT",
+            "@ns0:value": "true"
+          },
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sec.android.app.camera.action.DOCUMENT_SCAN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F13000D",
+          "@ns0:label": "@7F12040D",
+          "@ns0:icon": "@7F0F0000",
+          "@ns0:name": "com.sec.android.app.camera.QrScannerActivity",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "android.task.camera_qr_scanner",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "2",
+          "@ns0:configChanges": "0x00001FF3",
+          "@ns0:lockTaskMode": "1",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sec.android.app.camera.action.SCAN_QR_CODE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "com.samsung.android.dex.excludefromrecents",
+            "@ns0:value": "dex"
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@android:0103023A",
+          "@ns0:name": "com.google.ar.core.InstallActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x000004A0"
+        }
+      ],
+      "activity-alias": [
+        {
+          "@ns0:label": "@7F12058A",
+          "@ns0:name": "com.sec.android.app.camera.QrScanner",
+          "@ns0:exported": "false",
+          "@ns0:targetActivity": "com.sec.android.app.camera.Camera",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sec.android.app.camera.action.QR_SCANNER_MODE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F1201ED",
+          "@ns0:icon": "@7F080577",
+          "@ns0:name": "com.sec.android.app.camera.Camcorder",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.sec.android.app.camera.Camera",
+          "@ns0:visibleToInstantApps": "true",
+          "intent-filter": {
+            "@ns0:label": "@7F1201ED",
+            "action": {
+              "@ns0:name": "android.media.action.VIDEO_CAPTURE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F120110",
+          "@ns0:name": "com.sec.android.app.camera.setting.SettingToKeep",
+          "@ns0:targetActivity": "com.sec.android.app.camera.setting.SubCameraSettingActivity"
+        },
+        {
+          "@ns0:label": "@7F120111",
+          "@ns0:name": "com.sec.android.app.camera.setting.ShootingMethod",
+          "@ns0:targetActivity": "com.sec.android.app.camera.setting.SubCameraSettingActivity"
+        },
+        {
+          "@ns0:label": "@7F1200DA",
+          "@ns0:name": "com.sec.android.app.camera.setting.AdvancedRecordingOptions",
+          "@ns0:targetActivity": "com.sec.android.app.camera.setting.SubCameraSettingActivity"
+        },
+        {
+          "@ns0:label": "@7F12010D",
+          "@ns0:name": "com.sec.android.app.camera.setting.SaveOptions",
+          "@ns0:targetActivity": "com.sec.android.app.camera.setting.SubCameraSettingActivity"
+        },
+        {
+          "@ns0:label": "@7F120124",
+          "@ns0:name": "com.sec.android.app.camera.setting.Watermark",
+          "@ns0:targetActivity": "com.sec.android.app.camera.setting.SubCameraSettingActivity"
+        },
+        {
+          "@ns0:label": "@7F12011A",
+          "@ns0:name": "com.sec.android.app.camera.setting.SwipeShutterTo",
+          "@ns0:targetActivity": "com.sec.android.app.camera.setting.SubCameraSettingActivity"
+        },
+        {
+          "@ns0:label": "@7F12010E",
+          "@ns0:name": "com.sec.android.app.camera.setting.SceneOptimizer",
+          "@ns0:targetActivity": "com.sec.android.app.camera.setting.SubCameraSettingActivity"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.samsung.android.camera.core2.processor.PostProcessService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.sec.android.app.camera.service.NotificationService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:label": "@7F12040D",
+          "@ns0:icon": "@7F08059E",
+          "@ns0:name": "com.sec.android.app.camera.service.QrTileService",
+          "@ns0:permission": "android.permission.BIND_QUICK_SETTINGS_TILE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":QrTileService",
+          "meta-data": [
+            {
+              "@ns0:name": "android.service.quicksettings.SEM_ACTIVE_TILE_SUPPORT_SEM_PLATFORM_VER",
+              "@ns0:value": "130100"
+            },
+            {
+              "@ns0:name": "android.service.quicksettings.SEM_DEFAULT_TILE_NAME",
+              "@ns0:value": "QRScanner"
+            },
+            {
+              "@ns0:name": "android.service.quicksettings.SEM_DEFAULT_TILE_STATE",
+              "@ns0:value": "OFF"
+            },
+            {
+              "@ns0:name": "android.service.quicksettings.SEM_DEFAULT_TILE_SEARCH_KEYWORDS",
+              "@ns0:value": "qr_string_for_finder"
+            }
+          ],
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.quicksettings.action.QS_TILE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.samsung.android.camera.core2.processor.util.PostProcessorLoggingService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+          "@ns0:enabled": "@7F050001",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemjob.SystemJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "@7F050003",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.foreground.SystemForegroundService",
+          "@ns0:enabled": "@7F050002",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        }
+      ],
+      "uses-library": [
+        {
+          "@ns0:name": "semextendedformat"
+        },
+        {
+          "@ns0:name": "secimaging"
+        },
+        {
+          "@ns0:name": "org.apache.http.legacy",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "androidx.window.extensions",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "androidx.window.sidecar",
+          "@ns0:required": "false"
+        }
+      ],
+      "uses-native-library": [
+        {
+          "@ns0:name": "libStride.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libSDKRecognitionOCR.spenocr.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libSDKMoireDetector.spenocr.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libMyFilterPlugin.camera.samsung.so"
+        },
+        {
+          "@ns0:name": "libagifencoder.quram.so"
+        },
+        {
+          "@ns0:name": "libexifa.camera.samsung.so"
+        },
+        {
+          "@ns0:name": "libjpega.camera.samsung.so"
+        },
+        {
+          "@ns0:name": "libsecimaging_pdk.camera.samsung.so"
+        },
+        {
+          "@ns0:name": "libAImode_wrapper.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libAIQSolution_MPI.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libAEBHDR_wrapper.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libArcSoft3DStickerEngine.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libArcSoft3DStickerEngine.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libArcSoftFaceAlignment.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libArcSoftFaceAlignment.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libBeauty_v4.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libContDet.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libDualCamBokehCapture.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libEventDetector.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libFaceBlurDetection.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libFaceRestoration.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libFace_Landmark_API.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libFood.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libFoodDetector.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libHREnhancementAPI.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libLocalTM_wrapper.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libMultiFrameProcessing10.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libMultiFrameProcessing20.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libMultiFrameProcessing20Day.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libOpenCv.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libPortraitSolution.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libSmartScan.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "liballinfocus.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "liballinfocus.osfcc.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libcore2nativeutil.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libexifa.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libfrtracking_engine.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libhigh_dynamic_range.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libhigh_res.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libhumantracking.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libhybridHDR_wrapper.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libimage_enhancement.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libimagecodec.quram.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libjpega.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libjpegsq.media.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "liblow_light_hdr.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libsame_source_hdr.arcsoft.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libsupernight_wrapper_v3.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libsuperresolution_wrapper_v2.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libsuperresolutionraw_wrapper_v2.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libswldc_capture_core.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libudc_core.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libuwsuperresolution_wrapper_v1.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libmacroclearshot_raw_wrapper_v1.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libBestComposition.polarr.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libTracking.polarr.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libFeature.polarr.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libslljpeg.media.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libAIQSolution_MPISingleRGB40.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libsimba.media.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libMyFilter.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libapex_jni.media.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libQREngine.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libFacialBasedSelfieCorrection.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libSceneDetector_v1.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libOpenCL.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libEventFinder.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libBestComposition.polarr.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libTracking.polarr.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libFeature.polarr.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libUltraWideDistortionCorrection.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libDocRectifyWrapper.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libRectify.camera.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libSDKRecognitionOCR.spenocr.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libSDKMoireDetector.spenocr.samsung.so",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "libStride.camera.samsung.so",
+          "@ns0:required": "false"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.sec.android.app.camera.FileProvider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F150007"
+          }
+        },
+        {
+          "@ns0:name": "com.sec.android.diagmonagent.log.provider.DiagMonProvider",
+          "@ns0:permission": "com.sec.android.diagmonagent.permission.PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.sec.android.log.407-399-545299"
+        },
+        {
+          "@ns0:name": "com.samsung.android.camera.core2.database.Core2Provider",
+          "@ns0:readPermission": "com.samsung.android.camera.core2.data.READ",
+          "@ns0:writePermission": "com.samsung.android.camera.core2.data.WRITE",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.samsung.android.camera.core2"
+        },
+        {
+          "@ns0:name": "com.sec.android.app.camera.CustomIndexablesSearchProvider",
+          "@ns0:permission": "android.permission.READ_SEARCH_INDEXABLES",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.sec.android.app.camera",
+          "@ns0:grantUriPermissions": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.action.SEARCH_INDEXABLES_PROVIDER"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "com.samsung.android.settings.require_settings_key",
+              "@ns0:value": "@7F120577"
+            },
+            {
+              "@ns0:name": "com.samsung.android.settings.require_settings_title",
+              "@ns0:value": "@7F1204E3"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.sec.android.app.camera.setting.CameraSettingProvider",
+          "@ns0:permission": "com.sec.android.app.camera.permission.CameraSettingProvider.READ_WRITE",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.sec.android.app.camera.setting.CameraSettingProvider"
+        },
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.sec.android.app.camera.androidx-startup",
+          "meta-data": [
+            {
+              "@ns0:name": "androidx.work.WorkManagerInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+              "@ns0:value": "androidx.startup"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.bixby2.provider.CapsuleProvider",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.sec.android.app.camera.CapsuleProvider"
+        }
+      ]
+    }
+  }
+}

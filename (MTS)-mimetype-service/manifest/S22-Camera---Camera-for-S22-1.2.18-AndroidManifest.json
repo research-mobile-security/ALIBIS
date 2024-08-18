@@ -1,0 +1,512 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "18",
+    "@ns0:versionName": "1.2.18",
+    "@ns0:compileSdkVersion": "23",
+    "@ns0:compileSdkVersionCodename": "6.0-2438415",
+    "@package": "com.ss.galaxy.s10.camera.s10camera",
+    "@platformBuildVersionCode": "23",
+    "@platformBuildVersionName": "6.0-2438415",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "18",
+      "@ns0:targetSdkVersion": "29"
+    },
+    "uses-feature": [
+      {
+        "@ns0:glEsVersion": "0x00020000",
+        "@ns0:required": "true"
+      },
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "true"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.flash",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.microphone",
+        "@ns0:required": "false"
+      }
+    ],
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.FLASHLIGHT"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH"
+      },
+      {
+        "@ns0:name": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F0D000A",
+      "@ns0:label": "@7F0C0038",
+      "@ns0:icon": "@7F0B0000",
+      "@ns0:name": "com.camera.function.main.ui.S20CameraApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:networkSecurityConfig": "@7F0F0006",
+      "@ns0:roundIcon": "@7F0B0000",
+      "meta-data": [
+        {
+          "@ns0:name": "com.image.singleselector.constant.CustomGlideMoudle",
+          "@ns0:value": "GlideModule"
+        },
+        {
+          "@ns0:name": "android.max_aspect",
+          "@ns0:value": "2.100000"
+        },
+        {
+          "@ns0:name": "com.startapp.sdk.APPLICATION_ID",
+          "@ns0:value": "203822918"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F090004"
+        }
+      ],
+      "uses-library": {
+        "@ns0:name": "org.apache.http.legacy",
+        "@ns0:required": "false"
+      },
+      "activity": [
+        {
+          "@ns0:theme": "@7F0D0000",
+          "@ns0:name": "com.camera.function.main.privacy.S20CameraPrivacyActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F0D0000",
+          "@ns0:name": "com.camera.function.main.ui.SplashActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.ui.CameraHomePageActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F0D0000",
+          "@ns0:name": "com.camera.function.main.ui.S20CameraMainActivity",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.s20base.common.S20ShareActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F0D00AF",
+          "@ns0:name": "com.s20base.common.imageanim.S20PicViewActivity",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.edit.imageeditlibrary.editimage.FilterShop.S20FilterShopActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.feedback.S20CameraFeedBackActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.feedback.S20CameraFeedBackMoreActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.privacy.S20CameraHelpActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:scheme": "com.ss.galaxy.s10.camera.s10camera",
+              "@ns0:host": "privacy_help"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.image.singleselector.S20VideoActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.ui.S20CameraShowVideoActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.ui.S20CameraShowPictureActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F0D00AD",
+          "@ns0:name": "com.image.singleselector.S20GalleryActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F0D00AD",
+          "@ns0:name": "com.image.singleselector.S20ShowImageActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F0D00CC",
+          "@ns0:name": "com.camera.function.main.ui.S20CameraSettingsActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.edit.imageeditlibrary.editimage.S20EditImageActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:resizeableActivity": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.SEND"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "image/*"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.camera.function.main.privacy.S20CameraPrivacyDetailActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F0D00AD",
+          "@ns0:name": "com.camera.function.main.ui.ManageStickerActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.billing.PrimeActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.billing.PrimeDetailActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F0D00AE",
+          "@ns0:name": "com.camera.function.main.billing.PrimeDialogActivity",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F0D00AE",
+          "@ns0:name": "com.camera.function.main.daemon.CameraOnePixelActivity",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:launchMode": "3",
+          "@ns0:resizeableActivity": "false"
+        },
+        {
+          "@ns0:theme": "@7F0D0001",
+          "@ns0:name": "com.blankj.utilcode.util.PermissionUtils$PermissionActivity",
+          "@ns0:multiprocess": "true",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000003"
+        },
+        {
+          "@ns0:name": "com.ss.galaxy.s10.camera.s10camera.antibug.activity.AntiBugActivity",
+          "@ns0:process": ":error_activity"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.startapp.sdk.adsbase.consent.ConsentActivity",
+          "@ns0:configChanges": "0x000005A0"
+        },
+        {
+          "@ns0:theme": "@android:01030005",
+          "@ns0:name": "com.startapp.sdk.ads.list3d.List3DActivity"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.startapp.sdk.adsbase.activities.OverlayActivity",
+          "@ns0:configChanges": "0x000005A0"
+        },
+        {
+          "@ns0:theme": "@android:01030005",
+          "@ns0:name": "com.startapp.sdk.adsbase.activities.FullScreenActivity",
+          "@ns0:configChanges": "0x000005A0"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.facebook.ads.AudienceNetworkActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004A0"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.camera.function.main.service.NotificationService",
+          "@ns0:process": ":push"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.feedback.GetFeedBackService"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.service.NotificationJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.camera.function.main.daemon.AliveJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.blankj.utilcode.util.MessengerUtils$ServerService",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.ss.galaxy.s10.camera.s10camera.messenger"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.startapp.sdk.adsbase.InfoEventService"
+        },
+        {
+          "@ns0:name": "com.startapp.sdk.adsbase.PeriodicJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.AdService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "android.support.v4.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.ss.galaxy.s10.camera.s10camera.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F0F0000"
+          }
+        },
+        {
+          "@ns0:name": "com.blankj.utilcode.util.Utils$FileProvider4UtilCode",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.ss.galaxy.s10.camera.s10camera.utilcode.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F0F0004"
+          }
+        },
+        {
+          "@ns0:name": "com.ss.galaxy.s10.camera.s10camera.antibug.provider.AntiBugInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.ss.galaxy.s10.camera.s10camera.antibugprovider",
+          "@ns0:initOrder": "101"
+        },
+        {
+          "@ns0:name": "com.flurry.android.agent.FlurryContentProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.ss.galaxy.s10.camera.s10camera.FlurryContentProvider"
+        },
+        {
+          "@ns0:name": "com.startapp.sdk.adsbase.StartAppInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.ss.galaxy.s10.camera.s10camera.startappinitprovider"
+        },
+        {
+          "@ns0:name": "com.facebook.ads.AudienceNetworkContentProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.ss.galaxy.s10.camera.s10camera.AudienceNetworkContentProvider"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.camera.function.main.daemon.CHSelfReceiver",
+          "@ns0:process": ":process1",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.USER_PRESENT"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.ss.galaxy.s10.camera.s10camera.notification.AlarmReceiver"
+        },
+        {
+          "@ns0:name": "com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,440 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="231502126" ns0:versionName="8.2(231502126)(f74e141226)" ns0:installLocation="1" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="mega.privacy.android.app" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="24" ns0:targetSdkVersion="33"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.screen.portrait" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.proximity" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.accelerometer" ns0:required="true"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<uses-permission ns0:name="android.permission.FLAG_SHOW_WHEN_LOCKED"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_CONNECT"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_AUDIO"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:mimeType="application/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:mimeType="application/*" ns0:scheme="https" ns0:host="*"/>
+		</intent>
+		<package ns0:name="com.google.android.apps.maps"/>
+		<package ns0:name="com.google.android.apps.authenticator2"/>
+		<intent>
+			<action ns0:name="com.android.vending.billing.InAppBillingService.BIND"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<permission ns0:name="mega.privacy.android.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="mega.privacy.android.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<application ns0:theme="@7F15037B" ns0:label="@7F1400A1" ns0:icon="@7F100000" ns0:name="mega.privacy.android.app.MegaApplication" ns0:screenOrientation="13" ns0:allowBackup="false" ns0:supportsRtl="true" ns0:extractNativeLibs="false" ns0:usesCleartextTraffic="true" ns0:roundIcon="@7F100001" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:localeConfig="@7F170001">
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000B"/>
+		<meta-data ns0:name="com.google.android.geo.API_KEY" ns0:value="@7F1403A6"/>
+		<service ns0:name="mega.privacy.android.app.service.push.MegaMessageService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:label="@7F14004F" ns0:name="mega.privacy.android.app.presentation.settings.SettingsActivity" ns0:exported="false" ns0:launchMode="1" ns0:parentActivityName="mega.privacy.android.app.main.ManagerActivity"/>
+		<meta-data ns0:name="fontProviderRequests" ns0:value="Noto Color Emoji Compat"/>
+		<meta-data ns0:name="google_analytics_default_allow_ad_personalization_signals" ns0:value="false"/>
+		<meta-data ns0:name="google_analytics_ssaid_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="firebase_performance_logcat_enabled" ns0:value="false"/>
+		<activity ns0:label="@7F140454" ns0:name="mega.privacy.android.app.presentation.login.LoginActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="mega.privacy.android.app.activities.WebViewActivity" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="mega.privacy.android.app.main.ManagerActivity" ns0:exported="true" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F17000C"/>
+		</activity>
+		<activity ns0:name="mega.privacy.android.app.main.megaachievements.AchievementsActivity"/>
+		<activity ns0:name="mega.privacy.android.app.OpenLinkActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:host="mega.co.nz"/>
+				<data ns0:scheme="https"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="www.mega.co.nz"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:host="mega.nz"/>
+				<data ns0:scheme="https"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="www.mega.nz"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="mega"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15037F" ns0:label="" ns0:name="mega.privacy.android.app.imageviewer.ImageViewerActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:label="@7F1401B0" ns0:name="mega.privacy.android.app.main.ContactFileListActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F14032A" ns0:name="mega.privacy.android.app.main.FileContactListActivity" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="mega.privacy.android.app.main.FileExplorerActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="mega.privacy.android.app.main.megachat.ChatExplorerActivity"/>
+		<activity ns0:name="mega.privacy.android.app.main.megachat.NodeAttachmentHistoryActivity"/>
+		<activity ns0:name="mega.privacy.android.app.main.CountryCodePickerActivity"/>
+		<activity ns0:name="mega.privacy.android.app.providers.PasscodeFileProviderActivity"/>
+		<activity ns0:name="mega.privacy.android.app.providers.FileProviderActivity" ns0:exported="true" ns0:screenOrientation="14">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="text/*"/>
+				<data ns0:mimeType="application/*"/>
+				<data ns0:mimeType="audio/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="x-conference/*"/>
+				<data ns0:mimeType="model/*"/>
+				<data ns0:mimeType="chemical/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*"/>
+				<data ns0:mimeType="application/*"/>
+				<data ns0:mimeType="audio/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="x-conference/*"/>
+				<data ns0:mimeType="model/*"/>
+				<data ns0:mimeType="chemical/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="mega.privacy.android.app.main.FileStorageActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.folderlink.FolderLinkActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.folderlink.FolderLinkComposeActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="mega.privacy.android.app.main.megachat.ContactAttachmentActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.testpassword.TestPasswordActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="mega.privacy.android.app.main.FileLinkActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F150355" ns0:label="" ns0:name="mega.privacy.android.app.OpenPasswordLinkActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F14054A" ns0:name="mega.privacy.android.app.presentation.changepassword.ChangePasswordActivity"/>
+		<activity ns0:name="mega.privacy.android.app.getLink.GetLinkActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F140729" ns0:name="mega.privacy.android.app.activities.settingsActivities.PasscodeLockActivity" ns0:launchMode="3" ns0:windowSoftInputMode="0x00000014"/>
+		<activity ns0:label="@7F1408C5" ns0:name="mega.privacy.android.app.zippreview.ui.ZipBrowserActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="mega.privacy.android.app.main.AddContactActivity" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.main.InviteContactActivity" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.main.megachat.ChatActivity" ns0:launchMode="2" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="mega.privacy.android.app.main.megachat.ArchivedChatsActivity"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.contactinfo.ContactInfoActivity"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.fileinfo.FileInfoActivity"/>
+		<activity ns0:name="mega.privacy.android.app.activities.OfflineFileInfoActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.main.VersionsFileActivity"/>
+		<activity ns0:name="mega.privacy.android.app.main.megachat.GroupChatInfoActivity"/>
+		<activity ns0:label="@7F140605" ns0:name="mega.privacy.android.app.main.PdfViewerActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/pdf"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="*"/>
+				<data ns0:pathPattern=".*\.pdf"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="*"/>
+				<data ns0:mimeType="application/pdf"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="file"/>
+				<data ns0:host="*"/>
+				<data ns0:pathPattern=".*\.pdf"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15037E" ns0:name="mega.privacy.android.app.mediaplayer.VideoPlayerActivity" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.mediaplayer.AudioPlayerActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.qrcode.QRCodeActivity"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.twofactorauthentication.TwoFactorAuthenticationActivity"/>
+		<activity ns0:name="mega.privacy.android.app.main.VerifyTwoFactorActivity"/>
+		<activity ns0:name="mega.privacy.android.app.BusinessExpiredAlertActivity"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.verification.SMSVerificationActivity"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.verification.SMSVerificationTextActivity"/>
+		<activity ns0:label="@7F1406B0" ns0:name="mega.privacy.android.app.activities.settingsActivities.CameraUploadsPreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F14082A" ns0:name="mega.privacy.android.app.activities.settingsActivities.ChatNotificationsPreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F1406A6" ns0:name="mega.privacy.android.app.activities.settingsActivities.ChatPreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F1406FB" ns0:name="mega.privacy.android.app.presentation.settings.chat.imagequality.SettingsChatImageQualityActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F1406E3" ns0:name="mega.privacy.android.app.presentation.settings.calls.SettingsCallsActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F140254" ns0:name="mega.privacy.android.app.activities.settingsActivities.DownloadPreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F14070B" ns0:name="mega.privacy.android.app.activities.settingsActivities.FileManagementPreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F14072A" ns0:name="mega.privacy.android.app.activities.settingsActivities.PasscodePreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F1406D4" ns0:name="mega.privacy.android.app.activities.settingsActivities.CookiePreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.WeakAccountProtectionAlertActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F14082F" ns0:name="mega.privacy.android.app.activities.ManageChatHistoryActivity" ns0:launchMode="1" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F1400B7" ns0:name="mega.privacy.android.app.presentation.contact.authenticitycredendials.AuthenticityCredentialsActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F14069A" ns0:name="mega.privacy.android.app.activities.GiphyPickerActivity" ns0:launchMode="1" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.activities.GiphyViewerActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.textEditor.TextEditorActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.contacts.ContactsActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.meeting.activity.MeetingActivity" ns0:launchMode="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="mega.privacy.android.app.meeting.activity.LeftMeetingActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<service ns0:name="mega.privacy.android.app.main.megachat.ChatUploadService" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="mega.privacy.android.app.meeting.CallService" ns0:exported="false"/>
+		<service ns0:name="mega.privacy.android.app.DownloadService" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="mega.privacy.android.app.meeting.CallNotificationIntentService" ns0:exported="false"/>
+		<service ns0:name="mega.privacy.android.app.notifications.DownloadNotificationIntentService" ns0:exported="false"/>
+		<service ns0:name="mega.privacy.android.app.UploadService" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="mega.privacy.android.app.mediaplayer.service.AudioPlayerService" ns0:exported="false" ns0:foregroundServiceType="0x00000002"/>
+		<service ns0:name="mega.privacy.android.app.mediaplayer.service.VideoPlayerService" ns0:exported="false" ns0:foregroundServiceType="0x00000002"/>
+		<service ns0:name="mega.privacy.android.app.cameraupload.CameraUploadsService" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false" ns0:foregroundServiceType="0x00000001"/>
+		<receiver ns0:name="mega.privacy.android.app.receivers.CustomInstallReferrerReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="mega.privacy.android.app.receivers.ChargeEventReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="mega.privacy.android.app.receivers.BootEventReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="mega.privacy.android.app.providers.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F170000"/>
+		</provider>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="mega.privacy.android.app.androidx-startup">
+			<meta-data ns0:name="mega.privacy.android.app.initializer.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="mega.privacy.android.app.initializer.EmojiInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="mega.privacy.android.app.initializer.LoggerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="mega.privacy.android.app.initializer.CheckMegaStandbyBucketInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="mega.privacy.android.app.initializer.GetTombstoneInfoInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="mega.privacy.android.app.initializer.CheckAppUpgradeInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="mega.privacy.android.app.initializer.SetupMegaApiInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="mega.privacy.android.app.initializer.MegaApiFolderInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="mega.privacy.android.app.initializer.FrescoInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.profileinstaller.ProfileInstallerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<activity ns0:label="@7F1407E6" ns0:name="mega.privacy.android.app.main.megachat.MapsActivity" ns0:exported="false" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000030">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="mega.privacy.android.app.activities.PasscodeActivity"/>
+		</activity>
+		<activity ns0:name="mega.privacy.android.app.activities.OverDiskQuotaPaywallActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15012E" ns0:name="nz.mega.documentscanner.DocumentScannerActivity" ns0:launchMode="1" ns0:screenOrientation="7" ns0:windowSoftInputMode="0x00000032"/>
+		<activity ns0:name="mega.privacy.android.app.myAccount.editProfile.EditProfileActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.myAccount.MyAccountActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.settings.exportrecoverykey.ExportRecoveryKeyActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F140055" ns0:name="mega.privacy.android.app.upgradeAccount.UpgradeAccountActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F140157" ns0:name="mega.privacy.android.app.upgradeAccount.ChooseAccountActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F1405F9" ns0:name="mega.privacy.android.app.upgradeAccount.payment.PaymentActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.mediaplayer.SelectSubtitleFileActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15037D" ns0:name="mega.privacy.android.app.presentation.chat.dialog.AskForDisplayOverActivity" ns0:launchMode="2"/>
+		<activity ns0:label="@7F140789" ns0:name="mega.privacy.android.app.activities.settingsActivities.StartScreenPreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15037F" ns0:label="@7F1407FF" ns0:name="mega.privacy.android.app.namecollision.NameCollisionActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.permissions.NotificationsPermissionActivity" ns0:launchMode="1"/>
+		<activity ns0:name="mega.privacy.android.app.uploadFolder.UploadFolderActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.startconversation.StartConversationActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.meeting.ScheduledMeetingInfoActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.meeting.RecurringMeetingInfoActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.photos.albums.AlbumScreenWrapperActivity" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="mega.privacy.android.app.presentation.meeting.ScheduleMeetingActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000014"/>
+		<provider ns0:name="nz.mega.documentscanner.FileProvider" ns0:exported="false" ns0:authorities="mega.privacy.android.app.scans.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F170000"/>
+		</provider>
+		<activity ns0:theme="@7F150313" ns0:label="ShowkaseBrowserActivity" ns0:name="com.airbnb.android.showkase.ui.ShowkaseBrowserActivity" ns0:exported="true" ns0:configChanges="0x40007FFF"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<service ns0:name="androidx.camera.core.impl.MetadataHolderService" ns0:enabled="false" ns0:exported="false">
+			<meta-data ns0:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" ns0:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+		</service>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="mega.privacy.android.app.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:name="androidx.compose.ui.tooling.PreviewActivity" ns0:exported="true"/>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050007" ns0:exported="true" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<receiver ns0:name="androidx.profileinstaller.ProfileInstallReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SKIP_FILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F150381" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="11003"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F17000D"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

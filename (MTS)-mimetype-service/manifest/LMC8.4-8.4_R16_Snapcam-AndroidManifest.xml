@@ -1,0 +1,317 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="64764891" ns0:versionName="8.4.300.414775575.18" ns0:compileSdkVersion="23" ns0:compileSdkVersionCodename="6.0-2438415" package="org.codeaurora.snapcam" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+	<uses-sdk ns0:minSdkVersion="29" ns0:targetSdkVersion="29"/>
+	<uses-feature ns0:name="android.hardware.camera.level.full" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.network" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="true"/>
+	<uses-feature ns0:name="com.google.android.feature.GOOGLE_EXPERIENCE" ns0:required="true"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="false" ns0:normalScreens="true" ns0:largeScreens="true"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="image/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="video/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:mimeType="text/plain"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="geo"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="http"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="FIDO"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.INSERT_OR_EDIT"/>
+			<data ns0:mimeType="vnd.android.cursor.item/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.INSERT"/>
+			<data ns0:mimeType="vnd.android.cursor.item/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEARCH"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.GET_PACKAGE_SIZE"/>
+	<uses-permission ns0:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="com.google.android.elmyra.permission.CONFIGURE_ASSIST_GESTURE"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<application ns0:theme="@7F150364" ns0:label="LMC8.4" ns0:icon="@7F110000" ns0:name="com.google.android.apps.camera.legacy.app.app.CameraApp" ns0:taskAffinity="" ns0:backupAgent="com.google.android.apps.camera.backup.CameraBackupAgent" ns0:allowBackup="false" ns0:restoreAnyVersion="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:fullBackupOnly="false" ns0:extractNativeLibs="true" ns0:requestLegacyExternalStorage="true">
+		<uses-library ns0:name="com.google.android.gestureservice" ns0:required="false"/>
+		<uses-library ns0:name="com.google.android.camera2" ns0:required="false"/>
+		<uses-library ns0:name="com.google.android.camera.experimental2015" ns0:required="false"/>
+		<uses-library ns0:name="com.google.android.camera.experimental2016" ns0:required="false"/>
+		<uses-library ns0:name="com.google.android.camera.experimental2017" ns0:required="false"/>
+		<uses-library ns0:name="com.google.android.camera.experimental2018" ns0:required="false"/>
+		<uses-library ns0:name="com.google.android.camera.experimental2019" ns0:required="false"/>
+		<uses-library ns0:name="com.google.android.camera.experimental2020" ns0:required="false"/>
+		<uses-library ns0:name="com.google.android.camera.experimental2020_midyear" ns0:required="false"/>
+		<uses-library ns0:name="com.google.android.camera.experimental2021" ns0:required="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0C002E"/>
+		<meta-data ns0:name="com.android.support.v8.renderscript.EnableAsyncTeardown" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.apps.camera.filmstrip.GlideConfiguration" ns0:value="GlideModule"/>
+		<receiver ns0:name="com.google.android.apps.camera.camerafatalerror.BootCompleteReceiver" ns0:exported="true">
+			<intent-filter ns0:priority="999">
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F150364" ns0:name="com.google.android.apps.camera.legacy.app.activity.main.CameraActivity" ns0:exported="false" ns0:clearTaskOnLaunch="true" ns0:launchMode="2" ns0:screenOrientation="2" ns0:configChanges="0x00000FF0" ns0:windowSoftInputMode="0x00000023" ns0:resizeableActivity="false"/>
+		<activity-alias ns0:name="com.android.camera.CameraLauncher" ns0:exported="true" ns0:targetActivity="com.google.android.apps.camera.legacy.app.activity.main.CameraActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F170008"/>
+		</activity-alias>
+		<activity ns0:theme="@7F150364" ns0:name="com.google.android.apps.camera.legacy.app.activity.SecureCameraActivity" ns0:exported="false" ns0:taskAffinity="com.google.android.apps.camera.legacy.app.activity.SecureCameraActivity" ns0:clearTaskOnLaunch="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="2" ns0:configChanges="0x00000FF0" ns0:windowSoftInputMode="0x00000023" ns0:resizeableActivity="false" ns0:showWhenLocked="true">
+			<meta-data ns0:name="android.media.still_image_camera_preview_service" ns0:value="com.google.android.apps.camera.prewarm.NoOpPrewarmService"/>
+		</activity>
+		<activity-alias ns0:name="com.android.camera.SecureCameraActivity" ns0:targetActivity="com.google.android.apps.camera.legacy.app.activity.SecureCameraActivity">
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.VOICE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.media.still_image_camera_preview_service" ns0:value="com.google.android.apps.camera.prewarm.NoOpPrewarmService"/>
+		</activity-alias>
+		<activity ns0:theme="@7F150364" ns0:name="com.google.android.apps.camera.legacy.app.activity.main.CameraVoiceActivity" ns0:exported="false" ns0:taskAffinity="com.google.android.apps.camera.legacy.app.activity.main.CameraVoiceActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="2" ns0:configChanges="0x00000FF0" ns0:windowSoftInputMode="0x00000023" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F150361" ns0:name="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity" ns0:exported="false" ns0:resizeableActivity="false" ns0:visibleToInstantApps="true"/>
+		<activity-alias ns0:name="com.android.camera.CameraImageActivity" ns0:targetActivity="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity" ns0:visibleToInstantApps="true">
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.VOICE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="launch-camera" ns0:host="org.codeaurora.snapcam" ns0:path="/still-image"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.android.camera.CameraVideoShortcutActivity" ns0:targetActivity="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity">
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.VOICE"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F150364" ns0:name="com.google.android.apps.camera.legacy.app.activity.CaptureActivity" ns0:exported="false" ns0:screenOrientation="2" ns0:configChanges="0x00000FF0" ns0:windowSoftInputMode="0x00000023" ns0:visibleToInstantApps="true"/>
+		<activity-alias ns0:label="@7F1401FD" ns0:name="com.android.camera.activity.CaptureActivity" ns0:targetActivity="com.google.android.apps.camera.legacy.app.activity.CaptureActivity" ns0:visibleToInstantApps="true">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1404FB" ns0:name="com.android.camera.VideoCamera" ns0:screenOrientation="2" ns0:targetActivity="com.google.android.apps.camera.legacy.app.activity.CaptureActivity" ns0:visibleToInstantApps="true">
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@android:01030055" ns0:name="com.google.android.apps.camera.legacy.app.activity.CameraDeepLinkActivity" ns0:exported="false" ns0:resizeableActivity="false" ns0:visibleToInstantApps="true"/>
+		<activity-alias ns0:name="com.android.camera.CameraDeepLinkActivity" ns0:targetActivity="com.google.android.apps.camera.legacy.app.activity.CameraDeepLinkActivity" ns0:visibleToInstantApps="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:host="store.google.com" ns0:path="/product/pixelcamerateam1"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F150369" ns0:label="@7F1402D1" ns0:name="com.google.android.apps.camera.legacy.app.settings.CameraSettingsActivity" ns0:exported="true" ns0:configChanges="0x000005F0"/>
+		<activity ns0:theme="@7F150368" ns0:label="@7F1402D1" ns0:name="com.google.android.apps.camera.legacy.app.settings.CameraMaterialSettingsActivity" ns0:exported="false" ns0:configChanges="0x000005F0"/>
+		<service ns0:name="com.google.android.apps.camera.app.silentfeedback.SilentFeedbackService" ns0:exported="false" ns0:process=":crash_report"/>
+		<provider ns0:name="com.google.android.apps.camera.debug.contentprovider.DebugContentProvider" ns0:exported="true" ns0:authorities="org.codeaurora.snapcam.DebugContentProvider"/>
+		<provider ns0:name="com.google.android.apps.camera.debug.shottracker.db.DbDebugDumper" ns0:exported="true" ns0:authorities="org.codeaurora.snapcam.DbDebugDumper"/>
+		<provider ns0:name="com.google.android.apps.camera.debug.metrics.MetricsProvider" ns0:exported="true" ns0:authorities="org.codeaurora.snapcam.MetricsProvider"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.camera" ns0:resource="@7F170005"/>
+		<service ns0:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" ns0:enabled="false" ns0:exported="false" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+			</intent-filter>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.camera" ns0:resource="@7F130009"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" ns0:resource="@7F13000A"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" ns0:resource="@7F13000B"/>
+		</service>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" ns0:resource="@7F170006"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" ns0:resource="@7F170007"/>
+		<meta-data ns0:name="com.google.android.backup.api_key" ns0:value="AEdPqrEAAAAIAtBj1ElOYwhIB-X9XDJr91_j0tTe8PPt6pZmnw"/>
+		<service ns0:name="com.google.android.apps.camera.brella.examplestore.beholder.BeholderExampleStoreDataTtlService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.apps.camera.brella.examplestore.beholder.BeholderExampleStoreService" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.learning.EXAMPLE_STORE"/>
+			</intent-filter>
+			<intent-filter ns0:priority="-100">
+				<action ns0:name="com.google.android.gms.learning.EXAMPLE_STORE_V2"/>
+				<data ns0:scheme="app"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.android.apps.camera.brella.mediastore.MediaListeningService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.android.device.restriction" ns0:value="           brand=google, deviceName=blueline;           brand=google, deviceName=crosshatch;           brand=google, deviceName=bonito;           brand=google, deviceName=sargo;           brand=google, deviceName=coral;           brand=google, deviceName=flame;           brand=google, deviceName=sunfish;           brand=google, deviceName=bramble;           brand=google, deviceName=redfin;           brand=google, deviceName=barbet;"/>
+		<provider ns0:name="com.google.android.apps.camera.contentprovider.CameraContentProvider" ns0:exported="true" ns0:authorities="com.google.android.apps.camera.specialtypes.SpecialTypesProviderCA" ns0:syncable="false"/>
+		<provider ns0:name="com.google.android.apps.camera.legacy.app.settings.CameraSearchIndexablesProvider" ns0:permission="android.permission.READ_SEARCH_INDEXABLES" ns0:enabled="true" ns0:exported="true" ns0:multiprocess="false" ns0:authorities="org.codeaurora.snapcam" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<receiver ns0:name="com.google.android.apps.camera.keepalive.KeepAliveBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.apps.camera.keepalive.ProcessGcService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="true"/>
+		<service ns0:name="com.google.android.apps.camera.prewarm.ProcessingBoostService" ns0:exported="true"/>
+		<service ns0:name="com.google.android.apps.camera.prewarm.NoOpPrewarmService" ns0:exported="true"/>
+		<service ns0:name="com.google.android.apps.camera.processing.ProcessingService" ns0:exported="false"/>
+		<service ns0:name="com.google.android.apps.camera.remotecontrol.RemoteControlService" ns0:exported="true"/>
+		<service ns0:name="com.google.android.apps.camera.sideline.SidelineInstallerService" ns0:exported="false"/>
+		<service ns0:name="com.google.android.apps.camera.sideline.SidelineJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.google.android.apps.camera.testing.prod.ScorePrintService" ns0:exported="true">
+			<intent-filter>
+				<category ns0:name="android.intent.category.TEST"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F1503EC" ns0:label="VideoPlayer" ns0:name="com.google.android.apps.camera.videoplayer.VideoPlayerActivity" ns0:launchMode="0" ns0:showWhenLocked="true"/>
+		<service ns0:name="com.google.android.apps.camera.wear.wearv2.DataLayerListenerService">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.wearable.MESSAGE_RECEIVED"/>
+				<data ns0:scheme="wear" ns0:host="*" ns0:pathPrefix="/start-activity"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.google.android.apps.camera.wear.wearv2.InstallWearRequestReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.camera.wear.INSTALL_WEAR"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F1503EB" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<receiver ns0:name="com.google.android.gms.analytics.AnalyticsReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.android.gms.learning.internal.BackgroundProcessDetectorContentProvider" ns0:exported="false" ns0:process=":learning_bg" ns0:multiprocess="false" ns0:authorities="org.codeaurora.snapcam.brella.trainingservice.provider" ns0:initOrder="0x7FFFFFFF"/>
+		<service ns0:name="com.google.android.gms.learning.internal.training.InAppJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.learning.internal.training.InAppTrainingService" ns0:enabled="true" ns0:exported="false" ns0:process=":learning_bg">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.learning.training.START"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.android.libraries.performance.primes.federatedlearning.PrimesExampleStoreDataTtlService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.libraries.performance.primes.federatedlearning.PrimesExampleStoreService" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.learning.EXAMPLE_STORE_V2"/>
+				<data ns0:scheme="app" ns0:host="*" ns0:pathPrefix="/primes/"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" ns0:exported="false" ns0:process=":primes_lifeboat"/>
+		<receiver ns0:name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" ns0:exported="true" ns0:process="">
+			<intent-filter>
+				<action ns0:name="android.accounts.action.ACCOUNT_REMOVED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" ns0:permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" ns0:exported="true" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.phenotype.UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F15034C" ns0:label="@7F1403E7" ns0:name="com.google.android.libraries.social.licenses.LicenseMenuActivity" ns0:exported="true"/>
+		<activity ns0:theme="@7F15034C" ns0:label="@7F1403E7" ns0:name="com.google.android.libraries.social.licenses.LicenseActivity" ns0:exported="false"/>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050007" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="com.google.android.wearable" ns0:required="false"/>
+	</application>
+</manifest>

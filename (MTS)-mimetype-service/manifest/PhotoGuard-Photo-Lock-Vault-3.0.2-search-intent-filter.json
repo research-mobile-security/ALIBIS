@@ -1,0 +1,161 @@
+{
+    "root": {
+        "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+        "intent-filter": [
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MAIN"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": [
+                    {
+                        "@ns0:mimeType": "image/*"
+                    },
+                    {
+                        "@ns0:mimeType": "video/*"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.SEND"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": [
+                    {
+                        "@ns0:mimeType": "image/*"
+                    },
+                    {
+                        "@ns0:mimeType": "video/*"
+                    }
+                ]
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+                    }
+                ]
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.BATTERY_OKAY"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.BATTERY_LOW"
+                    }
+                ]
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.TIME_SET"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "androidx.work.impl.background.systemalarm.UpdateProxies"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.BROWSABLE"
+                    }
+                ],
+                "data": {
+                    "@ns0:scheme": "genericidp",
+                    "@ns0:host": "firebase.auth",
+                    "@ns0:path": "/"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.BROWSABLE"
+                    }
+                ],
+                "data": {
+                    "@ns0:scheme": "recaptcha",
+                    "@ns0:host": "firebase.auth",
+                    "@ns0:path": "/"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "androidx.profileinstaller.action.INSTALL_PROFILE"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "androidx.profileinstaller.action.SKIP_FILE"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "androidx.profileinstaller.action.SAVE_PROFILE"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+                }
+            }
+        ]
+    }
+}

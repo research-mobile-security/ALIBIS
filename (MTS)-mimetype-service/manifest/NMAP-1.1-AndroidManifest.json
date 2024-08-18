@@ -1,0 +1,123 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "2",
+    "@ns0:versionName": "1.1",
+    "@package": "com.itsisaket.pongs_000.imagenmap",
+    "@platformBuildVersionCode": "25",
+    "@platformBuildVersionName": "7.1.1",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "15",
+      "@ns0:targetSdkVersion": "25"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.LOCATION_HARDWARE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "com.google.android.providers.gsf.permission.READ_GSERVICES"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera"
+      },
+      {
+        "@ns0:name": "android.hardware.location"
+      },
+      {
+        "@ns0:name": "android.hardware.location.gps"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus"
+      },
+      {
+        "@ns0:glEsVersion": "0x00020000",
+        "@ns0:required": "true"
+      }
+    ],
+    "meta-data": {
+      "@ns0:name": "android.support.VERSION",
+      "@ns0:value": "25.3.1"
+    },
+    "application": {
+      "@ns0:theme": "@7F0900A7",
+      "@ns0:label": "@7F070032",
+      "@ns0:icon": "@7F030000",
+      "@ns0:allowBackup": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:roundIcon": "@7F030001",
+      "activity": [
+        {
+          "@ns0:name": "com.itsisaket.pongs_000.imagenmap.MainActivity",
+          "@ns0:screenOrientation": "0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F0900D9",
+          "@ns0:name": "com.itsisaket.pongs_000.imagenmap.PreViewActivity",
+          "@ns0:supportsRtl": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.itsisaket.pongs_000.imagenmap.MainActivity"
+          }
+        },
+        {
+          "@ns0:label": "@7F07003C",
+          "@ns0:name": "com.itsisaket.pongs_000.imagenmap.MapsActivity"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "service": {
+        "@ns0:name": "com.itsisaket.pongs_000.imagenmap.GeocodeAddressIntentService",
+        "@ns0:exported": "false"
+      },
+      "meta-data": [
+        {
+          "@ns0:name": "com.google.android.geo.API_KEY",
+          "@ns0:value": "@7F070036"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0B0006"
+        },
+        {
+          "@ns0:name": "com.android.vending.derived.apk.id",
+          "@ns0:value": "1"
+        }
+      ]
+    }
+  }
+}

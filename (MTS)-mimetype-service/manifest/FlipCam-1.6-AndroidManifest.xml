@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="11" ns0:versionName="1.6" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.flipcam" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="33"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera2" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<application ns0:theme="@7F110008" ns0:label="@7F100031" ns0:icon="@7F0D0000" ns0:name="com.flipcam.ControlVisbilityPreference" ns0:allowBackup="true" ns0:supportsRtl="true" ns0:roundIcon="@7F0D0000" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:name="com.flipcam.UserManualActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.flipcam.PermissionActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.flipcam.CameraActivity" ns0:screenOrientation="5"/>
+		<activity ns0:name="com.flipcam.MediaActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="com.flipcam.SettingsActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="com.flipcam.MemoryLimitActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.flipcam.GalleryActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F100136" ns0:name="com.flipcam.PhotoSettingsActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F1001AA" ns0:name="com.flipcam.VideoSettingsActivity"/>
+		<meta-data ns0:name="com.google.android.apps.drive.APP_ID" ns0:value="790824419328.000000"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.flipcam.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130001"/>
+		</provider>
+		<provider ns0:name="com.flipcam.data.MediaProvider" ns0:authorities="@7F100065"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F09000A"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.flipcam.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

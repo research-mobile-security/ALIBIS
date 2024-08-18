@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="74" ns0:versionName="2.3.5" ns0:installLocation="0" package="jp.snowlife01.android.hdcamera" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+	<uses-sdk ns0:minSdkVersion="13" ns0:targetSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-feature ns0:name="android.hardware.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.screen.landscape" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.screen.portrait" ns0:required="false"/>
+	<supports-screens ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<permission ns0:name="jp.snowlife01.android.hdcamera.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="jp.snowlife01.android.hdcamera.permission.C2D_MESSAGE"/>
+	<application ns0:theme="@7F080000" ns0:label="@7F060002" ns0:icon="@7F020075" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true">
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.ads.list3d.List3DActivity"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.startapp.android.publish.adsCommon.activities.OverlayActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.adsCommon.activities.FullScreenActivity" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.PeriodicMetaDataService"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.InfoEventService"/>
+		<receiver ns0:name="com.startapp.android.publish.common.metaData.BootCompleteListener">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.dropbox.core.android.AuthActivity" ns0:launchMode="2" ns0:configChanges="0x00000090">
+			<intent-filter>
+				<data ns0:scheme="db-kvshytmaw6jnoal"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0600BA" ns0:name="jp.snowlife01.android.hdcamera.MainActivity2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="jp.snowlife01.android.hdcamera.MyAlarmNotificationReceiver">
+			<intent-filter>
+				<action ns0:name="jp.snowlife01.android.hdcamera_MyAlarmAction"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="jp.snowlife01.android.hdcamera.MyAlarmService51"/>
+		<activity ns0:theme="@7F080003" ns0:name="jp.snowlife01.android.hdcamera.Review" ns0:launchMode="2" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F080003" ns0:name="jp.snowlife01.android.hdcamera.Review2" ns0:launchMode="2" ns0:configChanges="0x00000480"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<action ns0:name="com.google.android.c2dm.intent.REGISTRATION"/>
+				<category ns0:name="jp.snowlife01.android.hdcamera"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="jp.snowlife01.android.hdcamera.firebaseinitprovider" ns0:initOrder="100"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0000"/>
+	</application>
+</manifest>

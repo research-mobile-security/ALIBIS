@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="186" ns0:versionName="1.2" package="com.samsung.galaxyx.camera" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="21"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<permission ns0:name="com.samsung.galaxyx.camera.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.samsung.galaxyx.camera.permission.C2D_MESSAGE"/>
+	<application ns0:theme="@7F0900A7" ns0:label="@7F070028" ns0:icon="@7F0200D2" ns0:name="com.martin.ads.omoshiroilib.ui.CameraApplication" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true">
+		<meta-data ns0:name="com.donkingliang.imagesingleselector.constant.CustomGlideMoudle" ns0:value="GlideModule"/>
+		<activity ns0:theme="@7F0900A0" ns0:name="com.martin.ads.omoshiroilib.ui.CameraPreviewActivity" ns0:clearTaskOnLaunch="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F090122" ns0:name="com.donkingliang.imagesingleselector.VideoActivity"/>
+		<activity ns0:theme="@7F090122" ns0:name="com.donkingliang.imagesingleselector.AdActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.donkingliang.imagesingleselector.ImageProductionActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.donkingliang.imagesingleselector.ShowProductionImageActivity" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<activity ns0:theme="@7F0900D8" ns0:name="com.martin.ads.omoshiroilib.ui.SettingsActivity" ns0:screenOrientation="1"/>
+		<service ns0:name="com.martin.ads.omoshiroilib.service.InitializeService"/>
+		<service ns0:name="com.martin.ads.omoshiroilib.service.NotificationService" ns0:process=":push"/>
+		<activity ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.samsung.galaxyx.camera"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F0900A0" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0E0004"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

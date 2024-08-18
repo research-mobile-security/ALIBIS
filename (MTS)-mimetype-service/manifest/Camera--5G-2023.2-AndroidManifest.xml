@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="200145" ns0:versionName="2023.2" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.liv.hdcam" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="28" ns0:targetSdkVersion="33"/>
+	<uses-feature ns0:name="android.hardware.camera2" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.webkit.PermissionRequest"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.EDIT"/>
+			<data ns0:mimeType="image/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.EDIT"/>
+			<data ns0:mimeType="video/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SENDTO"/>
+			<data ns0:scheme="mailto"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SENDTO"/>
+			<data ns0:scheme="sms"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.GET_CONTENT"/>
+			<category ns0:name="android.intent.category.OPENABLE"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.android.vending.billing.InAppBillingService.BIND"/>
+		</intent>
+		<package ns0:name="com.google.ar.core"/>
+	</queries>
+	<uses-feature ns0:name="android.hardware.camera.any"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<permission ns0:name="com.liv.hdcam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.liv.hdcam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<uses-permission ns0:name="android.hardware.camera.autofocus"/>
+	<application ns0:theme="@7F160007" ns0:label="@7F15002E" ns0:icon="@7F110000" ns0:name="com.liv.goldcamera.activity.CameraPlusApplication" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:extractNativeLibs="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:allowNativeHeapPointerTagging="false">
+		<meta-data ns0:name="show_legal" ns0:value="true"/>
+		<meta-data ns0:name="com.liv.hdcam.host" ns0:value=""/>
+		<meta-data ns0:name="amp_name" ns0:value=""/>
+		<meta-data ns0:name="com.liv.hdcam.enable_reporting" ns0:value="true"/>
+		<meta-data ns0:name="LIV_API_KEY" ns0:value="488ae36b7e11574f5fc24774b1f6d01a"/>
+		<meta-data ns0:name="LIV_API_SECRET" ns0:value="fc787842033a5c704ab6254fb9b717d9f842848722c86de5"/>
+		<meta-data ns0:name="DeepARKey" ns0:value="b7ac63402c9bf87528c703db52aca6f7e052564f1300ddfb84da896644cd0cad021f2210efbd69ac"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F1500DE"/>
+		<activity ns0:name="com.liv.goldcamera.main.MainActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D00" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.liv.hdcam.CAMERA_HOME"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.liv.hdcam.GALLERY_HOME"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:scheme="hdcam" ns0:host="cameraplus.co"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:label="@7F15002E" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.liv.hdcam.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F180000"/>
+		</provider>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0C0009"/>
+		<meta-data ns0:name="google_analytics_automatic_screen_reporting_enabled" ns0:value="false"/>
+		<meta-data ns0:name="com.google.ar.core" ns0:value="optional"/>
+		<meta-data ns0:name="delivery_metrics_exported_to_big_query_enabled" ns0:value="true"/>
+		<uses-native-library ns0:name="libOpenCL-pixel.so" ns0:required="false"/>
+		<uses-native-library ns0:name="libOpenCL.so" ns0:required="false"/>
+		<activity ns0:name="com.liv.goldcamera.activity.ActivityPrivacyPolicy" ns0:configChanges="0x000000A0"/>
+		<activity ns0:name="com.liv.goldcamera.activity.ActivityVideoPlayer" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="com.liv.goldcamera.webar.WebARActivity" ns0:exported="false">
+			<meta-data ns0:name="android.app.lib_name" ns0:value=""/>
+		</activity>
+		<service ns0:name="com.liv.goldcamera.notification.MainFirebaseMessagingService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.liv.goldcamera.notification.NotificationExpirationReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@7F160134" ns0:name="com.amplifyframework.devmenu.DeveloperMenuActivity"/>
+		<provider ns0:name="com.canhub.cropper.CropFileProvider" ns0:exported="false" ns0:authorities="com.liv.hdcam.cropper.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F180002"/>
+		</provider>
+		<activity ns0:name="com.canhub.cropper.CropImageActivity" ns0:exported="true"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.ktx.FirebaseInAppMessagingDisplayKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.inappmessaging.ktx.FirebaseInAppMessagingKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.firebase.perf.provider.FirebasePerfProvider" ns0:exported="false" ns0:authorities="com.liv.hdcam.firebaseperfprovider" ns0:initOrder="101"/>
+		<service ns0:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.objects.defaults.internal.DefaultObjectsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.label.defaults.internal.BundledLabelRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.mlkit.common.internal.MlKitInitProvider" ns0:exported="false" ns0:authorities="com.liv.hdcam.mlkitinitprovider" ns0:initOrder="99"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.liv.hdcam.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<uses-library ns0:name="androidx.camera.extensions.impl" ns0:required="false"/>
+		<service ns0:name="androidx.camera.core.impl.MetadataHolderService" ns0:enabled="false" ns0:exported="false">
+			<meta-data ns0:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" ns0:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.amazonaws.mobileconnectors.cognitoauth.activities.CustomTabsManagerActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.liv.hdcam.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="com.google.ar.core.min_apk_version" ns0:value="222580000"/>
+		<activity ns0:theme="@android:0103023A" ns0:name="com.google.ar.core.InstallActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<activity ns0:theme="@7F160260" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+	</application>
+</manifest>

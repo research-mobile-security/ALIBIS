@@ -1,0 +1,408 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "40",
+    "@ns0:versionName": "3.1.4.1",
+    "@ns0:compileSdkVersion": "32",
+    "@ns0:compileSdkVersionCodename": "12",
+    "@package": "com.estsoft.picnic",
+    "@platformBuildVersionCode": "32",
+    "@platformBuildVersionName": "12",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "21",
+      "@ns0:targetSdkVersion": "32"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE",
+        "@ns0:maxSdkVersion": "29"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus"
+      },
+      {
+        "@ns0:glEsVersion": "0x00020000",
+        "@ns0:required": "true"
+      }
+    ],
+    "queries": {
+      "intent": {
+        "action": {
+          "@ns0:name": "android.intent.action.SEND"
+        },
+        "data": {
+          "@ns0:mimeType": "image/*"
+        }
+      },
+      "package": {
+        "@ns0:name": "com.facebook.katana"
+      }
+    },
+    "application": {
+      "@ns0:theme": "@7F110008",
+      "@ns0:label": "@7F100025",
+      "@ns0:icon": "@7F0D0000",
+      "@ns0:name": "com.estsoft.picnic.App",
+      "@ns0:allowBackup": "false",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "false",
+      "@ns0:resizeableActivity": "false",
+      "@ns0:networkSecurityConfig": "@7F130001",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "activity": [
+        {
+          "@ns0:theme": "@7F1100E7",
+          "@ns0:name": "com.estsoft.picnic.ui.front.FrontActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1100E8",
+          "@ns0:name": "com.estsoft.picnic.ui.home.HomeActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00002484",
+          "@ns0:windowSoftInputMode": "0x00000030"
+        },
+        {
+          "@ns0:theme": "@7F1100F6",
+          "@ns0:name": "com.estsoft.picnic.ui.photo.main.PhotoMainActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00002484",
+          "@ns0:windowSoftInputMode": "0x00000030"
+        },
+        {
+          "@ns0:name": "com.estsoft.picnic.ui.photo.share.PhotoShareActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00002484",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.SEND"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "image/*"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.estsoft.picnic.ui.tutorial.TutorialActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.estsoft.picnic.ui.gallery.GalleryActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110009",
+          "@ns0:name": "com.estsoft.picnic.ui.setting.SettingActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F110009",
+          "@ns0:name": "com.estsoft.picnic.ui.info.InfoActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@7F110009",
+          "@ns0:name": "com.estsoft.picnic.ui.licence.LicenceActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@7F110009",
+          "@ns0:name": "com.estsoft.picnic.ui.notice.NoticeActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@7F110009",
+          "@ns0:name": "com.estsoft.picnic.ui.help.HelpActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@7F110009",
+          "@ns0:name": "com.estsoft.picnic.ui.thanks.ThanksActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@android:0103000B",
+          "@ns0:name": "org.acra.dialog.CrashReportDialog",
+          "@ns0:process": ":acra",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:theme": "@7F1100EA",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@7F1100F5",
+          "@ns0:name": "com.estsoft.picnic.ui.front.PermissionDescriptionActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.facebook.ads.AudienceNetworkActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.estsoft.picnic.glide.PicnicGlideModule",
+          "@ns0:value": "GlideModule"
+        },
+        {
+          "@ns0:name": "com.facebook.sdk.ApplicationId",
+          "@ns0:value": "@7F100001"
+        },
+        {
+          "@ns0:name": "com.facebook.sdk.AutoLogAppEventsEnabled",
+          "@ns0:value": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.messaging.default_notification_icon",
+          "@ns0:resource": "@7F0800DD"
+        },
+        {
+          "@ns0:name": "com.google.firebase.messaging.default_notification_channel_id",
+          "@ns0:value": "@7F1000A3"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.APPLICATION_ID",
+          "@ns0:value": "@7F100000"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0A0010"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.estsoft.picnic.provider.PicnicFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.estsoft.picnic.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F130002"
+          }
+        },
+        {
+          "@ns0:name": "com.facebook.internal.FacebookInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.estsoft.picnic.FacebookInitProvider"
+        },
+        {
+          "@ns0:name": "com.facebook.ads.AudienceNetworkContentProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.estsoft.picnic.AudienceNetworkContentProvider"
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.estsoft.picnic.firebaseinitprovider",
+          "@ns0:initOrder": "100",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.MobileAdsInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.estsoft.picnic.mobileadsinitprovider",
+          "@ns0:initOrder": "100"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "org.acra.sender.SenderService",
+          "@ns0:exported": "false",
+          "@ns0:process": ":acra"
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.iid.Registrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.firebase.messaging.FirebaseMessagingService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "intent-filter": {
+            "@ns0:priority": "-500",
+            "action": {
+              "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.AdService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "backend:com.google.android.datatransport.cct.CctBackendFactory",
+            "@ns0:value": "cct"
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.facebook.CurrentAccessTokenExpirationBroadcastReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+          "@ns0:exported": "false"
+        }
+      ]
+    }
+  }
+}

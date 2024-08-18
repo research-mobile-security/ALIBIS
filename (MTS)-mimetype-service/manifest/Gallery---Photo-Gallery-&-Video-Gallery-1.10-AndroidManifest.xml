@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="10" ns0:versionName="1.10" ns0:installLocation="0" ns0:compileSdkVersion="28" ns0:compileSdkVersionCodename="9" package="com.gallery.photo.album.image.video.camera" platformBuildVersionCode="28" platformBuildVersionName="9">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<permission ns0:name="com.gallery.photo.album.image.video.camera.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.gallery.photo.album.image.video.camera.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F10014F" ns0:label="@7F0F004F" ns0:icon="@7F0D0000" ns0:name="com.gallery.photo.album.image.video.camera.App" ns0:allowBackup="true" ns0:supportsRtl="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="@7F0F003A"/>
+		<activity ns0:theme="@7F100163" ns0:label="@7F0F01FA" ns0:name="com.gallery.photo.album.image.video.camera.activities.PlayerActivity" ns0:launchMode="2" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="asset"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F100163" ns0:label="@7F0F004F" ns0:name="com.gallery.photo.album.image.video.camera.activities.SplashScreen" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="firebase_performance_logcat_enabled" ns0:value="true"/>
+		<activity ns0:theme="@7F100163" ns0:name="com.gallery.photo.album.image.video.camera.activities.MainActivity" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.albumsAct"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F100163" ns0:label="@7F0F004F" ns0:name="com.gallery.photo.album.image.video.camera.activities.SingleMediaActivity" ns0:configChanges="0x000007C0" ns0:parentActivityName="com.gallery.photo.album.image.video.camera.activities.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activities.MainActivity"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.albumPhoto"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F100163" ns0:label="@7F0F01BE" ns0:name="com.gallery.photo.album.image.video.camera.activities.SettingsActivity" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SETTING"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.APPLICATION_PREFERENCES"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F100163" ns0:label="@7F0F01B4" ns0:name="com.gallery.photo.album.image.video.camera.activities.SecurityActivity" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SECURITY"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.gallery.photo.album.image.video.camera.util.NetworkStateReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F100163" ns0:label="@7F0F0065" ns0:name="com.gallery.photo.album.image.video.camera.activities.BlackWhiteListActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ExcludedAlbums"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F100163" ns0:label="@7F0F0171" ns0:name="com.gallery.photo.album.image.video.camera.activities.PaletteActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PALETTE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F100163" ns0:name="com.yalantis.ucrop.UCropActivity" ns0:screenOrientation="1"/>
+		<provider ns0:name="com.gallery.photo.album.image.video.camera.util.LegacyCompatFileProvider" ns0:exported="false" ns0:authorities="com.gallery.photo.album.image.video.camera.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120000"/>
+		</provider>
+		<service ns0:name="com.gallery.photo.album.image.video.camera.LookForMediaJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="true"/>
+		<activity ns0:name="com.gallery.photo.album.image.video.camera.activities.AffixActivity"/>
+		<activity ns0:name="cat.ereza.customactivityoncrash.activity.DefaultErrorActivity" ns0:process=":error_activity"/>
+		<provider ns0:name="cat.ereza.customactivityoncrash.provider.CaocInitProvider" ns0:exported="false" ns0:authorities="com.gallery.photo.album.image.video.camera.customactivityoncrashinitprovider" ns0:initOrder="101"/>
+		<meta-data ns0:name="onesignal_app_id" ns0:value="ea88c35d-8e0c-45d4-8de4-56e4b4932ac0"/>
+		<meta-data ns0:name="onesignal_google_project_number" ns0:value="str:REMOTE"/>
+		<receiver ns0:name="com.onesignal.GcmBroadcastReceiver" ns0:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter ns0:priority="999">
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.gallery.photo.album.image.video.camera"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.onesignal.NotificationOpenedReceiver"/>
+		<service ns0:name="com.onesignal.HmsMessageServiceOneSignal" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.huawei.push.action.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.onesignal.NotificationOpenedActivityHMS">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.onesignal.GcmIntentService"/>
+		<service ns0:name="com.onesignal.GcmIntentJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.RestoreJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.RestoreKickoffJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.SyncService" ns0:stopWithTask="true"/>
+		<service ns0:name="com.onesignal.SyncJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.onesignal.PermissionsActivity"/>
+		<service ns0:name="com.onesignal.NotificationRestoreService"/>
+		<receiver ns0:name="com.onesignal.BootUpReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.onesignal.UpgradeReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.gallery.photo.album.image.video.camera.crashlyticsinitprovider" ns0:initOrder="90"/>
+		<provider ns0:name="com.google.firebase.perf.provider.FirebasePerfProvider" ns0:exported="false" ns0:authorities="com.gallery.photo.album.image.video.camera.firebaseperfprovider" ns0:initOrder="101"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.gallery.photo.album.image.video.camera.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.gallery.photo.album.image.video.camera.firebaseinitprovider" ns0:initOrder="100"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F09000F"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

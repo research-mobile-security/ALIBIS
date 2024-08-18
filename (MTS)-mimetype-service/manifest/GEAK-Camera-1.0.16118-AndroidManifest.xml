@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="16118" ns0:versionName="1.0.16118" ns0:installLocation="1" package="com.geak.camera">
+	<uses-sdk ns0:minSdkVersion="14" ns0:targetSdkVersion="19"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<instrumentation ns0:label="com.geak.camera" ns0:name="android.test.InstrumentationTestRunner" ns0:targetPackage="com.geak.camera"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<application ns0:label="@7F0C0034" ns0:icon="@7F02013A" ns0:name="com.geak.os.CameraApp" ns0:allowBackup="true" ns0:largeHeap="true">
+		<uses-library ns0:name="android.test.runner"/>
+		<activity ns0:theme="@android:0103000A" ns0:name="com.geak.camera.SplashActivity" ns0:clearTaskOnLaunch="true" ns0:launchMode="1" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:0103000A" ns0:name="com.geak.camera.SplashBaiduActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:0103000A" ns0:label="@7F0C0034" ns0:name=".MainActivity" ns0:clearTaskOnLaunch="true" ns0:screenOrientation="1" ns0:configChanges="0x00002490">
+			<intent-filter>
+				<action ns0:name="geak.intent.action.CAMERA_MAIN"/>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0E0071" ns0:name="com.geak.camera.SettingActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E006D" ns0:name="com.geak.camera.AboutUsActivity" ns0:launchMode="1" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="com.geak.camera.action.about"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0E006D" ns0:name="com.geak.camera.PathChoiceActivity" ns0:launchMode="1" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="com.geak.camera.action.savepath"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:0103000A" ns0:name="com.geak.camera.AppSleepActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:0103000A" ns0:name="com.geak.camera.CameraOpenErrorActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:0103000A" ns0:label="@7F0C0012" ns0:name="com.geak.gallery.ui.MainActivity"/>
+		<activity ns0:theme="@android:0103000A" ns0:label="@7F0C0012" ns0:name="com.geak.gallery.ui.EditImageActivity" ns0:screenOrientation="1"/>
+		<service ns0:name="com.geak.camera.MediaSaveService"/>
+		<receiver ns0:name="com.geak.camera.receiver.UpgradeCompleteReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.lantern.analytics.receiver.NetworkReceiver">
+			<intent-filter ns0:priority="2147483647">
+				<action ns0:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="OS_CHANNEL" ns0:value="myapp"/>
+		<meta-data ns0:name="WK_APP_ID" ns0:value="gk0002"/>
+	</application>
+</manifest>

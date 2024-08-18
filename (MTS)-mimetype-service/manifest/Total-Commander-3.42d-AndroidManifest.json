@@ -1,0 +1,1255 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:label": "@7F0C0016",
+    "@ns0:versionCode": "2190",
+    "@ns0:versionName": "3.42d",
+    "@ns0:installLocation": "0",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "com.ghisler.android.TotalCommander",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "8",
+      "@ns0:targetSdkVersion": "33"
+    },
+    "uses-permission-sdk-23": [
+      {
+        "@ns0:name": "android.permission.REQUEST_INSTALL_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.REQUEST_DELETE_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.USE_FINGERPRINT"
+      },
+      {
+        "@ns0:name": "android.permission.USE_BIOMETRIC"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.POST_NOTIFICATIONS"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_CONNECT"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.software.leanback",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.touchscreen",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.bluetooth",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.fingerprint",
+        "@ns0:required": "false"
+      }
+    ],
+    "permission": {
+      "@ns0:label": "Restricted Total Commander plugins",
+      "@ns0:name": "com.ghisler.tcplugins.restricted",
+      "@ns0:protectionLevel": "0x00000002"
+    },
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:resizeable": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_ADMIN",
+        "@ns0:maxSdkVersion": "30"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_SUPERUSER"
+      },
+      {
+        "@ns0:name": "com.android.launcher.permission.INSTALL_SHORTCUT"
+      },
+      {
+        "@ns0:name": "com.ghisler.tcplugins.restricted"
+      }
+    ],
+    "queries": {
+      "package": [
+        {
+          "@ns0:name": "com.android.documentsui"
+        },
+        {
+          "@ns0:name": "com.ghisler.tcplugins.wifitransfer"
+        }
+      ],
+      "intent": [
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:mimeType": "*/*"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.MAIN"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.CHOOSER"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.EDIT"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.GET_CONTENT"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.INSTALL_PACKAGE"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.OPEN_DOCUMENT"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.OPEN_DOCUMENT_TREE"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.PICK"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SEND"
+          },
+          "data": {
+            "@ns0:mimeType": "*/*"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SEND"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SENDTO"
+          },
+          "data": {
+            "@ns0:mimeType": "*/*"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SENDTO"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "com.android.tcplugins.IPluginFunctions"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.settings.WEBVIEW_LICENSE"
+          }
+        }
+      ]
+    },
+    "application": {
+      "@ns0:label": "@7F0C0016",
+      "@ns0:icon": "@7F0B0000",
+      "@ns0:name": "com.ghisler.android.TotalCommander.TcApplication",
+      "@ns0:allowBackup": "true",
+      "@ns0:banner": "@7F060020",
+      "@ns0:fullBackupContent": "@7F0F0001",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:appCategory": "7",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:hasFragileUserData": "true",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "receiver": {
+        "@ns0:label": "PlayIntentReceiver",
+        "@ns0:name": "com.ghisler.android.TotalCommander.PlayIntentReceiver",
+        "@ns0:enabled": "true",
+        "@ns0:exported": "true",
+        "intent-filter": [
+          {
+            "action": [
+              {
+                "@ns0:name": "com.ghisler.PlayPause"
+              },
+              {
+                "@ns0:name": "com.ghisler.Next"
+              },
+              {
+                "@ns0:name": "com.ghisler.Prev"
+              },
+              {
+                "@ns0:name": "com.ghisler.Exit"
+              },
+              {
+                "@ns0:name": "com.ghisler.Null"
+              }
+            ]
+          },
+          {
+            "@ns0:priority": "10000",
+            "action": {
+              "@ns0:name": "android.intent.action.MEDIA_BUTTON"
+            }
+          }
+        ]
+      },
+      "provider": [
+        {
+          "@ns0:name": "com.ghisler.android.TotalCommander.TcContentProvider",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.ghisler.android.TotalCommander.files"
+        },
+        {
+          "@ns0:name": "com.ghisler.android.TotalCommander.TcContentProviderPlugins",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.ghisler.plugin;com.ghisler.files",
+          "@ns0:grantUriPermissions": "true"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F0D000A",
+          "@ns0:label": "@7F0C0016",
+          "@ns0:name": "com.ghisler.android.TotalCommander.TotalCommander",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x40000FF4",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:resizeableActivity": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                },
+                {
+                  "@ns0:name": "tv.ouya.intent.category.APP"
+                },
+                {
+                  "@ns0:name": "android.intent.category.MULTIWINDOW_LAUNCHER"
+                },
+                {
+                  "@ns0:name": "com.samsung.android.intent.category.PENWINDOW_LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.LEANBACK_LAUNCHER"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "resource/folder",
+                "@ns0:scheme": "file"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "org.openintents.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "vnd.android.documents/directory",
+                "@ns0:scheme": "file"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "application/zip",
+                "@ns0:scheme": "file"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "application/zip",
+                "@ns0:scheme": "content"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "application/rar",
+                "@ns0:scheme": "file"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "application/rar",
+                "@ns0:scheme": "content"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "application/x-7z-compressed",
+                "@ns0:scheme": "file"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "application/x-7z-compressed",
+                "@ns0:scheme": "content"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MEDIA_MOUNTED"
+              },
+              "data": {
+                "@ns0:scheme": "file"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "application/x-1ghislerlink"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "GHISLER"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:label": "TotalCmd (file://url)",
+          "@ns0:name": "com.ghisler.android.TotalCommander.DirBrowseActivity2",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": ".DirBrowseActivity",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.GET_CONTENT"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.OPENABLE"
+              }
+            ],
+            "data": {
+              "@ns0:mimeType": "*/*"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:label": "Total Commander",
+          "@ns0:name": "com.ghisler.android.TotalCommander.DirBrowseActivity",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": ".DirBrowseActivity",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.CREATE_SHORTCUT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.RINGTONE_PICKER"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "ghisler.CREATE_SHORTCUT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "ghisler.LAUNCH_SHORTCUT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                }
+              ],
+              "data": {
+                "@ns0:mimeType": "*/*"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "org.openintents.action.PICK_FILE"
+                },
+                {
+                  "@ns0:name": "org.openintents.action.PICK_DIRECTORY"
+                },
+                {
+                  "@ns0:name": "android.intent.action.PICK"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": "folder"
+                },
+                {
+                  "@ns0:scheme": "directory"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "org.openintents.action.PICK_FILE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "application/x-2ghislerlink"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "GHISLER"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "application/x-2ghislerlink"
+                },
+                {
+                  "@ns0:scheme": "ghisler"
+                }
+              ],
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:label": "Totalcmd-Editor",
+          "@ns0:icon": "@7F06006A",
+          "@ns0:name": "com.ghisler.android.TotalCommander.TCEditActivity2",
+          "@ns0:exported": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:resizeableActivity": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.CREATE_SHORTCUT"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:label": "Totalcmd-Editor",
+          "@ns0:icon": "@7F06006A",
+          "@ns0:name": "com.ghisler.android.TotalCommander.TCEditActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x00000FF4",
+          "@ns0:resizeableActivity": "true",
+          "intent-filter": [
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "android.intent.action.EDIT"
+                }
+              ],
+              "data": {
+                "@ns0:mimeType": "text/*",
+                "@ns0:scheme": "file"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "android.intent.action.EDIT"
+                }
+              ],
+              "data": {
+                "@ns0:mimeType": "text/*",
+                "@ns0:scheme": "content"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*",
+                "@ns0:scheme": "file",
+                "@ns0:host": "*",
+                "@ns0:pathPattern": ".*\\.txt"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*",
+                "@ns0:scheme": "content",
+                "@ns0:host": "*",
+                "@ns0:pathPattern": ".*\\.txt"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:label": "Totalcmd-MediaPlayer",
+          "@ns0:icon": "@7F06001E",
+          "@ns0:name": "com.ghisler.android.TotalCommander.MediaPlayerActivity2",
+          "@ns0:exported": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:resizeableActivity": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.CREATE_SHORTCUT"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:label": "TotalCmd (Queue)",
+          "@ns0:icon": "@7F06001E",
+          "@ns0:name": "com.ghisler.android.TotalCommander.MediaPlayerActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x00000FF4",
+          "@ns0:resizeableActivity": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "audio/*"
+                },
+                {
+                  "@ns0:mimeType": "application/ogg"
+                },
+                {
+                  "@ns0:mimeType": "video/mp4"
+                },
+                {
+                  "@ns0:mimeType": "video/mpeg4"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp"
+                },
+                {
+                  "@ns0:mimeType": "video/webm"
+                },
+                {
+                  "@ns0:mimeType": "application/mp4*"
+                },
+                {
+                  "@ns0:mimeType": "application/mpeg*"
+                },
+                {
+                  "@ns0:mimeType": "application/xspf+xml"
+                },
+                {
+                  "@ns0:mimeType": "application/x-mpegurl"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "audio/*",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "application/ogg",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "video/mp4",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "video/mpeg4",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "application/mp4*",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "application/mpeg*",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "application/xspf+xml",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "application/x-mpegurl",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "audio/*",
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "application/ogg",
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "video/mp4",
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "video/mpeg4",
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp",
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "application/mp4*",
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "application/mpeg*",
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "application/xspf+xml",
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "application/x-mpegurl",
+                  "@ns0:scheme": "https"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "audio/*",
+                  "@ns0:scheme": "rtsp"
+                },
+                {
+                  "@ns0:mimeType": "application/ogg",
+                  "@ns0:scheme": "rtsp"
+                },
+                {
+                  "@ns0:mimeType": "video/mp4",
+                  "@ns0:scheme": "rtsp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp",
+                  "@ns0:scheme": "rtsp"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "*/*",
+                  "@ns0:scheme": "file",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.webm"
+                },
+                {
+                  "@ns0:mimeType": "*/*",
+                  "@ns0:scheme": "content",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.webm"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "audio/x-mpegurl",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "audio/mpegurl",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "application/vnd.apple.mpegurl",
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "application/x-mpegurl",
+                  "@ns0:scheme": "http"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u"
+                },
+                {
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u8"
+                },
+                {
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp3"
+                },
+                {
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.3gp"
+                },
+                {
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp4"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u"
+                },
+                {
+                  "@ns0:scheme": "http",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u8"
+                },
+                {
+                  "@ns0:scheme": "http",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp3"
+                },
+                {
+                  "@ns0:scheme": "http",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.3gp"
+                },
+                {
+                  "@ns0:scheme": "http",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp4"
+                },
+                {
+                  "@ns0:scheme": "https",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u"
+                },
+                {
+                  "@ns0:scheme": "https",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u8"
+                },
+                {
+                  "@ns0:scheme": "https",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp3"
+                },
+                {
+                  "@ns0:scheme": "https",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.3gp"
+                },
+                {
+                  "@ns0:scheme": "https",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp4"
+                },
+                {
+                  "@ns0:scheme": "rtsp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u"
+                },
+                {
+                  "@ns0:scheme": "rtsp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u8"
+                },
+                {
+                  "@ns0:scheme": "rtsp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp3"
+                },
+                {
+                  "@ns0:scheme": "rtsp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.3gp"
+                },
+                {
+                  "@ns0:scheme": "rtsp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp4"
+                },
+                {
+                  "@ns0:scheme": "rtmp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u"
+                },
+                {
+                  "@ns0:scheme": "rtmp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u8"
+                },
+                {
+                  "@ns0:scheme": "rtmp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp3"
+                },
+                {
+                  "@ns0:scheme": "rtmp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.3gp"
+                },
+                {
+                  "@ns0:scheme": "rtmp",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp4"
+                },
+                {
+                  "@ns0:scheme": "mms",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u"
+                },
+                {
+                  "@ns0:scheme": "mms",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.m3u8"
+                },
+                {
+                  "@ns0:scheme": "mms",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp3"
+                },
+                {
+                  "@ns0:scheme": "mms",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.3gp"
+                },
+                {
+                  "@ns0:scheme": "mms",
+                  "@ns0:host": "*",
+                  "@ns0:pathPattern": ".*\\.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F0C0204",
+          "@ns0:name": "com.ghisler.android.TotalCommander.MainPreferenceActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:label": "CrashActivity",
+          "@ns0:name": "com.ghisler.android.TotalCommander.CrashActivity",
+          "@ns0:exported": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x000000B4"
+        },
+        {
+          "@ns0:label": "MessageBox",
+          "@ns0:name": "com.ghisler.android.TotalCommander.MessageBox",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000004"
+        },
+        {
+          "@ns0:label": "BluetoothFindDeviceActivity",
+          "@ns0:name": "com.ghisler.android.TotalCommander.BluetoothFindDeviceActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4"
+        },
+        {
+          "@ns0:label": "ConfigurationActivity",
+          "@ns0:name": "com.ghisler.android.TotalCommander.ConfigurationActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4"
+        },
+        {
+          "@ns0:label": "PlayerConfigurationActivity",
+          "@ns0:name": "com.ghisler.android.TotalCommander.PlayerConfigurationActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4"
+        },
+        {
+          "@ns0:label": "IgnoreListActivity",
+          "@ns0:name": "com.ghisler.android.TotalCommander.IgnoreListActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4"
+        },
+        {
+          "@ns0:label": "AssociationActivity",
+          "@ns0:name": "com.ghisler.android.TotalCommander.AssociationActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4"
+        },
+        {
+          "@ns0:label": "OpenBookmarkActivity",
+          "@ns0:name": "com.ghisler.android.TotalCommander.OpenBookmarkActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4"
+        },
+        {
+          "@ns0:label": "Totalcmd-Help",
+          "@ns0:name": "com.ghisler.android.TotalCommander.HelpActivity",
+          "@ns0:configChanges": "0x00000FF4",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:label": "Exit Total Commander",
+          "@ns0:name": "com.ghisler.android.TotalCommander.ExitActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000FF4"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.ghisler.android.TotalCommander.FileOperationService",
+          "@ns0:exported": "false",
+          "@ns0:foregroundServiceType": "0x00000001"
+        },
+        {
+          "@ns0:name": "com.ghisler.android.TotalCommander.MultiMediaService",
+          "@ns0:exported": "false",
+          "@ns0:foregroundServiceType": "0x00000002"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.sec.android.support.multiwindow",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.sec.android.multiwindow.DEFAULT_SIZE_W",
+          "@ns0:value": "632.0dip"
+        },
+        {
+          "@ns0:name": "com.sec.android.multiwindow.DEFAULT_SIZE_H",
+          "@ns0:value": "598.0dip"
+        },
+        {
+          "@ns0:name": "com.sec.android.multiwindow.MINIMUM_SIZE_W",
+          "@ns0:value": "632.0dip"
+        },
+        {
+          "@ns0:name": "com.sec.android.multiwindow.MINIMUM_SIZE_H",
+          "@ns0:value": "598.0dip"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.multiwindow.penwindow.enable",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "android.max_aspect",
+          "@ns0:value": "2.500000"
+        },
+        {
+          "@ns0:name": "com.samsung.android.keepalive.density",
+          "@ns0:value": "true"
+        }
+      ]
+    }
+  }
+}

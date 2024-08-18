@@ -1,0 +1,805 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "409",
+    "@ns0:versionName": "5.5.75",
+    "@ns0:installLocation": "0",
+    "@ns0:compileSdkVersion": "31",
+    "@ns0:compileSdkVersionCodename": "12",
+    "@package": "com.fstop.photo",
+    "@platformBuildVersionCode": "31",
+    "@platformBuildVersionName": "12",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "21",
+      "@ns0:targetSdkVersion": "31"
+    },
+    "queries": {
+      "package": [
+        {
+          "@ns0:name": "com.fstop.photo.key"
+        },
+        {
+          "@ns0:name": "com.fstop.photo"
+        }
+      ],
+      "intent": [
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SEND"
+          },
+          "data": {
+            "@ns0:mimeType": "image/*"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:mimeType": "image/*"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SEND"
+          },
+          "data": {
+            "@ns0:mimeType": "video/*"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:mimeType": "video/*"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.BROWSABLE"
+          },
+          "data": {
+            "@ns0:scheme": "https"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.support.customtabs.action.CustomTabsService"
+          }
+        }
+      ]
+    },
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.fingerprint",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.software.leanback",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.touchscreen",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:glEsVersion": "0x00020000",
+        "@ns0:required": "true"
+      }
+    ],
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.USE_FINGERPRINT"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "com.android.launcher.permission.INSTALL_SHORTCUT"
+      },
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "com.google.android.gms.permission.AD_ID"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@android:0103006B",
+      "@ns0:label": "@7F120021",
+      "@ns0:icon": "@7F0F0001",
+      "@ns0:name": "com.fstop.photo.MyApplication",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:banner": "@7F080064",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:resizeableActivity": "true",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "uses-library": {
+        "@ns0:name": "org.apache.http.legacy",
+        "@ns0:required": "false"
+      },
+      "meta-data": [
+        {
+          "@ns0:name": "android.max_aspect",
+          "@ns0:value": "5.000000"
+        },
+        {
+          "@ns0:name": "com.bugsnag.android.API_KEY",
+          "@ns0:value": "3a69796dd7b9486cb58c89d3616bc6f2"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0B000A"
+        },
+        {
+          "@ns0:name": "com.google.android.maps.v2.API_KEY",
+          "@ns0:value": "AIzaSyBlvGrMmdG-9yyFx3xtvjN61LtMUAbNo6E"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.APPLICATION_ID",
+          "@ns0:value": "ca-app-pub-5072002369214139~5845002208"
+        },
+        {
+          "@ns0:name": "com.google.android.play.billingclient.version",
+          "@ns0:value": "4.0.0"
+        },
+        {
+          "@ns0:name": "com.bugsnag.android.BUILD_UUID",
+          "@ns0:value": "838fba7c-1d51-42e5-a50b-2d2067b58239"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F1301FD",
+          "@ns0:label": "@7F1201E8",
+          "@ns0:name": "com.fstop.photo.activity.SetWallpaperActivity",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.ATTACH_DATA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SET_WALLPAPER"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F120145",
+          "@ns0:name": "com.fstop.photo.activity.EditImageActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.EDIT"
+              },
+              {
+                "@ns0:name": "com.android.camera.action.CROP"
+              }
+            ],
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.ALTERNATIVE"
+              },
+              {
+                "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+              }
+            ],
+            "data": [
+              {
+                "@ns0:mimeType": "image/*"
+              },
+              {
+                "@ns0:mimeType": "vnd.android.cursor.dir/image"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@7F1301FD",
+          "@ns0:name": "com.fstop.photo.activity.MainActivity",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.LEANBACK_LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F1301FD",
+          "@ns0:name": "com.fstop.photo.activity.ListOfSomethingActivity"
+        },
+        {
+          "@ns0:theme": "@7F130245",
+          "@ns0:name": "com.fstop.photo.activity.ViewImageActivityNew",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "com.android.camera.action.REVIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F130245",
+          "@ns0:name": "com.fstop.photo.activity.ViewImageActivityOld",
+          "@ns0:exported": "true",
+          "@ns0:resizeableActivity": "true"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.MainPreferenceActivity"
+        },
+        {
+          "@ns0:theme": "@7F1301FD",
+          "@ns0:name": "com.fstop.photo.activity.EditSmartAlbumActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.EditSmartAlbumCriteriaActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.SelectFromExistingFoldersActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.MultipleChoiceSelectionForSmartAlbumActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.SelectTagsActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.EditTagsActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.SetTagsActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.MapActivity"
+        },
+        {
+          "@ns0:label": "@7F1200DE",
+          "@ns0:name": "com.fstop.photo.activity.CustomizeNavigationDrawerActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.PanoramaActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.CustomizePanelActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.ThumbnailBarPreferences"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.AddCloudServiceActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.PickSambaFolderActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.FileFolderPickerActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.IncludedExcludedFoldersActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.OtherAppsActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.CustomizeBookmarksActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.BatchRenameActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.GrantPermissionsActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.activity.FilterActivity"
+        },
+        {
+          "@ns0:theme": "@7F130242",
+          "@ns0:name": "com.fstop.photo.activity.PurchasePremiumActivity"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.exoVideoPlayer.ExoVideoPlayerActivity",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "rtsp"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "video/*"
+                },
+                {
+                  "@ns0:mimeType": "application/sdp"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.fstop.photo.SearchActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.SEARCH"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.app.searchable",
+            "@ns0:resource": "@7F15000F"
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.android.billingclient.api.ProxyBillingActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000005B0"
+        },
+        {
+          "@ns0:theme": "@7F13023F",
+          "@ns0:name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+          "@ns0:exported": "false",
+          "@ns0:stateNotNeeded": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.fstop.photo.Services.SetMediaTypeService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.Services.FolderScannerService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.Services.CloudScannerService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.Services.DatabaseUpdaterService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.Services.LongTaskService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.Services.CloudThumbnailScannerService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.Services.CloudFileDownloaderService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.Services.CloudCacheLimiterService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.Services.RecycleBinCleanerService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.Services.FolderScannerJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.fstop.httpd.StreamService"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+          "@ns0:permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+          "@ns0:exported": "true",
+          "@ns0:visibleToInstantApps": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.AdService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+          "@ns0:enabled": "@7F050004",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemjob.SystemJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "@7F050006",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.foreground.SystemForegroundService",
+          "@ns0:enabled": "@7F050005",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.fstop.photo.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F15000E"
+          }
+        },
+        {
+          "@ns0:name": "com.fstop.photo.contentProvider.FileProvider",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.fstop.photo.contentProvider.FileProvider",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "com.fstop.photo.contentProvider.SearchSuggestionsProvider",
+          "@ns0:authorities": "com.fstop.photo.searchSuggestionsProvider",
+          "@ns0:syncable": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.MobileAdsInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.fstop.photo.mobileadsinitprovider",
+          "@ns0:initOrder": "100"
+        },
+        {
+          "@ns0:name": "androidx.lifecycle.ProcessLifecycleOwnerInitializer",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.fstop.photo.lifecycle-process"
+        },
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.fstop.photo.androidx-startup",
+          "meta-data": {
+            "@ns0:name": "androidx.work.WorkManagerInitializer",
+            "@ns0:value": "androidx.startup"
+          }
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BATTERY_OKAY"
+              },
+              {
+                "@ns0:name": "android.intent.action.BATTERY_LOW"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIME_SET"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+          "@ns0:enabled": "@7F050004",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.impl.background.systemalarm.UpdateProxies"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

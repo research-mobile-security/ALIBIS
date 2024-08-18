@@ -1,0 +1,342 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "237",
+    "@ns0:versionName": "2.3.7",
+    "@ns0:installLocation": "0",
+    "@package": "com.sergeyotro.sharpsquare",
+    "@platformBuildVersionCode": "25",
+    "@platformBuildVersionName": "7.1.1",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "21",
+      "@ns0:targetSdkVersion": "25"
+    },
+    "supports-screens": {
+      "@ns0:smallScreens": "false",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_DOCUMENTS"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "com.sergeyotro.sharpsquare.permission.C2D_MESSAGE"
+      }
+    ],
+    "meta-data": {
+      "@ns0:name": "android.support.VERSION",
+      "@ns0:value": "25.3.1"
+    },
+    "permission": {
+      "@ns0:name": "com.sergeyotro.sharpsquare.permission.C2D_MESSAGE",
+      "@ns0:protectionLevel": "0x00000002"
+    },
+    "application": {
+      "@ns0:theme": "@7F0B0098",
+      "@ns0:label": "@7F090031",
+      "@ns0:icon": "@7F030000",
+      "@ns0:name": "com.sergeyotro.sharpsquare.App",
+      "@ns0:allowBackup": "true",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "activity": [
+        {
+          "@ns0:theme": "@7F0B0129",
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.start.SplashActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F090118",
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.start.StartActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B011A",
+          "@ns0:label": "@7F0900A9",
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.settings.ui.GlobalAppSettingsActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.settings.folderpick.FilePickActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:label": "@7F090118",
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.edit.EditActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:label": "@7F0900D7",
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.start.ShareForInstagramActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F0900D6",
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.start.ShareForProfilePhotoActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F0B011A",
+          "@ns0:label": "@7F0900A3",
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.save.SaveActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00BA",
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.purchase.PurchaseProActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.sergeyotro.core.feedback.FeedbackActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@7F0B017D",
+          "@ns0:name": "com.google.android.gms.appinvite.PreviewActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.gms.appinvite.ACTION_PREVIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F0B0184",
+          "@ns0:name": "com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.notifications.NotificationShareReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sergeyotro.sharpsquare.SHARE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.notifications.PromoActionReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sergeyotro.sharpsquare.PROMO_ACTION"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.sergeyotro.sharpsquare.features.notifications.PromoDontShowReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sergeyotro.sharpsquare.PROMO_DONT_SHOW"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.sergeyotro.sharpsquare.business.ad.IgLinkTrackStartBroadcastReceiver",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver",
+          "@ns0:permission": "android.permission.INSTALL_PACKAGES",
+          "@ns0:enabled": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            },
+            "category": {
+              "@ns0:name": "com.sergeyotro.sharpsquare"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdInternalReceiver",
+          "@ns0:exported": "false"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "android.support.v4.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "@7F09010F",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F070002"
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.sergeyotro.sharpsquare.firebaseinitprovider",
+          "@ns0:initOrder": "100"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.sergeyotro.sharpsquare.business.ad.InstagramClipboardTrackingService",
+          "@ns0:enabled": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "@ns0:priority": "-500",
+            "action": {
+              "@ns0:name": "com.google.firebase.INSTANCE_ID_EVENT"
+            }
+          }
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0D0006"
+        },
+        {
+          "@ns0:name": "io.fabric.ApiKey",
+          "@ns0:value": "830a4a4eba555efa218d942199a06bff991d2ac4"
+        },
+        {
+          "@ns0:name": "com.crashlytics.ApiKey",
+          "@ns0:value": "830a4a4eba555efa218d942199a06bff991d2ac4"
+        }
+      ]
+    }
+  }
+}

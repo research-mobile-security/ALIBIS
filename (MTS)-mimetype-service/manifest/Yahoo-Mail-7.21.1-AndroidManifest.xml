@@ -1,0 +1,510 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" xmlns:ns1="http://schemas.amazon.com/apk/res/android" ns0:versionCode="1702740" ns0:versionName="7.21.1" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.yahoo.mobile.client.android.mail" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="28" ns0:targetSdkVersion="33"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.network" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.accelerometer" ns0:required="false"/>
+	<permission ns0:name="com.yahoo.mobile.client.android.mail.permission.RECEIVE_ADM_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.yahoo.mobile.client.android.mail.permission.RECEIVE_ADM_MESSAGE"/>
+	<uses-permission ns0:name="com.amazon.device.messaging.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission-sdk-23 ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<queries>
+		<intent ns0:autoVerify="true">
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="*" ns0:host="*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="*" ns0:host="*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<permission ns0:name="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC"/>
+	<uses-permission ns0:name="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS" ns0:maxSdkVersion="21"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+	<meta-data ns0:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" ns0:value="com.verizondigitalmedia.mobile.client.android.player.ui.cast"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<permission ns0:name="com.yahoo.mobile.client.android.mail.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.yahoo.mobile.client.android.mail.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F140292" ns0:label="@7F1303F1" ns0:icon="@7F100002" ns0:name="com.yahoo.mail.MailPlusPlusApplication" ns0:allowBackup="true" ns0:extractNativeLibs="false" ns0:fullBackupContent="@7F170000" ns0:usesCleartextTraffic="false" ns0:networkSecurityConfig="@7F17000B" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:allowNativeHeapPointerTagging="false">
+		<meta-data ns0:name="com.yahoo.mail.util.glide.MailGlideModule" ns0:value="AppGlideModule"/>
+		<meta-data ns0:name="android.webkit.WebView.EnableSafeBrowsing" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.geo.API_KEY" ns0:value="@7F130016"/>
+		<meta-data ns0:name="asset_statements" ns0:resource="@7F1300C7"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:name="com.yahoo.mail.ui.activities.MailPlusPlusActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x00000030" ns0:windowSoftInputMode="0x00000010">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="ymail" ns0:host="mail" ns0:pathPattern=".*"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="@7F1303F1" ns0:icon="@7F100002" ns0:name="com.yahoo.mobile.client.android.mail.activity.MainActivity" ns0:enabled="true" ns0:exported="true" ns0:targetActivity="com.yahoo.mail.ui.activities.MailPlusPlusActivity" ns0:appCategory="7">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.yahoo.mail.action.LAUNCH_MAIN"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="yahoo.mail"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.yahoo.android.mail.search"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.yahoo.android.mail.travel"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="mail.yahoo.com" ns0:pathPattern=".*"/>
+				<data ns0:scheme="https" ns0:host="mail.yahoo.com" ns0:pathPattern=".*"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="mail.onelink.me"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="ymail" ns0:host="mail" ns0:pathPattern=".*"/>
+				<data ns0:scheme="ymail" ns0:host="account" ns0:pathPattern=".*"/>
+				<data ns0:scheme="ymail" ns0:host="tab" ns0:pathPattern=".*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F17000A"/>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="yahooappauthenticator.page.link"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.yahoo.mail.ui.activities.TestConsoleActivity"/>
+		<activity ns0:theme="@7F140150" ns0:name="com.yahoo.mail.flux.ui.MailComposeActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x000000B0" ns0:windowSoftInputMode="0x00000010" ns0:uiOptions="0x00000000">
+			<intent-filter ns0:label="@7F1303F1">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="android.intent.action.SENDTO"/>
+				<action ns0:name="com.yahoo.android.mail.send_message"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="mailto"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F1303F1">
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F1303F1">
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.yahoo.mail.action.APPWIDGET_COMPOSE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.yahoo.mobile.client.share.activity.FileExplorerActivity" ns0:configChanges="0x000000A0" ns0:alwaysRetainTaskState="true"/>
+		<activity ns0:label="@7F130D95" ns0:name="com.yahoo.mail.flux.ui.settings.SettingsActivity" ns0:exported="false" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.yahoo.mail.ui.activities.SMPortraitAdActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.yahoo.mail.ui.activities.ArticleActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="com.yahoo.mail.ui.activities.ArticleSwipeActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F130E3D" ns0:name="com.yahoo.mail.ui.activities.ThemePickerActivity" ns0:launchMode="1"/>
+		<activity ns0:name="com.yahoo.mail.flux.ui.onboarding.OnboardingActivity" ns0:finishOnTaskLaunch="true" ns0:launchMode="2" ns0:resizeableActivity="false">
+			<meta-data ns0:name="android.supports_size_changes" ns0:value="true"/>
+		</activity>
+		<activity ns0:label="@7F1303CB" ns0:name="com.yahoo.mail.flux.ui.LinkAccountActivity" ns0:finishOnTaskLaunch="true" ns0:launchMode="2" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.yahoo.mail.flux.ui.ComposeAttachmentPickerActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:label="@7F1303CE" ns0:name="com.yahoo.mail.flux.ui.activities.LoginAccountActivity" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.yahoo.mail.ui.activities.KillSwitchActivity" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.yahoo.mail.flux.ui.appwidget.YM6MessageListAppWidgetConfigActivity" ns0:exported="true" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.yahoo.mail.flux.ui.appwidget.YM6AccountListAppWidgetConfigActivity" ns0:exported="true" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1406DE" ns0:name="com.yahoo.mail.ui.activities.SlideShowActivity" ns0:noHistory="true"/>
+		<activity ns0:name="com.yahoo.mail.ui.activities.TodayEventActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F140298" ns0:name="com.yahoo.mail.ui.todaywebview.TodaySimpleWebViewActivity" ns0:exported="false"/>
+		<activity ns0:name="com.yahoo.mail.flux.ui.TodayStreamContentPrefSettingActivity" ns0:exported="false"/>
+		<activity ns0:name="com.yahoo.mail.flux.ui.ExtractionFeedbackActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<service ns0:name="com.yahoo.mail.flux.push.MailFirebaseMessagingService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.yahoo.mail.flux.push.NotificationActionService" ns0:enabled="true" ns0:exported="false"/>
+		<ns1:enable-feature ns0:name="com.amazon.device.messaging" ns0:required="false"/>
+		<service ns0:name="com.yahoo.mail.flux.push.MailAmazonMessagingJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.yahoo.mail.flux.push.MailAmazonMessagingService" ns0:exported="false"/>
+		<receiver ns0:name="com.yahoo.mail.flux.push.MailAmazonMessagingJobService$Receiver" ns0:permission="com.amazon.device.messaging.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.amazon.device.messaging.intent.REGISTRATION"/>
+				<action ns0:name="com.amazon.device.messaging.intent.RECEIVE"/>
+				<category ns0:name="com.yahoo.mobile.client.android.mail"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.yahoo.mail.flux.ui.appwidget.YM6MessageListAppWidgetRemoteViewsService" ns0:permission="android.permission.BIND_REMOTEVIEWS" ns0:exported="false"/>
+		<service ns0:name="com.yahoo.mail.flux.ui.appwidget.YM6AccountListAppWidgetRemoteViewsService" ns0:permission="android.permission.BIND_REMOTEVIEWS" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.profileinstaller.ProfileInstallerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<provider ns0:name="com.yahoo.mail.provider.AttachmentFileProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.attachment.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F170008"/>
+		</provider>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.arscreenshot.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F170007"/>
+		</provider>
+		<provider ns0:name="com.yahoo.mail.provider.ShareProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.share.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F17000D"/>
+		</provider>
+		<provider ns0:name="com.yahoo.mail.provider.CameraProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.camera.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F170001"/>
+		</provider>
+		<receiver ns0:name="com.yahoo.mail.flux.notifications.DeviceBootBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.yahoo.mail.flux.notifications.DismissedNotificationsBroadcastReceiver"/>
+		<receiver ns0:label="@7F130402" ns0:name="com.yahoo.mail.appwidget.MessageListAppWidgetProvider" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F170009"/>
+		</receiver>
+		<receiver ns0:label="@7F1303F7" ns0:name="com.yahoo.mail.appwidget.AccountListAppWidgetProvider" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F170006"/>
+		</receiver>
+		<receiver ns0:name="com.yahoo.mail.flux.alarms.Ym6ReminderAlarmReceiver" ns0:exported="false"/>
+		<receiver ns0:name="com.yahoo.mail.flux.notifications.SystemNotificationSettingBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+				<action ns0:name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"/>
+				<action ns0:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050049" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="comms.yahoo.com.gifpicker.lib.services.GifSearchService" ns0:exported="false"/>
+		<activity ns0:theme="@7F140017" ns0:name="com.verizonmedia.article.ui.slideshow.lightbox.ui.ImageLightboxActivity"/>
+		<activity ns0:theme="@7F140012" ns0:name="com.verizonmedia.article.ui.view.authwebview.AuthenticatedWebViewActivity" ns0:exported="false" ns0:launchMode="1"/>
+		<meta-data ns0:name="phoenix_client_id" ns0:value="ILokwdqHQAZzHkFZ"/>
+		<meta-data ns0:name="phoenix_oath_idp_top_level_domain" ns0:value="yahoo.com"/>
+		<activity ns0:theme="@7F140404" ns0:name="com.oath.mobile.platform.phoenix.core.PhoenixRedirectUriReceiverActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F140401" ns0:name="com.oath.mobile.platform.phoenix.core.AccountKeyNotificationActivity" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x00000DB0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.AccountKeyActivity" ns0:configChanges="0x00000DB0" ns0:windowSoftInputMode="0x00000002"/>
+		<receiver ns0:name="com.oath.mobile.platform.phoenix.core.NotificationReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.yahoo.android.account.auth.yes"/>
+				<action ns0:name="com.yahoo.android.account.auth.no"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.oath.mobile.platform.phoenix.core.AccountKeyAuthService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<activity ns0:theme="@7F14040E" ns0:name="com.oath.mobile.platform.phoenix.core.QRWebviewActivity" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F140410" ns0:name="com.oath.mobile.platform.phoenix.core.QrScannerActivity"/>
+		<activity ns0:name="com.oath.mobile.platform.phoenix.core.QRInternalLinkActivity"/>
+		<activity ns0:theme="@7F140402" ns0:name="com.oath.mobile.platform.phoenix.core.QRScanInfoActivity"/>
+		<activity ns0:name="com.oath.mobile.platform.phoenix.core.QRExternalLinkActivity" ns0:exported="true" ns0:launchMode="2">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="login.yahoo.com" ns0:path="/qr/session"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140404" ns0:name="com.oath.mobile.platform.phoenix.core.RedirectUriReceiverActivity"/>
+		<activity ns0:theme="@7F140402" ns0:name="com.oath.mobile.platform.phoenix.core.AuthActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140402" ns0:name="com.oath.mobile.platform.phoenix.core.TermsAndPrivacyActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.ManageAccountsActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.AccountPickerActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140402" ns0:name="com.oath.mobile.platform.phoenix.core.ProgressiveRegActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.TrapActivity" ns0:launchMode="1" ns0:configChanges="0x00000DB0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.SecurityActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.AppLockActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.AccountInfoActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.MemberCenterActivity" ns0:configChanges="0x00000DB0"/>
+		<activity ns0:theme="@7F140402" ns0:name="com.oath.mobile.platform.phoenix.core.AuthWebViewActivity" ns0:configChanges="0x00000DB0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.CommChannelActivity" ns0:configChanges="0x00000DB0"/>
+		<activity ns0:theme="@7F140402" ns0:name="com.oath.mobile.platform.phoenix.core.PartnerAuthActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.PartnerAuthWebActivity" ns0:configChanges="0x00000DB0"/>
+		<activity ns0:theme="@7F140402" ns0:name="com.oath.mobile.platform.phoenix.core.MultiFactorAuthActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F140403" ns0:name="com.oath.mobile.platform.phoenix.core.MultiFactorAuthWebActivity" ns0:configChanges="0x00000DB0"/>
+		<service ns0:name="com.oath.mobile.platform.phoenix.core.AuthenticatorService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F170002"/>
+		</service>
+		<provider ns0:name="com.oath.mobile.platform.phoenix.core.PhoenixFileProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.account.file.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F170003"/>
+		</provider>
+		<receiver ns0:name="com.oath.mobile.platform.phoenix.core.AccountDataReceiver" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.yahoo.android.account.cookie"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.oath.mobile.platform.phoenix.core.SmsVerificationService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<meta-data ns0:name="com.google.android.gms.vision.DEPENDENCIES" ns0:value="barcode"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0019"/>
+		<activity ns0:theme="@7F14037E" ns0:name="com.yahoo.mobile.client.android.libs.feedback.UserFeedbackActivity" ns0:launchMode="2" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000020"/>
+		<receiver ns0:name="com.yahoo.android.vemodule.GooglePlayServicesLocationProvider$LocationProviderChangedReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.location.PROVIDERS_CHANGED"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F140490" ns0:name="com.vzmedia.android.videokit.ui.activity.VideoActivity" ns0:launchMode="2" ns0:configChanges="0x00000D80" ns0:resizeableActivity="true" ns0:supportsPictureInPicture="true"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-9476237347597617~4924445386"/>
+		<activity ns0:theme="@7F140011" ns0:label="@7F1308C5" ns0:name="com.oath.mobile.ads.sponsoredmoments.ui.component.PlayableMomentsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F140011" ns0:label="@7F1308C6" ns0:name="com.oath.mobile.ads.sponsoredmoments.ui.component.SMExpandAdActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F14037E" ns0:label="@7F1308C6" ns0:name="com.oath.mobile.ads.sponsoredmoments.ui.component.CollectionPostTapActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F140011" ns0:label="@7F1308C7" ns0:name="com.oath.mobile.ads.sponsoredmoments.promotions.webview.PromotionsWebView" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F140011" ns0:label="@7F1308C8" ns0:name="com.oath.mobile.ads.sponsoredmoments.models.smNativeAd.component.SMNativeAdWebView" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.oath.mobile.ads.sponsoredmoments.video.view.SMFullScreenVideoAdPlayerActivity" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<service ns0:name="com.yahoo.android.yconfig.OptInService" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.yahoo.android.yconfig.optin_message"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.ymadlite.widget.video.view.FullScreenVideoAdPlayerActivity" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.yahoo.mobile.client.android.yvideosdk.ui.presentation.FullscreenVideoActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F14037E" ns0:name="com.yahoo.mobile.client.android.yvideosdk.ui.lightbox.LightboxActivity" ns0:exported="false" ns0:taskAffinity="com.yahoo.mobile.client.android.yvideosdk.pip" ns0:configChanges="0x00000FF0" ns0:resizeableActivity="true" ns0:supportsPictureInPicture="true"/>
+		<activity ns0:theme="@7F14037E" ns0:name="com.yahoo.mobile.client.android.yvideosdk.ui.extension.LightBoxActivity" ns0:exported="false" ns0:launchMode="2" ns0:configChanges="0x00000FF0" ns0:resizeableActivity="true" ns0:supportsPictureInPicture="true"/>
+		<meta-data ns0:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" ns0:value="com.yahoo.mobile.client.android.yvideosdk.cast.CastOptionsProvider"/>
+		<activity ns0:theme="@7F14037E" ns0:name="com.verizondigitalmedia.mobile.client.android.unifiedplayer.ui.UnifiedFullScreenVideoActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F14037E" ns0:name="com.verizondigitalmedia.mobile.client.android.unifiedplayer.ui.annotation.webview.FullScreenWebViewActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="com.oath.mobile.shadowfax.PsaNotificationHandleActivity" ns0:autoRemoveFromRecents="true"/>
+		<receiver ns0:name="com.oath.mobile.shadowfax.NotificationActionReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@7F14040D" ns0:name="com.oath.mobile.privacy.PrivacyLinkActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F1403FF" ns0:name="com.oath.mobile.analytics.nps.OASurveyActivity" ns0:configChanges="0x000004B0"/>
+		<meta-data ns0:name="nps_survey_redirect_path" ns0:value="/mail/nps/survey/done"/>
+		<meta-data ns0:name="nps_survey_redirect_top_level_domain" ns0:value="yahoo.com"/>
+		<activity ns0:theme="@7F14037E" ns0:name="com.oath.mobile.analytics.applinks.NPSRedirectUriReceiverActivity" ns0:exported="true">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="api.login.yahoo.com" ns0:pathPrefix="/mail/nps/survey/done"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F14037E" ns0:name="com.verizondigitalmedia.mobile.client.android.player.ui.FullscreenVideoActivity" ns0:configChanges="0x00000480"/>
+		<service ns0:name="com.verizondigitalmedia.mobile.client.android.player.ui.notification.PlayerViewNotificationService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.cast.framework.media.MediaNotificationService" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.cast.framework.ReconnectionService" ns0:exported="false"/>
+		<activity ns0:theme="@7F140238" ns0:name="spotIm.core.presentation.flow.conversation.ConversationActivity"/>
+		<activity ns0:theme="@7F140238" ns0:name="spotIm.core.presentation.flow.comment.CommentCreationActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F140238" ns0:name="spotIm.core.presentation.flow.notifications.NotificationsActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F140238" ns0:name="spotIm.core.presentation.flow.settings.SettingsActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F140238" ns0:name="spotIm.core.presentation.flow.profile.ProfileActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F140238" ns0:name="spotIm.core.presentation.flow.login.LoginActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.google.android.gms.ads.AD_MANAGER_APP" ns0:value="true"/>
+		<meta-data ns0:name="com.openweb.link" ns0:value="default"/>
+		<provider ns0:name="spotIm.core.OWFileProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.im.spot.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F17000E"/>
+		</provider>
+		<meta-data ns0:name="hostAppId" ns0:value="com.yahoo.mobile.client.android.mail"/>
+		<receiver ns0:name="com.google.android.gms.analytics.AnalyticsReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryFullscreenTakeoverActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryTileAdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryBrowserActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="org.prebid.mobile.rendering.views.browser.AdBrowserActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.ads.OutOfContextTestingActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050049" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F05004B" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F05004A" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="net.openid.appauth.AuthorizationManagementActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:name="net.openid.appauth.RedirectUriReceiverActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="com.oath.mobile.phoenix.placeholder"/>
+			</intent-filter>
+		</activity>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<receiver ns0:name="androidx.profileinstaller.ProfileInstallReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SKIP_FILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F14040B" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="11003"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<service ns0:name="com.flurry.android.marketing.messaging.FCM.FlurryMessageListenerService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.marketing.messaging.notification.NotificationClickedActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:noHistory="true"/>
+		<receiver ns0:name="com.flurry.android.marketing.messaging.notification.NotificationCancelledReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.flurry.android.marketing.messaging.notification.NotificationClickedReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.flurry.android.agent.FlurryContentProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.mail.FlurryContentProvider"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F170010"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

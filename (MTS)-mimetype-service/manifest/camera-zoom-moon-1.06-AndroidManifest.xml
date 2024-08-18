@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="6" ns0:versionName="1.06" ns0:installLocation="0" package="com.moon.zoom">
+	<uses-sdk ns0:minSdkVersion="9" ns0:targetSdkVersion="18"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<permission ns0:name="android.permission.FLASHLIGHT" ns0:protectionLevel="0x00000000" ns0:permissionGroup="android.permission-group.HARDWARE_CONTROLS"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<application ns0:theme="@android:0103000B" ns0:label="@7F080001" ns0:icon="@7F040008" ns0:name="com.moon.zoom.App" ns0:allowBackup="true">
+		<activity ns0:theme="@android:01030011" ns0:name="com.moon.zoom.Splash" ns0:screenOrientation="0"/>
+		<meta-data ns0:name="nazwa.klasy" ns0:value="com.moon.zoom.Splash"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.wisnia.euagreement.EUAgreement">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030007" ns0:label="@7F080001" ns0:name="com.moon.zoom.Zoomer" ns0:screenOrientation="0" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F060000"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F090001" ns0:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+	</application>
+</manifest>

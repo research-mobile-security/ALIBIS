@@ -1,0 +1,335 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "808",
+    "@ns0:versionName": "8.0.8",
+    "@ns0:installLocation": "0",
+    "@ns0:compileSdkVersion": "29",
+    "@ns0:compileSdkVersionCodename": "10",
+    "@package": "com.spritefish.fastburstcameralite",
+    "@platformBuildVersionCode": "29",
+    "@platformBuildVersionName": "10",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "16",
+      "@ns0:targetSdkVersion": "29"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.FLASHLIGHT"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.screen.landscape",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.software.live_wallpaper",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.flash",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F1000AE",
+      "@ns0:label": "@7F0F0043",
+      "@ns0:icon": "@7F0700F2",
+      "@ns0:name": "com.spritefish.fastburstcamera.platform.FastBurstCameraApplication",
+      "@ns0:allowBackup": "true",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "receiver": [
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.receivers.PhotoPickedReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.spritefish.fbc.PICKEDPHOTO"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.receivers.UserPresentReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.USER_PRESENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.receivers.NewPictureReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:process": ":com.spritefish.fastburstcamera.nonrecord",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.spritefish.fastburstcamera.newpicture"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.platform.ReferralCatcher",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+          "@ns0:exported": "false"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:label": "@7F0F0043",
+          "@ns0:name": "com.spritefish.fastburstcamera.wallpaper.FbcWallpaper",
+          "@ns0:permission": "android.permission.BIND_WALLPAPER",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.wallpaper.WallpaperService"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.service.wallpaper",
+            "@ns0:resource": "@7F120000"
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.iid.Registrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "backend:com.google.android.datatransport.cct.CctBackendFactory",
+            "@ns0:value": "cct"
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F1000AF",
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.RecorderActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.CAMERA_BUTTON"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+                },
+                {
+                  "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+                }
+              ],
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.Preferences",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F1000AF",
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.MainOptionsActivity",
+          "@ns0:screenOrientation": "10",
+          "@ns0:immersive": "true"
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.BurstListActivity",
+          "@ns0:process": ":com.spritefish.fastburstcamera.nonrecord"
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.GalleryListActivity",
+          "@ns0:process": ":com.spritefish.fastburstcamera.nonrecord"
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.GifSetupActivity",
+          "@ns0:process": ":com.spritefish.fastburstcamera.nonrecord",
+          "@ns0:configChanges": "0x000000A0"
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.MultiExposureActivity",
+          "@ns0:process": ":com.spritefish.fastburstcamera.nonrecord",
+          "@ns0:configChanges": "0x000000A0"
+        },
+        {
+          "@ns0:theme": "@7F1000AF",
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.ViewImageActivity",
+          "@ns0:process": ":com.spritefish.fastburstcamera.nonrecord"
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.SupportActivity"
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.ReferralDialogActivity"
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.CommonQuestionsActivity"
+        },
+        {
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.FaceDetectActivity"
+        },
+        {
+          "@ns0:theme": "@7F1000AF",
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.GifAnimationActivity",
+          "@ns0:process": ":com.spritefish.fastburstcamera.nonrecord",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F1000AF",
+          "@ns0:name": "com.spritefish.fastburstcamera.activities.CollageActivity",
+          "@ns0:process": ":com.spritefish.fastburstcamera.nonrecord",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:0103000B",
+          "@ns0:label": "@7F0F012E",
+          "@ns0:name": "com.spritefish.fastburstcamera.NagActivity"
+        },
+        {
+          "@ns0:theme": "@7F1000AF",
+          "@ns0:name": "com.spritefish.fastburstcamera.InitActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.crashlytics.ApiKey",
+          "@ns0:value": "6d2ae1071f4ace750c6a90c504937c34b4273b9f"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F090004"
+        },
+        {
+          "@ns0:name": "com.android.dynamic.apk.fused.modules",
+          "@ns0:value": "base"
+        },
+        {
+          "@ns0:name": "com.android.vending.splits",
+          "@ns0:value": "@7F120002"
+        },
+        {
+          "@ns0:name": "com.android.vending.derived.apk.id",
+          "@ns0:value": "6"
+        }
+      ],
+      "provider": {
+        "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+        "@ns0:exported": "false",
+        "@ns0:authorities": "com.spritefish.fastburstcameralite.firebaseinitprovider",
+        "@ns0:initOrder": "100"
+      }
+    }
+  }
+}

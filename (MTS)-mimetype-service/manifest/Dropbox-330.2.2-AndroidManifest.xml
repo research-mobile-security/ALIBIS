@@ -1,0 +1,781 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="33020200" ns0:versionName="330.2.2" ns0:installLocation="1" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.dropbox.android" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="24" ns0:targetSdkVersion="33"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="true" ns0:xlargeScreens="true"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<permission ns0:name="com.dropbox.android.provider.ACCOUNT_INFO_READ" ns0:protectionLevel="0x00000003"/>
+	<permission ns0:name="com.dropbox.android.service.ACCOUNT_INFO_ALARM_TRIGGER" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+	<uses-permission ns0:name="com.dropbox.android.service.ACCOUNT_INFO_ALARM_TRIGGER"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS" maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission-sdk-23 ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<queries>
+		<package ns0:name="com.dropbox.passwords_android"/>
+		<package ns0:name="com.dropbox.paper"/>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SENDTO"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.EDIT"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="application/pdf"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:mimeType="application/pdf"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<permission ns0:name="com.dropbox.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.dropbox.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<application ns0:theme="@7F1503F6" ns0:label="@7F1400A5" ns0:icon="@7F100002" ns0:name="com.dropbox.android.DropboxApplication" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:requiredAccountType="com.dropbox.android.account" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:allowNativeHeapPointerTagging="false">
+		<profileable ns0:shell="true"/>
+		<meta-data ns0:name="com.bugsnag.android.API_KEY" ns0:value="f5e1a657984f4c308d2cb7e8502d13a0"/>
+		<meta-data ns0:name="com.dropbox.bugsnag_proxy.API_KEY" ns0:value="43803930-a208-11ea-85ed-8c85902aecd0"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B001B"/>
+		<meta-data ns0:name="android.content.APP_RESTRICTIONS" ns0:resource="@7F180002"/>
+		<meta-data ns0:name="pspdfkit_license_key" ns0:value="aWV0gMoOmBsQy3ZKHuSi8xcNcPx8JtKmEZtobAyqTfC2ot0HAPbjhAsr9meg2aNnWGLAUzYeKmXLAFevGhQz1d0omkxLjR72a86nlK0M5yCM1WtoUa0ssEoVoTlFKeuiLePTX_7vHq-364S73n6HwYWzQb7WaBozVsfczBhwJDOyDf4cqpZSaBncZwT4YMscEJZVDtyYLfNibmQvx-r8AUrobl6ecthe_itgwb8bB-m7ShQ3-o1jIPkaSZv4THn0mQcVso1zf-41pR2Koy3WKQz8vTMQenOpUUPPeYbEB5L2s98UCxTWtHBi8S1Jt7bdYb95NckpQQwwY64e6R5fqyPX4-e9OyA_uadnG-xHUIf7ojlceoj1_LE6WD5i2Nsyebw38O8HHxYGXmddB39nCZlF8dA7X0k-OcU5jPHwc2fsZuJFyTt7Fanu4ktUXKBZ8fliRCnrOQRrcSt5Hnz4mBUM8eKo9tPt8G4vip26bF-dk8mFabm42J2sHEMxOxWMmtlEJCxardXs8OFQS9Dzx-kWNCqXZ1S_h39Bj8IDfrT7qNnjg7wGgd7k5MzuXFOO8dNQhlMEGSquAwxHt9K27fnhmsI-Nm9R9lH0aMgdwXTk93wfuv0qk2cqXmnvnJR8emjhZIU7KRs4JQ0Gr2rx9lma8lUsXe7QSeFlT5MnJLq09qCIiYVxmhYYJqhZtjTccDUa1B9jsELtbHFqlNn4QA=="/>
+		<meta-data ns0:name="com.google.mlkit.vision.DEPENDENCIES" ns0:value="barcode"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.profileinstaller.ProfileInstallerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<provider ns0:name="com.dropbox.android.provider.SDKProvider" ns0:exported="true" ns0:authorities="com.dropbox.android.provider.SDK"/>
+		<provider ns0:name="com.dropbox.android.provider.FileCacheProvider" ns0:exported="true" ns0:authorities="com.dropbox.android.FileCache">
+			<grant-uri-permission ns0:pathPrefix="/filecache/"/>
+		</provider>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.provider.CameraCapture" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F180004"/>
+		</provider>
+		<provider ns0:name="com.dropbox.android.provider.GlobalExternalProvider" ns0:enabled="true" ns0:exported="false" ns0:authorities="com.dropbox.android.provider.GlobalExternalProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F18000B"/>
+		</provider>
+		<provider ns0:name="com.pspdfkit.document.sharing.DocumentSharingProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.pdf.share" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F18000F"/>
+		</provider>
+		<service ns0:label="Camera Uploads" ns0:name="com.dropbox.common.camera_uploads.ui.interactor.CameraUploadsBackgroundService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.dropbox.android.cloudmessaging.DbxCloudMessagingService" ns0:exported="true" ns0:stopWithTask="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F0802AE"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_color" ns0:resource="@7F06003E"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_channel_id" ns0:value="@7F1401A5"/>
+		<meta-data ns0:name="firebase_messaging_auto_init_enabled" ns0:value="true"/>
+		<meta-data ns0:name="firebase_analytics_collection_enabled" ns0:value="true"/>
+		<service ns0:name="com.dropbox.android.service.AuthenticationService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F180003"/>
+		</service>
+		<service ns0:name="com.dropbox.common.account_maker.interactor.AccountMakerAuthenticationService" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F180000"/>
+		</service>
+		<receiver ns0:name="com.dropbox.android.sharing.sharesheet.ui.ext.ChosenShareTargetBroadcastReceiver" ns0:permission="com.dropbox.android.provider.ACCOUNT_INFO_READ" ns0:exported="true"/>
+		<receiver ns0:label="Dropbox Camera Upload Wakeup Receiver" ns0:icon="@7F100002" ns0:name="com.dropbox.android.camerauploads.CameraUploadsWakeupReceiver" ns0:enabled="@7F050002" ns0:exported="@7F050002">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.dropbox.android.authenticator.AccountTransferReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.auth.START_ACCOUNT_EXPORT"/>
+				<action ns0:name="com.google.android.gms.auth.ACCOUNT_IMPORT_DATA_AVAILABLE"/>
+				<action ns0:name="com.google.android.gms.auth.ACCOUNT_EXPORT_DATA_AVAILABLE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.android.dbapp.verifyemail.VerifyEmailActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.android.dbapp.search.impl.view.SearchActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.common.lock_screen.LockCodeActivity" ns0:exported="false" ns0:configChanges="0x00000010" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.activity.lock.VerifyLockForExternalActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.intent.action.VERIFY_PIN_CODE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15016E" ns0:name="com.dropbox.android.activity.VideoPlayerActivityV2" ns0:exported="false" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.SaveToDropbox" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:label="@7F140FF4" ns0:name="com.dropbox.android.activity.DropboxSendTo" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/*"/>
+				<data ns0:mimeType="audio/*"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="text/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="multipart/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="message/rfc822"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:label="@7F140FF5" ns0:name="com.dropbox.android.activity.DropboxShareWith" ns0:enabled="false" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/*"/>
+				<data ns0:mimeType="audio/*"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="multipart/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.DropboxGetFrom" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.DropboxChooserActivity" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.intent.action.GET_PREVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.intent.action.GET_DIRECT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:label="@7F140609" ns0:icon="@7F08023D" ns0:name="com.dropbox.android.shortcuts.CreateFolderShortcutActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.CREATE_SHORTCUT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:label="@7F1405D7" ns0:icon="@7F080285" ns0:name="com.dropbox.android.shortcuts.CreateFileShortcutActivity" ns0:enabled="false" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.CREATE_SHORTCUT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150172" ns0:name="com.dropbox.android.shortcuts.FileShortcutHandlerActivity" ns0:exported="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F15016A" ns0:name="com.dropbox.android.dauth.DelegatedAuthActivity" ns0:exported="false"/>
+		<activity-alias ns0:label="@7F1400A5" ns0:name="com.dropbox.android.activity.auth.DropboxAuth" ns0:exported="true" ns0:targetActivity="com.dropbox.android.dauth.DelegatedAuthActivity">
+			<intent-filter ns0:label="Dropbox Authentication">
+				<action ns0:name="com.dropbox.android.AUTHENTICATE_V1"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:label="Dropbox Authentication">
+				<action ns0:name="com.dropbox.android.AUTHENTICATE_V2"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F150178" ns0:name="com.dropbox.android.activity.LoginOrNewAcctActivity" ns0:exported="true" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000011">
+			<intent-filter>
+				<action ns0:name="com.dropbox.intent.action.DROPBOX_LOGIN"/>
+				<action ns0:name="com.dropbox.intent.action.DROPBOX_SIGNUP"/>
+				<action ns0:name="com.dropbox.intent.action.LOGIN"/>
+				<action ns0:name="com.dropbox.intent.action.SIGN_UP"/>
+				<action ns0:name="com.dropbox.intent.action.SAMSUNG_LOGIN"/>
+				<action ns0:name="com.dropbox.intent.action.SAMSUNG_SIGN_UP"/>
+				<action ns0:name="com.dropbox.intent.action.STD_OOBE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150178" ns0:name="com.dropbox.android.activity.login.DbxLoginActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.SsoCallbackReceiver" ns0:exported="true" ns0:launchMode="2">
+			<intent-filter ns0:priority="999">
+				<data ns0:scheme="dbx-sso"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.sia.SiaCallbackActivity" ns0:exported="true" ns0:launchMode="2">
+			<intent-filter ns0:priority="999">
+				<data ns0:scheme="dbx-sia"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.sso.SsoWebViewActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.gallery.activity.PhotosGalleryActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.gallery.activity.FileListGalleryActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.gallery.activity.FolderGalleryActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F150179" ns0:name="com.dropbox.android.activity.PhotoEditActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.activity.DevTiburonActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150174" ns0:name="com.dropbox.android.preference.PreferenceActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.activity.AccountsAndSyncSetupActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.action.AUTHENTICATOR_ADD_MULTI_ACCOUNT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15016F" ns0:label="@7F1411D2" ns0:name="com.dropbox.product.android.dbapp.vault.view.VaultUnlockActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150174" ns0:name="com.dropbox.dbapp.camera_uploads.onboarding.view.CameraUploadsSetupActivity" ns0:exported="false" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150176" ns0:label="@7F1410E7" ns0:icon="@7F0805F6" ns0:name="com.dropbox.android.activity.TextEditActivity" ns0:exported="false"/>
+		<provider ns0:name="com.dropbox.android.provider.ZipperedMediaProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.ZipperedMediaProvider"/>
+		<activity ns0:theme="@7F150175" ns0:name="com.dropbox.android.activity.DropboxBrowser" ns0:exported="true" ns0:launchMode="2">
+			<meta-data ns0:name="WindowManagerPreference:FreeformWindowSize" ns0:value="maximize"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:label="Dropbox File Browser">
+				<action ns0:name="com.dropbox.BROWSE"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content" ns0:host="com.dropbox.android.Dropbox" ns0:pathPrefix="/metadata"/>
+			</intent-filter>
+			<intent-filter ns0:label="Dropbox File Browser">
+				<action ns0:name="com.dropbox.BROWSE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="dropbox" ns0:host="launch" ns0:path="/"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F180011"/>
+		</activity>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.sharing.SharedLinkActivity" ns0:exported="true" ns0:relinquishTaskIdentity="true">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="www.dropbox.com"/>
+				<data ns0:host="m.dropbox.com"/>
+				<data ns0:host="dropbox.com"/>
+				<data ns0:pathPrefix="/l/s/"/>
+				<data ns0:pathPrefix="/l/sh/"/>
+				<data ns0:pathPrefix="/l/spri/"/>
+				<data ns0:pathPrefix="/s/"/>
+				<data ns0:pathPrefix="/sh/"/>
+				<data ns0:pathPrefix="/sm/launch_intent_or_fallback_page"/>
+				<data ns0:pathPrefix="/spri/"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:host="1"/>
+				<data ns0:scheme="dbapi-6"/>
+				<data ns0:pathPrefix="/viewLink"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:name="com.dropbox.android.sharing.SharedLinkActivity.ContentLinkAlias" ns0:exported="true" ns0:targetActivity="com.dropbox.android.sharing.SharedLinkActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="www.dropbox.com"/>
+				<data ns0:host="m.dropbox.com"/>
+				<data ns0:host="dropbox.com"/>
+				<data ns0:pathPrefix="/l/scl/"/>
+				<data ns0:pathPrefix="/scl/"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedLinkErrorActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedLinkFolderBrowserActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.ContentLinkFolderInvitationActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.ContentLinkRequestAccessActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.ContentLinkSwitchAccountActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.JoinTeamEmailActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.ContentLinkOverQuotaActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.ContentLinkClaimActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedContentSettingsActivity" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.intent.action.SHOW_LEGACY_LINK_SETTINGS"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedContentMemberListActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedContentUnshareActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedContentResetMembershipActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedContentDeleteActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedContentRemoveActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.gallery_picker.GalleryPickerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.PhotoBatchPickerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016D" ns0:name="com.dropbox.android.activity.LocalFileBrowserActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.ExportToStorageAccessFrameworkActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.ExportToStorageAccessFrameworkMultipleActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.ImportFromStorageAccessFrameworkActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:label="@7F14022B" ns0:icon="@7F080332" ns0:name="com.dropbox.product.dbapp.sharing.ui.CopyLinkToClipboardActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:label="@7F14022B" ns0:icon="@7F080332" ns0:name="com.dropbox.product.dbapp.sharing.ui.NoAuthCopyLinkToClipboardActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.MoveToActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.CopyToActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.referothers.ReferralActivity" ns0:exported="false" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.docpreviews.DocumentPreviewActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.docpreviews.ExternalDocumentPreviewActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.docpreviews.DocumentPreviewForSDKActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.intent.action.SHOW_PREVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150170" ns0:label="@7F140454" ns0:icon="@7F0800E6" ns0:name="com.dropbox.android.docpreviews.DocumentPreviewForAnonymousActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/pdf"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.docpreviews.NoPreviewActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.sharing.GrantAccessDispatchActivity" ns0:exported="true">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="www.dropbox.com"/>
+				<data ns0:host="m.dropbox.com"/>
+				<data ns0:host="dropbox.com"/>
+				<data ns0:pathPrefix="/ga"/>
+				<data ns0:pathPrefix="/l/ga/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.GrantAccessErrorActivity" ns0:exported="false"/>
+		<provider ns0:name="com.dropbox.android.provider.FileSystemProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.LocalFile">
+			<grant-uri-permission ns0:pathPrefix="/"/>
+		</provider>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.payment.PaymentSelectorActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.payment.PaymentUpgradeForSDKActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.intent.action.SHOW_UPGRADE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15017A" ns0:label="@7F140FA7" ns0:name="com.dropbox.android.sharing.SharedContentInviteActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000002">
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.intent.action.SHOW_LEGACY_SHARE_SHEET"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.confidential.CreateAndShareFolderActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedContentMemberActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedContentInviteeActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.NewlyPairedCongratulationsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.product.dbapp.cameracapture.CameraCaptureActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.product.dbapp.updateavatar.UpdateAvatarWithCameraActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.product.dbapp.updateavatar.UpdateAvatarWithGetContentActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.activity.OnboardingSlideshowActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.activity.OnboardingWithVideoActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:label="@7F140313" ns0:name="com.dropbox.android.activity.DisableDownloadNotificationLandingPageActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.fileactivity.comments.FullScreenCommentsActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.DbxMainActivity" ns0:enabled="true" ns0:exported="true" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="www.dropbox.com"/>
+				<data ns0:host="m.dropbox.com"/>
+				<data ns0:host="dropbox.com"/>
+				<data ns0:pathPattern="/l/.*/photos"/>
+				<data ns0:path="/m/photos"/>
+				<data ns0:path="/photos"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.migrate.ForceMigrateActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.migrate.CompanyDropboxMigrationActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.PrintActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150178" ns0:name="com.dropbox.android.activity.utils.LoginTrampoline" ns0:exported="false" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.sharing.PrintFile" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.TextFileDownloadAndLaunchActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.OfficeDocCreationActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.contacts.EnableContactsUploadActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.VoiceActionsActivity" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.activity.QuickUploadActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.SimpleDropboxDirectoryPickerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.DevCUTransitionActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.camerauploads.CUTurnOffNoticeActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.dropbox.android.service.DownloadWatcherReceiver" ns0:enabled="@7F05000B" ns0:exported="@7F05000B">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.dropbox.android.service.WatcherService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.DropboxFileTargetPathPickerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.taskqueue.uploadtaskv2.activity.UploadActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.content.manualuploads.activity.ManualUploadsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.content.recents.activity.RecentsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.content.starred.activity.StarredActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.content.sharedcontent.activity.SharedActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.content.viewed_links.ViewedLinksActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.dev.DevPaymentSuccessActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.applinks.AppLinkDispatcherActivity" ns0:enabled="false" ns0:exported="true">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="www.dropbox.com"/>
+				<data ns0:host="m.dropbox.com"/>
+				<data ns0:host="dropbox.com"/>
+				<data ns0:pathPrefix="/dl"/>
+				<data ns0:pathPrefix="/l/dl/"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="dbx-applink"/>
+				<data ns0:host="dropbox.com"/>
+				<data ns0:pathPrefix="/dl"/>
+				<data ns0:pathPrefix="/l/dl/"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="links.dropbox.com"/>
+				<data ns0:pathPrefix="/a/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.android.loginviaemail.LoginViaEmailActivity" ns0:enabled="true" ns0:exported="true" ns0:launchMode="2">
+			<intent-filter ns0:priority="999" ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="www.dropbox.com"/>
+				<data ns0:host="m.dropbox.com"/>
+				<data ns0:host="dropbox.com"/>
+				<data ns0:pathPrefix="/l/login_via_email/"/>
+				<data ns0:pathPrefix="/login_via_email/launch_app_or_redirect"/>
+			</intent-filter>
+			<intent-filter ns0:priority="999" ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="dropbox" ns0:host="login_via_email" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.preference.ManageSubscriptionActivityV2" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.paywall.ManageDevicesActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.paywall.ManageDevicesLandingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.dbapp.manage_devices.ui.view.ManageDevicesActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.onboarding.CuOnboardingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.preference.cancellationflow.ui.view.HowToCancelSubscriptionActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.onboarding.TfeOnboardingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.onboarding.tfe.TfeOnboardingActivityV2" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.dbapp.desktoplink.DesktopLinkActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.onboarding.SharingOnboardingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.onboarding.DocScannerOnboardingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.onboarding.DesktopLinkOnboardingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.onboarding.OverQuotaOnboardingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.android.dbapp.passwords_education.view.PasswordsEducationActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.OverquotaInterstitialActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.android.dbapp.family.view.FamilyManagementActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.product.android.dbapp.family.view.FamilyDeepLinkActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.product.android.dbapp.family.view.FamilyLoginOrDeepLinkActivity" ns0:exported="true">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="www.dropbox.com"/>
+				<data ns0:host="m.dropbox.com"/>
+				<data ns0:host="dropbox.com"/>
+				<data ns0:pathPrefix="/l/family_join/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.android.dbapp.family.view.sharedquota.FamilyQuotaActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.android.dbapp.filetransfer.ui.FileTransfersCreationActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.android.dbapp.filetransfer.ui.FileTransferFilePickerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.sharing.SharedContentMemberListVioletActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150173" ns0:name="com.dropbox.product.android.dbapp.joinableteams.ui.view.JoinableTeamsOnboardingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.product.android.dbapp.filetransfer.ui.FileTransfersReceiveLoginOrDeepLinkActivity" ns0:exported="true">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="www.dropbox.com"/>
+				<data ns0:host="m.dropbox.com"/>
+				<data ns0:host="dropbox.com"/>
+				<data ns0:pathPrefix="/t/"/>
+				<data ns0:pathPrefix="/transfer/cap_pid_ft:"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.product.android.dbapp.filetransfer.ui.FileTransfersReceiveActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.dbapp.purchase_journey.ui.view.PromptUpsellActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.dbapp.purchase_journey.ui.view.HardcodedUpsellActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.dbapp.overquota_onboarding.ui.OverQuotaOnboardingActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.feature_discovery.ui.view.FeatureDiscoveryActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.product.android.dbapp.age_gate.ui.AgeGateActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.preference.LogoutActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.common.android.analytics_impl.debug.LoggingViewerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.dbapp.manage_subscription.ui.view.cancel.CancelSubscriptionActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.dbapp.manage_subscription.ui.view.manage.ManageSubscriptionActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.dbapp.manage_subscription.ui.view.cancelv2.CancelV2Activity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.dbapp.manage_subscription.ui.view.cancelsurvey.CancelSurveyActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.product.android.dbapp.family.view.FamilyOnboardingActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.content.notifications.activity.NotificationsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150176" ns0:name="com.dropbox.android.activity.OfflineFilesActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.service.BluenoteTrampolineActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:name="com.dropbox.android.notifications.SystemTrayNotificationTrampolineActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016B" ns0:name="com.dropbox.dbapp.android.file_actions.bulk_rename.BulkRenameActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15008F" ns0:name="com.dropbox.product.dbapp.multi_export.ui.MultiFileExportActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1503C8" ns0:name="com.dropbox.product.dbapp.grouped_photo_preview.GroupedPhotoPreviewActivity"/>
+		<activity ns0:theme="@7F15001B" ns0:label="" ns0:name="com.dropbox.dbapp.android.send_to.SendToHostActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15016C" ns0:label="" ns0:name="com.dropbox.dbapp.android.send_to.ExternalFileUploadActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F150415" ns0:name="com.dropbox.preview.v3.PreviewV3Activity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F15008F" ns0:name="com.dropbox.dbapp.android.browser.sharing.GetChildShareLinkActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.dbapp.camera_uploads.status.ui.view.CameraUploadsErrorResolutionActivityV2" ns0:exported="false"/>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.android.sharing.linksettings.ui.LinkSettingsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15008F" ns0:name="com.dropbox.product.dbapp.sharing.ui.ShareLinkActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15008F" ns0:name="com.dropbox.product.dbapp.upload.folder_upload.view.ImportFolderFromSAFActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.dropbox.product.dbapp.desktoplink.QrAlarmReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.dropbox.product.android.dbapp.document_provider.DropboxDocumentProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.dropbox.product.android.dbapp.document_provider.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="android.content.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.dbapp.webview.user.PairingWebViewActivity" ns0:exported="false" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.dbapp.webview.user.GeneralDropboxWebViewActivity" ns0:exported="false" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.common.account_selection.view.AccountSelectionActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15001B" ns0:name="com.dropbox.product.dbapp.migrate.deviceStorage.ExternalStorageMigrationActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F1501FA" ns0:name="com.dropbox.product.android.dbapp.filerequest.view.FileRequestsHalfSheetActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F1501FA" ns0:name="com.dropbox.product.android.dbapp.filerequest.view.FileRequestsSendActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.common.auth.login.LoginActivity" ns0:exported="true" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1503F6" ns0:name="com.dropbox.dbapp.android.client_deprecation.internal.alpha.AlphaBuildUpdateActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1503F6" ns0:name="com.dropbox.dbapp.android.client_deprecation.internal.forceupgrade.ClientDeprecationUpdateActivity" ns0:exported="false" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F1501D2" ns0:name="com.dropbox.core.docscanner_new.activity.DocumentScannerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15001B" ns0:name="com.dropbox.core.docscanner_new.activity.PageCaptureActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.core.docscanner_new.activity.DocumentEditorActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15008E" ns0:name="com.dropbox.core.docscanner_new.activity.PageEditorActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15008E" ns0:name="com.dropbox.core.docscanner_new.activity.DocumentArrangerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.core.docscanner_new.activity.DocumentSaverActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000004"/>
+		<activity ns0:name="com.dropbox.common.android.feedback.view.v2.FeedbackActivity" ns0:exported="false">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.dropbox.common.android.feedback.view.v1.AuthFeedbackActivity" ns0:exported="false">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.dropbox.common.android.feedback.view.v1.NoAuthFeedbackActivity" ns0:exported="false">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.dropbox.common.webview.basic.BasicWebViewActivity" ns0:exported="false">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.dbapp.webview.core.DropboxWebViewActivity" ns0:exported="false" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F15008D" ns0:name="com.dropbox.dbapp.folder.picker.PhotoFolderPickerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1503B2" ns0:name="com.dropbox.common.skeleton.thirdpartyauth.ThirdPartyAuthActivity" ns0:exported="false"/>
+		<activity ns0:name="com.pspdfkit.document.printing.PrintActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480"/>
+		<provider ns0:name="com.pspdfkit.PSPDFKitInitializationProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.com.pspdfkit.PSPDFKitInitializationProvider"/>
+		<provider ns0:name="com.pspdfkit.media.AssetsContentProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.pdf.assets"/>
+		<activity ns0:name="com.airbnb.mvrx.launcher.MavericksLauncherActivity" ns0:exported="true"/>
+		<activity ns0:name="com.airbnb.mvrx.launcher.MavericksLauncherMockActivity"/>
+		<activity ns0:name="com.airbnb.mvrx.launcher.MavericksLauncherTestMocksActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<service ns0:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.mlkit.common.internal.MlKitInitProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.mlkitinitprovider" ns0:initOrder="99"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<service ns0:name="androidx.camera.core.impl.MetadataHolderService" ns0:enabled="false" ns0:exported="false">
+			<meta-data ns0:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" ns0:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+		</service>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F05000C" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F05000E" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F05000D" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F05000C" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<activity ns0:name="androidx.compose.ui.tooling.PreviewActivity" ns0:exported="true"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.dropbox.android.com.squareup.picasso"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<receiver ns0:name="androidx.profileinstaller.ProfileInstallReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SKIP_FILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<provider ns0:name="leakcanary.internal.MainProcessAppWatcherInstaller" ns0:enabled="@7F050010" ns0:exported="false" ns0:authorities="com.dropbox.android.leakcanary-installer"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.jakewharton.processphoenix.ProcessPhoenix" ns0:exported="false" ns0:process=":phoenix"/>
+		<activity ns0:theme="@7F150414" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<meta-data ns0:name="com.bugsnag.android.BUILD_UUID" ns0:value="701581d6-8ad4-462e-b416-05b674da676f"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F180012"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="3011" ns0:versionName="3.0.11(20200302_134927)" ns0:compileSdkVersion="28" ns0:compileSdkVersionCodename="9" package="com.itel.filemanager" platformBuildVersionCode="3011" platformBuildVersionName="3.0.11(20200302_134927)">
+	<uses-sdk ns0:minSdkVersion="24" ns0:targetSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.DISABLE_KEYGUARD"/>
+	<uses-permission ns0:name="android.permission.NFC"/>
+	<uses-permission ns0:name="android.permission.HOTKNOT"/>
+	<uses-permission ns0:name="android.permission.CHANGE_CONFIGURATION"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.GET_APP_GRANTED_URI_PERMISSIONS"/>
+	<uses-permission ns0:name="android.permission.FORCE_PERSISTABLE_URI_PERMISSIONS"/>
+	<uses-permission ns0:name="com.itel.statistics.provider"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="com.transsion.mango.APP_INSTALLER"/>
+	<application ns0:theme="@7F0F00A4" ns0:label="@7F0E002A" ns0:icon="@7F0C0001" ns0:name="com.itel.filemanager.app.FmApp" ns0:allowBackup="true" ns0:supportsRtl="true" ns0:resizeableActivity="true" ns0:networkSecurityConfig="@7F110001" ns0:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-8032334577503613~6685247914"/>
+		<activity ns0:name="com.itel.filemanager.activity.MainActivity" ns0:configChanges="0x000005A3">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.os.storage.action.MANAGE_STORAGE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.itel.filemanager.action.MANAGE_REMOVABLE_STORAGE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0F0127" ns0:name="com.itel.filemanager.activity.PrivacyPolicyNoticeActivity" ns0:exported="true" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0F0127" ns0:name="com.itel.filemanager.activity.PrivacyPolicyActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.itel.filemanager.activity.SearchActivity" ns0:launchMode="1" ns0:configChanges="0x000005A3">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F110003"/>
+		</activity>
+		<activity ns0:theme="@android:010300F0" ns0:label="@7F0E0101" ns0:name="com.itel.filemanager.activity.SettingsActivity" ns0:launchMode="1"/>
+		<meta-data ns0:name="android.app.default_searchable" ns0:value=".SearchActivity"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.itel.filemanager.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F110000"/>
+		</provider>
+		<provider ns0:name="com.itel.filemanager.database.FmProvider" ns0:exported="false" ns0:authorities="com.itel.filemanager.fmprovider"/>
+		<receiver ns0:name="com.itel.filemanager.app.MountReceiver">
+			<intent-filter ns0:priority="100">
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_SHARED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_REMOVED"/>
+				<action ns0:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+				<action ns0:name="android.intent.action.MEDIA_EJECT"/>
+				<action ns0:name="android.intent.action.MEDIA_NOFS"/>
+				<action ns0:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+				<action ns0:name="android.intent.action.MEDIA_CHECKING"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.os.storage.action.VOLUME_STATE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.itel.filemanager.app.FileOperationService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.itel.filemanager.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F090004"/>
+		<service ns0:name="com.transsion.advertisement.service.UploadStatisticService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="true"/>
+		<activity ns0:name="com.transsion.advertisement.view.WebActivity"/>
+		<receiver ns0:name="com.transsion.advertisement.component.InstallBroadcastReceiver"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:name="com.zero.adx.ui.activity.TAdActivity" ns0:launchMode="2"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<service ns0:name="com.zero.tan.service.SplashAdLoadServer"/>
+		<service ns0:name="com.zero.adx.data.SplashRequestService"/>
+		<activity ns0:name="com.zero.ta.common.activity.TAdActivity" ns0:launchMode="2"/>
+		<activity ns0:name="com.zero.ta.common.activity.TAdExposureActivity" ns0:launchMode="2"/>
+	</application>
+</manifest>

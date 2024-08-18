@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns0="http://schemas.android.com/apk/res/android"><intent-filter>
+				<action ns0:name="android.intent.action.MAIN" />
+				<category ns0:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+				<data ns0:mimeType="image/*" />
+				<data ns0:mimeType="video/*" />
+				<data ns0:mimeType="vnd.android.cursor.dir/image" />
+				<data ns0:mimeType="vnd.android.cursor.dir/video" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT" />
+				<category ns0:name="android.intent.category.OPENABLE" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+				<data ns0:mimeType="image/*" />
+				<data ns0:mimeType="video/*" />
+				<data ns0:mimeType="vnd.android.cursor.dir/image" />
+				<data ns0:mimeType="vnd.android.cursor.dir/video" />
+			</intent-filter>
+		<intent-filter>
+				<data ns0:scheme="content" />
+				<data ns0:scheme="file" />
+				<action ns0:name="com.android.camera.action.REVIEW" />
+				<action ns0:name="android.intent.action.VIEW" />
+				<category ns0:name="android.intent.category.BROWSABLE" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+				<data ns0:mimeType="image/*" />
+				<data ns0:mimeType="video/*" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED" />
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY" />
+				<action ns0:name="android.intent.action.BATTERY_LOW" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW" />
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED" />
+				<action ns0:name="android.intent.action.TIME_SET" />
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+			</intent-filter>
+		</root>

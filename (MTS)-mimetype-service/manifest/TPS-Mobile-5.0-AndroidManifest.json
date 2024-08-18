@@ -1,0 +1,208 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "68",
+    "@ns0:versionName": "5.0",
+    "@ns0:compileSdkVersion": "31",
+    "@ns0:compileSdkVersionCodename": "12",
+    "@package": "com.tpsmobile.tpsmobile",
+    "@platformBuildVersionCode": "31",
+    "@platformBuildVersionName": "12",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "23",
+      "@ns0:targetSdkVersion": "31"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_MEDIA_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F110008",
+      "@ns0:label": "@7F10001B",
+      "@ns0:icon": "@7F0E0000",
+      "@ns0:allowBackup": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "activity": [
+        {
+          "@ns0:name": "com.prairieit.thephotostick.pages.LoadingActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.prairieit.thephotostick.pages.restore.RestoreProcessActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.prairieit.thephotostick.pages.view.DeleteProgressActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.prairieit.thephotostick.pages.backup.BackupProcessActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F11000B",
+          "@ns0:label": "@7F100087",
+          "@ns0:name": "com.prairieit.thephotostick.pages.ActivitySelect",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F11000A",
+          "@ns0:name": "com.prairieit.thephotostick.pages.MainActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1102E8",
+          "@ns0:label": "@7F10001B",
+          "@ns0:name": "com.facebook.FacebookActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000005B0"
+        },
+        {
+          "@ns0:name": "com.facebook.CustomTabActivity",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "@7F100042"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "fbconnect",
+                "@ns0:host": "cct.com.tpsmobile.tpsmobile"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.facebook.CustomTabMainActivity"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.facebook.sdk.ApplicationId",
+          "@ns0:value": "@7F100041"
+        },
+        {
+          "@ns0:name": "com.android.dynamic.apk.fused.modules",
+          "@ns0:value": "base"
+        },
+        {
+          "@ns0:name": "com.android.stamp.source",
+          "@ns0:value": "https://play.google.com/store"
+        },
+        {
+          "@ns0:name": "com.android.stamp.type",
+          "@ns0:value": "STAMP_TYPE_STANDALONE_APK"
+        },
+        {
+          "@ns0:name": "com.android.vending.splits",
+          "@ns0:value": "@7F130005"
+        },
+        {
+          "@ns0:name": "com.android.vending.derived.apk.id",
+          "@ns0:value": "1"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.facebook.FacebookContentProvider",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.facebook.app.FacebookContentProvider2948872228680256"
+        },
+        {
+          "@ns0:name": "com.facebook.internal.FacebookInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.tpsmobile.tpsmobile.FacebookInitProvider"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.prairieit.thephotostick.services.BackupService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:stopWithTask": "true"
+        },
+        {
+          "@ns0:name": "com.prairieit.thephotostick.services.DeleteService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:stopWithTask": "true"
+        },
+        {
+          "@ns0:name": "com.prairieit.thephotostick.services.RestoreService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:stopWithTask": "true"
+        }
+      ],
+      "receiver": {
+        "@ns0:name": "com.facebook.CurrentAccessTokenExpirationBroadcastReceiver",
+        "@ns0:exported": "false",
+        "intent-filter": {
+          "action": {
+            "@ns0:name": "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+          }
+        }
+      }
+    }
+  }
+}

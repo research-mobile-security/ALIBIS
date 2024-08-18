@@ -1,0 +1,300 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="12250734" ns0:versionName="1.9.0.473991075 release" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="UpsideDownCake" package="com.google.android.apps.photosgo" platformBuildVersionCode="33" platformBuildVersionName="UpsideDownCake">
+	<uses-sdk ns0:minSdkVersion="26" ns0:targetSdkVersion="33"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="android.permission.GET_PACKAGE_SIZE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<queries>
+		<package ns0:name="com.google.android.apps.photos"/>
+		<intent>
+			<action ns0:name="com.google.android.apps.photosgo.OEM_PROVIDER"/>
+		</intent>
+		<provider ns0:authorities="com.sprd.android.providers"/>
+		<intent>
+			<action ns0:name="android.intent.action.EDIT"/>
+			<data ns0:mimeType="image/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.EDIT"/>
+			<data ns0:mimeType="video/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.ATTACH_DATA"/>
+			<data ns0:mimeType="image/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="image/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="video/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+			<data ns0:mimeType="image/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="image/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="video/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+			<data ns0:mimeType="image/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.service.wallpaper.CROP_AND_SET_WALLPAPER"/>
+			<data ns0:mimeType="image/*"/>
+		</intent>
+	</queries>
+	<application ns0:theme="@7F140007" ns0:label="@7F130021" ns0:icon="@7F100000" ns0:name="com.google.android.apps.photosgo.PhotosGo_Application" ns0:taskAffinity="" ns0:allowBackup="false" ns0:supportsRtl="true" ns0:usesCleartextTraffic="false" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.gms.clearcut_client" ns0:resource="@7F160003"/>
+		<service ns0:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" ns0:enabled="false" ns0:exported="false" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+			</intent-filter>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.gms.clearcut_client" ns0:resource="@7F120004"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" ns0:resource="@7F120005"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.photosgo" ns0:resource="@7F120003"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.performance.primes" ns0:resource="@7F120006"/>
+			<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" ns0:resource="@7F120007"/>
+		</service>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" ns0:resource="@7F160004"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.photosgo" ns0:resource="@7F160002"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" ns0:resource="@7F160005"/>
+		<receiver ns0:name="com.google.android.apps.photosgo.appevents.locale.LocaleChangeListener_Receiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.LOCALE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F140007" ns0:name="com.google.android.apps.photosgo.assassin.AssassinActivity" ns0:exported="false" ns0:launchMode="0" ns0:configChanges="0x00000D80"/>
+		<activity ns0:theme="@7F140009" ns0:name="com.google.android.apps.photosgo.editor.ExternalEditorActivity" ns0:exported="true" ns0:launchMode="0" ns0:configChanges="0x00000D80">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="action_nextgen_edit"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.CROP"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.ALTERNATIVE"/>
+				<category ns0:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.TRIM"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.google.android.apps.photosgo.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F160006"/>
+		</provider>
+		<activity ns0:theme="@7F14000D" ns0:label="@7F130124" ns0:name="com.google.android.apps.photosgo.home.HomeActivity" ns0:exported="true" ns0:launchMode="0" ns0:configChanges="0x00000D80">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+				<category ns0:name="android.intent.category.INFO"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.photosgo.home.START_JOBS"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.google.android.apps.photosgo.notification.receiver.NotificationDismissReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.photosgo.notification.NOTIFICATION_CANCELLED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.android.apps.photosgo.notification.receiver.NotificationStateChangedReceiver_Receiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+				<action ns0:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+				<action ns0:name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F14000A" ns0:name="com.google.android.apps.photosgo.oneup.ExternalOneUpActivity" ns0:exported="true" ns0:launchMode="0" ns0:configChanges="0x00000D80">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<action ns0:name="android.provider.action.REVIEW"/>
+				<action ns0:name="android.provider.action.REVIEW_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme=""/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="rtsp"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140007" ns0:name="com.google.android.apps.photosgo.oneup.secure.unlock.UnlockActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F14000B" ns0:name="com.google.android.apps.photosgo.picker.ExternalPickerActivity" ns0:exported="true" ns0:launchMode="0" ns0:configChanges="0x00000D80">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140007" ns0:label="@7F130209" ns0:name="com.google.android.apps.photosgo.settings.SettingsActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.apps.photosgo.sharing.database.StockShareReceiver_Receiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.photosgo.sharing.STOCK_SHARE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.android.apps.photosgo.storage.VolumeStateListener_Receiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F14000C" ns0:name="com.google.android.apps.photosgo.wallpaper.SetWallpaperActivity" ns0:exported="true" ns0:launchMode="0" ns0:configChanges="0x00000DA0">
+			<intent-filter ns0:label="@7F13020A">
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F14000C" ns0:name="com.google.android.apps.photosgo.wallpaper.CropAndSetWallpaperActivity" ns0:exported="false" ns0:launchMode="0" ns0:configChanges="0x00000DA0">
+			<intent-filter ns0:label="@7F13020A">
+				<action ns0:name="android.service.wallpaper.CROP_AND_SET_WALLPAPER"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0012"/>
+		<service ns0:name="com.google.android.libraries.directboot.DirectBootHelperService" ns0:enabled="false" ns0:exported="false" ns0:process="" ns0:directBootAware="false"/>
+		<receiver ns0:name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" ns0:exported="false" ns0:process=":primes_lifeboat"/>
+		<receiver ns0:name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" ns0:exported="true" ns0:process="">
+			<intent-filter>
+				<action ns0:name="android.accounts.action.ACCOUNT_REMOVED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" ns0:permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" ns0:exported="true" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.phenotype.UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.libraries.social.async.BackgroundTaskService" ns0:exported="false"/>
+		<service ns0:name="com.google.android.libraries.social.async.BackgroundTaskJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<activity ns0:theme="@7F1402E7" ns0:label="@7F1301E8" ns0:name="com.google.android.libraries.social.licenses.LicenseMenuActivity" ns0:exported="true"/>
+		<activity ns0:theme="@7F1402E7" ns0:label="@7F1301E8" ns0:name="com.google.android.libraries.social.licenses.LicenseActivity" ns0:exported="false"/>
+		<service ns0:name="com.google.apps.tiktok.concurrent.AndroidFuturesService" ns0:exported="false"/>
+		<service ns0:name="com.google.apps.tiktok.concurrent.InternalForegroundService" ns0:exported="false"/>
+		<receiver ns0:name="com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.phenotype.UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.build.data.PropertiesServiceHolder" ns0:enabled="false" ns0:exported="false" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.build.data.Properties"/>
+			</intent-filter>
+			<meta-data ns0:name="com.google.android.build.data.properties" ns0:resource="@7F120000"/>
+		</service>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F160007"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

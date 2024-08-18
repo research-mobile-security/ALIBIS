@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="5" ns0:versionName="1.0.1" package="com.selfie.studio">
+	<uses-sdk ns0:minSdkVersion="9" ns0:targetSdkVersion="17"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.CALL_PHONE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<application ns0:theme="@7F0C007F" ns0:label="@7F0A0075" ns0:icon="@7F0200BA">
+		<activity ns0:theme="@android:01030007" ns0:name="com.selfie.studio.splash.SplashActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.CHOOSER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030007" ns0:name="com.selfie.studio.splash.DimActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.selfie.studio.main.CameraActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.selfie.studio.edit.EditActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.selfie.studio.setting.SettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.selfie.studio.setting.CreditActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.selfie.studio.setting.VersionActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.selfie.studio.setting.UsefulTipsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0C007C" ns0:name="com.aviary.android.feather.FeatherActivity" ns0:screenOrientation="-1" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true" ns0:largeHeap="true"/>
+		<receiver ns0:name="com.aviary.android.feather.library.receivers.AviarySystemReceiver" ns0:exported="true" ns0:process=":feather_system_receiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_ADDED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REMOVED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REPLACED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.aviary.android.feather.library.providers.FeatherContentProvider" ns0:exported="false" ns0:process=":standalone" ns0:authorities="com.selfie.studio"/>
+		<activity ns0:name="com.google.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="net.daum.adam.publisher.impl.AdInterstitialActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@android:01030010" ns0:label="Ad Activity" ns0:name="com.skplanet.tad.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030006" ns0:label="Ad Video Player" ns0:name="com.skplanet.tad.AdVideoPlayer" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.nbpcorp.mobilead.sdk.MobileAdBrowserActivity"/>
+		<activity ns0:theme="@android:01030006" ns0:name="kr.co.withmob.withmobsdk.WithMobView">
+			<meta-data ns0:name="withmob_uid" ns0:value="EmPywC6iUjkcubPbsEREk5"/>
+		</activity>
+	</application>
+</manifest>

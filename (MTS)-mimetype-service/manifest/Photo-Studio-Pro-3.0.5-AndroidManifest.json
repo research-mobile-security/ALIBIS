@@ -1,0 +1,134 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "79",
+    "@ns0:versionName": "3.0.5",
+    "@package": "com.aviary.photoeditor",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "14",
+      "@ns0:targetSdkVersion": "17"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      }
+    ],
+    "uses-feature": {
+      "@ns0:name": "android.hardware.camera"
+    },
+    "application": {
+      "@ns0:label": "@7F0B00AB",
+      "@ns0:icon": "@7F02009D",
+      "@ns0:name": ".MainApplication",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "activity": [
+        {
+          "@ns0:theme": "@android:010300F0",
+          "@ns0:label": "@7F0B00AB",
+          "@ns0:name": ".MainActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.CHOOSER"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F0C0052",
+          "@ns0:name": "com.aviary.android.feather.FeatherActivity",
+          "@ns0:process": ":standalone",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:hardwareAccelerated": "true",
+          "@ns0:largeHeap": "true"
+        },
+        {
+          "@ns0:theme": "@7F0C0053",
+          "@ns0:label": "@7F0B00B4",
+          "@ns0:name": ".ImageInfoActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1",
+          "@ns0:noHistory": "true"
+        }
+      ],
+      "receiver": {
+        "@ns0:name": "com.aviary.android.feather.library.receivers.AviarySystemReceiver",
+        "@ns0:exported": "true",
+        "@ns0:process": ":aviary_sample_system_receiver",
+        "intent-filter": {
+          "action": [
+            {
+              "@ns0:name": "android.intent.action.PACKAGE_ADDED"
+            },
+            {
+              "@ns0:name": "android.intent.action.PACKAGE_REMOVED"
+            },
+            {
+              "@ns0:name": "android.intent.action.PACKAGE_REPLACED"
+            }
+          ],
+          "data": {
+            "@ns0:scheme": "package"
+          }
+        }
+      },
+      "provider": {
+        "@ns0:name": "com.aviary.android.feather.library.providers.FeatherContentProvider",
+        "@ns0:exported": "false",
+        "@ns0:process": ":standalone",
+        "@ns0:authorities": "com.aviary.photoeditor.HiResProvider"
+      }
+    }
+  }
+}

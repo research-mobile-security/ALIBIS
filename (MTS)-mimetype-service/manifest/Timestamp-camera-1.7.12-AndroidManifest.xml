@@ -1,0 +1,317 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="52" ns0:versionName="1.7.12" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.timestampcamera.autodatetimestamp" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="33"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.screen.portrait"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-feature ns0:name="android.hardware.microphone"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT" ns0:permissionGroup="android.permission-group.HARDWARE_CONTROLS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-feature ns0:name="android.hardware.bluetooth_le" ns0:required="false"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.MAIN"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.GET_CONTENT"/>
+			<category ns0:name="android.intent.category.OPENABLE"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.android.vending.billing.InAppBillingService.BIND"/>
+		</intent>
+	</queries>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<permission ns0:name="com.timestampcamera.autodatetimestamp.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.timestampcamera.autodatetimestamp.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F130009" ns0:label="@7F12004E" ns0:icon="@7F0F0002" ns0:name="com.timestampcamera.autodatetimestamp.TimestampApplication" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:networkSecurityConfig="@7F150002" ns0:roundIcon="@7F0F0002" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:preserveLegacyExternalStorage="true">
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.CropImageActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.FileNameActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.PermissionActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.TimeZoneActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.SelectLogoActivityNew" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:theme="@7F13000B" ns0:name="com.timestampcamera.autodatetimestamp.activity.PreviewscreenActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.SpeedSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.AltitudeFormatActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.AltitudeSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.TagFromatActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.TagSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.SequenceFormatActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.SequenceSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.LogoSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.LocationSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.SignatureSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.DateTimeActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.TempletSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.LocationFormatActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:windowSoftInputMode="0x00000020"/>
+		<service ns0:name="com.timestampcamera.autodatetimestamp.camera_notifications.AppCheckService" ns0:enabled="true" ns0:exported="false" ns0:stopWithTask="false"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F120153"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="@7F120386"/>
+		<meta-data ns0:name="com.onesignal.NotificationServiceExtension" ns0:value="com.timestampcamera.autodatetimestamp.onesignal_notification.NotificationServiceExtension"/>
+		<receiver ns0:name="com.timestampcamera.autodatetimestamp.camera_notifications.AlarmReceiver"/>
+		<receiver ns0:name="com.timestampcamera.autodatetimestamp.camera_notifications.AutoStart" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.timestampcamera.autodatetimestamp.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150003"/>
+		</provider>
+		<provider ns0:name="com.facebook.FacebookContentProvider" ns0:exported="true" ns0:authorities="com.timestampcamera.autodatetimestamp"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.Splash_Screen" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x00000200">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13000B" ns0:label="@7F12004E" ns0:name="com.timestampcamera.autodatetimestamp.activity.CameraMainActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x000006A0" ns0:hardwareAccelerated="true">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.StampCollection" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.GpsMapMyCollectionSingle" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.SendErrorActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.DateFormatActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.AddSignatureActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.FontSizeActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.PositionActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.FontStyleActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.MoreAppsActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.ColorActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.PrivacyPolicyActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.InAppBillingActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.LogoTransparencyActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.LogoSizeActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.LanguageSelectionActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<activity ns0:name="com.timestampcamera.autodatetimestamp.activity.FolderActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200"/>
+		<meta-data ns0:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" ns0:value="true"/>
+		<provider ns0:name="com.canhub.cropper.CropFileProvider" ns0:exported="false" ns0:authorities="com.timestampcamera.autodatetimestamp.cropper.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150001"/>
+		</provider>
+		<activity ns0:name="com.canhub.cropper.CropImageActivity" ns0:exported="true"/>
+		<receiver ns0:name="com.onesignal.FCMBroadcastReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter ns0:priority="999">
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.timestampcamera.autodatetimestamp"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.onesignal.HmsMessageServiceOneSignal" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.huawei.push.action.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.onesignal.NotificationOpenedActivityHMS" ns0:exported="true" ns0:noHistory="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.onesignal.FCMIntentService" ns0:exported="false"/>
+		<service ns0:name="com.onesignal.FCMIntentJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.onesignal.FocusDelaySyncService" ns0:exported="false" ns0:stopWithTask="true"/>
+		<service ns0:name="com.onesignal.FocusDelaySyncJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.onesignal.SyncService" ns0:exported="false" ns0:stopWithTask="true"/>
+		<service ns0:name="com.onesignal.SyncJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.onesignal.PermissionsActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.onesignal.NotificationDismissReceiver" ns0:exported="true"/>
+		<receiver ns0:name="com.onesignal.BootUpReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.onesignal.UpgradeReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.onesignal.NotificationOpenedReceiver" ns0:exported="true" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:theme="@7F130468" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.timestampcamera.autodatetimestamp"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.timestampcamera.autodatetimestamp.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.timestampcamera.autodatetimestamp.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.ads.OutOfContextTestingActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0008"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.timestampcamera.autodatetimestamp.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.timestampcamera.autodatetimestamp.com.squareup.picasso"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F1302A6" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="11003"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.timestampcamera.autodatetimestamp.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F15000B"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

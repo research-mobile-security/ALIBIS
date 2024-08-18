@@ -1,0 +1,734 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "400",
+    "@ns0:versionName": "3.2.62",
+    "@ns0:compileSdkVersion": "31",
+    "@ns0:compileSdkVersionCodename": "12",
+    "@package": "com.feiyutech.gimbalCamera",
+    "@platformBuildVersionCode": "31",
+    "@platformBuildVersionName": "12",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "21",
+      "@ns0:targetSdkVersion": "31"
+    },
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.bluetooth_le",
+        "@ns0:required": "true"
+      },
+      {
+        "@ns0:name": "android.hardware.camera"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus"
+      }
+    ],
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.BLUETOOTH"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_ADMIN"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_SCAN"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_CONNECT"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.FLASHLIGHT"
+      },
+      {
+        "@ns0:name": "android.permission.BROADCAST_STICKY"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.MODIFY_AUDIO_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SETTINGS"
+      },
+      {
+        "@ns0:name": "com.asus.msa.SupplementaryDID.ACCESS"
+      },
+      {
+        "@ns0:name": "freemme.permission.msa"
+      }
+    ],
+    "queries": {
+      "package": [
+        {
+          "@ns0:name": "com.tencent.mm"
+        },
+        {
+          "@ns0:name": "com.eg.android.AlipayGphone"
+        },
+        {
+          "@ns0:name": "com.tencent.mobileqq"
+        },
+        {
+          "@ns0:name": "com.smile.gifmaker"
+        },
+        {
+          "@ns0:name": "com.ss.android.ugc.aweme"
+        },
+        {
+          "@ns0:name": "com.google.android.gms"
+        },
+        {
+          "@ns0:name": "com.android.vending"
+        },
+        {
+          "@ns0:name": "com.android.creator"
+        },
+        {
+          "@ns0:name": "com.mdid.msa"
+        },
+        {
+          "@ns0:name": "com.samsung.android.deviceidservice"
+        },
+        {
+          "@ns0:name": "com.coolpad.deviceidsupport"
+        },
+        {
+          "@ns0:name": "com.heytap.openid"
+        },
+        {
+          "@ns0:name": "com.huawei.hwid"
+        },
+        {
+          "@ns0:name": "com.huawei.hwid.tv"
+        },
+        {
+          "@ns0:name": "com.huawei.hms"
+        },
+        {
+          "@ns0:name": "com.asus.msa.SupplementaryDID"
+        },
+        {
+          "@ns0:name": "com.zui.deviceidservice"
+        }
+      ]
+    },
+    "uses-permission-sdk-23": {
+      "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+    },
+    "application": {
+      "@ns0:theme": "@7F12000E",
+      "@ns0:label": "@7F11002E",
+      "@ns0:icon": "@7F0E0024",
+      "@ns0:name": "com.feiyutech.gimbalCamera.MyApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "activity": [
+        {
+          "@ns0:theme": "@7F120126",
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.SplashActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x000004F0",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              {
+                "@ns0:name": "android.intent.action.VIEW"
+              }
+            ],
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F120126",
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.AppTamperedActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.HomeActivity",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.TutorialActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.ActivityCenterActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.LoginActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.SettingsActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.environment.SysInfoActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.PrivacyActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.PdfViewActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.WebViewActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.AboutActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.CaptureSkillActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.FeedbackActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.MyFeedbackActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.InstructionTutorialActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.internalfunc.InternalFuncActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:theme": "@7F120011",
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.internalfunc.UpdateLogListActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:theme": "@7F120011",
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.internalfunc.UpdateLogDetailActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.internalfunc.ServerInterfaceTestActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.internalfunc.AddWorkMarkActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.MultiLanguageActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.ServiceOutletsActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.ui.activity.HelpAndFeedback",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:theme": "@7F12011B",
+          "@ns0:name": "com.feiyutech.android.camera.CameraActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "7",
+          "@ns0:configChanges": "0x000004F0",
+          "meta-data": {
+            "@ns0:name": "android.notch_support",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:name": "com.feiyutech.android.camera.CameraAdvancedSettingsActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.android.camera.CameraMoreSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F12013E",
+          "@ns0:name": "com.feiyutech.android.camera.CameraTrackGuideActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.android.camera.RearCameraSettingsActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.ActionsOtaActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.RemoteControlActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.GimbalAdvanceSettingsActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:theme": "@7F120126",
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.RemoteJoystickActivity",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.AutoRotationAkActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.AutoRotationActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.FollowSettingsActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.HorizontalCalibrationActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.MotorStrengthActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.JoystickSettingsActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.SceneSettingsActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.FirmwareUpdateActivity",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.FirmwareUpdateEntranceActivity",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.trigger.TriggerKeyConfigActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.trigger.TriggerKey2SingleClickActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.trigger.TriggerKeySingleClickActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.trigger.TriggerKey2LongPressActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.trigger.TriggerKeyLongPressActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.FollowModeActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.dialfun.DialFunctionActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.ModeKeyConfigActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.ModeKeyItemConfigActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.DefaultModePowerOnActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.GimbalModePowerOnActivity",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.SomatosensoryActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbal.ui.activity.advancesettings.markab.MarkABCActivity",
+          "@ns0:screenOrientation": "4",
+          "@ns0:configChanges": "0x000004F0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViMusicActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViMediaSettingActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViSmartMediaActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViMediaResolutionActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViMediaClipActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViSelectLocalFileActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViMainActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViSelectClipActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViSelectVideoActivity"
+        },
+        {
+          "@ns0:theme": "@7F120126",
+          "@ns0:name": "com.feiyutech.edit.ui.activity.ViSwitchAlbumActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.mob.id.MobIDActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.mob.id.app_30000"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.mob.id.MobIDSYActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.mob.id.app_lk"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.mob.guard.MobTranPullUpActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.mob.open.app_20000"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.mob.guard.MobTranPullLockActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.mob.open.app_lk"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "cn.wandersnail.fileselector.SelectFileActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.kwai.opensdk.sdk.openapi.KwaiHandlerActivity",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "net.sourceforge.simcpux",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.kwai.opensdk.sdk.openapi.KwaiRouterActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@7F120427",
+          "@ns0:label": "@7F110136",
+          "@ns0:name": "com.kwai.opensdk.sdk.LoadingActivity",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@7F120129",
+          "@ns0:name": "com.kwai.auth.login.kwailogin.h5login.KwaiH5LoginActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@7F120129",
+          "@ns0:label": "@7F1102F4",
+          "@ns0:name": "com.kwai.auth.login.kwailogin.applogin.RouteHandlerActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:name": "com.feiyutech.lib.gimbal.ble.ota.NotificationActivity"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.mob.tools.MobUIShell",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.mob.MobACService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.mob.service.action.MOB_AC_SERVICE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.mob.id.MobIDService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.mob.intent.MOB_ID_SERVICE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.mob.guard.MobGuardPullUpService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.mob.intent.MOB_GUARD_SERVICE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.feiyutech.lib.gimbal.ble.ota.DfuService"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "mob_guard_version",
+          "@ns0:value": "30000"
+        },
+        {
+          "@ns0:name": "mob_id_ver",
+          "@ns0:value": "30000"
+        },
+        {
+          "@ns0:name": "APP_ID",
+          "@ns0:value": "ks707909567462539761"
+        },
+        {
+          "@ns0:name": "KWAI_APP_ID",
+          "@ns0:value": "string/ks707909567462539761"
+        },
+        {
+          "@ns0:name": "KWAI_SCOPE",
+          "@ns0:value": "user_info,user_video_live"
+        }
+      ],
+      "activity-alias": [
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.KwaiHandlerActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004B0",
+          "@ns0:targetActivity": "com.kwai.opensdk.sdk.openapi.KwaiHandlerActivity"
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.KwaiRouterActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004B0",
+          "@ns0:targetActivity": "com.kwai.opensdk.sdk.openapi.KwaiRouterActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:scheme": "kwaisdk",
+              "@ns0:host": "router"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.feiyutech.gimbalCamera.kwai.KwaiHandlerActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004B0",
+          "@ns0:targetActivity": "com.kwai.auth.login.kwailogin.applogin.RouteHandlerActivity"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.feiyutech.gimbalCamera.androidx-startup",
+          "meta-data": [
+            {
+              "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+              "@ns0:value": "androidx.startup"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "cn.wandersnail.commons.base.WSFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.feiyutech.gimbalCamera.WSFileProvider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140000"
+          }
+        },
+        {
+          "@ns0:name": "com.mob.MobProvider",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.feiyutech.gimbalCamera.com.mob.MobProvider"
+        }
+      ]
+    }
+  }
+}

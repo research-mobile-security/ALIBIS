@@ -1,0 +1,330 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="32019" ns0:versionName="3.11.0" ns0:compileSdkVersion="32" ns0:compileSdkVersionCodename="12" package="com.fimo.camera" platformBuildVersionCode="32" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="31"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.DIAL"/>
+		</intent>
+		<package ns0:name="com.tencent.mm"/>
+		<package ns0:name="com.sina.weibo"/>
+		<package ns0:name="com.tencent.mobileqq"/>
+		<package ns0:name="com.autonavi.minimap"/>
+	</queries>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<supports-screens ns0:anyDensity="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<meta-data ns0:name="com.google.firebase.messaging.default_notification_channel_id" ns0:value="@7F1000D7"/>
+	<permission ns0:name="com.fimo.camera.permission.MIPUSH_RECEIVE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.fimo.camera.permission.MIPUSH_RECEIVE"/>
+	<uses-permission ns0:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+	<uses-permission ns0:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.EXPAND_STATUS_BAR"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-permission ns0:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+	<uses-permission ns0:name="freemme.permission.msa"/>
+	<application ns0:theme="@7F11000A" ns0:label="@7F10004C" ns0:icon="@7F0D016F" ns0:name="com.fimo.camera.FimoApplication" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:resizeableActivity="false" ns0:supportsPictureInPicture="false" ns0:networkSecurityConfig="@7F130006" ns0:roundIcon="@7F0D0173" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="design_width_in_dp" ns0:value="360"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.fimo.camera.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130004"/>
+		</provider>
+		<activity ns0:theme="@7F11012F" ns0:name="com.fimo.camera.app.StartActivity" ns0:exported="true" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="测试" ns0:name="com.fimo.camera.app.TestActivity" ns0:enabled="@7F040003" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_channel_id" ns0:value="@7F100192"/>
+		<service ns0:name="com.blankj.utilcode.util.MessengerUtils$ServerService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.fimo.camera.messenger"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.yy.pushsvc.thirdparty.PushOppoMsgService" ns0:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.yy.pushsvc.thirdparty.PushFirebaseMessagingService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.yy.pushsvc.thirdparty.PushVivoPushReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.vivo.pushclient.action.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.fimo.camera.album.ui.activity.AllFilmAlbumActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.album.ui.activity.UploadFilmAlbumActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.album.ui.activity.AlbumActivity" ns0:launchMode="0" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1100E6" ns0:name="com.fimo.camera.album.ui.activity.ImageActivity" ns0:launchMode="1"/>
+		<activity ns0:name="com.fimo.camera.album.ui.sample.AllAlbumPickActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<receiver ns0:name="com.fimo.camera.album.broadcast.NotificationClickReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.fimo.camera.processing.notification"/>
+				<action ns0:name="com.fimo.camera.processed.notification"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.fimo.camera.camera.ui.CameraActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fimo" ns0:host="fimoapp.com"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="fimoapp.com"/>
+				<data ns0:scheme="https" ns0:host="fimoapp.com"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1100E6" ns0:name="com.fimo.camera.error.ErrorActivity"/>
+		<activity ns0:name="com.fimo.camera.film.ui.activity.FilmDetailActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.lab.page.LabActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.longpicture.page.LongPictureSelectActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.longpicture.page.LongPictureGenerateActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.person.view.edit.EditPersonInfoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.person.view.personPage.PersonPageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.person.view.bindPhone.BindPhoneActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.person.view.bindPhone.ChangeBindingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.person.view.bindPhone.VerifyPhoneActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.person.view.tag.TagActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.sample.view.sampleChoose.SampleChooseActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.sample.view.SampleEditActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.setting.page.SettingActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.setting.page.FeedbackActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.setting.page.LogOutActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.setting.page.UserInfoActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.setting.page.DownloadUserInfoActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.setting.page.AboutActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.setting.page.CustServiceActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.setting.page.PermissionManageActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.setting.page.RedemptionActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.store.ui.activity.StoreActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.store.ui.activity.SearchActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.web.page.QAActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.web.page.WebViewActivity" ns0:screenOrientation="1"/>
+		<receiver ns0:name="com.fimo.camera.appwidget.AppWidget2x2" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F130000"/>
+		</receiver>
+		<receiver ns0:name="com.fimo.camera.appwidget.AppWidget4x2" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F130001"/>
+		</receiver>
+		<receiver ns0:name="com.fimo.camera.appwidget.AppWidget4x4" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F130002"/>
+		</receiver>
+		<activity ns0:name="com.fimo.camera.gallery.picker.GalleryPickActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.gallery.crop.CropActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.gallery.crop.CropPreviewActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.gallery.crop.AvatarCircleCropActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.gallery.crop.CropMoreActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.gallery.crop.CropMoreWithEffectActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.camera.gallery.crop.CropWithEffectActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1100E6" ns0:name="com.fimo.camera.gallery.common.RequestEditPhotoPermissionActivity" ns0:launchMode="1"/>
+		<activity ns0:name="com.fimo.camera.gallery.crop.CropColorFilterEffectActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.fimo.flutter.imp.ui.FlutterBizActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.amap.api.v2.apikey" ns0:value="a11d9cf449d52fe7d938219134b12b66"/>
+		<service ns0:name="com.amap.api.location.APSService" ns0:exported="true"/>
+		<meta-data ns0:name="PushAuthUniTicket" ns0:value="@7F100191"/>
+		<meta-data ns0:name="PushRegUniTicket" ns0:value="@7F100193"/>
+		<meta-data ns0:name="EFOX_PUSH_APPID" ns0:value="@7F1000DB"/>
+		<meta-data ns0:name="XIAOMI_APPID" ns0:value="@7F100254"/>
+		<meta-data ns0:name="XIAOMI_APPKEY" ns0:value="@7F100255"/>
+		<meta-data ns0:name="OPUSH_APPKEY" ns0:value="@7F100140"/>
+		<meta-data ns0:name="OPUSH_APPSECRET" ns0:value="@7F100141"/>
+		<meta-data ns0:name="com.vivo.push.app_id" ns0:value="@7F100250"/>
+		<meta-data ns0:name="com.vivo.push.api_key" ns0:value="@7F100251"/>
+		<meta-data ns0:name="appKey" ns0:value="1166955682"/>
+		<meta-data ns0:name="JPUSH_APPKEY" ns0:value="@7F100105"/>
+		<service ns0:name="com.yy.pushsvc.services.keeplive.AccountSyncService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.content.SyncAdapter"/>
+			</intent-filter>
+			<meta-data ns0:name="android.content.SyncAdapter" ns0:resource="@7F13000C"/>
+		</service>
+		<service ns0:name="com.yy.pushsvc.services.keeplive.AccountVerifyService" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F130003"/>
+		</service>
+		<meta-data ns0:name="HIIDO_CHANNEL" ns0:value="gp"/>
+		<meta-data ns0:name="HIIDO_APPKEY" ns0:value="9a9d6dc52ef2b4a44b5264bad85b6435"/>
+		<meta-data ns0:name="UMENG_APPKEY" ns0:value="5d9bef4e570df39105000a06"/>
+		<meta-data ns0:name="UMENG_CHANNEL" ns0:value="GP"/>
+		<activity ns0:theme="@7F1100E6" ns0:name="com.fimo.camera.common.util.permission.PermissionActivity" ns0:launchMode="1"/>
+		<service ns0:name="com.yyued.googlepay.service.GooglePayService" ns0:exported="true"/>
+		<activity ns0:theme="@7F1100EC" ns0:name="com.yyued.googlepay.GoogleLoginDelegate" ns0:launchMode="1"/>
+		<service ns0:name="com.cyw.wechat.service.WechatShareService" ns0:exported="true"/>
+		<activity ns0:theme="@7F110000" ns0:name="com.blankj.utilcode.util.Utils$TransActivity" ns0:multiprocess="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000003"/>
+		<provider ns0:name="com.blankj.utilcode.util.Utils$FileProvider4UtilCode" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.fimo.camera.utilcode.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F13000D"/>
+		</provider>
+		<activity ns0:name="tv.athena.platform.multidex.LoadDexActivity" ns0:process=":athena_async_multiDex_load" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:alwaysRetainTaskState="false"/>
+		<activity ns0:theme="@7F110118" ns0:name="com.vfly.push.lockscreen.ScreenPushActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vfly.push.DefaultNotificationClickActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="1"/>
+		<service ns0:name="com.xiaomi.push.service.XMJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false" ns0:process=":pushservice"/>
+		<service ns0:name="com.xiaomi.push.service.XMPushService" ns0:enabled="true" ns0:process=":pushservice"/>
+		<service ns0:name="com.xiaomi.mipush.sdk.PushMessageHandler" ns0:enabled="true" ns0:exported="true"/>
+		<service ns0:name="com.xiaomi.mipush.sdk.MessageHandleService" ns0:enabled="true"/>
+		<receiver ns0:name="com.yy.pushsvc.thirdparty.PushXiaomiPushReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.xiaomi.mipush.ERROR"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.xiaomi.push.service.receivers.PingReceiver" ns0:exported="false" ns0:process=":pushservice">
+			<intent-filter>
+				<action ns0:name="com.xiaomi.push.PING_TIMER"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.yy.pushsvc.thirdparty.PushOppoActivity" ns0:exported="true" ns0:taskAffinity="com.yy.pushsvc.activityTask" ns0:excludeFromRecents="true">
+			<intent-filter>
+				<action ns0:name="com.duowan.pushsdk.OPPO.CKLICK_NOTIFYMESSAGE"/>
+				<action ns0:name="com.coloros.opush.action.TEST_INNER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.vivo.push.sdk.service.CommandClientService" ns0:exported="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.vivo.push.sdk.LinkProxyClientActivity" ns0:exported="false"/>
+		<meta-data ns0:name="pushsdkversion" ns0:value="4.0.93-duowan"/>
+		<meta-data ns0:name="isAbroad" ns0:value="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.yy.pushsvc.facknotification.NotificationActivity" ns0:excludeFromRecents="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.yy.pushsvc.locknotification.LockActivity" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F1102D3" ns0:name="com.yy.pushsvc.locknotification.DisableKeyguardActivity" ns0:launchMode="2"/>
+		<service ns0:name="com.yy.pushsvc.services.outline.FetchOutlineMsgLocalService" ns0:exported="false"/>
+		<service ns0:name="com.yy.pushsvc.services.outline.FetchOutlineMsgService" ns0:exported="false" ns0:process=":pushservice">
+			<intent-filter>
+				<action ns0:name="com.yy.pushsvc.services.outline.FetchOutlineMsgService"/>
+				<category ns0:name="com.fimo.camera"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.yy.pushsvc.bridge.YYPushMsgReceiver" ns0:exported="false"/>
+		<receiver ns0:name="com.yy.pushsvc.receiver.NotificationClickReceiver" ns0:exported="false"/>
+		<receiver ns0:name="com.yy.pushsvc.receiver.NotificationCancelReceiver" ns0:exported="false"/>
+		<provider ns0:name="com.yy.pushsvc.services.keeplive.AccountProvider" ns0:exported="false" ns0:authorities="com.fimo.camera.account.provider" ns0:syncable="true"/>
+		<provider ns0:name="com.yy.pushsvc.PushContentProvider" ns0:enabled="true" ns0:exported="true" ns0:authorities="com.fimo.camera.com.yy.pushsvc.PushContentProvider"/>
+		<service ns0:name="com.yy.pushsvc.services.keeplive.KeepLiveJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.yy.pushsvc.services.keeplive.ForegroundLiveService" ns0:process=":pushservice"/>
+		<service ns0:name="com.yy.pushsvc.services.keeplive.ForegroundLiveService$InnerService" ns0:process=":pushservice"/>
+		<service ns0:name="tv.athena.filetransfer.impl.service.FileTransferProcess" ns0:exported="false" ns0:process=":FileTransferProcess"/>
+		<meta-data ns0:name="flutterProjectType" ns0:value="module"/>
+		<meta-data ns0:name="flutterEmbedding" ns0:value="2"/>
+		<meta-data ns0:name="flutter_biz_ver" ns0:value="@7F1000E5"/>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<meta-data ns0:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" ns0:value="GlideModule"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.fimo.camera.com.squareup.picasso"/>
+		<provider ns0:name="zlc.season.claritypotion.ClarityPotion" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.fimo.camera.claritypotion"/>
+		<meta-data ns0:name="com.bumptech.glide.integration.webp.WebpGlideModule" ns0:value="GlideModule"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<provider ns0:name="com.gourd.arch.ArchInitProvider" ns0:exported="false" ns0:authorities="com.fimo.camera.ArchInitProvider"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.fimo.camera.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0008"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.fimo.camera.lifecycle-process"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<provider ns0:name="me.jessyan.autosize.InitProvider" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.fimo.camera.autosize-init-provider"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F13000E"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

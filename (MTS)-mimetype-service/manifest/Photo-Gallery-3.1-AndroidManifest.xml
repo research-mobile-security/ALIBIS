@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="11" ns0:versionName="3.1" package="tool.photo.gallery">
+	<uses-sdk ns0:minSdkVersion="14" ns0:targetSdkVersion="26"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<application ns0:theme="@android:0103006D" ns0:label="@7F0E0023" ns0:icon="@7F070071" ns0:name="com.samsung.photodesk.PhotoDeskApplication" ns0:logo="@7F070085" ns0:hardwareAccelerated="true" ns0:largeHeap="true">
+		<activity ns0:name="com.samsung.photodesk.Intro">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.samsung.photodesk.PhotoDeskActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.CREATE_SHORTCUT"/>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.samsung.photodesk.ImageViewActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/jpg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/vnd.wap.wbmp"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.samsung.photodesk.SettingActivity"/>
+		<activity ns0:name="com.samsung.photodesk.ThemeSetActivity"/>
+		<activity ns0:theme="@android:0103000A" ns0:name="com.samsung.photodesk.SlideShowActivity"/>
+		<receiver ns0:name="com.samsung.photodesk.util.BroadcastReceiverUtil">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_CHECKING"/>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_REMOVED"/>
+				<action ns0:name="android.intent.action.MEDIA_EJECT"/>
+				<action ns0:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+				<action ns0:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+				<action ns0:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.mobcells.AppGridView" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.mobcells.HView" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.mobcells.Webview" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F090005"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="UMENG_APPKEY" ns0:value="5bbc606ff1f556464e000428"/>
+		<meta-data ns0:name="UMENG_CHANNEL" ns0:value="Google Play"/>
+		<activity ns0:theme="@7F0F00B2" ns0:label="" ns0:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" ns0:exported="false"/>
+		<meta-data ns0:name="android.support.VERSION" ns0:value="26.1.0"/>
+	</application>
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="103" ns0:versionName="3.75" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.ascendapps.timestampcamera.trial" platformBuildVersionCode="103" platformBuildVersionName="3.750000">
+	 //Take the steps below to build pro version
+	//1. Change package name to com.ascendapps.timestampcamera.
+	//2. Change applicationId to com.ascendapps.timestampcamera.
+	//3. Global change com.ascendapps.timestampcamera.trial.R to com.ascendapps.timestampcamera.R.
+	//4. Change com.ascendapps.timestampcamera.trial.fileprovider to com.ascendapps.timestampcamera.fileprovider.
+	//5. Change label to @string/app_name_timestamp_camera 
+	<uses-sdk ns0:minSdkVersion="24" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-permission ns0:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.screen.landscape" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<application ns0:theme="@7F0D012F" ns0:label="@7F0C0033" ns0:icon="@7F06013F" ns0:name="com.ascendapps.camera.AACameraApp" ns0:allowBackup="true" ns0:largeHeap="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F080006"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.camera.EULAActivity" ns0:exported="true" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.videocamera.AAVideoCameraActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.camera.AACameraActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.camera.Camera2Activity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.camera.AboutUsActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.camera.DialogActivity" ns0:exported="true" ns0:screenOrientation="4" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.camera.SettingsActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.videocamera.SettingsActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.camera.SavePhotoActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.middletier.ui.SelectFolderActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.middletier.ui.GalleryActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.camera.ViewSingleImageActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D012F" ns0:name="com.ascendapps.camera.ViewImagesActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<service ns0:name="com.ascendapps.camera.GPSManager" ns0:enabled="true"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.ascendapps.timestampcamera.trial.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F0F0000"/>
+		</provider>
+		<activity ns0:theme="@7F0D0127" ns0:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+		<activity ns0:theme="@7F0D0180" ns0:name="com.journeyapps.barcodescanner.CaptureActivity" ns0:clearTaskOnLaunch="true" ns0:stateNotNeeded="true" ns0:screenOrientation="6" ns0:windowSoftInputMode="0x00000003"/>
+	</application>
+</manifest>

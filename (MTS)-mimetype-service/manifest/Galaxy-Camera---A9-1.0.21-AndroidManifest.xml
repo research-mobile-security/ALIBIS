@@ -1,0 +1,135 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1" ns0:versionName="1.0.21" package="com.bledegsnote9.galaxycameraa9">
+	<uses-sdk ns0:minSdkVersion="17" ns0:targetSdkVersion="26"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="false" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.BROADCAST_STICKY"/>
+	<uses-permission ns0:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS"/>
+	<uses-feature ns0:name="android.hardware.microphone"/>
+	<meta-data ns0:name="android.support.VERSION" ns0:value="25.3.0"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<application ns0:theme="@7F12008E" ns0:label="@7F11004C" ns0:icon="@7F0F0000" ns0:name="com.saritaarts.simply.chic.MainApplication" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="true">
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B001F"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.saritaarts.simply.chic.EditorActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.saritaarts.simply.chic.MainActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsProvider" ns0:exported="false" ns0:authorities="com.bledegsnote9.galaxycameraa9.CdsProvider"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.mlsdev.rximagepicker.HiddenActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F12001E" ns0:name="com.adobe.creativesdk.aviary.AdobeImageEditorActivity" ns0:finishOnTaskLaunch="true" ns0:screenOrientation="-1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="https"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="http"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsService" ns0:exported="false" ns0:process=":editor">
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.CDS_VERIFY_SUBSCRIPTIONS"/>
+				<action ns0:name="aviary.intent.action.CDS_DOWNLOAD_START"/>
+				<action ns0:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS"/>
+				<action ns0:name="aviary.intent.action.CDS_RESTORE_OWNED_PACKS"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsAssetsDownloaderService" ns0:exported="false" ns0:process=":editor">
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.CDS_DOWNLOAD_EXTRA_ASSETS"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsReceiver" ns0:permission="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" ns0:exported="true" ns0:process=":editor">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+				<action ns0:name="android.net.wifi.STATE_CHANGE"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+				<action ns0:name="aviary.android.cds.intent.action.ACTION_NOTIFICATION_DISMISS"/>
+				<action ns0:name="aviary.android.cds.intent.action.ACTION_DOWNLOAD_COMPLETE_DELAYED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F120017" ns0:label="@7F11003A" ns0:name="com.adobe.creativesdk.foundation.internal.auth.AdobeAuthSignInActivity" ns0:exported="false" ns0:taskAffinity="" ns0:multiprocess="true" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000031"/>
+		<service ns0:name="com.adobe.creativesdk.aviary.internal.account.AdobeBillingContentService" ns0:enabled="true" ns0:exported="false" ns0:process=":editor"/>
+		<activity ns0:theme="@7F120017" ns0:label="@7F11003A" ns0:name="com.adobe.creativesdk.foundation.internal.auth.AdobeAuthContinuableEventActivity" ns0:exported="false" ns0:multiprocess="true" ns0:launchMode="3" ns0:windowSoftInputMode="0x00000031"/>
+		<activity ns0:name="com.adobe.creativesdk.foundation.internal.base.AdobeTOUHandlerActivity"/>
+		<activity ns0:theme="@7F12008C" ns0:label="@7F11004C" ns0:name="net.procam.pro.MainActivity" ns0:clearTaskOnLaunch="true" ns0:screenOrientation="0" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F150003"/>
+		</activity>
+		<activity ns0:label="@7F110354" ns0:icon="@7F08015D" ns0:name="net.procam.pro.TakePhoto" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:screenOrientation="0" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:label="@7F11004C" ns0:icon="@7F0F0000" ns0:name="net.procam.pro.MyWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F150004"/>
+		</receiver>
+		<receiver ns0:label="@7F110354" ns0:icon="@7F08015D" ns0:name="net.procam.pro.MyWidgetProviderTakePhoto">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F150005"/>
+		</receiver>
+		<service ns0:label="@7F110059" ns0:icon="@7F080163" ns0:name="net.procam.pro.MyTileService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F110322" ns0:icon="@7F08016D" ns0:name="net.procam.pro.MyTileServiceVideo" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F110342" ns0:icon="@7F080156" ns0:name="net.procam.pro.MyTileServiceFrontCamera" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F1201AE" ns0:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+	</application>
+</manifest>

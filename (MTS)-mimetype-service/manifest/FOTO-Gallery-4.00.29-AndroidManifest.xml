@@ -1,0 +1,278 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="129" ns0:versionName="4.00.29" ns0:compileSdkVersion="30" ns0:compileSdkVersionCodename="11" package="kr.co.ladybugs.fourto" platformBuildVersionCode="30" platformBuildVersionName="11">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="29"/>
+	<permission ns0:name="kr.co.ladybugs.fourto.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<permission ns0:name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="kr.co.ladybugs.fourto.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.REORDER_TASKS"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F11000C" ns0:label="@7F100048" ns0:icon="@7F0E0000" ns0:name="kr.co.ladybugs.fourto.FourtoApplication" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:resizeableActivity="false" ns0:networkSecurityConfig="@7F130002" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A000C"/>
+		<provider ns0:name="kr.co.ladybugs.fourto.provider.FotoProvider" ns0:permission="signature" ns0:authorities="kr.co.ladybugs.fourto.provider" ns0:syncable="false" ns0:grantUriPermissions="false"/>
+		<provider ns0:name="kr.co.ladybugs.fourto.fileprovider.FotoFileProvider" ns0:exported="false" ns0:authorities="kr.co.ladybugs.fourto.extProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130000"/>
+		</provider>
+		<activity ns0:theme="@7F1100EB" ns0:label="@7F100048" ns0:name="kr.co.ladybugs.fourto.activity.SplashActivity" ns0:clearTaskOnLaunch="true" ns0:launchMode="3" ns0:screenOrientation="2" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/webp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/vnd.wap.wbmp"/>
+				<data ns0:mimeType="application/vnd.google.panorama360+jpg"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/mpeg4"/>
+				<data ns0:mimeType="video/mp4"/>
+				<data ns0:mimeType="video/3gp"/>
+				<data ns0:mimeType="video/3gpp"/>
+				<data ns0:mimeType="video/3gpp2"/>
+				<data ns0:mimeType="application/sdp"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.WebViewActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.SettingForHidingActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.AlbumSetListActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.OrganizeActivityEx" ns0:screenOrientation="2" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.AlbumViewRecyActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100F4" ns0:label="@7F100422" ns0:name="kr.co.ladybugs.foto.movie.MovieActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0" ns0:windowActionBar="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="rtsp"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/mpeg4"/>
+				<data ns0:mimeType="video/mp4"/>
+				<data ns0:mimeType="video/3gp"/>
+				<data ns0:mimeType="video/3gpp"/>
+				<data ns0:mimeType="video/3gpp2"/>
+				<data ns0:mimeType="video/webm"/>
+				<data ns0:mimeType="video/avi"/>
+				<data ns0:mimeType="application/sdp"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:mimeType="audio/x-mpegurl"/>
+				<data ns0:mimeType="audio/mpegurl"/>
+				<data ns0:mimeType="application/vnd.apple.mpegurl"/>
+				<data ns0:mimeType="application/x-mpegurl"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1100F5" ns0:name="kr.co.ladybugs.fourto.activity.SelectFolderActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100F5" ns0:name="kr.co.ladybugs.fourto.activity.NewFolderActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000025"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.PhotoPagerActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.OrphanRecoveryActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.GetStoragePermissionActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100F5" ns0:name="kr.co.ladybugs.fourto.activity.AuthenticateUserActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100F5" ns0:name="kr.co.ladybugs.fourto.activity.FotoBillingActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.CropActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100F5" ns0:name="kr.co.ladybugs.fourto.activity.FotoTaggingActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000004"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.FotoUserSettingsActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="kr.co.ladybugs.fourto.activity.FotoExplorerActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F100048" ns0:name="kr.co.ladybugs.fourto.activity.FotoWallpaperActivity" ns0:screenOrientation="2" ns0:configChanges="0x000004A0">
+			<intent-filter ns0:label="@7F100387">
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F100387">
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="kr.co.ladybugs.fourto.tool.ProcessPhoenix" ns0:process=":phoenix"/>
+		<receiver ns0:name="kr.co.ladybugs.fourto.receiver.MountReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="kr.co.ladybugs.fourto.activity.TPoolService"/>
+		<service ns0:name="kr.co.ladybugs.fourto.CheckAppVerSvc" ns0:exported="false"/>
+		<service ns0:name="daydream.gallery.edit.pipeline.ProcessingService" ns0:exported="false"/>
+		<activity ns0:theme="@7F1100EB" ns0:label="@7F1003F2" ns0:name="daydream.gallery.edit.FotoEditorActivity" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="kr.co.ladybugs.fourto.transfers.service.AppCheckService"/>
+		<service ns0:name="kr.co.ladybugs.fourto.transfers.service.NotiClickService"/>
+		<activity ns0:theme="@7F110153" ns0:label="@7F100048" ns0:name="com.byappsoft.sap.browser.Sap_MainActivity" ns0:exported="false" ns0:finishOnTaskLaunch="true" ns0:clearTaskOnLaunch="true" ns0:launchMode="2" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.APP_BROWSER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F110151" ns0:label="@7F100048" ns0:name="com.byappsoft.sap.browser.utils.Sap_IncognitoActivity" ns0:exported="false" ns0:launchMode="2" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000002">
+			<intent-filter>
+				<action ns0:name="android.intent.action.INCOGNITO"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030006" ns0:name="com.byappsoft.sap.browser.Sap_BrowserSearchActivity"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.byappsoft.sap.launcher.Sap_act_middle" ns0:launchMode="2"/>
+		<activity ns0:theme="@android:01030006" ns0:label="@7F10008B" ns0:name="com.byappsoft.sap.browser.Sap_SettingsActivity" ns0:clearTaskOnLaunch="true" ns0:launchMode="2" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SETTINGS"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030006" ns0:label="@7F100032" ns0:name="com.byappsoft.sap.browser.Sap_AdvancedSettingsActivity" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ADVANCED_SETTINGS"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030006" ns0:name="com.byappsoft.sap.browser.download.Sap_DownloadActivity"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.byappsoft.sap.browser.Sap_HistoryBookmarksActivity"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.byappsoft.sap.browser.Sap_SettingDownActivity"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.byappsoft.sap.browser.pageinfo.Sap_PageInfoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.byappsoft.sap.browser.Sap_QRCodeListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.byappsoft.sap.zxing.client.android.CaptureActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="com.byappsoft.sap.zxing.client.android.SCAN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F110302" ns0:name="com.byappsoft.sap.browser.Sap_BrowserUtils" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.byappsoft.sap.service.HuvleNotiBarService"/>
+		<service ns0:name="com.byappsoft.sap.utils.Sap_act_noti_background"/>
+		<service ns0:name="com.byappsoft.sap.service.BaseRequestService"/>
+		<service ns0:name="com.byappsoft.sap.cApp.CAppService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="true"/>
+		<receiver ns0:name="com.byappsoft.sap.utils.Sap_act_noti_receiver" ns0:exported="true"/>
+		<receiver ns0:name="com.byappsoft.sap.utils.Sap_act_receiver" ns0:permission="android.permission.RECEIVE_BOOT_COMPLETED" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="com.byappsoft.Stealthaddplatform.noti"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.inmobi.rendering.InMobiAdActivity" ns0:configChanges="0x00000CB0" ns0:hardwareAccelerated="true"/>
+		<receiver ns0:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.inmobi.share.id"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F11032B" ns0:label="@7F100177" ns0:name="com.google.android.ads.mediationtestsuite.activities.HomeActivity"/>
+		<activity ns0:theme="@7F11030E" ns0:name="com.google.android.ads.mediationtestsuite.activities.NetworkDetailActivity" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F110310" ns0:label="@7F100172" ns0:name="com.google.android.ads.mediationtestsuite.activities.AdUnitDetailActivity"/>
+		<activity ns0:theme="@7F110310" ns0:name="com.google.android.ads.mediationtestsuite.activities.AdUnitsSearchActivity"/>
+		<receiver ns0:name="com.google.android.gms.analytics.AnalyticsReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="kr.co.ladybugs.fourto.mobileadsinitprovider" ns0:initOrder="100"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="kr.co.ladybugs.fourto.firebaseinitprovider" ns0:initOrder="100"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="kr.co.ladybugs.fourto.com.squareup.picasso"/>
+		<meta-data ns0:name="com.google.android.gms.ads.AD_MANAGER_APP" ns0:value="true"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.inmobi.ads.rendering.InMobiAdActivity" ns0:configChanges="0x40000FB4" ns0:hardwareAccelerated="true"/>
+	</application>
+</manifest>

@@ -1,0 +1,825 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "6524",
+    "@ns0:versionName": "3.9.1",
+    "@ns0:installLocation": "0",
+    "@package": "com.flayvr.flayvr",
+    "@platformBuildVersionCode": "26",
+    "@platformBuildVersionName": "8.0.0",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "16",
+      "@ns0:targetSdkVersion": "22"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.READ_PHONE_STATE"
+      },
+      {
+        "@ns0:name": "android.Manifest.permission.READ_PHONE_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_CALENDAR"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "com.flayvr.flayvr.permission.C2D_MESSAGE"
+      },
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "android.permission.GET_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.USE_CREDENTIALS"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "com.avast.android.feed.gallery.CACHE_PERMISSION"
+      },
+      {
+        "@ns0:name": "android.permission.AUTHENTICATE_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      }
+    ],
+    "permission": [
+      {
+        "@ns0:name": "com.flayvr.flayvr.permission.C2D_MESSAGE",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:label": "@7F0802B4",
+        "@ns0:name": "com.avast.android.feed.gallery.CACHE_PERMISSION",
+        "@ns0:protectionLevel": "0x00000002"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F0A00A0",
+      "@ns0:label": "@7F080293",
+      "@ns0:icon": "@7F0201DB",
+      "@ns0:name": "com.flayvr.application.ProjectApp",
+      "@ns0:allowBackup": "true",
+      "@ns0:supportsRtl": "false",
+      "activity": [
+        {
+          "@ns0:theme": "@7F0A00B9",
+          "@ns0:name": "com.flayvr.screens.ads.ResultsAdActivity"
+        },
+        {
+          "@ns0:name": "com.flayvr.screens.folders.FolderSelectionActivity",
+          "@ns0:launchMode": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F0A00FC",
+          "@ns0:name": "com.flayvr.screens.player.MomentViewActivity",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:parentActivityName": "com.flayvr.screens.selection.SelectionActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A0138",
+          "@ns0:name": "com.flayvr.screens.player.MomentPlayingActivity",
+          "@ns0:parentActivityName": "com.flayvr.screens.player.MomentViewActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.flayvr.screens.player.MomentViewActivity"
+          }
+        },
+        {
+          "@ns0:name": "com.flayvr.screens.selection.SelectionActivity",
+          "@ns0:parentActivityName": "com.flayvr.screens.folders.FolderSelectionActivity",
+          "meta-data": [
+            {
+              "@ns0:name": "android.app.default_searchable",
+              "@ns0:value": "com.flayvr.screens.search.SearchActivity"
+            },
+            {
+              "@ns0:name": "android.support.PARENT_ACTIVITY",
+              "@ns0:value": "com.flayvr.screens.folders.FolderSelectionActivity"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.flayvr.screens.activity.NewSharingActivity",
+          "@ns0:parentActivityName": "com.flayvr.screens.selection.SelectionActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.flayvr.screens.selection.SelectionActivity"
+          }
+        },
+        {
+          "@ns0:theme": "@7F0A0139",
+          "@ns0:name": "com.flayvr.screens.fullscreen.FullScreenActivity",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "com.android.camera.action.REVIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F0A0138",
+          "@ns0:name": "com.flayvr.screens.editing.EditMomentActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:parentActivityName": "com.flayvr.screens.selection.SelectionActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.flayvr.screens.player.MomentViewActivity"
+          }
+        },
+        {
+          "@ns0:theme": "@7F0A0138",
+          "@ns0:name": "com.flayvr.screens.editing.EditCoverActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0A021A",
+          "@ns0:label": "",
+          "@ns0:name": "com.flayvr.screens.fullscreen.VideoActivity",
+          "@ns0:configChanges": "0x000008A0"
+        },
+        {
+          "@ns0:label": "@7F08006A",
+          "@ns0:name": "com.flayvr.screens.editing.PhotosSelectionActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F080143",
+          "@ns0:name": "com.flayvr.screens.settings.SettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F0800E5",
+          "@ns0:name": "com.flayvr.screens.settings.GeneralSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F080261",
+          "@ns0:name": "com.flayvr.screens.settings.SettingsHelpActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F080269",
+          "@ns0:name": "com.flayvr.screens.settings.SettingsUnhideActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F0801EF",
+          "@ns0:name": "com.flayvr.screens.settings.WearSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F080242",
+          "@ns0:name": "com.flayvr.screens.settings.SmartModeSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F08016A",
+          "@ns0:name": "com.flayvr.screens.settings.NotificationsSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F08008A",
+          "@ns0:name": "com.flayvr.screens.settings.CloudSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F08013F",
+          "@ns0:name": "com.flayvr.screens.settings.LoveSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F08025A",
+          "@ns0:name": "com.flayvr.screens.settings.SupportSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A014E",
+          "@ns0:label": "@7F080085",
+          "@ns0:name": "com.flayvr.screens.settings.ChargingScreenSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A0155",
+          "@ns0:name": "com.flayvr.screens.intro.PromoActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:label": "@7F080219",
+          "@ns0:name": "com.flayvr.screens.register.CloudSignInActivity"
+        },
+        {
+          "@ns0:label": "@7F08017A",
+          "@ns0:name": "com.flayvr.screens.cloud.PicasaFolderSelectionActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A0138",
+          "@ns0:name": "com.flayvr.screens.selection.SharingItemsActivity"
+        },
+        {
+          "@ns0:label": "@7F08029E",
+          "@ns0:name": "com.flayvr.screens.settings.DebugFeedActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A0155",
+          "@ns0:name": "com.flayvr.dialogs.AdConsentDialogueActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:label": "@7F080173",
+          "@ns0:name": "com.flayvr.screens.activity.PrivacySettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A0156",
+          "@ns0:name": "com.flayvr.screensaver.ScreenSaverActivity",
+          "@ns0:taskAffinity": ".FastChargingScreen",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1",
+          "@ns0:hardwareAccelerated": "false"
+        },
+        {
+          "@ns0:name": "com.flayvr.screens.settings.DebugSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F0A0276",
+          "@ns0:label": "@7F080293",
+          "@ns0:name": "com.facebook.FacebookActivity",
+          "@ns0:configChanges": "0x000005B0"
+        },
+        {
+          "@ns0:name": "com.facebook.CustomTabActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              }
+            ],
+            "data": {
+              "@ns0:scheme": "@7F0802A7"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:theme": "@7F0A027F",
+          "@ns0:name": "com.avast.android.feed.interstitial.ui.AvastInterstitialActivity",
+          "@ns0:configChanges": "0x00000580",
+          "@ns0:noHistory": "true"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.facebook.ads.InterstitialAdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:name": "com.facebook.ads.AudienceNetworkActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.mopub.common.MoPubBrowser",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.mopub.mobileads.MraidVideoPlayerActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.facebook.CustomTabMainActivity"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.flayvr.myrollshared.services.FocusWizardService"
+        },
+        {
+          "@ns0:name": "com.flayvr.myrollshared.services.AppSessionInfoSender"
+        },
+        {
+          "@ns0:name": "com.flayvr.managers.NotificationManager"
+        },
+        {
+          "@ns0:name": "com.flayvr.notification.NewPhotoService"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.CampaignTrackingService"
+        },
+        {
+          "@ns0:name": "com.flayvr.managers.ScreenSaverService"
+        },
+        {
+          "@ns0:name": "com.flayvr.services.MyRollDuplicatesService"
+        },
+        {
+          "@ns0:name": "com.flayvr.services.MyRollPhotoClassifierService"
+        },
+        {
+          "@ns0:name": "com.flayvr.services.MRCVService"
+        },
+        {
+          "@ns0:name": "com.flayvr.myrollshared.services.UserProfileService"
+        },
+        {
+          "@ns0:name": "com.flayvr.myrollshared.services.ClusteringService"
+        },
+        {
+          "@ns0:name": "com.flayvr.myrollshared.services.MomentsEnrichmentService"
+        },
+        {
+          "@ns0:name": "com.flayvr.myrollshared.services.GalleryBuilderService"
+        },
+        {
+          "@ns0:name": "com.flayvr.services.PicasaGalleryBuilderService"
+        },
+        {
+          "@ns0:name": "com.flayvr.wear.WearListenerService",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.gms.wearable.BIND_LISTENER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.flayvr.services.MyrollStickyNotification"
+        },
+        {
+          "@ns0:name": "com.flayvr.services.ScreenSaverNotificationService"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+          "@ns0:permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.avast.android.feed.FeedModelLoadingService",
+          "@ns0:enabled": "true"
+        },
+        {
+          "@ns0:name": "com.avast.android.feed.actions.customtab.KeepAliveService"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "@ns0:priority": "-500",
+            "action": {
+              "@ns0:name": "com.google.firebase.INSTANCE_ID_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.avast.android.burger.internal.BurgerMessageService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.avast.android.ffl2.account.AuthenticatorService",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.accounts.AccountAuthenticator"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.accounts.AccountAuthenticator",
+            "@ns0:resource": "@7F060001"
+          }
+        },
+        {
+          "@ns0:name": "com.evernote.android.job.v21.PlatformJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.evernote.android.job.v14.PlatformAlarmService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.evernote.android.job.v14.PlatformAlarmServiceExact",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.evernote.android.job.gcm.PlatformGcmService",
+          "@ns0:permission": "com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.gms.gcm.ACTION_TASK_READY"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.evernote.android.job.JobRescheduleService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.flayvr.notification.NotificationBroadcastReciever",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.android.camera.NEW_PICTURE"
+              },
+              {
+                "@ns0:name": "android.hardware.action.NEW_PICTURE"
+              }
+            ],
+            "data": {
+              "@ns0:mimeType": "image/*"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.CampaignTrackingReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.flayvr.receivers.BootReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.flayvr.myrollshared.receivers.ContentRegisterReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.flayvr.receivers.ScreenSaverNotificationReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.flayvr.receivers.NewMediaItemReceiver",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.android.camera.NEW_PICTURE"
+              },
+              {
+                "@ns0:name": "android.hardware.action.NEW_PICTURE"
+              },
+              {
+                "@ns0:name": "com.android.camera.NEW_VIDEO"
+              },
+              {
+                "@ns0:name": "android.hardware.action.NEW_VIDEO"
+              }
+            ],
+            "data": [
+              {
+                "@ns0:mimeType": "image/*"
+              },
+              {
+                "@ns0:mimeType": "video/*"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.flayvr.receivers.MyRollActionsReceiver",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_NEW_MEDIA"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_APP_CREATE"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_ANDROID_CONTENT_CHANGED"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_CV_FINISHED_ON_BATCH"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_CV_FINISHED"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_CLASSIFIER_FINISHED"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_DUPLICATES_FINISHED"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_SMART_MODE_READY"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.USER_INFO_FETCHED"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_NEW_MOMENT"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_GALLERY_BUILDER_NO_CHANGE"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_CLUSTERING_FINISHED"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_DELETE_ITEMS"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_DELETE_FOLDERS"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_CONTENT_OBSERVER"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_PICASA_SESSIOM_CHANGED"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_PICASA_UPDATE_FOLDER"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_PICASA_CLEAN_DATA"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_PICASA_FETCH_DONE"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_MYROLL_CLOUD_SESSION_CHANGED"
+              },
+              {
+                "@ns0:name": "com.flayvr.flayvr.actions.ACTION_MYROLL_CLOUD_UPDATE_FOLDER"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.avast.android.feed.internal.NativeAdCacheReceiver",
+          "@ns0:permission": "com.avast.android.feed.gallery.CACHE_PERMISSION",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.avast.android.feed.NATIVE_AD_CACHE_ACTION"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver",
+          "@ns0:permission": "android.permission.INSTALL_PACKAGES",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            },
+            "category": {
+              "@ns0:name": "com.flayvr.flayvr"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.avast.android.burger.internal.AutoSenderBroadcastReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.avast.android.burger.internal.ReferralReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.evernote.android.job.v14.PlatformAlarmReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.evernote.android.job.v14.RUN_JOB"
+              },
+              {
+                "@ns0:name": "net.vrallev.android.job.v14.RUN_JOB"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.evernote.android.job.JobBootReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.QUICKBOOT_POWERON"
+              },
+              {
+                "@ns0:name": "com.htc.intent.action.QUICKBOOT_POWERON"
+              },
+              {
+                "@ns0:name": "android.intent.action.MY_PACKAGE_REPLACED"
+              }
+            ]
+          }
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.crashlytics.ApiKey",
+          "@ns0:value": "8a0c08bd6f4ba2d927f7c627800193d0f29bd4a8"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0C0021"
+        },
+        {
+          "@ns0:name": "com.facebook.sdk.ApplicationId",
+          "@ns0:value": "@7F0802A6"
+        },
+        {
+          "@ns0:name": "android.support.VERSION",
+          "@ns0:value": "26.1.0"
+        },
+        {
+          "@ns0:name": "android.arch.lifecycle.VERSION",
+          "@ns0:value": "27.0.0-SNAPSHOT"
+        },
+        {
+          "@ns0:name": "com.google.android.wearable.beta.app",
+          "@ns0:resource": "@7F060000"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.flayvr.flayvr.firebaseinitprovider",
+          "@ns0:initOrder": "100"
+        },
+        {
+          "@ns0:name": "com.facebook.internal.FacebookInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.flayvr.flayvr.FacebookInitProvider"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2929 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "32330820",
+    "@ns0:versionName": "4.2330.0",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "com.microsoft.office.outlook",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "28",
+      "@ns0:targetSdkVersion": "33"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.GET_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_PROFILE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_CONTACTS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_CALENDAR"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_CALENDAR"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.AUTHENTICATE_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_SYNC_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SYNC_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_SYNC_STATS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_CONTACTS"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.SCHEDULE_EXACT_ALARM"
+      },
+      {
+        "@ns0:name": "android.permission.POST_NOTIFICATIONS"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.REORDER_TASKS"
+      },
+      {
+        "@ns0:name": "com.samsung.accessory.permission.ACCESSORY_FRAMEWORK"
+      },
+      {
+        "@ns0:name": "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+      },
+      {
+        "@ns0:name": "com.samsung.WATCH_APP_TYPE.Companion"
+      },
+      {
+        "@ns0:name": "com.microsoft.office.outlook.configurator.READCONFIG"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_IMAGES"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_VIDEO"
+      },
+      {
+        "@ns0:name": "com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION"
+      },
+      {
+        "@ns0:name": "com.google.android.gms.permission.AD_ID"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.REQUEST_PASSWORD_COMPLEXITY"
+      },
+      {
+        "@ns0:name": "android.permission.INTERACT_ACROSS_PROFILES"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.USE_FINGERPRINT"
+      },
+      {
+        "@ns0:name": "android.permission.USE_BIOMETRIC"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "com.microsoft.office.outlook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "@ns0:name": "android.permissAGE"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_VIDEO"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "android.permission.MODIFY_AUDIO_SETTINGS"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      },
+      {
+        "@ns0:name": "com.sec.android.provider.badge.permission.READ"
+      },
+      {
+        "@ns0:name": "com.sec.android.provider.badge.permission.WRITE"
+      },
+      {
+        "@ns0:name": "com.htc.launcher.permission.READ_SETTINGS"
+      },
+      {
+        "@ns0:name": "com.htc.launcher.permission.UPDATE_SHORTCUT"
+      },
+      {
+        "@ns0:name": "com.sonyericsson.home.permission.BROADCAST_BADGE"
+      },
+      {
+        "@ns0:name": "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"
+      },
+      {
+        "@ns0:name": "com.anddoes.launcher.permission.UPDATE_COUNT"
+      },
+      {
+        "@ns0:name": "com.majeur.launcher.permission.UPDATE_BADGE"
+      },
+      {
+        "@ns0:name": "com.huawei.android.launcher.permission.CHANGE_BADGE"
+      },
+      {
+        "@ns0:name": "com.huawei.android.launcher.permission.READ_SETTINGS"
+      },
+      {
+        "@ns0:name": "com.huawei.android.launcher.permission.WRITE_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_APP_BADGE"
+      },
+      {
+        "@ns0:name": "com.oppo.launcher.permission.READ_SETTINGS"
+      },
+      {
+        "@ns0:name": "com.oppo.launcher.permission.WRITE_SETTINGS"
+      },
+      {
+        "@ns0:name": "me.everything.badger.permission.BADGE_COUNT_READ"
+      },
+      {
+        "@ns0:name": "me.everything.badger.permission.BADGE_COUNT_WRITE"
+      },
+      {
+        "@ns0:name": "android.permission.NFC"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.microphone",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.telephony",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.location.gps",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.touchscreen",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:glEsVersion": "0x00020000",
+        "@ns0:required": "true"
+      },
+      {
+        "@ns0:name": "android.hardware.bluetooth",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.usb.host",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.nfc",
+        "@ns0:required": "false"
+      }
+    ],
+    "permission": [
+      {
+        "@ns0:name": "com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION",
+        "@ns0:protectionLevel": "0x00000000"
+      },
+      {
+        "@ns0:name": "com.microsoft.office.outlook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        "@ns0:protectionLevel": "0x00000002"
+      }
+    ],
+    "queries": {
+      "package": [
+        {
+          "@ns0:name": "com.microsoft.office.outlook"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.dev"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.dawg"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.wip"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.word"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.powerpoint"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.excel"
+        },
+        {
+          "@ns0:name": "com.microsoft.skydrive"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.onenote"
+        },
+        {
+          "@ns0:name": "com.microsoft.teams"
+        },
+        {
+          "@ns0:name": "com.yammer.v1"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.officehubrow"
+        },
+        {
+          "@ns0:name": "com.microsoft.todos"
+        },
+        {
+          "@ns0:name": "com.touchtype.swiftkey"
+        },
+        {
+          "@ns0:name": "com.skype.raider"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.lync15"
+        },
+        {
+          "@ns0:name": "com.microsoft.translator"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.sfb.beta"
+        },
+        {
+          "@ns0:name": "com.microsoft.skype.teams.dev"
+        },
+        {
+          "@ns0:name": "com.microsoft.skype.teams.alpha"
+        },
+        {
+          "@ns0:name": "com.microsoft.skype.teams.beta"
+        },
+        {
+          "@ns0:name": "com.microsoft.appmanager"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.officehub"
+        },
+        {
+          "@ns0:name": "com.android.vending"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.swerve"
+        },
+        {
+          "@ns0:name": "com.microsoft.fluent.mobile.icons.sample"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.configurator"
+        },
+        {
+          "@ns0:name": "com.google.android.apps.googleassistant"
+        },
+        {
+          "@ns0:name": "com.microsoft.stream"
+        },
+        {
+          "@ns0:name": "com.microsoft.emmx"
+        },
+        {
+          "@ns0:name": "com.microsoft.emmx.local"
+        },
+        {
+          "@ns0:name": "com.microsoft.emmx.canary"
+        },
+        {
+          "@ns0:name": "com.microsoft.emmx.beta"
+        },
+        {
+          "@ns0:name": "com.microsoft.bing"
+        },
+        {
+          "@ns0:name": "com.microsoft.sapphire.bing.daily"
+        },
+        {
+          "@ns0:name": "com.microsoft.sapphire.bing.dogfood"
+        },
+        {
+          "@ns0:name": "com.azure.authenticator"
+        },
+        {
+          "@ns0:name": "com.microsoft.identity.testuserapp"
+        },
+        {
+          "@ns0:name": "com.microsoft.windowsintune.companyportal"
+        },
+        {
+          "@ns0:name": "com.facebook.katana"
+        }
+      ],
+      "intent": [
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:scheme": "geo"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:scheme": "amzn",
+            "@ns0:host": "apps"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:scheme": "https"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:scheme": "http"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:scheme": "mailto"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.EDIT"
+          },
+          "data": {
+            "@ns0:mimeType": "vnd.android.cursor.item/contact"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.PROCESS_TEXT"
+          },
+          "data": {
+            "@ns0:mimeType": "text/plain"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:scheme": "tel"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.CALL"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SEND"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.SENDTO"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.support.customtabs.action.CustomTabsService"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.MAIN"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.BROWSABLE"
+          },
+          "data": {
+            "@ns0:scheme": "https"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.EDIT"
+          }
+        }
+      ]
+    },
+    "application": {
+      "@ns0:theme": "@7F150433",
+      "@ns0:label": "@7F1402C5",
+      "@ns0:icon": "@7F100009",
+      "@ns0:name": "com.acompli.acompli.OutlookApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:extractNativeLibs": "true",
+      "@ns0:fullBackupContent": "@7F180003",
+      "@ns0:usesCleartextTraffic": "false",
+      "@ns0:resizeableActivity": "true",
+      "@ns0:networkSecurityConfig": "@7F180011",
+      "@ns0:roundIcon": "@7F10002A",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "meta-data": [
+        {
+          "@ns0:name": "android.content.APP_RESTRICTIONS",
+          "@ns0:resource": "@7F180010"
+        },
+        {
+          "@ns0:name": "android.allow_multiple_resumed_activities",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0C0012"
+        },
+        {
+          "@ns0:name": "com.google.android.geo.API_KEY",
+          "@ns0:value": "AIzaSyDtDBiG9PCk5imlYP-3MM0uSvm3j562_hU"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.globalConfigResource",
+          "@ns0:resource": "@7F18000C"
+        },
+        {
+          "@ns0:name": "AccessoryServicesLocation",
+          "@ns0:value": "/res/xml/accessoryservices.xml"
+        },
+        {
+          "@ns0:name": "com.samsung.accessory.wmanager.forward_notificaiton_to_watch_by_self",
+          "@ns0:value": "com.microsoft.office.outlook.tizen"
+        },
+        {
+          "@ns0:name": "com.google.android.actions",
+          "@ns0:resource": "@7F180001"
+        },
+        {
+          "@ns0:name": "com.microsoft.intune.mam.MAMMultiIdentity",
+          "@ns0:value": "true"
+        },
+        {
+          "@ns0:name": "com.microsoft.intune.mam.aad.ClientID",
+          "@ns0:value": "27922004-5251-4030-b22d-91ecd9a37ea4"
+        },
+        {
+          "@ns0:name": "com.google.android.play.billingclient.version",
+          "@ns0:value": "4.1.0"
+        },
+        {
+          "@ns0:name": "token_share_sdk_version",
+          "@ns0:value": "2"
+        },
+        {
+          "@ns0:name": "token_share_build_version",
+          "@ns0:value": "1.6.4"
+        },
+        {
+          "@ns0:name": "token_share_parcelable_version",
+          "@ns0:value": "3"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:name": "com.acompli.acompli.CalendarCentralActivity",
+          "@ns0:taskAffinity": "@7F141C27",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.DeepLinkSearchActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@7F1504C6",
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.outlook.MainActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              },
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "android.app.shortcuts",
+            "@ns0:resource": "@7F180016"
+          }
+        },
+        {
+          "@ns0:theme": "@7F1504C7",
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.outlook.MainActivityEdu",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              },
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "android.app.shortcuts",
+            "@ns0:resource": "@7F180016"
+          }
+        },
+        {
+          "@ns0:theme": "@7F1504C6",
+          "@ns0:label": "@7F140476",
+          "@ns0:icon": "@7F100002",
+          "@ns0:name": "com.microsoft.office.outlook.MainCalendarActivity",
+          "@ns0:enabled": "@7F050002",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "@7F141C27",
+          "meta-data": [
+            {
+              "@ns0:name": "com.microsoft.office.outlook.dynamic_icons",
+              "@ns0:resource": "@7F030018"
+            },
+            {
+              "@ns0:name": "android.app.shortcuts",
+              "@ns0:resource": "@7F180016"
+            }
+          ],
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              },
+              {
+                "@ns0:name": "android.intent.category.APP_CALENDAR"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.outlook.ui.retailmode.RetailModeActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:name": "com.acompli.acompli.DeepLinkActivity",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "ms-outlook"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "outlook-auth-mos",
+                  "@ns0:host": "com.microsoft.office.outlook"
+                },
+                {
+                  "@ns0:pathPattern": "/auth-callback"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:name": "com.microsoft.office.outlook.PopUpRedirectionActivity"
+        },
+        {
+          "@ns0:label": "@7F141982",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.login.AddAccountActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504D0",
+          "@ns0:label": "@7F141791",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.qrscan.QRConnectActivity",
+          "@ns0:configChanges": "0x00000020"
+        },
+        {
+          "@ns0:theme": "@7F150433",
+          "@ns0:label": " ",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.qrscan.QRScanResultActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F150435",
+          "@ns0:label": "@7F1417A3",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.qrscan.QRDialogActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:label": "@7F141CA6",
+          "@ns0:name": "com.microsoft.office.outlook.account.AddSharedMailboxActivity"
+        },
+        {
+          "@ns0:label": "@7F141CA6",
+          "@ns0:name": "com.microsoft.office.outlook.account.EnterSharedMailboxActivity",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "@ns0:parentActivityName": "com.microsoft.office.outlook.account.AddSharedMailboxActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.microsoft.office.outlook.account.AddSharedMailboxActivity"
+          }
+        },
+        {
+          "@ns0:label": "@7F141CB5",
+          "@ns0:name": "com.acompli.acompli.ui.settings.DelegateInboxPickerActivity",
+          "@ns0:windowSoftInputMode": "0x00000015"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.ui.settings.DelegateInboxPermissionsActivity"
+        },
+        {
+          "@ns0:label": "@7F141988",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.login.OrgAllowedAccountsActivity"
+        },
+        {
+          "@ns0:label": "@7F140212",
+          "@ns0:name": "com.microsoft.office.outlook.clp.AddSensitivityActivity"
+        },
+        {
+          "@ns0:label": "@7F14053A",
+          "@ns0:name": "com.microsoft.office.outlook.clp.ClpJustificationActivity"
+        },
+        {
+          "@ns0:label": "@7F141552",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.login.AddAnotherAccountActivity"
+        },
+        {
+          "@ns0:label": "@7F141570",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.login.ChooseAccountActivity"
+        },
+        {
+          "@ns0:label": "@7F140521",
+          "@ns0:name": "com.acompli.acompli.ui.settings.ChooseStorageAccountActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504CB",
+          "@ns0:label": "@7F141982",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.sso.AddSSOAccountActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:label": "@7F1410D5",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.oauth.OAuthActivity",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:label": "@7F1410D5",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.login.SimpleLoginActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C9",
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.acompli.acompli.CentralActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.ALTERNATIVE"
+              },
+              {
+                "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.MailCentralActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C8",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.CalendarDispatcherActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.APP_CALENDAR"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "time/epoch"
+                },
+                {
+                  "@ns0:host": "com.android.calendar"
+                },
+                {
+                  "@ns0:scheme": "content"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.INSERT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "vnd.android.cursor.dir/event"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.INSERT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "vnd.android.cursor.item/event"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "android.intent.action.EDIT"
+                }
+              ],
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "vnd.android.cursor.item/event"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "text/calendar"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:host": "*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "application/ics"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:host": "*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:pathPattern": ".*.ics"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:host": "*"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.acompli.acompli.ui.conversation.ConversationActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CC5",
+          "@ns0:name": "com.acompli.acompli.ui.conversation.v3.MessageDetailActivityV3"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CC4",
+          "@ns0:name": "com.acompli.acompli.ui.event.details.EventDetailsActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.acompli.acompli.ui.event.details.EventDetailsAttendeesActivity",
+          "@ns0:exported": "false",
+          "@ns0:parentActivityName": "com.acompli.acompli.ui.event.details.EventDetailsActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C8",
+          "@ns0:name": "com.acompli.acompli.ui.map.MapActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.acompli.acompli.ui.event.details.EventNotesActivity",
+          "@ns0:exported": "false",
+          "@ns0:parentActivityName": "com.acompli.acompli.ui.event.details.EventDetailsActivity"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.compose.ComposeActivityV2",
+          "@ns0:exported": "false",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.compose.ComposeInkFullScreenActivity"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.compose.NotificationReplyActivity",
+          "@ns0:configChanges": "0x00000080"
+        },
+        {
+          "@ns0:theme": "@7F1504C6",
+          "@ns0:name": "com.microsoft.office.outlook.compose.ComposeLauncherActivity",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "android.intent.action.SENDTO"
+                },
+                {
+                  "@ns0:name": "android.intent.action.SEND"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "mailto"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "com.android.email.intent.action.REPLY"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:scheme": "content",
+                "@ns0:host": "ui.email2.android.com",
+                "@ns0:pathPrefix": "/compose"
+              }
+            },
+            {
+              "@ns0:label": "@7F1402C5",
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.SEND"
+                },
+                {
+                  "@ns0:name": "android.intent.action.SENDTO"
+                }
+              ],
+              "data": {
+                "@ns0:mimeType": "*/*"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "@ns0:label": "@7F1402C5",
+              "action": {
+                "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "android.service.chooser.chooser_target_service",
+            "@ns0:value": "androidx.sharetarget.ChooserTargetServiceCompat"
+          }
+        },
+        {
+          "@ns0:label": "@7F141CCD",
+          "@ns0:name": "com.acompli.acompli.ui.settings.SettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C4",
+          "@ns0:label": "@7F141CCD",
+          "@ns0:name": "com.acompli.acompli.ui.settings.LoadGoogleAccountActivity"
+        },
+        {
+          "@ns0:label": "@7F141CCD",
+          "@ns0:name": "com.microsoft.office.outlook.ui.settings.SettingsActivityV2"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.ui.settings.ThemeSettingsActivity"
+        },
+        {
+          "@ns0:label": "@7F140B43",
+          "@ns0:name": "com.acompli.acompli.ui.contact.ContactListActivity"
+        },
+        {
+          "@ns0:label": "@7F141E8C",
+          "@ns0:name": "com.microsoft.office.outlook.feed.ui.YammerContentDetailsActivity"
+        },
+        {
+          "@ns0:label": "@7F140AF8",
+          "@ns0:name": "com.microsoft.office.outlook.file.FilesDirectListActivity",
+          "@ns0:windowSoftInputMode": "0x00000004"
+        },
+        {
+          "@ns0:label": "@7F140AF8",
+          "@ns0:name": "com.microsoft.office.outlook.file.FilesDirectCombinedListActivity"
+        },
+        {
+          "@ns0:label": "@7F14068B",
+          "@ns0:name": "com.microsoft.office.outlook.search.ContactSearchResultsActivity",
+          "@ns0:configChanges": "0x00000480"
+        },
+        {
+          "@ns0:label": "@7F14047D",
+          "@ns0:name": "com.acompli.acompli.ui.search.EventSearchResultsActivity",
+          "@ns0:configChanges": "0x00000480"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.search.answers.AnswerSearchResultsActivity",
+          "@ns0:configChanges": "0x00000480"
+        },
+        {
+          "@ns0:theme": "@7F1504C6",
+          "@ns0:name": "com.microsoft.office.outlook.people.ContactSyncPermissionsActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:name": "com.microsoft.office.outlook.people.EnableContactsSyncActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:noHistory": "true"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:name": "com.microsoft.office.outlook.people.ContactSyncAppOpsActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:noHistory": "true"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "Account Storage Details",
+          "@ns0:name": "com.acompli.acompli.ui.settings.UsqStorageDetailsActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.acompli.acompli.ui.settings.UsqFreeUpOpxActivity",
+          "@ns0:exported": "false",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.ui.settings.SubSettingsActivity",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.microsoft.outlook.action.ACCOUNT_INFO"
+              },
+              {
+                "@ns0:name": "com.microsoft.outlook.action.CATEGORIES"
+              }
+            ],
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F140486",
+          "@ns0:icon": "@7F100002",
+          "@ns0:name": "com.acompli.acompli.ui.event.calendar.shortcuts.CalendarShortcutActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:roundIcon": "@7F100004",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.CREATE_SHORTCUT"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1504C6",
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.outlook.applock.AppLockActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CCC",
+          "@ns0:name": "com.acompli.acompli.SelectAvailabilityActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.acompli.acompli.ui.event.create.DraftEventActivity",
+          "@ns0:exported": "true",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.INSERT"
+            },
+            "data": {
+              "@ns0:scheme": "mscal",
+              "@ns0:host": "create_event"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.ui.event.create.DraftEventActivityAffinity",
+          "@ns0:taskAffinity": "@7F141C28",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.acompli.acompli.ui.contact.AddPeopleActivity",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000024"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141C9E",
+          "@ns0:name": "com.acompli.acompli.ui.timezone.TimezonePickerActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CC2",
+          "@ns0:name": "com.acompli.acompli.ui.location.LocationPickerActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F140473",
+          "@ns0:name": "com.acompli.acompli.ui.category.CategoryPickerActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CCB",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.roomfinder.RoomFinderActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F14045A",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.reservespace.ChooseRoomActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141E70",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.reservespace.ChooseSpaceActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CC7",
+          "@ns0:name": "com.acompli.acompli.ui.event.recurrence.RecurrenceRuleEditorActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CC9",
+          "@ns0:name": "com.acompli.acompli.ui.event.recurrence.RepeatUntilPickerActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CC8",
+          "@ns0:name": "com.acompli.acompli.ui.event.recurrence.RepeatOnDayPickerActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.acompli.acompli.GenericWebViewActivity"
+        },
+        {
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.outlook.support.faq.FaqWebViewActivity",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504D0",
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.splash.SplashActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.outlook.certificate.InstallCertificateActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C5",
+          "@ns0:label": "@7F140AE6",
+          "@ns0:name": "com.microsoft.office.outlook.imageviewer.ImageViewerActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F1504C5",
+          "@ns0:label": "@7F140AE6",
+          "@ns0:name": "com.microsoft.office.outlook.imageviewer.ImageViewerV2Activity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.acompli.acompli.ui.contact.AttendeeResponseOptionsActivity",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:name": "com.microsoft.office.outlook.viewers.vcf.VcfAccountPickerActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:noHistory": "true"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F140AE6",
+          "@ns0:name": "com.microsoft.office.outlook.viewers.vcf.VcfViewerActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F14047F",
+          "@ns0:name": "com.acompli.acompli.ui.event.calendar.share.CalendarSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.LocalCalendarSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.acompli.acompli.ui.event.calendar.share.ShareCalendarContainerActivity"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.ui.event.calendar.share.AddSharedCalendarActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.reservespace.BookWorkspaceActivity",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "@ns0:parentActivityName": "com.acompli.acompli.CentralActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.reservespace.IndoorMapActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.focustime.FocusTimeActivity",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "@ns0:parentActivityName": "com.acompli.acompli.CentralActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CBC",
+          "@ns0:name": "com.acompli.acompli.ui.group.activities.GroupCardActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CBC",
+          "@ns0:name": "com.microsoft.office.outlook.groups.GroupCardDirectActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CBF",
+          "@ns0:name": "com.acompli.acompli.ui.group.activities.GroupFilesActivity"
+        },
+        {
+          "@ns0:label": "@7F140C0D",
+          "@ns0:name": "com.acompli.acompli.ui.group.activities.ZeroQueryGroupsListActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CB2",
+          "@ns0:name": "com.acompli.acompli.ui.group.activities.CreateGroupActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CB2",
+          "@ns0:name": "com.microsoft.office.outlook.groups.CreateConsumerGroupActivity"
+        },
+        {
+          "@ns0:label": "@7F141CC0",
+          "@ns0:name": "com.acompli.acompli.ui.group.activities.EditPrivacyActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CBB",
+          "@ns0:name": "com.acompli.acompli.ui.group.activities.EditGroupActivity",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "@ns0:parentActivityName": "com.acompli.acompli.ui.group.activities.GroupCardActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.acompli.acompli.ui.group.activities.GroupCardActivity"
+          }
+        },
+        {
+          "@ns0:label": "@7F140212",
+          "@ns0:name": "com.acompli.acompli.ui.group.activities.AddGroupSensitivityActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CBF",
+          "@ns0:name": "com.acompli.acompli.ui.group.activities.GroupMembersActivity",
+          "@ns0:parentActivityName": "com.acompli.acompli.ui.group.activities.GroupCardActivity",
+          "meta-data": {
+            "@ns0:name": "android.support.PARENT_ACTIVITY",
+            "@ns0:value": "com.acompli.acompli.ui.group.activities.GroupCardActivity"
+          }
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CA4",
+          "@ns0:name": "com.acompli.acompli.ui.group.activities.AddMembersActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CBE",
+          "@ns0:name": "com.microsoft.office.outlook.groups.GroupCardAllEventsActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CBE",
+          "@ns0:name": "com.microsoft.office.outlook.groups.GroupEventDetailsActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141673",
+          "@ns0:name": "com.microsoft.office.outlook.livepersonacard.ui.LivePersonaCardActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.CALL_PRIVILEGED"
+            },
+            "data": {
+              "@ns0:scheme": "tel"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141673",
+          "@ns0:name": "com.microsoft.office.outlook.livepersonacard.ui.LivePersonaCardAllEventsActivity"
+        },
+        {
+          "@ns0:label": "@7F141CAC",
+          "@ns0:name": "com.acompli.acompli.appwidget.agenda.ConfigureAgendaWidgetActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_CONFIGURE"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F140947",
+          "@ns0:icon": "@7F100005",
+          "@ns0:name": "com.acompli.acompli.appwidget.inbox.ConfigureInboxWidgetActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.appwidget.action.APPWIDGET_CONFIGURE"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.CREATE_SHORTCUT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F1504C8",
+          "@ns0:label": "@7F141CB6",
+          "@ns0:name": "com.acompli.acompli.DeviceManagementActivity"
+        },
+        {
+          "@ns0:label": "@7F141CC3",
+          "@ns0:name": "com.microsoft.aad.adal.AuthenticationActivity",
+          "@ns0:configChanges": "0x00000DB0"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F14036D",
+          "@ns0:name": "com.acompli.acompli.ui.settings.AutoReplySettingsActivity",
+          "@ns0:windowSoftInputMode": "0x00000014"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141C08",
+          "@ns0:name": "com.acompli.acompli.ui.settings.SyncSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141E4B",
+          "@ns0:name": "com.acompli.acompli.ui.settings.WeekNumberActivity"
+        },
+        {
+          "@ns0:label": "@7F141CAA",
+          "@ns0:name": "com.acompli.acompli.MAMCompanyPortalRequiredActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:label": "@7F140E54",
+          "@ns0:name": "com.acompli.acompli.ui.event.calendar.interesting.InterestingCalendarActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C2",
+          "@ns0:label": "@7F140B21",
+          "@ns0:name": "com.microsoft.office.feedback.floodgate.MainActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.oauth.StackChooserActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F141CBA",
+          "@ns0:name": "com.acompli.acompli.ui.drawer.favorite.EditFavoritesActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.acompli.acompli.ui.drawer.favorite.FavoritePickerActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F15043E",
+          "@ns0:name": "com.microsoft.office.outlook.compose.ComposeActivityWithFragment",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F15043E",
+          "@ns0:name": "com.microsoft.office.outlook.compose.ComposeActivityWithFragmentAffinity",
+          "@ns0:taskAffinity": "@7F141C28",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.ui.localcalendars.LocalCalendarsPickerActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:label": "@7F141CA8",
+          "@ns0:name": "com.microsoft.office.outlook.compose.officelens.OfficeLensLauncherActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.office.outlook.inappupdate.appcenter.AppCenterInAppUpdateActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.microsoft.office.outlook.ics.IcsActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C6",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.CalendarSyncPermissionsActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.sync.EnableCalendarSyncActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:noHistory": "true"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.compose.smime.SmimeOptionsActivityV1"
+        },
+        {
+          "@ns0:theme": "@7F1504D0",
+          "@ns0:name": "com.microsoft.office.outlook.privacy.PrivacyTourActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.intentbased.IntentBasedTimePickerActivity"
+        },
+        {
+          "@ns0:theme": "@7F150433",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.intentbased.SchedulingRequestsActivity"
+        },
+        {
+          "@ns0:theme": "@7F150433",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.intentbased.PollDetailActivity"
+        },
+        {
+          "@ns0:theme": "@7F150433",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.intentbased.PollTimeDetailActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.intentbased.MeetingPollVoteActivity"
+        },
+        {
+          "@ns0:theme": "@7F150433",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.intentbased.DisplayAttendeeVotesActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.microsoft.office.outlook.calendar.hybrid.HybridTimePickerActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:name": "com.microsoft.office.outlook.folders.ChooseFolderActivity"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.zip.ZipBrowserActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1504C4",
+          "@ns0:label": "@7F1401F2",
+          "@ns0:name": "com.acompli.acompli.ads.regulations.RegulatoryPromptActivity"
+        },
+        {
+          "@ns0:theme": "@7F150433",
+          "@ns0:label": "@7F1401F2",
+          "@ns0:name": "com.acompli.acompli.ads.regulations.RegulatoryOpxActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C4",
+          "@ns0:label": "@7F1401F2",
+          "@ns0:name": "com.acompli.acompli.ads.eu.EuRulingPromptActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.outlook.ui.onboarding.login.support.WrongAuthenticationTypeActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:label": "@7F140AE6",
+          "@ns0:name": "com.microsoft.office.outlook.previewer.WacPreviewActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.ui.settings.SmimeCertificatesPickerActivity"
+        },
+        {
+          "@ns0:label": "@7F140AE6",
+          "@ns0:name": "com.microsoft.office.outlook.viewers.text.TextFileViewerActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:label": "@7F140AE6",
+          "@ns0:name": "com.microsoft.office.outlook.viewers.media.MediaViewerActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000480"
+        },
+        {
+          "@ns0:theme": "@7F15021E",
+          "@ns0:label": "@7F14152E",
+          "@ns0:name": "com.microsoft.office.feedback.inapp.MainActivity"
+        },
+        {
+          "@ns0:label": "@7F140249",
+          "@ns0:name": "com.microsoft.office.outlook.iap.debug.AdsAndIapDebugActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F150433",
+          "@ns0:name": "com.microsoft.office.outlook.compose.menuitems.EditMenuItemOrderActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F1412E1",
+          "@ns0:name": "com.microsoft.office.outlook.livepersonaeditor.ui.LivePersonaEditorActivity",
+          "@ns0:configChanges": "0x000005A0"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.OnboardingActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.calendar.compose.EventComposeActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F150440",
+          "@ns0:name": "com.microsoft.office.outlook.compose.ComposeDialogActivity"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.compose.link.SharingLinkPermissionSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "@7F14198B",
+          "@ns0:name": "com.microsoft.office.addins.ui.WebViewActivity",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F1504C1",
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.office.addins.ui.DialogWebViewActivity",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:label": "@7F14198B",
+          "@ns0:name": "com.microsoft.office.addins.ui.StoreActivity"
+        },
+        {
+          "@ns0:label": "@7F14198A",
+          "@ns0:name": "com.microsoft.office.addins.ui.TermsPrivacyPolicyActivity"
+        },
+        {
+          "@ns0:label": "@7F1402C5",
+          "@ns0:name": "com.microsoft.office.addins.ui.GenericWebViewActivity"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.genai.ui.inboxsummary.InboxSummaryActivity"
+        },
+        {
+          "@ns0:theme": "@7F1504F1",
+          "@ns0:name": "com.microsoft.office.outlook.genai.ui.coach.CoachDebugActivity",
+          "@ns0:windowSoftInputMode": "0x00000014"
+        },
+        {
+          "@ns0:theme": "@7F1503DA",
+          "@ns0:name": "com.microsoft.office.outlook.platform.sdkmanager.PlatformSdkIntentProcessorActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F15015D",
+          "@ns0:name": "com.microsoft.emmx.webview.browser.InAppBrowserActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F15015D",
+          "@ns0:name": "com.microsoft.emmx.webview.search.AutoSuggestionActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F15015D",
+          "@ns0:label": "@7F140412",
+          "@ns0:name": "com.microsoft.emmx.webview.search.SearchBridgeActivity",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.PROCESS_TEXT"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "text/plain"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F15015D",
+          "@ns0:name": "com.microsoft.emmx.webview.browser.screenshot.ScreenshotActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F15043C",
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.office.outlook.commute.player.CommutePlayerActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@7F15043B",
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.office.outlook.commute.onboarding.CommuteOnboardingV2Activity"
+        },
+        {
+          "@ns0:theme": "@7F15043B",
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.office.outlook.commute.rn.CommuteSafetyFirstActivity"
+        },
+        {
+          "@ns0:theme": "@7F15043B",
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.office.outlook.commute.contextMenu.CommuteContextMenuTipsActivity"
+        },
+        {
+          "@ns0:label": "CommuteAccountSettingsActivity",
+          "@ns0:name": "com.microsoft.office.outlook.commute.settings.CommuteAccountSettingsActivity"
+        },
+        {
+          "@ns0:label": "CommuteDailyRemindersSettingsActivity",
+          "@ns0:name": "com.microsoft.office.outlook.commute.settings.CommuteDailyRemindersSettingsActivity"
+        },
+        {
+          "@ns0:theme": "@7F15043C",
+          "@ns0:label": "CommutePlayerRNActivity",
+          "@ns0:name": "com.microsoft.office.outlook.commute.rn.CommutePlayerRNActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.dictation.settings.DictationLanguageActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F15043C",
+          "@ns0:name": "com.microsoft.cortana.shared.cortana.common.VoiceConsentActivity"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.authenticator.settings.AuthenticatorSettingsActivity"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.authenticator.AuthenticatorInteractiveRegistrationActivity"
+        },
+        {
+          "@ns0:theme": "@7F1503E8",
+          "@ns0:label": "@7F141CA8",
+          "@ns0:name": "com.microsoft.office.outlook.lenscapture.compose.LensPhotoCaptureActivity"
+        },
+        {
+          "@ns0:theme": "@7F1503E8",
+          "@ns0:name": "com.microsoft.office.outlook.lenscapture.contact.BusinessCardFlowActivity"
+        },
+        {
+          "@ns0:theme": "@7F1503E8",
+          "@ns0:label": "@7F141CA8",
+          "@ns0:name": "com.microsoft.office.outlook.lensvideo.compose.LensVideoCaptureActivity"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.ui.InteractiveAuthActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              }
+            ],
+            "data": [
+              {
+                "@ns0:scheme": "outlook-oauth",
+                "@ns0:host": "com.microsoft.office.outlook"
+              },
+              {
+                "@ns0:pathPattern": "/android/.*/oauth2redirect"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.intune.mam.client.app.offline.OfflineStartupBlockedActivity",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true"
+        },
+        {
+          "@ns0:name": "com.microsoft.intune.mam.client.app.startup.MAMStartupActivity",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true"
+        },
+        {
+          "@ns0:theme": "@7F1501E9",
+          "@ns0:name": "com.microsoft.intune.mam.client.app.resolver.MAMResolverActivity",
+          "@ns0:exported": "false",
+          "@ns0:taskAffinity": ""
+        },
+        {
+          "@ns0:name": "com.microsoft.oneplayer.player.ui.view.activity.OnePlayerActivity",
+          "@ns0:exported": "false",
+          "@ns0:taskAffinity": "com.microsoft.office.outlook.OnePlayerActivity",
+          "@ns0:launchMode": "3",
+          "@ns0:configChanges": "0x40003FF7",
+          "@ns0:supportsPictureInPicture": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1503D9",
+          "@ns0:label": "@7F141CD5",
+          "@ns0:name": "com.microsoft.metaos.hubsdk.ui.HostWindowActivity",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@7F1507F9",
+          "@ns0:name": "com.microsoft.authenticator.mfasdk.authentication.aad.ui.MfaAuthDialogActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:theme": "@7F1507F9",
+          "@ns0:name": "com.microsoft.authenticator.mfasdk.authentication.msa.ui.MsaSessionActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:theme": "@7F150866",
+          "@ns0:name": "com.microsoft.authenticator.commonuilibrary.ui.localauth.DeviceScreenUnlockActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:name": "com.microsoft.authenticator.commonuilibrary.ui.AppLockActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.inking.androidApp.InkActivity"
+        },
+        {
+          "@ns0:theme": "@7F150837",
+          "@ns0:name": "com.microsoft.authentication.internal.OneAuthNavigationActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000DB0"
+        },
+        {
+          "@ns0:name": "com.microsoft.identity.common.internal.providers.oauth2.AuthorizationActivity",
+          "@ns0:configChanges": "0x00000DB0"
+        },
+        {
+          "@ns0:name": "com.microsoft.identity.common.internal.providers.oauth2.CurrentTaskAuthorizationActivity",
+          "@ns0:configChanges": "0x00000DB0"
+        },
+        {
+          "@ns0:name": "com.microsoft.identity.common.internal.broker.BrokerActivity",
+          "@ns0:configChanges": "0x000005B0"
+        },
+        {
+          "@ns0:theme": "@7F1503D2",
+          "@ns0:name": "com.microsoft.identity.common.internal.broker.InstallCertActivityLauncher",
+          "@ns0:configChanges": "0x000005B0"
+        },
+        {
+          "@ns0:theme": "@7F1504F2",
+          "@ns0:name": "com.microsoft.powerlift.android.rave.internal.ui.conversation.RaveConversationActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1504F3",
+          "@ns0:name": "com.microsoft.powerlift.android.rave.internal.ui.start.RaveStartActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1504F2",
+          "@ns0:name": "com.microsoft.powerlift.android.rave.internal.ui.insights.SupportInsightsActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F1504F2",
+          "@ns0:name": "com.microsoft.powerlift.android.RemedyActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.facebook.ads.AudienceNetworkActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@7F1503D2",
+          "@ns0:name": "com.flipgrid.camera.onecamera.playback.SaveVideoToDownloadsActivity"
+        },
+        {
+          "@ns0:theme": "@7F15022D",
+          "@ns0:name": "com.microsoft.mobile.paywallsdk.ui.PaywallActivity",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.android.billingclient.api.ProxyBillingActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000005B0"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:name": "com.appnexus.opensdk.AdActivity",
+          "@ns0:configChanges": "0x000005A0"
+        },
+        {
+          "@ns0:theme": "@7F1503CC",
+          "@ns0:name": "com.microsoft.office.lens.lenscommon.ui.LensActivity",
+          "@ns0:multiprocess": "true",
+          "@ns0:windowSoftInputMode": "0x00000023"
+        },
+        {
+          "@ns0:theme": "@7F1501D2",
+          "@ns0:name": "com.microsoft.office.lens.lensgallery.immersivegallery.ImmersiveGalleryActivity",
+          "@ns0:multiprocess": "true",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.microsoft.intune.mam.client.app.offline.OfflineRestartRequiredActivity",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true"
+        },
+        {
+          "@ns0:theme": "@7F1501E9",
+          "@ns0:name": "com.microsoft.intune.mam.client.app.offline.OfflineInstallCompanyPortalDialogActivity",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true"
+        },
+        {
+          "@ns0:name": "com.microsoft.intune.mam.client.app.offline.OfflineNotifyWipeActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:label": "ComplianceBlock",
+          "@ns0:name": "com.microsoft.intune.mam.client.app.startup.MAMComplianceBlockActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:label": "@7F14025B",
+          "@ns0:name": "com.microsoft.moderninput.voiceactivity.voicesettings.LanguageSettingsActivity"
+        },
+        {
+          "@ns0:label": "@7F140252",
+          "@ns0:name": "com.microsoft.moderninput.voiceactivity.voicesettings.SettingsActivity"
+        },
+        {
+          "@ns0:name": "com.microsoft.moderninput.voiceactivity.HelpPageActivity"
+        },
+        {
+          "@ns0:theme": "@7F1507F8",
+          "@ns0:label": "@7F141E9C",
+          "@ns0:name": "com.yubico.yubikit.android.ui.OtpActivity",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:theme": "@7F1507F8",
+          "@ns0:label": "@7F141E9E",
+          "@ns0:name": "com.yubico.yubikit.android.ui.YubiKeyPromptActivity",
+          "@ns0:excludeFromRecents": "true"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:label": "@7F14018C",
+          "@ns0:name": "com.acompli.acompli.providers.OutlookContentProvider",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.microsoft.office.outlook.contentprovider",
+          "@ns0:grantUriPermissions": "true",
+          "grant-uri-permission": [
+            {
+              "@ns0:pathPattern": "com.android.contacts/*"
+            },
+            {
+              "@ns0:pathPattern": "@7F14069E"
+            },
+            {
+              "@ns0:pathPattern": "@7F1406B4"
+            },
+            {
+              "@ns0:pathPattern": "@7F1411A5"
+            },
+            {
+              "@ns0:pathPrefix": "@7F1411A6"
+            },
+            {
+              "@ns0:pathPrefix": "@7F14088D"
+            },
+            {
+              "@ns0:pathPrefix": "@7F14088E"
+            },
+            {
+              "@ns0:pathPrefix": "@7F14088C"
+            },
+            {
+              "@ns0:pathPrefix": "@7F1403C3"
+            }
+          ]
+        },
+        {
+          "@ns0:label": "Outlook Shared Data Content",
+          "@ns0:name": "com.microsoft.office.outlook.providers.OutlookSharedDataContentProvider",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.microsoft.office.outlook.shareddatacontentprovider"
+        },
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.microsoft.office.outlook.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F18000B"
+          }
+        },
+        {
+          "@ns0:name": "com.reactnativecommunity.webview.RNCWebViewFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.microsoft.office.outlook.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F18000A"
+          }
+        },
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.microsoft.office.outlook.androidx-startup",
+          "meta-data": [
+            {
+              "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.profileinstaller.ProfileInstallerInitializer",
+              "@ns0:value": "androidx.startup"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.microsoft.emmx.webview.browser.contentprovider.EdgeWebViewContentProvider",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.microsoft.office.outlook.webviewsdkprovider"
+        },
+        {
+          "@ns0:name": "com.microsoft.authenticator.mfasdk.provider.SharedDataContentProvider",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.microsoft.office.outlook.mfasdk.shareddatacontentprovider"
+        },
+        {
+          "@ns0:name": "com.google.mlkit.common.internal.MlKitInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.microsoft.office.outlook.mlkitinitprovider",
+          "@ns0:initOrder": "99"
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.microsoft.office.outlook.firebaseinitprovider",
+          "@ns0:initOrder": "100",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.flipgrid.camera.core.OneCameraFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.microsoft.office.outlook.com.flipgrid.camera.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F180009"
+          }
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.microsoft.office.outlook.fcm.OutlookFirebaseMessagingService",
+          "@ns0:exported": "true",
+          "@ns0:stopWithTask": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.appwidget.agenda.AgendaWidgetService",
+          "@ns0:permission": "android.permission.BIND_REMOTEVIEWS"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.appwidget.inbox.InboxWidgetService",
+          "@ns0:permission": "android.permission.BIND_REMOTEVIEWS"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.services.LocalNotificationIntentService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.contacts.sync.OutlookAuthenticatorService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.accounts.AccountAuthenticator"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.accounts.AccountAuthenticator",
+            "@ns0:resource": "@7F180013"
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.services.MobileSideReceiverService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.google.android.gms.wearable.MESSAGE_RECEIVED"
+              },
+              {
+                "@ns0:name": "com.google.android.gms.wearable.CAPABILITY_CHANGED"
+              }
+            ],
+            "data": {
+              "@ns0:scheme": "wear",
+              "@ns0:host": "*",
+              "@ns0:pathPrefix": "/"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.services.FilesDirectDownloadIntentService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.recoverymode.RecoveryModeProcess",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false",
+          "@ns0:process": ":recoveryMode"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.calendarsync.adapter.CalendarSyncAdapterService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.SyncAdapter"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.content.SyncAdapter",
+            "@ns0:resource": "@7F180006"
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.contactsync.adapter.ContactSyncAdapterService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.SyncAdapter"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.content.SyncAdapter",
+              "@ns0:resource": "@7F180008"
+            },
+            {
+              "@ns0:name": "android.provider.CONTACTS_STRUCTURE",
+              "@ns0:resource": "@7F180007"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.accessory.SAService"
+        },
+        {
+          "@ns0:name": "com.samsung.android.sdk.accessory.SAJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.auth.service.AccountCreationService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.acompli.accore.ACCoreService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.account.OneDriveForBusinessSetupService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.shutdown.ShutdownMonitorService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.evernote.android.job.v21.PlatformJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.evernote.android.job.JobRescheduleService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.commute.player.mediacenter.CommuteNotificationManagerService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.enterprise.connectedapps.CrossProfileConnector_Service",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.intune.mam.client.notification.MAMNotificationReceiverService",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.intune.mam.client.service.MAMBackgroundService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.oneplayer.core.service.PlayerProviderService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.foreground.SystemForegroundService",
+          "@ns0:enabled": "@7F050006",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "@ns0:foregroundServiceType": "0x00000008"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+          "@ns0:permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+          "@ns0:exported": "true",
+          "@ns0:visibleToInstantApps": "true"
+        },
+        {
+          "@ns0:name": "com.google.firebase.messaging.FirebaseMessagingService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "intent-filter": {
+            "@ns0:priority": "-500",
+            "action": {
+              "@ns0:name": "com.google.firebase.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.components.ComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.mlkit.common.internal.MlKitComponentDiscoveryService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true",
+          "meta-data": [
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            },
+            {
+              "@ns0:name": "com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar",
+              "@ns0:value": "com.google.firebase.components.ComponentRegistrar"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "androidx.camera.core.impl.MetadataHolderService",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER",
+            "@ns0:value": "androidx.camera.camera2.Camera2Config$DefaultProvider"
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+          "@ns0:enabled": "@7F050005",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemjob.SystemJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "@7F050007",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.sharetarget.ChooserTargetServiceCompat",
+          "@ns0:permission": "android.permission.BIND_CHOOSER_TARGET_SERVICE",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.chooser.ChooserTargetService"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+          "@ns0:exported": "false",
+          "meta-data": {
+            "@ns0:name": "backend:com.google.android.datatransport.cct.CctBackendFactory",
+            "@ns0:value": "cct"
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:label": "",
+          "@ns0:name": "com.microsoft.intune.mam.client.service.MAMBackgroundJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.tokenshare.TokenSharingService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.microsoft.tokenshare.TokenSharingService"
+            }
+          }
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:label": "@7F140494",
+          "@ns0:name": "com.acompli.acompli.AgendaWidgetProvider",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+              },
+              {
+                "@ns0:name": "com.microsoft.office.outlook.action.AGENDA_APPWIDGET_UPDATE"
+              },
+              {
+                "@ns0:name": "com.acompli.acompli.action.CREATE_EVENT"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F180002"
+          }
+        },
+        {
+          "@ns0:label": "@7F140E1E",
+          "@ns0:name": "com.acompli.acompli.InboxWidgetProvider",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+              },
+              {
+                "@ns0:name": "com.microsoft.office.outlook.action.INBOX_APPWIDGET_UPDATE"
+              },
+              {
+                "@ns0:name": "com.microsoft.office.outlook.action.COMPOSE"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F18000E"
+          }
+        },
+        {
+          "@ns0:label": "@7F14163E",
+          "@ns0:name": "com.acompli.accore.receivers.OutlookDeviceAdminReceiver",
+          "@ns0:permission": "android.permission.BIND_DEVICE_ADMIN",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.app.action.DEVICE_ADMIN_ENABLED"
+              },
+              {
+                "@ns0:name": "android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED"
+              },
+              {
+                "@ns0:name": "android.app.action.DEVICE_ADMIN_DISABLED"
+              },
+              {
+                "@ns0:name": "com.microsoft.office.outlook.ACTION.UPDATE_POLICIES"
+              }
+            ]
+          },
+          "meta-data": {
+            "@ns0:name": "android.app.device_admin",
+            "@ns0:resource": "@7F180014"
+          }
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.receivers.SignupReminderReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.utils.ComponentChosenIntentReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.notification.NotificationsActionReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.microsoft.office.outlook.action.REMOVE_ALL_MESSAGE_NOTIFICATIONS"
+              },
+              {
+                "@ns0:name": "com.microsoft.office.outlook.action.REMOVE_ACCOUNT_MESSAGE_NOTIFICATIONS"
+              },
+              {
+                "@ns0:name": "com.microsoft.office.outlook.action.REMOVE_MESSAGE_NOTIFICATION"
+              },
+              {
+                "@ns0:name": "com.microsoft.office.outlook.action.REMOVE_EVENT_NOTIFICATION"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.receivers.PowerLiftDiagnosticsStatusReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.microsoft.ACTION_SEND_DIAGNOSTICS_STATUS"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.receivers.PackageReplacedReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MY_PACKAGE_REPLACED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.receiver.OutlookBootReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.receivers.TimeZoneChangedReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.tizen.receivers.SamsungRegisterUponInstallReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.accessory.action.REGISTER_AGENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.tizen.receivers.SamsungServiceConnectionIndicationReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.auth.service.AccountCreationRequestReceiver",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.auth.service.AccountSSOCreationRequestReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.microsoft.office.outlook.ACCOUNT_CREATION_PERMISSION"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.calendar.workers.EventNotificationUpdateReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.acompli.acompli.download.FileDownloadReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.acompli.accore.ACCoreService$Receiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "ACOMPLI_ARCHIVE"
+              },
+              {
+                "@ns0:name": "ACOMPLI_SOFT_RESET"
+              },
+              {
+                "@ns0:name": "ACOMPLI_HARD_RESET"
+              },
+              {
+                "@ns0:name": "ACOMPLI_BUNDLE_RESET"
+              },
+              {
+                "@ns0:name": "ACOMPLI_DELETE"
+              },
+              {
+                "@ns0:name": "OUTLOOK_REMOVE_AND_RE_ADD_ACCOUNT"
+              },
+              {
+                "@ns0:name": "DIRECT_REPLY"
+              },
+              {
+                "@ns0:name": "OLM_BG_CONNECT_ACTION"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.notification.NotificationActionReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "DELETE_ACTION"
+              },
+              {
+                "@ns0:name": "MARK_READ_ACTION"
+              },
+              {
+                "@ns0:name": "MARK_READ_AND_ARCHIVE_ACTION"
+              },
+              {
+                "@ns0:name": "FLAG_MESSAGE_ACTION"
+              },
+              {
+                "@ns0:name": "ACOMPLI_ARCHIVE"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.commute.player.receivers.CommuteSettingsReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.commute.player.receivers.CommuteUnsubscribeDailyRemindersReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.commute.player.receivers.CommuteSnoozeDailyRemindersReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.office.outlook.commute.player.receivers.CommuteAlarmDailyRemindersReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.microsoft.intune.mam.client.service.MAMBackgroundReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.DOWNLOAD_COMPLETE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.microsoft.authenticator.mfasdk.businessLogic.MfaNotificationActionBroadcastReceiver"
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BATTERY_OKAY"
+              },
+              {
+                "@ns0:name": "android.intent.action.BATTERY_LOW"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIME_SET"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+          "@ns0:enabled": "@7F050005",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.impl.background.systemalarm.UpdateProxies"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "androidx.profileinstaller.ProfileInstallReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "androidx.profileinstaller.action.INSTALL_PROFILE"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "androidx.profileinstaller.action.SKIP_FILE"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "androidx.profileinstaller.action.SAVE_PROFILE"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+              }
+            }
+          ]
+        }
+      ],
+      "uses-library": [
+        {
+          "@ns0:name": "org.apache.http.legacy",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "androidx.window.extensions",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "androidx.window.sidecar",
+          "@ns0:required": "false"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2008100010" ns0:versionName="1.0.210304" ns0:compileSdkVersion="29" ns0:compileSdkVersionCodename="10" package="com.appfour.wearphotos" platformBuildVersionCode="29" platformBuildVersionName="10">
+	<uses-sdk ns0:minSdkVersion="18" ns0:targetSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<permission ns0:name="com.appfour.wearphotos.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.appfour.wearphotos.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<permission ns0:name="com.appfour.wearphotos.permission.iab" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.appfour.wearcalendar.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.weardocuments.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearkeyboard.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearlauncher.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearmail.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearmessages.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearphotos.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.weartube.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearvideos.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearweather.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearbrowser.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearwifi.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.weartracker.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearinstruments.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearaltimeter.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearspeedometer.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearcompass.permission.iab"/>
+	<uses-permission ns0:name="com.appfour.wearstopwatch.permission.iab"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<application ns0:theme="@7F130007" ns0:label="@7F12002D" ns0:icon="@7F0F0000" ns0:name="com.appfour.wearphotos.PhoneApplication" ns0:allowBackup="true" ns0:supportsRtl="true">
+		<activity ns0:label="@7F120084" ns0:name="com.appfour.wearphotos.SettingsActivity" ns0:configChanges="0x000007B0"/>
+		<activity ns0:label="@7F12002D" ns0:name="com.appfour.wearphotos.PhoneActivity" ns0:launchMode="2" ns0:configChanges="0x000007B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000A"/>
+		<service ns0:name="com.appfour.wearlibrary.phone.connection.PhoneConnectionService">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.wearable.BIND_LISTENER"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.google.android.gms.analytics.AnalyticsReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.appfour.wearlibrary.phone.util.PackageUpgradedBroadcastReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.appfour.googleapis.WebAuthActivity" ns0:configChanges="0x000007B0"/>
+		<receiver ns0:name="com.appfour.marketing.InAppShopNotification"/>
+		<receiver ns0:name="com.appfour.util.PeriodicalWakeUpReceiver">
+			<intent-filter>
+				<action ns0:name="com.appfour.RUNNING_ALARM"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.appfour.wearphotos.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150002"/>
+		</provider>
+		<receiver ns0:name="com.appfour.marketing.InAppPurchasesChangedReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.appfour.wear.IN_APP_PURCHASES_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.appfour.googleapis.inappbilling.InAppBillingInformationProvider" ns0:readPermission="com.appfour.wearphotos.permission.iab" ns0:exported="true" ns0:process=":iabprovider" ns0:authorities="com.appfour.wearphotos.provider.iab"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<uses-library ns0:name="com.google.android.wearable" ns0:required="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="android.support.VERSION" ns0:value="26.0.2"/>
+		<meta-data ns0:name="com.google.android.wearable.beta.app" ns0:resource="@7F150001"/>
+	</application>
+</manifest>

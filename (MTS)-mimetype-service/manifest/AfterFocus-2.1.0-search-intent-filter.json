@@ -1,0 +1,93 @@
+{
+    "root": {
+        "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+        "intent-filter": [
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MAIN"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.SEND"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.google.android.gms.measurement.UPLOAD"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+                    },
+                    {
+                        "@ns0:name": "com.google.android.c2dm.intent.REGISTRATION"
+                    }
+                ],
+                "category": {
+                    "@ns0:name": "com.motionone.afterfocus"
+                }
+            },
+            {
+                "@ns0:priority": "-500",
+                "action": {
+                    "@ns0:name": "com.google.firebase.INSTANCE_ID_EVENT"
+                }
+            },
+            {
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "action": {
+                    "@ns0:name": "com.yandex.metrica.IMetricaService"
+                },
+                "data": {
+                    "@ns0:scheme": "metrica"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "ACTION.TAPCORE.MESSAGE"
+                    },
+                    {
+                        "@ns0:name": "ACTION.TAPCORE.SYNC"
+                    },
+                    {
+                        "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.TIME_SET"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+                    }
+                ]
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+                    },
+                    {
+                        "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+                    },
+                    {
+                        "@ns0:name": "com.inmobi.share.id"
+                    }
+                ]
+            }
+        ]
+    }
+}

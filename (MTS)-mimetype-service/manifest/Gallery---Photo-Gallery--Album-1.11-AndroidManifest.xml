@@ -1,0 +1,237 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="11" ns0:versionName="1.11" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="gallery.photogallery.lockgallery.bestgallery" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="24" ns0:targetSdkVersion="33"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="40"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_MEDIA"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<application ns0:theme="@7F11011B" ns0:label="@7F100034" ns0:icon="@7F0E0000" ns0:name="gallery.photogallery.lockgallery.bestgallery.App" ns0:allowBackup="true" ns0:uiOptions="0x00000001" ns0:supportsRtl="true" ns0:extractNativeLibs="false" ns0:fullBackupContent="@7F130000" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:dataExtractionRules="@7F130001">
+		<activity ns0:theme="@7F110123" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopPermissionRequiredActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopPrivacyPolicyActivity" ns0:exported="false"/>
+		<activity ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopPinActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F11011B" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopHideImageFullActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F11011B" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.OldMainActivity" ns0:exported="true" ns0:uiOptions="0x00000001"/>
+		<activity ns0:theme="@7F11011B" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.MainActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F11011B" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopMediaActivity" ns0:exported="false" ns0:configChanges="0x00000080" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.OldMainActivity"/>
+		<activity ns0:theme="@7F11011B" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopMediaRecentActivity" ns0:exported="false" ns0:configChanges="0x00000080" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.MainActivity"/>
+		<activity ns0:theme="@7F11011B" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopMediaActivity3" ns0:exported="false" ns0:configChanges="0x00000080" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.OldMainActivity"/>
+		<activity ns0:theme="@7F11011B" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopSearchActivity" ns0:exported="false" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopPhotoVideoActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopVideoPlayerActivity" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.TopMediaActivity"/>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopPanoramaPhotoActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopPanoramaVideoActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopPhotoActivity" ns0:exported="true" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopVideoActivity" ns0:exported="true" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopViewPagerActivity" ns0:exported="true" ns0:configChanges="0x000004A0" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.TopMediaActivity">
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopViewPagerShowAllActivity" ns0:exported="true" ns0:configChanges="0x000004A0" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopViewPagerOnePictureActivity" ns0:exported="true" ns0:configChanges="0x000004A0" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1102E7" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopViewPagerRecentActivity" ns0:exported="true" ns0:configChanges="0x000004A0" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F11011B" ns0:label="@7F10027A" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopSettingsActivity" ns0:exported="true" ns0:configChanges="0x00000080" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.OldMainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.APPLICATION_PREFERENCES"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F11011B" ns0:label="@7F10027A" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopSettingsActivity2" ns0:exported="true" ns0:configChanges="0x00000080" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.OldMainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.APPLICATION_PREFERENCES"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F100146" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopRopIncludedFoldersActivity" ns0:exported="false" ns0:configChanges="0x00000080" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.TopSettingsActivity2"/>
+		<activity ns0:label="@7F1000CD" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopExcludedFoldersActivity" ns0:exported="false" ns0:configChanges="0x00000080" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.TopSettingsActivity2"/>
+		<activity ns0:label="@7F100135" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopHiddenFoldersActivity" ns0:exported="false" ns0:configChanges="0x00000080" ns0:parentActivityName="gallery.photogallery.lockgallery.bestgallery.activities.TopSettingsActivity2"/>
+		<activity ns0:theme="@7F1102E7" ns0:label="@7F100277" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopSetWallpaperActivity" ns0:exported="true" ns0:configChanges="0x00000080">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopEditActivity" ns0:exported="true" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@7F1102E7" ns0:label="@7F1000BD" ns0:name="gallery.photogallery.lockgallery.bestgallery.activities.TopEditActivity2" ns0:exported="true" ns0:configChanges="0x00000080">
+			<intent-filter ns0:name="foss-editor">
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.CROP"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.ALTERNATIVE"/>
+				<category ns0:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="gallery.photogallery.lockgallery.bestgallery.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130003"/>
+		</provider>
+		<receiver ns0:name="gallery.photogallery.lockgallery.bestgallery.receivers.TopRefreshMediaReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="gallery.photogallery.lockgallery.REFRESH_MEDIA"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="gallery.photogallery.lockgallery.bestgallery.jobs.TopNewPhotoFetcher" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="true"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-5926647678688771~6610313521"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="gallery.photogallery.lockgallery.bestgallery.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.ads.OutOfContextTestingActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="gallery.photogallery.lockgallery.bestgallery.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050004" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A000C"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="gallery.photogallery.lockgallery.bestgallery.com.squareup.picasso"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F130009"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

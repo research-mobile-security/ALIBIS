@@ -1,0 +1,219 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "20",
+    "@ns0:versionName": "20.19",
+    "@ns0:installLocation": "0",
+    "@package": "com.mehmetcakmak.selfiekamera",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "15",
+      "@ns0:targetSdkVersion": "27"
+    },
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera"
+      },
+      {
+        "@ns0:name": "android.hardware.microphone"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F0E0001",
+      "@ns0:label": "@7F0D0007",
+      "@ns0:icon": "@7F0B0000",
+      "@ns0:name": "net.sourceforge.opencamera.OpenCameraApplication",
+      "@ns0:allowBackup": "true",
+      "@ns0:largeHeap": "true",
+      "meta-data": {
+        "@ns0:name": "com.google.android.gms.version",
+        "@ns0:value": "@7F080001"
+      },
+      "activity": [
+        {
+          "@ns0:label": "@7F0D0007",
+          "@ns0:name": "net.sourceforge.opencamera.MainActivity",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:screenOrientation": "0",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "android.app.shortcuts",
+            "@ns0:resource": "@7F100001"
+          }
+        },
+        {
+          "@ns0:label": "@7F0D01CE",
+          "@ns0:icon": "@7F060038",
+          "@ns0:name": "net.sourceforge.opencamera.TakePhoto",
+          "@ns0:taskAffinity": "",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:screenOrientation": "0",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@7F0E000C",
+          "@ns0:name": "com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:label": "@7F0D0007",
+          "@ns0:icon": "@7F0B0000",
+          "@ns0:name": "net.sourceforge.opencamera.MyWidgetProvider",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F100002"
+          }
+        },
+        {
+          "@ns0:label": "@7F0D01CE",
+          "@ns0:icon": "@7F060038",
+          "@ns0:name": "net.sourceforge.opencamera.MyWidgetProviderTakePhoto",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F100003"
+          }
+        }
+      ],
+      "service": [
+        {
+          "@ns0:label": "@7F0D0016",
+          "@ns0:icon": "@7F06003E",
+          "@ns0:name": "net.sourceforge.opencamera.MyTileService",
+          "@ns0:permission": "android.permission.BIND_QUICK_SETTINGS_TILE",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.quicksettings.action.QS_TILE"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F0D01A2",
+          "@ns0:icon": "@7F06004B",
+          "@ns0:name": "net.sourceforge.opencamera.MyTileServiceVideo",
+          "@ns0:permission": "android.permission.BIND_QUICK_SETTINGS_TILE",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.quicksettings.action.QS_TILE"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F0D01BE",
+          "@ns0:icon": "@7F060031",
+          "@ns0:name": "net.sourceforge.opencamera.MyTileServiceFrontCamera",
+          "@ns0:permission": "android.permission.BIND_QUICK_SETTINGS_TILE",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.quicksettings.action.QS_TILE"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

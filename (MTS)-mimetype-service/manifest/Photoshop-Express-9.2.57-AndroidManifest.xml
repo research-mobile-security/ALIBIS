@@ -1,0 +1,436 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1216" ns0:versionName="9.2.57" ns0:installLocation="0" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.adobe.psmobile" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="31"/>
+	<uses-feature ns0:glEsVersion="0x00020000"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.READ_INTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.NETWORK"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<package ns0:name="com.adobe.cc"/>
+		<package ns0:name="com.adobe.scan.android"/>
+		<package ns0:name="com.behance.behance"/>
+		<package ns0:name="com.adobe.sparklerandroid"/>
+		<package ns0:name="com.adobe.photoshopmix"/>
+		<package ns0:name="com.adobe.psmobile"/>
+		<package ns0:name="com.adobe.lrmobile"/>
+		<package ns0:name="com.behance.portfolio"/>
+		<package ns0:name="com.adobe.creativeapps.gather"/>
+		<package ns0:name="com.adobe.creativeapps.draw"/>
+		<package ns0:name="com.adobe.comp"/>
+		<package ns0:name="com.adobe.creativeapps.sketch"/>
+		<package ns0:name="com.adobe.premiereclip"/>
+		<package ns0:name="com.adobe.adobephotoshopfix"/>
+		<package ns0:name="com.adobe.reader"/>
+		<package ns0:name="com.adobe.scan.android"/>
+		<package ns0:name="com.adobe.fas"/>
+		<package ns0:name="com.adobe.echosign"/>
+		<package ns0:name="com.adobe.spark.post"/>
+		<package ns0:name="com.adobe.aero"/>
+		<package ns0:name="com.adobe.lens.android"/>
+		<package ns0:name="com.adobe.premiererush.videoeditor"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<package ns0:name="com.sec.android.app.samsungapps"/>
+	</queries>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="com.samsung.android.iap.permission.BILLING"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<application ns0:theme="@7F1401B7" ns0:label="@7F130715" ns0:icon="@7F100000" ns0:name="com.adobe.psmobile.PSExpressApplication" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="false" ns0:networkSecurityConfig="@7F160004" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.samsung.android.icon_container.has_icon_container" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0C003A"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F1305B1"/>
+		<meta-data ns0:name="com.facebook.sdk.ClientToken" ns0:value="@7F1305B2"/>
+		<activity ns0:label="@7F130715" ns0:name="com.adobe.psmobile.MainActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x00000D80">
+			<intent-filter ns0:label="@7F130715">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="photoshopexpressandroid.adobe.com" ns0:pathPrefix="/imagepicker"/>
+				<data ns0:scheme="psxa" ns0:host="photoshopexpressandroid.adobe.com" ns0:pathPrefix="/learnPS"/>
+				<data ns0:scheme="http" ns0:host="www.adobe.com" ns0:pathPrefix="/go/getpsxa"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140283" ns0:name="com.adobe.psmobile.SplashScreen" ns0:exported="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<data ns0:scheme="com.adobe.photoshopexpress"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="photoshopexpress.app.link"/>
+				<data ns0:scheme="https" ns0:host="photoshopexpress-alternate.app.link"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="io.branch.sdk.BranchKey" ns0:value="key_live_fhPo4Nlbi7AIL5ltTMYpxllnxvljUYEs"/>
+		<meta-data ns0:name="io.branch.sdk.BranchKey.test" ns0:value="key_test_clOk3Qgan3DKK0bAVK9HUjgiqxieVZrO"/>
+		<meta-data ns0:name="io.branch.sdk.TestMode" ns0:value="false"/>
+		<activity ns0:theme="@7F140282" ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsProfileActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsAboutAppActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsPreferencesActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsOnBoardingActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsWatermarkCreationActivity" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsDebugActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.featureflag.PSXSettingsFeatureFlagsActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsLearnPSActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsHelpAndFeedbackActivity"/>
+		<activity ns0:name="com.adobe.pscollage.ui.activities.activity.PSXCollageActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsJPEGQualityActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsImageSizeActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXAdvancedSettingsActivity"/>
+		<activity ns0:name="com.adobe.creativeapps.settings.activity.PSXSettingsSavePNGAsActivity"/>
+		<activity ns0:theme="@7F140311" ns0:name="com.adobe.creativeapps.settings.activity.SuspendedCountryPaywallActivity"/>
+		<activity ns0:theme="@7F140282" ns0:name="com.adobe.psmobile.tutorials.TourViewActivity"/>
+		<activity ns0:name="com.adobe.ozintegration.LoginActivity"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.adobe.marketing.mobile.MessageFullScreenActivity" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:name="com.adobe.psmobile.PSXEditActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x00000DA0">
+			<intent-filter>
+				<action ns0:name="com.adobe.psmobile.IMAGE_EDITOR"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/heic"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:host="*"/>
+				<data ns0:pathPattern=".*\.cr2"/>
+				<data ns0:pathPattern=".*\.CR2"/>
+				<data ns0:pathPattern=".*\.arw"/>
+				<data ns0:pathPattern=".*\.ARW"/>
+				<data ns0:pathPattern=".*\.crw"/>
+				<data ns0:pathPattern=".*\.CRW"/>
+				<data ns0:pathPattern=".*\.dng"/>
+				<data ns0:pathPattern=".*\.DNG"/>
+				<data ns0:pathPattern=".*\.erf"/>
+				<data ns0:pathPattern=".*\.ERF"/>
+				<data ns0:pathPattern=".*\.raf"/>
+				<data ns0:pathPattern=".*\.RAF"/>
+				<data ns0:pathPattern=".*\.3fr"/>
+				<data ns0:pathPattern=".*\.3FR"/>
+				<data ns0:pathPattern=".*\.fff"/>
+				<data ns0:pathPattern=".*\.FFF"/>
+				<data ns0:pathPattern=".*\.dcr"/>
+				<data ns0:pathPattern=".*\.DCR"/>
+				<data ns0:pathPattern=".*\.mrw"/>
+				<data ns0:pathPattern=".*\.MRW"/>
+				<data ns0:pathPattern=".*\.mos"/>
+				<data ns0:pathPattern=".*\.MOS"/>
+				<data ns0:pathPattern=".*\.rwl"/>
+				<data ns0:pathPattern=".*\.RWL"/>
+				<data ns0:pathPattern=".*\.nef"/>
+				<data ns0:pathPattern=".*\.NEF"/>
+				<data ns0:pathPattern=".*\.nrw"/>
+				<data ns0:pathPattern=".*\.NRW"/>
+				<data ns0:pathPattern=".*\.orf"/>
+				<data ns0:pathPattern=".*\.ORF"/>
+				<data ns0:pathPattern=".*\.rw2"/>
+				<data ns0:pathPattern=".*\.RW2"/>
+				<data ns0:pathPattern=".*\.pef"/>
+				<data ns0:pathPattern=".*\.PEF"/>
+				<data ns0:pathPattern=".*\.srw"/>
+				<data ns0:pathPattern=".*\.SRW"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/heic"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:host="*"/>
+				<data ns0:pathPattern=".*\.cr2"/>
+				<data ns0:pathPattern=".*\.CR2"/>
+				<data ns0:pathPattern=".*\.arw"/>
+				<data ns0:pathPattern=".*\.ARW"/>
+				<data ns0:pathPattern=".*\.crw"/>
+				<data ns0:pathPattern=".*\.CRW"/>
+				<data ns0:pathPattern=".*\.dng"/>
+				<data ns0:pathPattern=".*\.DNG"/>
+				<data ns0:pathPattern=".*\.erf"/>
+				<data ns0:pathPattern=".*\.ERF"/>
+				<data ns0:pathPattern=".*\.raf"/>
+				<data ns0:pathPattern=".*\.RAF"/>
+				<data ns0:pathPattern=".*\.3fr"/>
+				<data ns0:pathPattern=".*\.3FR"/>
+				<data ns0:pathPattern=".*\.fff"/>
+				<data ns0:pathPattern=".*\.FFF"/>
+				<data ns0:pathPattern=".*\.dcr"/>
+				<data ns0:pathPattern=".*\.DCR"/>
+				<data ns0:pathPattern=".*\.mrw"/>
+				<data ns0:pathPattern=".*\.MRW"/>
+				<data ns0:pathPattern=".*\.mos"/>
+				<data ns0:pathPattern=".*\.MOS"/>
+				<data ns0:pathPattern=".*\.rwl"/>
+				<data ns0:pathPattern=".*\.RWL"/>
+				<data ns0:pathPattern=".*\.nef"/>
+				<data ns0:pathPattern=".*\.NEF"/>
+				<data ns0:pathPattern=".*\.nrw"/>
+				<data ns0:pathPattern=".*\.NRW"/>
+				<data ns0:pathPattern=".*\.orf"/>
+				<data ns0:pathPattern=".*\.ORF"/>
+				<data ns0:pathPattern=".*\.rw2"/>
+				<data ns0:pathPattern=".*\.RW2"/>
+				<data ns0:pathPattern=".*\.pef"/>
+				<data ns0:pathPattern=".*\.PEF"/>
+				<data ns0:pathPattern=".*\.srw"/>
+				<data ns0:pathPattern=".*\.SRW"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/heic"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:host="*"/>
+				<data ns0:pathPattern=".*\.cr2"/>
+				<data ns0:pathPattern=".*\.CR2"/>
+				<data ns0:pathPattern=".*\.arw"/>
+				<data ns0:pathPattern=".*\.ARW"/>
+				<data ns0:pathPattern=".*\.crw"/>
+				<data ns0:pathPattern=".*\.CRW"/>
+				<data ns0:pathPattern=".*\.dng"/>
+				<data ns0:pathPattern=".*\.DNG"/>
+				<data ns0:pathPattern=".*\.erf"/>
+				<data ns0:pathPattern=".*\.ERF"/>
+				<data ns0:pathPattern=".*\.raf"/>
+				<data ns0:pathPattern=".*\.RAF"/>
+				<data ns0:pathPattern=".*\.3fr"/>
+				<data ns0:pathPattern=".*\.3FR"/>
+				<data ns0:pathPattern=".*\.fff"/>
+				<data ns0:pathPattern=".*\.FFF"/>
+				<data ns0:pathPattern=".*\.dcr"/>
+				<data ns0:pathPattern=".*\.DCR"/>
+				<data ns0:pathPattern=".*\.mrw"/>
+				<data ns0:pathPattern=".*\.MRW"/>
+				<data ns0:pathPattern=".*\.mos"/>
+				<data ns0:pathPattern=".*\.MOS"/>
+				<data ns0:pathPattern=".*\.rwl"/>
+				<data ns0:pathPattern=".*\.RWL"/>
+				<data ns0:pathPattern=".*\.nef"/>
+				<data ns0:pathPattern=".*\.NEF"/>
+				<data ns0:pathPattern=".*\.nrw"/>
+				<data ns0:pathPattern=".*\.NRW"/>
+				<data ns0:pathPattern=".*\.orf"/>
+				<data ns0:pathPattern=".*\.ORF"/>
+				<data ns0:pathPattern=".*\.rw2"/>
+				<data ns0:pathPattern=".*\.RW2"/>
+				<data ns0:pathPattern=".*\.pef"/>
+				<data ns0:pathPattern=".*\.PEF"/>
+				<data ns0:pathPattern=".*\.srw"/>
+				<data ns0:pathPattern=".*\.SRW"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.adobe.psmobile.export.PSXExportActivity" ns0:configChanges="0x00000D80"/>
+		<activity ns0:theme="@7F140282" ns0:name="com.adobe.psmobile.PSXPaywallActivity" ns0:configChanges="0x00000580"/>
+		<receiver ns0:name="com.adobe.marketing.mobile.LocalNotificationHandler"/>
+		<provider ns0:name="com.facebook.FacebookContentProvider" ns0:exported="true" ns0:authorities="@7F1305B6"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.adobe.psmobile.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F160006"/>
+		</provider>
+		<activity ns0:name="com.adobe.psmobile.psxgallery.PSXGalleryActivity"/>
+		<activity ns0:theme="@7F140036" ns0:name="com.adobe.psmobile.ui.PSXInAppReviewActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="inappreview" ns0:host="com.adobe.psmobile"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" ns0:value="false"/>
+		<meta-data ns0:name="com.facebook.sdk.AutoLogAppEventsEnabled" ns0:value="false"/>
+		<activity ns0:theme="@7F140020" ns0:name="com.adobe.creativesdk.foundation.applibrary.internal.AppLibraryActivity"/>
+		<activity ns0:theme="@7F140136" ns0:name="com.adobe.creativesdk.foundation.applibrary.internal.ActionResolverActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:finishOnCloseSystemDialogs="true" ns0:documentLaunchMode="3" ns0:relinquishTaskIdentity="true"/>
+		<activity ns0:theme="@7F140161" ns0:name="com.behance.sdk.ui.activities.BehanceSDKProjectEditorActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F140161" ns0:name="com.behance.sdk.ui.activities.BehanceSDKCropperActivity"/>
+		<activity ns0:theme="@7F140139" ns0:name="com.behance.sdk.ui.activities.BehanceSDKPublishProjectActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F140139" ns0:name="com.behance.sdk.ui.activities.BehanceSDKCreateProjectWFActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F14017B" ns0:name="com.behance.sdk.ui.activities.BehanceSDKPublishResultsActivity"/>
+		<activity ns0:theme="@7F140161" ns0:name="com.behance.sdk.ui.activities.BehanceSDKEditProfileActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F140159" ns0:name="com.facebook.LoginActivity" ns0:exported="false"/>
+		<activity ns0:name="com.behance.sdk.ui.activities.BehanceSDKLoginToTwitterActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F140182" ns0:name="com.behance.sdk.ui.activities.BehanceSDKUnlinkSocialAccountActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F14013B" ns0:name="com.behance.sdk.ui.activities.BehanceSDKAdobeCloudSelectionActivity"/>
+		<activity ns0:theme="@7F14013E" ns0:name="com.behance.sdk.ui.activities.BehanceSDKProjectDetailActivity"/>
+		<activity ns0:theme="@7F14013A" ns0:name="com.behance.sdk.ui.activities.BehanceSDKCCLauncherActivity"/>
+		<service ns0:name="com.behance.sdk.services.BehanceSDKPublishProjectService"/>
+		<service ns0:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService" ns0:enabled="true"/>
+		<service ns0:name="com.behance.sdk.services.BehanceSDKProjectEditorService"/>
+		<activity ns0:theme="@7F140001" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.AdobeUXAssetOneUpViewerActivity" ns0:exported="false" ns0:configChanges="0x00000D80"/>
+		<activity ns0:theme="@7F140001" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.AdobeUXPhotoAssetOneUpViewerActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F14001A" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.AdobeUxAssetBrowserV2Activity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F140001" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.AdobeUXAssetVideoActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F140001" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.AdobeUXLibraryItemCollectionOneUpViewerActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F140001" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.AdobeUXMobilePackageItemOneUpViewerActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F140001" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.AdobeUXCompositionOneUpViewerActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F14001E" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.edit.AdobeAssetEditActivity" ns0:exported="false" ns0:configChanges="0x00000D80"/>
+		<activity ns0:theme="@7F14001E" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.libraryedit.AdobeDesignLibraryMoveActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F14001B" ns0:name="com.adobe.creativesdk.foundation.internal.settings.CloudPickerActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F140001" ns0:name="com.adobe.creativesdk.foundation.internal.storage.controllers.AdobeShowUploadTasksActivity" ns0:exported="false" ns0:configChanges="0x00000D80" ns0:resizeableActivity="true"/>
+		<activity ns0:theme="@7F14018C" ns0:name="com.adobe.creativesdk.color.internal.ui.activity.ColorThemeEditActivity" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:theme="@7F140188" ns0:name="com.adobe.creativesdk.color.internal.ui.activity.ColorComponentActivity" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:theme="@7F14018C" ns0:name="com.adobe.creativesdk.color.internal.ui.activity.LibraryColorItemsListActivity"/>
+		<activity ns0:theme="@7F140036" ns0:name="com.adobe.creativesdk.foundation.internal.auth.AdobeDataUsageNoticeActivity" ns0:configChanges="0x00000130"/>
+		<activity ns0:theme="@7F140004" ns0:label="@7F1301E9" ns0:name="com.adobe.creativesdk.foundation.internal.auth.AdobeAuthSignInActivity" ns0:multiprocess="true" ns0:launchMode="2" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000031"/>
+		<activity ns0:theme="@7F140004" ns0:label="@7F1301E9" ns0:name="com.adobe.creativesdk.foundation.internal.auth.AdobeAuthContinuableEventActivity" ns0:exported="false" ns0:multiprocess="true" ns0:launchMode="0" ns0:windowSoftInputMode="0x00000031"/>
+		<activity ns0:name="com.adobe.creativesdk.foundation.internal.base.AdobeTOUHandlerActivity"/>
+		<provider ns0:name="com.google.firebase.perf.provider.FirebasePerfProvider" ns0:exported="false" ns0:authorities="com.adobe.psmobile.firebaseperfprovider" ns0:initOrder="101"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@7F14045F" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.adobe.psmobile"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.adobe.psmobile.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.adobe.psmobile.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.adobe.psmobile.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F05000E" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050010" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F05000F" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F05000E" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<activity ns0:theme="@7F140319" ns0:name="com.samsung.android.sdk.iap.lib.activity.DialogActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F140319" ns0:name="com.samsung.android.sdk.iap.lib.activity.CheckPackageActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F140351" ns0:name="com.samsung.android.sdk.iap.lib.activity.AccountActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F140319" ns0:name="com.samsung.android.sdk.iap.lib.activity.PaymentActivity" ns0:configChanges="0x40001FB4"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F14034C" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F16000D"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

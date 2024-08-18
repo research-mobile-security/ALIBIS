@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="502" ns0:versionName="5.02" package="com.jpbrothers.aimera.camera" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+	<uses-sdk ns0:minSdkVersion="14" ns0:targetSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<application ns0:theme="@7F060016" ns0:label="@7F050011" ns0:icon="@7F0201AC" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true">
+		<receiver ns0:name=".Utils.SavingBroadcastReceiver" ns0:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action ns0:name="com.jpbrothers.aimera.camera.saving"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F050013"/>
+		<service ns0:name=".Utils.SavingIntentService"/>
+		<activity ns0:theme="@7F060017" ns0:label="@7F050011" ns0:name="com.jpbrothers.aimera.camera.activity.CameraActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F060017" ns0:label="@7F050011" ns0:name=".activity.ActivitySplash" ns0:screenOrientation="1" ns0:configChanges="0x000000A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jpbrothers.aimera.camera.MESSAGE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="com.facebook.orca.category.PLATFORM_REPLY_20141218"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="com.facebook.orca.category.PLATFORM_THREAD_20150311"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="com.facebook.orca.category.PLATFORM_THREAD_20150314"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F060016" ns0:name=".activity.ActivityFBM" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F060016" ns0:name=".edit.ActivityInsta" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F060016" ns0:name=".gallery.ActivityAlbum" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F060016" ns0:name=".gallery.ActivityViewer" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F060016" ns0:name=".sticker.ActivitySticker" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F060016" ns0:name=".setting.ActivitySetting" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F060016" ns0:name=".gallery.ActivityDetail" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F050013"/>
+	</application>
+</manifest>

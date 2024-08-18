@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="321" ns0:versionName="3.2.1" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="eztools.calculator.photo.vault" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<application ns0:theme="@7F0D0000" ns0:label="@7F0C0004" ns0:icon="@7F0B002C" ns0:name="eztools.calculator.photo.vault.app.CalApp" ns0:allowBackup="false" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:theme="@7F0D0003" ns0:name="eztools.calculator.photo.vault.modules.main.CalculatorActivity" ns0:exported="true" ns0:taskAffinity="eztools.cal" ns0:clearTaskOnLaunch="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.photo.picker.PhotoPickerActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0D0003" ns0:name="eztools.calculator.photo.vault.modules.photo.gallery.PhotoViewerActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:screenOrientation="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.photo.gallery.VaultActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:screenOrientation="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.forget.RecoverySetupActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.drive.DriveActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.migrate.DatabaseMigrateActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.main.VaultMainActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.video.gallery.VideoListActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.video.picker.VideoPickerActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.video.player.ExoPlayerActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.settings.recycler.RecyclerActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.settings.recycler.RecyclerPhotoViewerActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="eztools.calculator.photo.vault.modules.photo.picker.PhotoEncryptActivity" ns0:exported="false" ns0:taskAffinity="eztools.pv" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F080001"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-4439947956109208~4784112803"/>
+		<meta-data ns0:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED" ns0:value="false"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="eztools.calculator.photo.vault.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F0F0000"/>
+		</provider>
+		<receiver ns0:name="eztools.calculator.photo.vault.app.CalBootReceiver" ns0:exported="true">
+			<intent-filter ns0:priority="1024">
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="eztools.calculator.photo.vault.modules.drive.DriveSyncService"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="eztools.calculator.photo.vault.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="eztools.calculator.photo.vault.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F030000" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F030002" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F030001" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F030000" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="eztools.calculator.photo.vault.lifecycle-process"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="eztools.calculator.photo.vault.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="eztools.calculator.photo.vault.com.squareup.picasso"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+	</application>
+</manifest>

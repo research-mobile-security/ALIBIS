@@ -1,0 +1,360 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "2",
+    "@ns0:versionName": "1.2.2",
+    "@package": "com.redmi.camera.for.xiaomi.mi11",
+    "@platformBuildVersionCode": "23",
+    "@platformBuildVersionName": "6.0-2438415",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "16",
+      "@ns0:targetSdkVersion": "29"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.GET_TASKS"
+      },
+      {
+        "@ns0:name": "com.android.launcher.permission.INSTALL_SHORTCUT"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH"
+      },
+      {
+        "@ns0:name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F10000A",
+      "@ns0:label": "@7F0F004F",
+      "@ns0:icon": "@7F0D0004",
+      "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.base.CandyApplication",
+      "@ns0:screenOrientation": "1",
+      "@ns0:allowBackup": "true",
+      "@ns0:installLocation": "0",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "false",
+      "@ns0:extractNativeLibs": "true",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:resizeableActivity": "false",
+      "activity": [
+        {
+          "@ns0:theme": "@7F10000A",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.home.SplashActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000030"
+        },
+        {
+          "@ns0:theme": "@7F10000A",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.home.MainActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000030"
+        },
+        {
+          "@ns0:theme": "@7F1000C8",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.camera.Camera1Activity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1000C8",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.extern.ExternCameraActivity",
+          "@ns0:enabled": "true",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:allowTaskReparenting": "true",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.MESSAGE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F100000",
+          "@ns0:label": "@7F0F00E4",
+          "@ns0:icon": "@7F08032D",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.extern.JPEditActivity",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:allowTaskReparenting": "true",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.jpbrothers.edit.SEND"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": [
+              {
+                "@ns0:mimeType": "image/jpeg"
+              },
+              {
+                "@ns0:mimeType": "image/png"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@7F100000",
+          "@ns0:label": "@7F0F00E6",
+          "@ns0:icon": "@7F08032E",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.extern.ActivityExternEditFilter",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:allowTaskReparenting": "true",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.EDIT"
+              },
+              {
+                "@ns0:name": "android.intent.action.SEND"
+              }
+            ],
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": [
+              {
+                "@ns0:mimeType": "image/jpeg"
+              },
+              {
+                "@ns0:mimeType": "image/png"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@7F100000",
+          "@ns0:label": "@7F0F00E5",
+          "@ns0:icon": "@7F080334",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.extern.ActivityExternEditEffect",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:allowTaskReparenting": "true",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.EDIT"
+              },
+              {
+                "@ns0:name": "android.intent.action.SEND"
+              }
+            ],
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": [
+              {
+                "@ns0:mimeType": "image/jpeg"
+              },
+              {
+                "@ns0:mimeType": "image/png"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@7F100000",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.extern.ActivityExternAlbum",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:allowTaskReparenting": "true",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.GET_CONTENT"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.OPENABLE"
+              },
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            ],
+            "data": {
+              "@ns0:mimeType": "image/*"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1000C8",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.extern.ActivityExternVideo",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:allowTaskReparenting": "true",
+          "@ns0:windowSoftInputMode": "0x00000030",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.media.action.VIDEO_CAPTURE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F100000",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.gallery.ActivityAlbum",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1000C8",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.camera.CameraActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000030"
+        },
+        {
+          "@ns0:theme": "@7F1000C8",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.filter.FilterExActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000030"
+        },
+        {
+          "@ns0:theme": "@7F1000C8",
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.noti.NotiActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F10000A",
+          "@ns0:name": "com.jpbrothers.base.eugdpr.ContractsActvity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000030"
+        },
+        {
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.antibug.activity.AntiBugActivity",
+          "@ns0:process": ":error_activity"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.facebook.ads.AudienceNetworkActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004A0"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.gogle.android.gms.version",
+          "@ns0:value": "12451000"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0A0008"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.redmi.camera.for.xiaomi.mi11.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F120002"
+          }
+        },
+        {
+          "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.antibug.provider.AntiBugInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.redmi.camera.for.xiaomi.mi11.antibugprovider",
+          "@ns0:initOrder": "101"
+        },
+        {
+          "@ns0:name": "com.flurry.android.agent.FlurryContentProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.redmi.camera.for.xiaomi.mi11.FlurryContentProvider"
+        },
+        {
+          "@ns0:name": "com.facebook.ads.AudienceNetworkContentProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.redmi.camera.for.xiaomi.mi11.AudienceNetworkContentProvider"
+        }
+      ],
+      "receiver": {
+        "@ns0:name": "com.redmi.camera.for.xiaomi.mi11.notification.AlarmReceiver"
+      },
+      "service": {
+        "@ns0:name": "com.google.android.gms.ads.AdService",
+        "@ns0:enabled": "true",
+        "@ns0:exported": "false"
+      }
+    }
+  }
+}

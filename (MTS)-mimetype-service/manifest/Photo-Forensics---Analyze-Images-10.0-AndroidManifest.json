@@ -1,0 +1,118 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "10",
+    "@ns0:versionName": "10.0",
+    "@package": "com.thunkable.android.dafaqdevelopers.Photo_Forensics_Pro",
+    "@platformBuildVersionCode": "28",
+    "@platformBuildVersionName": "9",
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.FLASHLIGHT"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "com.google.android.providers.gsf.permission.READ_GSERVICES"
+      },
+      {
+        "@ns0:name": "com.thunkable.android.dafaqdevelopers.Photo_Forensics_Pro.permission.MAPS_RECEIVE"
+      }
+    ],
+    "permission": {
+      "@ns0:name": "com.thunkable.android.dafaqdevelopers.Photo_Forensics_Pro.permission.MAPS_RECEIVE",
+      "@ns0:protectionLevel": "0x00000002"
+    },
+    "uses-feature": {
+      "@ns0:glEsVersion": "0x00020000",
+      "@ns0:required": "true"
+    },
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "14",
+      "@ns0:targetSdkVersion": "28"
+    },
+    "application": {
+      "@ns0:theme": "@7F08000F",
+      "@ns0:label": "Photo Forensics - Analyze Images",
+      "@ns0:icon": "@7F020060",
+      "@ns0:name": "com.google.appinventor.components.runtime.multidex.MultiDexApplication",
+      "@ns0:debuggable": "false",
+      "@ns0:networkSecurityConfig": "@7F050000",
+      "uses-library": {
+        "@ns0:name": "org.apache.http.legacy",
+        "@ns0:required": "false"
+      },
+      "activity": [
+        {
+          "@ns0:name": ".Screen1",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004B0",
+          "@ns0:windowSoftInputMode": "0x00000002",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "io.fabric.ApiKey",
+          "@ns0:value": "ddc2d64b97ef572c127bd1a3ceef4efc3d6627f4"
+        },
+        {
+          "@ns0:name": "com.google.android.maps.v2.API_KEY",
+          "@ns0:value": "AIzaSyDPRCYQ57UIDDY_n5auwH_9hcBPysIb1e8"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "12451000"
+        }
+      ],
+      "provider": {
+        "@ns0:name": "android.support.v4.content.FileProvider",
+        "@ns0:exported": "false",
+        "@ns0:authorities": "com.thunkable.android.dafaqdevelopers.Photo_Forensics_Pro.provider",
+        "@ns0:grantUriPermissions": "true",
+        "meta-data": {
+          "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+          "@ns0:resource": "@7F050001"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1" ns0:versionName="1.0" package="com.sweetgram.filter.camera" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+	<uses-sdk ns0:minSdkVersion="15" ns0:targetSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<permission ns0:name="com.sweetgram.filter.camera.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.sweetgram.filter.camera.permission.C2D_MESSAGE"/>
+	<application ns0:theme="@7F0D0007" ns0:label="@7F0C0037" ns0:icon="@7F0700EC" ns0:name="com.joeware.android.gpulumera.base.BaseApplication" ns0:screenOrientation="1" ns0:allowBackup="true" ns0:installLocation="0" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="false" ns0:resizeableActivity="false">
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.sweetgram.filter.camera.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F0F0000"/>
+		</provider>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F090004"/>
+		<activity ns0:theme="@7F0D00A6" ns0:label="@7F0C0037" ns0:name="com.joeware.android.gpulumera.camera.ActivityCamera" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:theme="@7F0D00A6" ns0:label="@7F0C0037" ns0:name="com.joeware.android.gpulumera.camera.ActivityCameraInternal" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0D0007" ns0:label="@7F0C0037" ns0:name="com.joeware.android.gpulumera.camera.ActivityCameraExtern" ns0:process=":extern" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:theme="@7F0D0007" ns0:name="com.joeware.android.gpulumera.extern.ActivtyExternFilterTest" ns0:enabled="false" ns0:process=":extern" ns0:finishOnTaskLaunch="true" ns0:screenOrientation="1" ns0:allowTaskReparenting="true" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.joeware.android.gpulumera.extern.ActivityExternCamera" ns0:process=":extern" ns0:finishOnTaskLaunch="true" ns0:screenOrientation="1" ns0:allowTaskReparenting="true" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="com.joeware.android.gpulumera.MESSAGE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D0007" ns0:name="com.joeware.android.gpulumera.extern.ActivityExternEditFilter" ns0:process=":extern" ns0:finishOnTaskLaunch="true" ns0:screenOrientation="1" ns0:allowTaskReparenting="true" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D0007" ns0:name="com.joeware.android.gpulumera.extern.ActivityExternAlbum" ns0:process=":extern" ns0:finishOnTaskLaunch="true" ns0:screenOrientation="1" ns0:allowTaskReparenting="true" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D0007" ns0:label="@7F0C0037" ns0:name="com.joeware.android.gpulumera.extern.ActivityExternVideo" ns0:process=":extern" ns0:finishOnTaskLaunch="true" ns0:screenOrientation="1" ns0:allowTaskReparenting="true" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D0000" ns0:name="com.joeware.android.gpulumera.gallery.ActivityAlbum" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.joeware.android.gpulumera.util.JPGlideModule" ns0:value="GlideModule"/>
+		<service ns0:name="com.joeware.android.gpulumera.util.FcmMessagingService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.joeware.android.gpulumera.util.FcmInstanceIDService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="123_aAbasdasdcdexasdk"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F0700ED"/>
+		<meta-data ns0:name="android.support.VERSION" ns0:value="26.0.1"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.sweetgram.filter.camera"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.sweetgram.filter.camera.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.facebook.ads.internal.ipc.RemoteANActivity" ns0:exported="false" ns0:process=":adnw" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService" ns0:exported="false"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsMessengerService" ns0:exported="false" ns0:process=":adnw"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity"/>
+		<provider ns0:name="com.facebook.marketing.internal.MarketingInitProvider" ns0:exported="false" ns0:authorities="com.sweetgram.filter.camera.MarketingInitProvider"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.sweetgram.filter.camera.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F0D0120" ns0:name="io.base.sweety.SweetActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D0120" ns0:name="io.base.sweety.SweetMainActivity"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

@@ -1,0 +1,286 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "87",
+    "@ns0:versionName": "1.51.1",
+    "@ns0:installLocation": "0",
+    "@ns0:compileSdkVersion": "31",
+    "@ns0:compileSdkVersionCodename": "12",
+    "@package": "com.firelolyopen.camera",
+    "@platformBuildVersionCode": "31",
+    "@platformBuildVersionName": "12",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "15",
+      "@ns0:targetSdkVersion": "31"
+    },
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.BLUETOOTH",
+        "@ns0:maxSdkVersion": "30"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_ADMIN",
+        "@ns0:maxSdkVersion": "30"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_SCAN",
+        "@ns0:usesPermissionFlags": "0x00010000"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH_CONNECT"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE",
+        "@ns0:maxSdkVersion": "28"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera"
+      },
+      {
+        "@ns0:name": "android.hardware.microphone"
+      },
+      {
+        "@ns0:name": "android.hardware.bluetooth_le",
+        "@ns0:required": "false"
+      }
+    ],
+    "queries": {
+      "intent": {
+        "action": {
+          "@ns0:name": "android.intent.action.TTS_SERVICE"
+        }
+      }
+    },
+    "application": {
+      "@ns0:theme": "@7F110006",
+      "@ns0:label": "@7F10002C",
+      "@ns0:icon": "@7F0E0000",
+      "@ns0:name": "com.firelolyopen.camera.OpenCameraApplication",
+      "@ns0:allowBackup": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "activity": [
+        {
+          "@ns0:name": "com.firelolyopen.camera.MainActivity",
+          "@ns0:exported": "true",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "android.app.shortcuts",
+            "@ns0:resource": "@7F130001"
+          }
+        },
+        {
+          "@ns0:label": "@7F10032B",
+          "@ns0:name": "com.firelolyopen.camera.remotecontrol.DeviceScanner",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:label": "@7F100359",
+          "@ns0:icon": "@7F08008A",
+          "@ns0:name": "com.firelolyopen.camera.TakePhoto",
+          "@ns0:exported": "false",
+          "@ns0:taskAffinity": "",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x000004A0"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:label": "@7F10002C",
+          "@ns0:icon": "@7F0E0000",
+          "@ns0:name": "com.firelolyopen.camera.MyWidgetProvider",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F130002"
+          }
+        },
+        {
+          "@ns0:label": "@7F100359",
+          "@ns0:icon": "@7F08008A",
+          "@ns0:name": "com.firelolyopen.camera.MyWidgetProviderTakePhoto",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F130003"
+          }
+        }
+      ],
+      "service": [
+        {
+          "@ns0:label": "@7F10003E",
+          "@ns0:icon": "@7F080090",
+          "@ns0:name": "com.firelolyopen.camera.MyTileService",
+          "@ns0:permission": "android.permission.BIND_QUICK_SETTINGS_TILE",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.quicksettings.action.QS_TILE"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F10031E",
+          "@ns0:icon": "@7F08009C",
+          "@ns0:name": "com.firelolyopen.camera.MyTileServiceVideo",
+          "@ns0:permission": "android.permission.BIND_QUICK_SETTINGS_TILE",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.quicksettings.action.QS_TILE"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F100342",
+          "@ns0:icon": "@7F080082",
+          "@ns0:name": "com.firelolyopen.camera.MyTileServiceFrontCamera",
+          "@ns0:permission": "android.permission.BIND_QUICK_SETTINGS_TILE",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.service.quicksettings.action.QS_TILE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.firelolyopen.camera.remotecontrol.BluetoothLeService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        }
+      ],
+      "provider": {
+        "@ns0:name": "androidx.startup.InitializationProvider",
+        "@ns0:exported": "false",
+        "@ns0:authorities": "com.firelolyopen.camera.androidx-startup",
+        "meta-data": [
+          {
+            "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+            "@ns0:value": "androidx.startup"
+          },
+          {
+            "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+            "@ns0:value": "androidx.startup"
+          }
+        ]
+      },
+      "meta-data": [
+        {
+          "@ns0:name": "com.android.dynamic.apk.fused.modules",
+          "@ns0:value": "base"
+        },
+        {
+          "@ns0:name": "com.android.stamp.source",
+          "@ns0:value": "https://play.google.com/store"
+        },
+        {
+          "@ns0:name": "com.android.stamp.type",
+          "@ns0:value": "STAMP_TYPE_STANDALONE_APK"
+        },
+        {
+          "@ns0:name": "com.android.vending.splits",
+          "@ns0:value": "@7F130004"
+        },
+        {
+          "@ns0:name": "com.android.vending.derived.apk.id",
+          "@ns0:value": "7"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+    "root": {
+        "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+        "intent-filter": [
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MAIN"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.BROWSABLE"
+                    }
+                ],
+                "data": {
+                    "@ns0:scheme": "photo.blender"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.BROWSABLE"
+                    }
+                ],
+                "data": {
+                    "@ns0:scheme": "chu.camera"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.SEND"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "aviary.intent.action.EDIT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "aviary.intent.action.EDIT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": [
+                    {
+                        "@ns0:scheme": "https"
+                    },
+                    {
+                        "@ns0:mimeType": "image/*"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "aviary.intent.action.EDIT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": [
+                    {
+                        "@ns0:scheme": "http"
+                    },
+                    {
+                        "@ns0:mimeType": "image/*"
+                    }
+                ]
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "aviary.intent.action.CDS_VERIFY_SUBSCRIPTIONS"
+                    },
+                    {
+                        "@ns0:name": "aviary.intent.action.CDS_DOWNLOAD_START"
+                    },
+                    {
+                        "@ns0:name": "aviary.intent.action.CDS_RESTORE_USER_ITEMS"
+                    },
+                    {
+                        "@ns0:name": "aviary.intent.action.CDS_RESTORE_OWNED_PACKS"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "aviary.intent.action.CDS_DOWNLOAD_EXTRA_ASSETS"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.DOWNLOAD_COMPLETE"
+                    },
+                    {
+                        "@ns0:name": "android.net.wifi.STATE_CHANGE"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.MY_PACKAGE_REPLACED"
+                    },
+                    {
+                        "@ns0:name": "aviary.android.cds.intent.action.ACTION_NOTIFICATION_DISMISS"
+                    },
+                    {
+                        "@ns0:name": "aviary.android.cds.intent.action.ACTION_DOWNLOAD_COMPLETE_DELAYED"
+                    }
+                ]
+            }
+        ]
+    }
+}

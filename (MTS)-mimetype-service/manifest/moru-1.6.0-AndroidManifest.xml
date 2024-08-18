@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="25" ns0:versionName="1.6.0" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="jp.furyu.moru" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="23" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-feature ns0:glEsVersion="0x00030000" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera2.full" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<application ns0:theme="@7F100006" ns0:label="@7F0F0033" ns0:icon="@7F0C0000" ns0:name="jp.furyu.moru.App" ns0:allowBackup="false" ns0:supportsRtl="true" ns0:extractNativeLibs="false" ns0:roundIcon="@7F0C0002" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F0700E2"/>
+		<activity ns0:theme="@7F10017D" ns0:name="jp.furyu.moru.ui.splash.SplashActivity" ns0:exported="true" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="moru" ns0:host="*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F10017D" ns0:name="jp.furyu.moru.MainActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="jp.furyu.moru.ui.settings.SettingsActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="jp.furyu.moru.ui.photos.photos.PhotosActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100007" ns0:name="jp.furyu.moru.ui.photos.selection.SelectionActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="jp.furyu.moru.ui.onboardingchecks.OnBoardingChecksActivity" ns0:exported="true" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F10017D" ns0:name="jp.furyu.moru.ui.onboarding.OnBoardingActivity" ns0:exported="true" ns0:screenOrientation="1"/>
+		<activity ns0:name="jp.furyu.moru.ui.settings.privacy_policy.WebContentActivity" ns0:exported="true" ns0:screenOrientation="1"/>
+		<activity ns0:label="@7F0F00C6" ns0:name="com.google.android.gms.oss.licenses.OssLicensesMenuActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="jp.furyu.moru.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120000"/>
+		</provider>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F090011"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F0F0055"/>
+		<activity ns0:theme="@7F1000EF" ns0:label="" ns0:name="com.firebase.ui.auth.KickoffActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1000EF" ns0:label="" ns0:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F0F0091" ns0:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F0F0087" ns0:name="com.firebase.ui.auth.ui.email.EmailActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F0F008C" ns0:name="com.firebase.ui.auth.ui.phone.PhoneActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000015"/>
+		<activity ns0:label="@7F0F0093" ns0:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F0F0094" ns0:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F0F0063" ns0:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F0F0033" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F1000EF" ns0:label="" ns0:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity" ns0:exported="false"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F0F0056"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.firebase.ui.auth.data.client.AuthUiInitProvider" ns0:exported="false" ns0:authorities="jp.furyu.moru.authuiinitprovider" ns0:initOrder="90"/>
+		<activity ns0:name="com.google.android.gms.oss.licenses.OssLicensesActivity"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="jp.furyu.moru.com.squareup.picasso"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.FederatedSignInActivity" ns0:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="jp.furyu.moru.crashlyticsinitprovider" ns0:initOrder="90"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="jp.furyu.moru.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="jp.furyu.moru.lifecycle-process"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F120001"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

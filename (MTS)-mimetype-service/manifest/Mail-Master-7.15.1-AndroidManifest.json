@@ -1,0 +1,2334 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "380",
+    "@ns0:versionName": "7.15.1",
+    "@ns0:compileSdkVersion": "29",
+    "@ns0:compileSdkVersionCodename": "10",
+    "@platformBuildVersionName": "10",
+    "@platformBuildVersionCode": "29",
+    "@package": "com.netease.mail",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "19",
+      "@ns0:targetSdkVersion": "29"
+    },
+    "permission": [
+      {
+        "@ns0:name": "com.netease.mail.openadsdk.permission.TT_PANGOLIN",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:name": "com.netease.mail.permission.MIPUSH_RECEIVE",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:name": "com.netease.mail.push.permission.MESSAGE",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:name": "com.netease.mail.permission.C2D_MESSAGE",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:name": "com.netease.mail.permission.PROCESS_PUSH_MSG",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.netease.mail.permission.PUSH_PROVIDER",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.netease.mail.permission.PUSH_WRITE_PROVIDER",
+        "@ns0:protectionLevel": "0x00000003"
+      }
+    ],
+    "uses-permission": [
+      {
+        "@ns0:name": "com.netease.mail.openadsdk.permission.TT_PANGOLIN"
+      },
+      {
+        "@ns0:name": "android.permission.READ_PHONE_STATE",
+        "@ns0:maxSdkVersion": "28"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.REQUEST_INSTALL_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "com.google.android.gms.permission.AD_ID"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.QUERY_ALL_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.REORDER_TASKS"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "com.asus.msa.SupplementaryDID.ACCESS"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH"
+      },
+      {
+        "@ns0:name": "android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "@ns0:name": "android.permission.MODIFY_AUDIO_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.GET_TASKS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.READ_CALENDAR"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_CALENDAR"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.USE_FINGERPRINT"
+      },
+      {
+        "@ns0:name": "com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"
+      },
+      {
+        "@ns0:name": "android.permission.POST_NOTIFICATIONS"
+      },
+      {
+        "@ns0:name": "com.netease.mail.permission.MIPUSH_RECEIVE"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "com.huawei.android.launcher.permission.CHANGE_BADGE"
+      },
+      {
+        "@ns0:name": "com.vivo.notification.permission.BADGE_ICON"
+      },
+      {
+        "@ns0:name": "com.meizu.flyme.push.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "com.netease.mail.push.permission.MESSAGE"
+      },
+      {
+        "@ns0:name": "com.meizu.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "com.netease.mail.permission.C2D_MESSAGE"
+      },
+      {
+        "@ns0:name": "com.meizu.flyme.permission.PUSH"
+      },
+      {
+        "@ns0:name": "com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"
+      },
+      {
+        "@ns0:name": "freemme.permission.msa"
+      },
+      {
+        "@ns0:name": "com.netease.mail.permission.PROCESS_PUSH_MSG"
+      },
+      {
+        "@ns0:name": "com.netease.mail.permission.PUSH_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.asus.permission.READ_SDID_PROVIDER"
+      },
+      {
+        "@ns0:name": "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"
+      }
+    ],
+    "queries": {
+      "intent": [
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.BROWSABLE"
+          },
+          "data": {
+            "@ns0:scheme": "https"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.MAIN"
+          }
+        }
+      ],
+      "package": [
+        {
+          "@ns0:name": "cn.wps.moffice_eng"
+        },
+        {
+          "@ns0:name": "com.eg.android.AlipayGphone"
+        },
+        {
+          "@ns0:name": "hk.alipay.wallet"
+        },
+        {
+          "@ns0:name": "com.tencent.mm"
+        }
+      ]
+    },
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:resizeable": "true"
+    },
+    "application": {
+      "@ns0:theme": "@7F12039F",
+      "@ns0:label": "@7F1105C7",
+      "@ns0:icon": "@7F0E0001",
+      "@ns0:name": "com.netease.nis.wrapper.MyApplication",
+      "@ns0:debuggable": "false",
+      "@ns0:allowBackup": "false",
+      "@ns0:supportsRtl": "true",
+      "@ns0:usesCleartextTraffic": "true",
+      "@ns0:networkSecurityConfig": "@7F140008",
+      "@ns0:roundIcon": "@7F0E0002",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "false",
+      "uses-library": [
+        {
+          "@ns0:name": "org.apache.http.legacy",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "android.test.runner"
+        },
+        {
+          "@ns0:name": "androidx.window.extensions",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "androidx.window.sidecar",
+          "@ns0:required": "false"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "LAUNCH_FILTER_DATA_SCHEMA",
+          "@ns0:value": "mailmaster"
+        },
+        {
+          "@ns0:name": "OPPO_APP_KEY",
+          "@ns0:value": "a081Eb75TPkO088S0gkSW4sw4"
+        },
+        {
+          "@ns0:name": "OPPO_APP_SECRET",
+          "@ns0:value": "2A792Fc5eC9f023115e36caaC054Eba6"
+        },
+        {
+          "@ns0:name": "MEIZU_APP_ID",
+          "@ns0:value": " 110450"
+        },
+        {
+          "@ns0:name": "MEIZU_APP_KEY",
+          "@ns0:value": " 6766913bebb04daa921d0ba5f8533a39"
+        },
+        {
+          "@ns0:name": "XIAOMI_APP_ID",
+          "@ns0:value": " 2882303761517236819"
+        },
+        {
+          "@ns0:name": "XIAOMI_APP_KEY",
+          "@ns0:value": " 5101723644819"
+        },
+        {
+          "@ns0:name": "VIVO_APP_ID",
+          "@ns0:value": "14976"
+        },
+        {
+          "@ns0:name": "VIVO_APP_KEY",
+          "@ns0:value": "fd55a591-7942-4b77-9f59-d006a3a873a4"
+        },
+        {
+          "@ns0:name": "com.huawei.hms.client.appid",
+          "@ns0:value": "10166330"
+        },
+        {
+          "@ns0:name": "WEIXIN_ID",
+          "@ns0:value": "wxb02ffbcedd768553"
+        },
+        {
+          "@ns0:name": "YIDUN_ID",
+          "@ns0:value": "7754e0824913401999ae6351744fbd8d"
+        },
+        {
+          "@ns0:name": "COUNTLY_APP_KEY",
+          "@ns0:value": "mailandroid"
+        },
+        {
+          "@ns0:name": "chuanmei_appkey",
+          "@ns0:value": "3E0F733C"
+        },
+        {
+          "@ns0:name": "gdt_app_id",
+          "@ns0:value": " 1111705649"
+        },
+        {
+          "@ns0:name": "gdt_launch_pos_id",
+          "@ns0:value": " 7041789256239720"
+        },
+        {
+          "@ns0:name": "gdt_infoflow_pos_id_4",
+          "@ns0:value": " 1071384257849313"
+        },
+        {
+          "@ns0:name": "gdt_infoflow_pos_id_12",
+          "@ns0:value": " 4001483297322741"
+        },
+        {
+          "@ns0:name": "youdao_launch_adid",
+          "@ns0:value": "326f5e93081da7bf455fcb7de0584cba"
+        },
+        {
+          "@ns0:name": "youdao_infoflow_adid",
+          "@ns0:value": "cb548f4eac2e4c30b440a9a0e0edad4d"
+        },
+        {
+          "@ns0:name": "ttad_app_id",
+          "@ns0:value": " 5028951"
+        },
+        {
+          "@ns0:name": "ttad_launch_pos_id",
+          "@ns0:value": " 887522065"
+        },
+        {
+          "@ns0:name": "ttad_infoflow_pos_id",
+          "@ns0:value": " 946428736"
+        },
+        {
+          "@ns0:name": "jd_app_id",
+          "@ns0:value": " 648981"
+        },
+        {
+          "@ns0:name": "jd_launch_pos_id",
+          "@ns0:value": " 9635"
+        },
+        {
+          "@ns0:name": "jd_launch_pos_id2",
+          "@ns0:value": " 9645"
+        },
+        {
+          "@ns0:name": "jd_infoflow_pos_id_4",
+          "@ns0:value": " 9636"
+        },
+        {
+          "@ns0:name": "jd_infoflow_pos_id_12",
+          "@ns0:value": " 9640"
+        },
+        {
+          "@ns0:name": "topon_app_id",
+          "@ns0:value": "a63fc9106aa084"
+        },
+        {
+          "@ns0:name": "topon_launch_pos_id",
+          "@ns0:value": "b63fc913770898"
+        },
+        {
+          "@ns0:name": "topon_infoflow_pos_id_4",
+          "@ns0:value": "b6417c74d6dc8d"
+        },
+        {
+          "@ns0:name": "topon_infoflow_pos_id_12",
+          "@ns0:value": "b641823460328f"
+        },
+        {
+          "@ns0:name": "google_client_id_new",
+          "@ns0:value": "321133554299-ctfubcv3eubr17a9v2hga7va4tvcr5n5.apps.googleusercontent.com"
+        },
+        {
+          "@ns0:name": "google_client_id",
+          "@ns0:value": "321133554299-04eana0nlfmfbnlh2j0s1ih7a5rfkkhl.apps.googleusercontent.com"
+        },
+        {
+          "@ns0:name": "microsoft_client_id",
+          "@ns0:value": "56686500-75f6-4218-a7eb-f3069eb2ae20"
+        },
+        {
+          "@ns0:name": "dropbox_client_id",
+          "@ns0:value": "f49pj4or5q5krvz"
+        },
+        {
+          "@ns0:name": "BUGLY_APPID",
+          "@ns0:value": "d3cac5d9cc"
+        },
+        {
+          "@ns0:name": "URS_SERVER_PUBKEY",
+          "@ns0:value": "30819f300d06092a864886f70d010101050003818d0030818902818100bb5f0cb537b86279d149ad77882d8f1c2d13d7a3511835c06124790f6fc83203d69dbb38a3ace1f2a0e480570e68f3dc5726316c17d4f9f0c02e23fbeb97d6f76b521b901314cdbcfd677020ae376105717f94e7f2767bb73f5b4e9bf8cc00dd78c87b9c1b17df102ddb1e8a6648504018ed3aed2484601d76dc3be99a8c30c70203010001"
+        },
+        {
+          "@ns0:name": "URS_CLIENT_PRIKEY",
+          "@ns0:value": "30820277020100300d06092a864886f70d0101010500048202613082025d020100028181008b4cadbbe13da36c29269353e5b97950d2d3e78b0bac3a1803716e01346966b50a4050b8972e4b2680e3b1b5aa000dca23b9a6aa4094d2dcb42e27a0d36afe1f74061b52ebeeadde4a6409c49de82a9c6115c1da05bcbd94b7e738f7c7f41f43b414c0d4bf9127222e42883818e97f9d184c2d790536c7cb0d35baaa7c6ca9a30203010001028180441a7c021410179ae4cf884e074d53a3913faabf4f38a7ba5fcc9014a4b43753a1ac6a0aa5572bc4aa5527e802323e8baa45b4d71df5e4d5a47dc0401fbcfa7a594b253098370950b1a62ed5ff12762e53f136bea18ced213303bf39d4acb1a29ee02f2d3621766e6c8ec8042c3cbb7028eceec0c2053d03dd35ee889bb69881024100dcd83f599379d9a43b8f86645a95b003fe3b8bebcd6da2df0a4ba3be3fc9b3b5758a7cd7e21040c239336fb799bd6522bbc2615dd44e4e0d4562ecbb09bc0ee3024100a17957bac22bff826df30198cc9d57483d6668d7b1c7e97fee0bad67b6a974742754d66dd06724f7b0e1741ef4a999ea620ef71a02a7c83b60b9a58f0aa336410240312b18179a64f396c407f554dc721d29166e2d7dc753d48231e99b401d358c04277238cf5bae60ac9d4d9d5ed424bda29908f2e290050b0d9b5825fa9275431f024100994d26a93c67a1312749aa9e72c47e752b35eb1bbcc15b4205b238735acc0eafa817b76c928b1a61be208daa46062f06830a4a36fb866767583168a921244b01024100daaf00ae67ed83e7959306e716d1da846e90843a680fbcfa636379c9759918ac0e5e98e1bbc63f54fec98ae0f8602bd8e4e2f9983f784e8540b419473cc19e0d"
+        },
+        {
+          "@ns0:name": "SINA_ID",
+          "@ns0:value": " 2526354894"
+        },
+        {
+          "@ns0:name": "DITING_APM_KEY",
+          "@ns0:value": "RVDNGemO9RNobhteI43RbZrCeMgWPo8u"
+        },
+        {
+          "@ns0:name": "com.netease.mail.biz.dashi.DashiApplication",
+          "@ns0:value": "MODULE_APPLICATION"
+        },
+        {
+          "@ns0:name": "com.netease.mail.ad.AdApplication",
+          "@ns0:value": "MODULE_APPLICATION"
+        },
+        {
+          "@ns0:name": "ZEUS_PLUGIN_PANGLE",
+          "@ns0:value": "{                 apiVersionCode:5305,                 packageName:com.byted.pangle,                 minPluginVersion:5305,                 internalPath:259621886,                 internalVersionCode:5305             }"
+        },
+        {
+          "@ns0:name": "ZEUS_PLUGIN_com.byted.csj.ext",
+          "@ns0:value": "{apiVersionCode:999,packageName:com.byted.csj.ext,minPluginVersion:1000,maxPluginVersion:999999999,internalPath:'',internalVersionCode:-1, appKey:'',appSecretKey:''}"
+        },
+        {
+          "@ns0:name": "ZEUS_PLUGIN_LIVE",
+          "@ns0:value": "{                 apiVersionCode:2112,                 packageName:com.byted.live.lite,                 minPluginVersion:211200,                 maxPluginVersion:211999,                 appKey:'9f64a31d9d0456d845733718c4c6934d',                 appSecretKey:'eb7fc60ac5ed4708e13d9c7f8e4096a7',                 isSupportLibIsolate:true,                 internalPath:'plugins/zeusliveplugin.apk',                 internalVersionCode:5,                 signature:'MIIDSTCCAjGgAwIBAgIEaLy5tzANBgkqhkiG9w0BAQsFADBVMQswCQYDVQQGEwIxMTEMMAoGA1UECBMDMTExMQ4wDAYDVQQHEwUxMTExMTEMMAoGA1UEChMDMTExMQwwCgYDVQQLEwMxMTExDDAKBgNVBAMTAzExMTAeFw0yMDEyMDMxMjQyMTJaFw00NTExMjcxMjQyMTJaMFUxCzAJBgNVBAYTAjExMQwwCgYDVQQIEwMxMTExDjAMBgNVBAcTBTExMTExMQwwCgYDVQQKEwMxMTExDDAKBgNVBAsTAzExMTEMMAoGA1UEAxMDMTExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA45E52YdkJm4gPCXZq7KDoM1h6pgSswllC/CwDOmh8pDGvX4ROaYP1vr2biRlXMHg7G0iXpxWVdlTtx+4QFd3dC+cGJQk0f6apGo2n2RpMA0zIsSf0VO1a3GjWLei5INo+4RDdciqJ4jfsoqBIjZETRkky+UU4eO/oyrAwOu4KdMln3Bg3u7eHWU4kMFrXxrRruT3Q/9gzlO90yQa0CZPWVDrk6cGJtJwJGhWm+62S3U8D26HE++eGP7ve83QBDGtKqx7HpCAFWUiYBgXGq12H0amQDkKcPcr/EFCaBlombSgkN0t6zBX80m+wcUPC75IBTmMV/DT2dXcgjZ2I1JSCQIDAQABoyEwHzAdBgNVHQ4EFgQUPDyIeKI0KhZFPHyn36gMMIYrpukwDQYJKoZIhvcNAQELBQADggEBAHkl0DoCRwn+XKsDJE+wGMpBBqUDzL6DSOnJx4SNqb7YZZU0ThcDK7jY4If3QRkvMio6ODrVZc2U/m/Tc3VeMk5h2W2UZRUWHNH3k9Xe0720uL20ZeH2Y6IG4L5HG8kIbTbFtX3gJpPG/xAcez+CzyCFLWQAZt1N+csG0syWkXJ0Nryq8VrgSCyCXD1KzFxrOe+65wtu50Vi68Vlbk7BZe/G8Qm0RhKmxq5BPMBJ4uY3be+03Ba5qC//o1XQHOEAjrJKXcN5wqHdFZTkmuxVyIPogZOzx4JlNl0zOrYGDJxp7aZfKF9FkXQyF7x0Ns3mZEtjx/+flXRzAAU9MDhPr/0='             }"
+        },
+        {
+          "@ns0:name": "LIVE_API_VERSION_CODE",
+          "@ns0:value": "2112"
+        },
+        {
+          "@ns0:name": "com.netease.mobimail.MailApplication",
+          "@ns0:value": "MODULE_APPLICATION"
+        },
+        {
+          "@ns0:name": "com.netease.mail.biz.security.SecurityApplication",
+          "@ns0:value": "MODULE_APPLICATION"
+        },
+        {
+          "@ns0:name": "com.netease.mail.statistic.StatisticsApplication",
+          "@ns0:value": "MODULE_APPLICATION"
+        },
+        {
+          "@ns0:name": "com.netease.mail.config.ConfigApplication",
+          "@ns0:value": "MODULE_APPLICATION"
+        },
+        {
+          "@ns0:name": "sdk_version_vivo",
+          "@ns0:value": "483"
+        },
+        {
+          "@ns0:name": "local_iv",
+          "@ns0:value": "MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI"
+        },
+        {
+          "@ns0:name": "MIPUSH_SDK_VERSION_CODE",
+          "@ns0:value": "50602"
+        },
+        {
+          "@ns0:name": "MIPUSH_SDK_VERSION_NAME",
+          "@ns0:value": "5_6_2-C"
+        },
+        {
+          "@ns0:name": "com.netease.mail.biz.core.CoreApplication",
+          "@ns0:value": "MODULE_APPLICATION"
+        },
+        {
+          "@ns0:name": "flutterProjectType",
+          "@ns0:value": "module"
+        },
+        {
+          "@ns0:name": "flutterEmbedding",
+          "@ns0:value": "2"
+        },
+        {
+          "@ns0:name": "tinker_version",
+          "@ns0:value": "1.9.14.18"
+        },
+        {
+          "@ns0:name": "com.vivo.push.api_key",
+          "@ns0:value": "fd55a591-7942-4b77-9f59-d006a3a873a4"
+        },
+        {
+          "@ns0:name": "com.vivo.push.app_id",
+          "@ns0:value": "14976"
+        },
+        {
+          "@ns0:name": "com.huawei.hms.client.service.name:push",
+          "@ns0:value": "push:5.0.4.302"
+        },
+        {
+          "@ns0:name": "com.huawei.hms.min_api_level:push:push",
+          "@ns0:value": "1"
+        },
+        {
+          "@ns0:name": "com.huawei.hms.client.service.name:opendevice",
+          "@ns0:value": "opendevice:5.0.4.300"
+        },
+        {
+          "@ns0:name": "com.huawei.hms.min_api_level:opendevice:push",
+          "@ns0:value": "1"
+        },
+        {
+          "@ns0:name": "com.huawei.hms.client.service.name:base",
+          "@ns0:value": "base:5.0.4.301"
+        },
+        {
+          "@ns0:name": "com.huawei.hms.min_api_level:base:hmscore",
+          "@ns0:value": "1"
+        },
+        {
+          "@ns0:name": "availableLoaded",
+          "@ns0:value": "yes"
+        },
+        {
+          "@ns0:name": "TINKER_ID",
+          "@ns0:value": "tinker_id_380"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.netease.mail.mailmaster.app.tinker.service.CustomTinkerResultService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.anythink.china.common.service.ApkDownloadService"
+        },
+        {
+          "@ns0:name": "com.qq.e.comm.DownloadService",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true"
+        },
+        {
+          "@ns0:name": "com.ss.android.socialbase.appdownloader.DownloadHandlerService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.ss.android.socialbase.appdownloader.RetryJobSchedulerService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService",
+          "@ns0:exported": "false",
+          "@ns0:process": ":downloader",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.ss.android.socialbase.downloader.remote"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.ss.android.socialbase.downloader.notification.DownloadNotificationService",
+          "@ns0:exported": "false",
+          "@ns0:stopWithTask": "true"
+        },
+        {
+          "@ns0:name": "com.ss.android.socialbase.downloader.downloader.DownloadService",
+          "@ns0:exported": "false",
+          "@ns0:stopWithTask": "true"
+        },
+        {
+          "@ns0:name": "com.ss.android.socialbase.downloader.impls.DownloadHandleService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.netease.mobimail.background.StartupTasksIntentService"
+        },
+        {
+          "@ns0:name": "com.netease.mail.fundamentallib.service.TimerService"
+        },
+        {
+          "@ns0:name": "com.vivo.push.sdk.service.CommandClientService",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.heytap.msp.push.service.CompatibleDataMessageCallbackService",
+          "@ns0:permission": "com.coloros.mcs.permission.SEND_MCS_MESSAGE",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.heytap.msp.push.service.DataMessageCallbackService",
+          "@ns0:permission": "com.heytap.mcs.permission.SEND_PUSH_MESSAGE",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"
+              },
+              {
+                "@ns0:name": "com.heytap.msp.push.RECEIVE_MCS_MESSAGE"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.xiaomi.push.service.XMPushService",
+          "@ns0:enabled": "true",
+          "@ns0:process": ":pushservice"
+        },
+        {
+          "@ns0:name": "com.xiaomi.push.service.XMJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:process": ":pushservice"
+        },
+        {
+          "@ns0:name": "com.xiaomi.mipush.sdk.PushMessageHandler",
+          "@ns0:permission": "com.xiaomi.xmsf.permission.MIPUSH_RECEIVE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.xiaomi.mipush.sdk.MessageHandleService",
+          "@ns0:enabled": "true"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+          "@ns0:enabled": "@7F050004",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemjob.SystemJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "@7F050006",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.foreground.SystemForegroundService",
+          "@ns0:enabled": "@7F050005",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.lib.service.TinkerPatchForeService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:process": ":patch"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.lib.service.TinkerPatchService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false",
+          "@ns0:process": ":patch"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.lib.service.TinkerPatchService$InnerService",
+          "@ns0:exported": "false",
+          "@ns0:process": ":patch"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.lib.service.DefaultTinkerResultService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.youdao.sdk.common.YouDaoAppService",
+          "@ns0:enabled": "true"
+        },
+        {
+          "@ns0:name": "androidx.room.MultiInstanceInvalidationService",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "true"
+        },
+        {
+          "@ns0:name": "com.meizu.cloud.pushsdk.NotificationService",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.netease.mail.push.huawei.HuaweiPushService",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.huawei.push.action.MESSAGING_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.push.oppo.CompatibleOppoPushService",
+          "@ns0:permission": "com.coloros.mcs.permission.SEND_MCS_MESSAGE",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.push.oppo.OppoPushService",
+          "@ns0:permission": "com.heytap.mcs.permission.SEND_PUSH_MESSAGE",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"
+              },
+              {
+                "@ns0:name": "com.heytap.msp.push.RECEIVE_MCS_MESSAGE"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.huawei.hms.support.api.push.service.HmsMsgService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:process": ":pushservice",
+          "@ns0:directBootAware": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.huawei.push.msg.NOTIFY_MSG"
+              },
+              {
+                "@ns0:name": "com.huawei.push.msg.PASSBY_MSG"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.netease.android.extension.servicekeeper.service.ipc.server.IPCCommunicationAndroidService"
+        },
+        {
+          "@ns0:name": "com.huawei.agconnect.core.ServiceDiscovery",
+          "@ns0:exported": "false"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mail.biz.dashi.login.DashiLoginActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A1",
+          "@ns0:name": "com.netease.mail.biz.dashi.phoneveify.PhoneVerifyActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A1",
+          "@ns0:name": "com.netease.mail.biz.dashi.bindphone.PhoneBindActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mail.biz.dashi.vip.MasterVipActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mail.biz.dashi.newbind.ChangePhoneCloudActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A1",
+          "@ns0:name": "com.netease.mail.biz.dashi.login.DashiLoginCloudAttachGuideActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mail.biz.dashi.base.CloudSafeAuthActivity"
+        },
+        {
+          "@ns0:theme": "@7F1201AB",
+          "@ns0:label": "@7F1105C7",
+          "@ns0:name": "com.netease.mail.ad.launch.ui.SplashAdActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "7",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@7F1203A1",
+          "@ns0:label": "@7F1105C7",
+          "@ns0:name": "com.netease.mail.ad.launch.ui.ApkDownloadActivity",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:label": "@7F1105C7",
+          "@ns0:name": "com.netease.mail.ad.sdkad.youdao.YouDaoAdExploreActivity",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.anythink.china.activity.TransparentActivity"
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.anythink.china.activity.ApkConfirmDialogActivity"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:name": "com.anythink.core.activity.AnyThinkGdprAuthActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:name": "com.anythink.basead.ui.ATLandscapeActivity",
+          "@ns0:launchMode": "0",
+          "@ns0:screenOrientation": "6",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:name": "com.anythink.basead.ui.ATPortraitActivity",
+          "@ns0:launchMode": "0",
+          "@ns0:screenOrientation": "7",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@7F120380",
+          "@ns0:name": "com.anythink.basead.ui.ATLandscapeTranslucentActivity",
+          "@ns0:launchMode": "0",
+          "@ns0:screenOrientation": "6",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@7F120380",
+          "@ns0:name": "com.anythink.basead.ui.ATPortraitTranslucentActivity",
+          "@ns0:launchMode": "0",
+          "@ns0:screenOrientation": "7",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@android:0103000D",
+          "@ns0:name": "com.anythink.core.basead.ui.web.WebLandPageActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x000004B0",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.anythink.basead.ui.RewardExitConfirmDialogActivity"
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.anythink.expressad.reward.player.ATRewardVideoActivity",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:launchMode": "0",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.qq.e.ads.ADActivity",
+          "@ns0:multiprocess": "true",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@android:0103000D",
+          "@ns0:name": "com.qq.e.ads.PortraitADActivity",
+          "@ns0:multiprocess": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@android:0103000D",
+          "@ns0:name": "com.qq.e.ads.LandscapeADActivity",
+          "@ns0:multiprocess": "true",
+          "@ns0:screenOrientation": "6",
+          "@ns0:configChanges": "0x000004B0"
+        },
+        {
+          "@ns0:theme": "@android:0103000D",
+          "@ns0:name": "com.qq.e.ads.RewardvideoPortraitADActivity",
+          "@ns0:multiprocess": "true",
+          "@ns0:configChanges": "0x000004B0",
+          "meta-data": {
+            "@ns0:name": "android.notch_support",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@android:0103000D",
+          "@ns0:name": "com.qq.e.ads.RewardvideoLandscapeADActivity",
+          "@ns0:multiprocess": "true",
+          "@ns0:screenOrientation": "0",
+          "@ns0:configChanges": "0x000004B0",
+          "meta-data": {
+            "@ns0:name": "android.notch_support",
+            "@ns0:value": "true"
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030011",
+          "@ns0:name": "com.qq.e.ads.DialogActivity",
+          "@ns0:multiprocess": "true"
+        },
+        {
+          "@ns0:name": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "0",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:name": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "0",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000006E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "0",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:name": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "0",
+          "@ns0:screenOrientation": "0",
+          "@ns0:configChanges": "0x000006E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:name": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:name": "com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:name": "com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.ss.android.downloadlib.activity.TTDelegateActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.ss.android.downloadlib.activity.JumpKllkActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@android:0103000B",
+          "@ns0:name": "com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@android:0103000B",
+          "@ns0:name": "com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_T",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_T_SingleTask1",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_T_SingleTop1",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Behind",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_T",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_Portrait",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.Stub_Standard_Activity_DouyinWebAuthorizeActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000480"
+        },
+        {
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityProxy",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:theme": "@android:0103000D",
+          "@ns0:name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$AppCompat_SingleTask2",
+          "@ns0:exported": "false",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@7F120135",
+          "@ns0:name": "com.jd.ad.sdk.bl.adinteraction.deeplink.JADWebViewActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.netease.mobimail.module.setting.darkmode.DarkModeSettingActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.netease.mobimail.module.viewattachment.tnef.view.ViewTnefActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mobimail.module.dashiguide.TransparentDashiTaskManagerActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mobimail.module.transparentactivity.TaskTransferCenterActivity",
+          "@ns0:configChanges": "0x00000DB0"
+        },
+        {
+          "@ns0:theme": "@7F1203AB",
+          "@ns0:name": "com.netease.mobimail.module.login.LoginEntry",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000DB0"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.maillist.promotion.PromotionListActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000000B0",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.maillist.aggregation.AggregationListActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000000B0",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.mailread.MailContentActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.oauth.OAuthLoginActivity",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.conversation.ConversationActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.conversation.EmlViewerActivity",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@7F1203A2",
+          "@ns0:name": "com.netease.mobimail.module.mailcompose.MailComposeActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:hardwareAccelerated": "@7F050009"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.maillist.ContactMailListActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000000B0",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:theme": "@7F1203A7",
+          "@ns0:name": "com.netease.mobimail.module.flutter.CustomFlutterActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x40003FB4",
+          "@ns0:windowSoftInputMode": "0x00000010",
+          "@ns0:hardwareAccelerated": "true",
+          "meta-data": {
+            "@ns0:name": "io.flutter.embedding.android.SplashScreenDrawable",
+            "@ns0:resource": "@7F060217"
+          }
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.file.FileExplorerActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.gallery.GalleryPickerActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.avatarcorp.CropImageActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.viewattachment.ViewAttachmentActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.signature.SignatureCenterActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A1",
+          "@ns0:name": "com.netease.mobimail.module.qrcode.ScanQRCodeActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.qrcode.ScanTextResultActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.qrcode.DashiQrcodeGuideActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.qrcode.DashiQrcodeLoginActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.qrcode.WebmailLoginActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A1",
+          "@ns0:name": "com.netease.mobimail.module.bindSafePhone.QuickBindSafePhoneActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A1",
+          "@ns0:name": "com.netease.mobimail.module.bindSafePhone.ManualBindSafePhoneActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000020"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.bindSafePhone.BindSafePhoneActivityEx",
+          "@ns0:launchMode": "1",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.saveattachment.SaveAttachmentActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.unzipviewer.UnzipFileViewerActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.todo.TodoActivity",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@7F1203A1",
+          "@ns0:name": "com.netease.mobimail.module.notificationbar.handler.NotificationActivity",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.sort.AccountSortActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.sort.MailboxSortActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mobimail.module.querycenter.QuerySelectAccountActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mobimail.module.safeauth.SafeAuthActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mobimail.module.login.transfers.CloudSafeAuthTransferActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mobimail.module.login.transfers.CloudPhoneLoginTransferActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203A8",
+          "@ns0:name": "com.netease.mobimail.module.maillist.search.SearchActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000000B0",
+          "@ns0:windowSoftInputMode": "0x00000030"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mobimail.module.ai.AiHelperActivity"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mobimail.module.achievement.AchievementInAppBrowser"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mail.biz.task.activity.CalendarSettingActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000000B0",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mail.biz.task.activity.MoreSettingActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000000B0",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:theme": "@7F1201AB",
+          "@ns0:label": "@7F1105C7",
+          "@ns0:name": "com.netease.mail.biz.main.SplashActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000DA0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "com.netease.mail.action.SEND_NOTE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.SEND"
+                },
+                {
+                  "@ns0:name": "android.intent.action.SENDTO"
+                },
+                {
+                  "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+                }
+              ],
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "text/html"
+                },
+                {
+                  "@ns0:mimeType": "text/plain"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "*/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "com.netease.mail.action.APP_SHARE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "text/plain"
+                },
+                {
+                  "@ns0:mimeType": "image/jpeg"
+                }
+              ]
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "android.intent.action.SENDTO"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "mailto"
+                },
+                {
+                  "@ns0:scheme": "mailmaster"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F1203A0",
+          "@ns0:name": "com.netease.mail.biz.main.MainITabActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000DB0",
+          "@ns0:windowSoftInputMode": "0x00000033"
+        },
+        {
+          "@ns0:name": "com.netease.mail.biz.security.ui.setting.SecurityActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.netease.mail.biz.security.ui.lock.AppLockActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@android:01030006",
+          "@ns0:name": "com.alipay.sdk.app.H5PayActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004E0"
+        },
+        {
+          "@ns0:theme": "@android:01030006",
+          "@ns0:name": "com.alipay.sdk.app.H5AuthActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004E0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.alipay.sdk.app.PayResultActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "3",
+          "@ns0:configChanges": "0x000004E0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.alipay.sdk.app.AlipayResultActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.alipay.sdk.app.H5OpenAuthActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x000004E0",
+          "@ns0:windowSoftInputMode": "0x00000012"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.alipay.sdk.app.APayEntranceActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004E0"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mail.lib.social.wxapi.WXEntryActivity",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "com.netease.mail",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mail.lib.social.wxapi.WXPayEntryActivity",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "com.netease.mail",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mail.lib.social.wbapi.WBEntryActivity",
+          "@ns0:exported": "true",
+          "@ns0:taskAffinity": "com.netease.mail",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@7F1203AA",
+          "@ns0:name": "com.netease.mail.inappbrowser.InAppBrowser"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.xiaomi.mipush.sdk.NotificationClickedActivity",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:launchMode": "3",
+          "meta-data": {
+            "@ns0:name": "supportStyle",
+            "@ns0:value": "scene|voip"
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:name": "io.flutter.plugins.urllauncher.WebViewActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@7F12022B",
+          "@ns0:name": "com.youdao.sdk.common.YouDaoBrowser",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.youdao.sdk.listvideo.YouDaoListVideoActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.youdao.sdk.nativeads.YouDaoInterstitialActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F120379",
+          "@ns0:name": "com.youdao.sdk.video.YouDaoVideoActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T",
+          "@ns0:launchMode": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T",
+          "@ns0:launchMode": "2"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:label": "@7F1100C5",
+          "@ns0:name": "com.netease.mail.push.huawei.HuaweiPushActivity",
+          "@ns0:taskAffinity": ".huaweipush",
+          "@ns0:launchMode": "3",
+          "@ns0:configChanges": "0x00000DA0",
+          "@ns0:windowSoftInputMode": "0x00000013",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:scheme": "mailmasterpush",
+              "@ns0:host": "com.netease.mail",
+              "@ns0:path": "/notify_detail"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.push.oppo.OppoPushActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.netease.mail.oppopush"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F120390",
+          "@ns0:name": "com.netease.mail.push.vivo.VivoPushActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x00000DA0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              }
+            ],
+            "data": {
+              "@ns0:scheme": "mailmaster",
+              "@ns0:host": "com.netease.mail",
+              "@ns0:path": "/push"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.vivo.push.sdk.LinkProxyClientActivity",
+          "@ns0:exported": "false",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.netease.loginapi.ursuiwidget.activity.WebviewActivity"
+        },
+        {
+          "@ns0:name": "com.sina.weibo.sdk.web.WebActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.sina.weibo.sdk.share.ShareTransActivity",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.huawei.hms.activity.BridgeActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:screenOrientation": "3",
+          "@ns0:configChanges": "0x40002F84",
+          "@ns0:hardwareAccelerated": "true",
+          "meta-data": {
+            "@ns0:name": "hwc-theme",
+            "@ns0:value": "androidhwext:style/Theme.Emui.Translucent"
+          }
+        },
+        {
+          "@ns0:name": "com.huawei.hms.activity.EnableServiceActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000DA0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.huawei.updatesdk.service.otaupdate.AppUpdateActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000480",
+          "meta-data": {
+            "@ns0:name": "hwc-theme",
+            "@ns0:value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar"
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.huawei.updatesdk.support.pm.PackageInstallerActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000004A0",
+          "meta-data": {
+            "@ns0:name": "hwc-theme",
+            "@ns0:value": "androidhwext:style/Theme.Emui.Translucent"
+          }
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.qq.e.comm.GDTFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.gdt.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140007"
+          }
+        },
+        {
+          "@ns0:name": "com.bytedance.sdk.openadsdk.TTFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.TTFileProvider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140001"
+          }
+        },
+        {
+          "@ns0:name": "com.bytedance.sdk.openadsdk.multipro.TTMultiProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.TTMultiProvider"
+        },
+        {
+          "@ns0:name": "com.anythink.china.common.ApkFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.anythink.fileProvider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140004"
+          }
+        },
+        {
+          "@ns0:name": "com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager",
+          "@ns0:exported": "false",
+          "@ns0:process": ":downloader",
+          "@ns0:authorities": "com.netease.mail.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
+        },
+        {
+          "@ns0:name": "com.bytedance.sdk.openadsdk.stub.server.MainServerManager",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.pangle.servermanager.main"
+        },
+        {
+          "@ns0:name": "com.bytedance.pangle.provider.MainProcessProviderProxy",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.pangle.provider.proxy.main"
+        },
+        {
+          "@ns0:name": "com.bytedance.pangle.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.pangle.fileprovider",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "com.tramini.plugin.api.TraminiContentProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.initprovider",
+          "@ns0:initOrder": "100"
+        },
+        {
+          "@ns0:name": "com.jd.ad.sdk.dl.cache.multiprocess.JADMultiProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.JADMultiProvider"
+        },
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.fileProvider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140005"
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.push.core.provider.PushStartProvider",
+          "@ns0:authorities": "com.netease.mail.push.start.provider"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.WorkManagerInitializer",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:authorities": "com.netease.mail.workmanager-init",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "com.youdao.sdk.extra.common.AdDownloadProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.youdaosdk",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140000"
+          }
+        },
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.androidx-startup",
+          "meta-data": {
+            "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+            "@ns0:value": "androidx.startup"
+          }
+        },
+        {
+          "@ns0:name": "com.sina.weibo.sdk.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.fileprovider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F140006"
+          }
+        },
+        {
+          "@ns0:name": "com.huawei.hms.support.api.push.PushProvider",
+          "@ns0:permission": "com.netease.mail.permission.PUSH_PROVIDER",
+          "@ns0:readPermission": "com.netease.mail.permission.PUSH_PROVIDER",
+          "@ns0:writePermission": "com.netease.mail.permission.PUSH_WRITE_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.netease.mail.huawei.push.provider"
+        },
+        {
+          "@ns0:name": "com.huawei.hms.aaid.InitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.aaidinitprovider",
+          "@ns0:initOrder": "500"
+        },
+        {
+          "@ns0:name": "com.huawei.hms.update.provider.UpdateProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.hms.update.provider",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "com.huawei.agconnect.core.provider.AGConnectInitializeProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.AGCInitializeProvider"
+        },
+        {
+          "@ns0:name": "com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.netease.mail.updateSdk.fileProvider",
+          "@ns0:grantUriPermissions": "true"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.anythink.china.common.NotificationBroadcaseReceiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "anythink_action_notification_click"
+              },
+              {
+                "@ns0:name": "anythink_action_notification_cancel"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.ss.android.downloadlib.core.download.DownloadReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.netease.mail.businessmail.protocol.mailpush.thirdpartypush.PushHandlerReceiver",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.netease.mail.PUSH_RECEIVE_REGISTER_RESULT"
+              },
+              {
+                "@ns0:name": "com.netease.mail.PUSH_PUSH_MESSAGE_CLICK"
+              },
+              {
+                "@ns0:name": "com.netease.mail.PASSTHROUGH_MESSAGE_ARRIVED"
+              },
+              {
+                "@ns0:name": "com.netease.mail.NOTIFICATION_MESSAGE_ARRIVED"
+              },
+              {
+                "@ns0:name": "com.netease.mail.PUSH_INFO_LOG"
+              },
+              {
+                "@ns0:name": "com.netease.mail.PUSH_ERROR_LOG"
+              },
+              {
+                "@ns0:name": "com.netease.mail.PUSH_TRACE_LOG"
+              },
+              {
+                "@ns0:name": "com.netease.mail.PUSH_REGISTER_FAILED"
+              }
+            ],
+            "category": {
+              "@ns0:name": "com.netease.mail"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.xiaomi.push.service.receivers.PingReceiver",
+          "@ns0:exported": "false",
+          "@ns0:process": ":pushservice",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.xiaomi.push.PING_TIMER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false"
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BATTERY_OKAY"
+              },
+              {
+                "@ns0:name": "android.intent.action.BATTERY_LOW"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_LOW"
+              },
+              {
+                "@ns0:name": "android.intent.action.DEVICE_STORAGE_OK"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIME_SET"
+              },
+              {
+                "@ns0:name": "android.intent.action.TIMEZONE_CHANGED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+          "@ns0:enabled": "@7F050004",
+          "@ns0:exported": "false",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.impl.background.systemalarm.UpdateProxies"
+            }
+          }
+        },
+        {
+          "@ns0:name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+          "@ns0:permission": "android.permission.DUMP",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:directBootAware": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.android.push.TimeoutTimer$Receiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.netease.mail.android.push.TIME_OUT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.android.push.DelayedTimer$Receiver",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.netease.mail.android.wzp.util.DELAYED"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.push.meizu.MeizuPushReceiver",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.meizu.flyme.push.intent.MESSAGE"
+              },
+              {
+                "@ns0:name": "com.meizu.flyme.push.intent.REGISTER.FEEDBACK"
+              },
+              {
+                "@ns0:name": "com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"
+              },
+              {
+                "@ns0:name": "com.meizu.c2dm.intent.REGISTRATION"
+              },
+              {
+                "@ns0:name": "com.meizu.c2dm.intent.RECEIVE"
+              }
+            ],
+            "category": {
+              "@ns0:name": "com.netease.mail"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.meizu.cloud.pushsdk.MzPushSystemReceiver",
+          "@ns0:permission": "com.meizu.flyme.permission.PUSH",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.meizu.flyme.push.intent.PUSH_SYSTEM"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.push.xiaomi.MiPushReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "com.xiaomi.mipush.RECEIVE_MESSAGE"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.xiaomi.mipush.MESSAGE_ARRIVED"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.xiaomi.mipush.ERROR"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.xiaomi.push.service.receivers.NetworkStatusReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.push.vivo.PushMessageReceiverImpl",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.vivo.pushclient.action.RECEIVE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.huawei.hms.support.api.push.PushMsgReceiver",
+          "@ns0:permission": "com.netease.mail.permission.PROCESS_PUSH_MSG",
+          "@ns0:directBootAware": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+              },
+              {
+                "@ns0:name": "com.huawei.intent.action.PUSH"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.huawei.hms.support.api.push.PushReceiver",
+          "@ns0:permission": "com.netease.mail.permission.PROCESS_PUSH_MSG",
+          "@ns0:directBootAware": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.huawei.android.push.intent.REGISTRATION"
+              },
+              {
+                "@ns0:name": "com.huawei.android.push.intent.RECEIVE"
+              }
+            ]
+          }
+        }
+      ],
+      "activity-alias": [
+        {
+          "@ns0:icon": "@7F0E0001",
+          "@ns0:name": "com.netease.mail.biz.main.DefaultSplashActivity",
+          "@ns0:enabled": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:targetActivity": "com.netease.mail.biz.main.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0002",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0003",
+          "@ns0:name": "com.netease.mail.biz.main.VipSplashActivity",
+          "@ns0:enabled": "false",
+          "@ns0:launchMode": "2",
+          "@ns0:targetActivity": "com.netease.mail.biz.main.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0003",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.netease.mail.wxapi.WXEntryActivity",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.netease.mail.lib.social.wxapi.WXEntryActivity"
+        },
+        {
+          "@ns0:name": "com.netease.mail.wxapi.WXPayEntryActivity",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.netease.mail.lib.social.wxapi.WXPayEntryActivity"
+        }
+      ]
+    }
+  }
+}

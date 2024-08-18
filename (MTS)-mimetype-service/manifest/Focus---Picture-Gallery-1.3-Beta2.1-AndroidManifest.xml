@@ -1,0 +1,160 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1607141901" ns0:versionName="1.3-Beta2.1" ns0:installLocation="0" package="com.franco.focus" platformBuildVersionCode="24" platformBuildVersionName="N">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="24"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<application ns0:theme="@7F0B016A" ns0:label="@7F090112" ns0:icon="@7F030000" ns0:name="com.franco.focus.application.App" ns0:allowBackup="true" ns0:vmSafeMode="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true">
+		<meta-data ns0:name="com.franco.focus.utils.glide.GlideThreadSetupModule" ns0:value="GlideModule"/>
+		<meta-data ns0:name="com.google.android.geo.API_KEY" ns0:value="@7F090125"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0D0005"/>
+		<meta-data ns0:name="com.crashlytics.ApiKey" ns0:value="0de081a7762aa2b209a22ac52954afae26013837"/>
+		<activity ns0:label="@7F090112" ns0:icon="@7F030000" ns0:name="com.franco.focus.activities.MainActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x000005A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030000" ns0:name="com.franco.focus.Original" ns0:enabled="true" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030001" ns0:name="com.franco.focus.Black" ns0:enabled="false" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030009" ns0:name="com.franco.focus.Christmas" ns0:enabled="false" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030004" ns0:name="com.franco.focus.Fingerprint" ns0:enabled="false" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030007" ns0:name="com.franco.focus.Golden" ns0:enabled="false" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030008" ns0:name="com.franco.focus.Paint" ns0:enabled="false" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030002" ns0:name="com.franco.focus.Cake" ns0:enabled="false" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030003" ns0:name="com.franco.focus.Easter" ns0:enabled="false" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030006" ns0:name="com.franco.focus.FocusGram" ns0:enabled="false" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F090112" ns0:icon="@7F030005" ns0:name="com.franco.focus.Fireworks" ns0:enabled="false" ns0:targetActivity="com.franco.focus.activities.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F0B0162" ns0:name="com.franco.focus.activities.TagSelectorActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.franco.focus.activities.TagViewerActivity"/>
+		<activity ns0:theme="@7F0B00B6" ns0:label="@7F09005A" ns0:name="com.franco.focus.activities.DetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0B0162" ns0:name="com.franco.focus.activities.PictureViewPager">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0900DF" ns0:name="com.franco.focus.activities.ManageCollections"/>
+		<activity ns0:name="com.franco.focus.activities.GoPremiumActivity" ns0:screenOrientation="5"/>
+		<activity ns0:theme="@7F0B0162" ns0:name="com.franco.focus.activities.NewTagActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F0B0162" ns0:name="com.franco.focus.activities.EditTagDialogActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F0B00A7" ns0:label="@7F09009A" ns0:name="com.franco.focus.activities.passcode.PrivacyLockPasscodeActivity" ns0:screenOrientation="5"/>
+		<activity ns0:theme="@7F0B00A7" ns0:label="@7F0900E1" ns0:name="com.franco.focus.activities.passcode.VaultPasscodeActivity" ns0:screenOrientation="5"/>
+		<activity ns0:theme="@7F0B00A7" ns0:label="@7F09003A" ns0:name="com.franco.focus.activities.passcode.AppLockPasscodeActivity" ns0:launchMode="2" ns0:screenOrientation="5"/>
+		<activity ns0:label="@7F09005F" ns0:name="com.franco.focus.activities.passcode.EditPasscodeActivity" ns0:screenOrientation="5"/>
+		<activity ns0:label="@7F090096" ns0:name="com.franco.focus.activities.passcode.NewPasscodeActivity" ns0:screenOrientation="5"/>
+		<activity ns0:label="@7F0900CB" ns0:name="com.franco.focus.activities.secondary.SettingsActivity"/>
+		<activity ns0:label="@7F0900D1" ns0:name="com.franco.focus.activities.secondary.SupportActivity"/>
+		<activity ns0:name="com.franco.focus.activities.PictureEditActivity" ns0:screenOrientation="5"/>
+		<activity ns0:theme="@7F0B016A" ns0:name="com.franco.focus.activities.VaultSecurityActivity" ns0:screenOrientation="5"/>
+		<activity ns0:theme="@7F0B016A" ns0:label="@7F0900E1" ns0:name="com.franco.focus.activities.VaultActivity"/>
+		<activity ns0:theme="@7F0B0161" ns0:name="com.franco.focus.activities.secondary.VideoPlayerActivity" ns0:configChanges="0x000005A0"/>
+		<activity ns0:name="com.franco.focus.activities.PremiumActivity"/>
+		<activity ns0:theme="@7F0B016A" ns0:name="com.franco.focus.activities.AppLockActivity" ns0:screenOrientation="5"/>
+		<activity ns0:theme="@7F0B016A" ns0:label="@7F0900FD" ns0:name="com.franco.focus.activities.SearchActivity" ns0:launchMode="1"/>
+		<activity ns0:label="@7F0900F8" ns0:name="com.franco.focus.activities.secondary.MuzeiSettingsActivity" ns0:exported="true" ns0:parentActivityName="com.franco.focus.activities.secondary.SettingsActivity"/>
+		<service ns0:name="com.franco.focus.activities.secondary.PanoramaActivity">
+			<intent-filter>
+				<data ns0:mimeType="application/vnd.google.panorama360+jpg"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F090112" ns0:icon="@7F0200AF" ns0:name="com.franco.focus.services.FocusMuzeiArtSource" ns0:description="@7F090093">
+			<intent-filter>
+				<action ns0:name="com.google.android.apps.muzei.api.MuzeiArtSource"/>
+			</intent-filter>
+			<meta-data ns0:name="settingsActivity" ns0:value="com.franco.focus.activities.secondary.MuzeiSettingsActivity"/>
+			<meta-data ns0:name="color" ns0:value="#FFACE5CC"/>
+		</service>
+		<service ns0:name="com.franco.focus.services.TagsImportService" ns0:enabled="true"/>
+		<service ns0:name="com.franco.focus.services.metadata.WriteOneTag" ns0:enabled="true"/>
+		<service ns0:name="com.franco.focus.services.metadata.RemoveOneTag" ns0:enabled="true"/>
+		<service ns0:name="com.franco.focus.services.metadata.TagsScanner" ns0:enabled="true"/>
+		<service ns0:name="com.franco.focus.services.metadata.RemoveTagFromAll" ns0:enabled="true"/>
+		<service ns0:name="com.franco.focus.services.metadata.WriteTagToAll" ns0:enabled="true"/>
+		<service ns0:name="com.franco.focus.services.PrefetchService" ns0:enabled="true"/>
+		<receiver ns0:name="com.franco.focus.receivers.BootReceiver" ns0:enabled="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+	</application>
+</manifest>

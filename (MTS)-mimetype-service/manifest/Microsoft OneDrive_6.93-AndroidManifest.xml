@@ -1,0 +1,1014 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2026930101" ns0:versionName="6.93" ns0:installLocation="0" ns0:compileSdkVersion="34" ns0:compileSdkVersionCodename="14" package="com.microsoft.skydrive" platformBuildVersionCode="34" platformBuildVersionName="14">
+	<uses-sdk ns0:minSdkVersion="23" ns0:targetSdkVersion="33"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_AUDIO"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_STATS"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+	<uses-permission ns0:name="com.samsung.android.samsungaccount.permission.ACCOUNT_MANAGER"/>
+	<uses-permission ns0:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+	<uses-permission ns0:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+	<queries>
+		<package ns0:name="com.microsoft.emmx"/>
+		<package ns0:name="com.android.chrome"/>
+		<package ns0:name="org.mozilla.firefox"/>
+		<package ns0:name="com.opera.browser"/>
+		<package ns0:name="com.opera.mini.native"/>
+		<package ns0:name="com.sec.android.app.sbrowser"/>
+		<package ns0:name="com.microsoft.office.onenote"/>
+		<package ns0:name="com.microsoft.office.word"/>
+		<package ns0:name="com.microsoft.office.excel"/>
+		<package ns0:name="com.microsoft.office.powerpoint"/>
+		<package ns0:name="com.microsoft.office.outlook"/>
+		<package ns0:name="com.microsoft.office.outlook.dawg"/>
+		<package ns0:name="com.microsoft.office.outlook.stg"/>
+		<package ns0:name="com.microsoft.office.outlook.dev"/>
+		<package ns0:name="com.microsoft.msapps"/>
+		<package ns0:name="com.microsoft.outlookgroups"/>
+		<package ns0:name="com.microsoft.sharepoint"/>
+		<package ns0:name="com.microsoft.office.officehubrow"/>
+		<package ns0:name="com.microsoft.office.officehub"/>
+		<package ns0:name="com.microsoft.office.officehubrow.internal"/>
+		<package ns0:name="com.microsoft.windowsintune.companyportal"/>
+		<package ns0:name="com.microsoft.teams"/>
+		<package ns0:name="com.yammer.v1"/>
+		<package ns0:name="com.microsoft.todos"/>
+		<package ns0:name="com.touchtype.Micswiftkey"/>
+		<package ns0:name="com.skype.raider"/>
+		<package ns0:name="com.microsoft.office.lync15"/>
+		<package ns0:name="com.mobiledatalabs.mileiq"/>
+		<package ns0:name="com.microsoft.translator"/>
+		<package ns0:name="com.touchtype.swiftkey"/>
+		<package ns0:name="com.azure.authenticator"/>
+		<package ns0:name="com.linkedin.android"/>
+		<package ns0:name="com.linkedin.android.flagshipdev.debug"/>
+		<package ns0:name="com.microsoft.appmanager"/>
+		<package ns0:name="com.sec.android.app.samsungapps"/>
+		<package ns0:name="com.samsung.android.app.reminder"/>
+		<package ns0:name="com.samsung.android.app.notes"/>
+		<package ns0:name="com.sec.android.app.myfiles"/>
+		<package ns0:name="com.amazon.venezia"/>
+		<package ns0:name="com.android.vending"/>
+		<package ns0:name="com.microsoft.stream"/>
+		<package ns0:name="com.google.android.gms.policy_cast_dynamite"/>
+		<package ns0:name="com.microsoft.identity.testuserapp"/>
+		<package ns0:name="com.microsoft.mockauthapp"/>
+		<package ns0:name="com.microsoft.mockcp"/>
+		<package ns0:name="com.microsoft.mockltw"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.android.vending.billing.InAppBillingService.BIND"/>
+		</intent>
+	</queries>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.CHOOSER"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="text/plain"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+			<data ns0:mimeType="text/plain"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.microsoft.odsp.action.FEEDBACK"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+	</queries>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-permission ns0:name="com.google.android.permission.PROVIDE_BACKGROUND"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC"/>
+	<uses-feature ns0:name="android.hardware.fingerprint" ns0:required="false"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<permission ns0:name="com.microsoft.skydrive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.microsoft.skydrive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.NFC"/>
+	<uses-feature ns0:name="android.hardware.usb.host" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.nfc" ns0:required="false"/>
+	<application ns0:label="@7F1400AC" ns0:icon="@7F08062A" ns0:name="com.microsoft.skydrive.SkyDriveApplication" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:uiOptions="0x00000001" ns0:supportsRtl="true" ns0:extractNativeLibs="true" ns0:fullBackupContent="@7F180003" ns0:usesCleartextTraffic="false" ns0:networkSecurityConfig="@7F180005" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:useEmbeddedDex="true" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0C0017"/>
+		<receiver ns0:name="com.microsoft.skydrive.localmoj.notifications.LocalMojSystemBroadcastsReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="com.microsoft.skydrive.localmoj.notifications.action.alarm"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F15035B" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.MainActivity" ns0:exported="true" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000030">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="com.microsoft.skydrive.mainactivity.action.navigateto"/>
+				<action ns0:name="com.microsoft.skydrive.mainactivity.action.openpinfolder"/>
+				<action ns0:name="com.microsoft.skydrive.mainactivity.action.pushnotification"/>
+				<action ns0:name="com.microsoft.skydrive.mainactivity.action.search"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="ms-onedrive"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.mainactivity.action.showaddnewaccount"/>
+				<action ns0:name="com.microsoft.skydrive.mainactivity.action.showsamsungonboarding"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F180016"/>
+		</activity>
+		<activity ns0:theme="@7F150366" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.photos.device.DeviceMediaViewActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.settings.testhook.AppStorageViewerActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity"/>
+		<activity ns0:name="com.microsoft.skydrive.DeepLinkingActivity" ns0:exported="true" ns0:launchMode="2">
+			<intent-filter ns0:priority="-20" ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:host="photos.1drv-dogfood.net"/>
+				<data ns0:host="photos.onedrive.com"/>
+				<data ns0:host="onedrive.live.com"/>
+				<data ns0:host="@7F140F47"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:pathPattern="/x/.*"/>
+				<data ns0:pathPattern="/p/.*"/>
+				<data ns0:pathPattern="/w/.*"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:host="photos.1drv-dogfood.net"/>
+				<data ns0:host="photos.onedrive.com"/>
+				<data ns0:host="onedrive.live.com"/>
+				<data ns0:host="@7F140F47"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+			</intent-filter>
+			<intent-filter ns0:priority="-20" ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:host="*.sharepoint-df.com"/>
+				<data ns0:host="*.sharepoint.com"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:pathPattern="/:x:/.*"/>
+				<data ns0:pathPattern="/:p:/.*"/>
+				<data ns0:pathPattern="/:w:/.*"/>
+				<data ns0:pathPattern="/:t:/.*"/>
+				<data ns0:pathPattern="/:v:/.*"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:host="*.sharepoint-df.com"/>
+				<data ns0:host="*.sharepoint.com"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:pathPattern="/:b:/.*"/>
+				<data ns0:pathPattern="/:f:/.*"/>
+				<data ns0:pathPattern="/:i:/.*"/>
+				<data ns0:pathPattern="/:u:/.*"/>
+				<data ns0:pathPattern=".*\guestaccess.aspx.*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.settings.JoinBetaEULAActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150367" ns0:label="@7F1400AF" ns0:icon="@7F08070D" ns0:name="com.microsoft.skydrive.photos.PhotosLauncherActivity" ns0:enabled="false" ns0:exported="true" ns0:clearTaskOnLaunch="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.intent.actionsend.ReceiveActionSendActivity" ns0:exported="true" ns0:taskAffinity="com.microsoft.skydrive.intent.actionsend.ReceiveActionSendActivity" ns0:excludeFromRecents="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<data ns0:mimeType="*/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.intent.actionsend.ReceiveSdkSaverActivity" ns0:exported="true" ns0:excludeFromRecents="true">
+			<intent-filter>
+				<action ns0:name="onedrive.intent.action.SAVER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.intent.actionsend.ModalUploadOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15035A" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.intent.getcontent.ReceiveGetContentActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<data ns0:mimeType="*/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.settings.RestoreOneDriveActivity"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.getcontent.RecieveSdkPickerActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="onedrive.intent.action.PICKER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.content.ContentResolverCallOperation" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.odsp.fileopen.upsell.EnhancedOfficeUpsellOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.onedrive.operation.officelens.OfficeLensOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15036B" ns0:label="@7F1400AC" ns0:name="com.microsoft.authorization.SignInActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:scheme="ms-onedrive-000000004022dab9" ns0:host="auth"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150358" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.camerabackup.SetupBackupAccountActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150358" ns0:label="@7F1400AC" ns0:name="com.microsoft.authorization.StartSignInActivityV2" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150358" ns0:label="@7F1400AC" ns0:name="com.microsoft.authorization.SignInActivityV2" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15036B" ns0:label="@7F1400AC" ns0:name="com.microsoft.authorization.StartSignInActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15036B" ns0:label="@7F1400AC" ns0:name="com.microsoft.authorization.EmailAccrualActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.operation.album.UpdateAlbumCoverOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150355" ns0:name="com.microsoft.skydrive.operation.album.AlbumChooserForAddToAlbumActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.comment.EnableDisableCommentsOperationActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.operation.album.PhotosOrVideosChooserForAddToAlbumActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.upload.picker.SAFPickerActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.share.operation.PermissionsChooserOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.share.operation.ChangePermissionsOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.createfolder.GetFolderNameOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.createfolder.CreateFolderOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.CreateDocument.GetDocumentNameOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.CreateDocument.CreateDocumentOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.camera.CameraOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.officelens.ScanOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.officelens.ScanItemLocationChooserActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.delete.AbdicateOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.delete.DeleteOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.localmoj.operations.DeleteMOJOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.delete.DeleteFromRecycleBinOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.delete.EmptyRecycleBinOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.localmoj.operations.DeleteMediaFromMOJOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.delete.RemoveItemsFromAlbumOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.delete.RestoreOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.mount.MountOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.mount.UnMountOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.fileopen.DownloadAndExportOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.fileopen.DownloadAndOpenFileOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.fileopen.UrlFileOpenOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.navigation.UrlFileIntentHandlerActivity" ns0:exported="true">
+			<intent-filter ns0:label="@7F1407DB">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*" ns0:scheme="file" ns0:host="*" ns0:pathPattern=".*.url"/>
+				<data ns0:mimeType="*/*" ns0:scheme="file" ns0:host="*" ns0:pathPattern=".*.URL"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.share.operation.SendFilesOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.fileopen.OfficeProtocolOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.fileopen.convergence.OfficeProtocolOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.odsp.fileopen.OpenFileOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.fileopen.OpenStreamingFileOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.ReturnGetContentOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.intent.getcontent.ReceiveGetContentLinkOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.save.SaveOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.rename.GetFileNameOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.odb.dlp.GetOverrideJustificationOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.odb.dlp.OverrideDlpOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.rename.RenameOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.copy.CopyOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.settings.UpdateUserPreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.settings.SetPhotosUserPreferencesActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.album.GetAlbumNameOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.album.CreateAlbumOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.photos.onthisday.CreateAlbumAndShareOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1500FE" ns0:name="com.microsoft.skydrive.operation.album.AddToAlbumOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1500FE" ns0:name="com.microsoft.skydrive.operation.people.DisassociateFaceOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1500FE" ns0:name="com.microsoft.skydrive.operation.people.ChangeCoverPhotoOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150356" ns0:name="com.microsoft.skydrive.operation.tags.EditTagsOperationActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000014" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.tags.UpdateTagsOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150356" ns0:name="com.microsoft.skydrive.share.InvitePeopleActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000014" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.share.operation.InvitePeopleOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.share.operation.ShareALinkOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.share.operation.CustomizedShareALinkOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15034E" ns0:name="com.microsoft.skydrive.share.TargetAppChooserActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.SimpleDialogActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.move.MoveOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.move.ConfirmDragAndDropMoveActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.sites.FollowUnfollowOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.delete.RemoveShortcutOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.move.AsyncMoveConfirmActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140912" ns0:name="com.microsoft.skydrive.operation.move.FolderChooserForMoveActivityNew" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140BF7" ns0:name="com.microsoft.skydrive.pdfviewer.MarkupOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140912" ns0:name="com.microsoft.skydrive.pdfviewer.FolderChooserForPdfMarkupActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140CC8" ns0:name="com.microsoft.skydrive.upload.FileUploadManagementActivity" ns0:exported="true" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150364" ns0:name="com.microsoft.skydrive.photoviewer.MediaViewerHostActivity" ns0:configChanges="0x40003FF7" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150305" ns0:name="com.microsoft.skydrive.officelens.CameraCaptureActivity" ns0:screenOrientation="0"/>
+		<activity ns0:theme="@7F150305" ns0:name="com.microsoft.skydrive.officelens.ConfirmScanImagesActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F150361" ns0:name="com.microsoft.skydrive.officelens.OLConfirmScanActivity" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.cleanupspace.CleanUpSpaceUpsellActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.microsoft.skydrive.iap.billing.ProxyEligibilityActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.pdfviewer.PdfIntentHandlerActivity" ns0:exported="true">
+			<intent-filter ns0:label="@7F1407DA">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:mimeType="application/pdf"/>
+				<data ns0:scheme="file"/>
+				<data ns0:scheme="content"/>
+				<data ns0:host="*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15000B" ns0:icon="@7F08070D" ns0:name="com.microsoft.skydrive.photos.device.MediaIntentHandlerActivity" ns0:enabled="false" ns0:exported="true" ns0:parentActivityName="com.microsoft.skydrive.photos.PhotosLauncherActivity">
+			<intent-filter ns0:label="@7F1400AF">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:scheme="file"/>
+				<data ns0:scheme="content"/>
+				<data ns0:host="*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="" ns0:name="com.microsoft.skydrive.pdfviewer.PdfViewerFragmentHostActivity" ns0:launchMode="2" ns0:configChanges="0x00000D80"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.pdfviewer.PdfMergeOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140BEA" ns0:name="com.microsoft.skydrive.pdfviewer.merge.PdfSelectorForMergeActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.embeddedviewer.EmbeddedViewerActivity" ns0:parentActivityName="com.microsoft.skydrive.MainActivity"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.embeddedviewer.EmbeddedViewerHostActivity" ns0:parentActivityName="com.microsoft.skydrive.MainActivity"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140DEF" ns0:name="com.microsoft.skydrive.settings.SkydriveAppSettings" ns0:launchMode="1" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140DEF" ns0:name="com.microsoft.skydrive.settings.SettingsActivity" ns0:launchMode="1" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="Test Hook" ns0:name="com.microsoft.skydrive.settings.testhook.TestHookSettings" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.settings.testhook.TestHookSettings"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.samsung.SamsungRemoteActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.fre.FirstRunExperienceActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.fre.compose.NotificationsFreActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.fre.OnboardingExperienceActivity" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.privacy.PrivacyActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.offers.OutlookUpsellActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.fre.OrganizeBySourceFREActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140FEA" ns0:name="com.microsoft.skydrive.settings.ThirdPartyNoticeActivity" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.settings.ThirdPartyNoticeActivity"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.home.settings.HomeSectionsCustomizationActivity" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.home.settings.HomeSectionsCustomizationActivity"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettingsAccount"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140EEA" ns0:name="com.microsoft.skydrive.settings.SkydriveAppSettingsAccount" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140E06" ns0:name="com.microsoft.skydrive.settings.SkydriveAppSettingsCameraBackup" ns0:exported="true" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="com.nokia.intent.category.GALLERY_MEDIA_PROVIDER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.settings.SkydriveAppSettingsCameraBackup"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140DF0" ns0:name="com.microsoft.skydrive.settings.SkydriveAppSettingsBackupFolders" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettingsCameraBackup">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettingsCameraBackup"/>
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.settings.SkydriveAppSettingsBackupFolders"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1401EE" ns0:name="com.microsoft.skydrive.settings.SkyDriveSettingsOrganizeBySource" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettingsCameraBackup">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettingsCameraBackup"/>
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.settings.SkyDriveSettingsOrganizeBySource"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1401E7" ns0:name="com.microsoft.skydrive.settings.SkyDriveSettingsNestedFolders" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettingsCameraBackup">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettingsCameraBackup"/>
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.settings.SkyDriveSettingsNestedFolders"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140EDE" ns0:name="com.microsoft.skydrive.settings.SkydriveAppSettingsSdCardBackup" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140DAE" ns0:name="com.microsoft.skydrive.settings.SdCardFolderSelectionSettings" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettingsSdCardBackup">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettingsSdCardBackup"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F14024E" ns0:name="com.microsoft.skydrive.settings.SkyDriveAppSettingsCleanUpSpace" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140E5E" ns0:name="com.microsoft.skydrive.settings.SkydriveAppSettingsRequireCodeToSignUp" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140F16" ns0:name="com.microsoft.skydrive.settings.VisualSearchSettings" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140F11" ns0:name="com.microsoft.skydrive.settings.VaultSettings" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140CAF" ns0:name="com.microsoft.skydrive.settings.PrivacySettings" ns0:exported="false" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.settings.PrivacySettings"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1410E5" ns0:name="com.microsoft.skydrive.settings.DiagnosticDataViewerSettings" ns0:exported="false" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.settings.DiagnosticDataViewerSettings"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140F0A" ns0:name="com.microsoft.skydrive.settings.VaultNotificationsSettings" ns0:exported="false" ns0:parentActivityName="com.microsoft.skydrive.settings.VaultSettings">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.settings.VaultNotificationsSettings"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.VaultSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1407C3" ns0:name="com.microsoft.skydrive.localauthentication.LocalAuthenticationActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000004" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F150355" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.devicecontentpicker.localfiles.LocalFolderBrowserActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150360" ns0:label="@7F14089F" ns0:name="com.microsoft.skydrive.operation.propertypage.ViewPropertiesActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150356" ns0:name="com.microsoft.skydrive.operation.propertypage.ViewDlpTipsActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140EEF" ns0:name="com.microsoft.skydrive.iap.InAppPurchaseActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.iap.samsung.SamsungInAppPurchaseActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150356" ns0:name="com.microsoft.skydrive.onerm.OneRMCampaignActivity"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.settings.testhook.DownloadAllPhotosTaskActivity" ns0:exported="false" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.settings.testhook.DragAndDropSharingLinkTestActivity" ns0:exported="false" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.settings.testhook.PerformanceMetricsActivity" ns0:exported="false" ns0:launchMode="1" ns0:supportsPictureInPicture="true"/>
+		<activity ns0:theme="@7F150349" ns0:icon="@7F080905" ns0:name="com.microsoft.skydrive.widget.OneDriveShortcut" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.CREATE_SHORTCUT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.atpviewer.ATPViewActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.meridian.MeridianActivity" ns0:exported="true" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.settings.SkydriveAppSettings">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.meridianactivity.action.startmeridian"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<data ns0:scheme="ms-onedrive-meridian" ns0:host="startmeridian"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.microsoft.skydrive.settings.SkydriveAppSettings"/>
+		</activity>
+		<activity ns0:theme="@7F15034E" ns0:label="@7F140D82" ns0:name="com.microsoft.skydrive.saveas.SaveAsActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.aad.adal.AuthenticationActivity" ns0:configChanges="0x00000DB0"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.vault.UnlockVaultActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.vault.SetupVaultActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1504AC" ns0:label="Feedback" ns0:name="com.microsoft.office.feedback.floodgate.MainActivity"/>
+		<activity ns0:theme="@7F1504AC" ns0:label="Feedback" ns0:name="com.microsoft.office.feedback.inapp.MainActivity"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.SamsungHandlerActivity" ns0:exported="true" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.samsunghandleractivity.action.navigatetofiles"/>
+				<action ns0:name="com.microsoft.skydrive.samsunghandleractivity.action.navigatetogallery"/>
+				<action ns0:name="com.microsoft.skydrive.samsunghandleractivity.action.accountbound"/>
+				<action ns0:name="com.microsoft.skydrive.samsunghandleractivity.action.navigatetoplans"/>
+				<action ns0:name="com.microsoft.skydrive.samsunghandleractivity.action.navigatetorecyclebin"/>
+				<action ns0:name="com.microsoft.skydrive.samsunghandleractivity.action.googleaccountrequired"/>
+				<action ns0:name="com.microsoft.skydrive.samsunghandleractivity.action.navigatetosamsungdocument"/>
+				<action ns0:name="com.microsoft.skydrive.samsunghandleractivity.action.navigatetosdcardsettings"/>
+				<action ns0:name="com.microsoft.skydrive.samsunghandleractivity.action.navigatetome"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.SamsungMigrationUpsellActivity" ns0:exported="true" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.SamsungMigrationUpsellActivity"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.SamsungAuthLoadingActivity"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F14089C" ns0:name="com.microsoft.skydrive.vault.VaultSuggestedFilesActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F150351" ns0:name="com.microsoft.skydrive.oobe.DuoOOBEActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.oobe.DuoOOBEActivity"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.xiaomi.XiaomiHandlerActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="com.microsoft.action.xiaomi.start_oobe"/>
+				<action ns0:name="com.microsoft.action.xiaomi.backup_account_setup"/>
+				<action ns0:name="com.microsoft.action.xiaomi.backup_account_upgrade"/>
+				<action ns0:name="com.microsoft.action.xiaomi.view_backup_settings"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150358" ns0:label="@7F1400AC" ns0:name="com.microsoft.skydrive.xiaomi.XiaomiUpsellActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:name="com.microsoft.skydrive.instrumentation.MaeSdkActivity"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.aitagsfeedback.AITagsShowFeedbackActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150357" ns0:name="com.microsoft.skydrive.photoviewer.EditPhotoActivity" ns0:enabled="true" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140294" ns0:name="com.microsoft.skydrive.aitagsfeedback.AITagsFeedbackActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.aadc.AADCPrivacyFREActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F15035F" ns0:label="@7F140912" ns0:name="com.microsoft.skydrive.SignedOutStateFREActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140FD4" ns0:name="com.microsoft.skydrive.settings.testhook.telemetry.TelemetryViewerActivity" ns0:exported="false" ns0:parentActivityName="com.microsoft.skydrive.settings.testhook.TestHookSettings"/>
+		<activity ns0:theme="@7F150349" ns0:label="@7F140FD3" ns0:name="com.microsoft.skydrive.settings.testhook.telemetry.TelemetryDetailsActivity" ns0:exported="false" ns0:parentActivityName="com.microsoft.skydrive.settings.testhook.telemetry.TelemetryViewerActivity"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.PIPLFREActivity" ns0:exported="false" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15035F" ns0:name="com.microsoft.skydrive.photos.people.activities.FaceAiConfirmationsActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity"/>
+		<activity ns0:theme="@7F15035E" ns0:name="com.microsoft.skydrive.photos.people.activities.PeopleHideActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity"/>
+		<activity ns0:theme="@7F15035E" ns0:name="com.microsoft.skydrive.photos.people.activities.PersonDetailActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity"/>
+		<activity ns0:theme="@7F15035E" ns0:name="com.microsoft.skydrive.photos.people.activities.PeopleMergeActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.MainActivity"/>
+		<activity ns0:theme="@7F15035E" ns0:name="com.microsoft.skydrive.photos.people.activities.ChangeCoverPhotoActivity" ns0:launchMode="1" ns0:parentActivityName="com.microsoft.skydrive.photos.people.activities.PersonDetailActivity"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.skydrive.operation.RedeemPartialItemsOperationActivity"/>
+		<service ns0:name="com.microsoft.authorization.cloudaccounts.UpdateCloudAccountsJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.photos.onthisday.OnThisDayBackgroundProcessor" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.photos.onthisday.OnThisDayNotifier" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.updateuserinfo.UpdateUserInfoJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.jobs.UpdateMetadataForOfflineFilesJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.jobs.LocalNotificationDailyJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.jobs.SamsungMigrationStateJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.microsoft.skydrive.widget.OneDriveActionsWidgetProvider" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F180000"/>
+		</receiver>
+		<receiver ns0:label="@7F140C59" ns0:name="com.microsoft.skydrive.widget.photoswidget.PhotosWidgetProvider" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F180007"/>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.cleanupspace.CleanUpSpaceNotificationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.cleanupspace.YES_TAPPED"/>
+				<action ns0:name="com.microsoft.skydrive.cleanupspace.NO_TAPPED"/>
+				<action ns0:name="com.microsoft.skydrive.cleanupspace.DISMISSED"/>
+				<action ns0:name="com.microsoft.skydrive.cleanupspace.NEVER_TAPPED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.pushnotification.PushNotificationDismissedReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.pushnotification.PushNotificationAction.PUSH_NOTIFICATION_DISMISSED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.photos.onthisday.OnThisDayNotificationDismissedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.onthisday.OnThisDayNotificationDismissed.DISMISSED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.localmoj.notifications.LocalMOJNotificationReactionBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.localmoj.notifications.LocalMOJNotificationReactionBroadcastReceiver.DISMISSED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.authorization.oneauth.ReauthNotificationDismissedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.microsoft.authorization.oneauth.ReauthBroadcastReceiver.DISMISSED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.operation.save.DownloadBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.samsung.SamsungMigrationStateBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.samsung.android.scloud.app.broadcast.ACTION_MIGRATION_STATUS_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.microsoft.skydrive.upload.ManualUploadService" ns0:exported="false" ns0:foregroundServiceType="0x00000001">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.upload.ManualUploadService"/>
+				<action ns0:name="com.microsoft.skydrive.upload.CLEAR"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.microsoft.skydrive.upload.ModalUploadService" ns0:exported="false" ns0:foregroundServiceType="0x00000001">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.upload.ModalUploadService"/>
+				<action ns0:name="com.microsoft.skydrive.upload.CLEAR"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.microsoft.skydrive.upload.AutoUploadService" ns0:exported="false" ns0:foregroundServiceType="0x00000001">
+			<intent-filter>
+				<action ns0:name="com.microsoft.skydrive.upload.AutoUploadService"/>
+				<action ns0:name="com.microsoft.skydrive.upload.CLEAR"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.microsoft.skydrive.upload.AsyncMoveService" ns0:enabled="true" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050007" ns0:exported="false" ns0:directBootAware="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="com.microsoft.skydrive.camerabackup.CameraRollSyncService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.content.SyncAdapter"/>
+			</intent-filter>
+			<meta-data ns0:name="android.content.SyncAdapter" ns0:resource="@7F18002B"/>
+		</service>
+		<service ns0:name="com.microsoft.skydrive.camerabackup.CameraRollJob" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.microsoft.crossplaform.interop.WifiAvailableJob" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.microsoft.skydrive.jobs.DetectConnectivityJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.jobs.CleanUpSpaceJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.pushnotification.NotificationsIntentService" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.camerabackup.CameraRollIntentService" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.jobs.SubscriptionRefreshJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.skydrive.pushnotification.MassDeleteJob" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.microsoft.skydrive.pushnotification.UpsellPushNotificationJob" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.microsoft.skydrive.jobs.SamsungMigrationUpsellJob" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.microsoft.skydrive.jobs.MeridianUpsellJob" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<provider ns0:name="com.microsoft.skydrive.content.MediaStorageBackupStatusProvider" ns0:exported="true" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.MediaStorageBackupStatus"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.microsoft.skydrive.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.profileinstaller.ProfileInstallerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<provider ns0:name="com.microsoft.skydrive.content.ExternalContentProvider" ns0:exported="true" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.external"/>
+		<provider ns0:name="com.microsoft.skydrive.content.MetadataContentProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.metadata"/>
+		<provider ns0:name="com.microsoft.skydrive.upload.AutoUploadContentProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.autoupload"/>
+		<provider ns0:name="com.microsoft.skydrive.content.CameraBackupSettingsContentProvider" ns0:exported="true" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.CameraBackupSettings"/>
+		<provider ns0:name="com.microsoft.skydrive.upload.ManualUploadContentProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.manualupload"/>
+		<provider ns0:name="com.microsoft.skydrive.upload.ModalUploadContentProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.modalupload"/>
+		<provider ns0:name="com.microsoft.skydrive.upload.AsyncMoveContentProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.move"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.microsoft.skydrive.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F180015"/>
+		</provider>
+		<provider ns0:name="com.microsoft.skydrive.content.SamsungGallerySyncContentProvider" ns0:exported="true" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.SamsungGallerySync"/>
+		<provider ns0:name="com.microsoft.skydrive.content.Samsung100GBTrialContentProvider" ns0:exported="true" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.Samsung100GBTrial"/>
+		<receiver ns0:name="com.microsoft.skydrive.upload.SdCardMountReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.upload.SdCardUnmountReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.receiver.BatteryConnectivityPowerReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.battery.BatteryLowReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.receiver.BootAtStartupReceiver" ns0:permission="android.permission.RECEIVE_BOOT_COMPLETED" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.receiver.NewPictureBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.camera.NEW_PICTURE"/>
+				<action ns0:name="android.hardware.action.NEW_PICTURE"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.upload.AlarmReceiverForAsyncMoveOperation"/>
+		<receiver ns0:name="com.microsoft.tokenshare.AccountChangeReceiver" ns0:exported="true">
+			<intent-filter>
+				<data ns0:scheme="package"/>
+				<action ns0:name="com.microsoft.tokenshare.SIGNIN_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.microsoft.skydrive.vault.VaultCheckLockedStateReceiver"/>
+		<provider ns0:name="com.microsoft.skydrive.content.StorageAccessProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:enabled="true" ns0:exported="true" ns0:multiprocess="false" ns0:authorities="com.microsoft.skydrive.content.StorageAccessProvider" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="android.content.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<meta-data ns0:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" ns0:value="com.microsoft.skydrive.cast.CastOptionsProvider"/>
+		<meta-data ns0:name="com.microsoft.intune.mam.aad.ClientID" ns0:value="b26aadf8-566f-4478-926f-589f601d9c74"/>
+		<meta-data ns0:name="com.microsoft.intune.mam.MAMMultiIdentity" ns0:value="true"/>
+		<meta-data ns0:name="com.microsoft.authorization.supportedAccountTypes" ns0:resource="@7F030006"/>
+		<meta-data ns0:name="com.microsoft.authorization.teamsites" ns0:value="false"/>
+		<meta-data ns0:name="com.microsoft.authorization.mysite" ns0:value="false"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<meta-data ns0:name="android.content.APP_RESTRICTIONS" ns0:resource="@7F180001"/>
+		<meta-data ns0:name="com.google.android.gms.ads.AD_MANAGER_APP" ns0:value="true"/>
+		<meta-data ns0:name="preloaded_fonts" ns0:resource="@7F030045"/>
+		<activity ns0:theme="@7F1500FE" ns0:name="com.microsoft.onedrive.localfiles.operation.DeleteOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1500FE" ns0:name="com.microsoft.onedrive.localfiles.operation.EditOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.odsp.operation.feedback.FeedbackChooserActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000E" ns0:label="@7F1404C7" ns0:name="com.microsoft.odsp.operation.feedback.FeedbackComposerActivity" ns0:exported="false" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000002" ns0:parentActivityName="com.microsoft.odsp.operation.feedback.FeedbackChooserActivity">
+			<intent-filter>
+				<action ns0:name="com.microsoft.odsp.operation.feedback.FeedbackComposerActivity"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.microsoft.odsp.action.FEEDBACK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F15000B" ns0:name="com.microsoft.odsp.operation.feedback.FeedbackOperationActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F15000E" ns0:label="@7F140F1D" ns0:name="com.microsoft.odsp.whatsnew.WhatsNewActivity" ns0:exported="false" ns0:launchMode="2" ns0:windowSoftInputMode="0x00000002" ns0:hardwareAccelerated="false">
+			<intent-filter>
+				<action ns0:name="com.microsoft.odsp.whatsnew.WhatsNewActivity"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.microsoft.odsp.task.TaskService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.microsoft.odsp.task.TaskService"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.microsoft.odsp.pushnotification.ODSPInstanceIDService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:name="com.microsoft.oneplayer.player.ui.view.activity.OnePlayerActivity" ns0:exported="false" ns0:taskAffinity="com.microsoft.skydrive.OnePlayerActivity" ns0:launchMode="3" ns0:configChanges="0x40003FF7" ns0:supportsPictureInPicture="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.microsoft.oneplayer.core.service.PlayerProviderService" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.cast.framework.media.MediaNotificationService" ns0:exported="false" ns0:foregroundServiceType="0x00000002"/>
+		<service ns0:name="com.google.android.gms.cast.framework.ReconnectionService" ns0:exported="false"/>
+		<service ns0:name="com.microsoft.authorization.AuthenticationService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F180002"/>
+		</service>
+		<meta-data ns0:name="com.microsoft.intune.mam.ForceProductionAgent" ns0:value="true"/>
+		<activity ns0:theme="@7F1504DD" ns0:name="com.microsoft.authentication.internal.OneAuthNavigationActivity" ns0:launchMode="1" ns0:configChanges="0x00000DB0"/>
+		<activity ns0:theme="@7F1504DD" ns0:name="com.microsoft.identity.common.internal.providers.oauth2.AuthorizationActivity" ns0:configChanges="0x00000DB0"/>
+		<activity ns0:name="com.microsoft.identity.common.internal.providers.oauth2.CurrentTaskAuthorizationActivity" ns0:configChanges="0x00000DB0"/>
+		<activity ns0:name="com.microsoft.identity.common.internal.broker.BrokerActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F1502FD" ns0:name="com.microsoft.identity.common.internal.broker.InstallCertActivityLauncher" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F150347" ns0:name="com.microsoft.powerlift.android.RemedyActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.GenericIdpActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="genericidp" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.RecaptchaActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="recaptcha" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<meta-data ns0:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" ns0:value="GlideModule"/>
+		<service ns0:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.label.defaults.internal.BundledLabelRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.mlkit.common.internal.MlKitInitProvider" ns0:exported="false" ns0:authorities="com.microsoft.skydrive.mlkitinitprovider" ns0:initOrder="99"/>
+		<service ns0:name="com.google.android.gms.metadata.ModuleDependencies" ns0:enabled="false" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+			</intent-filter>
+			<meta-data ns0:name="tflite_dynamite:3:required" ns0:value=""/>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<uses-library ns0:name="androidx.camera.extensions.impl" ns0:required="false"/>
+		<service ns0:name="androidx.camera.core.impl.MetadataHolderService" ns0:enabled="false" ns0:exported="false">
+			<meta-data ns0:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" ns0:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+		</service>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050008" ns0:exported="true" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.microsoft.skydrive.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:name="androidx.compose.ui.tooling.PreviewActivity" ns0:exported="true"/>
+		<meta-data ns0:name="com.microsoft.applications.telemetry.tenantToken" ns0:value="1da23ef29088440eababab323c676fd9-ae63b4b9-7f9a-4729-a31e-1c2017116813-6912"/>
+		<meta-data ns0:name="com.microsoft.applications.telemetry.enableAutoUserSession" ns0:value="true"/>
+		<provider ns0:name="com.microsoft.yimiclient.util.YimiFileProvider" ns0:exported="false" ns0:authorities="com.microsoft.skydrive.yimi.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F180031"/>
+		</provider>
+		<activity ns0:theme="@7F1502F6" ns0:name="com.microsoft.office.lens.lenscommon.ui.LensActivity" ns0:multiprocess="true" ns0:windowSoftInputMode="0x00000023"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<receiver ns0:name="androidx.profileinstaller.ProfileInstallReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SKIP_FILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<service ns0:label="" ns0:name="com.microsoft.intune.mam.client.notification.MAMNotificationReceiverService" ns0:exported="true"/>
+		<service ns0:label="" ns0:name="com.microsoft.intune.mam.client.service.MAMBackgroundService" ns0:exported="false"/>
+		<service ns0:label="" ns0:name="com.microsoft.intune.mam.client.service.MAMBackgroundJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.microsoft.intune.mam.client.service.MAMBackgroundReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.microsoft.intune.mam.client.app.offline.OfflineStartupBlockedActivity" ns0:exported="false" ns0:multiprocess="true"/>
+		<activity ns0:name="com.microsoft.intune.mam.client.app.offline.OfflineRestartRequiredActivity" ns0:exported="false" ns0:multiprocess="true"/>
+		<activity ns0:name="com.microsoft.intune.mam.client.app.startup.MAMStartupActivity" ns0:exported="false" ns0:multiprocess="true"/>
+		<activity ns0:theme="@7F150172" ns0:name="com.microsoft.intune.mam.client.app.resolver.MAMResolverActivity" ns0:exported="false" ns0:taskAffinity=""/>
+		<activity ns0:theme="@7F150172" ns0:name="com.microsoft.intune.mam.client.app.offline.OfflineInstallCompanyPortalDialogActivity" ns0:exported="false" ns0:multiprocess="true"/>
+		<activity ns0:name="com.microsoft.intune.mam.client.app.offline.OfflineNotifyWipeActivity" ns0:exported="false"/>
+		<activity ns0:label="ComplianceBlock" ns0:name="com.microsoft.intune.mam.client.app.startup.MAMComplianceBlockActivity" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F150346" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:enabled="false" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="11000"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.2.1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<service ns0:name="com.microsoft.tokenshare.TokenSharingService" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.microsoft.tokenshare.TokenSharingService"/>
+			</intent-filter>
+		</service>
+		<meta-data ns0:name="token_share_sdk_version" ns0:value="2"/>
+		<meta-data ns0:name="token_share_build_version" ns0:value="1.6.10"/>
+		<meta-data ns0:name="token_share_parcelable_version" ns0:value="3"/>
+		<activity ns0:theme="@7F1504A9" ns0:label="@7F14114E" ns0:name="com.yubico.yubikit.android.ui.OtpActivity" ns0:excludeFromRecents="true"/>
+		<activity ns0:theme="@7F1504A9" ns0:label="@7F141150" ns0:name="com.yubico.yubikit.android.ui.YubiKeyPromptActivity" ns0:excludeFromRecents="true"/>
+	</application>
+</manifest>

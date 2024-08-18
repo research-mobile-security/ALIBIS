@@ -1,0 +1,1073 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "354",
+    "@ns0:versionName": "3.9.4",
+    "@ns0:installLocation": "0",
+    "@package": "com.xiaomi.xy.sportscamera",
+    "@platformBuildVersionCode": "25",
+    "@platformBuildVersionName": "7.1.1",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "16",
+      "@ns0:targetSdkVersion": "22"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_WIFI_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_PHONE_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.MODIFY_AUDIO_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_LOGS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.MEDIA_CONTENT_CONTROL"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+      },
+      {
+        "@ns0:name": "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"
+      },
+      {
+        "@ns0:name": "com.xiaomi.market.sdk.UPDATE"
+      },
+      {
+        "@ns0:name": "com.xiaomi.permission.AUTH_SERVICE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_DOWNLOAD_MANAGER"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "com.xiaomi.channel.GAME_SERVICE_PERMISSION"
+      },
+      {
+        "@ns0:name": "android.permission.CHANGE_CONFIGURATION"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.FLASHLIGHT"
+      },
+      {
+        "@ns0:name": "android.permission.CONNECTIVITY_INTERNAL"
+      },
+      {
+        "@ns0:name": "android.permission.GET_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.GET_TASKS"
+      },
+      {
+        "@ns0:name": "com.xiaomi.xy.sportscamera.permission.MIPUSH_RECEIVE"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "com.xiaomi.xy.sportscamera.permission.C2D_MESSAGE"
+      }
+    ],
+    "permission": [
+      {
+        "@ns0:name": "com.xiaomi.xy.sportscamera.permission.MIPUSH_RECEIVE",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:name": "com.xiaomi.xy.sportscamera.permission.C2D_MESSAGE",
+        "@ns0:protectionLevel": "0x00000002"
+      }
+    ],
+    "meta-data": {
+      "@ns0:name": "android.support.VERSION",
+      "@ns0:value": "25.3.1"
+    },
+    "uses-feature": {
+      "@ns0:name": "android.hardware.camera"
+    },
+    "application": {
+      "@ns0:theme": "@7F0B00B5",
+      "@ns0:label": "@7F09005C",
+      "@ns0:icon": "@7F020256",
+      "@ns0:name": "com.ants360.z13.activity.CameraApplication",
+      "@ns0:allowBackup": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "meta-data": [
+        {
+          "@ns0:name": "veengine_version",
+          "@ns0:value": "5"
+        },
+        {
+          "@ns0:name": "com.amap.api.v2.apikey",
+          "@ns0:value": "11f72faead10078b6ffe2bc0a582d15f"
+        },
+        {
+          "@ns0:name": "com.facebook.sdk.ApplicationId",
+          "@ns0:value": "@7F090617"
+        },
+        {
+          "@ns0:name": "com.yiaction.common.imageloader.YiGlideModule",
+          "@ns0:value": "GlideModule"
+        },
+        {
+          "@ns0:name": "EASEMOB_APPKEY",
+          "@ns0:value": "yitechnology#yivisualtest"
+        },
+        {
+          "@ns0:name": "com.yicamera.realm.version",
+          "@ns0:value": "7"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0D000C"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.globalConfigResource",
+          "@ns0:resource": "@7F070000"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.amap.api.location.APSService"
+        },
+        {
+          "@ns0:name": "com.ants360.z13.community.UpdateService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.xiaomi.push.service.XMJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:process": ":pushservice"
+        },
+        {
+          "@ns0:name": "com.xiaomi.push.service.XMPushService",
+          "@ns0:enabled": "true",
+          "@ns0:process": ":pushservice"
+        },
+        {
+          "@ns0:name": "com.xiaomi.mipush.sdk.PushMessageHandler",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": "com.xiaomi.mipush.sdk.MessageHandleService",
+          "@ns0:enabled": "true"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "@ns0:priority": "-500",
+            "action": {
+              "@ns0:name": "com.google.firebase.INSTANCE_ID_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.CampaignTrackingService"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsJobService",
+          "@ns0:permission": "android.permission.BIND_JOB_SERVICE",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+          "@ns0:permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+          "@ns0:exported": "true"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:theme": "@7F0B008B",
+          "@ns0:name": "com.ants360.z13.activity.LogoSplashActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.AlbumCompositeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.ShowPicActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.CameraVideoSplendidActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F5",
+          "@ns0:name": "com.ants360.z13.activity.MainActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.CameraConnectionFailedActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00E9",
+          "@ns0:name": "com.ants360.z13.album.DownloadPhotoShowActivity"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.CameraMediaShowActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.PhotoSetDetailShowActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.LocalVideoPuzzleActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.AlbumDownLoadActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.set.VideoPhotoSettingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.set.SettingValueActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.set.DeviceSettingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.set.CameraResetActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.set.CameraSDCardActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.set.CameraWifiSettingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.upgrade.CameraUpgradeActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.upgrade.CameraUpgradeWaittingActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.upgrade.CameraUpgradeFailActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F5",
+          "@ns0:name": "com.ants360.z13.activity.DeleteAccountActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F5",
+          "@ns0:name": "com.ants360.z13.activity.PrivacyPolicyActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.upgrade.CameraDeviceUpgradeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.SettingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F5",
+          "@ns0:name": "com.ants360.z13.community.PushSettingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.LocalMediaShowActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.SnsWebViewActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.ClubTutorialActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.ClubActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00E9",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.upgrade.CameraUpgradeHelpActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.FaqActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.ClubDetailMoreActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.TutorialActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.MessageActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.CreateEquipmentActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.EquipmentDetailActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.EquipmentListActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F5",
+          "@ns0:name": "com.ants360.z13.community.PlayListActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F5",
+          "@ns0:name": "com.ants360.z13.community.TodayBestActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.club.CreateClubActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000013"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.club.ClubNoticeListActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000013"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.club.CreateClubNoticeActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000013"
+        },
+        {
+          "@ns0:label": "@7F090363",
+          "@ns0:name": "com.xiaomi.account.openauth.AuthorizeActivity",
+          "@ns0:configChanges": "0x00000080",
+          "@ns0:windowSoftInputMode": "0x00000002"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "cn.sharesdk.framework.ShareSDKUIShell",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000012",
+          "intent-filter": {
+            "data": {
+              "@ns0:scheme": "tencent100371282"
+            },
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              },
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.mob.tools.MobUIShell",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000012",
+          "intent-filter": {
+            "data": {
+              "@ns0:scheme": "tencent100371282"
+            },
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              },
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.wxapi.WXEntryActivity",
+          "@ns0:exported": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F0B01CD",
+          "@ns0:label": "@7F09005C",
+          "@ns0:name": "com.facebook.FacebookActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x000005B0"
+        },
+        {
+          "@ns0:theme": "@7F0B008B",
+          "@ns0:name": "com.ants360.z13.community.XYLoginActivity",
+          "@ns0:launchMode": "0",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F5",
+          "@ns0:name": "com.ants360.z13.album.DetailGridViewActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.UserInfoChangeActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000014"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.CommunityDetailActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000017"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.FansOrFollowsActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F5",
+          "@ns0:name": "com.ants360.z13.community.MyFollowsActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.NationSelectActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F5",
+          "@ns0:name": "com.ants360.z13.community.NotifyActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.TagMediaActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.TagDetailActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000017"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.qrcode.skill.activity.CaptureActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.AccountSettingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.ReportActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000004"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.ShareActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000032"
+        },
+        {
+          "@ns0:theme": "@7F0B008B",
+          "@ns0:name": "com.ants360.z13.community.FullScreenImageActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.CameraBurstMergeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.ProfileActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000017"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.ClubDetailActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000017"
+        },
+        {
+          "@ns0:theme": "@7F0B008B",
+          "@ns0:name": "com.ants360.z13.community.RecommendUserActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00E9",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.activity.CameraActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00E9",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.activity.QZCameraActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.album.QZCameraMediaShowActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.album.QZCameraDownloadActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.CameraAlbumActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.album.QZAlbumActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.album.QZDetailGridViewActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.album.QZPhotoSetDetailShowActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.connect.CameraTutorialActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.DevelopOptionActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.WeiboLoginActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.VideoPlayActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.FirstVideoPlayerActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.TagSelectActivity",
+          "@ns0:windowSoftInputMode": "0x00000002"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.ShopWebviewActivity"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.LiveListActivity"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.LiveDetailsActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000013"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.album.AlbumImportActivity"
+        },
+        {
+          "@ns0:name": "com.sina.weibo.sdk.component.WeiboSdkBrowser",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x000000A0",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F0B008C",
+          "@ns0:name": "com.ants360.z13.community.UserSearchActivity",
+          "@ns0:windowSoftInputMode": "0x00000024"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.location.LocationSeachActivity",
+          "@ns0:windowSoftInputMode": "0x00000020"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.FacebookLiveActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.WeiboLiveActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.LiveConnectWifiActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.LiveInfoActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.CustomLiveActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.LiveScanCodeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.DiscoverActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.UserInfoActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B010B",
+          "@ns0:name": "com.ants360.z13.community.UpgradeActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B0175",
+          "@ns0:name": "com.ants360.z13.live.FacebookLiveLoginActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.LogUploadActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.RecommendActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.activity.ClearCacheActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.community.RecEffectTutorialActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.activity.HelpActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.upgrade.firmware.FirmwareListActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.connect.BluetoothTutorialActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F6",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.connect.CameraActionConnectActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00F6",
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.connect.QZCameraActionConnectActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.LiveSettingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.LiveWifiSettingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.LiveHeadingActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.ants360.z13.live.LivePlatformActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.tencent.tauth.AuthActivity",
+          "@ns0:launchMode": "2",
+          "@ns0:noHistory": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              }
+            ],
+            "data": {
+              "@ns0:scheme": "1104105998"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.tencent.connect.common.AssistActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.facebook.CustomTabMainActivity"
+        },
+        {
+          "@ns0:theme": "@7F0B00EA",
+          "@ns0:name": "com.yiants.pic.activity.LocalPicEditActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000030"
+        },
+        {
+          "@ns0:theme": "@7F0B00F2",
+          "@ns0:name": "com.yiants.pic.activity.InputActivity",
+          "@ns0:windowSoftInputMode": "0x00000015"
+        },
+        {
+          "@ns0:theme": "@7F0B0163",
+          "@ns0:name": "com.yi.libcamera.CameraActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F0B0165",
+          "@ns0:name": "com.yi.libcamera.VideoViewerActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B0165",
+          "@ns0:name": "com.yi.libcamera.ImageViewerActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.yiaction.videoeditorui.VideoEditorActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:windowSoftInputMode": "0x00000010"
+        },
+        {
+          "@ns0:name": "com.yiaction.videoeditorui.external.album.AlbumActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:name": "com.yiaction.videoeditorui.videoClip.ui.VideoClipActivity"
+        },
+        {
+          "@ns0:name": "com.ants.video.jbmr2.TestActivity"
+        },
+        {
+          "@ns0:name": "com.ants.video.jbmr2.AudioTestActivity"
+        },
+        {
+          "@ns0:name": "com.ants.video.jbmr2.AVTestActivity"
+        },
+        {
+          "@ns0:name": "com.yi.player.YiPlayerActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.yi.player.NewYiPlayerActivity",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+          "@ns0:exported": "false",
+          "@ns0:excludeFromRecents": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.xiaomi.xy.sportscamera.camera.recevier.DownloadCompleteRecevier",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.DOWNLOAD_COMPLETE"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.ants360.z13.community.push.MiMessageReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "com.xiaomi.mipush.RECEIVE_MESSAGE"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.xiaomi.mipush.MESSAGE_ARRIVED"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "com.xiaomi.mipush.ERROR"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.xiaomi.push.service.receivers.NetworkStatusReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.net.conn.CONNECTIVITY_CHANGE"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.xiaomi.push.service.receivers.PingReceiver",
+          "@ns0:exported": "false",
+          "@ns0:process": ":pushservice",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.xiaomi.push.PING_TIMER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver",
+          "@ns0:permission": "android.permission.INSTALL_PACKAGES",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+            },
+            "category": {
+              "@ns0:name": "com.xiaomi.xy.sportscamera"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdInternalReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.AnalyticsReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.analytics.CampaignTrackingReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.xiaomi.xy.sportscamera.firebaseinitprovider",
+          "@ns0:initOrder": "100"
+        },
+        {
+          "@ns0:name": "com.facebook.internal.FacebookInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.xiaomi.xy.sportscamera.FacebookInitProvider"
+        }
+      ]
+    }
+  }
+}

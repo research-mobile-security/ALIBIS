@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1760" ns0:versionName="176" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="shu.galaxy.camera" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="23" ns0:targetSdkVersion="33"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission ns0:name="com.samsung.accessory.permission.ACCESSORY_FRAMEWORK"/>
+	<uses-permission ns0:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+	<uses-permission ns0:name="com.samsung.WATCH_APP_TYPE.Companion"/>
+	<uses-permission ns0:name="com.samsung.wmanager.ENABLE_NOTIFICATION"/>
+	<uses-permission ns0:name="com.samsung.wmanager.APP"/>
+	<uses-permission ns0:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+	<uses-permission ns0:name="com.google.android.permission.PROVIDE_BACKGROUND"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<queries>
+		<package ns0:name="com.samsung.accessory"/>
+		<intent>
+			<action ns0:name="com.android.vending.billing.InAppBillingService.BIND"/>
+		</intent>
+	</queries>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="mailto"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<application ns0:theme="@android:0103012B" ns0:label="@7F11002F" ns0:icon="@7F0800CE" ns0:allowBackup="false" ns0:largeHeap="true" ns0:extractNativeLibs="false" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:label="@7F11002F" ns0:name="shu.galaxy.camera.PrefActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120491" ns0:label="@7F11002F" ns0:name="shu.galaxy.camera.LiveViewActivity" ns0:hardwareAccelerated="true" ns0:showOnLockScreen="true"/>
+		<activity ns0:theme="@7F120491" ns0:label="@7F11002F" ns0:name="shu.galaxy.camera.LiveViewActivity2" ns0:hardwareAccelerated="true" ns0:showOnLockScreen="true"/>
+		<activity ns0:theme="@7F12024B" ns0:name="shu.galaxy.camera.IntroActivity"/>
+		<activity ns0:theme="@7F12024B" ns0:name="shu.galaxy.billing.TextActivity"/>
+		<service ns0:name="shu.galaxy.camera.ProviderService"/>
+		<receiver ns0:name="com.samsung.android.sdk.accessory.RegisterUponInstallReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.samsung.accessory.action.REGISTER_AGENT"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="shu.galaxy.camera.ProviderService" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140000"/>
+		</provider>
+		<meta-data ns0:name="AccessoryServicesLocation" ns0:value="/res/xml/accessoryservices.xml"/>
+		<meta-data ns0:name="GearAppType" ns0:value="wgt"/>
+		<meta-data ns0:name="gear_app_packagename" ns0:value="cWLkZgDQGw"/>
+		<meta-data ns0:name="gear_app_min_version" ns0:value="2.0.2"/>
+		<meta-data ns0:name="firebase_performance_logcat_enabled" ns0:value="true"/>
+		<service ns0:name="shu.galaxy.camera.WearListenerService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.wearable.MESSAGE_RECEIVED"/>
+				<data ns0:scheme="wear" ns0:host="*" ns0:path="/cameraone/ini"/>
+				<data ns0:scheme="wear" ns0:host="*" ns0:path="/cameraone/msg"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.wearable.CAPABILITY_CHANGED"/>
+				<data ns0:scheme="wear" ns0:host="*" ns0:path="/camera_one_wear_app_v1"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="shu.galaxy.camera.WearConnectionService"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000E"/>
+		<uses-library ns0:name="com.google.android.wearable" ns0:required="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="shu.galaxy.camera.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="shu.galaxy.camera.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.wearable.beta.app" ns0:resource="@7F140001"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F140003"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

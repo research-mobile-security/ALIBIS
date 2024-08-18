@@ -1,0 +1,217 @@
+{
+    "root": {
+        "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+        "intent-filter": [
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MAIN"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.BROWSABLE"
+                    }
+                ],
+                "data": [
+                    {
+                        "@ns0:scheme": "https"
+                    },
+                    {
+                        "@ns0:host": "dropbox.com"
+                    },
+                    {
+                        "@ns0:host": "www.dropbox.com"
+                    },
+                    {
+                        "@ns0:host": "carousel.dropbox.com"
+                    },
+                    {
+                        "@ns0:pathPattern": "/photos/join_room_or_open_play_store"
+                    },
+                    {
+                        "@ns0:pathPattern": "/l/.*/room_invite"
+                    },
+                    {
+                        "@ns0:pathPattern": "/l/.*/weekly_highlights"
+                    },
+                    {
+                        "@ns0:pathPattern": "/l/.*/flashback"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.BROWSABLE"
+                    }
+                ],
+                "data": {
+                    "@ns0:scheme": "carousel",
+                    "@ns0:pathPrefix": "/room_invite/"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.VIEW"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.BROWSABLE"
+                    }
+                ],
+                "data": [
+                    {
+                        "@ns0:scheme": "https"
+                    },
+                    {
+                        "@ns0:host": "db.tt"
+                    },
+                    {
+                        "@ns0:host": "ph.to"
+                    },
+                    {
+                        "@ns0:pathPrefix": "/c/"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.dropbox.android.action.AUTHENTICATOR_ADD_PERSONAL_ACCOUNT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.GET_CONTENT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                "data": {
+                    "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.GET_CONTENT"
+                },
+                "category": [
+                    {
+                        "@ns0:name": "android.intent.category.OPENABLE"
+                    },
+                    {
+                        "@ns0:name": "android.intent.category.DEFAULT"
+                    }
+                ],
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.PICK"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.PICK"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.dropbox.carousel.action.ALLOW_FAST_SWITCH"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.MY_PACKAGE_REPLACED"
+                    }
+                ]
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.hardware.action.NEW_PICTURE"
+                    },
+                    {
+                        "@ns0:name": "android.hardware.action.NEW_VIDEO"
+                    },
+                    {
+                        "@ns0:name": "com.android.camera.NEW_PICTURE"
+                    }
+                ],
+                "data": [
+                    {
+                        "@ns0:mimeType": "image/*"
+                    },
+                    {
+                        "@ns0:mimeType": "video/*"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+                },
+                "category": {
+                    "@ns0:name": "com.example.gcm"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.accounts.AccountAuthenticator"
+                }
+            }
+        ]
+    }
+}

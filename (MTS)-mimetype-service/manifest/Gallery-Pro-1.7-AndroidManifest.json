@@ -1,0 +1,929 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "8",
+    "@ns0:versionName": "1.7",
+    "@ns0:compileSdkVersion": "28",
+    "@ns0:compileSdkVersionCodename": "9",
+    "@package": "com.wisesharksoftware.photogallery",
+    "@platformBuildVersionCode": "8",
+    "@platformBuildVersionName": "1.700000",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "16",
+      "@ns0:targetSdkVersion": "28"
+    },
+    "permission": {
+      "@ns0:name": "com.wisesharksoftware.photogallery.permission.GALLERY_PROVIDER",
+      "@ns0:protectionLevel": "0x00000003"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.READ_SYNC_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SYNC_SETTINGS"
+      },
+      {
+        "@ns0:name": "com.wisesharksoftware.photogallery.permission.GALLERY_PROVIDER"
+      }
+    ],
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "false",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true"
+    },
+    "application": {
+      "@ns0:theme": "@7F110184",
+      "@ns0:label": "@7F100046",
+      "@ns0:icon": "@7F0801A1",
+      "@ns0:name": "com.wisesharksoftware.photogallery.app.GalleryAppImpl",
+      "@ns0:allowBackup": "false",
+      "@ns0:logo": "@7F0801A1",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:appComponentFactory": "android.support.v4.app.CoreComponentFactory",
+      "uses-library": [
+        {
+          "@ns0:name": "org.apache.http.legacy",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.media.effects",
+          "@ns0:required": "false"
+        }
+      ],
+      "meta-data": {
+        "@ns0:name": "com.google.android.gms.version",
+        "@ns0:value": "@7F0A000C"
+      },
+      "activity": [
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:label": "@7F10013C",
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.MovieActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "rtsp"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "video/mpeg4"
+                },
+                {
+                  "@ns0:mimeType": "video/mp4"
+                },
+                {
+                  "@ns0:mimeType": "video/3gp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp2"
+                },
+                {
+                  "@ns0:mimeType": "video/webm"
+                },
+                {
+                  "@ns0:mimeType": "video/avi"
+                },
+                {
+                  "@ns0:mimeType": "application/sdp"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "audio/x-mpegurl"
+                },
+                {
+                  "@ns0:mimeType": "audio/mpegurl"
+                },
+                {
+                  "@ns0:mimeType": "application/vnd.apple.mpegurl"
+                },
+                {
+                  "@ns0:mimeType": "application/x-mpegurl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F100046",
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.GalleryActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.APP_GALLERY"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.OPENABLE"
+              },
+              "data": {
+                "@ns0:mimeType": "vnd.android.cursor.dir/image"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "com.android.camera.action.REVIEW"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": ""
+                },
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/jpeg"
+                },
+                {
+                  "@ns0:mimeType": "image/gif"
+                },
+                {
+                  "@ns0:mimeType": "image/png"
+                },
+                {
+                  "@ns0:mimeType": "image/webp"
+                },
+                {
+                  "@ns0:mimeType": "image/x-ms-bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/vnd.wap.wbmp"
+                },
+                {
+                  "@ns0:mimeType": "application/vnd.google.panorama360+jpg"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "com.android.camera.action.REVIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "video/mpeg4"
+                },
+                {
+                  "@ns0:mimeType": "video/mp4"
+                },
+                {
+                  "@ns0:mimeType": "video/3gp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp2"
+                },
+                {
+                  "@ns0:mimeType": "application/sdp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F100046",
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.GalleryActivity2",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.APP_GALLERY"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.OPENABLE"
+              },
+              "data": {
+                "@ns0:mimeType": "vnd.android.cursor.dir/image"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "com.android.camera.action.REVIEW"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": ""
+                },
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/jpeg"
+                },
+                {
+                  "@ns0:mimeType": "image/gif"
+                },
+                {
+                  "@ns0:mimeType": "image/png"
+                },
+                {
+                  "@ns0:mimeType": "image/webp"
+                },
+                {
+                  "@ns0:mimeType": "image/x-ms-bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/vnd.wap.wbmp"
+                },
+                {
+                  "@ns0:mimeType": "application/vnd.google.panorama360+jpg"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "com.android.camera.action.REVIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "video/mpeg4"
+                },
+                {
+                  "@ns0:mimeType": "video/mp4"
+                },
+                {
+                  "@ns0:mimeType": "video/3gp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp2"
+                },
+                {
+                  "@ns0:mimeType": "application/sdp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@android:01030055",
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.Gallery",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030055",
+          "@ns0:label": "@7F10006A",
+          "@ns0:icon": "@7F0801A1",
+          "@ns0:name": "com.wisesharksoftware.photogallery.camera.CameraActivity",
+          "@ns0:taskAffinity": "com.android.camera.CameraActivity"
+        },
+        {
+          "@ns0:label": "@7F100046",
+          "@ns0:name": "com.wisesharksoftware.photogallery.ingest.IngestActivity",
+          "@ns0:taskAffinity": "",
+          "@ns0:launchMode": "3",
+          "@ns0:configChanges": "0x00000480",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.hardware.usb.action.USB_DEVICE_ATTACHED"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.hardware.usb.action.USB_DEVICE_ATTACHED",
+            "@ns0:resource": "@7F130000"
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.Wallpaper",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "@ns0:label": "@7F10006D",
+              "action": {
+                "@ns0:name": "android.intent.action.ATTACH_DATA"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "@ns0:label": "@7F100046",
+              "action": {
+                "@ns0:name": "android.intent.action.SET_WALLPAPER"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "android.wallpaper.preview",
+            "@ns0:resource": "@7F130001"
+          }
+        },
+        {
+          "@ns0:label": "@7F10026B",
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.TrimVideo",
+          "intent-filter": {
+            "@ns0:label": "@7F100092",
+            "action": {
+              "@ns0:name": "com.android.camera.action.TRIM"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": [
+              {
+                "@ns0:scheme": "content"
+              },
+              {
+                "@ns0:scheme": "file"
+              },
+              {
+                "@ns0:mimeType": "video/*"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@7F110183",
+          "@ns0:label": "@7F100269",
+          "@ns0:name": "com.wisesharksoftware.photogallery.filtershow.FilterShowActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.EDIT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "action_nextgen_edit"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F11017C",
+          "@ns0:label": "@7F100090",
+          "@ns0:name": "com.wisesharksoftware.photogallery.filtershow.crop.CropActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "@ns0:label": "@7F100092",
+            "action": {
+              "@ns0:name": "com.android.camera.action.CROP"
+            },
+            "data": [
+              {
+                "@ns0:scheme": "http"
+              },
+              {
+                "@ns0:scheme": "https"
+              },
+              {
+                "@ns0:scheme": "content"
+              },
+              {
+                "@ns0:scheme": "file"
+              },
+              {
+                "@ns0:scheme": ""
+              },
+              {
+                "@ns0:mimeType": "image/*"
+              }
+            ],
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.ALTERNATIVE"
+              },
+              {
+                "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:theme": "@7F110184",
+          "@ns0:name": "com.wisesharksoftware.photogallery.settings.GallerySettings",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.gadget.WidgetClickHandler"
+        },
+        {
+          "@ns0:theme": "@7F1100CA",
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.DialogPicker",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F1100CA",
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.AlbumPicker",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F110185",
+          "@ns0:name": "com.wisesharksoftware.photogallery.gadget.WidgetTypeChooser",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:name": "com.unity3d.ads.adunit.AdUnitActivity",
+          "@ns0:configChanges": "0x40000FFF",
+          "@ns0:hardwareAccelerated": "true"
+        },
+        {
+          "@ns0:theme": "@android:01030007",
+          "@ns0:name": "com.unity3d.ads.adunit.AdUnitSoftwareActivity",
+          "@ns0:configChanges": "0x40000FFF",
+          "@ns0:hardwareAccelerated": "false"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.wisesharksoftware.photogallery.gadget.WidgetConfigure",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_CONFIGURE"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1101A4",
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.ConsentActivity"
+        }
+      ],
+      "activity-alias": [
+        {
+          "@ns0:label": "@7F100046",
+          "@ns0:name": "com.cooliris.media.Gallery",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:targetActivity": "com.wisesharksoftware.photogallery.app.GalleryActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F10006A",
+          "@ns0:name": "com.android.camera.CameraLauncher",
+          "@ns0:targetActivity": "com.wisesharksoftware.photogallery.camera.CameraActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.ingest.IngestService"
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.filtershow.pipeline.ProcessingService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.PackagesMonitor$AsyncService"
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.gadget.WidgetService",
+          "@ns0:permission": "android.permission.BIND_REMOTEVIEWS"
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.BatchService"
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.camera.MediaSaveService"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.filtershow.provider.SharedImageProvider2",
+          "@ns0:readPermission": "com.wisesharksoftware.photogallery.filtershow.permission.READ",
+          "@ns0:writePermission": "com.wisesharksoftware.photogallery.filtershow.permission.WRITE",
+          "@ns0:authorities": "com.wisesharksoftware.photogallery.filtershow.provider.SharedImageProvider2",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.provider.GalleryProvider2",
+          "@ns0:permission": "com.wisesharksoftware.photogallery.permission.GALLERY_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.wisesharksoftware.photogallery.provider2",
+          "@ns0:syncable": "false",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.photos.data.PhotoProvider2",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.wisesharksoftware.photogallery.photoprovider2",
+          "@ns0:syncable": "false"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:label": "@7F10004A",
+          "@ns0:name": "com.wisesharksoftware.photogallery.gadget.PhotoAppWidgetProvider",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F130002"
+          }
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.app.PackagesMonitor",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.PACKAGE_ADDED"
+              },
+              {
+                "@ns0:name": "android.intent.action.PACKAGE_REMOVED"
+              },
+              {
+                "@ns0:name": "android.intent.action.PACKAGE_CHANGED"
+              }
+            ],
+            "data": {
+              "@ns0:scheme": "package"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.wisesharksoftware.photogallery.camera.DisableCameraReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

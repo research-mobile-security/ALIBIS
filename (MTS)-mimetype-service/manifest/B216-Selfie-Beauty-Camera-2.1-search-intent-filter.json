@@ -1,0 +1,131 @@
+{
+    "root": {
+        "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+        "intent-filter": [
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MAIN"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "aviary.intent.action.EDIT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "aviary.intent.action.EDIT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": [
+                    {
+                        "@ns0:scheme": "https"
+                    },
+                    {
+                        "@ns0:mimeType": "image/*"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "aviary.intent.action.EDIT"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": [
+                    {
+                        "@ns0:scheme": "http"
+                    },
+                    {
+                        "@ns0:mimeType": "image/*"
+                    }
+                ]
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "aviary.intent.action.CDS_VERIFY_SUBSCRIPTIONS"
+                    },
+                    {
+                        "@ns0:name": "aviary.intent.action.CDS_DOWNLOAD_START"
+                    },
+                    {
+                        "@ns0:name": "aviary.intent.action.CDS_RESTORE_USER_ITEMS"
+                    },
+                    {
+                        "@ns0:name": "aviary.intent.action.CDS_RESTORE_OWNED_PACKS"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "aviary.intent.action.CDS_DOWNLOAD_EXTRA_ASSETS"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.DOWNLOAD_COMPLETE"
+                    },
+                    {
+                        "@ns0:name": "android.net.wifi.STATE_CHANGE"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.MY_PACKAGE_REPLACED"
+                    },
+                    {
+                        "@ns0:name": "aviary.android.cds.intent.action.ACTION_NOTIFICATION_DISMISS"
+                    },
+                    {
+                        "@ns0:name": "aviary.android.cds.intent.action.ACTION_DOWNLOAD_COMPLETE_DELAYED"
+                    }
+                ]
+            },
+            {
+                "@ns0:priority": "999",
+                "action": {
+                    "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+                },
+                "category": {
+                    "@ns0:name": "com.photocamera.selfiecamera.snowcamera"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "android.intent.action.ACTION_BOOT_COMPLETED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+                    },
+                    {
+                        "@ns0:name": "android.intent.action.QUICKBOOT_POWERON"
+                    }
+                ]
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MY_PACKAGE_REPLACED"
+                }
+            }
+        ]
+    }
+}

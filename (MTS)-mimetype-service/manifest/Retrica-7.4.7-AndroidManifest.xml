@@ -1,0 +1,279 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="210000104" ns0:versionName="7.4.7" ns0:installLocation="1" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.venticake.retrica" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="31"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.location.network" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<queries>
+		<package ns0:name="com.twitter.android"/>
+		<package ns0:name="com.facebook.katana"/>
+		<package ns0:name="com.instagram.android"/>
+		<package ns0:name="com.whatsapp"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<application ns0:theme="@7F130184" ns0:label="@7F120052" ns0:icon="@7F0F0002" ns0:name="com.venticake.retrica.RetricaApplication" ns0:allowBackup="false" ns0:hardwareAccelerated="@7F050002" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:resizeableActivity="false" ns0:networkSecurityConfig="@7F150001" ns0:roundIcon="@7F0F0002" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:theme="@7F13018B" ns0:name="retrica.scenes.joinPro.PremiumPurchaseActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130186" ns0:name="retrica.scenes.MainActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130186" ns0:name="retrica.scenes.camera.CameraActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="retrica.scenes.store.StoreMainActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.product.ProductActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.joinPro.JoinProActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.joinPro.JoinProLimitedOfferActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F13018D" ns0:name="retrica.scenes.shot.ShotActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.permission.PermissionActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F13018C" ns0:name="retrica.ui.activities.ReviewActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.album.NewAlbumActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130188" ns0:name="retrica.scenes.album.gallery.GalleryActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.newfeed.NewFeedActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.newshot.NewShotActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.web.WebActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130186" ns0:label="@7F1201DD" ns0:name="retrica.app.setting.SettingActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130187" ns0:name="retrica.scenes.editor.EditorActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F130189" ns0:name="retrica.ui.activities.LoginActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.friends.common.FriendsActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.findfriends.FindFriendsActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.searchFriends.SearchFriendsActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.message.MessageActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.profile.my.MyProfileActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.profile.user.UserProfileActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="retrica.scenes.editprofile.EditProfileActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F13018E" ns0:name="retrica.ui.activities.ConnectActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@7F13018E" ns0:name="retrica.ui.activities.DeepLinkActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:windowSoftInputMode="0x00000003">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:path="/camera"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:path="/camera"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:path="/camera"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:path="/feed"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:path="/feed"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:path="/feed"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:path="/message"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:path="/message"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:path="/message"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:path="/me"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:path="/me"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:path="/me"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:path="/settings"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:path="/settings"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:path="/settings"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:path="/findfriends"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:path="/findfriends"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:path="/findfriends"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:path="/addfriends/addedme"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:path="/addfriends/addedme"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:path="/addfriends/addedme"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:pathPrefix="/@"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:pathPrefix="/@"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:pathPrefix="/@"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:pathPrefix="/shot/"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:pathPrefix="/shot/"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:pathPrefix="/shot/"/>
+				<data ns0:scheme="retrica" ns0:host="go" ns0:pathPrefix="/product/"/>
+				<data ns0:scheme="http" ns0:host="retrica.co" ns0:pathPrefix="/product/"/>
+				<data ns0:scheme="https" ns0:host="retrica.co" ns0:pathPrefix="/product/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13035C" ns0:label="@7F120052" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F12010A"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.venticake.retrica"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F08026C"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_color" ns0:resource="@7F06001C"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="4.000000"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000A"/>
+		<meta-data ns0:name="com.google.android.maps.v2.API_KEY" ns0:value="AIzaSyA_OMxHx1aDgMgBuEMsNdT1m1FnTl9P19E"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F120108"/>
+		<meta-data ns0:name="com.facebook.sdk.ClientToken" ns0:value="@7F120109"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-8482693102216786~3638679157"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.venticake.retrica.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150002"/>
+		</provider>
+		<service ns0:name="retrica.firebase.RetricaFirebaseMessagingService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="retrica.firebase.RetricaFirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.venticake.retrica.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.jakewharton.processphoenix.ProcessPhoenix" ns0:process=":phoenix"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.venticake.retrica.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.venticake.retrica.lifecycle-process"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.venticake.retrica.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.venticake.retrica.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F150007"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

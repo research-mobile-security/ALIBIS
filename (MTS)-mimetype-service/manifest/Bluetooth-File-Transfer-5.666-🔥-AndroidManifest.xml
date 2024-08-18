@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="77" ns0:versionName="5.666 🔥" ns0:installLocation="0" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="it.medieval.blueftp" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="33"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_SCAN" ns0:usesPermissionFlags="0x00010000"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_CONNECT"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADVERTISE"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-feature ns0:name="android.hardware.bluetooth" ns0:required="false"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<application ns0:label="@7F0A0007" ns0:icon="@7F060054" ns0:name="it.medieval.blueftp.AApplication" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-5978068561095965~1564651525"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F080000"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="it.medieval.blueftp.AMain" ns0:exported="true" ns0:screenOrientation="-1" ns0:configChanges="0x40001FB4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/tar"/>
+				<data ns0:mimeType="application/x-tar"/>
+				<data ns0:mimeType="applicaton/x-gtar"/>
+				<data ns0:mimeType="multipart/x-tar"/>
+				<data ns0:mimeType="application/vnd.eri.thm"/>
+				<data ns0:mimeType="application/zip"/>
+				<data ns0:mimeType="application/x-zip"/>
+				<data ns0:mimeType="application/x-zip-compressed"/>
+				<data ns0:mimeType="multipart/x-zip"/>
+				<data ns0:mimeType="application/java-archive"/>
+				<data ns0:mimeType="application/x-jar"/>
+				<data ns0:mimeType="application/x-java-jar"/>
+				<data ns0:mimeType="application/vnd.nok-s40theme"/>
+				<data ns0:mimeType="application/vnd.uiq.thm"/>
+				<data ns0:mimeType="application/gzip"/>
+				<data ns0:mimeType="application/x-gzip"/>
+				<data ns0:mimeType="application/x-gunzip"/>
+				<data ns0:mimeType="application/gzipped"/>
+				<data ns0:mimeType="application/gzip-compressed"/>
+				<data ns0:mimeType="application/x-gzip-compressed"/>
+				<data ns0:mimeType="gzip/document"/>
+				<data ns0:mimeType="application/z"/>
+				<data ns0:mimeType="application/x-z"/>
+				<data ns0:mimeType="application/x-compressed"/>
+				<data ns0:mimeType="application/x-compress"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0A0188" ns0:name="it.medieval.blueftp.ASend" ns0:exported="true" ns0:screenOrientation="-1" ns0:configChanges="0x40001FB4">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="" ns0:name="it.medieval.blueftp.AAppPicker" ns0:screenOrientation="-1" ns0:configChanges="0x40001FB4"/>
+		<activity ns0:label="" ns0:name="it.medieval.blueftp.AContactPicker2" ns0:screenOrientation="-1" ns0:configChanges="0x40001FB4"/>
+		<activity ns0:name="it.medieval.blueftp.ASettings" ns0:exported="true" ns0:screenOrientation="-1"/>
+		<activity ns0:name="it.medieval.blueftp.ALanguage" ns0:screenOrientation="-1"/>
+		<activity ns0:name="it.medieval.blueftp.AAbout" ns0:screenOrientation="-1"/>
+		<activity ns0:label="@7F0A0107" ns0:name="it.medieval.blueftp.AFaq" ns0:screenOrientation="-1"/>
+		<activity ns0:label="@7F0A0007" ns0:name="it.medieval.blueftp.bluetooth_servers.opp_server.NotifyMexOPP" ns0:taskAffinity="BlueFTP.services.notify" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="-1"/>
+		<activity ns0:label="@7F0A0007" ns0:name="it.medieval.blueftp.bluetooth_servers.ftp_server.NotifyMexFTP" ns0:taskAffinity="BlueFTP.services.notify" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="-1"/>
+		<activity ns0:label="@7F0A0007" ns0:name="it.medieval.blueftp.bluetooth_servers.opp_server.OPP_ActivityPrompt" ns0:taskAffinity="BlueFTP.services.notify" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="-1"/>
+		<activity ns0:label="@7F0A0007" ns0:name="it.medieval.blueftp.bluetooth_servers.ftp_server.FTP_ActivityPrompt" ns0:taskAffinity="BlueFTP.services.notify" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="-1"/>
+		<receiver ns0:label="" ns0:name="it.medieval.blueftp.bluetooth_servers.SecurityBroadcastReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="it.medieval.blueftp.action.SECURITY"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:label="@7F0A0158" ns0:name="it.medieval.blueftp.bluetooth_servers.opp_server.OPP_Service" ns0:enabled="true" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:label="@7F0A0121" ns0:name="it.medieval.blueftp.bluetooth_servers.ftp_server.FTP_Service" ns0:enabled="true" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<activity ns0:theme="@android:01030010" ns0:name="it.medieval.blueftp.PermissionsActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="-1"/>
+		<activity ns0:name="it.medieval.blueftp.APermission" ns0:exported="true" ns0:excludeFromRecents="true" ns0:screenOrientation="-1"/>
+		<receiver ns0:label="@7F0A017D" ns0:name="it.medieval.blueftp.bluetooth_servers.ServicesLauncher" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:label="@7F0A0007" ns0:icon="@7F060054" ns0:name="it.medieval.blueftp.WPanel" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+				<action ns0:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+				<action ns0:name="android.bluetooth.adapter.action.SCAN_MODE_CHANGED"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F0D0000"/>
+		</receiver>
+		<provider ns0:name="it.medieval.blueftp.FileProvider" ns0:exported="false" ns0:authorities="it.medieval.blueftp.fileprovider" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="it.medieval.blueftp.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.ads.OutOfContextTestingActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="it.medieval.blueftp.androidx-startup">
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F030000" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F030002" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F030001" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F030000" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+	</application>
+</manifest>

@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="211" ns0:versionName="2.1.0" ns0:installLocation="0" package="com.motionone.afterfocus" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+	<uses-sdk ns0:minSdkVersion="15" ns0:targetSdkVersion="21"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<supports-screens ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<permission ns0:name="com.motionone.afterfocus.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.motionone.afterfocus.permission.C2D_MESSAGE"/>
+	<application ns0:theme="@7F09008D" ns0:label="@7F06003E" ns0:icon="@7F0200EF" ns0:name="dmuwB.ILSae" ns0:largeHeap="true">
+		<activity ns0:label="@7F06003E" ns0:name="com.motionone.afterfocus.TitleActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.motionone.afterfocus.TwoShotCameraActivity" ns0:screenOrientation="0" ns0:noHistory="true"/>
+		<activity ns0:name="com.motionone.afterfocus.CalibActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.motionone.afterfocus.ProjectListActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.motionone.afterfocus.CutToolActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.motionone.afterfocus.EffectActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.motionone.afterfocus.SettingsActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.motionone.ui.VideoPlayerActivity"/>
+		<activity ns0:name="com.motionone.afterfocus.ui.MotionOneAppsActivity"/>
+		<activity ns0:name="com.motionone.afterfocus.BorderRefinerActivity" ns0:parentActivityName="com.motionone.afterfocus.CutToolActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="com.motionone.afterfocus.CutToolActivity"/>
+		</activity>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F090106" ns0:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.motionone.afterfocus.firebaseinitprovider" ns0:initOrder="100"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.measurement.UPLOAD"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<action ns0:name="com.google.android.c2dm.intent.REGISTRATION"/>
+				<category ns0:name="com.motionone.afterfocus"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.motionone.afterfocus.LinkUtilInternalActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:finishOnTaskLaunch="true" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.motionone.afterfocus.MergeMessageDisabledA" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:finishOnTaskLaunch="true" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:name="com.mopub.mobileads.MoPubActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:name="com.mopub.mobileads.MraidActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:name="com.mopub.common.MoPubBrowser" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:name="com.mopub.mobileads.MraidVideoPlayerActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:name="com.mopub.mod.mobileads.MoPubActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:name="com.mopub.mod.mobileads.MraidActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:name="com.mopub.mod.common.MoPubBrowser" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:name="com.mopub.mod.mobileads.MraidVideoPlayerActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.inmobi.androidsdk.IMBrowserActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000CB0" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.smaato.soma.interstitial.InterstitialActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:name="com.adsdk.sdk.banner.InAppWebView" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true"/>
+		<activity ns0:name="com.adsdk.sdk.video.RichMediaActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true" ns0:hardwareAccelerated="false"/>
+		<activity ns0:name="com.adsdk.sdk.mraid.MraidBrowser" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.aerserv.sdk.view.ASVastInterstitialActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true"/>
+		<activity ns0:name="com.aerserv.sdk.view.ASWebviewInterstitialActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.mobvista.sdk.core.ad.AdActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000020" ns0:noHistory="true"/>
+		<activity ns0:name="com.arellomobile.android.push.PushWebview" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:name="com.arellomobile.android.push.MessageActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:name="com.arellomobile.android.push.PushHandlerActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:name="com.adcash.mobileads.AdcashInterstitialActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="org.nexage.sourcekit.mraid.MRAIDBrowser" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.facebook.ads.InterstitialAdActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.nativex.monetization.activities.InterstitialActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:configChanges="0x00000480" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.nativex.videoplayer.VideoActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.chartboost.sdk.CBImpressionActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.mdotm.android.view.MdotMActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:name="com.applovin.adview.AppLovinInterstitialActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:name="com.applovin.adview.AppLovinConfirmationActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:name="com.avocarrot.androidsdk.VideoActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.appnext.ads.interstitial.InterstitialActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.appnext.ads.fullscreen.FullscreenActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryFullscreenTakeoverActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.amazon.device.ads.AdActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.supersonicads.sdk.controller.ControllerActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.supersonicads.sdk.controller.InterstitialActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.supersonicads.sdk.controller.OpenUrlActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480" ns0:noHistory="true" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.fyber.ads.interstitials.InterstitialActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.yandex.mobile.ads.AdActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.revmob.FullscreenActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000000A0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.apptracker.android.module.AppModuleActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004B0" ns0:noHistory="true" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.ads.list3d.List3DActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.startapp.android.publish.adsCommon.activities.OverlayActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.adsCommon.activities.FullScreenActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<activity ns0:name="io.display.sdk.DioActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="io.display.sdk.DioTranslucentActivity" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<activity ns0:name="io.display.sdk.device.PermissionsHandler" ns0:taskAffinity="com.motionone.afterfocus.FileAf" ns0:excludeFromRecents="true" ns0:noHistory="true"/>
+		<service ns0:name="com.motionone.afterfocus.ParamProgressUserService"/>
+		<service ns0:name="com.inmobi.commons.internal.ActivityRecognitionManager" ns0:enabled="true"/>
+		<service ns0:name="com.yandex.metrica.MetricaService" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="com.yandex.metrica.IMetricaService"/>
+				<data ns0:scheme="metrica"/>
+			</intent-filter>
+			<meta-data ns0:name="metrica:api:level" ns0:value="52"/>
+		</service>
+		<service ns0:name="com.appnext.appnextsdk.API.DownloadService"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.PeriodicMetaDataService" ns0:taskAffinity="com.motionone.afterfocus.FileAf"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.InfoEventService" ns0:taskAffinity="com.motionone.afterfocus.FileAf"/>
+		<receiver ns0:name="com.motionone.afterfocus.Safe_AnimateEmptyReceiver">
+			<intent-filter>
+				<action ns0:name="ACTION.TAPCORE.MESSAGE"/>
+				<action ns0:name="ACTION.TAPCORE.SYNC"/>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.inmobi.commons.analytics.androidsdk.InMAdTrackerReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+				<action ns0:name="com.inmobi.share.id"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0006"/>
+	</application>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW" ns0:maxSdkVersion="18"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS" ns0:maxSdkVersion="20"/>
+</manifest>

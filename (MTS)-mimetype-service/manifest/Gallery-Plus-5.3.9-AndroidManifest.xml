@@ -1,0 +1,185 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="50339" ns0:versionName="5.3.9" ns0:installLocation="0" ns0:compileSdkVersion="23" ns0:compileSdkVersionCodename="6.0-2438415" package="com.maros.gallery" platformBuildVersionCode="28" platformBuildVersionName="7.1.1">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<activity ns0:theme="@7F0D013C" ns0:name="com.maros.holoplayer.MPA" ns0:screenOrientation="1"/>
+	<permission ns0:name="com.maros.gallery.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.maros.gallery.permission.C2D_MESSAGE"/>
+	<application ns0:label="@7F0A0095" ns0:icon="@7F030000" ns0:name="com.maros.component.MyApplication" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true">
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-5400948595673350~2244414453"/>
+		<meta-data ns0:name="android.allow_multiple_resumed_activities" ns0:value="true"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.maros.gallery.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F080001"/>
+		</provider>
+		<service ns0:name="com.maros.gallery.free.S" ns0:enabled="true"/>
+		<receiver ns0:name="com.maros.gallery.free.Re">
+			<intent-filter>
+				<action ns0:name="android.intent.maros.gallery.action.NOTIFICATION_ACTION"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F0D00AD" ns0:label="@7F0A0095" ns0:name="com.maros.gallery.free.M" ns0:configChanges="0x00000480" ns0:uiOptions="0x00000001">
+			<meta-data ns0:name="android.support.UI_OPTIONS" ns0:value="splitActionBarWhenNarrow"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="application/vnd.google.panorama360+jpg"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D00AD" ns0:label="@7F0A0095" ns0:name="com.maros.gallery.free.G" ns0:configChanges="0x00000FB0" ns0:uiOptions="0x00000001">
+			<meta-data ns0:name="android.support.UI_OPTIONS" ns0:value="splitActionBarWhenNarrow"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0A00C7" ns0:name="com.maros.gallery.EFA" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.maros.gallery.action.EXCLUDE_ACTION"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D0042" ns0:name="com.maros.pinlocklib.PRA">
+			<intent-filter>
+				<action ns0:name="android.intent.maros.gallery.action.RESET_PIN_ACTION"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0D00AF" ns0:label="@7F0A0083" ns0:name="com.maros.gallery.GS" ns0:exported="true" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F0D00AD" ns0:label="@7F0A016D" ns0:name="com.maros.gallery.IDA" ns0:exported="true" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F0A0095" ns0:name="com.maros.gallery.GA" ns0:exported="true"/>
+		<activity ns0:label="@7F0A00E7" ns0:name="com.maros.gallery.HelpActivity" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.maros.gallery.action.HELP_ACTION"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0A01CF" ns0:name="com.maros.gallery.AboutActivity" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.maros.gallery.action.ABOUT_ACTION"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0A007F" ns0:name="com.maros.gallery.MoreAppsActivity" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.maros.gallery.action.MORE_APPS_ACTION"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0F0007"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:label="@7F0A0095" ns0:name="com.maros.utils.VPA" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F0D013E" ns0:name="com.google.android.gms.appinvite.PreviewActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.appinvite.ACTION_PREVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<receiver ns0:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+		<service ns0:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+		<service ns0:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.android.gms.tagmanager.TagManagerService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" ns0:noHistory="true">
+			<intent-filter>
+				<data ns0:scheme="tagmanager.c.com.maros.gallery"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.ads.adunit.AdUnitActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.ads.adunit.AdUnitTransparentActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.ads.adunit.AdUnitTransparentSoftwareActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.internal.ipc.RemoteANActivity" ns0:exported="false" ns0:process=":adnw" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService" ns0:exported="false"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsMessengerService" ns0:exported="false" ns0:process=":adnw"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@7F0D0145" ns0:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+		<activity ns0:label="@7F0A0095" ns0:name="com.maros.utils.VPA" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F0D013C" ns0:name="com.maros.vrplayer.MPA" ns0:screenOrientation="0"/>
+		<activity ns0:theme="@7F0D013D" ns0:name="com.maros.pinlocklib.PA"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.maros.gallery"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.maros.gallery.firebaseinitprovider" ns0:initOrder="100"/>
+	</application>
+</manifest>

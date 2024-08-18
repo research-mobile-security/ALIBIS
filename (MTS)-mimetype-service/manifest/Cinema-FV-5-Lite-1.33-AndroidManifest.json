@@ -1,0 +1,122 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "133",
+    "@ns0:versionName": "1.33",
+    "@package": "com.flavionet.android.cinema.lite",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "14",
+      "@ns0:targetSdkVersion": "19"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.GET_ACCOUNTS"
+      },
+      {
+        "@ns0:name": "android.permission.READ_PHONE_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.FLASHLIGHT"
+      },
+      {
+        "@ns0:name": "android.permission.MODIFY_AUDIO_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.BROADCAST_STICKY"
+      },
+      {
+        "@ns0:name": "android.permission.BLUETOOTH"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.microphone"
+      },
+      {
+        "@ns0:name": "android.hardware.camera"
+      },
+      {
+        "@ns0:name": "android.hardware.bluetooth",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.location.network",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.location.gps",
+        "@ns0:required": "false"
+      }
+    ],
+    "application": {
+      "@ns0:label": "@7F0D012B",
+      "@ns0:icon": "@7F02004A",
+      "@ns0:allowBackup": "true",
+      "activity": [
+        {
+          "@ns0:theme": "@7F0C000F",
+          "@ns0:label": "@7F0D012B",
+          "@ns0:name": "com.flavionet.android.cinema.lite.Main",
+          "@ns0:screenOrientation": "0",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F0C0013",
+          "@ns0:label": "",
+          "@ns0:name": "com.flavionet.android.cinema.preferences.NewCameraPreferences"
+        },
+        {
+          "@ns0:theme": "@7F0C0027",
+          "@ns0:label": "",
+          "@ns0:name": "com.flavionet.android.cinema.help.HelpDialog",
+          "@ns0:screenOrientation": "0"
+        },
+        {
+          "@ns0:theme": "@7F0C0013",
+          "@ns0:label": "@7F0D006D",
+          "@ns0:name": "com.lamerman.FileDialog"
+        }
+      ],
+      "meta-data": {
+        "@ns0:name": "com.crashlytics.ApiKey",
+        "@ns0:value": "306a5d843fe818287a7e40c89e9640d6d1977d95"
+      }
+    }
+  }
+}

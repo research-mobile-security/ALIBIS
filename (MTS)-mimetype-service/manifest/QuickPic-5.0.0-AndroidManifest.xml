@@ -1,0 +1,314 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="5000063" ns0:versionName="5.0.0" ns0:installLocation="0" package="com.alensw.PicFolder">
+	<uses-sdk ns0:minSdkVersion="14" ns0:targetSdkVersion="26"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.NFC"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER_HINTS"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<permission ns0:name="com.alensw.PicFolder.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.alensw.PicFolder.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<application ns0:label="@7F0C000F" ns0:icon="@7F0600CF" ns0:name="com.alensw.PicFolder.QuickApp" ns0:allowBackup="false" ns0:logo="@7F0600CF" ns0:hardwareAccelerated="true">
+		<service ns0:name="com.cmcm.cloud.service.CloudCoreService" ns0:persistent="true" ns0:enabled="true" ns0:exported="false" ns0:process=":service"/>
+		<service ns0:name="com.cmcm.cloud.service.QuickPicService" ns0:persistent="true" ns0:enabled="true" ns0:exported="false" ns0:process=":service"/>
+		<service ns0:name="com.alensw.PicFolder.MyFirebaseInstanceIDService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.alensw.PicFolder.MyFirebaseMessagingService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.cmcm.cloud.db.EngineDatabaseProvider" ns0:exported="false" ns0:process=":service" ns0:authorities="com.cmcm.cloud.engine.db.sdk2"/>
+		<provider ns0:name="com.cmcm.cloud.config.EngineConfigProvider" ns0:exported="false" ns0:process=":service" ns0:authorities="com.cmcm.cloud.engine.config.sdk2"/>
+		<activity ns0:theme="@7F0D0046" ns0:label="@7F0C000F" ns0:name="com.alensw.PicFolder.GalleryActivity" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="quickpic.intent.action.MAIN"/>
+			</intent-filter>
+			<intent-filter>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.cooliris.media.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="quickpic" ns0:host="open" ns0:pathPrefix="/"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="open" ns0:host="com.alensw.PicFolder" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0C010C" ns0:name="com.alensw.PicFolder.CropActivity" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="com.android.camera.action.CROP"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.ALTERNATIVE"/>
+				<category ns0:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0C000F" ns0:name="com.alensw.PicFolder.PlayerActivity" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:name="com.alensw.PicFolder.StreamingActivity" ns0:configChanges="0x000004A0" ns0:targetActivity="com.alensw.PicFolder.PlayerActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="rtsp"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:label="@7F0C0453" ns0:name="com.alensw.PicFolder.WallpaperActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0C0449" ns0:name="com.alensw.cloud.ShareToCloudActivity" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.alensw.ui.activity.MainPreference" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.alensw.ui.activity.AboutPreference" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.alensw.ui.backup.share.ui.activity.ShareIntroActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.alensw.ui.backup.share.ui.activity.UserUnregisterActivity" ns0:screenOrientation="1"/>
+		<activity ns0:label="@7F0C03FB" ns0:name="com.alensw.ui.backup.share.ui.activity.ShareInfoActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0C03FB" ns0:name="com.alensw.ui.backup.share.ui.activity.ShareInviteActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.alensw.ui.activity.PathListActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0C043C" ns0:name="com.alensw.ui.activity.SelectThemeActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0C0168" ns0:name="com.alensw.cloud.oauth.BasicAuthActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0C0168" ns0:name="com.alensw.cloud.oauth.GmsAuthActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0C0168" ns0:name="com.alensw.cloud.oauth.OAuthActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.alensw.cloud.UrlTaskActivity" ns0:launchMode="3" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0C0158" ns0:name="com.alensw.cloud.CloudConfigActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0C0443" ns0:name="com.alensw.transfer.TransferActivity" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F0C005A" ns0:name="com.alensw.cloud.sync.SyncSettings" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0C0002" ns0:name="com.alensw.ui.activity.FeedbackActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.dropbox.client2.android.AuthActivity" ns0:launchMode="2" ns0:configChanges="0x00000090">
+			<intent-filter>
+				<data ns0:scheme="db-yym2znx51x2c89x"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.alensw.ui.backup.login.UserLoginActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.alensw.ui.backup.login.UserRegisterActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.alensw.ui.backup.login.UserAuthActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.alensw.cmbackup.ui.activity.PhotoCloudTimeLineActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.alensw.ui.backup.autobackup.PhotoTrimSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="@7F0C0290" ns0:name="com.alensw.ui.backup.autobackup.FolderBackupActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.alensw.ui.backup.login.UserForgetKeyActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.alensw.ui.backup.cloud.PhotoTrimAutoBackResultActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.alensw.ui.backup.cloud.PhotoTrimAutoBackupGuideActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.alensw.ui.backup.cloud.PhotoTrimManualBackupResultActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.alensw.ui.activity.AboutActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.alensw.ui.activity.FeedbackWebviewActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.alensw.ui.web.AccountWebViewActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.alensw.ui.web.PayWebViewActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.alensw.ui.activity.SettingDefaultGalleryActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.alensw.ui.activity.SettingCleanDefaultGalleryActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.alensw.ui.activity.GuideRenewActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.alensw.ui.web.PhoneThemeWebViewActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.alensw.PicFolder.EULAActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="quickpic.intent.action.OPENEULA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.alensw.PicFolder.FileProvider" ns0:exported="false" ns0:authorities="com.alensw.PicFolder.FileProvider" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.alensw.PicFolder.fileprovider.sdk7_0" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F0F0004"/>
+		</provider>
+		<provider ns0:name="com.alensw.PicFolder.CloudProvider" ns0:exported="true" ns0:authorities="com.alensw.PicFolder.CloudProvider" ns0:grantUriPermissions="true"/>
+		<service ns0:name="com.alensw.cloud.UrlTaskService" ns0:exported="false"/>
+		<service ns0:name="com.alensw.transfer.TransferService" ns0:exported="false"/>
+		<provider ns0:label="@7F0C005A" ns0:name="com.alensw.cloud.sync.Provider" ns0:exported="false" ns0:authorities="com.alensw.PicFolder.cloud.sync"/>
+		<service ns0:name="com.alensw.cloud.sync.SyncService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.content.SyncAdapter"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.content.SyncAdapter" ns0:resource="@7F0F0008"/>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F0F0002"/>
+		</service>
+		<receiver ns0:name="com.alensw.cloud.sync.ConnectionChangeReceiver" ns0:enabled="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.cmcm.quickpic.crash.CrashReportService" ns0:process=":crash.feedback">
+			<intent-filter>
+				<action ns0:name="com.cmcm.cloud.quickpic.crash"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.alensw.receiver.AlarmBroadcastReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.alensw.push.invite.ResultChecker.Check"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.alensw.receiver.PermanentReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.analytics.tracking.android.ReferrerReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="com.sec.android.app.multiwindow" ns0:required="false"/>
+		<meta-data ns0:name="com.sec.android.support.multiwindow" ns0:value="true"/>
+		<meta-data ns0:name="com.cmcm.cloud.user.appid" ns0:value="@7F0C0451"/>
+		<meta-data ns0:name="com.cmcm.cloud.user.appcode" ns0:value="@7F0C0450"/>
+		<activity ns0:name="com.alensw.push.util.NullActivity"/>
+		<activity ns0:name="com.cmcm.gdpr.WebViewActivity"/>
+		<activity ns0:name="com.alensw.PicFolder.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.base.activity.PPBaseActivity" ns0:exported="false" ns0:excludeFromRecents="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.login.PPStartupActivity" ns0:exported="true" ns0:excludeFromRecents="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.login.PPEmailAssociateActivity" ns0:exported="false" ns0:excludeFromRecents="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.login.PPSecurityPinActivity" ns0:exported="false" ns0:excludeFromRecents="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.login.PPIntroduceActivity" ns0:exported="false" ns0:excludeFromRecents="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.login.PPForgetPasswordActivity" ns0:exported="false" ns0:excludeFromRecents="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.AlbumSelectActivity" ns0:exported="false" ns0:excludeFromRecents="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.PictureSelectActivity" ns0:exported="false" ns0:excludeFromRecents="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.PrivacyPhotoDetailActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.PrivacyPictureMainActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.PrivacyFolderMainActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.cleanmaster.privacypicture.ui.activity.StoragePermReqActivity" ns0:exported="false" ns0:excludeFromRecents="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.guide.PrivacyGuideSelectActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.cleanmaster.privacypicture.ui.activity.guide.PrivacyGuideDetailActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.cleanmaster.privacypicture.core.player.VideoPlayerActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0D005E" ns0:name="com.cleanmaster.privacypicture.ui.activity.PrivacyDecodeAnimActivity" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:keepScreenOn="true" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.cleanmaster.privacypicture.ui.activity.guide.VideoPlayerGuideActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.cleanmaster.privacypicture.core.PPGuardScheduler" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="true" ns0:process=":service"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:configChanges="0x000005B0"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.alensw.PicFolder"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.alensw.PicFolder.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F080000"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+	</application>
+</manifest>

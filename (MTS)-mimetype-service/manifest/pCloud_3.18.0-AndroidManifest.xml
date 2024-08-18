@@ -1,0 +1,438 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="3180001" ns0:versionName="3.18.0" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.pcloud.pcloud" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="24" ns0:targetSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-feature ns0:name="android.software.webview"/>
+	<permission ns0:name="com.pcloud.pcloud.content.permission.ACCESS_CONTENT" ns0:protectionLevel="0x00000002"/>
+	<permission ns0:name="com.pcloud.pcloud.content.permission.ACCESS_CONTENT_THUMBNAILS" ns0:protectionLevel="0x00000012"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.EDIT"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<package ns0:name="com.facebook.katana"/>
+	</queries>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<permission ns0:name="com.pcloud.pcloud.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.pcloud.pcloud.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<application ns0:theme="@7F1502A2" ns0:label="@7F14009C" ns0:icon="@7F110001" ns0:name="com.pcloud.GooglePlayApplication" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:extractNativeLibs="true" ns0:roundIcon="@7F110003" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="@7F050011" ns0:allowNativeHeapPointerTagging="false">
+		<activity ns0:theme="@7F1502A2" ns0:label="@7F14009C" ns0:name="com.pcloud.login.LoginActivity" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="com.pcloud.payments.ui.GooglePlayPaymentsActivity"/>
+		<activity ns0:theme="@7F1502AE" ns0:name="com.pcloud.payments.ui.CompositePaymentActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Payments" ns0:exported="true" ns0:targetActivity="com.pcloud.payments.ui.CompositePaymentActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:scheme="@7F14042A" ns0:host="more_space"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F150489" ns0:label="@7F14009C" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F140245"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.pcloud.pcloud"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1502A8" ns0:name="com.pcloud.payments.ui.PurchasePlanActivity"/>
+		<activity ns0:name="com.pcloud.payments.ui.MarketingPromotionActivity"/>
+		<service ns0:name="com.pcloud.pushmessages.PCloudFirebaseMessagingService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0C000D"/>
+		<meta-data ns0:name="google_analytics_automatic_screen_reporting_enabled" ns0:value="false"/>
+		<receiver ns0:name="com.pcloud.inappupdate.InAppUpdateNotifier$InAppUpdateDownloadCompleteReceiver" ns0:exported="false"/>
+		<activity ns0:label="@7F14009C" ns0:name="com.pcloud.navigation.MainActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity-alias ns0:name="com.pcloud.screens.Main" ns0:exported="true" ns0:targetActivity="com.pcloud.navigation.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="www.pcloud.com" ns0:pathPrefix="/app-open"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.pcloud.navigation.search.SearchActivity"/>
+		<activity ns0:label="@7F14009C" ns0:name="com.pcloud.shares.InviteToFolderActivity"/>
+		<activity ns0:theme="@7F1502AE" ns0:name="com.pcloud.shares.ShareRequestActivity"/>
+		<activity ns0:theme="@7F1502A5" ns0:name="com.pcloud.crypto.ui.CryptoChangePassActivity"/>
+		<activity ns0:label="@7F14009C" ns0:name="com.pcloud.navigation.trash.TrashFolderActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Trash" ns0:targetActivity="com.pcloud.navigation.trash.TrashFolderActivity"/>
+		<activity ns0:theme="@7F1502A8" ns0:name="com.pcloud.navigation.files.FilePickerActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1502A8" ns0:name="com.pcloud.navigation.files.SaveToPCloudActivity"/>
+		<activity-alias ns0:label="@7F14009C" ns0:name="com.pcloud.HandleIncomingSendIntent" ns0:exported="true" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:targetActivity="com.pcloud.navigation.files.SaveToPCloudActivity" ns0:noHistory="true">
+			<intent-filter ns0:label="@7F140518">
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F140518">
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:label="Send email via pCloud" ns0:icon="@7F08017E" ns0:name="com.pcloud.links.SendSharedLinkActivity"/>
+		<activity ns0:label="@7F14009C" ns0:name="com.pcloud.settings.PasswordChangeActivity"/>
+		<activity ns0:label="@7F14009C" ns0:name="com.pcloud.web.WebViewActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F1502A5" ns0:name="com.pcloud.crypto.ui.CryptoSetupActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.pcloud.autoupload.freespace.DeleteUploadedFilesActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:scheme="@7F14042A" ns0:host="free_device_space"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F1402E7" ns0:name="com.pcloud.autoupload.settings.AutoUploadSettingsActivity" ns0:exported="true">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="www.pcloud.com" ns0:pathPrefix="/screens/auto-upload-settings"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F140505" ns0:name="com.pcloud.autoupload.settings.MediaFoldersSettingsActivity"/>
+		<activity ns0:theme="@7F1502AE" ns0:name="com.pcloud.links.SaveDownloadLinkActivity" ns0:exported="true" ns0:excludeFromRecents="true">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="www.pcloud.com" ns0:pathPrefix="/app-save"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1502A8" ns0:name="com.pcloud.audio.playlists.PlaylistPickerActivity"/>
+		<activity ns0:theme="@7F1502A9" ns0:name="com.pcloud.file.details.CloudEntryDetailsActivity"/>
+		<activity ns0:theme="@7F1502A4" ns0:name="com.pcloud.crypto.ui.CryptoLockActivity"/>
+		<activity ns0:theme="@7F1502A9" ns0:name="com.pcloud.file.details.CryptoCloudEntryDetailsActivity"/>
+		<activity ns0:name="com.pcloud.navigation.favorites.OfflineFilesActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Favorites" ns0:targetActivity="com.pcloud.navigation.favorites.OfflineFilesActivity"/>
+		<activity ns0:name="com.pcloud.crypto.ui.CryptoFileNavigationActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Crypto" ns0:exported="true" ns0:targetActivity="com.pcloud.crypto.ui.CryptoFileNavigationActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:scheme="@7F14042A" ns0:host="crypto"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.pcloud.shares.SharesActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Shares" ns0:targetActivity="com.pcloud.shares.SharesActivity"/>
+		<activity ns0:name="com.pcloud.links.SharedLinksActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Links" ns0:targetActivity="com.pcloud.links.SharedLinksActivity"/>
+		<activity ns0:name="com.pcloud.filerequests.FileRequestsActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.FileRequests" ns0:targetActivity="com.pcloud.filerequests.FileRequestsActivity"/>
+		<activity ns0:theme="@7F1502A2" ns0:name="com.pcloud.notifications.ui.NotificationsActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Notifications" ns0:targetActivity="com.pcloud.notifications.ui.NotificationsActivity"/>
+		<activity ns0:name="com.pcloud.settings.SettingsActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Settings" ns0:exported="true" ns0:targetActivity="com.pcloud.settings.SettingsActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:scheme="@7F14042A" ns0:pathPrefix="/screens/settings"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.pcloud.navigation.categories.DocumentsActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Documents" ns0:targetActivity="com.pcloud.navigation.categories.DocumentsActivity"/>
+		<activity ns0:name="com.pcloud.audio.AudioActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity-alias ns0:name="com.pcloud.screens.Audio" ns0:exported="true" ns0:targetActivity="com.pcloud.audio.AudioActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:scheme="@7F14042A" ns0:host="audio_player"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:label="@7F14029D" ns0:name="com.pcloud.media.ui.VideosActivity" ns0:enabled="true" ns0:windowSoftInputMode="0x00000010"/>
+		<activity-alias ns0:name="com.pcloud.screens.Videos" ns0:targetActivity="com.pcloud.media.ui.VideosActivity"/>
+		<activity ns0:label="@7F14029C" ns0:name="com.pcloud.media.ui.PhotosActivity" ns0:enabled="true" ns0:windowSoftInputMode="0x00000010"/>
+		<activity-alias ns0:name="com.pcloud.screens.Photos" ns0:targetActivity="com.pcloud.media.ui.PhotosActivity"/>
+		<activity ns0:name="com.pcloud.navigation.passcode.PasscodeRemovalActivity" ns0:screenOrientation="7" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F14009C" ns0:name="com.pcloud.tasks.TaskMonitorActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity-alias ns0:name="com.pcloud.screens.Tasks" ns0:targetActivity="com.pcloud.tasks.TaskMonitorActivity"/>
+		<activity ns0:name="com.pcloud.navigation.FileNavigationActivity"/>
+		<activity ns0:name="com.pcloud.navigation.links.SharedLinkNavigationActivity"/>
+		<activity ns0:theme="@7F1502AA" ns0:name="com.pcloud.account.UserSetupActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.UserSetup" ns0:targetActivity="com.pcloud.account.UserSetupActivity"/>
+		<activity ns0:theme="@7F1502A3" ns0:name="com.pcloud.autoupload.AutoUploadSplashActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.AutoUploadSplash" ns0:exported="true" ns0:targetActivity="com.pcloud.autoupload.AutoUploadSplashActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:scheme="@7F14042A" ns0:host="auto_upload"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.pcloud.navigation.preview.PreviewActivity"/>
+		<activity ns0:label="@7F1404FA" ns0:name="com.pcloud.feedback.SendFeedbackActivity"/>
+		<activity ns0:name="com.pcloud.appshortcuts.ShortcutActivity" ns0:enabled="@7F050003"/>
+		<activity-alias ns0:name="com.pcloud.screens.Shortcuts" ns0:targetActivity="com.pcloud.appshortcuts.ShortcutActivity"/>
+		<activity ns0:theme="@7F1502A8" ns0:name="com.pcloud.navigation.files.FolderPickerActivity"/>
+		<activity ns0:theme="@7F1502A9" ns0:name="com.pcloud.links.details.SharedLinkDetailsActivity"/>
+		<service ns0:name="com.pcloud.tasks.TaskExecutionService" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="com.pcloud.autoupload.media.MediaScanService" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="com.pcloud.crypto.ui.CryptoActivationService" ns0:exported="false" ns0:foregroundServiceType="0x00000001">
+			<intent-filter>
+				<action ns0:name="com.pcloud.crypto.CryptoActivationService"/>
+			</intent-filter>
+		</service>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F140235"/>
+		<meta-data ns0:name="com.facebook.sdk.ClientToken" ns0:value="@7F140236"/>
+		<meta-data ns0:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" ns0:value="false"/>
+		<meta-data ns0:name="com.facebook.sdk.AutoLogAppEventsEnabled" ns0:value="false"/>
+		<meta-data ns0:name="com.pcloud.passcode.UnlockComponent" ns0:value="com.pcloud.screens.PasscodeUnlock"/>
+		<provider ns0:name="com.pcloud.content.ContentUrisProvider" ns0:exported="false" ns0:authorities="com.pcloud.pcloud.files" ns0:grantUriPermissions="true">
+			<path-permission ns0:readPermission="com.pcloud.pcloud.content.permission.ACCESS_CONTENT_THUMBNAILS" ns0:pathPrefix="/thumbnail"/>
+		</provider>
+		<provider ns0:name="com.pcloud.content.provider.PCloudDocumentProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.pcloud.pcloud.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="android.content.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.pcloud.pcloud.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F170003"/>
+		</provider>
+		<service ns0:name="com.pcloud.links.SaveSharedLinkService" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<activity ns0:name="com.pcloud.navigation.passcode.PasscodeUnlockActivity" ns0:screenOrientation="7" ns0:windowSoftInputMode="0x00000010"/>
+		<activity-alias ns0:name="com.pcloud.screens.PasscodeUnlock" ns0:targetActivity="com.pcloud.navigation.passcode.PasscodeUnlockActivity"/>
+		<activity ns0:theme="@7F1502AE" ns0:name="com.pcloud.permissions.PermissionsActivity"/>
+		<receiver ns0:name="com.pcloud.sync.BootupBroadcastReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.pcloud.initialsync.InitialSyncService" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="com.pcloud.autoupload.freespace.FreeSpaceService" ns0:exported="false" ns0:foregroundServiceType="0x00000001">
+			<intent-filter>
+				<action ns0:name="com.pcloud.freespace.scan"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.pcloud.content.EditFileFailedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="EditFileFailedBroadcastReceiver.RetryAction"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.pcloud.navigation.MainEntry" ns0:value="com.pcloud.screens.Main"/>
+		<activity ns0:theme="@7F1502AB" ns0:name="com.pcloud.account.PCloudAuthenticatorActivity"/>
+		<service ns0:name="com.pcloud.account.PCloudAuthenticatorService" ns0:exported="true">
+			<meta-data ns0:name="com.pcloud.account.AuthenticatorActivity" ns0:value="com.pcloud.account.PCloudAuthenticatorActivity"/>
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F170000"/>
+		</service>
+		<receiver ns0:name="androidx.media.session.MediaButtonReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_BUTTON"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:label="@7F14009C" ns0:name="com.pcloud.media.PCloudMediaBrowserService" ns0:exported="true" ns0:foregroundServiceType="0x00000002">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_BUTTON"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.browse.MediaBrowserService"/>
+			</intent-filter>
+		</service>
+		<activity ns0:name="com.pcloud.account.WebActivity"/>
+		<activity ns0:name="com.pcloud.account.WelcomeActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.Login" ns0:targetActivity="com.pcloud.account.WelcomeActivity"/>
+		<activity ns0:name="com.pcloud.account.TokenRefreshActivity"/>
+		<activity ns0:name="com.pcloud.account.WebLoginActivity" ns0:persistableMode="2"/>
+		<activity ns0:name="com.pcloud.account.AccountSettingsActivity"/>
+		<activity-alias ns0:name="com.pcloud.screens.AccountSettings" ns0:targetActivity="com.pcloud.account.AccountSettingsActivity"/>
+		<activity ns0:name="com.pcloud.account.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="pcloud-webauth" ns0:host="com.pcloud.pcloud"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.pcloud.autoupload.StartMediaScanReceiver" ns0:exported="false"/>
+		<service ns0:name="com.pcloud.sync.PCloudJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<receiver ns0:name="com.pcloud.analytics.DeferredEventBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="DeferredEventBroadcastReceiver.Action"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030055" ns0:name="com.pcloud.analytics.DeferredEventActivity"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.pcloud.pcloud.androidx-startup" ns0:initOrder="999999999">
+			<meta-data ns0:name="com.pcloud.utils.DaggerWorkerFactoryInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.pcloud.tracking.ScreenAnnotationsRuntimeInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.pcloud.utils.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.profileinstaller.ProfileInstallerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<receiver ns0:name="com.pcloud.statusbar.LegacyStatusBarNotifier$LegacyNotificationBroadcastReceiver" ns0:enabled="@7F050013" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:name="androidx.compose.ui.tooling.PreviewActivity" ns0:exported="true"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.pcloud.pcloud.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.pcloud.pcloud.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050009" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F05000B" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F05000A" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050009" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<receiver ns0:name="androidx.profileinstaller.ProfileInstallReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SKIP_FILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F1502AF" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="11003"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F170010"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

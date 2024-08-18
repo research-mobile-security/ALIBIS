@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns0="http://schemas.android.com/apk/res/android"><intent-filter>
+				<action ns0:name="android.intent.action.MAIN" />
+				<category ns0:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+				<category ns0:name="android.intent.category.BROWSABLE" />
+				<data ns0:scheme="https" />
+				<data ns0:host="dropbox.com" />
+				<data ns0:host="www.dropbox.com" />
+				<data ns0:host="carousel.dropbox.com" />
+				<data ns0:pathPattern="/photos/join_room_or_open_play_store" />
+				<data ns0:pathPattern="/l/.*/room_invite" />
+				<data ns0:pathPattern="/l/.*/weekly_highlights" />
+				<data ns0:pathPattern="/l/.*/flashback" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+				<category ns0:name="android.intent.category.BROWSABLE" />
+				<data ns0:scheme="carousel" ns0:pathPrefix="/room_invite/" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+				<category ns0:name="android.intent.category.BROWSABLE" />
+				<data ns0:scheme="https" />
+				<data ns0:host="db.tt" />
+				<data ns0:host="ph.to" />
+				<data ns0:pathPrefix="/c/" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.dropbox.android.action.AUTHENTICATOR_ADD_PERSONAL_ACCOUNT" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT" />
+				<category ns0:name="android.intent.category.OPENABLE" />
+				<data ns0:mimeType="vnd.android.cursor.dir/image" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT" />
+				<category ns0:name="android.intent.category.OPENABLE" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+				<data ns0:mimeType="image/*" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+				<data ns0:mimeType="image/*" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+				<data ns0:mimeType="vnd.android.cursor.dir/image" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="com.dropbox.carousel.action.ALLOW_FAST_SWITCH" />
+				<category ns0:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED" />
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED" />
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.hardware.action.NEW_PICTURE" />
+				<action ns0:name="android.hardware.action.NEW_VIDEO" />
+				<action ns0:name="com.android.camera.NEW_PICTURE" />
+				<data ns0:mimeType="image/*" />
+				<data ns0:mimeType="video/*" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE" />
+				<category ns0:name="com.example.gcm" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator" />
+			</intent-filter>
+			</root>

@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="5033" ns0:versionName="5.3.3" ns0:installLocation="0" ns0:compileSdkVersion="30" ns0:compileSdkVersionCodename="11" package="com.flavionet.android.camera.lite" platformBuildVersionCode="30" platformBuildVersionName="11">
+	<uses-sdk ns0:minSdkVersion="18" ns0:targetSdkVersion="30"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.network" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.REORDER_TASKS"/>
+	<application ns0:theme="@7F1300D9" ns0:label="@7F120074" ns0:icon="@7F0F0000" ns0:name="com.flavionet.android.camera.App" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:roundIcon="@7F0F0000" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="firebase_analytics_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="google_analytics_adid_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="com.sec.android.airview.enable" ns0:value="true"/>
+		<meta-data ns0:name="SamsungBasicInteraction" ns0:value="SEP10"/>
+		<uses-library ns0:name="semextendedformat" ns0:required="false"/>
+		<uses-library ns0:name="secimaging" ns0:required="false"/>
+		<meta-data ns0:name="com.samsung.android.disableSnapshot" ns0:value="true"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<activity ns0:theme="@7F13000F" ns0:label="@7F120074" ns0:icon="@7F0F0000" ns0:name="com.flavionet.android.camera.MainActivity" ns0:configChanges="0x000004A0" ns0:roundIcon="@7F0F0000">
+			<meta-data ns0:name="com.samsung.android.rotation.animation.disable" ns0:value="true"/>
+			<meta-data ns0:name="com.samsung.android.startingwindow.fixedorientation" ns0:value="true"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.sec.android.airview.HOVER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13000E" ns0:name="com.flavionet.android.camera.IntroActivity"/>
+		<activity ns0:theme="@7F130010" ns0:name="com.flavionet.android.camera.SettingsActivity"/>
+		<activity ns0:theme="@7F130010" ns0:name="com.flavionet.android.camera.SettingsDialogActivity"/>
+		<activity ns0:theme="@7F13000D" ns0:name="com.flavionet.android.camera.DocumentDisplayActivity"/>
+		<service ns0:name="com.flavionet.android.camera.storage.PhotoStorageService"/>
+		<activity ns0:theme="@7F130009" ns0:name="com.flavionet.android.cameralibrary.filedialog.FileDialog"/>
+		<activity ns0:theme="@7F1300EE" ns0:label="@7F12056A" ns0:name="us.koller.cameraroll.ui.SetWallpaperActivity" ns0:launchMode="1" ns0:screenOrientation="1">
+			<intent-filter/>
+		</activity>
+		<activity ns0:theme="@7F130290" ns0:label="Camera FV-5 3.0" ns0:icon="@7F0801A2" ns0:name="com.flavionet.android.cameralegacy.Main" ns0:enabled="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.sec.android.airview.HOVER"/>
+			</intent-filter>
+		</activity>
+		<uses-library ns0:name="seccamera" ns0:required="false"/>
+		<uses-library ns0:name="semcamera" ns0:required="false"/>
+		<service ns0:name="com.flavionet.android.cameraengine.storage.StorageService"/>
+		<activity ns0:theme="@7F1300EC" ns0:name="us.koller.cameraroll.ui.MainActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1300F2" ns0:name="us.koller.cameraroll.ui.AlbumActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1300ED" ns0:name="us.koller.cameraroll.ui.ItemActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1300F6" ns0:name="us.koller.cameraroll.ui.VideoPlayerActivity" ns0:launchMode="2" ns0:configChanges="0x00000D80" ns0:supportsPictureInPicture="true"/>
+		<activity ns0:theme="@7F1300EF" ns0:name="us.koller.cameraroll.ui.SettingsActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1300F1" ns0:name="us.koller.cameraroll.ui.AboutActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1300F3" ns0:name="us.koller.cameraroll.ui.FileExplorerActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1300F4" ns0:name="us.koller.cameraroll.ui.FileOperationDialogActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1300DE" ns0:name="us.koller.cameraroll.ui.ExifEditorActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F1300DC" ns0:label="@7F1202DD" ns0:name="us.koller.cameraroll.ui.EditImageActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1300DD" ns0:label="@7F1202F4" ns0:name="us.koller.cameraroll.ui.ExcludePathsActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1300F7" ns0:label="@7F12055A" ns0:name="us.koller.cameraroll.ui.VirtualAlbumsActivity" ns0:launchMode="1"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.flavionet.android.camera.lite.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F160008"/>
+		</provider>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.Copy"/>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.Delete"/>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.Move"/>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.NewDirectory"/>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.Rename"/>
+		<provider ns0:name="de.fgae.android.crashdetector.CrashDetectorInitContentProvider" ns0:exported="false" ns0:authorities="com.flavionet.android.camera.lite.crashdetectorinit" ns0:initOrder="101"/>
+		<activity ns0:theme="@7F130298" ns0:label="" ns0:name="com.flavionet.android.camera3.help.HelpDialog" ns0:screenOrientation="0"/>
+		<activity ns0:theme="@7F13029C" ns0:label="@7F1200F4" ns0:name="com.lamerman.FileDialog"/>
+		<activity ns0:theme="@7F13029D" ns0:label="" ns0:name="com.flavionet.android.camera3.review.ReviewDialog"/>
+		<activity ns0:theme="@7F13029D" ns0:label="" ns0:name="com.flavionet.android.camera3.review.GalleryDialog"/>
+		<activity ns0:theme="@7F130299" ns0:label="@7F120192" ns0:name="com.flavionet.android.camera3.dialogs.IntervalometerActivity"/>
+		<activity ns0:theme="@7F130295" ns0:label="@7F1200AB" ns0:name="com.flavionet.android.camera3.dialogs.About"/>
+		<activity ns0:theme="@7F130295" ns0:name="com.flavionet.android.corecamera.DocumentDisplay"/>
+		<activity ns0:theme="@7F130290" ns0:label="" ns0:name="com.flavionet.android.camera3.CameraPermissionActivity"/>
+		<service ns0:name="com.flavionet.android.camera3.PhotoDeveloperService"/>
+		<provider ns0:name="com.flavionet.android.camera3.FileProvider" ns0:exported="false" ns0:authorities="com.flavionet.android.camera.lite.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F160001"/>
+		</provider>
+		<service ns0:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService" ns0:exported="false"/>
+		<service ns0:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService" ns0:exported="false"/>
+		<service ns0:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.flavionet.android.camera.lite.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0019"/>
+		<activity ns0:theme="@android:01030005" ns0:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030005" ns0:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:0103000B" ns0:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+	</application>
+</manifest>

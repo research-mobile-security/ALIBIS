@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="3" ns0:versionName="1" package="com.arsalanengr.shecam" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="25"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<supports-screens ns0:smallScreens="false" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.BROADCAST_STICKY"/>
+	<uses-permission ns0:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<meta-data ns0:name="android.support.VERSION" ns0:value="25.3.1"/>
+	<application ns0:theme="@7F0C012C" ns0:label="@7F0A0134" ns0:icon="@7F020148" ns0:name="com.browse.simply.chic.MainApplication" ns0:allowBackup="true" ns0:supportsRtl="true">
+		<activity ns0:name="com.browse.simply.chic.MainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.browse.simply.chic.EditorActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.browse.simply.chic.Splash" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsProvider" ns0:exported="false" ns0:authorities="com.arsalanengr.shecam.CdsProvider"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.mlsdev.rximagepicker.HiddenActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F0C00DA" ns0:name="com.adobe.creativesdk.aviary.AdobeImageEditorActivity" ns0:finishOnTaskLaunch="true" ns0:screenOrientation="-1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="https"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="http"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsService" ns0:exported="false" ns0:process=":editor">
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.CDS_VERIFY_SUBSCRIPTIONS"/>
+				<action ns0:name="aviary.intent.action.CDS_DOWNLOAD_START"/>
+				<action ns0:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS"/>
+				<action ns0:name="aviary.intent.action.CDS_RESTORE_OWNED_PACKS"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsAssetsDownloaderService" ns0:exported="false" ns0:process=":editor">
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.CDS_DOWNLOAD_EXTRA_ASSETS"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsReceiver" ns0:permission="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" ns0:exported="true" ns0:process=":editor">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+				<action ns0:name="android.net.wifi.STATE_CHANGE"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+				<action ns0:name="aviary.android.cds.intent.action.ACTION_NOTIFICATION_DISMISS"/>
+				<action ns0:name="aviary.android.cds.intent.action.ACTION_DOWNLOAD_COMPLETE_DELAYED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F0C00D5" ns0:label="@7F0A011D" ns0:name="com.adobe.creativesdk.foundation.internal.auth.AdobeAuthSignInActivity" ns0:exported="false" ns0:taskAffinity="" ns0:multiprocess="true" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000031"/>
+		<service ns0:name="com.adobe.creativesdk.aviary.internal.account.AdobeBillingContentService" ns0:enabled="true" ns0:exported="false" ns0:process=":editor"/>
+		<activity ns0:theme="@7F0C00D5" ns0:label="@7F0A011D" ns0:name="com.adobe.creativesdk.foundation.internal.auth.AdobeAuthContinuableEventActivity" ns0:exported="false" ns0:multiprocess="true" ns0:launchMode="3" ns0:windowSoftInputMode="0x00000031"/>
+		<activity ns0:name="com.adobe.creativesdk.foundation.internal.base.AdobeTOUHandlerActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0F001F"/>
+	</application>
+</manifest>

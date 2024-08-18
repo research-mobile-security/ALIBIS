@@ -1,0 +1,374 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:sharedUserId="com.tct.gallery" ns0:versionCode="800000731" ns0:versionName="v8.0.0.031" package="com.tct.gallery3d">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="26"/>
+	<original-package ns0:name="com.tct.gallery3d"/>
+	<permission ns0:name="com.tct.gallery3d.permission.GALLERY_PROVIDER" ns0:protectionLevel="0x00000003"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.NFC"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="com.tct.gallery3d.permission.GALLERY_PROVIDER"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_DOCUMENTS"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="false" ns0:normalScreens="true" ns0:largeScreens="true"/>
+	<meta-data ns0:name="android.support.VERSION" ns0:value="25.3.1"/>
+	<application ns0:label="@7F110050" ns0:icon="@7F0801C6" ns0:name="com.tct.gallery3d.app.GalleryAppImpl" ns0:allowBackup="true" ns0:restoreAnyVersion="true" ns0:logo="@7F0801C6" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:uiOptions="0x00000001" ns0:supportsRtl="true" ns0:resizeableActivity="false">
+		<uses-library ns0:name="com.google.android.media.effects" ns0:required="false"/>
+		<meta-data ns0:name="com.tct.gallery3d.app.DecodeFormatModule" ns0:value="GlideModule"/>
+		<meta-data ns0:name="com.google.android.geo.API_KEY" ns0:value="@7F1101DE"/>
+		<meta-data ns0:name="APP_KEY" ns0:value="uAFJ3u"/>
+		<meta-data ns0:name="CHANNEL" ns0:value="Preload"/>
+		<meta-data ns0:name="SERVER_DOMAIN" ns0:value="@7F1100F1"/>
+		<activity ns0:theme="@7F12019D" ns0:label="@7F110241" ns0:name="com.tct.gallery3d.app.MoviePermissionActivity" ns0:screenOrientation="4">
+			<intent-filter>
+				<action ns0:name="com.android.gallery3d.app.toMovieActivity"/>
+				<action ns0:name="android.intent.action.DLNA_START"/>
+				<action ns0:name="android.intent.action.DLNA_STOP"/>
+				<action ns0:name="android.intent.device_add"/>
+				<action ns0:name="android.intent.android.intent.device_remove"/>
+				<action ns0:name="android.intent.action.shared_inner_stop"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="rtsp"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:scheme="rtsp"/>
+				<data ns0:mimeType="video/mpeg4"/>
+				<data ns0:mimeType="video/mp4"/>
+				<data ns0:mimeType="video/3gp"/>
+				<data ns0:mimeType="video/3gpp"/>
+				<data ns0:mimeType="video/3gpp2"/>
+				<data ns0:mimeType="video/webm"/>
+				<data ns0:mimeType="video/flv"/>
+				<data ns0:mimeType="video/quicktime"/>
+				<data ns0:mimeType="video/avi"/>
+				<data ns0:mimeType="video/x-msvideo"/>
+				<data ns0:mimeType="video/x-matroska"/>
+				<data ns0:mimeType="application/sdp"/>
+				<data ns0:mimeType="video/x-flv"/>
+				<data ns0:mimeType="video/x-ms-wmv"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:mimeType="audio/x-mpegurl"/>
+				<data ns0:mimeType="audio/mpegurl"/>
+				<data ns0:mimeType="application/vnd.apple.mpegurl"/>
+				<data ns0:mimeType="application/x-mpegurl"/>
+				<data ns0:mimeType="application/dash+xml"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120185" ns0:name="com.tct.gallery3d.collage.CollageProcessActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F120185" ns0:name="com.hawk.android.hicamera.edit.EditImageActivity" ns0:screenOrientation="1" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F12019C" ns0:label="@7F110241" ns0:name="com.tct.gallery3d.app.MovieActivity" ns0:configChanges="0x00000D80" ns0:uiOptions="0x00000001"/>
+		<activity ns0:theme="@7F1201A2" ns0:label="@7F110334" ns0:name="com.tct.gallery3d.PrivacyPolicyActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F12000B" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.app.PermissionActivity" ns0:configChanges="0x00000D80">
+			<intent-filter ns0:priority="1">
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme=""/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/webp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/vnd.wap.wbmp"/>
+				<data ns0:mimeType="image/x-adobe-dng"/>
+				<data ns0:mimeType="image/x-canon-cr2"/>
+				<data ns0:mimeType="image/x-nikon-nef"/>
+				<data ns0:mimeType="image/x-nikon-nrw"/>
+				<data ns0:mimeType="image/x-sony-arw"/>
+				<data ns0:mimeType="image/x-panasonic-rw2"/>
+				<data ns0:mimeType="image/x-olympus-orf"/>
+				<data ns0:mimeType="image/x-fuji-raf"/>
+				<data ns0:mimeType="image/x-pentax-pef"/>
+				<data ns0:mimeType="image/x-samsung-srw"/>
+				<data ns0:mimeType="application/vnd.google.panorama360+jpg"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/mpeg4"/>
+				<data ns0:mimeType="video/mp4"/>
+				<data ns0:mimeType="video/3gp"/>
+				<data ns0:mimeType="video/3gpp"/>
+				<data ns0:mimeType="video/3gpp2"/>
+				<data ns0:mimeType="application/sdp"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120193" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.app.GalleryActivity" ns0:exported="true" ns0:configChanges="0x00002D84" ns0:hardwareAccelerated="true"/>
+		<activity-alias ns0:label="@7F110050" ns0:name="com.cooliris.media.Gallery" ns0:configChanges="0x000004A0" ns0:targetActivity="com.tct.gallery3d.app.GalleryActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F120193" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.app.FilterSelectionModeActivity" ns0:configChanges="0x00000D80" ns0:hardwareAccelerated="true">
+			<intent-filter>
+				<action ns0:name="com.tct.gallery.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120180" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.similar.SimilarPicActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120180" ns0:name="com.tct.gallery3d.app.EditPickPicActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1201A2" ns0:name="com.tct.gallery3d.tubeyeah.video.VideoListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1201A2" ns0:name="com.tct.gallery3d.tubeyeah.video.SinglePlayerActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1201A2" ns0:name="com.tct.gallery3d.tubeyeah.video.VideoDetailActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120193" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.app.AlbumActivity" ns0:configChanges="0x00002D84"/>
+		<activity ns0:theme="@7F120193" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.app.AlbumSelectActivity" ns0:configChanges="0x00000D80"/>
+		<activity ns0:theme="@7F120193" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.app.NewAlbumSelectActivity" ns0:exported="true" ns0:configChanges="0x00000D80"/>
+		<activity ns0:theme="@android:01030055" ns0:name="com.tct.gallery3d.app.Gallery">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1201A2" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.app.CollapseAlbumsManageActivity" ns0:configChanges="0x00000D80"/>
+		<activity ns0:theme="@7F120193" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.app.CollapseAlbumsActivity" ns0:configChanges="0x00000D80"/>
+		<activity ns0:label="@7F110050" ns0:name="com.tct.gallery3d.ingest.IngestActivity" ns0:taskAffinity="" ns0:launchMode="3" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+			</intent-filter>
+			<meta-data ns0:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" ns0:resource="@7F150000"/>
+		</activity>
+		<service ns0:name="com.tct.gallery3d.ingest.IngestService"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.tct.gallery3d.app.Wallpaper" ns0:configChanges="0x000004A0">
+			<intent-filter ns0:label="@7F11008A">
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F110050">
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="android.wallpaper.preview" ns0:resource="@7F150002"/>
+		</activity>
+		<activity ns0:theme="@7F1201A3" ns0:label="@7F1103FA" ns0:name="com.tct.gallery3d.app.view.TrimVideo" ns0:configChanges="0x00000C80">
+			<intent-filter ns0:label="@7F1100E2">
+				<action ns0:name="com.android.camera.action.TRIM"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.tct.gallery3d.filtershow.provider.SharedImageProvider" ns0:readPermission="com.tct.gallery3d.filtershow.permission.READ" ns0:writePermission="com.tct.gallery3d.filtershow.permission.WRITE" ns0:exported="false" ns0:authorities="com.tct.gallery3d.filtershow.provider.SharedImageProvider" ns0:grantUriPermissions="true"/>
+		<service ns0:name="com.tct.gallery3d.filtershow.pipeline.ProcessingService" ns0:exported="false"/>
+		<activity ns0:theme="@7F12018F" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.filtershow.FilterShowActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000D80" ns0:resizeableActivity="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="action_nextgen_edit"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="action_gallery_edit"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120186" ns0:label="@7F1100D8" ns0:name="com.tct.gallery3d.filtershow.crop.CropActivity" ns0:configChanges="0x000004A0">
+			<intent-filter ns0:label="@7F1100E2">
+				<action ns0:name="com.android.camera.action.CROP"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.ALTERNATIVE"/>
+				<category ns0:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120190" ns0:name="com.tct.gallery3d.settings.GallerySettings" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.tct.gallery3d.provider.GalleryProvider" ns0:permission="com.tct.gallery3d.permission.GALLERY_PROVIDER" ns0:exported="false" ns0:authorities="com.tct.gallery3d.provider" ns0:syncable="false" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="com.android.photos.data.PhotoProvider" ns0:exported="false" ns0:authorities="com.tct.gallery3d.photoprovider" ns0:syncable="false"/>
+		<provider ns0:name="com.tct.gallery3d.provider.GalleryFavouriteProvider" ns0:exported="false" ns0:authorities="com.tct.gallery3d.favourite.provider" ns0:grantUriPermissions="true"/>
+		<activity ns0:name="com.tct.gallery3d.gadget.WidgetClickHandler"/>
+		<activity ns0:theme="@7F1200B9" ns0:name="com.tct.gallery3d.app.DialogPicker" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1200B9" ns0:name="com.tct.gallery3d.app.AlbumPicker" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F120194" ns0:name="com.tct.gallery3d.gadget.WidgetTypeChooser" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:name="com.tct.gallery3d.app.PackagesMonitor"/>
+		<service ns0:name="com.tct.gallery3d.app.PackagesMonitor$AsyncService"/>
+		<service ns0:name="com.tct.gallery3d.gadget.WidgetService" ns0:permission="android.permission.BIND_REMOTEVIEWS"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.tct.gallery3d.gadget.WidgetConfigure" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.tct.gallery3d.app.GalleryResetReceiver">
+			<intent-filter ns0:priority="85">
+				<action ns0:name="android.intent.action.LAUNCH_DEVICE_RESET"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.android.gallery3d.app.GalleryReceiver">
+			<intent-filter>
+				<action ns0:name="com.android.music.forpresentation"/>
+				<action ns0:name="com.android.gallery.video"/>
+				<action ns0:name="com.android.gallery.slideshow"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F12019C" ns0:label="@7F110050" ns0:name="com.android.gallery3d.gif.GifActivity" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="false"/>
+		<service ns0:name="com.android.gallery3d.app.DlnaService" ns0:permission="com.tct.gallery2.permission.ACCESS_PROVIDER"/>
+		<service ns0:label="Address prefetch Service" ns0:name="com.tct.gallery3d.picturegrouping.AddressPrefetchService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:label="Exif Info prefetch Service" ns0:name="com.tct.gallery3d.picturegrouping.ExifInfoPrefetchService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:label="prefetch Service" ns0:name="com.tct.gallery3d.picturegrouping.PrefetchService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:label="Boot Completed Broadcast Receiver" ns0:name="com.tct.gallery3d.picturegrouping.BootCompletedBroadcastReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.tct.gallery3d.picturegrouping.NewPictureBroadcastReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.hardware.action.NEW_PICTURE"/>
+				<action ns0:name="com.android.camera.NEW_PICTURE"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.hardware.action.NEW_VIDEO"/>
+				<action ns0:name="com.android.camera.NEW_VIDEO"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F120182" ns0:name="com.tct.gallery3d.app.BurstShotActivity" ns0:configChanges="0x00000D80">
+			<intent-filter>
+				<action ns0:name="com.android.gallery.action.BurstShot"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F12018E" ns0:name="com.tct.gallery3d.app.FaceShowActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F12018E" ns0:name="com.tct.gallery3d.app.ShareDefaultPage" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.android.gallery.action.Share"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme=""/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030011" ns0:name="com.tct.gallery3d.app.BoomKeyTipsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1201A2" ns0:name="com.tct.gallery3d.app.SettingsActivity" ns0:configChanges="0x00000D80">
+			<intent-filter>
+				<action ns0:name="com.tct.gallery.SettingsAction"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1201A2" ns0:name="com.tct.gallery3d.app.DetailsActivity" ns0:hardwareAccelerated="true">
+			<intent-filter>
+				<action ns0:name="com.tct.gallery.DetailsAction"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F12018D" ns0:label="@7F110050" ns0:name="com.tct.gallery3d.app.NewAlbumDialogActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x00000D80"/>
+		<activity ns0:theme="@7F120193" ns0:label="@7F1103FA" ns0:name="com.tct.gallery3d.app.VideoEditActivity" ns0:configChanges="0x00000C80">
+			<intent-filter ns0:label="@7F1100E2">
+				<action ns0:name="com.android.camera.action.TRIM"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120193" ns0:label="@7F110241" ns0:name="com.tct.gallery3d.app.SlowMoActivity" ns0:configChanges="0x00000D80" ns0:uiOptions="0x00000001"/>
+		<meta-data ns0:name="UMENG_APPKEY" ns0:value="59e81c54734be411d10008f5"/>
+		<meta-data ns0:name="UMENG_CHANNEL" ns0:value="google"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F11017D"/>
+		<activity ns0:theme="@7F12020F" ns0:label="@7F110050" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F110187"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="95b707a82a88c5492c1bddb489815075fd26174d"/>
+		<meta-data ns0:name="android.support.VERSION" ns0:value="26.0.2"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.tct.gallery3d.crashlyticsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.family.ad.service.StartScheduledService" ns0:exported="false"/>
+		<activity ns0:name="com.family.ad.FamilyAdListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.family.ad.VideoDetailActivity" ns0:screenOrientation="1"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.tct.gallery3d.FacebookInitProvider"/>
+	</application>
+</manifest>

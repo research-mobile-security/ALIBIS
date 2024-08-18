@@ -1,0 +1,108 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "41",
+    "@ns0:versionName": "1.0.41",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "ch.want.imagecompare",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "24",
+      "@ns0:targetSdkVersion": "33"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE",
+        "@ns0:maxSdkVersion": "32"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE",
+        "@ns0:maxSdkVersion": "29"
+      },
+      {
+        "@ns0:name": "android.permission.READ_MEDIA_IMAGES"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_MEDIA_LOCATION"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F110007",
+      "@ns0:label": "@7F100022",
+      "@ns0:icon": "@7F0E0004",
+      "@ns0:launchMode": "1",
+      "@ns0:configChanges": "0x000004A0",
+      "@ns0:allowBackup": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:roundIcon": "@7F0E0005",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "activity": [
+        {
+          "@ns0:name": "ch.want.imagecompare.ui.listfolders.SelectImagePoolActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "ch.want.imagecompare.ui.listimages.ListImagesActivity",
+          "@ns0:parentActivityName": "ch.want.imagecompare.ui.listfolders.SelectImagePoolActivity"
+        },
+        {
+          "@ns0:name": "ch.want.imagecompare.ui.compareimages.CompareImagesActivity",
+          "@ns0:parentActivityName": "ch.want.imagecompare.ui.listimages.ListImagesActivity"
+        },
+        {
+          "@ns0:name": "ch.want.imagecompare.ui.imageselection.SelectedImagesActivity",
+          "@ns0:parentActivityName": "ch.want.imagecompare.ui.compareimages.CompareImagesActivity"
+        }
+      ],
+      "provider": {
+        "@ns0:name": "androidx.startup.InitializationProvider",
+        "@ns0:exported": "false",
+        "@ns0:authorities": "ch.want.imagecompare.androidx-startup",
+        "meta-data": [
+          {
+            "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+            "@ns0:value": "androidx.startup"
+          },
+          {
+            "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+            "@ns0:value": "androidx.startup"
+          }
+        ]
+      },
+      "meta-data": [
+        {
+          "@ns0:name": "com.android.dynamic.apk.fused.modules",
+          "@ns0:value": "base"
+        },
+        {
+          "@ns0:name": "com.android.stamp.source",
+          "@ns0:value": "https://play.google.com/store"
+        },
+        {
+          "@ns0:name": "com.android.stamp.type",
+          "@ns0:value": "STAMP_TYPE_STANDALONE_APK"
+        },
+        {
+          "@ns0:name": "com.android.vending.splits",
+          "@ns0:resource": "@7F130000"
+        },
+        {
+          "@ns0:name": "com.android.vending.derived.apk.id",
+          "@ns0:value": "2"
+        }
+      ]
+    }
+  }
+}

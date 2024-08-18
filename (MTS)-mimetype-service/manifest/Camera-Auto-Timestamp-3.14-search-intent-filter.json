@@ -1,0 +1,46 @@
+{
+    "root": {
+        "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+        "intent-filter": [
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.BOOT_COMPLETED"
+                }
+            },
+            {
+                "action": [
+                    {
+                        "@ns0:name": "com.android.camera.NEW_PICTURE"
+                    },
+                    {
+                        "@ns0:name": "android.hardware.action.NEW_PICTURE"
+                    }
+                ],
+                "category": {
+                    "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                "data": {
+                    "@ns0:mimeType": "image/*"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "com.ascendapps.NEW_PICTURE"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.USER_PRESENT"
+                }
+            },
+            {
+                "action": {
+                    "@ns0:name": "android.intent.action.MAIN"
+                },
+                "category": {
+                    "@ns0:name": "android.intent.category.LAUNCHER"
+                }
+            }
+        ]
+    }
+}

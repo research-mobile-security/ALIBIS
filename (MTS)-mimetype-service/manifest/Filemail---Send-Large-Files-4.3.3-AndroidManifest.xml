@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="126" ns0:versionName="4.3.3" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="no.degree.filemail.app" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="33"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F14000C" ns0:label="@7F130024" ns0:icon="@7F0F0000" ns0:name="no.degree.filemail.app.App" ns0:allowBackup="false" ns0:logo="@7F0F0000" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<provider ns0:name="no.degree.filemail.app.services.GenericFileProvider" ns0:exported="false" ns0:authorities="no.degree.filemail.app.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F160001"/>
+		</provider>
+		<activity ns0:name="no.degree.filemail.app.ui.activities.MainActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x00000500" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="fil.email"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="*.filemail.com"/>
+				<data ns0:pathPrefix="/d"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:host="*.filemail.com"/>
+				<data ns0:pathPrefix="/t"/>
+			</intent-filter>
+			<intent-filter>
+				<data ns0:scheme="filemail"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="no.degree.filemail.app.ui.activities.FileExplorerActivity"/>
+		<activity ns0:name="no.degree.filemail.app.ui.activities.TransferDetailsActivity" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:name="no.degree.filemail.app.ui.activities.OutgoingTransferActivity" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:name="no.degree.filemail.app.ui.activities.SubscriptionActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:name="no.degree.filemail.app.ui.activities.TransferForwardActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="no.degree.filemail.app.ui.activities.WebViewActivity" ns0:screenOrientation="1"/>
+		<receiver ns0:name="io.branch.referral.InstallListener" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="no.degree.filemail.app.receivers.NotificationBroadcastReceiver"/>
+		<receiver ns0:name="no.degree.filemail.app.receivers.ShareBroadcastReceiver"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F130023"/>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="c406938fd572345e775b74c26637bb3cbd9dd916"/>
+		<meta-data ns0:name="io.branch.sdk.BranchKey" ns0:value="key_live_icCEPyijxZ7t4Mod6vvkJbpdrFkadMRz"/>
+		<meta-data ns0:name="io.branch.sdk.BranchKey.test" ns0:value="key_test_ccqxUubcv11s2PkdZDwaPblgBChakVUk"/>
+		<meta-data ns0:name="io.branch.sdk.TestMode" ns0:value="false"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="true"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="no.degree.filemail.app.com.squareup.picasso"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="no.degree.filemail.app.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0008"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+	</application>
+</manifest>

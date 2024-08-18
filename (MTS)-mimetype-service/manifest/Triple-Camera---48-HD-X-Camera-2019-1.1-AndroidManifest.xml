@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2" ns0:versionName="1.1" ns0:installLocation="0" ns0:compileSdkVersion="28" ns0:compileSdkVersionCodename="9" package="com.newtripple.dslrcamera" platformBuildVersionCode="2" platformBuildVersionName="1.100000">
+	<uses-sdk ns0:minSdkVersion="17" ns0:targetSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.READ_LOGS"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.microphone"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<permission ns0:name="com.newtripple.dslrcamera.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.newtripple.dslrcamera.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<application ns0:theme="@7F110007" ns0:label="@7F100030" ns0:icon="@7F0E0001" ns0:name="android.support.multidex.MultiDexApplication" ns0:allowBackup="true" ns0:largeHeap="true" ns0:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+		<activity ns0:theme="@7F11014E" ns0:name="com.newtripple.dslrcamera.Camhd_Splash_Screen">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.newtripple.dslrcamera.Camhd_Get_Started"/>
+		<activity ns0:label="@7F100030" ns0:name="com.newtripple.dslrcamera.Camhd_MainActivity" ns0:clearTaskOnLaunch="true" ns0:screenOrientation="0" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F10016F" ns0:icon="@7F080095" ns0:name="com.newtripple.dslrcamera.Camhd_TakePhoto" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:screenOrientation="0" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:label="@7F100030" ns0:icon="@7F080094" ns0:name="com.newtripple.dslrcamera.MyWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F130001"/>
+		</receiver>
+		<receiver ns0:label="@7F10016F" ns0:icon="@7F080095" ns0:name="com.newtripple.dslrcamera.MyWidgetProviderTakePhoto">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F130002"/>
+		</receiver>
+		<activity ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.facebook.ads.internal.ipc.RemoteANActivity" ns0:exported="false" ns0:process=":adnw" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService" ns0:exported="false"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsMessengerService" ns0:exported="false" ns0:process=":adnw"/>
+		<meta-data ns0:name="onesignal_app_id" ns0:value="e6a04987-8e90-4a78-9f57-b41bc3c39c4e"/>
+		<meta-data ns0:name="onesignal_google_project_number" ns0:value="str:REMOTE"/>
+		<receiver ns0:name="com.onesignal.GcmBroadcastReceiver" ns0:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter ns0:priority="999">
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.newtripple.dslrcamera"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.onesignal.NotificationOpenedReceiver"/>
+		<service ns0:name="com.onesignal.GcmIntentService"/>
+		<service ns0:name="com.onesignal.GcmIntentJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.RestoreJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.RestoreKickoffJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.SyncService" ns0:stopWithTask="true"/>
+		<service ns0:name="com.onesignal.SyncJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.onesignal.PermissionsActivity"/>
+		<service ns0:name="com.onesignal.NotificationRestoreService"/>
+		<receiver ns0:name="com.onesignal.BootUpReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.onesignal.UpgradeReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.newtripple.dslrcamera"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.newtripple.dslrcamera.firebaseinitprovider" ns0:initOrder="100"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0008"/>
+	</application>
+</manifest>

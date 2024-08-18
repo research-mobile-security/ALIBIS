@@ -1,0 +1,537 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="83" ns0:versionName="1.8.7.1044" package="com.hefe.pro.editor">
+	<uses-sdk ns0:minSdkVersion="15" ns0:targetSdkVersion="26"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.EXPAND_STATUS_BAR"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.screen.portrait" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.faketouch" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission ns0:name="com.android.alarm.permission.SET_ALARM"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-feature ns0:name="android.hardware.bluetooth" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS" ns0:maxSdkVersion="20"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission-sdk-23 ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+	<uses-permission ns0:name="android.permission.PACKAGE_USAGE_STATS"/>
+	<application ns0:theme="@7F100013" ns0:label="@7F0F007A" ns0:icon="@7F0C0002" ns0:name="com.xpro.camera.lite.CameraApp" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+		<meta-data ns0:name="io.branch.sdk.BranchKey" ns0:value="key_live_goD8Vhr8RqWAx41fasaoZeohAFccxKoI"/>
+		<meta-data ns0:name="io.branch.sdk.BranchKey.test" ns0:value="key_test_hlxrWC5Zx16DkYmWu4AHiimdqugRYMr"/>
+		<meta-data ns0:name="io.branch.sdk.TestMode" ns0:value="false"/>
+		<meta-data ns0:name="com.xpro.camera.lite.model.CameraGlideModule" ns0:value="GlideModule"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.100000"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.activites.MainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.camera.complete.CameraCompleteActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.CameraActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.xpro.camera.lite.activites.OperationalActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.activites.CaptureActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:label="@7F0F0079" ns0:icon="@7F0C0001" ns0:name="com.xpro.camera.lite.activites.GalleryActivity" ns0:taskAffinity=".gallery" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.xpro.camera.lite.credit.activity.CreditActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.credit.activity.CreditPersonalDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.credit.activity.CreditStoreDetailActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.credit.activity.CreditGamesActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.credit.activity.H5GameActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.xpro.camera.lite.credit.activity.RewardLoadingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100007" ns0:name="com.xpro.camera.lite.activites.RewardVideoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.gallery.view.ImageDetailActivity"/>
+		<activity ns0:theme="@7F100007" ns0:name="com.xpro.camera.lite.activites.HomeActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100007" ns0:name="com.xpro.camera.lite.activites.CameraSplashActivity" ns0:launchMode="2" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.edit.main.EditActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.SettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.EffectsTypeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.SpecialOperationActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.CameraSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.SystemSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.PrivacySettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.ContactUsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.DataPermissionSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.ImageQualityActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.AgeScanningActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.activites.PhotoChooser" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.ArtFilterPreviewActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.CommonShareActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.PermissionActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.CollageActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.xpro.camera.lite.activites.CollageEditActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.gallery.view.SelectPhotoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.gallery.view.PhotoPreviewActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.store.StoreHomeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.store.StoreDetailActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100006" ns0:name="com.xpro.camera.lite.store.StoreStickerPreviewActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.ActivitiesListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F10010C" ns0:name="com.xpro.camera.lite.activites.ActivitiesActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.LauncherThemesActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.xpro.camera.lite.activites.PickShareAppActivity" ns0:clearTaskOnLaunch="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:allowTaskReparenting="false"/>
+		<service ns0:name="com.xpro.camera.lite.services.WaterMarkService"/>
+		<service ns0:name="com.xpro.camera.lite.services.AceImageScanService"/>
+		<service ns0:name="com.xpro.camera.lite.services.CheckRequestService"/>
+		<service ns0:name="com.xpro.camera.lite.window.FloatWindowService" ns0:exported="false"/>
+		<activity ns0:name="com.facebook.ads.InterstitialAdActivity" ns0:taskAffinity="com.facebook.ads.InterstitialAdActivity" ns0:multiprocess="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="" ns0:icon="@7F08046D" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:taskAffinity="com.facebook.ads.AudienceNetworkActivity" ns0:multiprocess="true" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:0103000F" ns0:label="" ns0:icon="@7F0800A5" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:taskAffinity="com.google.android.gms.ads.AdActivity" ns0:multiprocess="true" ns0:excludeFromRecents="true" ns0:configChanges="0x00000FB0" ns0:noHistory="true"/>
+		<activity ns0:theme="@7F100220" ns0:label="" ns0:icon="@7F080516" ns0:name="org.saturn.stark.core.wrapperads.InterstitialAdActivity" ns0:taskAffinity="org.saturn.stark.core.wrapperads.InterstitialAdActivity" ns0:multiprocess="true" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A000A"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.MakeupActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:hardwareAccelerated="false"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.MakeupDecoderActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:hardwareAccelerated="false"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.MakeupBeautyCaptureActivity" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F0F0299"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationName" ns0:value="@7F0F007A"/>
+		<provider ns0:name="com.facebook.FacebookContentProvider" ns0:exported="true" ns0:authorities="com.facebook.app.FacebookContentProvider122798975056610"/>
+		<activity ns0:theme="@7F100109" ns0:name="org.njord.account.ui.view.ProfileCenterActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000012">
+			<intent-filter>
+				<action ns0:name="com.hefe.pro.editor.njord.account.profile"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.xpro.camera.lite.activites.PipActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.activites.MomentPullAct" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="com.hefe.pro.editor" ns0:host="community"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.community.activities.CommunityHomeAct" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.community.activities.CommunityNoticeAct" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.community.activities.CommunityCreateAct" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.community.activities.CommunityLocationSearchActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.community.activities.CommunityTagActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.community.activities.CommunityDetailAct" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.community.activities.CommunityHidePhotosAct" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.community.activities.CommunityPreviewAct" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1000CE" ns0:name="com.xpro.camera.lite.community.activities.CommunityProfileAct" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:0103005F" ns0:name="com.augeapps.battery.fview.LockerActivity" ns0:taskAffinity="com.augeapps.battery.fview.LockerActivity" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.augeapps.guide.TransparentGuideActivity" ns0:exported="true" ns0:taskAffinity="org.saturn.sdk.activity.TransparentGuideActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.augeapps.locker.activity.DismissActivity" ns0:exported="true" ns0:taskAffinity="org.saturn.sdk.activity.DismissActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.augeapps.guide.DropPermissionGuideActivity" ns0:exported="true" ns0:taskAffinity="org.saturn.sdk.activity.DropPermissionGuideActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.augeapps.guide.LockerFullScreenGuideActivity" ns0:exported="true" ns0:taskAffinity="org.saturn.sdk.activity.LockerFullScreenGuideActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.augeapps.battery.activity.ScreenLockSettingActivity" ns0:taskAffinity="com.augeapps.battery.activity.ScreenLockSettingActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.augeapps.weather.activity.LockerWeatherSettingActivity" ns0:launchMode="3" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.augeapps.weather.activity.WeatherDetailActivity" ns0:taskAffinity="com.augeapps.weather.activity.WeatherDetailActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:01030006" ns0:name="org.tercel.searchlocker.activity.LockerWebViewActivity" ns0:process="com.hefe.pro.editor" ns0:launchMode="2" ns0:configChanges="0x400007F0"/>
+		<service ns0:name="com.augeapps.battery.ChargingCoreService" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.battery.c.model.ACTION_CHARGING"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:0103005F" ns0:name="com.augeapps.loadingpage.boost.LoadingBoosterResultActivity" ns0:taskAffinity="com.augeapps.loadingpage.LoadingBoosterResultActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:0103005F" ns0:name="com.augeapps.loadingpage.battery.LoadingBatteryResultActivity" ns0:taskAffinity="com.augeapps.loadingpage.LoadingBatteryResultActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:0103005F" ns0:name="com.augeapps.loadingpage.battery.LoadingBatteryScanActivity" ns0:taskAffinity="com.augeapps.loadingpage.LoadingBatteryScanActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:name="org.tercel.searchlocker.activity.LockerClearDataActivity"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.MakeupStoreListActivity"/>
+		<service ns0:name="com.xpro.camera.lite.credit.CreditActionService">
+			<intent-filter>
+				<action ns0:name="com.hefe.pro.editor.credit.handleService"/>
+			</intent-filter>
+		</service>
+		<activity ns0:name="com.xpro.camera.lite.activites.BlendActivity"/>
+		<activity ns0:name="com.xpro.camera.lite.activites.WarpActivity"/>
+		<activity ns0:theme="@7F100006" ns0:name="com.xpro.camera.lite.activites.CreditConsumeActivity"/>
+		<service ns0:name="com.apollo.downloadlibrary.DownloadService" ns0:exported="false"/>
+		<provider ns0:name="com.apollo.downloadlibrary.DownloadProvider" ns0:exported="false" ns0:authorities="com.apollo.downloadslibrary_com.hefe.pro.editor"/>
+		<activity ns0:theme="@android:01030011" ns0:name="org.njord.account.ui.view.LoginActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000012">
+			<intent-filter>
+				<action ns0:name="com.hefe.pro.editor.njord.account.login"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.hummingbirdcloud.DService" ns0:exported="false" ns0:process="com.hefe.pro.editor"/>
+		<activity ns0:name="com.hummingbirdcloud.DActivity" ns0:exported="false" ns0:process="com.hefe.pro.editor"/>
+		<activity ns0:theme="@android:01030006" ns0:label="" ns0:icon="@7F08046D" ns0:name="com.inmobi.rendering.InMobiAdActivity" ns0:multiprocess="true" ns0:configChanges="0x00000DB0" ns0:hardwareAccelerated="true"/>
+		<receiver ns0:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.inmobi.share.id"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.xpro.camera.lite.community.utils.NewUpdateService" ns0:exported="false"/>
+		<provider ns0:name="com.xpro.camera.lite.utils.MutiProcessUserSDKProvider" ns0:exported="false" ns0:authorities="com.hefe.pro.editor.suer.sdk.pref"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.hefe.pro.editor.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120002"/>
+		</provider>
+		<activity ns0:theme="@7F10021C" ns0:label="" ns0:icon="@7F08046D" ns0:name="org.tethys.popup.module.scene.popup.ui.ScenePopupActivity" ns0:taskAffinity="org.tethys.popup.module.scene.popup.ui.ScenePopupActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<service ns0:name="org.tethys.popup.module.scene.popup.SceneTimingJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<activity ns0:theme="@7F100213" ns0:label="" ns0:icon="@7F08046D" ns0:name="org.dione.magneto.activity.MagnetoDialogActivity" ns0:taskAffinity="org.dione.magneto.activity.MagnetoDialogActivity" ns0:multiprocess="true" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<meta-data ns0:name="com.inmobi.ads.account.id" ns0:value="23360dbf671242079fc5467c0812a7cc"/>
+		<meta-data ns0:name="flurry_api_key" ns0:value="GGYNGB4TD4CJYBWPNMJH"/>
+		<meta-data ns0:name="chartboost_api_appkey" ns0:value="5c8b6f2fe9ae740b5a7c04ca"/>
+		<meta-data ns0:name="chartboost_api_appsign" ns0:value="1e00a3067b075e5b3ea05c21e3d5f86759af1a1d"/>
+		<meta-data ns0:name="tapjoy_api_appkey" ns0:value="r4QnYEYkTWeSkd60tUJO0AECtEPvaXCICjZgsojSQxnVZfy4on0xmE9xZBkz"/>
+		<meta-data ns0:name="youappi_api_access_token" ns0:value="85db7f17-803c-4014-b95b-f313fae5171c"/>
+		<meta-data ns0:name="com.smaato.publisherId" ns0:value="120193002"/>
+		<meta-data ns0:name="com.display.io.appkey" ns0:value="6776"/>
+		<meta-data ns0:name="com.inneractive.ads.app_id" ns0:value="106505"/>
+		<meta-data ns0:name="startapp_api_appid" ns0:value="202509460"/>
+		<meta-data ns0:name="criteo_network_appid" ns0:value="8934"/>
+		<activity ns0:name="com.mopub.mobileads.MraidVideoPlayerActivity" ns0:multiprocess="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.common.MoPubBrowser" ns0:multiprocess="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.common.privacy.ConsentDialogActivity" ns0:multiprocess="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MoPubActivity" ns0:multiprocess="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MraidActivity" ns0:multiprocess="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.augeapps.permission.PermissionGuideActivity" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<meta-data ns0:name="stark_vc" ns0:value="320"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryFullscreenTakeoverActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.chartboost.sdk.CBImpressionActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.playableads.activity.PlayableADActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<receiver ns0:name="com.playableads.PlayableReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1000F9" ns0:name="com.dckaz.DazActivityWrapper" ns0:exported="false" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:screenOrientation="1" ns0:configChanges="0x000002F3"/>
+		<activity ns0:theme="@7F1000D0" ns0:name="com.dckaz.DazGuideActivity" ns0:launchMode="3"/>
+		<receiver ns0:name="com.dckaz.DazUniversalReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.nox.action.download.success"/>
+				<action ns0:name="action_receiver_deep_link_handle"/>
+				<action ns0:name="action_receiver_in_nox"/>
+				<action ns0:name="action_receiver_gp_in_nox"/>
+				<action ns0:name="action_receiver_official_in_nox"/>
+				<action ns0:name="action_receiver_remove_notification"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="org.cloud.library.CloudService" ns0:exported="false" ns0:process="com.hefe.pro.editor"/>
+		<receiver ns0:name="org.adoto.xrg.receiver.PlayReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:exported="true" ns0:process="com.hefe.pro.editor">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="org.adoto.xrg.receiver.GuardPlayReceiver" ns0:exported="true" ns0:process="com.hefe.pro.editor">
+			<intent-filter ns0:priority="-1000">
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.evernote.android.job.v21.PlatformJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false" ns0:process="com.hefe.pro.editor"/>
+		<service ns0:name="com.evernote.android.job.v14.PlatformAlarmService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false" ns0:process="com.hefe.pro.editor"/>
+		<service ns0:name="com.evernote.android.job.v14.PlatformAlarmServiceExact" ns0:exported="false" ns0:process="com.hefe.pro.editor"/>
+		<receiver ns0:name="com.evernote.android.job.v14.PlatformAlarmReceiver" ns0:exported="false" ns0:process="com.hefe.pro.editor">
+			<intent-filter>
+				<action ns0:name="com.evernote.android.job.v14.RUN_JOB"/>
+				<action ns0:name="net.vrallev.android.job.v14.RUN_JOB"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.evernote.android.job.JobBootReceiver" ns0:exported="false" ns0:process="com.hefe.pro.editor">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+				<action ns0:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.evernote.android.job.gcm.PlatformGcmService" ns0:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" ns0:enabled="true" ns0:exported="true" ns0:process="com.hefe.pro.editor">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.evernote.android.job.JobRescheduleService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false" ns0:process="com.hefe.pro.editor"/>
+		<activity ns0:name="com.facebook.ads.internal.ipc.RemoteANActivity" ns0:exported="false" ns0:process=":adnw" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService" ns0:exported="false"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsMessengerService" ns0:exported="false" ns0:process=":adnw"/>
+		<activity ns0:name="io.display.sdk.DioActivity" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="io.display.sdk.device.PermissionsHandler"/>
+		<activity ns0:name="io.display.sdk.UnityActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="io.display.sdk.DioTranslucentActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryTileAdActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.flurry.android.FlurryBrowserActivity" ns0:configChanges="0x00000FB0"/>
+		<receiver ns0:name="com.fyber.inneractive.sdk.video.IAVideoKit" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.fyber.inneractive.sdk.intent.action.REGISTER_KIT"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.fyber.inneractive.sdk.activities.InneractiveInternalBrowserActivity" ns0:configChanges="0x00000DA0"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.fyber.inneractive.sdk.activities.InneractiveFullscreenAdActivity" ns0:configChanges="0x00000DA0"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.fyber.inneractive.sdk.activities.InneractiveRichMediaVideoPlayerActivityCore" ns0:configChanges="0x00000DA0"/>
+		<receiver ns0:name="com.fyber.inneractive.sdk.nativead.IANativeKit" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.fyber.inneractive.sdk.intent.action.REGISTER_KIT"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.fyber.inneractive.sdk.mraid.IAMraidKit" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.fyber.inneractive.sdk.intent.action.REGISTER_KIT"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.iqzone.activities.InterstitialActivity" ns0:taskAffinity=".postitial" ns0:configChanges="0x000004B0" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.ads.list3d.List3DActivity"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.startapp.android.publish.adsCommon.activities.OverlayActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030005" ns0:name="com.startapp.android.publish.adsCommon.activities.FullScreenActivity" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.PeriodicMetaDataService"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.InfoEventService"/>
+		<service ns0:name="com.startapp.android.publish.common.metaData.PeriodicJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<receiver ns0:name="com.startapp.android.publish.common.metaData.BootCompleteListener">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.youappi.sdk.AdActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F10019B" ns0:name="com.criteo.view.InterstialHtmlAdActivity"/>
+		<activity ns0:theme="@7F1000CC" ns0:name="com.fantasy.guide.activity.WebDetailActivity" ns0:exported="false" ns0:taskAffinity=":fantasy" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:noHistory="true"/>
+		<activity ns0:theme="@android:0103006D" ns0:name="org.njord.activity.ActivityBrowserImp" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000B0" ns0:windowSoftInputMode="0x00000012">
+			<intent-filter>
+				<action ns0:name="com.hefe.pro.editor.njord.activity.browserimp"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:0103000D" ns0:name="org.njord.activity.WebActivity" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000B0" ns0:windowSoftInputMode="0x00000012">
+			<intent-filter>
+				<action ns0:name="com.hefe.pro.editor.njord.activity.web"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F100204" ns0:name="org.mimas.notify.clean.NotificationActivity" ns0:taskAffinity="org.mimas.notify.clean.NotificationActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000002F3"/>
+		<activity ns0:theme="@7F100204" ns0:name="org.mimas.notify.clean.NotifyBoostAdActivity" ns0:taskAffinity="org.mimas.notify.clean.NotifyBoostAdActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000002F3"/>
+		<activity ns0:theme="@7F100204" ns0:name="org.mimas.notify.clean.NotifyBoostCardActivity" ns0:taskAffinity="org.mimas.notify.clean.NotifyBoostCardActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000002F3"/>
+		<activity ns0:theme="@android:01030006" ns0:name="org.mimas.notify.clean.NotifyCleanFlowActivity" ns0:taskAffinity="org.mimas.notify.clean.NotifyCleanFlowActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000002F3"/>
+		<activity ns0:theme="@android:01030006" ns0:name="org.mimas.notify.clean.NotifyCleanMiddleActivity" ns0:taskAffinity="org.mimas.notify.clean.NotifyCleanMiddleActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000002F3"/>
+		<activity ns0:name="org.mimas.notify.clean.utils.SafeWebViewActivity"/>
+		<activity ns0:theme="@7F100201" ns0:name="org.mimas.notify.clean.NotifyCleanAuthorizeActivity" ns0:taskAffinity="org.mimas.notify.clean.NotifyCleanAuthorizeActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000002F3"/>
+		<activity ns0:theme="@7F100201" ns0:name="org.mimas.notify.clean.NotifyCleanConfirmActivity" ns0:taskAffinity="org.mimas.notify.clean.NotifyCleanConfirmActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000002F3"/>
+		<activity ns0:name="com.applovin.adview.AppLovinInterstitialActivity" ns0:multiprocess="true" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="com.applovin.adview.AppLovinConfirmationActivity" ns0:multiprocess="true" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="com.smaato.soma.interstitial.InterstitialActivity" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.smaato.soma.video.VASTAdActivity" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.smaato.soma.ExpandedBannerActivity" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.tapjoy.TJAdUnitActivity" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.tapjoy.mraid.view.ActionHandler" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.tapjoy.mraid.view.Browser" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.tapjoy.TJContentActivity" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.apollo.downloadlibrary.DownloadJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.apollo.downloadlibrary.DownloadReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="com.apollo.downloadlibrary.DOWNLOAD_WAKEUP"/>
+				<action ns0:name="com.apollo.downloadlibrary.DOWNLOAD_OPEN"/>
+				<action ns0:name="com.apollo.downloadlibrary.DOWNLOAD_LIST"/>
+				<action ns0:name="com.apollo.downloadlibrary.DOWNLOAD_HIDE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="org.odin.OdinService" ns0:exported="false" ns0:process="com.hefe.pro.editor"/>
+		<activity ns0:theme="@android:01030130" ns0:name="com.fantasy.manager.activity.TemplateActivity"/>
+		<activity ns0:theme="@7F1000BA" ns0:name="com.fantasy.manager.activity.FantasyConsentActivity" ns0:taskAffinity=":fantasy.consent" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.fantasy.core.dao.FantasyProvider" ns0:exported="false" ns0:process="com.hefe.pro.editor" ns0:authorities="com.fantasy.provider_com.hefe.pro.editor"/>
+		<activity ns0:name="com.wasp.sdk.push.ui.PushTransferActivity"/>
+		<service ns0:name="com.wasp.sdk.push.fcm.FCMService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.hefe.pro.editor.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F100201" ns0:name="com.capricornus.userforum.ui.RateDialogActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000002F3"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.capricornus.userforum.ui.UserForumMainActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.capricornus.userforum.ui.UserForumPostActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.capricornus.userforum.ui.PickBigImagesActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.capricornus.userforum.ui.PickOrTakeImageActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F100003" ns0:name="org.njord.account.ui.view.AccountKitProfileActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@7F100005" ns0:name="org.njord.account.ui.view.CropPhotoActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F100118" ns0:name="org.njord.account.ui.view.EditContentActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000014"/>
+		<activity ns0:theme="@7F100118" ns0:name="org.njord.account.ui.view.SelectRegionActivity" ns0:exported="false"/>
+		<service ns0:name="org.njord.credit.core.CreditService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.hefe.pro.editor.credit.valid"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="org.njord.credit.dao.CreditDBProvider" ns0:exported="false" ns0:authorities="com.hefe.pro.editor.credit.provider"/>
+		<activity ns0:name="org.njord.account.core.ui.AccountERActivity"/>
+		<provider ns0:name="org.njord.account.core.data.DbProvider" ns0:exported="false" ns0:authorities="com.hefe.pro.editor.db"/>
+		<activity ns0:theme="@7F1001F7" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:theme="@android:01030128" ns0:name="org.hera.crash.upload.HeraCrashUploadActivity" ns0:process="org.hera.crash" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@android:01030128" ns0:name="org.hera.crash.upload.HeraCrashDetailsActivity" ns0:process="org.hera.crash" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000000B0" ns0:parentActivityName="org.hera.crash.upload.HeraCrashUploadActivity">
+			<meta-data ns0:name="parentActivityName" ns0:value="org.hera.crash.upload.GameCrashUploadActivity"/>
+		</activity>
+		<service ns0:name="org.hera.crash.upload.HeraCrashService" ns0:process="org.hera.crash"/>
+		<provider ns0:name="org.homeplanet.coreservice.ServiceProvider" ns0:enabled="true" ns0:exported="false" ns0:process="com.hefe.pro.editor" ns0:authorities="org.homeplanet.coreservice.provider_com.hefe.pro.editor"/>
+		<service ns0:name="org.homeplanet.coreservice.BinderService" ns0:exported="false" ns0:process="com.hefe.pro.editor"/>
+		<receiver ns0:name="io.branch.referral.InstallListener" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:exported="true" ns0:priority="-1">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="org.DownloadShareProvider" ns0:exported="false" ns0:authorities="com.hefe.pro.editor.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120003"/>
+		</provider>
+		<activity ns0:theme="@android:0103000E" ns0:name="com.tools.g3.loading.LoadingActivity" ns0:taskAffinity="" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030007" ns0:name="org.saturn.autosdk.ui.AutoSettingActivity" ns0:taskAffinity="com.AutoSettingActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1001F5" ns0:label="" ns0:icon="@7F0800A5" ns0:name="org.saturn.autosdk.ui.AutoShowActivity" ns0:taskAffinity="com.AutoShowActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030011" ns0:name="org.saturn.autosdk.ui.AutoGuideActivity" ns0:taskAffinity="com.AutoGuideActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030011" ns0:label="" ns0:icon="@7F0800A5" ns0:name="org.saturn.autosdk.ui.BatteryMonitorCardActivity" ns0:taskAffinity="com.BatteryMonitorCardActivity" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="false"/>
+		<receiver ns0:name="org.mimas.notify.NotifyUpdateReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.newbie.notifyads.UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F100202" ns0:name="org.mimas.notify.FbDialogActivity" ns0:exported="true" ns0:taskAffinity="org.mimas.notify.FbDialogActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="org.enceladus.appexit.monitor.AppLoggingService" ns0:exported="true" ns0:process=":active"/>
+		<service ns0:name="org.enceladus.appexit.monitor.InnerService" ns0:process=":active"/>
+		<receiver ns0:name="org.enceladus.security.ProtectReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_ADDED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="org.enceladus.guide.UsageGuideTempActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030007" ns0:name="org.enceladus.appopen.SplashActivity" ns0:taskAffinity="org.enceladus.appopen.SplashActivity" ns0:multiprocess="true" ns0:excludeFromRecents="true"/>
+		<activity ns0:theme="@7F10021A" ns0:name="org.hercules.prm.PermissionActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F10021A" ns0:name="org.hercules.prm.P2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F10021A" ns0:name="org.hercules.prm.P3" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="org.hercules.prm.PermissionService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.lachesis.innerservice.PlutoService" ns0:exported="false"/>
+		<service ns0:name="com.lachesis.innerservice.InnerService" ns0:exported="false"/>
+		<service ns0:name="com.lachesis.account.AuthenticationService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F120000"/>
+		</service>
+		<service ns0:name="com.lachesis.account.SyncService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.content.SyncAdapter"/>
+			</intent-filter>
+			<meta-data ns0:name="android.content.SyncAdapter" ns0:resource="@7F120004"/>
+		</service>
+		<provider ns0:name="com.lachesis.account.AccountProvider" ns0:exported="true" ns0:authorities="com.hefe.pro.editor_daemon"/>
+		<service ns0:name="com.lachesis.module.jobscheduler.PlutoJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.lachesis.module.jobscheduler.PlutoJobServiceFantasy" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false" ns0:process=":fantasy"/>
+		<service ns0:name="com.lachesis.gcm.PlutoGcmService" ns0:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.lachesis.gcm.PlutoGcmServiceFantasy" ns0:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" ns0:enabled="true" ns0:exported="true" ns0:process=":fantasy">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="org.tercel.libexportedwebview.upload.UploadFileProvider" ns0:exported="false" ns0:authorities="libexportedwebview_com.hefe.pro.editor_UPLOAD" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F120005"/>
+		</provider>
+		<service ns0:name="org.tercel.searchprotocol.SearchProtocolService" ns0:exported="false"/>
+		<service ns0:name="com.hb.CS" ns0:exported="false" ns0:process=":hb"/>
+		<activity ns0:name="com.hb.av.PA"/>
+		<activity ns0:name="com.hb.av.DA"/>
+		<activity ns0:name="com.hb.av.PASI0" ns0:launchMode="3"/>
+		<activity ns0:name="com.hb.av.PASTA0" ns0:launchMode="2"/>
+		<activity ns0:name="com.hb.av.PASTO0" ns0:launchMode="1"/>
+		<activity ns0:name="com.hb.av.PASI1" ns0:launchMode="3"/>
+		<activity ns0:name="com.hb.av.PASTA1" ns0:launchMode="2"/>
+		<activity ns0:name="com.hb.av.PASTO1" ns0:launchMode="1"/>
+		<activity ns0:name="com.hb.av.PASI2" ns0:launchMode="3"/>
+		<activity ns0:name="com.hb.av.PASTA2" ns0:launchMode="2"/>
+		<activity ns0:name="com.hb.av.PASTO2" ns0:launchMode="1"/>
+		<activity ns0:name="com.hb.av.PASI3" ns0:launchMode="3"/>
+		<activity ns0:name="com.hb.av.PASTA3" ns0:launchMode="2"/>
+		<activity ns0:name="com.hb.av.PASTO3" ns0:launchMode="1"/>
+		<service ns0:name="com.hb.sv.PS1" ns0:exported="false"/>
+		<service ns0:name="com.hb.sv.PS2" ns0:exported="false"/>
+		<service ns0:name="com.hb.sv.PS3" ns0:exported="false"/>
+		<service ns0:name="com.hb.sv.PS0" ns0:exported="false"/>
+		<service ns0:name="com.hb.sv.DS" ns0:exported="false"/>
+		<activity ns0:name="com.filemanager.promotion.ImageAnalysisDetailListActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.filemanager.promotion.ImageAnalysisActivity" ns0:exported="true" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100214" ns0:label="" ns0:icon="@7F08046D" ns0:name="org.dione.magneto.activity.MagnetoBaseActivity" ns0:taskAffinity="org.dione.magneto" ns0:multiprocess="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:noHistory="true"/>
+		<meta-data ns0:name="android.support.VERSION" ns0:value="26.1.0"/>
+		<meta-data ns0:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" ns0:value="GlideModule"/>
+		<activity ns0:theme="@android:0103000E" ns0:name="com.tools.athene.loading.LoadingActivity" ns0:taskAffinity="" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:name="com.tools.athene.MonitorReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_ADDED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REMOVED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="org.dper.api.DispatchActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="xapplink" ns0:host="com.hefe.pro.editor"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="org.yiga.support.v4.service.MigrateServiceZC" ns0:exported="true" ns0:process="com.hefe.pro.editor"/>
+	</application>
+</manifest>

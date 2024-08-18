@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="12" ns0:versionName="12.0" ns0:compileSdkVersion="28" ns0:compileSdkVersionCodename="9" package="com.Remix.editor" platformBuildVersionCode="28" platformBuildVersionName="9">
+	<uses-sdk ns0:minSdkVersion="16" ns0:targetSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<supports-screens ns0:smallScreens="false" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.BROADCAST_STICKY"/>
+	<uses-permission ns0:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F12008E" ns0:label="@7F110038" ns0:icon="@7F0F0000" ns0:name="zoozy.it.panoroma.save.picmix.libover.MainApplication" ns0:allowBackup="true" ns0:supportsRtl="true" ns0:resizeableActivity="false" ns0:roundIcon="@7F0F0000" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity ns0:theme="@7F12008F" ns0:name="com.Remix.editor.DisplayActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F110038" ns0:name="zoozy.it.panoroma.save.picmix.app.StartActivity" ns0:screenOrientation="1"/>
+		<activity ns0:label="@7F110038" ns0:name="zoozy.it.panoroma.save.picmix.app.SaveActivity" ns0:screenOrientation="1"/>
+		<activity ns0:label="@7F110177" ns0:name="zoozy.it.panoroma.save.picmix.app.PrivacyPolicy" ns0:screenOrientation="1"/>
+		<provider ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsProvider" ns0:exported="false" ns0:authorities="com.Remix.editor.CdsProvider"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="@7F110142" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150002"/>
+		</provider>
+		<activity ns0:theme="@7F12001E" ns0:name="com.adobe.creativesdk.aviary.AdobeImageEditorActivity" ns0:finishOnTaskLaunch="true" ns0:screenOrientation="-1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="https"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="http"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsService" ns0:exported="false" ns0:process=":editor">
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.CDS_VERIFY_SUBSCRIPTIONS"/>
+				<action ns0:name="aviary.intent.action.CDS_DOWNLOAD_START"/>
+				<action ns0:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS"/>
+				<action ns0:name="aviary.intent.action.CDS_RESTORE_OWNED_PACKS"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsAssetsDownloaderService" ns0:exported="false" ns0:process=":editor">
+			<intent-filter>
+				<action ns0:name="aviary.intent.action.CDS_DOWNLOAD_EXTRA_ASSETS"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.adobe.creativesdk.aviary.internal.cds.CdsReceiver" ns0:permission="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" ns0:exported="true" ns0:process=":editor">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+				<action ns0:name="android.net.wifi.STATE_CHANGE"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+				<action ns0:name="aviary.android.cds.intent.action.ACTION_NOTIFICATION_DISMISS"/>
+				<action ns0:name="aviary.android.cds.intent.action.ACTION_DOWNLOAD_COMPLETE_DELAYED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F120017" ns0:label="@7F11002B" ns0:name="com.adobe.creativesdk.foundation.internal.auth.AdobeAuthSignInActivity" ns0:exported="false" ns0:taskAffinity="" ns0:multiprocess="true" ns0:excludeFromRecents="true" ns0:windowSoftInputMode="0x00000031"/>
+		<service ns0:name="com.adobe.creativesdk.aviary.internal.account.AdobeBillingContentService" ns0:enabled="true" ns0:exported="false" ns0:process=":editor"/>
+		<activity ns0:theme="@7F120017" ns0:label="@7F11002B" ns0:name="com.adobe.creativesdk.foundation.internal.auth.AdobeAuthContinuableEventActivity" ns0:exported="false" ns0:multiprocess="true" ns0:launchMode="3" ns0:windowSoftInputMode="0x00000031"/>
+		<activity ns0:name="com.adobe.creativesdk.foundation.internal.base.AdobeTOUHandlerActivity"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.internal.ipc.RemoteANActivity" ns0:exported="false" ns0:process=":adnw" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService" ns0:exported="false"/>
+		<service ns0:name="com.facebook.ads.internal.ipc.AdsMessengerService" ns0:exported="false" ns0:process=":adnw"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.Remix.editor.AudienceNetworkContentProvider"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.services.ads.adunit.AdUnitActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.Remix.editor.firebaseinitprovider" ns0:initOrder="100"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0021"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

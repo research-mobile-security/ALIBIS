@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2007" ns0:versionName="3.2.5" ns0:installLocation="1" package="com.xvideostudio.vcamera">
+	<uses-sdk ns0:minSdkVersion="18" ns0:targetSdkVersion="26"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_VIDEO"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.telephony" ns0:required="false"/>
+	<application ns0:theme="@7F10000E" ns0:label="@7F0F003D" ns0:icon="@7F0D0000" ns0:name="com.xvideostudio.videoeditor.VideoEditorApplication" ns0:allowBackup="true" ns0:largeHeap="true">
+		<meta-data ns0:name="UMENG_APPKEY" ns0:value="589c27bd04e2050f0c00186b"/>
+		<meta-data ns0:name="UMENG_CHANNEL" ns0:value="BAIDU_APPSEARCH"/>
+		<activity ns0:theme="@7F100002" ns0:label="@7F0F003D" ns0:name="com.xvideostudio.album.activity.AlbumActivity" ns0:exported="true" ns0:configChanges="0x000004A0" ns0:description="@7F0F003D"/>
+		<activity ns0:theme="@7F100002" ns0:name="com.xvideostudio.album.activity.ImageDetailActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:label="举报" ns0:name="com.xvideostudio.videoeditor.activity.UserReportActivity" ns0:screenOrientation="1" ns0:configChanges="0x000020A4"/>
+		<service ns0:name="com.xvideostudio.album.service.FileScanService" ns0:exported="false" ns0:process=":service1">
+			<intent-filter>
+				<action ns0:name="com.xvideostudio.album.service.FileScanService"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.xvideostudio.album.service.FileScanServiceProtect" ns0:exported="false" ns0:process=":service2"/>
+		<receiver ns0:name="com.xvideostudio.album.receiver.BootCompleteReceiver">
+			<intent-filter ns0:priority="1000">
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:label="FacebookActivity" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F100010" ns0:name="com.xvideostudio.videoeditor.activity.HomeActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:label="Moment Highlight全屏预览页面" ns0:name="com.xvideostudio.album.activity.MomentHighlightActivity" ns0:screenOrientation="4" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F100013" ns0:label="@7F0F003D" ns0:name="com.xvideostudio.videoeditor.activity.SplashActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:alwaysRetainTaskState="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.xvideostudio.videoeditor.activity.MaterialMusicActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:name="com.xvideostudio.videoeditor.activity.MaterialMusicAllTagActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:label="功能介绍引导" ns0:name="com.xvideostudio.videoeditor.activity.FuncGuideActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:label="背景音乐" ns0:name="com.xvideostudio.videoeditor.activity.MusicActivityNew" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:label="Vip Buy" ns0:name="com.xvideostudio.videoeditor.activity.MySelfAdsActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:label="设置" ns0:name="com.xvideostudio.videoeditor.activity.SettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x000020A4"/>
+		<activity ns0:label="Vip Buy" ns0:name="com.xvideostudio.videoeditor.activity.MaterialPlayOrAdActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:label="@7F0F003D" ns0:name="com.xvideostudio.videoeditor.activity.CreateShortcutActivity" ns0:screenOrientation="1" ns0:configChanges="0x000020A4">
+			<intent-filter>
+				<action ns0:name="android.intent.action.CREATE_SHORTCUT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="相册扫描推送打开跳转主编辑界面" ns0:name="com.xvideostudio.videoeditor.activity.FileScanNotificationOpenActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:label="设置-隐私政策" ns0:name="com.xvideostudio.videoeditor.activity.SettingTermsPrivacyActivity" ns0:screenOrientation="1" ns0:configChanges="0x000020A4"/>
+		<activity ns0:label="素材Category" ns0:name="com.xvideostudio.videoeditor.activity.MaterialCategoryActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:label="素材-设置" ns0:name="com.xvideostudio.videoeditor.activity.MaterialCategorySettingActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:label="设置-用户协议" ns0:name="com.xvideostudio.videoeditor.activity.SettingUserAgreementActivity" ns0:screenOrientation="1" ns0:configChanges="0x000020A4"/>
+		<service ns0:name="com.xvideostudio.videoeditor.materialdownload.FileDownloaderService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.xvideostudio.videoeditor.materialdownload.FileDownloaderService"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.xvideostudio.videoeditor.music.PlayService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.xvideostudio.videoeditor.music.PlayService"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.xvideostudio.videoeditor.activity.AudioService"/>
+		<service ns0:name="com.xvideostudio.videoeditor.service.AudioClipService"/>
+		<service ns0:name="com.xvideostudio.videoeditor.service.VoiceClipService"/>
+		<service ns0:name="com.xvideostudio.videoeditor.service.FxSoundService"/>
+		<service ns0:name="com.xvideostudio.videoeditor.service.CaptureAudioService"/>
+		<activity ns0:theme="@7F10000F" ns0:label="@7F0F003D" ns0:name="com.xvideostudio.videoeditor.activity.CameraActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="com.facebook.orca.category.PLATFORM_THREAD_20150311"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="com.facebook.orca.category.PLATFORM_THREAD_20150314"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.xvideostudio.videoeditor.service.AdsService"/>
+		<receiver ns0:name="com.xvideostudio.videoeditor.receiver.AppInstallReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_ADDED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.xvideostudio.vcamera.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130001"/>
+		</provider>
+	</application>
+</manifest>

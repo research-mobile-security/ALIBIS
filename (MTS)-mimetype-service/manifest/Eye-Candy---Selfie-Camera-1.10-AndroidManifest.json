@@ -1,0 +1,331 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "11",
+    "@ns0:versionName": "1.10",
+    "@ns0:installLocation": "0",
+    "@package": "com.gamma.eyecandy",
+    "@platformBuildVersionCode": "23",
+    "@platformBuildVersionName": "6.0-2704002",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "16",
+      "@ns0:targetSdkVersion": "22"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.BROADCAST_STICKY"
+      },
+      {
+        "@ns0:name": "android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS"
+      }
+    ],
+    "uses-feature": {
+      "@ns0:name": "android.hardware.camera"
+    },
+    "supports-screens": {
+      "@ns0:smallScreens": "false",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "application": {
+      "@ns0:theme": "@7F0D010D",
+      "@ns0:label": "@7F0A0135",
+      "@ns0:icon": "@7F030000",
+      "@ns0:name": "com.gam.App",
+      "@ns0:allowBackup": "true",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "activity": [
+        {
+          "@ns0:label": "@7F0A0135",
+          "@ns0:name": "net.cammapi.gammcamera.MainActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F0A022F",
+          "@ns0:icon": "@7F030000",
+          "@ns0:name": "net.cammapi.gammcamera.TakePhoto",
+          "@ns0:taskAffinity": "",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.gam.activity.ImageProcessActivity",
+          "@ns0:screenOrientation": "1",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.gam.activity.AlbumActivity"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@7F0D0198",
+          "@ns0:name": "com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+        },
+        {
+          "@ns0:theme": "@7F0D00BD",
+          "@ns0:label": "@7F0A010E",
+          "@ns0:name": "com.adobe.creativesdk.foundation.internal.auth.AdobeAuthSignInActivity",
+          "@ns0:exported": "false",
+          "@ns0:taskAffinity": "",
+          "@ns0:multiprocess": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:windowSoftInputMode": "0x00000031"
+        },
+        {
+          "@ns0:theme": "@7F0D00C2",
+          "@ns0:name": "com.adobe.creativesdk.aviary.AdobeImageEditorActivity",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "aviary.intent.action.EDIT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "aviary.intent.action.EDIT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "aviary.intent.action.EDIT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:label": "@7F0A0135",
+          "@ns0:icon": "@7F030000",
+          "@ns0:name": "net.cammapi.gammcamera.MyWidgetProvider",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F080002"
+          }
+        },
+        {
+          "@ns0:label": "@7F0A022F",
+          "@ns0:icon": "@7F030000",
+          "@ns0:name": "net.cammapi.gammcamera.MyWidgetProviderTakePhoto",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F080003"
+          }
+        },
+        {
+          "@ns0:name": "com.adobe.creativesdk.aviary.internal.cds.CdsReceiver",
+          "@ns0:permission": "android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS",
+          "@ns0:exported": "true",
+          "@ns0:process": ":cds",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.DOWNLOAD_COMPLETE"
+              },
+              {
+                "@ns0:name": "android.net.wifi.STATE_CHANGE"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+              },
+              {
+                "@ns0:name": "android.intent.action.MY_PACKAGE_REPLACED"
+              },
+              {
+                "@ns0:name": "aviary.android.cds.intent.action.ACTION_NOTIFICATION_DISMISS"
+              }
+            ]
+          }
+        }
+      ],
+      "provider": {
+        "@ns0:name": "com.adobe.creativesdk.aviary.internal.cds.CdsProvider",
+        "@ns0:exported": "false",
+        "@ns0:authorities": "com.gamma.eyecandy.CdsProvider"
+      },
+      "meta-data": {
+        "@ns0:name": "com.google.android.gms.version",
+        "@ns0:value": "@7F0E001F"
+      },
+      "service": [
+        {
+          "@ns0:name": "com.adobe.creativesdk.aviary.internal.cds.CdsService",
+          "@ns0:exported": "false",
+          "@ns0:process": ":cds",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "aviary.intent.action.CDS_VERIFY_SUBSCRIPTIONS"
+              },
+              {
+                "@ns0:name": "aviary.intent.action.CDS_DOWNLOAD_START"
+              },
+              {
+                "@ns0:name": "aviary.intent.action.CDS_RESTORE_USER_ITEMS"
+              },
+              {
+                "@ns0:name": "aviary.intent.action.CDS_RESTORE_OWNED_PACKS"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.adobe.creativesdk.aviary.internal.cds.CdsAssetsDownloaderService",
+          "@ns0:exported": "false",
+          "@ns0:process": ":cds",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "aviary.intent.action.CDS_DOWNLOAD_EXTRA_ASSETS"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.adobe.creativesdk.aviary.AdobeImageBillingService",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "aviary.intent.action.AVIARY_CONTENT_MANAGER"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "5",
+    "@ns0:versionName": "2.1.5",
+    "@package": "chumob.photo.effect.selfie",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "16",
+      "@ns0:targetSdkVersion": "26"
+    },
+    "uses-feature": {
+      "@ns0:name": "android.hardware.camera",
+      "@ns0:required": "false"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER"
+      },
+      {
+        "@ns0:name": "android.permission.BROADCAST_STICKY"
+      },
+      {
+        "@ns0:name": "android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS"
+      }
+    ],
+    "supports-screens": {
+      "@ns0:smallScreens": "false",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "meta-data": {
+      "@ns0:name": "android.support.VERSION",
+      "@ns0:value": "25.3.0"
+    },
+    "application": {
+      "@ns0:theme": "@7F11008A",
+      "@ns0:label": "@7F100038",
+      "@ns0:icon": "@7F0E0023",
+      "@ns0:name": "chumob.photo.editor.MainApplication",
+      "@ns0:allowBackup": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "meta-data": {
+        "@ns0:name": "com.google.android.gms.version",
+        "@ns0:value": "@7F0B0025"
+      },
+      "activity": [
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@7F1101B6",
+          "@ns0:label": "@7F100038",
+          "@ns0:name": "chumob.photo.editor.activities.SplashActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1101AE",
+          "@ns0:label": "@7F100038",
+          "@ns0:name": "chumob.photo.editor.activities.MainActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "photo.blender"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "chu.camera"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.PhotoEditorActivity",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.SEND"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "image/*"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:label": "@7F100038",
+          "@ns0:name": "chumob.photo.editor.activities.SelectionPhotoActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:label": "@7F100038",
+          "@ns0:name": "chumob.photo.editor.activities.SelectionBasicGridActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:label": "@7F100038",
+          "@ns0:name": "chumob.photo.editor.activities.SelectionNiceGirdActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:label": "@7F100038",
+          "@ns0:name": "chumob.photo.editor.activities.SelectionStickerActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:label": "@7F100038",
+          "@ns0:name": "chumob.photo.editor.activities.SelectionFrameActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:label": "@7F100038",
+          "@ns0:name": "chumob.photo.editor.activities.DownloadPhotoIPOnlineActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.PhotoDetailActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.SelectionPhotoPlusActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.PhotoAviaryActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.PhotoBlenderActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.PhotoCutEditorActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.PhotoInPhotoActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.PhotoSquareActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.PhotoModifierActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.SelectionPhotoCutActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F1101AD",
+          "@ns0:name": "chumob.photo.editor.activities.SelectionPhotoCollectionActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F11014A",
+          "@ns0:name": "chumob.photo.editor.activities.TemplatesActivity",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F11001C",
+          "@ns0:name": "com.adobe.creativesdk.aviary.AdobeImageEditorActivity",
+          "@ns0:finishOnTaskLaunch": "true",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "aviary.intent.action.EDIT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "aviary.intent.action.EDIT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "aviary.intent.action.EDIT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F110016",
+          "@ns0:label": "@7F10002E",
+          "@ns0:name": "com.adobe.creativesdk.foundation.internal.auth.AdobeAuthSignInActivity",
+          "@ns0:exported": "false",
+          "@ns0:taskAffinity": "",
+          "@ns0:multiprocess": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:windowSoftInputMode": "0x00000031"
+        },
+        {
+          "@ns0:theme": "@7F110016",
+          "@ns0:label": "@7F10002E",
+          "@ns0:name": "com.adobe.creativesdk.foundation.internal.auth.AdobeAuthContinuableEventActivity",
+          "@ns0:exported": "false",
+          "@ns0:multiprocess": "true",
+          "@ns0:launchMode": "3",
+          "@ns0:windowSoftInputMode": "0x00000031"
+        },
+        {
+          "@ns0:name": "com.adobe.creativesdk.foundation.internal.base.AdobeTOUHandlerActivity"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.adobe.creativesdk.aviary.internal.cds.CdsService",
+          "@ns0:exported": "false",
+          "@ns0:process": ":editor",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "aviary.intent.action.CDS_VERIFY_SUBSCRIPTIONS"
+              },
+              {
+                "@ns0:name": "aviary.intent.action.CDS_DOWNLOAD_START"
+              },
+              {
+                "@ns0:name": "aviary.intent.action.CDS_RESTORE_USER_ITEMS"
+              },
+              {
+                "@ns0:name": "aviary.intent.action.CDS_RESTORE_OWNED_PACKS"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.adobe.creativesdk.aviary.internal.cds.CdsAssetsDownloaderService",
+          "@ns0:exported": "false",
+          "@ns0:process": ":editor",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "aviary.intent.action.CDS_DOWNLOAD_EXTRA_ASSETS"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.adobe.creativesdk.aviary.internal.account.AdobeBillingContentService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "@ns0:process": ":editor"
+        }
+      ],
+      "receiver": {
+        "@ns0:name": "com.adobe.creativesdk.aviary.internal.cds.CdsReceiver",
+        "@ns0:permission": "android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS",
+        "@ns0:exported": "true",
+        "@ns0:process": ":editor",
+        "intent-filter": {
+          "action": [
+            {
+              "@ns0:name": "android.intent.action.DOWNLOAD_COMPLETE"
+            },
+            {
+              "@ns0:name": "android.net.wifi.STATE_CHANGE"
+            },
+            {
+              "@ns0:name": "android.intent.action.ACTION_POWER_CONNECTED"
+            },
+            {
+              "@ns0:name": "android.intent.action.ACTION_POWER_DISCONNECTED"
+            },
+            {
+              "@ns0:name": "android.intent.action.MY_PACKAGE_REPLACED"
+            },
+            {
+              "@ns0:name": "aviary.android.cds.intent.action.ACTION_NOTIFICATION_DISMISS"
+            },
+            {
+              "@ns0:name": "aviary.android.cds.intent.action.ACTION_DOWNLOAD_COMPLETE_DELAYED"
+            }
+          ]
+        }
+      },
+      "provider": {
+        "@ns0:name": "com.adobe.creativesdk.aviary.internal.cds.CdsProvider",
+        "@ns0:exported": "false",
+        "@ns0:authorities": "chumob.photo.effect.selfie.CdsProvider"
+      }
+    }
+  }
+}

@@ -1,0 +1,389 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="100023198" ns0:versionName="323" ns0:compileSdkVersion="32" ns0:compileSdkVersionCodename="12" package="com.vsco.cam" platformBuildVersionCode="32" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="23" ns0:targetSdkVersion="31"/>
+	<queries>
+		<package ns0:name="com.instagram.android"/>
+		<package ns0:name="com.snapchat.android"/>
+		<package ns0:name="com.twitter.android"/>
+		<package ns0:name="com.twitter.applib"/>
+		<package ns0:name="com.facebook.katana"/>
+		<package ns0:name="com.tencent.mm"/>
+		<package ns0:name="com.whatsapp"/>
+	</queries>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.INTERNET" ns0:required="true"/>
+	<uses-permission ns0:name="com.android.vending.BILLING" ns0:required="true"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-feature ns0:glEsVersion="0x00030000" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.raw" ns0:required="false"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<application ns0:theme="@7F140498" ns0:label="@7F130036" ns0:icon="@7F0F0000" ns0:name="com.vsco.cam.application.VscoCamApplication" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:extractNativeLibs="true" ns0:fullBackupContent="@7F160000" ns0:usesCleartextTraffic="true" ns0:roundIcon="@7F0F0002" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:allowNativeHeapPointerTagging="false" ns0:dataExtractionRules="@7F160001">
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.vsco.cam.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<activity ns0:name="com.vsco.cam.studio.detail.StudioDetailActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.spaces.SpacesSelectImageActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.spaces.bulkposting.captioning.MultiImageCaptioningActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.vsco.cam.exports.ExportActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<meta-data ns0:name="com.snapchat.kit.sdk.scopes" ns0:resource="@7F030001"/>
+		<meta-data ns0:name="com.snapchat.kit.sdk.redirectUrl" ns0:value="vscoauth://auth/snap"/>
+		<activity ns0:name="com.vsco.cam.onboarding.OnboardingNavActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.snapchat.kit.sdk.SnapKitActivity" ns0:exported="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="vscoauth" ns0:host="auth" ns0:path="/snap"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.vsco.cam.montage.stack.engine.export.MontageExportService" ns0:stopWithTask="false"/>
+		<activity ns0:name="com.vsco.cam.montage.MontageActivity" ns0:launchMode="1"/>
+		<activity ns0:name="com.vsco.cam.montage.media.MontageMediaSelectorActivity" ns0:launchMode="1"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.vsco.cam.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F160002"/>
+		</provider>
+		<meta-data ns0:name="WindowManagerPreference:FreeformWindowSize" ns0:value="maximize"/>
+		<meta-data ns0:name="android.allow_multiple_resumed_activities" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000D"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F1302B7"/>
+		<meta-data ns0:name="com.facebook.sdk.ClientToken" ns0:value="@7F1302B6"/>
+		<meta-data ns0:name="com.google.android.maps.v2.API_KEY" ns0:value="AIzaSyAw8quHypHzCdyUGMTkjR6RbB6-3tV9ATE"/>
+		<meta-data ns0:name="com.vsco.cam.utility.imagecache.glide.GlideConfiguration" ns0:value="GlideModule"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F08022F"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_color" ns0:resource="@7F06027F"/>
+		<meta-data ns0:name="com.snapchat.kit.sdk.clientId" ns0:value="@7F130763"/>
+		<meta-data ns0:name="google_analytics_adid_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="google_analytics_ssaid_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="google_analytics_default_allow_ad_personalization_signals" ns0:value="false"/>
+		<receiver ns0:name="com.vsco.cam.application.VscoAppInstallReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.vsco.cam.application.VscoAppUpdateReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.vsco.cam.notificationcenter.api.CheckNotificationService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.vsco.cam.video.export.ExportVideoIntentService" ns0:exported="false"/>
+		<service ns0:name="com.vsco.cam.puns.VscoFirebaseMessagingService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.vsco.cam.notificationcenter.api.CheckNotificationReceiver"/>
+		<receiver ns0:name="com.vsco.cam.utility.views.sharemenu.ShareIntentReceiver"/>
+		<activity ns0:theme="@7F1404AE" ns0:name="com.vsco.cam.navigation.LithiumActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<data ns0:scheme="vsco"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+			<intent-filter>
+				<data ns0:scheme="vsco" ns0:host="settings" ns0:pathPrefix="/subscription"/>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="vs.co"/>
+				<data ns0:scheme="https" ns0:host="vs.co"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="vsco.onelink.me"/>
+				<data ns0:scheme="https" ns0:host="vsco.onelink.me"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="false">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https" ns0:host="app.appsflyer.com" ns0:pathPrefix="/com.vsco.cam.debug"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="vsco.co"/>
+				<data ns0:scheme="https" ns0:host="vsco.co"/>
+				<data ns0:scheme="http" ns0:host="www.vsco.co"/>
+				<data ns0:scheme="https" ns0:host="www.vsco.co"/>
+				<data ns0:scheme="http" ns0:host="vscostaging.com"/>
+				<data ns0:scheme="https" ns0:host="vscostaging.com"/>
+				<data ns0:scheme="http" ns0:host="www.vscostaging.com"/>
+				<data ns0:scheme="https" ns0:host="www.vscostaging.com"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F160005"/>
+		</activity>
+		<activity ns0:name="com.vsco.cam.account.changepassword.ChangePasswordActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:label="@7F1308E0" ns0:name="com.vsco.cam.account.changeusername.ChangeUsernameActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.account.GridEditCaptionActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000014"/>
+		<activity ns0:theme="@7F1401A9" ns0:name="com.vsco.cam.editimage.EditImageActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.vsco.cam.globalmenu.settings.SettingsWebViewActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.settings.data.SettingsPerformanceActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.globalmenu.about.AboutActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.settings.licensing.SettingsLicensingActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:name="com.vsco.cam.globalmenu.support.SupportActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.globalmenu.security.SecurityActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.globalmenu.security.SettingsPrivacy2Activity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.globalmenu.security.SettingsPrivacyMessagesActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.settings.appearance.SettingsAppearanceActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.settings.preferences.SettingsPreferencesActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.settings.social.SettingsSocialActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<activity ns0:theme="@7F1401A9" ns0:name="com.vsco.cam.camera.CameraActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.vsco.cam.widget.CAMERA_WIDGET_ACTION"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.vsco.cam.account.reportcontent.ReportContentActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.education.EducationActivity" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.settings.debug.SettingsDebugActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.vrd.debug.CoreAVTestActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.article.imagedetail.ArticleImageDetailActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.article.webview.WebViewActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.globalmenu.settings.SettingsActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.account.editprofile.EditProfileActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1403C9" ns0:name="com.vsco.cam.subscription.upsell.SubscriptionUpsellEntryHandler" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1403C9" ns0:name="com.vsco.cam.subscription.upsell.PaywallActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.subscription.upsell.CellPaywallActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.subscription.entitlement.SubscriptionEntitlementFeedActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.subscription.success.SubscriptionSuccessActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.subscription.admin.SubscriptionAdminActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.subscription.update.SubscriptionMessageActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1401A9" ns0:name="com.vsco.cam.editimage.management.EditManagementActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1401A9" ns0:name="com.vsco.cam.video.edit.EditVideoActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.vsco.cam.imports.ImportActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000D80"/>
+		<activity ns0:name="com.vsco.cam.nux.debug.experiments.SettingsDebugExperimentsActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.homework.submitted.HomeworkSubmittedActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.homework.selectimage.DiscoverPromptSelectImageActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.edit.EditDeepLinkActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.settings.data.DebugDataActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1404AE" ns0:name="com.vsco.cam.automationmode.AutomationModeActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.debug.TusActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.debug.ReportProblemActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000014"/>
+		<activity ns0:name="com.vsco.cam.settings.debug.PocListActivity"/>
+		<activity ns0:name="com.vsco.cam.designsystem.DesignSystemGalleryActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.magicwand.MagicWandPrototypeActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.magicwand.MagicWandPrototypeSelectorActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F14049A" ns0:label="@7F130036" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F1302BE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.vsco.cam"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.vsco.cam.error.BlockingErrorActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1401A9" ns0:name="com.vsco.cam.camera2.Camera2Activity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@7F1401A9" ns0:name="com.vsco.cam.camera2.postcapture.PostCaptureActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.navigation.utils.FragmentWrapperActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.navigation.utils.DarkFragmentWrapperActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.vsco.cam.navigation.utils.LightFragmentWrapperActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.google.firebase.ml.vision.DEPENDENCIES" ns0:value="barcode,face"/>
+		<activity ns0:name="com.vsco.ml.test.MLTestActivity" ns0:hardwareAccelerated="false"/>
+		<activity ns0:name="com.appboy.ui.AppboyWebViewActivity" ns0:exported="false"/>
+		<activity ns0:name="com.braze.ui.BrazeWebViewActivity" ns0:exported="false"/>
+		<activity ns0:name="com.appboy.ui.activities.AppboyFeedActivity" ns0:exported="false"/>
+		<activity ns0:name="com.appboy.ui.activities.AppboyContentCardsActivity" ns0:exported="false"/>
+		<activity ns0:name="com.braze.ui.activities.ContentCardsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F14018A" ns0:name="com.braze.push.NotificationTrampolineActivity" ns0:exported="false" ns0:launchMode="3"/>
+		<receiver ns0:name="com.braze.push.BrazePushReceiver" ns0:exported="false"/>
+		<receiver ns0:name="com.braze.receivers.BrazeActionReceiver" ns0:exported="false"/>
+		<activity ns0:theme="@7F14023E" ns0:label="" ns0:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.perf.provider.FirebasePerfProvider" ns0:exported="false" ns0:authorities="com.vsco.cam.firebaseperfprovider" ns0:initOrder="101"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.GenericIdpActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="genericidp" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.RecaptchaActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="recaptcha" ns0:host="firebase.auth" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.auth.api.gms.service.START"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="20000"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F140393" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.vsco.cam.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.vsco.cam.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<receiver ns0:name="com.snapchat.kit.sdk.creative.internal.SnapCreativeShareResultHandler" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.snapchat.kit.sdk.SnapKitInitProvider" ns0:exported="false" ns0:authorities="com.vsco.cam.SnapKitInitProvider"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050006" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" ns0:value="GlideModule"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F16000B"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

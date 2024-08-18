@@ -1,0 +1,165 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "30",
+    "@ns0:versionName": "0.3.10",
+    "@ns0:installLocation": "0",
+    "@package": "com.littlefatfish.photo",
+    "application": {
+      "@ns0:label": "@7F090001",
+      "@ns0:icon": "@7F02002A",
+      "@ns0:name": "com.littlefatfish.photo.PhotoApplication",
+      "@ns0:allowBackup": "false",
+      "@ns0:hardwareAccelerated": "true",
+      "activity": [
+        {
+          "@ns0:theme": "@7F0B0011",
+          "@ns0:label": "@7F090001",
+          "@ns0:name": "com.littlefatfish.lib.viewer.ViewPhotoList",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.GET_CONTENT"
+                },
+                {
+                  "@ns0:name": "android.intent.action.PICK"
+                },
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.ALTERNATIVE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                }
+              ]
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "com.cooliris.media.action.REVIEW"
+                },
+                {
+                  "@ns0:name": "com.htc.HTCAlbum.action.ITEM_PICKER_FROM_COLLECTIONS"
+                }
+              ],
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SET_WALLPAPER"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F0B0012",
+          "@ns0:label": "@7F090001",
+          "@ns0:name": "com.littlefatfish.lib.viewer.ShowQuickStart"
+        },
+        {
+          "@ns0:theme": "@7F0B0012",
+          "@ns0:label": "@7F090002",
+          "@ns0:name": "com.littlefatfish.lib.fileviewer.ViewDirectories"
+        },
+        {
+          "@ns0:theme": "@7F0B0012",
+          "@ns0:label": "@7F090002",
+          "@ns0:name": "com.littlefatfish.lib.fileviewer.ShowMediaFinderHelp"
+        },
+        {
+          "@ns0:theme": "@7F0B0014",
+          "@ns0:label": "@7F090001",
+          "@ns0:name": "com.littlefatfish.lib.viewer.EditPreferences"
+        },
+        {
+          "@ns0:theme": "@7F0B0013",
+          "@ns0:label": "@7F090001",
+          "@ns0:name": "com.littlefatfish.lib.edit.CropImage",
+          "@ns0:configChanges": "0x000000A0",
+          "@ns0:hardwareAccelerated": "false"
+        },
+        {
+          "@ns0:theme": "@7F0B0012",
+          "@ns0:label": "@7F090003",
+          "@ns0:name": "com.littlefatfish.lib.locker.LockerSetup",
+          "@ns0:windowSoftInputMode": "0x00000022"
+        }
+      ]
+    },
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "7",
+      "@ns0:targetSdkVersion": "15"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER"
+      }
+    ],
+    "uses-feature": {
+      "@ns0:name": "android.hardware.touchscreen"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "8",
+    "@ns0:versionName": "8.0-180418",
+    "@ns0:installLocation": "1",
+    "@package": "com.saubers.privatecam",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "8",
+      "@ns0:targetSdkVersion": "19"
+    },
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      }
+    ],
+    "application": {
+      "@ns0:label": "PrivateCam",
+      "@ns0:icon": "@7F020000",
+      "@ns0:largeHeap": "true",
+      "activity": {
+        "@ns0:label": "PrivateCam",
+        "@ns0:name": ".main",
+        "@ns0:launchMode": "1",
+        "@ns0:screenOrientation": "-1",
+        "@ns0:windowSoftInputMode": "0x00000002",
+        "intent-filter": {
+          "action": {
+            "@ns0:name": "android.intent.action.MAIN"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.LAUNCHER"
+          }
+        }
+      }
+    }
+  }
+}

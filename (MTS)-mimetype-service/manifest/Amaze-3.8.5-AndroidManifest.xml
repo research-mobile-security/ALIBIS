@@ -1,0 +1,181 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="118" ns0:versionName="3.8.5" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.amaze.filemanager" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="14" ns0:targetSdkVersion="31"/>
+	<permission ns0:name="com.amaze.filemanager.permission.CONTROL_FTP_SERVER" ns0:protectionLevel="0x00000001"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="com.amaze.cloud.permission.ACCESS_PROVIDER"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<uses-feature ns0:name="android.software.leanback" ns0:required="false"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<application ns0:label="@7F110038" ns0:icon="@7F0E0000" ns0:name="com.amaze.filemanager.application.AppConfig" ns0:allowBackup="true" ns0:banner="@7F080055" ns0:roundIcon="@7F0E0001" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:theme="@7F120315" ns0:label="@7F110038" ns0:name="com.amaze.filemanager.ui.activities.MainActivity" ns0:exported="true" ns0:launchMode="3" ns0:configChanges="0x00000200">
+			<intent-filter ns0:label="@7F110038">
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.LEANBACK_LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<data ns0:mimeType="*/*"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.RINGTONE_PICKER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="application/zip"/>
+				<data ns0:mimeType="application/rar"/>
+				<data ns0:mimeType="application/x-gzip"/>
+				<data ns0:mimeType="application/x-rar-compressed"/>
+				<data ns0:mimeType="application/x-bzip2"/>
+				<data ns0:mimeType="application/x-xz"/>
+				<data ns0:mimeType="application/x-7z-compressed"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="com.amaze.filemanager"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F110C72">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="teamamaze.xyz" ns0:pathPrefix="/open_file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="resource/folder"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F1102A1">
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F140008"/>
+		</activity>
+		<activity ns0:theme="@7F120315" ns0:label="@7F110CF2" ns0:name="com.amaze.filemanager.ui.activities.PreferencesActivity" ns0:exported="true" ns0:configChanges="0x00000680" ns0:uiOptions="0x00000001">
+			<intent-filter>
+				<action ns0:name="android.intent.action.APPLICATION_PREFERENCES"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120315" ns0:label="@7F110D36" ns0:name="com.amaze.filemanager.ui.activities.texteditor.TextEditorActivity" ns0:exported="true" ns0:configChanges="0x00000200">
+			<intent-filter ns0:label="Amaze Text Editor">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*"/>
+				<data ns0:mimeType="application/javascript"/>
+				<data ns0:mimeType="application/json"/>
+				<data ns0:mimeType="application/xml"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120315" ns0:label="@7F1100E1" ns0:name="com.amaze.filemanager.ui.activities.DatabaseViewerActivity" ns0:exported="true" ns0:screenOrientation="14" ns0:configChanges="0x00000200">
+			<intent-filter ns0:label="Amaze Database Reader">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="db/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120311" ns0:label="About" ns0:name="com.amaze.filemanager.ui.activities.AboutActivity" ns0:configChanges="0x00000200"/>
+		<activity ns0:theme="@7F120315" ns0:label="Error" ns0:name="com.amaze.filemanager.crashreport.ErrorActivity" ns0:configChanges="0x00000200"/>
+		<activity ns0:theme="@7F1200EE" ns0:name="com.amaze.filemanager.ui.activities.UtilitiesAliasActivity" ns0:exported="true" ns0:excludeFromRecents="true"/>
+		<activity-alias ns0:name="com.amaze.filemanager.amazeutilsalias" ns0:enabled="true" ns0:exported="true" ns0:targetActivity="com.amaze.filemanager.ui.activities.UtilitiesAliasActivity">
+			<intent-filter ns0:label="@7F11002A">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="audio/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F110D5D">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="video/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F110298">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F1101E5">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F110C8D">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="application/pdf"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F110207">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="application/epub+zip"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+			</intent-filter>
+		</activity-alias>
+		<service ns0:label="Extracting" ns0:name="com.amaze.filemanager.asynchronous.services.ExtractService"/>
+		<service ns0:label="Compressing" ns0:name="com.amaze.filemanager.asynchronous.services.ZipService"/>
+		<service ns0:label="Copying" ns0:name="com.amaze.filemanager.asynchronous.services.CopyService"/>
+		<service ns0:label="@7F1100D0" ns0:name="com.amaze.filemanager.asynchronous.services.EncryptService"/>
+		<service ns0:label="@7F1100CB" ns0:name="com.amaze.filemanager.asynchronous.services.DecryptService"/>
+		<service ns0:name="com.amaze.filemanager.asynchronous.services.ftp.FtpService" ns0:permission="com.amaze.filemanager.permission.CONTROL_FTP_SERVER" ns0:enabled="true" ns0:exported="true"/>
+		<service ns0:label="@7F11024B" ns0:icon="@7F0800C3" ns0:name="com.amaze.filemanager.asynchronous.services.ftp.FtpTileService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.amaze.filemanager.asynchronous.services.ftp.FtpReceiver" ns0:permission="com.amaze.filemanager.permission.CONTROL_FTP_SERVER" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.ACTION_START_FTPSERVER"/>
+				<action ns0:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.ACTION_STOP_FTPSERVER"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.amaze.filemanager" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140005"/>
+		</provider>
+		<activity ns0:name="com.mikepenz.aboutlibraries.ui.LibsActivity"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="org.acra.sender.LegacySenderService" ns0:enabled="@7F050003" ns0:exported="false" ns0:process=":acra"/>
+		<service ns0:name="org.acra.sender.JobSenderService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050002" ns0:exported="false" ns0:process=":acra"/>
+		<provider ns0:name="org.acra.attachment.AcraContentProvider" ns0:exported="false" ns0:process=":acra" ns0:authorities="com.amaze.filemanager.acra" ns0:grantUriPermissions="true"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.cloudrail.si.servicecode.commands.awaitCodeRedirect.AuthenticationActivity"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.amaze.filemanager.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F14000F"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="7"/>
+	</application>
+</manifest>

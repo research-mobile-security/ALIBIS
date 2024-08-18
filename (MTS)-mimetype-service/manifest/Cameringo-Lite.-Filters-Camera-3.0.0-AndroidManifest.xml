@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="3000" ns0:versionName="3.0.0" ns0:installLocation="1" ns0:compileSdkVersion="32" ns0:compileSdkVersionCodename="12" package="com.perracolabs.cpd" platformBuildVersionCode="32" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="17" ns0:targetSdkVersion="32"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="28"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.screen.portrait" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.network" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.accelerometer" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.gyroscope" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.compass" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.rotation_vector" ns0:required="false"/>
+	<queries>
+		<package ns0:name="com.perracolabs.cp"/>
+		<package ns0:name="com.perracolabs.cpd"/>
+	</queries>
+	<application ns0:theme="@7F120228" ns0:label="@7F110025" ns0:icon="@7F080063" ns0:name="com.perracolabs.cameringo.CameringoApp" ns0:allowClearUserData="true" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:resizeableActivity="false" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity ns0:theme="@7F120228" ns0:name="com.perracolabs.cameringo.Main" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000003" ns0:hardwareAccelerated="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120209" ns0:name="app.gallery.GalleryActivity" ns0:exported="false" ns0:launchMode="0" ns0:screenOrientation="4" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F120208" ns0:name="app.gallery.video.PlayerVideoActivity" ns0:exported="false" ns0:launchMode="3" ns0:screenOrientation="4" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F1202D4" ns0:name="app.settings.config.ActivityConfig" ns0:exported="false" ns0:launchMode="3" ns0:screenOrientation="4" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F1202D4" ns0:name="app.settings.config.about.ActivityAbout" ns0:exported="false" ns0:launchMode="3" ns0:screenOrientation="4" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F1202D4" ns0:name="app.help_section.ActivityHelp" ns0:exported="false" ns0:launchMode="3" ns0:screenOrientation="4" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F1202D4" ns0:name="app.quality.ActivityQuality" ns0:exported="false" ns0:launchMode="3" ns0:screenOrientation="4" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F120228" ns0:name="com.perracolabs.cameringo.CrashHandlingActivity" ns0:exported="false" ns0:process=":ExceptionActivity" ns0:clearTaskOnLaunch="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000005B0" ns0:windowSoftInputMode="0x00000003" ns0:noHistory="true"/>
+		<provider ns0:name="app.storage.device.providers.MediaContentProvider" ns0:enabled="true" ns0:exported="true" ns0:authorities="com.perracolabs.cpd.provider" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.perracolabs.cpd.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+	</application>
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="6" ns0:versionName="1.5" ns0:installLocation="0" package="com.antafunny.burst.camera360" platformBuildVersionCode="24" platformBuildVersionName="7.000000">
+	<uses-sdk ns0:minSdkVersion="15" ns0:targetSdkVersion="24"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.microphone"/>
+	<application ns0:theme="@7F0A0002" ns0:label="@7F070025" ns0:icon="@7F030000" ns0:name="com.antafunny.burstcamera.MyApplication" ns0:allowBackup="true" ns0:largeHeap="true">
+		<activity ns0:label="@7F070025" ns0:name="com.antafunny.burstcamera.MenuActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			 &gt;
+
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F070025" ns0:name="com.antafunny.burstcamera.MainActivity" ns0:clearTaskOnLaunch="true" ns0:screenOrientation="0" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0C0000"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.gms.analytics.globalConfigResource" ns0:resource="@7F050000"/>
+		<receiver ns0:name="com.google.android.gms.analytics.AnalyticsReceiver" ns0:enabled="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.analytics.CampaignTrackingReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+		<activity ns0:label="@7F070103" ns0:icon="@7F020047" ns0:name="com.antafunny.burstcamera.TakePhoto" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:screenOrientation="0" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:label="@7F070025" ns0:icon="@7F030000" ns0:name="com.antafunny.burstcamera.MyWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F050002"/>
+		</receiver>
+		<receiver ns0:label="@7F070103" ns0:icon="@7F020047" ns0:name="com.antafunny.burstcamera.MyWidgetProviderTakePhoto">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F050003"/>
+		</receiver>
+		<service ns0:label="@7F070157" ns0:icon="@7F02004C" ns0:name="com.antafunny.burstcamera.MyTileService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F07017F" ns0:icon="@7F020053" ns0:name="com.antafunny.burstcamera.MyTileServiceVideo" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<service ns0:label="@7F070181" ns0:icon="@7F020044" ns0:name="com.antafunny.burstcamera.MyTileServiceFrontCamera" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F0A0004" ns0:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+	</application>
+</manifest>

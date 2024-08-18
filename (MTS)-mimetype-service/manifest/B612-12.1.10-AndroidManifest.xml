@@ -1,0 +1,427 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="91120110" ns0:versionName="12.1.10" ns0:installLocation="0" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.linecorp.b612.android" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="26" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="29"/>
+	<queries>
+		<package ns0:name="jp.naver.line.android"/>
+		<package ns0:name="jp.naver.linecamera.android"/>
+		<package ns0:name="com.kakao.talk"/>
+		<package ns0:name="com.instagram.android"/>
+		<package ns0:name="com.facebook.katana"/>
+		<package ns0:name="com.kakao.story"/>
+		<package ns0:name="com.twitter.android"/>
+		<package ns0:name="com.facebook.orca"/>
+		<package ns0:name="com.whatsapp"/>
+		<package ns0:name="com.kwai.video"/>
+		<package ns0:name="com.snowcorp.soda.android"/>
+		<package ns0:name="com.linecorp.foodcam.android"/>
+		<package ns0:name="com.snowcorp.epik"/>
+		<intent>
+			<action ns0:name="com.instagram.share.ADD_TO_STORY"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.facebook.stories.ADD_TO_STORY"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<package ns0:name="com.xiaomi.mipicks"/>
+		<package ns0:name="com.nhn.android.search"/>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<package ns0:name="com.android.chrome"/>
+		<intent>
+			<action ns0:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+		</intent>
+	</queries>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.accelerometer" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.telephony" ns0:required="false"/>
+	<uses-feature ns0:glEsVersion="0x00030000" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.screen.landscape" ns0:required="false"/>
+	<application ns0:theme="@7F13002B" ns0:label="B612" ns0:icon="@7F0F0000" ns0:name="com.linecorp.b612.android.B612Application" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:extractNativeLibs="true" ns0:fullBackupContent="@7F160000" ns0:usesCleartextTraffic="true" ns0:resizeableActivity="false" ns0:networkSecurityConfig="@7F160008" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.activity.scheme.SchemeActivity" ns0:exported="true" ns0:launchMode="3">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="com.linecorp.b612.android"/>
+				<data ns0:scheme="b612"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.linecorp.b612.android.push.firebase.GlobalFirebaseMessagingService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.sns.LineLinkActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.sns.NaverLinkActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.sns.GoogleLinkActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<receiver ns0:name="com.appsflyer.SingleInstallBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<uses-native-library ns0:name="libOpenCL.so" ns0:required="false"/>
+		<uses-native-library ns0:name="libOpenCL-car.so" ns0:required="false"/>
+		<uses-native-library ns0:name="libOpenCL-pixel.so" ns0:required="false"/>
+		<meta-data ns0:name="com.google.android.gms.ads.AD_MANAGER_APP" ns0:value="true"/>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.activity.activitymain.takemode.lenseditor.store.AssetStoreActivity" ns0:exported="false" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130032" ns0:name="com.linecorp.b612.android.activity.template.imageclip.ImageClipEditActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130032" ns0:name="com.linecorp.b612.android.activity.template.imageseg.ImageSegTemplateActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F130032" ns0:name="com.linecorp.b612.android.activity.template.videoclip.feature.gallery.ClipGalleryActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F130032" ns0:name="com.linecorp.b612.android.activity.template.videoclip.VideoClipEditActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@7F1301B0" ns0:label="B612" ns0:name="com.linecorp.b612.android.activity.ActivityCamera" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000005A0" ns0:windowSoftInputMode="0x00000033">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="android.intent.action.kajipush"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.samsung.android.support.REMOTE_ACTION"/>
+			</intent-filter>
+			<meta-data ns0:name="com.samsung.android.support.REMOTE_ACTION" ns0:resource="@7F160009"/>
+		</activity>
+		<activity ns0:theme="@7F13002F" ns0:label="@7F120101" ns0:name="com.linecorp.b612.android.activity.ActivityCameraEx" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13002F" ns0:name="com.linecorp.b612.android.activity.test.TestActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F13002F" ns0:label="@7F120101" ns0:name="com.linecorp.b612.android.activity.test.TestStickerCameraActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13002F" ns0:label="@7F120101" ns0:name="com.linecorp.b612.android.activity.test.TestTooltipActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13002F" ns0:label="@7F120101" ns0:name="com.linecorp.b612.android.activity.ActivityCameraForOtherApp" ns0:exported="true" ns0:taskAffinity="com.mycompany.mymainapp.ActivityCameraForOtherApp" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000005A0">
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="com.linecorp.b612.android"/>
+			</intent-filter>
+			<intent-filter ns0:maxSdkVersion="29">
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="com.linecorp.b612.android"/>
+			</intent-filter>
+			<intent-filter ns0:maxSdkVersion="29">
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="com.linecorp.b612.android"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130030" ns0:label="@7F120101" ns0:name="com.linecorp.b612.android.activity.ActivityEventCamera" ns0:exported="false" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000005A0">
+			<intent-filter>
+				<action ns0:name="com.campmobile.snowcamera.action.STUDIO_EVENT_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="com.linecorp.b612.android"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.setting.SettingsActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.setting.AccountSettingsActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.user.LoginActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.user.NameEditActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.user.BiographyEditActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000014"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.setting.AboutSettingsActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.setting.SaveRouteActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.setting.SetSaveRouteActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000012"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.setting.purchase.PurchasedSettingsActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.WebViewActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.InAppWebViewActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.AiModeActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.setting.OpenSourceActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F13002E" ns0:name="com.linecorp.b612.android.activity.gallery.GalleryActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000000A0">
+			<intent-filter>
+				<action ns0:name="com.campmobile.snowcamera.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.search.UgcSearchActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.discover.UgcDiscoverContentsDetailActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.favorite.UgcFavoritePreviewListActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.search.tag.UgcPostByTagPreviewListActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.collection.UgcCollectionActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130036" ns0:name="com.linecorp.b612.android.activity.setting.DebugActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000022"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F160001"/>
+		</provider>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.account.wxapi.WXEntryActivityBase" ns0:launchMode="2" ns0:windowSoftInputMode="0x00000010"/>
+		<activity-alias ns0:name="com.linecorp.b612.android.wxapi.WXEntryActivity" ns0:enabled="true" ns0:exported="true" ns0:targetActivity="com.linecorp.b612.android.account.wxapi.WXEntryActivityBase"/>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.account.wxapi.WXPayEntryActivityBase" ns0:launchMode="2" ns0:windowSoftInputMode="0x00000010"/>
+		<activity-alias ns0:name="com.linecorp.b612.android.wxapi.WXPayEntryActivity" ns0:enabled="true" ns0:exported="true" ns0:targetActivity="com.linecorp.b612.android.account.wxapi.WXPayEntryActivityBase"/>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.sns.QQLinkActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.tencent.tauth.AuthActivity" ns0:exported="true" ns0:launchMode="2" ns0:noHistory="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="tencent1105041261"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.tencent.connect.common.AssistActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.sns.WeiboLinkActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F130032" ns0:name="com.linecorp.b612.android.activity.edit.EditActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000033">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/x-adobe-dng"/>
+				<data ns0:mimeType="image/heic"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130032" ns0:name="com.linecorp.b612.android.kadain.ui.KadainActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.studio.detail.StudioContentsDetailActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130032" ns0:name="com.linecorp.b612.android.activity.edit.music.MusicEditActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.activitymain.takemode.lenseditor.seg.LensEditorPickImageActivity"/>
+		<activity ns0:theme="@7F130032" ns0:name="com.linecorp.b612.android.activity.edit.feature.stamp.shop.StampShopActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.mypage.UgcProfileActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.ugc.settings.UgcSettingsActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:theme="@7F130030" ns0:name="com.linecorp.b612.android.activity.LensEditorActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.activitymain.takemode.lenseditor.info.LensTitleEditActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.activitymain.takemode.lenseditor.info.hashtag.LensAddHashTagActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:theme="@7F130033" ns0:name="com.linecorp.b612.android.activity.facechanger.FaceChangerDetailActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000023"/>
+		<activity ns0:name="com.linecorp.b612.android.flutter.store.FlutterSchemeActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000023" ns0:hardwareAccelerated="true">
+			<meta-data ns0:name="io.flutter.embedding.android.SplashScreenDrawable" ns0:resource="@7F0600BD"/>
+			<meta-data ns0:name="io.flutter.embedding.android.NormalTheme" ns0:resource="@7F1301B1"/>
+		</activity>
+		<activity ns0:name="com.linecorp.b612.android.flutter.store.FlutterCoinActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000023" ns0:hardwareAccelerated="true">
+			<meta-data ns0:name="io.flutter.embedding.android.SplashScreenDrawable" ns0:resource="@7F0600BD"/>
+			<meta-data ns0:name="io.flutter.embedding.android.NormalTheme" ns0:resource="@7F1301B1"/>
+		</activity>
+		<activity ns0:name="com.linecorp.b612.android.flutter.ai.FlutterAiAvatarActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000023" ns0:hardwareAccelerated="true">
+			<meta-data ns0:name="io.flutter.embedding.android.SplashScreenDrawable" ns0:resource="@7F0600BD"/>
+			<meta-data ns0:name="io.flutter.embedding.android.NormalTheme" ns0:resource="@7F1301B1"/>
+		</activity>
+		<activity ns0:name="com.linecorp.b612.android.flutter.ai.FlutterAiStudioActivity" ns0:screenOrientation="1" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000023" ns0:hardwareAccelerated="true">
+			<meta-data ns0:name="io.flutter.embedding.android.SplashScreenDrawable" ns0:resource="@7F0600BD"/>
+			<meta-data ns0:name="io.flutter.embedding.android.NormalTheme" ns0:resource="@7F1301B1"/>
+		</activity>
+		<activity ns0:name="com.linecorp.b612.android.flutter.store.FlutterStoreActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000012">
+			<meta-data ns0:name="io.flutter.embedding.android.SplashScreenDrawable" ns0:resource="@7F0600BD"/>
+			<meta-data ns0:name="io.flutter.embedding.android.NormalTheme" ns0:resource="@7F1301B1"/>
+		</activity>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.sns.InstagramLinkActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F1204B1"/>
+		<meta-data ns0:name="com.facebook.sdk.ClientToken" ns0:value="@7F1204AF"/>
+		<provider ns0:name="com.facebook.FacebookContentProvider" ns0:exported="true" ns0:authorities="@7F1202A8"/>
+		<activity ns0:theme="@7F130037" ns0:name="com.linecorp.b612.android.sns.FacebookLinkActivity" ns0:windowSoftInputMode="0x00000010"/>
+		<receiver ns0:name="com.linecorp.b612.android.push.local.LocalPushReceiver"/>
+		<meta-data ns0:name="android.vivo_multidisplay_support" ns0:value="true"/>
+		<activity ns0:theme="@7F13002F" ns0:name="com.linecorp.linesdk.openchat.ui.CreateOpenChatActivity"/>
+		<activity ns0:theme="@7F130151" ns0:name="com.linecorp.linesdk.auth.internal.LineAuthenticationActivity" ns0:exported="false" ns0:launchMode="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.linecorp.linesdk.auth.internal.LineAuthenticationCallbackActivity" ns0:exported="true" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="lineauth"/>
+			</intent-filter>
+		</activity>
+		<uses-library ns0:name="android.test.runner" ns0:required="false"/>
+		<uses-library ns0:name="android.test.base" ns0:required="false"/>
+		<uses-library ns0:name="android.test.mock" ns0:required="false"/>
+		<provider ns0:name="com.naver.gfpsdk.GfpInitProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.GfpInitProvider"/>
+		<activity ns0:theme="@7F1303A5" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.linecorp.b612.android"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<activity ns0:theme="@7F130247" ns0:name="com.navercorp.nid.oauth.NidOAuthBridgeActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F130247" ns0:label="OAuth2.0 by WebView" ns0:name="com.navercorp.nid.oauth.activity.NidOAuthWebViewActivity" ns0:screenOrientation="3" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F130246" ns0:label="OAuth2.0 by Custom tabs" ns0:name="com.navercorp.nid.oauth.activity.NidOAuthCustomTabActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="3" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="naver3rdpartylogin" ns0:host="authorize" ns0:path="/"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.naver.gfpsdk.PUBLISHER_CD" ns0:value="@7F1204A9"/>
+		<meta-data ns0:name="com.naver.gfpsdk.AUTO_INIT" ns0:value="false"/>
+		<activity ns0:theme="@7F130386" ns0:name="com.yiruike.android.yrkad.base.WebActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F130387" ns0:name="com.yiruike.android.yrkad.re.YrkRewardVideoActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED" ns0:value="false"/>
+		<meta-data ns0:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" ns0:value="GlideModule"/>
+		<meta-data ns0:name="com.bumptech.glide.integration.webp.WebpGlideModule" ns0:value="GlideModule"/>
+		<meta-data ns0:name="flutterProjectType" ns0:value="module"/>
+		<meta-data ns0:name="flutterEmbedding" ns0:value="2"/>
+		<provider ns0:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.flutter.image_provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F160002"/>
+		</provider>
+		<activity ns0:theme="@android:01030007" ns0:name="io.flutter.plugins.urllauncher.WebViewActivity" ns0:exported="false"/>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.services.ads.adunit.AdUnitActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.androidx-startup">
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.unity3d.services.core.configuration.AdsSdkInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.unity3d.services.identifiers.UnitySharedLibraryInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.com.squareup.picasso"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050004" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.applovin.sdk.AppLovinInitProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.applovininitprovider" ns0:initOrder="101"/>
+		<activity ns0:name="com.applovin.adview.AppLovinFullscreenActivity" ns0:exported="false" ns0:launchMode="1" ns0:screenOrientation="3" ns0:configChanges="0x40000FB4" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.applovin.sdk.AppLovinWebViewActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130394" ns0:name="com.applovin.mediation.MaxDebuggerActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130394" ns0:name="com.applovin.mediation.MaxDebuggerDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130394" ns0:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130394" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130394" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130394" ns0:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F130394" ns0:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F13038F" ns0:name="com.applovin.creative.MaxCreativeDebuggerActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F13038F" ns0:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" ns0:configChanges="0x40000FB4"/>
+		<service ns0:name="com.applovin.impl.sdk.utils.AppKilledService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<service ns0:name="com.applovin.impl.adview.activity.FullscreenAdService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.AudienceNetworkContentProvider"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0013"/>
+		<activity ns0:theme="@7F1303B7" ns0:name="com.journeyapps.barcodescanner.CaptureActivity" ns0:clearTaskOnLaunch="true" ns0:stateNotNeeded="true" ns0:screenOrientation="6" ns0:windowSoftInputMode="0x00000003"/>
+		<provider ns0:name="leakcanary.internal.MainProcessAppWatcherInstaller" ns0:enabled="@7F050006" ns0:exported="false" ns0:authorities="com.linecorp.b612.android.leakcanary-installer"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<uses-library ns0:name="scamera_sep" ns0:required="false"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F160011"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

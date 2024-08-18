@@ -1,0 +1,1098 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="30517004" ns0:versionName="3.5.17.4" ns0:compileSdkVersion="30" ns0:compileSdkVersionCodename="11" package="com.flatfish.cal.privacy" platformBuildVersionCode="30" platformBuildVersionName="11">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="30"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_NUMBERS"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-permission ns0:name="com.flatfish.cal.privacy.permission.SAFE_ACCESS"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.REORDER_TASKS"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.google.android.googleapps.permission.GOOGLE_AUTH"/>
+	<uses-permission ns0:name="com.google.android.googleapps.permission.GOOGLE_AUTH.OTHER_SERVICES"/>
+	<uses-permission ns0:name="com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.CALL_PHONE"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="*"/>
+		</intent>
+		<package ns0:name="com.facebook.katana"/>
+		<intent>
+			<action ns0:name="android.media.browse.MediaBrowserService"/>
+		</intent>
+		<intent>
+			<action ns0:name="androidx.media2.session.MediaSessionService"/>
+		</intent>
+		<intent>
+			<action ns0:name="androidx.media2.session.MediaLibraryService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<permission ns0:name="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="android.permission.WRITE_SOCIAL_STREAM"/>
+	<uses-permission ns0:name="android.permission.READ_SOCIAL_STREAM"/>
+	<uses-permission ns0:name="android.permission.READ_PROFILE"/>
+	<uses-permission ns0:name="android.permission.WRITE_PROFILE"/>
+	<uses-permission ns0:name="android.permission.READ_USER_DICTIONARY"/>
+	<uses-permission ns0:name="android.permission.WRITE_USER_DICTIONARY"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission ns0:name="com.samsung.svoice.sync.READ_DATABASE"/>
+	<uses-permission ns0:name="com.samsung.svoice.sync.ACCESS_SERVICE"/>
+	<uses-permission ns0:name="com.samsung.svoice.sync.WRITE_DATABASE"/>
+	<uses-permission ns0:name="com.sec.android.app.voicenote.Controller"/>
+	<uses-permission ns0:name="com.sec.android.permission.VOIP_INTERFACE"/>
+	<uses-permission ns0:name="com.sec.android.permission.LAUNCH_PERSONAL_PAGE_SERVICE"/>
+	<uses-permission ns0:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+	<uses-permission ns0:name="com.samsung.android.providers.context.permission.READ_RECORD_AUDIO"/>
+	<uses-permission ns0:name="com.samsung.android.providers.context.permission.WRITE_RECORD_AUDIO"/>
+	<uses-permission ns0:name="com.sec.android.settings.permission.SOFT_RESET"/>
+	<uses-permission ns0:name="sec.android.permission.READ_MSG_PREF"/>
+	<uses-permission ns0:name="com.samsung.android.scloud.backup.lib.read"/>
+	<uses-permission ns0:name="com.samsung.android.scloud.backup.lib.write"/>
+	<uses-permission ns0:name="com.android.alarm.permission.SET_ALARM"/>
+	<uses-permission ns0:name="com.android.voicemail.permission.ADD_VOICEMAIL"/>
+	<uses-permission ns0:name="com.android.voicemail.permission.READ_WRITE_ALL_VOICEMAIL"/>
+	<uses-permission ns0:name="com.huawei.authentication.HW_ACCESS_AUTH_SERVICE"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-permission ns0:name="com.google.android.providers.talk.permission.READ_ONLY"/>
+	<uses-permission ns0:name="com.google.android.providers.talk.permission.WRITE_ONLY"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID_NOTIFICATION"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.google.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<uses-permission ns0:name="com.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher3.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher2.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.teslacoilsw.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.actionlauncher.playstore.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.mx.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.apusapps.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.tsf.shell.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.bbk.launcher2.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.s.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="cn.nubia.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission ns0:name="android.permission.BATTERY_STATS"/>
+	<uses-permission ns0:name="android.permission.BODY_SENSORS"/>
+	<uses-permission ns0:name="android.permission.BROADCAST_STICKY"/>
+	<uses-permission ns0:name="android.permission.DISABLE_KEYGUARD"/>
+	<uses-permission ns0:name="android.permission.EXPAND_STATUS_BAR"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.CHANGE_CONFIGURATION"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+	<uses-permission ns0:name="android.permission.PERSISTENT_ACTIVITY"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission ns0:name="android.permission.NFC"/>
+	<uses-permission ns0:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+	<uses-permission ns0:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+	<uses-permission ns0:name="android.permission.CLEAR_APP_CACHE"/>
+	<uses-permission ns0:name="android.permission.GET_PACKAGE_SIZE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_STATS"/>
+	<uses-permission ns0:name="android.permission.SUBSCRIBED_FEEDS_READ"/>
+	<uses-permission ns0:name="android.permission.SUBSCRIBED_FEEDS_WRITE"/>
+	<uses-permission ns0:name="android.permission.WRITE_CALENDAR"/>
+	<uses-permission ns0:name="android.permission.READ_CALENDAR"/>
+	<uses-permission ns0:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.READ_LOGS"/>
+	<uses-permission ns0:name="android.permission.RESTART_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.SET_TIME"/>
+	<uses-permission ns0:name="android.permission.SET_TIME_ZONE"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER_HINTS"/>
+	<uses-permission ns0:name="android.permission.TRANSMIT_IR"/>
+	<uses-permission ns0:name="android.permission.USE_SIP"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+	<uses-permission ns0:name="android.permission.GET_INTENT_SENDER_INTENT"/>
+	<uses-permission ns0:name="android.permission.BIND_DIRECTORY_SEARCH"/>
+	<uses-permission ns0:name="android.permission.UPDATE_APP_OPS_STATS"/>
+	<uses-permission ns0:name="android.permission.INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.DELETE_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.CLEAR_APP_USER_DATA"/>
+	<uses-permission ns0:name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+	<uses-permission ns0:name="android.permission.DEVICE_POWER"/>
+	<uses-permission ns0:name="android.permission.WRITE_APN_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.BIND_APPWIDGET"/>
+	<uses-permission ns0:name="android.permission.ACCOUNT_MANAGER"/>
+	<uses-permission ns0:name="android.permission.PACKAGE_USAGE_STATS"/>
+	<uses-permission ns0:name="android.permission.READ_INSTALL_SESSIONS"/>
+	<uses-permission ns0:name="android.permission.READ_OWNER_DATA"/>
+	<uses-permission ns0:name="android.permission.READ_CELL_BROADCASTS"/>
+	<uses-permission ns0:name="android.permission.WRITE_CLIPS"/>
+	<uses-permission ns0:name="android.permission.READ_CLIPS"/>
+	<uses-permission ns0:name="android.permission.GET_CLIPS"/>
+	<uses-permission ns0:name="android.permission.WRITE_OWNER_DATA"/>
+	<uses-permission ns0:name="android.permission.ACCESS_GPS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIMAX_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIMAX_STATE"/>
+	<uses-permission ns0:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+	<uses-permission ns0:name="android.permission.ACTIVITY_RECOGNITION"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_USER_PRESENT"/>
+	<uses-permission ns0:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+	<uses-permission ns0:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+	<uses-permission ns0:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+	<uses-permission ns0:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+	<uses-permission ns0:name="android.permission.REPLACE_EXISTING_PACKAGE"/>
+	<uses-permission ns0:name="android.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+	<uses-permission ns0:name="freemme.permission.msa"/>
+	<uses-permission ns0:name="android.permission.GRANT_RUNTIME_PERMISSIONS"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="true"/>
+	<uses-feature ns0:name="android.hardware.sensor.stepcounter" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.stepdetector" ns0:required="false"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.huawei.permission.sec.MDM.v2"/>
+	<uses-permission ns0:name="android.permission.REAL_GET_TASKS"/>
+	<uses-permission ns0:name="com.huawei.permission.sec.ACCESS_UDID"/>
+	<uses-permission ns0:name="com.huawei.permission.app.DOWNLOAD"/>
+	<uses-permission ns0:name="com.android.permission.GET_INSTALLED_APPS"/>
+	<application ns0:theme="@7F130017" ns0:label="@7F1200B7" ns0:icon="@7F0E0006" ns0:name="com.privacy.app.MainApplication" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:networkSecurityConfig="@7F150001" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<receiver ns0:name="com.privacy.app.NotificationReceiver" ns0:enabled="true"/>
+		<service ns0:name="com.privacy.services.DownloadService" ns0:exported="false"/>
+		<meta-data ns0:name="android.notch_support" ns0:value="true"/>
+		<meta-data ns0:name="notch.config" ns0:value="portrait|landscape"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.400000"/>
+		<activity ns0:name="com.privacy.page.activity.MainActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+			</intent-filter>
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="privacy.intent.action.VIEW"/>
+				<action ns0:name="hidex.intent.action.VIEW"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="hidex" ns0:host="app_start"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="hidex" ns0:host="delay_deep_link"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0801CE" ns0:name="com.privacy.CalculatorH" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0801CD" ns0:name="com.privacy.CalculatorG" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0801CC" ns0:name="com.privacy.CalculatorF" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0801CB" ns0:name="com.privacy.CalculatorE" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0801C9" ns0:name="com.privacy.CalculatorD" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0801C8" ns0:name="com.privacy.CalculatorC" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0801C7" ns0:name="com.privacy.CalculatorB" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0801C6" ns0:name="com.privacy.CalculatorA" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0E0006" ns0:name="com.privacy.CalculateActivity" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B8" ns0:icon="@7F0E0006" ns0:name="com.privacy.CalculatorActivity" ns0:enabled="true" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F1200B7" ns0:icon="@7F0E0006" ns0:name="com.privacy.DefaultActivity" ns0:enabled="false" ns0:targetActivity="com.privacy.page.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:label="@7F120834" ns0:icon="@7F080379" ns0:name="com.privacy.page.activity.ShortcutCameraActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:icon="@7F080115" ns0:name="com.privacy.page.activity.PlayerActivity" ns0:taskAffinity="com.privacy.player" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000020" ns0:noHistory="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="hidex" ns0:host="video_play"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.privacy.services.TaskService"/>
+		<service ns0:name="com.privacy.va.MessengerService" ns0:enabled="true" ns0:exported="true"/>
+		<service ns0:name="com.privacy.services.KeepAliveService" ns0:process="@7F12063A"/>
+		<service ns0:name="com.privacy.services.HiddenForeNotification" ns0:process="@7F12063A"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150000"/>
+		</provider>
+		<provider ns0:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.TTMultiProvider"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F12025F"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-3822060341958468~7401866158"/>
+		<meta-data ns0:name="firebase_analytics_collection_enabled" ns0:value="true"/>
+		<meta-data ns0:name="google_analytics_adid_collection_enabled" ns0:value="true"/>
+		<service ns0:name="com.privacy.cloud.CloudService"/>
+		<receiver ns0:name="com.privacy.common.ShortcutHelper$CameraShortcutCreateReceiver"/>
+		<service ns0:name="com.privacy.services.AppLockService" ns0:process="@7F1200A7"/>
+		<activity ns0:theme="@7F130382" ns0:label="" ns0:name="com.privacy.page.activity.AppLockActivity" ns0:process="@7F1200A7" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:noHistory="true"/>
+		<activity ns0:theme="@7F13036C" ns0:name="com.privacy.page.activity.PermissionGuideActivity"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:multiprocess="true" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F130382" ns0:name="com.privacy.page.activity.OpenAdActivity" ns0:screenOrientation="1"/>
+		<receiver ns0:name="com.privacy.app.BootBroadcastReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter ns0:priority="1000">
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.privacy.feature.player.ui.ui.VideoPlayerService" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.privacy.feature.player.ui.utils.glide.RetrieverVideoGlideModule" ns0:value="GlideModule"/>
+		<receiver ns0:name="com.privacy.feature.player.ui.ui.VideoNotificationReceiver"/>
+		<activity ns0:name="com.privacy.feature.feedback.activity.FAQActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.privacy.feature.feedback.activity.FeedbackActivity" ns0:screenOrientation="1"/>
+		<provider ns0:name="com.privacy.feature.statistics.inside.StatisticsProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.StatisticsProvider"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.privacy.feature.ad.admob.adapter.activity.FullAdActivity" ns0:screenOrientation="1"/>
+		<provider ns0:name="com.privacy.feature.ad.admob.adapter.utils.AppStatusProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.flatfish.cal.privacy.mediator-init-provider"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="androidx.work.impl.WorkManagerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.flatfish.cal.privacy.workmanager-init" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.bumptech.glide.encryptvideo.EncryptVideoGlideModule" ns0:value="GlideModule"/>
+		<provider ns0:name="com.privacy.feature.player.base.ShareFileProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.player_base_provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150002"/>
+		</provider>
+		<receiver ns0:name="com.privacy.feature.player.base.CatchMediaButtonReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_BUTTON"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.bumptech.glide.appicon.AppIconGlideModule" ns0:value="GlideModule"/>
+		<service ns0:name="org.microg.gms.location.GoogleLocationManagerService" ns0:process=":gms">
+			<intent-filter>
+				<action ns0:name="com.google.android.location.internal.GoogleLocationManagerService.START"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="org.microg.gms.location.ReportingAndroidService" ns0:process=":gms">
+			<intent-filter>
+				<action ns0:name="com.google.android.location.reporting.service.START"/>
+				<action ns0:name="com.google.android.gms.location.reporting.service.START"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</service>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A001C"/>
+		<activity ns0:theme="@7F130161" ns0:name="com.mopub.common.privacy.ConsentDialogActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F130161" ns0:name="com.mopub.common.MoPubBrowser" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MoPubActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MraidActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.RewardedMraidActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.mopub.mobileads.MraidVideoPlayerActivity" ns0:configChanges="0x000004A0"/>
+		<meta-data ns0:name="com.privacy.feature.mediadata.glide.CoverGlideModule" ns0:value="GlideModule"/>
+		<activity ns0:theme="@7F130161" ns0:name="com.mopub.mobileads.MoPubFullscreenActivity" ns0:configChanges="0x000004A0"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.lody.virtual.client.stub.ShortcutHandleActivity" ns0:exported="true" ns0:process="@7F12063A" ns0:taskAffinity="virtual.shortcut.task" ns0:excludeFromRecents="true">
+			<intent-filter>
+				<action ns0:name="com.flatfish.cal.privacy.virtual.action.shortcut"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.lody.virtual.client.stub.ShadowPendingActivity" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process="@7F12063A" ns0:taskAffinity="com.lody.virtual.pending" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowPendingService" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process="@7F12063A"/>
+		<receiver ns0:name="com.lody.virtual.client.stub.ShadowPendingReceiver" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process="@7F12063A"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="true" ns0:process="@7F12063A"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowJobWorkService" ns0:process="@7F12063A"/>
+		<activity ns0:theme="@7F13028E" ns0:name="com.lody.virtual.client.stub.ChooseAccountTypeActivity" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process="@7F12063A" ns0:excludeFromRecents="true" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@7F13028E" ns0:name="com.lody.virtual.client.stub.ChooseTypeAndAccountActivity" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="false" ns0:process="@7F12063A" ns0:excludeFromRecents="true" ns0:configChanges="0x000000B0"/>
+		<activity ns0:theme="@7F13028E" ns0:name="com.lody.virtual.client.stub.ChooserActivity" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process="@7F12063A" ns0:taskAffinity="com.lody.virtual.choose" ns0:excludeFromRecents="true" ns0:configChanges="0x000000B0" ns0:finishOnCloseSystemDialogs="true"/>
+		<activity ns0:theme="@7F13028E" ns0:name="com.lody.virtual.client.stub.ResolverActivity" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process="@7F12063A" ns0:taskAffinity="com.lody.virtual.choose" ns0:excludeFromRecents="true" ns0:configChanges="0x000000B0" ns0:finishOnCloseSystemDialogs="true"/>
+		<provider ns0:name="com.lody.virtual.client.core.BinderProvider" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process="@7F12063A" ns0:authorities="com.flatfish.cal.privacy.virtual.service.BinderProvider"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P0" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p0" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P1" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p1" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P2" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p2" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P3" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p3" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P4" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p4" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P5" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p5" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P6" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p6" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P7" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p7" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P8" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p8" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P9" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p9" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P10" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p10" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P11" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p11" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P12" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p12" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P13" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p13" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P14" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p14" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P15" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p15" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P16" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p16" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P17" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p17" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P18" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p18" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P19" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p19" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P20" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p20" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P21" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p21" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P22" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p22" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P23" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p23" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P24" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p24" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P25" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p25" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P26" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p26" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P27" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p27" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P28" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p28" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P29" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p29" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P30" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p30" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P31" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p31" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P32" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p32" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P33" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p33" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P34" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p34" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P35" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p35" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P36" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p36" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P37" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p37" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P38" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p38" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P39" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p39" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P40" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p40" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P41" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p41" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P42" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p42" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P43" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p43" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P44" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p44" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P45" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p45" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P46" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p46" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P47" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p47" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P48" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p48" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P49" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p49" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P50" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p50" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P51" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p51" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P52" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p52" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P53" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p53" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P54" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p54" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P55" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p55" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P56" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p56" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P57" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p57" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P58" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p58" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P59" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p59" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P60" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p60" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P61" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p61" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P62" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p62" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P63" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p63" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P64" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p64" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P65" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p65" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P66" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p66" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P67" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p67" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P68" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p68" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P69" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p69" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P70" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p70" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P71" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p71" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P72" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p72" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P73" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p73" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P74" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p74" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P75" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p75" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P76" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p76" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P77" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p77" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P78" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p78" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P79" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p79" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P80" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p80" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P81" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p81" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P82" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p82" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P83" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p83" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P84" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p84" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P85" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p85" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P86" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p86" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P87" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p87" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P88" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p88" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P89" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p89" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P90" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p90" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P91" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p91" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P92" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p92" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P93" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p93" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P94" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p94" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P95" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p95" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P96" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p96" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P97" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p97" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P98" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p98" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@7F13028F" ns0:name="com.lody.virtual.client.stub.ShadowActivity$P99" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p99" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P0" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p0" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P1" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p1" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P2" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p2" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P3" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p3" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P4" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p4" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P5" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p5" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P6" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p6" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P7" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p7" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P8" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p8" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P9" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p9" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P10" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p10" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P11" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p11" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P12" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p12" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P13" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p13" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P14" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p14" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P15" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p15" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P16" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p16" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P17" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p17" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P18" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p18" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P19" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p19" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P20" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p20" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P21" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p21" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P22" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p22" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P23" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p23" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P24" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p24" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P25" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p25" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P26" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p26" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P27" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p27" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P28" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p28" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P29" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p29" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P30" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p30" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P31" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p31" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P32" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p32" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P33" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p33" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P34" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p34" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P35" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p35" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P36" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p36" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P37" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p37" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P38" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p38" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P39" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p39" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P40" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p40" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P41" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p41" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P42" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p42" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P43" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p43" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P44" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p44" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P45" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p45" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P46" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p46" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P47" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p47" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P48" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p48" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P49" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p49" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P50" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p50" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P51" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p51" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P52" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p52" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P53" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p53" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P54" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p54" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P55" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p55" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P56" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p56" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P57" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p57" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P58" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p58" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P59" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p59" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P60" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p60" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P61" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p61" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P62" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p62" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P63" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p63" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P64" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p64" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P65" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p65" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P66" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p66" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P67" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p67" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P68" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p68" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P69" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p69" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P70" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p70" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P71" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p71" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P72" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p72" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P73" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p73" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P74" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p74" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P75" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p75" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P76" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p76" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P77" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p77" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P78" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p78" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P79" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p79" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P80" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p80" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P81" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p81" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P82" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p82" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P83" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p83" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P84" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p84" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P85" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p85" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P86" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p86" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P87" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p87" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P88" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p88" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P89" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p89" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P90" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p90" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P91" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p91" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P92" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p92" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P93" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p93" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P94" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p94" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P95" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p95" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P96" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p96" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P97" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p97" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P98" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p98" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.lody.virtual.client.stub.ShadowDialogActivity$P99" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p99" ns0:taskAffinity="com.lody.virtual.virtual_task" ns0:configChanges="0x40000FFF"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P0" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p0"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P1" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p1"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P2" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p2"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P3" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p3"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P4" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p4"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P5" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p5"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P6" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p6"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P7" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p7"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P8" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p8"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P9" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p9"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P10" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p10"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P11" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p11"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P12" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p12"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P13" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p13"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P14" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p14"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P15" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p15"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P16" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p16"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P17" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p17"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P18" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p18"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P19" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p19"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P20" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p20"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P21" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p21"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P22" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p22"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P23" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p23"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P24" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p24"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P25" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p25"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P26" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p26"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P27" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p27"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P28" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p28"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P29" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p29"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P30" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p30"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P31" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p31"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P32" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p32"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P33" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p33"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P34" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p34"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P35" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p35"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P36" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p36"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P37" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p37"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P38" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p38"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P39" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p39"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P40" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p40"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P41" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p41"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P42" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p42"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P43" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p43"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P44" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p44"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P45" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p45"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P46" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p46"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P47" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p47"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P48" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p48"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P49" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p49"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P50" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p50"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P51" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p51"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P52" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p52"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P53" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p53"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P54" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p54"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P55" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p55"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P56" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p56"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P57" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p57"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P58" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p58"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P59" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p59"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P60" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p60"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P61" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p61"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P62" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p62"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P63" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p63"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P64" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p64"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P65" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p65"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P66" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p66"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P67" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p67"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P68" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p68"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P69" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p69"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P70" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p70"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P71" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p71"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P72" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p72"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P73" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p73"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P74" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p74"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P75" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p75"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P76" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p76"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P77" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p77"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P78" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p78"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P79" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p79"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P80" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p80"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P81" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p81"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P82" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p82"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P83" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p83"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P84" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p84"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P85" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p85"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P86" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p86"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P87" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p87"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P88" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p88"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P89" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p89"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P90" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p90"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P91" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p91"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P92" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p92"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P93" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p93"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P94" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p94"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P95" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p95"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P96" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p96"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P97" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p97"/>
+		<service ns0:name="com.lody.virtual.client.stub.ShadowService$P98" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p98"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P0" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p0" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_0"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P1" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p1" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_1"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P2" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p2" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_2"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P3" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p3" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_3"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P4" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p4" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_4"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P5" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p5" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_5"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P6" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p6" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_6"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P7" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p7" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_7"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P8" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p8" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_8"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P9" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p9" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_9"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P10" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p10" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_10"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P11" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p11" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_11"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P12" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p12" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_12"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P13" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p13" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_13"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P14" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p14" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_14"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P15" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p15" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_15"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P16" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p16" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_16"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P17" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p17" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_17"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P18" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p18" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_18"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P19" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p19" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_19"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P20" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p20" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_20"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P21" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p21" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_21"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P22" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p22" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_22"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P23" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p23" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_23"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P24" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p24" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_24"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P25" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p25" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_25"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P26" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p26" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_26"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P27" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p27" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_27"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P28" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p28" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_28"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P29" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p29" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_29"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P30" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p30" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_30"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P31" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p31" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_31"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P32" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p32" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_32"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P33" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p33" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_33"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P34" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p34" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_34"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P35" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p35" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_35"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P36" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p36" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_36"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P37" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p37" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_37"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P38" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p38" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_38"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P39" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p39" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_39"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P40" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p40" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_40"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P41" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p41" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_41"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P42" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p42" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_42"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P43" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p43" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_43"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P44" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p44" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_44"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P45" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p45" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_45"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P46" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p46" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_46"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P47" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p47" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_47"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P48" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p48" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_48"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P49" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p49" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_49"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P50" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p50" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_50"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P51" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p51" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_51"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P52" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p52" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_52"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P53" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p53" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_53"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P54" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p54" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_54"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P55" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p55" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_55"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P56" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p56" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_56"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P57" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p57" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_57"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P58" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p58" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_58"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P59" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p59" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_59"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P60" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p60" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_60"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P61" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p61" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_61"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P62" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p62" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_62"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P63" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p63" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_63"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P64" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p64" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_64"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P65" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p65" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_65"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P66" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p66" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_66"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P67" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p67" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_67"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P68" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p68" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_68"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P69" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p69" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_69"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P70" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p70" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_70"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P71" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p71" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_71"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P72" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p72" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_72"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P73" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p73" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_73"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P74" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p74" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_74"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P75" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p75" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_75"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P76" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p76" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_76"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P77" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p77" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_77"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P78" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p78" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_78"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P79" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p79" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_79"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P80" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p80" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_80"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P81" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p81" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_81"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P82" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p82" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_82"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P83" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p83" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_83"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P84" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p84" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_84"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P85" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p85" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_85"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P86" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p86" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_86"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P87" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p87" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_87"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P88" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p88" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_88"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P89" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p89" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_89"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P90" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p90" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_90"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P91" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p91" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_91"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P92" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p92" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_92"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P93" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p93" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_93"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P94" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p94" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_94"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P95" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p95" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_95"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P96" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p96" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_96"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P97" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p97" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_97"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P98" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p98" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_98"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ShadowContentProvider$P99" ns0:permission="com.flatfish.cal.privacy.permission.SAFE_ACCESS" ns0:exported="true" ns0:process=":p99" ns0:authorities="com.flatfish.cal.privacy.virtual_stub_99"/>
+		<provider ns0:name="com.lody.virtual.client.stub.ContentProviderProxy" ns0:exported="true" ns0:process="@7F12063A" ns0:authorities="com.flatfish.cal.privacy.provider_proxy" ns0:grantUriPermissions="true"/>
+		<activity ns0:theme="@7F13035A" ns0:name="com.lody.virtual.client.stub.WindowPreviewActivity" ns0:process="@7F12063A" ns0:taskAffinity="com.lody.virtual.window_preview" ns0:excludeFromRecents="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.lody.virtual.client.stub.RequestPermissionsActivity" ns0:exported="true" ns0:process="@7F12063A" ns0:taskAffinity="com.lody.virtual.request_permission" ns0:excludeFromRecents="true" ns0:launchMode="3"/>
+		<meta-data ns0:name="VA_VERSION" ns0:value="20201024"/>
+		<provider ns0:name="com.privacy.feature.remoteconfig.ipc.RemoteConfigProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.flatfish.cal.privacy.RemoteConfigProvider"/>
+		<activity ns0:name="com.flatads.sdk.ui.WebsiteActivity"/>
+		<activity ns0:theme="@7F13010E" ns0:name="com.flatads.sdk.ui.InterstitialAdActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13010E" ns0:name="com.flatads.sdk.ui.RewardedActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13010E" ns0:name="com.flatads.sdk.ui.InterstitialLanActivity" ns0:screenOrientation="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13010E" ns0:name="com.flatads.sdk.ui.RewardedLanActivity" ns0:screenOrientation="0" ns0:configChanges="0x000004A0"/>
+		<meta-data ns0:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" ns0:value="GlideModule"/>
+		<provider ns0:name="razerdp.basepopup.BasePopupRuntimeTrojanProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.flatfish.cal.privacy.basepopup-trojan"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="3.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:configChanges="0x000005B0"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.facebook.CampaignTrackingReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F130256" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:enabled="false" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.privacy.feature.update.utils.UpdateFileProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150008"/>
+		</provider>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.AudienceNetworkContentProvider"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.flatfish.cal.privacy.lifecycle-process"/>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-installreferrer" ns0:value="ads-installreferrer:3.4.28.313"/>
+		<receiver ns0:name="com.kochava.base.ReferralReceiver" ns0:exported="true" ns0:priority="999">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-identifier" ns0:value="ads-identifier:3.4.28.313"/>
+		<activity ns0:theme="@7F13037D" ns0:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13037D" ns0:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13037D" ns0:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13037C" ns0:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13037C" ns0:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13037C" ns0:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F13037C" ns0:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" ns0:launchMode="0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" ns0:launchMode="0"/>
+		<service ns0:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.adapter.PangleAdInterstitialActivity"/>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-lite" ns0:value="ads-lite:13.4.45.308"/>
+		<meta-data ns0:name="hw.theme_type" ns0:value="273"/>
+		<meta-data ns0:name="permission.reason.android.permission-group.CALENDAR" ns0:resource="@7F12030E"/>
+		<provider ns0:name="com.huawei.openalliance.ad.ppskit.provider.PPSInstallFileProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.hiad.fileprovider" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="com.huawei.openalliance.ad.ppskit.provider.InnerApiProvider" ns0:exported="false" ns0:authorities="com.flatfish.cal.privacy.pps.innerapiprovider"/>
+		<service ns0:name="com.huawei.android.hms.ppskit.PpsCoreService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.huawei.android.hms.ppskit.PPS_API_SERVICE"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.huawei.openalliance.ad.ppskit.activity.InstallActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:configChanges="0x00000DF3">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.Light.NoTitleBar"/>
+		</activity>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.huawei.openalliance.ad.ppskit.activity.HMSSDKInstallActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:configChanges="0x00000DF3">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.Light.NoTitleBar"/>
+		</activity>
+		<activity ns0:label=" " ns0:name="com.huawei.openalliance.ad.ppskit.activity.PPSActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000DA0">
+			<intent-filter>
+				<action ns0:name="com.huawei.hms.pps.action.PPS_DETAIL"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui"/>
+		</activity>
+		<activity ns0:label=" " ns0:name="com.huawei.openalliance.ad.ppskit.activity.InnerPPSActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000DF3">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui"/>
+		</activity>
+		<activity ns0:label=" " ns0:name="com.huawei.openalliance.ad.ppskit.activity.InnerPPSArActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000DF3">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui"/>
+		</activity>
+		<activity ns0:theme="@7F13013A" ns0:name="com.huawei.openalliance.ad.ppskit.activity.PPSRewardActivity" ns0:exported="false" ns0:screenOrientation="3" ns0:configChanges="0x00000FF3">
+			<intent-filter>
+				<action ns0:name="com.huawei.hms.pps.action.PPS_REWARD"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.NoActionBar.Fullscreen"/>
+			<meta-data ns0:name="android.notch_support" ns0:value="false"/>
+		</activity>
+		<activity ns0:theme="@7F13013A" ns0:name="com.huawei.openalliance.ad.ppskit.activity.InnerPPSRewardActivity" ns0:exported="false" ns0:configChanges="0x00000DF3">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.NoActionBar.Fullscreen"/>
+			<meta-data ns0:name="android.notch_support" ns0:value="false"/>
+		</activity>
+		<activity ns0:theme="@android:01030011" ns0:name="com.huawei.openalliance.ad.ppskit.activity.InnerPPSInterstitialAdActivity" ns0:exported="false" ns0:screenOrientation="4" ns0:configChanges="0x00000D73">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar.Fullscreen"/>
+			<meta-data ns0:name="android.notch_support" ns0:value="false"/>
+		</activity>
+		<activity ns0:theme="@android:01030011" ns0:name="com.huawei.openalliance.ad.ppskit.activity.InterstitialAdActivity" ns0:exported="false" ns0:screenOrientation="4" ns0:configChanges="0x00000D73">
+			<intent-filter>
+				<action ns0:name="com.huawei.hms.pps.action.PPS_INTERSTITIAL"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar.Fullscreen"/>
+			<meta-data ns0:name="android.notch_support" ns0:value="false"/>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.huawei.openalliance.ad.ppskit.activity.AgProtocolActivity" ns0:exported="false" ns0:configChanges="0x00000480">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+		</activity>
+		<activity ns0:theme="@android:01030007" ns0:name="com.huawei.openalliance.ad.ppskit.activity.PPSArActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.huawei.hms.pps.action.PPS_AR"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.NoActionBar.Fullscreen"/>
+		</activity>
+		<activity ns0:theme="@android:01030128" ns0:label="" ns0:name="com.huawei.opendevice.open.OAIDSettingActivity" ns0:exported="true" ns0:configChanges="0x00000DA0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="hwppsprivacy" ns0:host="com.flatfish.cal.privacy"/>
+			</intent-filter>
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+		</activity>
+		<activity ns0:theme="@android:01030128" ns0:label="" ns0:name="com.huawei.opendevice.open.PrivacyActivity" ns0:exported="true" ns0:configChanges="0x00000DA0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="hwppsprivacydetail" ns0:host="com.flatfish.cal.privacy"/>
+			</intent-filter>
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+		</activity>
+		<activity ns0:theme="@android:01030128" ns0:label="" ns0:name="com.huawei.opendevice.open.WhyThisAdStatementActivity" ns0:exported="true" ns0:configChanges="0x00000DA0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="hwppsprivacyadinfo" ns0:host="com.flatfish.cal.privacy"/>
+			</intent-filter>
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+		</activity>
+		<activity ns0:theme="@android:01030128" ns0:label="" ns0:name="com.huawei.opendevice.open.SimplePrivacyActivity" ns0:exported="false" ns0:configChanges="0x00000DA0">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.WithActionBar"/>
+		</activity>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-template" ns0:value="ads-template:13.4.45.308"/>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-native" ns0:value="ads-native:13.4.45.308"/>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-interstitial" ns0:value="ads-interstitial:13.4.45.308"/>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-reward" ns0:value="ads-reward:13.4.45.308"/>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-lang" ns0:value="ads-lang:13.4.45.308"/>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-jsbridge" ns0:value="ads-jsbridge:3.4.45.308"/>
+		<meta-data ns0:name="com.huawei.hms.client.service.name:ads-base" ns0:value="ads-base:13.4.45.308"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.huawei.openalliance.ad.activity.PPSLauncherActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="hwpps" ns0:host="com.flatfish.cal.privacy"/>
+			</intent-filter>
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.huawei.openalliance.ad.activity.PPSBridgeActivity" ns0:exported="false">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.huawei.openalliance.ad.activity.PPSNotificationActivity" ns0:exported="false">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.huawei.openalliance.ad.activity.AgProtocolActivity" ns0:exported="false" ns0:configChanges="0x00000480">
+			<meta-data ns0:name="hwc-theme" ns0:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+		</activity>
+		<meta-data ns0:name="com.huawei.hms.client.appid" ns0:value="appid=101600541"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F150009"/>
+	</application>
+</manifest>

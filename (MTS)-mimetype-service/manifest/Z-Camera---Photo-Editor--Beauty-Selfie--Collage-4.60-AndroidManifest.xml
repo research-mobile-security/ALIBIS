@@ -1,0 +1,578 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="250" ns0:versionName="4.60" ns0:installLocation="0" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.jb.zcamera" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="30"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="18"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.RECORD_VIDEO"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_USER_PRESENT"/>
+	<uses-permission ns0:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+	<uses-permission ns0:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+	<uses-permission ns0:name="android.permission.DISABLE_KEYGUARD"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-feature ns0:name="android.hardware.camera"/>
+	<permission ns0:name="com.jb.zcamera.permission.SERVICE" ns0:protectionLevel="0x00000000"/>
+	<permission ns0:name="com.jb.zcamera.permission.PROVIDER" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.jb.zcamera.permission.PROVIDER"/>
+	<uses-permission ns0:name="com.jb.zcamera.permission.SERVICE"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<permission ns0:name="com.jb.zcamera.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.jb.zcamera.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.REORDER_TASKS"/>
+	<uses-permission ns0:name="android.permission.EXPAND_STATUS_BAR"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<application ns0:theme="@7F1100CD" ns0:label="@7F10006D" ns0:icon="@7F0804FF" ns0:name="com.jb.zcamera.CameraApp" ns0:process="com.jb.zcamera" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.google.android.geo.API_KEY" ns0:value="AIzaSyAJdGzVbRLnWfE6esQGsN-dFw8jG2UMU-o"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-3770487070118354~2304248413"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="3.0.0"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="com.tdshop.android.ApplicationId" ns0:value="ZCamera"/>
+		<meta-data ns0:name="com.tdshop.android.IsDebugEnabled" ns0:value="true"/>
+		<activity ns0:theme="@7F1100DC" ns0:label="@7F10006D" ns0:name="com.jb.zcamera.camera.SplashActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1100DC" ns0:label="@7F10006D" ns0:name="com.jb.zcamera.camera.MainActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.IMAGE_CAPTURE_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.IMAGE_CAPTURE_AND_EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.MOTION_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.MOTION_CAPTURE_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.CAPTURE_TO_EDIT_AND_PUBLISH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="camera.gomo.com"/>
+				<data ns0:pathPrefix="/main"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<data ns0:host="camera.gomo.com"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.jb.zcamera.firebase.deeplink.DeepLinkActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="www.zcamera.com"/>
+				<data ns0:scheme="https" ns0:host="www.zcamera.com"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F100365" ns0:icon="@7F08050B" ns0:name="com.jb.zcamera.image.PictureViewActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x00000420">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.MOTION_VIEW_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.jb.zcamera.image.compose.PictureTextActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000033"/>
+		<activity ns0:label="@7F1001F4" ns0:name="com.jb.zcamera.activity.ImageEditActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.IAMGE_EDIT_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.IAMGE_EDIT_AND_PUBLISH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.jb.zcamera.image.folder.FolderSelectActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.activity.BeutyActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:hardwareAccelerated="false"/>
+		<activity ns0:name="com.jb.zcamera.activity.SettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.CameraSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.FeedbackHtmlActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.FeedbackActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:theme="@android:0103000B" ns0:name="com.jb.zcamera.report.CrashReportDialog"/>
+		<activity ns0:name="com.jb.zcamera.activity.AboutActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.store.activity.StoreActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.store.activity.StoreMoreActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.activity.FilterDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.activity.TempletDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.activity.MyFilterActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.vip.VipMainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.vip.VipAgreeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.vip.VipRecoverResultActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.FacebookActiveActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.ChristmasActivity" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F100211"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationName" ns0:value="@7F100212"/>
+		<activity ns0:theme="@7F110252" ns0:label="@7F10006D" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<provider ns0:name="com.facebook.FacebookContentProvider" ns0:permission="com.jb.zcamera.permission.PROVIDER" ns0:exported="true" ns0:authorities="com.facebook.app.FacebookContentProvider899210050141099"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F100213"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.appsflyer.MultipleInstallBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.jb.zcamera.analytic.ReferrerInfoReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.jb.zcamera.facebooksdk.FBBroadcastReceiver">
+			<intent-filter>
+				<action ns0:name="com.facebook.platform.AppCallResultBroadcast"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.jb.zcamera.background.OnAlarmReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.TASK_LOOPER_ALARM_ACTION"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.jb.zcamera.background.OnStatistic19AlarmReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.TASK_LOOPER_STATISTIC19_ALARM_ACTION"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.jb.zcamera.camera.ProcessVideoService"/>
+		<provider ns0:name="com.cs.statistic.hide.StatisticContentProvider" ns0:exported="false" ns0:authorities="com.jb.zcamera.staticsdkprovider"/>
+		<meta-data ns0:name="APPKEY" ns0:value="GVHQ8EM6OPH9ZQQ8EKXC8QR2"/>
+		<meta-data ns0:name="Channel" ns0:value="101"/>
+		<activity ns0:theme="@7F1100DC" ns0:label="@7F100245" ns0:icon="@7F08050B" ns0:name="com.jb.zcamera.gallery.common.GalleryActivity" ns0:exported="true" ns0:taskAffinity=".Gallery" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.APP_GALLERY"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="media/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="media/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.IMAGE_PICK_TO_EDIT_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.IMAGE_PICK_TO_EDIT_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.IMAGE_PICK_TO_EDIT_AND_SHARE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="media/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.PICK_TO_EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.PICK_TO_PIP_EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.action.PICK_TO_EDIT_AND_PUBLISH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.jb.zcamera.gallery.view.SetPasswordActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:name="com.jb.zcamera.gallery.view.ConfirmPasswordActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.jb.zcamera.gallery.encrypt.EncryptMediaProvider" ns0:exported="false" ns0:authorities="com.jb.zcamera.image.encryptMedia"/>
+		<activity ns0:name="com.jb.zcamera.ad.UcWebActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.image.activity.MoreInfoActivity" ns0:launchMode="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.gift.LotteryWheelActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService" ns0:enabled="true"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.CommunityMainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.LabelActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.CommunityLoginActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.TopicDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.WinnersActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ShowDetailsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.CommunityMessageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.MessageWebActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ConfirmReleaseActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.AccountSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1100D5" ns0:name="com.jb.zcamera.community.activity.PersonalPicturePWActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.OthersActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.LikeMessageActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1100D5" ns0:name="com.jb.zcamera.community.activity.ShareMultiMediaActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ShowReportActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ShowWinnersActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.ClipPictureActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.WebPActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.MyCoinsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.MyDiamondsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.CoinsFeedbackActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1101BA" ns0:name="com.jb.zcamera.community.activity.IntegralWallForcedLoginActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1101BA" ns0:name="com.jb.zcamera.community.activity.CancelPostActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.SelectedChallengesActivity" ns0:screenOrientation="1"/>
+		<service ns0:name="com.jb.zcamera.community.service.PostTaskService"/>
+		<activity ns0:name="com.jb.zcamera.activity.VideoEditActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.image.collage.CollageActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.theme.ThemeDetailActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.filterstore.sticker.StickerDetailActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<receiver ns0:label="@7F10006D" ns0:icon="@7F0804FF" ns0:name="com.jb.zcamera.widget.MainWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F130004"/>
+		</receiver>
+		<receiver ns0:label="@7F100245" ns0:icon="@7F08050B" ns0:name="com.jb.zcamera.widget.GalleryWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F130002"/>
+		</receiver>
+		<receiver ns0:label="@7F10003E" ns0:icon="@7F0809B2" ns0:name="com.jb.zcamera.widget.ImageWidgetProvider">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.widget.chang.folder.action"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F130003"/>
+		</receiver>
+		<service ns0:name="com.jb.zcamera.widget.WidgetService" ns0:permission="android.permission.BIND_REMOTEVIEWS"/>
+		<receiver ns0:name="com.jb.zcamera.download.DownloadClickReceiver"/>
+		<service ns0:name="com.jb.zcamera.download.DownloadManagerService"/>
+		<receiver ns0:name="com.jb.zcamera.theme.ThemeApplyBrocastReceiver">
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.theme.free_theme_apply"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.jb.zcamera.activity.TestActivity"/>
+		<activity ns0:name="com.jb.zcamera.image.shareimage.ShareImageActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.vip.subscription.SVipActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="com.jb.zcamera.application.PersistentProcessService" ns0:exported="true"/>
+		<receiver ns0:name="com.jb.zcamera.application.PersistentProcessReceiver"/>
+		<service ns0:name="com.jb.zcamera.application.PersistentProcessService$InnerService1"/>
+		<service ns0:name="com.jb.zcamera.application.SecondProcessService" ns0:process=":process2"/>
+		<receiver ns0:name="com.jb.zcamera.application.SecondProcessReceiver" ns0:process=":process2"/>
+		<service ns0:name="com.jb.zcamera.application.SecondProcessService$InnerService2" ns0:process=":process2"/>
+		<activity ns0:name="com.jb.zcamera.pip.gpuimage.camera.PipCameraActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.pip.activity.PipFreeStyleActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.pip.activity.pip.PipRealTimeCameraActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.pip.activity.PipProcessActivity" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_color" ns0:resource="@7F060126"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F080529"/>
+		<service ns0:name="com.jb.zcamera.firebase.message.FirebaseMessageService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.jb.zcamera.report.CrashReportReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.jb.zcamera.report.CRASH_REPORT"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.jb.zcamera.permission.RequestPermissionsActivity"/>
+		<activity ns0:name="com.jb.zcamera.gallery.backup_recover.BackupAndRecoverActivity" ns0:screenOrientation="1"/>
+		<service ns0:name="com.jb.zcamera.gallery.backup_recover.BackupService">
+			<intent-filter>
+				<action ns0:name="com.googledrive.ACTION_BACKUP"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.jb.zcamera.gallery.backup_recover.DeleteService">
+			<intent-filter>
+				<action ns0:name="com.googledrive.ACTION_DELETE"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.cs.bd.commerce.util.io.MultiprocessSharedPreferences" ns0:exported="false" ns0:authorities="com.jb.zcamera.commerce.MultiprocessSharedPreferences"/>
+		<provider ns0:name="com.cs.bd.commerce.util.io.MultiprocessSharedPreferences" ns0:exported="false" ns0:authorities="com.jb.zcamera.chargelocker.MultiprocessSharedPreferences"/>
+		<activity ns0:theme="@7F1100D0" ns0:name="com.jiubang.commerce.tokencoin.proxy.IntegralwallActivityProxy" ns0:multiprocess="true"/>
+		<activity ns0:theme="@7F1100D0" ns0:name="com.jiubang.commerce.tokencoin.proxy.IntegralwallAwardActivityProxy" ns0:multiprocess="true" ns0:launchMode="2" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1100D0" ns0:name="com.jiubang.commerce.tokencoin.proxy.AwardDownloadActivityProxy" ns0:multiprocess="true" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1100D0" ns0:name="com.jiubang.commerce.tokencoin.proxy.IntegralDetailActivityProxy" ns0:multiprocess="true" ns0:screenOrientation="1"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.jb.zcamera.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130001"/>
+		</provider>
+		<activity ns0:name="com.jb.zcamera.community.area.activity.AreaMainActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.area.activity.AreaSecondOrThirdRegionActivity" ns0:screenOrientation="1"/>
+		<service ns0:name="com.jb.zcamera.community.area.util.FetchAddressIntentService" ns0:exported="false"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.NewFansOrFollowActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<meta-data ns0:name="gomo_firebase_channel" ns0:value="101"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.LikesActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.InvolveMediaDetailActvity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.InvolveDetailActivity" ns0:screenOrientation="1"/>
+		<receiver ns0:name="com.jb.zcamera.firebase.notification.FirebasePushNotificationBroadcastReceiver"/>
+		<activity ns0:name="com.jb.zcamera.jump.WebViewActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.GetRewardActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.NotificationsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.CommentsActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.camera.ar.ArActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.jb.zcamera.camera.ar.ArLookCompletedActivity" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.jb.zcamera.community.activity.GiftsActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.store.activity.ArStickerDetailsActivity" ns0:screenOrientation="1"/>
+		<receiver ns0:name="com.jb.zcamera.community.firebase.CommunityMessageNotificationBroadcastReceiver" ns0:exported="true"/>
+		<activity ns0:name="com.jb.zcamera.community.activity.MessageNotificationSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.jb.zcamera.activity.EmptyActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F110188" ns0:name="com.jb.zcamera.dailyrecommend.DailyRecommendActivity" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:screenOrientation="1"/>
+		<service ns0:name="com.jb.zcamera.dailyrecommend.service.DailyRecommendAlarmService"/>
+		<activity ns0:name="com.jb.zcamera.launcher.PolicyActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.jb.zcamera.launcher.PolicySettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.cs.bd.buychannel.MPSharedPreferences" ns0:exported="false" ns0:authorities="com.jb.zcamera.commerce.MPSharedPreferences"/>
+		<meta-data ns0:name="applovin.sdk.key" ns0:value="qD_ETVvkH-t5fGbcApv4KRy7REkKxaLmoL_Gru-7ssCV7o7Ha1MvSJ1uXlDTJZE6vDMk5KrxB1RIpTZOZxI1EJ"/>
+		<provider ns0:name="com.applovin.sdk.AppLovinInitProvider" ns0:exported="false" ns0:authorities="com.jb.zcamera.applovincontentprovider" ns0:initOrder="101" ns0:grantUriPermissions="true"/>
+		<activity ns0:name="com.applovin.adview.AppLovinFullscreenActivity" ns0:exported="false" ns0:launchMode="1" ns0:screenOrientation="3" ns0:configChanges="0x00000FB4" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.applovin.sdk.AppLovinWebViewActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F110241" ns0:name="com.applovin.mediation.MaxDebuggerActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F110241" ns0:name="com.applovin.mediation.MaxDebuggerDetailActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F110241" ns0:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F110241" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F110241" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" ns0:configChanges="0x000006A0"/>
+		<activity ns0:theme="@7F110241" ns0:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" ns0:configChanges="0x000006A0"/>
+		<service ns0:name="com.applovin.impl.sdk.utils.AppKilledService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<service ns0:name="com.applovin.impl.adview.activity.FullscreenAdService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<activity ns0:theme="@7F1100DB" ns0:label="" ns0:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F110107" ns0:label="@7F10048C" ns0:name="com.hp.mss.hpprint.activity.PrintPreview" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F110108" ns0:label="@7F10048A" ns0:name="com.hp.mss.hpprint.activity.PrintHelp" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F110109" ns0:label="@7F10036D" ns0:name="com.hp.mss.hpprint.activity.PrintPluginManagerActivity"/>
+		<activity ns0:theme="@7F110109" ns0:label="@7F10048D" ns0:name="com.hp.mss.hpprint.activity.PrintServicePluginInformation" ns0:launchMode="1"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="f.i.i.y.adyrbukebiqyiaztkjwxux" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_ADDED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REPLACED"/>
+				<action ns0:name="android.intent.action.PACKAGE_REMOVED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1101BC" ns0:label="" ns0:icon="@7F0800D8" ns0:name="com.cs.bd.commerce.util.bgs.HoldTaskActivity" ns0:taskAffinity=":holdTask" ns0:launchMode="3" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.jb.zcamera.FacebookInitProvider"/>
+		<activity ns0:theme="@7F1100E9" ns0:name="com.twitter.sdk.android.tweetui.PlayerActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100E9" ns0:name="com.twitter.sdk.android.tweetui.GalleryActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.jb.zcamera.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.jb.zcamera.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0011"/>
+		<service ns0:name="com.gomo.firebasesdk.notification.ClickService"/>
+		<service ns0:name="com.gomo.firebasesdk.notification.DeleteService"/>
+		<receiver ns0:name="com.gomo.firebasesdk.statistic.AlarmStatisticReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.firebase.STATISTIC"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.jb.zcamera.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F05000B" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F05000D" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F05000C" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F05000B" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<meta-data ns0:name="isCommonStatisticSDK" ns0:value="true"/>
+		<service ns0:name="com.cs.statistic.hide.StatisticsJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<activity ns0:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000014"/>
+		<service ns0:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.twitter.sdk.android.core.identity.OAuthActivity" ns0:exported="false" ns0:excludeFromRecents="true" ns0:configChanges="0x00000480"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+	</application>
+</manifest>

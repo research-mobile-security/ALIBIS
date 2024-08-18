@@ -1,0 +1,323 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" xmlns:ns1="http://schemas.amazon.com/apk/res/android" ns0:versionCode="46551" ns0:versionName="4.11.2" ns0:installLocation="1" package="com.yahoo.mobile.client.android.flickr">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="26"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="htc.socialmanager.permission.USE_SOCIALSERVICE"/>
+	<uses-permission ns0:name="htc.socialmanager.permission.READ_SOCIAL_DATABASE"/>
+	<uses-permission ns0:name="htc.socialmanager.permission.WRITE_SOCIAL_DATABASE"/>
+	<uses-permission ns0:name="htc.socialmanager.permission.USE_SOCIALCOMPONENT"/>
+	<uses-permission ns0:name="htc.socialmanager.permission.USE_PLUGINSERVICE"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.network" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.telephony" ns0:required="false"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.any" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<permission ns0:name="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS" ns0:maxSdkVersion="22"/>
+	<permission ns0:name="com.yahoo.mobile.client.android.flickr.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.yahoo.mobile.client.android.flickr.permission.C2D_MESSAGE"/>
+	<permission ns0:name="com.yahoo.mobile.client.android.flickr.permission.RECEIVE_ADM_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.yahoo.mobile.client.android.flickr.permission.RECEIVE_ADM_MESSAGE"/>
+	<uses-permission ns0:name="com.amazon.device.messaging.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F1100B6" ns0:label="@7F100212" ns0:icon="@7F08012B" ns0:name="com.yahoo.mobile.client.android.flickr.application.FlickrApplication" ns0:allowBackup="false" ns0:largeHeap="true" ns0:fullBackupContent="@7F130003" ns0:networkSecurityConfig="@7F130004">
+		<meta-data ns0:name="com.google.android.maps.v2.API_KEY" ns0:value="AIzaSyDmSJyTx1bz6-l_0RkGLaBzg7g2Tk_LrV0"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0013"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F1001DF"/>
+		<service ns0:name="com.yahoo.mobile.client.android.flickr.upload.UploaderService" ns0:exported="false" ns0:stopWithTask="true"/>
+		<service ns0:name="com.yahoo.mobile.client.android.flickr.upload.UploaderServiceProcess" ns0:exported="false" ns0:process=":com.yahoo.mobile.client.android.flickr.uploadservice" ns0:stopWithTask="true"/>
+		<service ns0:name="com.yahoo.mobile.client.android.flickr.upload.MediaContentJob" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false" ns0:process=":com.yahoo.mobile.client.android.flickr.uploadservice" ns0:stopWithTask="true"/>
+		<service ns0:name="com.yahoo.mobile.client.android.flickr.upload.AutoUploaderService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false" ns0:process=":com.yahoo.mobile.client.android.flickr.uploadservice" ns0:stopWithTask="true"/>
+		<receiver ns0:name="com.yahoo.mobile.client.android.flickr.upload.NewPictureReceiver" ns0:process=":com.yahoo.mobile.client.android.flickr.uploadservice">
+			<intent-filter>
+				<action ns0:name="com.android.camera.NEW_PICTURE"/>
+				<action ns0:name="android.hardware.action.NEW_PICTURE"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1100BE" ns0:label="@7F100212" ns0:name="com.yahoo.mobile.client.android.flickr.activity.WelcomeActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.MainActivity" ns0:exported="true" ns0:launchMode="2" ns0:windowSoftInputMode="0x00000022"/>
+		<activity-alias ns0:label="@7F100212" ns0:name="com.yahoo.mobile.client.android.flickr.ui.misc.LoginActivity" ns0:targetActivity="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="flickrauth"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F1100BD" ns0:label="@7F100212" ns0:name="com.yahoo.mobile.client.android.flickr.activity.EditPixelActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.SearchActivity" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:theme="@7F1100E0" ns0:name="com.yahoo.mobile.client.android.flickr.activity.DeepLinkingActivity">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="www.flickr.com" ns0:pathPrefix="/photos"/>
+				<data ns0:scheme="https" ns0:host="www.flickr.com" ns0:pathPrefix="/photos"/>
+				<data ns0:scheme="http" ns0:host="www.flickr.com" ns0:pathPrefix="/gp"/>
+				<data ns0:scheme="https" ns0:host="www.flickr.com" ns0:pathPrefix="/gp"/>
+				<data ns0:scheme="http" ns0:host="www.flickr.com" ns0:pathPrefix="/x"/>
+				<data ns0:scheme="https" ns0:host="www.flickr.com" ns0:pathPrefix="/x"/>
+				<data ns0:scheme="http" ns0:host="flickr.com" ns0:pathPrefix="/photos"/>
+				<data ns0:scheme="https" ns0:host="flickr.com" ns0:pathPrefix="/photos"/>
+				<data ns0:scheme="http" ns0:host="www.flickr.com" ns0:pathPrefix="/groups"/>
+				<data ns0:scheme="https" ns0:host="www.flickr.com" ns0:pathPrefix="/groups"/>
+				<data ns0:scheme="http" ns0:host="flickr.com" ns0:pathPrefix="/groups"/>
+				<data ns0:scheme="https" ns0:host="flickr.com" ns0:pathPrefix="/groups"/>
+				<data ns0:scheme="http" ns0:host="www.flickr.com" ns0:pathPrefix="/people"/>
+				<data ns0:scheme="https" ns0:host="www.flickr.com" ns0:pathPrefix="/people"/>
+				<data ns0:scheme="http" ns0:host="flickr.com" ns0:pathPrefix="/people"/>
+				<data ns0:scheme="https" ns0:host="flickr.com" ns0:pathPrefix="/people"/>
+				<data ns0:scheme="http" ns0:host="m.flickr.com" ns0:pathPrefix="/deep"/>
+				<data ns0:scheme="https" ns0:host="m.flickr.com" ns0:pathPrefix="/deep"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="flic.kr" ns0:pathPrefix="/f"/>
+				<data ns0:scheme="https" ns0:host="flic.kr" ns0:pathPrefix="/f"/>
+				<data ns0:scheme="http" ns0:host="flic.kr" ns0:pathPrefix="/g"/>
+				<data ns0:scheme="https" ns0:host="flic.kr" ns0:pathPrefix="/g"/>
+				<data ns0:scheme="http" ns0:host="flic.kr" ns0:pathPrefix="/p"/>
+				<data ns0:scheme="https" ns0:host="flic.kr" ns0:pathPrefix="/p"/>
+				<data ns0:scheme="http" ns0:host="flic.kr" ns0:pathPrefix="/s"/>
+				<data ns0:scheme="https" ns0:host="flic.kr" ns0:pathPrefix="/s"/>
+				<data ns0:scheme="http" ns0:host="flic.kr" ns0:pathPrefix="/ss"/>
+				<data ns0:scheme="https" ns0:host="flic.kr" ns0:pathPrefix="/ss"/>
+				<data ns0:scheme="http" ns0:host="flic.kr" ns0:pathPrefix="/ps"/>
+				<data ns0:scheme="https" ns0:host="flic.kr" ns0:pathPrefix="/ps"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.FindFriendsActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F1100B8" ns0:name="com.yahoo.mobile.client.android.flickr.activity.AutoUploadOnboardingActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.PhotoStreamActivity"/>
+		<activity ns0:theme="@7F1100CC" ns0:label="@7F100434" ns0:name="com.yahoo.mobile.client.android.flickr.activity.preference.FlickrAutoUploadPreferenceActivity"/>
+		<activity ns0:theme="@7F1100CC" ns0:label="@7F10042E" ns0:name="com.yahoo.mobile.client.android.flickr.activity.preference.FlickrAboutPreferenceActivity"/>
+		<activity ns0:theme="@7F1100CC" ns0:label="@7F100460" ns0:name="com.yahoo.mobile.client.android.flickr.activity.preference.PrivacyPreferenceActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.FilterUploadActivity" ns0:windowSoftInputMode="0x00000010">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.yahoo.mobile.client.android.flickr.activity.FlickrCameraActivity" ns0:configChanges="0x00000020"/>
+		<activity ns0:name="com.yahoo.mobile.client.android.flickr.activity.FlickrVideoRecordingPlaybackActivity" ns0:launchMode="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.yahoo.mobile.client.android.flickr.activity.FlickrPhotoPickerActivity" ns0:configChanges="0x00000484"/>
+		<activity ns0:name="com.yahoo.mobile.client.android.flickr.picker.widget.PhotoPickerActivity" ns0:configChanges="0x00000484"/>
+		<activity ns0:name="com.yahoo.mobile.client.android.flickr.camera.widget.VideoRecordingPlaybackActivity" ns0:launchMode="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F1100C3" ns0:name="com.yahoo.mobile.client.android.flickr.activity.LightboxActivity" ns0:configChanges="0x00000480" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.CommentsActivity" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.GroupCommentsActivity" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.GroupTopicCreateActivity" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.LoginActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.ProfileActivity" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.ProfileBioDetailActivity" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1100CB" ns0:name="com.yahoo.mobile.client.android.flickr.activity.PhotoInfoActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.AlbumPhotosActivity" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.GroupActivity" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.ReportUserActivity" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.PeopleListActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.EditPhotosActivity" ns0:configChanges="0x00000490"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.EditProfileActivity" ns0:configChanges="0x00000490" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.EditCommentActivity" ns0:configChanges="0x00000490" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F1100B7" ns0:name="com.yahoo.mobile.client.android.flickr.activity.EditCoverPhotoActivity" ns0:configChanges="0x00000490"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.ShareDetailActivity" ns0:windowSoftInputMode="0x00000014"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.ServiceConnectActivity"/>
+		<activity ns0:theme="@7F1100C1" ns0:name="com.yahoo.mobile.client.android.flickr.activity.ServiceSelectionActivty"/>
+		<activity ns0:theme="@7F1100C2" ns0:name="com.yahoo.mobile.client.android.flickr.activity.ShareActivity"/>
+		<activity ns0:theme="@7F1100C1" ns0:name="com.yahoo.mobile.client.android.flickr.activity.ShareToGroupActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.TagSearchActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.LocationSearchActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.UnifiedSearchResultActivity"/>
+		<activity ns0:theme="@7F1100B7" ns0:label="@7F100441" ns0:name="com.yahoo.mobile.client.android.flickr.activity.preference.CreditsActivity"/>
+		<activity ns0:theme="@7F1100E0" ns0:name="com.yahoo.mobile.client.android.flickr.activity.GroupInviteApprovalActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.UnsatisfiedLinkErrorActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:label="@7F10012C" ns0:name="com.yahoo.mobile.client.android.flickr.activity.CameraRollActivity" ns0:parentActivityName="com.yahoo.mobile.client.android.flickr.activity.MainActivity"/>
+		<activity ns0:theme="@7F1100B6" ns0:name="com.yahoo.mobile.client.android.flickr.activity.PhotoPreviewActivity"/>
+		<activity ns0:theme="@7F1100BE" ns0:name="com.yahoo.mobile.client.android.flickr.activity.GroupMembersActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:label="@7F100212" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<service ns0:name="com.htc.blinkfeed.service.BlinkFeedPluginService">
+			<intent-filter>
+				<action ns0:name="com.htc.opensense.social.SocialPlugin"/>
+			</intent-filter>
+			<meta-data ns0:name="plugin" ns0:value="com.yahoo.mobile.client.android.flickr.blinkfeed.FlickrBlinkFeedPlugin"/>
+		</service>
+		<service ns0:name="com.yahoo.mobile.client.android.flickr.FcmService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.yahoo.mobile.client.android.flickr.provider.LogcatContentProvider" ns0:authorities="com.yahoo.mobile.client.android.flickr.logcat.provider" ns0:grantUriPermissions="true">
+			<grant-uri-permission ns0:path="/log.txt"/>
+		</provider>
+		<provider ns0:name="com.yahoo.mobile.client.android.flickr.provider.FlickrShareContentProvider" ns0:exported="true" ns0:authorities="com.yahoo.mobile.client.android.flickr.share.provider"/>
+		<activity ns0:name="com.yahoo.mobile.client.share.ymobileminibrowser.YMobileMiniBrowserActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F11018C" ns0:label="@7F1000A0" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.SignUpActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11018C" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.SignInWebActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F11018E" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.SSOActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11018C" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.CommChannelActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F11018A" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.AccountKeyNotificationActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:exported="true" ns0:taskAffinity="" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F11018C" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.TermsAndPrivacyWebActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F11018C" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.MemberCenterWebActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11018C" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.AuthorizationActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F11018E" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.ManageAccountsListActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11018E" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.AccountInfoActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11018E" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.SecurityProtectionActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11018E" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.BaseSecurityActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11018C" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.TrapsActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F11018E" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.ui.AccountSwitcherActivity" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11018C" ns0:label="@7F1000A0" ns0:name="com.yahoo.mobile.client.share.account.controller.activity.AccountServiceSelectActivity" ns0:excludeFromRecents="true">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.yahoo.mobile.client.share.account.controller.AccountAuthenticatorService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F130000"/>
+		</service>
+		<service ns0:name="com.yahoo.mobile.client.share.account.controller.service.AccountKeyAuthService" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP"/>
+		<receiver ns0:name="com.yahoo.mobile.client.share.account.AccountChangedReceiver" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.yahoo.android.account.modified"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.yahoo.mobile.client.share.account.AccountRemovedReceiver" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.yahoo.android.account.removed"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.yahoo.mobile.client.share.account.AccountDataReceiver" ns0:permission="com.yahoo.mobile.client.android.permissions.YAHOO_INTER_APP" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.yahoo.android.account.cookie"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.yahoo.android.account.globalsalt"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.yaho.android.account.fallback"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.yahoo.mobile.client.share.account.AccountFileProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.flickr.account.file.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130001"/>
+		</provider>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true"/>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.flickr.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130008"/>
+		</provider>
+		<receiver ns0:name="com.yahoo.platform.mobile.crt.service.push.MessagingSDKGCMReceiver" ns0:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.yahoo.mobile.client.android.flickr"/>
+			</intent-filter>
+		</receiver>
+		<ns1:enable-feature ns0:name="com.amazon.device.messaging" ns0:required="false"/>
+		<service ns0:name="com.yahoo.platform.mobile.crt.service.push.MessagingSDKADMHandler" ns0:exported="false"/>
+		<receiver ns0:name="com.yahoo.platform.mobile.crt.service.push.MessagingSDKADMHandler$MessageAlertReceiver" ns0:permission="com.amazon.device.messaging.permission.SEND">
+			<intent-filter>
+				<action ns0:name="com.amazon.device.messaging.intent.REGISTRATION"/>
+				<action ns0:name="com.amazon.device.messaging.intent.RECEIVE"/>
+				<category ns0:name="com.yahoo.mobile.client.android.flickr"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.yahoo.mobile.client.android.snoopy.partner.InstallReferrerBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="android.support.VERSION" ns0:value="26.1.0"/>
+		<provider ns0:name="com.google.firebase.perf.provider.FirebasePerfProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.flickr.firebaseperfprovider" ns0:initOrder="101"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.flickr.crashlyticsinitprovider" ns0:initOrder="90"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.yahoo.mobile.client.android.flickr.firebaseinitprovider" ns0:initOrder="100"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="android.arch.lifecycle.VERSION" ns0:value="27.0.0-SNAPSHOT"/>
+	</application>
+</manifest>

@@ -1,0 +1,193 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="76000" ns0:versionName="7.6.0.0" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.fivehundredpx.viewer" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="23" ns0:targetSdkVersion="33"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.GET_PACKAGE_SIZE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.media.browse.MediaBrowserService"/>
+		</intent>
+	</queries>
+	<application ns0:theme="@7F12000D" ns0:label="@7F11006B" ns0:icon="@7F0E0001" ns0:name="com.fivehundredpx.viewer.ViewerApp" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="false" ns0:extractNativeLibs="false" ns0:networkSecurityConfig="@7F150003" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<receiver ns0:name="com.fivehundredpx.widget.HomeScreenWidget" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F150001"/>
+		</receiver>
+		<service ns0:name="com.fivehundredpx.widget.HomeScreenWidgetService" ns0:permission="android.permission.BIND_REMOTEVIEWS"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F1101FD"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationName" ns0:value="@7F1101FE"/>
+		<meta-data ns0:name="com.facebook.sdk.AutoLogAppEventsEnabled" ns0:value="false"/>
+		<meta-data ns0:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" ns0:value="false"/>
+		<meta-data ns0:name="com.crashlytics.ApiKey" ns0:value="af5cfd8a1c7cce9adfb2dcda632665b081f96da7"/>
+		<meta-data ns0:name="com.google.android.geo.API_KEY" ns0:value="AIzaSyCXQVCztuzJoiwourCcNTCAie32CDs0ehc"/>
+		<meta-data ns0:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" ns0:value="com.fivehundredpx.viewer.cast.PxCastOptionsProvider"/>
+		<activity ns0:name="com.fivehundredpx.viewer.login.LoginSignupActivity" ns0:excludeFromRecents="true"/>
+		<activity ns0:theme="@7F12000D" ns0:label="@7F11006B" ns0:name="com.fivehundredpx.viewer.loggedout.TourActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:label="@7F11006B" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@7F12028C" ns0:label="@7F11006B" ns0:name="com.fivehundredpx.viewer.RootActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="http" ns0:host="500px.com" ns0:pathPattern=".*"/>
+				<data ns0:scheme="https" ns0:host="500px.com" ns0:pathPattern=".*"/>
+				<data ns0:scheme="px" ns0:host="500px.com" ns0:pathPattern=".*"/>
+			</intent-filter>
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="em2.500px.com" ns0:pathPrefix="/uni/"/>
+				<data ns0:scheme="http" ns0:host="em2.500px.com" ns0:pathPrefix="/uni/"/>
+				<data ns0:scheme="https" ns0:host="emln.500px.com" ns0:pathPrefix="/uni/"/>
+				<data ns0:scheme="http" ns0:host="emln.500px.com" ns0:pathPrefix="/uni/"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.fivehundredpx.viewer.MESSAGE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F11006B" ns0:name="com.fivehundredpx.viewer.main.MainActivity" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F1203EB" ns0:label="@7F11006B" ns0:name="com.fivehundredpx.viewer.photodetail.FocusViewActivity" ns0:configChanges="0x000000A0"/>
+		<activity ns0:theme="@7F12000D" ns0:label="@7F11006B" ns0:name="com.fivehundredpx.viewer.upload.UploadFormActivityV2" ns0:exported="true" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/jpg"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120013" ns0:label="@7F110528" ns0:name="com.fivehundredpx.viewer.search.SearchActivity" ns0:exported="false" ns0:launchMode="1" ns0:parentActivityName="com.fivehundredpx.viewer.main.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F150006"/>
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".main.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F12000D" ns0:name="com.fivehundredpx.components.activities.FragmentStackActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F12000D" ns0:name="com.fivehundredpx.components.activities.HeadlessFragmentStackActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F120011" ns0:name="com.fivehundredpx.viewer.onboarding.NewOnboardingActivity" ns0:exported="true" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F12000D" ns0:name="com.fivehundredpx.components.webviews.customtabs.WebViewActivity"/>
+		<activity ns0:theme="@7F12000D" ns0:label="@7F11064D" ns0:name="com.fivehundredpx.viewer.quests.UploadsLibraryActivity"/>
+		<service ns0:name="com.fivehundredpx.viewer.upload.UploadService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.fivehundredpx.core.upload.UploadFileService" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.fivehundredpx.viewer.search.PxSuggestionProvider" ns0:exported="false" ns0:authorities="com.fivehundredpx.PxSuggestionProvider"/>
+		<activity ns0:theme="@7F12000D" ns0:name="com.fivehundredpx.components.activities.ComponentsGalleryActivity"/>
+		<activity ns0:name="com.fivehundredpx.viewer.maintenance.MaintenanceActivity"/>
+		<activity ns0:theme="@7F12000D" ns0:name="com.fivehundredpx.viewer.membership.UpgradeMembershipActivity"/>
+		<activity ns0:name="com.fivehundredpx.viewer.upload.UploadFlowActivity"/>
+		<service ns0:name="com.braze.push.BrazeFirebaseMessagingService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.fivehundredpx.core.push.BrazeDeepLinkBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.braze.push.intent.NOTIFICATION_RECEIVED"/>
+				<action ns0:name="com.braze.push.intent.NOTIFICATION_OPENED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.appboy.ui.AppboyWebViewActivity" ns0:exported="false"/>
+		<activity ns0:name="com.braze.ui.BrazeWebViewActivity" ns0:exported="false"/>
+		<activity ns0:name="com.appboy.ui.activities.AppboyFeedActivity" ns0:exported="false"/>
+		<activity ns0:name="com.appboy.ui.activities.AppboyContentCardsActivity" ns0:exported="false"/>
+		<activity ns0:name="com.braze.ui.activities.ContentCardsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1201D6" ns0:name="com.braze.push.NotificationTrampolineActivity" ns0:exported="false" ns0:launchMode="3"/>
+		<receiver ns0:name="com.braze.push.BrazePushReceiver" ns0:exported="false"/>
+		<receiver ns0:name="com.braze.receivers.BrazeActionReceiver" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.cast.framework.media.MediaNotificationService" ns0:exported="false" ns0:foregroundServiceType="0x00000002"/>
+		<service ns0:name="com.google.android.gms.cast.framework.ReconnectionService" ns0:exported="false"/>
+		<activity ns0:theme="@7F120244" ns0:label="@7F110472" ns0:name="com.google.android.libraries.places.widget.AutocompleteActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.fivehundredpx.viewer"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.fivehundredpx.viewer.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0012"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.fivehundredpx.viewer.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.fivehundredpx.viewer.com.squareup.picasso"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.fivehundredpx.viewer.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F120382" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:enabled="false" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F15000D"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

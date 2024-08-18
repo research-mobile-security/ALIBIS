@@ -1,0 +1,205 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "12899",
+    "@ns0:versionName": "17.0.12899",
+    "@ns0:installLocation": "0",
+    "@ns0:compileSdkVersion": "29",
+    "@ns0:compileSdkVersionCodename": "10",
+    "@package": "com.on1.onmobile",
+    "@platformBuildVersionCode": "29",
+    "@platformBuildVersionName": "10",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "24",
+      "@ns0:targetSdkVersion": "30"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.location.gps",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera"
+      }
+    ],
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true"
+    },
+    "application": {
+      "@ns0:theme": "@7F0F0005",
+      "@ns0:label": "ON1 Photo",
+      "@ns0:icon": "@7F0C0000",
+      "@ns0:name": "com.ononesoftware.on1mobile.MBApplication",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:extractNativeLibs": "true",
+      "@ns0:roundIcon": "@7F0C0002",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "provider": {
+        "@ns0:name": "androidx.core.content.FileProvider",
+        "@ns0:exported": "false",
+        "@ns0:authorities": "com.ononesoftware.on1mobile.MBApplication.fileprovider",
+        "@ns0:grantUriPermissions": "true",
+        "meta-data": {
+          "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+          "@ns0:resource": "@7F110000"
+        }
+      },
+      "activity": [
+        {
+          "@ns0:theme": "@7F0F0005",
+          "@ns0:label": "ON1 Photo",
+          "@ns0:name": "com.ononesoftware.on1mobile.MBActivity",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:configChanges": "0x40003FF7",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          },
+          "meta-data": [
+            {
+              "@ns0:name": "android.app.lib_name",
+              "@ns0:value": "ON1Mobile"
+            },
+            {
+              "@ns0:name": "android.app.qt_sources_resource_id",
+              "@ns0:resource": "@7F020003"
+            },
+            {
+              "@ns0:name": "android.app.repository",
+              "@ns0:value": "default"
+            },
+            {
+              "@ns0:name": "android.app.qt_libs_resource_id",
+              "@ns0:resource": "@7F020002"
+            },
+            {
+              "@ns0:name": "android.app.bundled_libs_resource_id",
+              "@ns0:resource": "@7F020000"
+            },
+            {
+              "@ns0:name": "android.app.bundle_local_qt_libs",
+              "@ns0:value": "1"
+            },
+            {
+              "@ns0:name": "android.app.use_local_qt_libs",
+              "@ns0:value": "1"
+            },
+            {
+              "@ns0:name": "android.app.libs_prefix",
+              "@ns0:value": "/data/local/tmp/qt/"
+            },
+            {
+              "@ns0:name": "android.app.load_local_libs_resource_id",
+              "@ns0:resource": "@7F020001"
+            },
+            {
+              "@ns0:name": "android.app.load_local_jars",
+              "@ns0:value": "jar/QtAndroid.jar:jar/QtAndroidBearer.jar:jar/QtAndroidExtras.jar:jar/QtPositioning.jar:jar/QtAndroidWebView.jar"
+            },
+            {
+              "@ns0:name": "android.app.static_init_classes",
+              "@ns0:value": "org.qtproject.qt5.android.positioning.QtPositioning"
+            },
+            {
+              "@ns0:name": "android.app.ministro_not_found_msg",
+              "@ns0:value": "@7F0E001D"
+            },
+            {
+              "@ns0:name": "android.app.ministro_needed_msg",
+              "@ns0:value": "@7F0E001C"
+            },
+            {
+              "@ns0:name": "android.app.fatal_error_msg",
+              "@ns0:value": "@7F0E001B"
+            },
+            {
+              "@ns0:name": "android.app.unsupported_android_version",
+              "@ns0:value": "@7F0E0020"
+            },
+            {
+              "@ns0:name": "android.app.splash_screen_drawable",
+              "@ns0:resource": "@7F07006D"
+            },
+            {
+              "@ns0:name": "android.app.splash_screen_sticky",
+              "@ns0:value": "true"
+            },
+            {
+              "@ns0:name": "android.app.background_running",
+              "@ns0:value": "false"
+            },
+            {
+              "@ns0:name": "android.app.auto_screen_scale_factor",
+              "@ns0:value": "false"
+            },
+            {
+              "@ns0:name": "android.app.extract_android_style",
+              "@ns0:value": "minimal"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:process": ":playcore_missing_splits_activity",
+          "@ns0:stateNotNeeded": "true",
+          "@ns0:launchMode": "3"
+        },
+        {
+          "@ns0:theme": "@7F0F010A",
+          "@ns0:name": "com.google.android.play.core.common.PlayCoreDialogWrapperActivity",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "false",
+          "@ns0:stateNotNeeded": "true"
+        }
+      ],
+      "service": {
+        "@ns0:name": "com.google.android.play.core.assetpacks.AssetPackExtractionService",
+        "@ns0:enabled": "false",
+        "@ns0:exported": "true"
+      },
+      "meta-data": {
+        "@ns0:name": "com.android.vending.derived.apk.id",
+        "@ns0:value": "1"
+      }
+    }
+  }
+}

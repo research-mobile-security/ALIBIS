@@ -1,0 +1,2084 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "10733",
+    "@ns0:versionName": "1.0.7",
+    "@ns0:installLocation": "0",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "ru.zdevs.zarchiver",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "14",
+      "@ns0:targetSdkVersion": "33"
+    },
+    "queries": {
+      "intent": [
+        {
+          "action": {
+            "@ns0:name": "ru.zdevs.zarchiver.plugin.PLUGIN_APPLICATION"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:mimeType": "*/*",
+            "@ns0:scheme": "content"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.VIEW"
+          },
+          "data": {
+            "@ns0:mimeType": "*/*",
+            "@ns0:scheme": "file"
+          }
+        },
+        {
+          "action": {
+            "@ns0:name": "android.intent.action.MAIN"
+          },
+          "category": {
+            "@ns0:name": "android.intent.category.LAUNCHER"
+          }
+        }
+      ]
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE",
+        "@ns0:maxSdkVersion": "29"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_MEDIA_STORAGE",
+        "@ns0:maxSdkVersion": "29"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_SUPERUSER"
+      },
+      {
+        "@ns0:name": "ru.zdevs.zarchiver.permission.PLUGIN.CLOUD"
+      },
+      {
+        "@ns0:name": "ru.zdevs.zarchiver.permission.PLUGIN.USB"
+      }
+    ],
+    "uses-permission-sdk-23": [
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE",
+        "@ns0:minSdkVersion": "28"
+      },
+      {
+        "@ns0:name": "android.permission.REQUEST_INSTALL_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "@ns0:minSdkVersion": "30"
+      },
+      {
+        "@ns0:name": "android.permission.POST_NOTIFICATIONS",
+        "@ns0:minSdkVersion": "33"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.touchscreen",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.type.pc",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.software.leanback",
+        "@ns0:required": "false"
+      }
+    ],
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:resizeable": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "application": {
+      "@ns0:theme": "@7F0D0001",
+      "@ns0:label": "@7F0C018E",
+      "@ns0:icon": "@7F0A0000",
+      "@ns0:name": "ru.zdevs.zarchiver.ZApp",
+      "@ns0:allowBackup": "true",
+      "@ns0:restoreAnyVersion": "true",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:banner": "@7F0600C5",
+      "@ns0:extractNativeLibs": "true",
+      "@ns0:roundIcon": "@7F0A0001",
+      "@ns0:appCategory": "7",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "@ns0:requestRawExternalStorageAccess": "true",
+      "@ns0:localeConfig": "@7F0F0000",
+      "activity": [
+        {
+          "@ns0:theme": "@7F0D0001",
+          "@ns0:label": "@7F0C018E",
+          "@ns0:name": "ru.zdevs.zarchiver.ZArchiver",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x00000D80",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "@ns0:documentLaunchMode": "1",
+          "@ns0:resizeableActivity": "true",
+          "layout": {
+            "@ns0:gravity": "0x00000011",
+            "@ns0:minWidth": "300.000000dip",
+            "@ns0:minHeight": "350.000000dip"
+          },
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.LEANBACK_LAUNCHER"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:host": "*"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:mimeType": "application/octet-stream"
+                },
+                {
+                  "@ns0:mimeType": "resource/folder"
+                }
+              ]
+            },
+            {
+              "@ns0:priority": "2147483647",
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:host": "*"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:mimeType": "application/zstd"
+                },
+                {
+                  "@ns0:mimeType": "application/rar"
+                },
+                {
+                  "@ns0:mimeType": "application/zip"
+                },
+                {
+                  "@ns0:mimeType": "application/x-cpio"
+                },
+                {
+                  "@ns0:mimeType": "application/x-debian-package"
+                },
+                {
+                  "@ns0:mimeType": "application/x-gtar"
+                },
+                {
+                  "@ns0:mimeType": "application/x-iso9660-image"
+                },
+                {
+                  "@ns0:mimeType": "application/x-lha"
+                },
+                {
+                  "@ns0:mimeType": "application/x-lzh"
+                },
+                {
+                  "@ns0:mimeType": "application/x-lzx"
+                },
+                {
+                  "@ns0:mimeType": "application/x-tar"
+                },
+                {
+                  "@ns0:mimeType": "application/x-apple-diskimage"
+                },
+                {
+                  "@ns0:mimeType": "application/x-ustar"
+                },
+                {
+                  "@ns0:mimeType": "application/x-gtar-compressed"
+                },
+                {
+                  "@ns0:mimeType": "application/x-zip-compressed"
+                },
+                {
+                  "@ns0:mimeType": "application/gnutar"
+                },
+                {
+                  "@ns0:mimeType": "application/x-compressed"
+                },
+                {
+                  "@ns0:mimeType": "application/x-7z-compressed"
+                },
+                {
+                  "@ns0:mimeType": "application/x-lz4"
+                },
+                {
+                  "@ns0:mimeType": "application/x-ace-compressed"
+                },
+                {
+                  "@ns0:mimeType": "application/x-bzip"
+                },
+                {
+                  "@ns0:mimeType": "application/x-bzip2"
+                },
+                {
+                  "@ns0:mimeType": "application/x-gzip"
+                },
+                {
+                  "@ns0:mimeType": "application/x-xz"
+                },
+                {
+                  "@ns0:mimeType": "application/vnd.ms-cab-compressed"
+                },
+                {
+                  "@ns0:mimeType": "application/x-lzma"
+                },
+                {
+                  "@ns0:mimeType": "application/java-archive"
+                },
+                {
+                  "@ns0:mimeType": "application/x-rar-compressed"
+                },
+                {
+                  "@ns0:mimeType": "application/x-compress"
+                },
+                {
+                  "@ns0:mimeType": "application/x-rpm"
+                },
+                {
+                  "@ns0:mimeType": "application/gzip"
+                },
+                {
+                  "@ns0:mimeType": "application/7z"
+                },
+                {
+                  "@ns0:mimeType": "application/gz"
+                },
+                {
+                  "@ns0:mimeType": "application/bz"
+                },
+                {
+                  "@ns0:mimeType": "application/bz2"
+                },
+                {
+                  "@ns0:mimeType": "application/xz"
+                },
+                {
+                  "@ns0:mimeType": "application/zipx"
+                },
+                {
+                  "@ns0:mimeType": "application/lza"
+                },
+                {
+                  "@ns0:mimeType": "application/lzx"
+                },
+                {
+                  "@ns0:mimeType": "application/lzma"
+                }
+              ]
+            },
+            {
+              "@ns0:priority": "2147483647",
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "*/*",
+                  "@ns0:host": "*"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.gz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.bzip2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zipx"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.zip\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tgz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.tbz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lza"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.lzma"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ecm"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.wim"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.wim"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.wim"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.wim"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.wim"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.lz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.lz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.lz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.lz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.lz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.lzo"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.lzo"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.lzo"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.lzo"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.lzo"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.tbz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.tbz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.tbz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.tbz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.tbz2"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.xz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.xz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.xz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.xz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.xz"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.rar\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.rar\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.rar\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.rar\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.zst"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.zst"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.zst"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.zst"
+                }
+              ]
+            },
+            {
+              "@ns0:priority": "2147483647",
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "*/*",
+                  "@ns0:host": "*"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ZIP"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Zip"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.RAR"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Rar"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.7Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.ISO"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Iso"
+                },
+                {
+                  "@ns0:pathPattern": ".*7Z\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*ZIP\\.001"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.LZH"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Lzh"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.Z"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\.ZST"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\.ZST"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\.ZST"
+                },
+                {
+                  "@ns0:pathPattern": ".*\\..*\\..*\\..*\\.ZST"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "ru.zdevs.zarchiver.action.EXTERNAL"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "ru.zdevs.zarchiver.category.OPEN"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEND_MULTIPLE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F0D0001",
+          "@ns0:label": "@7F0C0168",
+          "@ns0:name": "ru.zdevs.zarchiver.activity.SettingsDlg",
+          "@ns0:resizeableActivity": "true"
+        },
+        {
+          "@ns0:theme": "@7F0D0001",
+          "@ns0:label": "@7F0C001A",
+          "@ns0:name": "ru.zdevs.zarchiver.activity.AboutDlg",
+          "@ns0:resizeableActivity": "true"
+        },
+        {
+          "@ns0:theme": "@7F0D00C7",
+          "@ns0:name": "ru.zdevs.zarchiver.activity.OpenAsDlg",
+          "@ns0:resizeableActivity": "true"
+        },
+        {
+          "@ns0:theme": "@7F0D0001",
+          "@ns0:name": "ru.zdevs.zarchiver.activity.InstallApkDlg",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x00000D80",
+          "@ns0:documentLaunchMode": "1",
+          "@ns0:resizeableActivity": "true"
+        },
+        {
+          "@ns0:theme": "@7F0D0001",
+          "@ns0:name": "ru.zdevs.zarchiver.ZSelectFile",
+          "@ns0:exported": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:configChanges": "0x00000D80",
+          "@ns0:windowSoftInputMode": "0x00000020",
+          "layout": {
+            "@ns0:gravity": "0x00000011",
+            "@ns0:minWidth": "300.000000dip",
+            "@ns0:minHeight": "350.000000dip"
+          },
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.OPEN_DOCUMENT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F0D00C7",
+          "@ns0:label": "@7F0C00A2",
+          "@ns0:name": "ru.zdevs.zarchiver.activity.ExtractDlg",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "2",
+          "@ns0:configChanges": "0x00000D80",
+          "@ns0:documentLaunchMode": "1",
+          "@ns0:resizeableActivity": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.BROWSABLE"
+              }
+            ],
+            "data": [
+              {
+                "@ns0:host": "*"
+              },
+              {
+                "@ns0:scheme": "file"
+              },
+              {
+                "@ns0:scheme": "content"
+              },
+              {
+                "@ns0:mimeType": "application/zstd"
+              },
+              {
+                "@ns0:mimeType": "application/rar"
+              },
+              {
+                "@ns0:mimeType": "application/zip"
+              },
+              {
+                "@ns0:mimeType": "application/x-cpio"
+              },
+              {
+                "@ns0:mimeType": "application/x-debian-package"
+              },
+              {
+                "@ns0:mimeType": "application/x-gtar"
+              },
+              {
+                "@ns0:mimeType": "application/x-iso9660-image"
+              },
+              {
+                "@ns0:mimeType": "application/x-lha"
+              },
+              {
+                "@ns0:mimeType": "application/x-lzh"
+              },
+              {
+                "@ns0:mimeType": "application/x-lzx"
+              },
+              {
+                "@ns0:mimeType": "application/x-tar"
+              },
+              {
+                "@ns0:mimeType": "application/x-apple-diskimage"
+              },
+              {
+                "@ns0:mimeType": "application/x-ustar"
+              },
+              {
+                "@ns0:mimeType": "application/x-gtar-compressed"
+              },
+              {
+                "@ns0:mimeType": "application/x-zip-compressed"
+              },
+              {
+                "@ns0:mimeType": "application/gnutar"
+              },
+              {
+                "@ns0:mimeType": "application/x-compressed"
+              },
+              {
+                "@ns0:mimeType": "application/x-7z-compressed"
+              },
+              {
+                "@ns0:mimeType": "application/x-lz4"
+              },
+              {
+                "@ns0:mimeType": "application/x-ace-compressed"
+              },
+              {
+                "@ns0:mimeType": "application/x-bzip"
+              },
+              {
+                "@ns0:mimeType": "application/x-bzip2"
+              },
+              {
+                "@ns0:mimeType": "application/x-gzip"
+              },
+              {
+                "@ns0:mimeType": "application/x-xz"
+              },
+              {
+                "@ns0:mimeType": "application/vnd.ms-cab-compressed"
+              },
+              {
+                "@ns0:mimeType": "application/x-lzma"
+              },
+              {
+                "@ns0:mimeType": "application/java-archive"
+              },
+              {
+                "@ns0:mimeType": "application/x-rar-compressed"
+              },
+              {
+                "@ns0:mimeType": "application/x-compress"
+              },
+              {
+                "@ns0:mimeType": "application/x-rpm"
+              },
+              {
+                "@ns0:mimeType": "application/gzip"
+              },
+              {
+                "@ns0:mimeType": "application/7z"
+              },
+              {
+                "@ns0:mimeType": "application/gz"
+              },
+              {
+                "@ns0:mimeType": "application/bz"
+              },
+              {
+                "@ns0:mimeType": "application/bz2"
+              },
+              {
+                "@ns0:mimeType": "application/xz"
+              },
+              {
+                "@ns0:mimeType": "application/zipx"
+              },
+              {
+                "@ns0:mimeType": "application/lza"
+              },
+              {
+                "@ns0:mimeType": "application/lzx"
+              },
+              {
+                "@ns0:mimeType": "application/lzma"
+              }
+            ]
+          }
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "ru.zdevs.zarchiver.service.ZArchiverService",
+          "@ns0:enabled": "true",
+          "@ns0:process": ":service",
+          "@ns0:stopWithTask": "false",
+          "@ns0:singleUser": "false",
+          "@ns0:foregroundServiceType": "0x00000002"
+        },
+        {
+          "@ns0:name": "ru.zdevs.zarchiver.service.ZArchiverClearTemp",
+          "@ns0:enabled": "true",
+          "@ns0:singleUser": "false"
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "ru.zdevs.zarchiver.provider.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "ru.zdevs.zarchiver.external",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "ru.zdevs.zarchiver.provider.ArchiveFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:process": ":archive",
+          "@ns0:authorities": "ru.zdevs.zarchiver.archive",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "ru.zdevs.zarchiver.provider.PluginFileProvider",
+          "@ns0:exported": "false",
+          "@ns0:process": ":plugin",
+          "@ns0:authorities": "ru.zdevs.zarchiver.plugin",
+          "@ns0:grantUriPermissions": "true"
+        }
+      ]
+    }
+  }
+}

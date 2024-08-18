@@ -1,0 +1,629 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "85",
+    "@ns0:versionName": "5.3.3",
+    "@ns0:installLocation": "0",
+    "@ns0:compileSdkVersion": "33",
+    "@ns0:compileSdkVersionCodename": "13",
+    "@package": "com.simplemobiletools.filemanager",
+    "@platformBuildVersionCode": "33",
+    "@platformBuildVersionName": "13",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "23",
+      "@ns0:targetSdkVersion": "33"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.REQUEST_INSTALL_PACKAGES"
+      },
+      {
+        "@ns0:name": "android.permission.MANAGE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.POST_NOTIFICATIONS"
+      },
+      {
+        "@ns0:name": "android.permission.USE_FINGERPRINT"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.faketouch",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.screen.portrait",
+        "@ns0:required": "false"
+      }
+    ],
+    "queries": {
+      "package": [
+        {
+          "@ns0:name": "com.simplemobiletools.filemanager.pro.debug"
+        },
+        {
+          "@ns0:name": "com.simplemobiletools.filemanager.pro"
+        }
+      ]
+    },
+    "application": {
+      "@ns0:theme": "@7F110009",
+      "@ns0:label": "@7F100043",
+      "@ns0:icon": "@7F0E0001",
+      "@ns0:name": "com.simplemobiletools.filemanager.App",
+      "@ns0:allowBackup": "true",
+      "@ns0:supportsRtl": "true",
+      "@ns0:extractNativeLibs": "false",
+      "@ns0:roundIcon": "@7F0E0001",
+      "@ns0:appCategory": "7",
+      "@ns0:appComponentFactory": "androidx.core.app.CoreComponentFactory",
+      "@ns0:requestLegacyExternalStorage": "true",
+      "@ns0:localeConfig": "@7F130000",
+      "activity": [
+        {
+          "@ns0:theme": "@7F1102F7",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity"
+        },
+        {
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.MainActivity",
+          "@ns0:exported": "true",
+          "meta-data": {
+            "@ns0:name": "android.app.default_searchable",
+            "@ns0:resource": "@7F130002"
+          },
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.SEARCH"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.CREATE_DOCUMENT"
+              },
+              "data": {
+                "@ns0:mimeType": "*/*"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.RINGTONE_PICKER"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "resource/folder"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.MimeTypesActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000080",
+          "@ns0:parentActivityName": "com.simplemobiletools.filemanager.activities.MainActivity"
+        },
+        {
+          "@ns0:label": "@7F100148",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.ReadTextActivity",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "text/*"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@7F110448",
+          "@ns0:label": "@7F1002C6",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.PDFViewerActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "application/pdf"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F1000D4",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.DecompressActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000080",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.VIEW"
+            },
+            "data": {
+              "@ns0:mimeType": "application/zip"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F100332",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SaveAsActivity",
+          "@ns0:exported": "true",
+          "@ns0:configChanges": "0x00000080",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.SEND"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            },
+            "data": {
+              "@ns0:mimeType": "*/*"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F100362",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SettingsActivity",
+          "@ns0:exported": "false",
+          "@ns0:parentActivityName": "com.simplemobiletools.filemanager.activities.MainActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.APPLICATION_PREFERENCES"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.DEFAULT"
+            }
+          }
+        },
+        {
+          "@ns0:label": "@7F10013E",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.FavoritesActivity",
+          "@ns0:exported": "false",
+          "@ns0:parentActivityName": "com.simplemobiletools.filemanager.activities.MainActivity"
+        },
+        {
+          "@ns0:label": "@7F10001C",
+          "@ns0:name": "com.simplemobiletools.commons.activities.AboutActivity",
+          "@ns0:exported": "false",
+          "@ns0:parentActivityName": "com.simplemobiletools.filemanager.activities.MainActivity"
+        },
+        {
+          "@ns0:label": "@7F1000C8",
+          "@ns0:name": "com.simplemobiletools.commons.activities.CustomizationActivity",
+          "@ns0:exported": "false",
+          "@ns0:parentActivityName": "com.simplemobiletools.filemanager.activities.SettingsActivity"
+        },
+        {
+          "@ns0:label": "@7F10017C",
+          "@ns0:name": "com.simplemobiletools.commons.activities.FAQActivity",
+          "@ns0:exported": "false",
+          "@ns0:parentActivityName": "com.simplemobiletools.commons.activities.AboutActivity"
+        },
+        {
+          "@ns0:label": "@7F1003C2",
+          "@ns0:name": "com.simplemobiletools.commons.activities.LicenseActivity",
+          "@ns0:exported": "false",
+          "@ns0:parentActivityName": "com.simplemobiletools.commons.activities.AboutActivity"
+        }
+      ],
+      "activity-alias": [
+        {
+          "@ns0:icon": "@7F0E000B",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Grey_black",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E000B",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0004",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Blue_grey",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0004",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0005",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Brown",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0005",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0007",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Deep_orange",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0007",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0001",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Orange",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0001",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0002",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Amber",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0002",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0014",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Yellow",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0014",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E000F",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Lime",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E000F",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E000E",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Light_green",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E000E",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E000A",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Green",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E000A",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0013",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Teal",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0013",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0006",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Cyan",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0006",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E000D",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Light_blue",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E000D",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0003",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Blue",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0003",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E000C",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Indigo",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E000C",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0008",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Deep_purple",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0008",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0011",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Purple",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0011",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0010",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Pink",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0010",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        },
+        {
+          "@ns0:icon": "@7F0E0012",
+          "@ns0:name": "com.simplemobiletools.filemanager.activities.SplashActivity.Red",
+          "@ns0:enabled": "false",
+          "@ns0:exported": "true",
+          "@ns0:targetActivity": "com.simplemobiletools.filemanager.activities.SplashActivity",
+          "@ns0:roundIcon": "@7F0E0012",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": {
+              "@ns0:name": "android.intent.category.LAUNCHER"
+            }
+          }
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.simplemobiletools.filemanager.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F130001"
+          }
+        },
+        {
+          "@ns0:name": "androidx.startup.InitializationProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "com.simplemobiletools.filemanager.androidx-startup",
+          "meta-data": [
+            {
+              "@ns0:name": "androidx.emoji2.text.EmojiCompatInitializer",
+              "@ns0:value": "androidx.startup"
+            },
+            {
+              "@ns0:name": "androidx.lifecycle.ProcessLifecycleInitializer",
+              "@ns0:value": "androidx.startup"
+            }
+          ]
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.android.dynamic.apk.fused.modules",
+          "@ns0:value": "base"
+        },
+        {
+          "@ns0:name": "com.android.stamp.source",
+          "@ns0:value": "https://play.google.com/store"
+        },
+        {
+          "@ns0:name": "com.android.stamp.type",
+          "@ns0:value": "STAMP_TYPE_STANDALONE_APK"
+        },
+        {
+          "@ns0:name": "com.android.vending.splits",
+          "@ns0:resource": "@7F130008"
+        },
+        {
+          "@ns0:name": "com.android.vending.derived.apk.id",
+          "@ns0:value": "1"
+        }
+      ]
+    }
+  }
+}

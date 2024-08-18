@@ -1,0 +1,559 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="405012" ns0:versionName="7.31" ns0:installLocation="1" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.mail.mobile.android.mail" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="26" ns0:targetSdkVersion="32"/>
+	<supports-screens ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="com.mail.mobile.android.mail.permission.C2D_MESSAGE"/>
+	<permission ns0:name="com.mail.mobile.android.mail.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS" ns0:maxSdkVersion="22"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC"/>
+	<uses-permission ns0:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_STATS"/>
+	<uses-permission ns0:name="android.permission.READ_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.READ_CONTACTS"/>
+	<uses-permission ns0:name="android.permission.READ_OWNER_DATA"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<queries>
+		<package ns0:name="com.unitedinternet.portal.android.onlinestorage.gmx"/>
+		<package ns0:name="com.unitedinternet.portal.android.onlinestorage.gmx.debug"/>
+		<package ns0:name="com.unitedinternet.portal.android.onlinestorage.webde"/>
+		<package ns0:name="com.unitedinternet.portal.android.onlinestorage.webde.debug"/>
+		<package ns0:name="com.unitedinternet.portal.android.onlinestorage.mailcom"/>
+		<package ns0:name="com.unitedinternet.portal.android.onlinestorage.mailcom.debug"/>
+		<package ns0:name="com.unitedinternet.portal.android.onlinestorage.eue"/>
+		<package ns0:name="com.unitedinternet.portal.android.onlinestorage.eue.debug"/>
+		<package ns0:name="com.google.android.webview"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW_DOWNLOADS"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.SENDTO"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.android.contacts.action.SHOW_OR_CREATE_CONTACT"/>
+			<data ns0:scheme="tel"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.DIAL"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="*"/>
+		</intent>
+		<package ns0:name="com.google.android.gms.policy_cast_dynamite"/>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.any" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.READ_CALENDAR"/>
+	<uses-permission ns0:name="android.permission.WRITE_CALENDAR"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.REORDER_TASKS"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<application ns0:theme="@7F1402EC" ns0:label="@7F1300EC" ns0:icon="@7F100000" ns0:name="com.unitedinternet.portal.MailcomMailApplication" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:extractNativeLibs="false" ns0:resizeableActivity="true" ns0:networkSecurityConfig="@7F170015" ns0:roundIcon="@7F100002" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:hasFragileUserData="false" ns0:requestLegacyExternalStorage="false" ns0:localeConfig="@7F170012">
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-2907469969081149~8546906689"/>
+		<receiver ns0:label="@7F1300EC" ns0:name="com.unitedinternet.portal.ui.appwidget.AppWidgetProvider" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F170003"/>
+		</receiver>
+		<receiver ns0:label="@7F1300EC" ns0:name="com.unitedinternet.portal.ui.appwidget.CompactAppWidgetProvider" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F170002"/>
+		</receiver>
+		<service ns0:name="com.unitedinternet.portal.ui.appwidget.AppWidgetRemoteViewsService" ns0:permission="android.permission.BIND_REMOTEVIEWS" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.unitedinternet.portal.ui.appwidget.CompactAppWidgetRemoteViewsService" ns0:permission="android.permission.BIND_REMOTEVIEWS" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.mail.mobile.android.mail.provider.TokenBasedAttachmentProvider" ns0:writePermission="com.mail.mobile.android.mail.permission.WRITE_ATTACHMENT" ns0:exported="true" ns0:multiprocess="true" ns0:authorities="com.mail.mobile.android.mail.tokenaccess.attachmentprovider"/>
+		<provider ns0:name="com.unitedinternet.portal.database.providers.AttachmentProvider" ns0:writePermission="com.mail.mobile.android.mail.permission.WRITE_ATTACHMENT" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.mail.mobile.android.mail.attachmentprovider" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="com.mail.mobile.android.mail.provider.MailProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.mail.mobile.android.mail.MailDatabase"/>
+		<provider ns0:name="com.mail.mobile.android.mail.provider.RoomMailProvider" ns0:exported="false" ns0:multiprocess="false" ns0:authorities="com.mail.mobile.android.mail.RoomMailDatabase"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.shares.link.ExternalShareActivity" ns0:exported="true" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter ns0:label="@7F1300EC" ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="@7F130304" ns0:pathPrefix="/@"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="com.google.android.gms.ads.INTEGRATION_MANAGER" ns0:value="webview"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0010"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="3.000000"/>
+		<meta-data ns0:name="com.google.android.gms.ads.AD_MANAGER_APP" ns0:value="true"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.HostActivity" ns0:exported="true" ns0:taskAffinity="com.mail.mobile.android.mail" ns0:launchMode="1" ns0:alwaysRetainTaskState="true" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F170018"/>
+		</activity>
+		<activity ns0:name="com.unitedinternet.portal.ui.pinlock.LockScreenActivity" ns0:exported="false" ns0:stateNotNeeded="true" ns0:excludeFromRecents="true" ns0:launchMode="1" ns0:configChanges="0x00000180" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.preferences.PinSettingsActivity" ns0:exported="false" ns0:configChanges="0x000000A0" ns0:windowSoftInputMode="0x00000003"/>
+		<activity ns0:label="@7F130079" ns0:name="com.unitedinternet.portal.ui.preferences.AccountSettingsActivity" ns0:exported="false" ns0:configChanges="0x000000A0" ns0:parentActivityName="com.unitedinternet.portal.ui.settings.SettingsActivity"/>
+		<activity ns0:label="@7F1304EE" ns0:name="com.unitedinternet.portal.ui.preferences.GeneralSettingsActivity" ns0:exported="false" ns0:configChanges="0x000000A0"/>
+		<activity ns0:label="@7F130034" ns0:name="com.unitedinternet.portal.ui.preferences.AboutActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F130534" ns0:name="com.unitedinternet.portal.ui.preferences.ImprintActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.webview.BlockedJsWebViewActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F13085F" ns0:name="com.unitedinternet.portal.ui.preferences.TermsAndConditionsActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F130750" ns0:name="com.unitedinternet.portal.ui.preferences.DataPrivacyActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.InterceptionDialogActivity" ns0:exported="false" ns0:launchMode="1"/>
+		<activity ns0:label="@7F1303CC" ns0:name="com.unitedinternet.portal.android.mail.compose.ComposeActivityCompose" ns0:enabled="true" ns0:exported="true" ns0:taskAffinity="com.mail.mobile.android.mail" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000010" ns0:parentActivityName="com.unitedinternet.portal.ui.HostActivity" ns0:documentLaunchMode="1" ns0:autoRemoveFromRecents="true">
+			<intent-filter ns0:label="@7F1300B6">
+				<action ns0:name="android.intent.action.SENDTO"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="mailto"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F130862">
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="message/rfc822"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F130862">
+				<action ns0:name="android.intent.action.SEND"/>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F1300B6">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="mailto"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.unitedinternet.portal.ui.appwidget.config.AppWidgetConfigurationActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.unitedinternet.portal.ui.appwidget.config.CompactAppWidgetConfigurationActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.unitedinternet.portal.ui.login.MfALoginRedirectActivity" ns0:exported="true" ns0:launchMode="1" ns0:noHistory="true"/>
+		<activity-alias ns0:name="com.mail.mobile.android.mail.LoginActivityMfa" ns0:enabled="false" ns0:exported="true" ns0:targetActivity="com.unitedinternet.portal.ui.login.MfALoginRedirectActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="com.mail.androidmail.redirect" ns0:host="authorization_code_grant"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.unitedinternet.portal.ui.foldermanagement.FolderManagementActivity" ns0:exported="false"/>
+		<activity ns0:name="com.adition.android.sdk.AditionActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.maildetails.MailViewActivity" ns0:exported="false" ns0:taskAffinity="com.mail.mobile.android.mail" ns0:launchMode="1" ns0:uiOptions="0x00000001" ns0:parentActivityName="com.unitedinternet.portal.ui.HostActivity"/>
+		<activity ns0:label="@7F13079B" ns0:name="com.unitedinternet.portal.news.preferences.NewsPreferenceActivity" ns0:exported="false"/>
+		<service ns0:name="com.unitedinternet.portal.service.MessageNotificationIntentHandlingService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.unitedinternet.portal.authenticator.AuthenticationService" ns0:permission="android.permission.ACCOUNT_MANAGER" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accounts.AccountAuthenticator" ns0:resource="@7F170004"/>
+		</service>
+		<activity ns0:label="@7F130867" ns0:name="com.unitedinternet.portal.ui.pgp.setup.PGPSetupActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000001"/>
+		<activity ns0:label="@7F130867" ns0:name="com.unitedinternet.portal.ui.pgp.barcode.PGPBarcodeScannerActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F130866" ns0:name="com.unitedinternet.portal.ui.pgp.keychain.PGPKeysListActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F130866" ns0:name="com.unitedinternet.portal.ui.pgp.keychain.PGPKeysDetailsActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.login.MfAChangePasswordRedirectActivity" ns0:exported="true" ns0:launchMode="1" ns0:noHistory="true"/>
+		<activity-alias ns0:name="com.mail.mobile.android.mail.ChangeOAuthPasswordActivityMfa" ns0:enabled="false" ns0:exported="true" ns0:targetActivity="com.unitedinternet.portal.ui.login.MfAChangePasswordRedirectActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="com.mail.androidmail.redirect" ns0:host="authorization_code_grant"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:label="@7F130147" ns0:name="com.unitedinternet.portal.ui.login.reenter.EnterPasswordActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.search.SearchMailActivity" ns0:exported="true" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.default_searchable" ns0:value="com.unitedinternet.portal.ui.search.SearchMailActivity"/>
+			<meta-data ns0:name="android.app.searchable" ns0:value="com.unitedinternet.portal.ui.search.SearchMailActivity" ns0:resource="@7F170017"/>
+		</activity>
+		<provider ns0:name="com.unitedinternet.portal.android.onlinestorage.module.cloudcore.smartdrive.business.db.RestFSContentProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.restfsprovider" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="com.unitedinternet.android.pgp.db.PgpProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.pgpprovider"/>
+		<provider ns0:name="com.unitedinternet.portal.ui.maildetails.InlineAttachmentProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.InlineAttachment"/>
+		<provider ns0:name="com.unitedinternet.portal.ui.preferences.DebugFileProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.debugfileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F17000D"/>
+		</provider>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.androidx-startup">
+			<meta-data ns0:name="androidx.emoji2.text.EmojiCompatInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.profileinstaller.ProfileInstallerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<receiver ns0:name="com.unitedinternet.portal.receiver.OnAppUpdatedReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.unitedinternet.portal.receiver.OnAccountsChangedReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter ns0:priority="100">
+				<action ns0:name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.unitedinternet.portal.receiver.PinLockBootReceiver" ns0:exported="true">
+			<intent-filter ns0:priority="999">
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.unitedinternet.portal.service.AuthorityConfigService" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.unitedinternet.action.AUTHORITY_CONFIG"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.unitedinternet.portal.push.MailFirebaseMessagingService" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:label="@7F1307BD" ns0:name="com.unitedinternet.portal.trackandtrace.ui.onboarding.OnboardingActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:parentActivityName="com.unitedinternet.portal.ui.HostActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="com.mail.androidmail" ns0:host="wizard" ns0:path="/SmartInboxOnBoardingActivity"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.unitedinternet.portal.ui.preferences.DebugSettingsActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.debug.DebugSmartInboxWizardConfigActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.smartinbox.SmartInboxSettingsOverviewActivity" ns0:exported="true" ns0:parentActivityName="com.unitedinternet.portal.ui.preferences.AccountSettingsActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="com.mail.androidmail" ns0:host="settings" ns0:path="/SmartInboxSettingsOverviewActivity"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.unitedinternet.portal.ui.smartinbox.PackageTrackingSettingsActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.smartinbox.SmartInboxSettingsActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.smartinbox.SmartAdSettingsActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.smartinbox.SmartInboxPrivacyActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F1402F0" ns0:name="com.unitedinternet.portal.ui.attachment.preview.AttachmentGalleryActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.helpandfeedback.ui.HelpAndFeedbackActivity" ns0:exported="false" ns0:parentActivityName="com.unitedinternet.portal.ui.settings.SettingsActivity"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.settings.SettingsActivity" ns0:exported="false" ns0:parentActivityName="com.unitedinternet.portal.ui.HostActivity"/>
+		<activity ns0:name="com.unitedinternet.portal.ui.post.PostAviseWebviewActivity" ns0:exported="true" ns0:parentActivityName="com.unitedinternet.portal.ui.preferences.AccountSettingsActivity"/>
+		<activity-alias ns0:name="com.unitedinternet.portal.android.ui.post.PostAviseDeeplinkActivity" ns0:exported="true" ns0:targetActivity="com.unitedinternet.portal.ui.post.PostAviseWebviewActivity">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="https" ns0:host="invalid.mail.com" ns0:pathPrefix="/code"/>
+				<data ns0:scheme="https" ns0:host="invalid.mail.com" ns0:pathPrefix="/briefankuendigung"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F1402EF" ns0:name="com.unitedinternet.portal.android.mail.login.view.LoginActivity" ns0:exported="false" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.unitedinternet.portal.android.mail.login.registration.RegistrationActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.unitedinternet.portal.android.mail.login.registration.InstallReferrerReceiver" ns0:permission="android.permission.INSTALL_PACKAGES" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1402EF" ns0:name="com.unitedinternet.portal.android.mail.login.view.wizard.LoginWizardActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" ns0:value="com.unitedinternet.portal.android.onlinestorage.mediabrowser.cast.CastOptionsProvider"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.preferences.general.GeneralPreferencesActivity" ns0:exported="false" ns0:parentActivityName="com.unitedinternet.portal.android.onlinestorage.preferences.SettingsActivity"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.search.timeline.TimelineSearchResultsActivity" ns0:exported="false"/>
+		<activity ns0:label="" ns0:name="com.unitedinternet.portal.android.onlinestorage.search.timeline.TimelineSearchActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.preferences.autoupload.AutouploadPreferencesActivity" ns0:exported="false" ns0:parentActivityName="com.unitedinternet.portal.android.onlinestorage.preferences.SettingsActivity"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.preferences.notifications.NotificationPreferencesActivity" ns0:exported="false" ns0:parentActivityName="com.unitedinternet.portal.android.onlinestorage.preferences.SettingsActivity"/>
+		<activity ns0:label="@7F1302AC" ns0:name="com.unitedinternet.portal.android.onlinestorage.preferences.about.AboutActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F1302ED" ns0:name="com.unitedinternet.portal.android.onlinestorage.preferences.SettingsActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F13022B" ns0:name="com.unitedinternet.portal.android.onlinestorage.preferences.help.HelpAndFeedbackActivity" ns0:exported="false"/>
+		<activity ns0:label="@7F1302E4" ns0:name="com.unitedinternet.portal.android.onlinestorage.preferences.debugmenu.DebugViewerActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F140136" ns0:name="com.unitedinternet.portal.android.onlinestorage.mediabrowser.MediaBrowserActivity" ns0:exported="false" ns0:configChanges="0x00000F80"/>
+		<activity ns0:theme="@7F140136" ns0:name="com.unitedinternet.portal.android.onlinestorage.mediabrowser.mediadetail.MediaDetailActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.activity.AccountInfoActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.activity.BlockedJsWebViewActivity"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.mediabackup.ui.BackupFolderListActivity" ns0:parentActivityName="com.unitedinternet.portal.android.onlinestorage.preferences.autoupload.AutouploadPreferencesActivity"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.activity.ResourceBrowserActivity" ns0:exported="false"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.search.search.SearchActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F14013B" ns0:name="com.unitedinternet.portal.android.onlinestorage.activity.TargetOperationActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<activity ns0:theme="@7F14013B" ns0:label="@7F130303" ns0:name="com.unitedinternet.portal.android.onlinestorage.activity.SystemSharingActivity" ns0:enabled="@7F050003" ns0:exported="true" ns0:excludeFromRecents="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F130166">
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F140139" ns0:name="com.unitedinternet.portal.android.onlinestorage.shares.picker.SharingPickerActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.shares.detail.ShareDetailActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.advertising.onboarding.OnboardingActivity" ns0:exported="false" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.transfer.ui.DownloadQueueActivity" ns0:exported="false" ns0:launchMode="1"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.transfer.ui.UploadQueueActivity" ns0:exported="false" ns0:launchMode="1"/>
+		<service ns0:name="com.unitedinternet.portal.android.onlinestorage.service.QueueWorkerService" ns0:exported="false"/>
+		<service ns0:name="com.unitedinternet.portal.android.onlinestorage.service.DownloadService" ns0:exported="false" ns0:foregroundServiceType="0x00000001"/>
+		<service ns0:name="com.unitedinternet.portal.android.onlinestorage.mediabackup.notification.NotificationIntentHandlingService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.unitedinternet.portal.android.onlinestorage.mediabackup.mediaobserver.MediaContentObserverJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<service ns0:name="com.unitedinternet.portal.android.onlinestorage.service.PurgeService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.unitedinternet.portal.android.onlinestorage.mediabackup.BootReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.unitedinternet.portal.android.onlinestorage.transfer.notification.NotificationCancelReceiver" ns0:exported="false">
+			<intent-filter ns0:priority="999">
+				<action ns0:name="com.unitedinternet.portal.android.onlinestorage.CANCEL_ACTION"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.unitedinternet.portal.android.onlinestorage.contentprovider.ResourcesContentProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail" ns0:grantUriPermissions="true"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F170009"/>
+		</provider>
+		<provider ns0:name="com.unitedinternet.portal.android.onlinestorage.documentsprovider.CloudDocumentsProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:enabled="true" ns0:exported="true" ns0:authorities="com.mail.mobile.android.mail.clouddocuments" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="android.content.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<receiver ns0:name="com.unitedinternet.portal.android.onlinestorage.receiver.PurgeReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.unitedinternet.portal.android.onlinestorage.PURGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.unitedinternet.portal.android.onlinestorage.receiver.OnModuleAppUpdateReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter ns0:priority="100">
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.unitedinternet.portal.android.mail.netid.ui.NetIdActivity" ns0:exported="false"/>
+		<activity-alias ns0:name="com.mail.mobile.android.mail.NetIdActivityV1" ns0:exported="true" ns0:targetActivity="com.unitedinternet.portal.android.mail.netid.ui.NetIdActivity">
+			<intent-filter ns0:autoVerify="true">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="@7F13068E" ns0:pathPrefix="/authorize-app2app"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:name="com.unitedinternet.portal.android.securityverification.ui.SecurityVerificationActivity" ns0:exported="false" ns0:configChanges="0x00000480" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:name="com.unitedinternet.portal.android.onlinestorage.module.cloudcore.slimclient.resourcebrowser.SmartDriveActivity" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.mail.mobile.android.mail.ACTION_UPLOAD_BY_URI"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.unitedinternet.portal.android.onlinestorage.module.cloudcore.slimclient.contentprovider.SmartDriveContentProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.SmartDriveContentProvider"/>
+		<service ns0:name="com.unitedinternet.davsync.syncservice.caldav.CalDavSetupService" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.unitedinternet.action.SYNC_SETUP"/>
+				<category ns0:name="com.unitedinternet.category.account.com.mail.mobile.android.mail.ACCOUNT"/>
+				<data ns0:mimeType="vnd.com.unitedinternet/vnd.authority" ns0:scheme="content" ns0:host="com.android.calendar"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.unitedinternet.davsync.syncservice.caldav.CalDavSyncService" ns0:enabled="true" ns0:exported="true" ns0:process=":calendarsync">
+			<intent-filter>
+				<action ns0:name="android.content.SyncAdapter"/>
+			</intent-filter>
+			<meta-data ns0:name="android.content.SyncAdapter" ns0:resource="@7F170005"/>
+		</service>
+		<service ns0:name="com.unitedinternet.davsync.syncservice.carddav.CardDavSetupService" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.unitedinternet.action.SYNC_SETUP"/>
+				<category ns0:name="com.unitedinternet.category.account.com.mail.mobile.android.mail.ACCOUNT"/>
+				<data ns0:mimeType="vnd.com.unitedinternet/vnd.authority" ns0:scheme="content" ns0:host="com.android.contacts"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.unitedinternet.davsync.syncservice.carddav.CardDavSyncService" ns0:enabled="true" ns0:exported="true" ns0:process=":contactssync">
+			<intent-filter>
+				<action ns0:name="android.content.SyncAdapter"/>
+			</intent-filter>
+			<meta-data ns0:name="android.content.SyncAdapter" ns0:resource="@7F170006"/>
+			<meta-data ns0:name="android.provider.CONTACTS_STRUCTURE" ns0:resource="@7F17000B"/>
+		</service>
+		<activity ns0:name="com.unitedinternet.davsync.syncservice.ui.TooManyDeletesActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<activity ns0:name="com.unitedinternet.portal.android.inapppurchase.ui.InAppPurchaseActivity" ns0:exported="true"/>
+		<activity ns0:name="androidx.compose.ui.tooling.PreviewActivity" ns0:exported="true"/>
+		<receiver ns0:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.cast.framework.media.MediaNotificationService" ns0:exported="false" ns0:foregroundServiceType="0x00000002"/>
+		<service ns0:name="com.google.android.gms.cast.framework.ReconnectionService" ns0:exported="false"/>
+		<meta-data ns0:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" ns0:value="GlideModule"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.criteo.publisher.CriteoInterstitialActivity" ns0:configChanges="0x00000480"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.com.squareup.picasso"/>
+		<service ns0:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.mlkit.common.internal.MlKitInitProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.mlkitinitprovider" ns0:initOrder="99"/>
+		<service ns0:name="androidx.work.impl.background.gcm.WorkManagerGcmService" ns0:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" ns0:exported="@7F050005" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.google.android.gms.ads.OutOfContextTestingActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.firebaseinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="androidx.work.multiprocess.RemoteWorkManagerService" ns0:exported="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050008" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050007" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<receiver ns0:name="androidx.profileinstaller.ProfileInstallReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="androidx.profileinstaller.action.SKIP_FILE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1403F4" ns0:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" ns0:exported="true">
+			<intent-filter ns0:priority="-100">
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1403F4" ns0:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" ns0:exported="true">
+			<intent-filter ns0:priority="-100">
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1403F3" ns0:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" ns0:exported="true">
+			<intent-filter ns0:priority="-100">
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.0.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F14037F" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:enabled="false" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true"/>
+		<provider ns0:name="leakcanary.internal.PlumberInstaller" ns0:enabled="@7F05000D" ns0:exported="false" ns0:authorities="com.mail.mobile.android.mail.plumber-installer"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F170019"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="2"/>
+	</application>
+</manifest>

@@ -1,0 +1,228 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="37" ns0:versionName="0.9.3" ns0:installLocation="0" ns0:compileSdkVersion="29" ns0:compileSdkVersionCodename="10" package="com.asolutions.toonme" platformBuildVersionCode="29" platformBuildVersionName="10">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="28"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.screen.portrait" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<application ns0:label="@7F100023" ns0:icon="@7F0E0000" ns0:name="com.vicman.photolab.PhotoLab" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:fullBackupContent="@7F140001" ns0:usesCleartextTraffic="true" ns0:resizeableActivity="false" ns0:networkSecurityConfig="@7F140005" ns0:roundIcon="@7F0E0002" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity ns0:theme="@7F11019F" ns0:name="com.vicman.photolab.activities.DeepLinksActivity" ns0:exported="true" ns0:taskAffinity=".DeepLinksActivity" ns0:excludeFromRecents="true" ns0:screenOrientation="3" ns0:configChanges="0x000005B0" ns0:noHistory="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="@7F100087"/>
+				<data ns0:host="navigate"/>
+				<data ns0:path="/tag"/>
+				<data ns0:path="/fx"/>
+				<data ns0:path="/combo"/>
+				<data ns0:path="/related"/>
+				<data ns0:path="/url"/>
+				<data ns0:path="/neuro_portraits"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F11019C" ns0:label="@7F100123" ns0:name="com.vicman.photolab.activities.MainActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F140007"/>
+		</activity>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.MainActivityTablet" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.NewPhotoChooserActivityPortrait" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000022" ns0:parentActivityName="com.vicman.photolab.activities.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activities.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.NewPhotoChooserActivity" ns0:windowSoftInputMode="0x00000022" ns0:parentActivityName="com.vicman.photolab.activities.portrait.MainActivityTablet">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activities.portrait.MainActivityTablet"/>
+		</activity>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.CropNRotateActivity"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.CropNRotateActivityPortrait" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.ResultActivity" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.ResultActivityPortrait" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.PostprocessingActivity" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.PostprocessingActivityPortrait" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.ShareActivity"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.ShareActivityPortrait" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.AboutActivity"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.AboutActivityPortrait" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.ConstructorActivity" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.ConstructorActivityPortrait" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.WebPhotoChooserActivity" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.WebPhotoChooserActivityPortrait" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.WebShareActivity"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.WebShareActivityPortrait" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.EditMaskActivity"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.EditMaskActivityPortrait" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F110195" ns0:name="com.vicman.photolab.activities.PortraitCameraActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.NeuroPortraitLayoutActivity"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.NeuroPortraitLayoutActivityPortrait" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F110195" ns0:name="com.vicman.photolab.activities.WebPortraitCameraActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.WebBannerActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F110193" ns0:name="com.vicman.photolab.activities.portrait.WebBannerActivityPortrait" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<service ns0:name="com.vicman.photolab.services.WebBannerPreloaderService"/>
+		<service ns0:name="com.vicman.photolab.sync.SyncConfigService"/>
+		<service ns0:name="com.vicman.photolab.sync.CheckNewConfigService"/>
+		<service ns0:name="com.vicman.photolab.services.CacheAndUpload"/>
+		<service ns0:name="com.vicman.photolab.services.RemoteRecentCheckerService"/>
+		<service ns0:name="com.vicman.photolab.services.CacheRecentCheckerService"/>
+		<service ns0:name="com.vicman.photolab.services.OpeProcessor"/>
+		<service ns0:name="com.vicman.photolab.services.Share"/>
+		<service ns0:name="com.vicman.photolab.services.DownloadToGallery"/>
+		<service ns0:name="com.vicman.photolab.services.OnTerminateAppService" ns0:exported="true"/>
+		<service ns0:name="com.vicman.photolab.services.SendAnalyticsEventsService" ns0:exported="true" ns0:process=":analytics"/>
+		<service ns0:name="com.vicman.photolab.services.DeepLinksService"/>
+		<service ns0:name="com.vicman.photolab.services.PostprocessingCacheCleanerService"/>
+		<service ns0:name="com.vicman.photolab.services.ShareCacheCleanerService"/>
+		<service ns0:name="com.vicman.photolab.services.WebShareService"/>
+		<service ns0:name="com.vicman.photolab.services.WebComboBuilderShareService"/>
+		<activity ns0:theme="@7F11019C" ns0:name="com.vicman.photolab.activities.ShortcutActivity" ns0:screenOrientation="3" ns0:configChanges="0x000005B0">
+			<intent-filter>
+				<action ns0:name="com.vicman.photolab.action.feeling_lucky"/>
+				<action ns0:name="com.vicman.photolab.action.tab_best"/>
+				<action ns0:name="com.vicman.photolab.action.tab_tranding"/>
+				<action ns0:name="com.vicman.photolab.action.my_profile"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.appsflyer.MultipleInstallBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+		<receiver ns0:name="com.google.android.gms.analytics.CampaignTrackingReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.google.android.gms.vision.DEPENDENCIES" ns0:value="face"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F1000DE"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationName" ns0:value="@7F1000DF"/>
+		<provider ns0:name="com.vicman.stickers.providers.CustomFileProvider" ns0:exported="false" ns0:authorities="com.asolutions.toonme.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140003"/>
+		</provider>
+		<service ns0:name="com.vicman.photolab.services.MyFcmListenerService" ns0:stopWithTask="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="3242b20dc71d3a60eb0225aa34cac6489c3e8c9b"/>
+		<meta-data ns0:name="android.security.net.config" ns0:resource="@7F140005"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<provider ns0:name="com.vicman.stickers.providers.StubContentProvider" ns0:exported="false" ns0:authorities="com.asolutions.toonme" ns0:syncable="false"/>
+		<meta-data ns0:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" ns0:value="GlideModule"/>
+		<activity ns0:theme="@7F110248" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.asolutions.toonme"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.facebook.marketing.internal.MarketingInitProvider" ns0:exported="false" ns0:authorities="com.asolutions.toonme.MarketingInitProvider"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.asolutions.toonme.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.android.gms.analytics.AnalyticsReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.analytics.AnalyticsJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@7F110193" ns0:name="com.steelkiwi.instagramhelper.InstagramLoginActivity" ns0:screenOrientation="1"/>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.asolutions.toonme.crashlyticsinitprovider" ns0:initOrder="90"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.bytedance.sdk.open.aweme.authorize.ui.TikTokWebAuthorizeActivity" ns0:screenOrientation="3"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.bytedance.sdk.open.aweme.authorize.ui.AwemeWebAuthorizeActivity" ns0:screenOrientation="3"/>
+		<provider ns0:name="androidx.work.impl.WorkManagerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.asolutions.toonme.workmanager-init" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050007" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.asolutions.toonme.firebaseinitprovider" ns0:initOrder="100"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0013"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.asolutions.toonme.lifecycle-process"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F140008"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

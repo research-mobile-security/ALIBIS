@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="20" ns0:versionName="2.9" ns0:compileSdkVersion="32" ns0:compileSdkVersionCodename="12" package="com.ram.heartphotoframes" platformBuildVersionCode="32" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<application ns0:theme="@7F110008" ns0:label="@7F100022" ns0:icon="@7F0E0000" ns0:name="com.ram.heartphotoframes.Global" ns0:allowBackup="true" ns0:hardwareAccelerated="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity ns0:theme="@7F1101A9" ns0:name="com.ram.heartphotoframes.FullScreenActivity" ns0:exported="false" ns0:screenOrientation="1">
+			<meta-data ns0:name="android.app.lib_name" ns0:value=""/>
+		</activity>
+		<activity ns0:theme="@7F1101A9" ns0:name="com.ram.heartphotoframes.frames.FramesTypeList" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F1101A9" ns0:label="@7F100022" ns0:name="com.ram.heartphotoframes.frames.landscape.LandScapeEdit" ns0:screenOrientation="0" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@7F1101A9" ns0:label="@7F100022" ns0:name="com.ram.heartphotoframes.frames.portrait.PortraitEdit" ns0:screenOrientation="1" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@android:0103000E" ns0:name="com.ram.heartphotoframes.SelectLanguage" ns0:screenOrientation="1" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@7F1101A9" ns0:label="@7F100022" ns0:name="com.ram.heartphotoframes.HomeScreen" ns0:screenOrientation="1" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@7F1100FC" ns0:label="@7F100022" ns0:name="com.ram.heartphotoframes.ExitScreen" ns0:screenOrientation="1" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@7F1101A9" ns0:label="@7F100022" ns0:name="com.ram.heartphotoframes.FilesScreen" ns0:screenOrientation="1" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@android:010300F1" ns0:label="@7F100022" ns0:name="com.ram.heartphotoframes.FullImageView" ns0:screenOrientation="1" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@android:010300F1" ns0:label="@7F100022" ns0:name="com.ram.heartphotoframes.FullImageViewLandscape" ns0:screenOrientation="0" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F1101A9" ns0:label="@7F1000E1" ns0:name="com.ram.heartphotoframes.Home" ns0:screenOrientation="1" ns0:configChanges="0x00000080"/>
+		<activity ns0:theme="@7F11000B" ns0:label="@7F1000E2" ns0:name="com.ram.heartphotoframes.Splash" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x00000080">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="@7F100021"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0008"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="@7F1000CA" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130000"/>
+		</provider>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.ram.heartphotoframes.lifecycle-process"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.ram.heartphotoframes.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.ram.heartphotoframes.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F040003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F040005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F040004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F040003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+	</application>
+</manifest>

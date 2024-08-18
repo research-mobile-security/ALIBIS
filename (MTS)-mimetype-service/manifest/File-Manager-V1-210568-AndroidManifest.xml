@@ -1,0 +1,542 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="20210568" ns0:versionName="V1-210568" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.mi.android.globalFileexplorer" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="33"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher2.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher2.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher3.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher3.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.mi.android.globallauncher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.mi.android.globallauncher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.yulong.android.launcherL.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.meizu.flyme.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.bbk.launcher2.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.qiku.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.zte.mifavor.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.lenovo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.google.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.yulong.android.launcher3.READ_SETTINGS"/>
+	<uses-permission ns0:name="org.adw.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.qihoo360.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.lge.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="net.qihoo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="org.adwfreak.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="org.adw.launcher_donut.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.launcher3.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.fede.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.tencent.qqlauncher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.launcher2.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.ebproductions.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.nd.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.yulong.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.android.mylauncher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.ztemt.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="cn.nubia.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.GET_APP_GRANTED_URI_PERMISSIONS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.GET_PACKAGE_SIZE"/>
+	<uses-permission ns0:name="android.permission.DELETE_CACHE_FILES"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission ns0:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_ALL_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_USERS"/>
+	<uses-permission ns0:name="android.permission.INTERACT_ACROSS_USERS"/>
+	<uses-permission ns0:name="com.xiaomi.permission.AUTH_SERVICE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SECURE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="com.miui.systemAdSolution.adSwitch.PROVIDER"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_AUDIO"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<permission ns0:name="com.mi.android.globalFileexplorer.permission.DIRPARSE" ns0:protectionLevel="0x00000003"/>
+	<permission ns0:name="com.mi.android.globalFileexplorer.permission.ACCESS_FILE_CONTENT" ns0:protectionLevel="0x00000003"/>
+	<uses-permission ns0:name="com.xiaomi.gallery.permission.CLOUD"/>
+	<uses-permission ns0:name="com.miui.gallery.permission.USE_API"/>
+	<uses-permission ns0:name="com.mi.android.globalFileexplorer.permission.DIRPARSE"/>
+	<uses-permission ns0:name="com.mi.android.globalFileexplorer.permission.ACCESS_FILE_CONTENT"/>
+	<uses-permission ns0:name="com.cleanmaster.permission.sdk.clean"/>
+	<uses-permission ns0:name="miui.permission.USE_INTERNAL_GENERAL_API"/>
+	<uses-permission ns0:name="com.android.fileexplorer.permission.ota"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="cn.wps.moffice.lite.permission.BIND_SNAPSHOT_SERVICE"/>
+	<uses-permission ns0:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+	<queries>
+		<package ns0:name="cn.wps.xiaomi.abroad.lite"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<package ns0:name="com.android.chrome"/>
+		<package ns0:name="com.facebook.katana"/>
+	</queries>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-feature ns0:name="android.hardware.sensor.light" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.compass" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.gyroscope" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.barometer" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor.proximity" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="com.android.settings.permission.CLOUD_SETTINGS_PROVIDER" ns0:protectionLevel="0x00000003"/>
+	<application ns0:theme="@7F120183" ns0:label="@7F11002B" ns0:icon="@7F080265" ns0:name="com.android.fileexplorer.FileExplorerApplication" ns0:exported="true" ns0:allowBackup="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:uiOptions="0x00000001" ns0:supportsRtl="true" ns0:networkSecurityConfig="@7F140003" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:preserveLegacyExternalStorage="true" ns0:requestRawExternalStorageAccess="true">
+		<service ns0:name="com.android.fileexplorer.service.RemoteService" ns0:enabled="true" ns0:exported="false" ns0:process=":RemoteService"/>
+		<service ns0:name="com.android.fileexplorer.service.NullService" ns0:enabled="true" ns0:exported="false"/>
+		<meta-data ns0:name="notch.config" ns0:value="portrait"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.200000"/>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="firebase_analytics_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="firebase_crash_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="firebase_performance_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="firebase_performance_logcat_enabled" ns0:value="false"/>
+		<meta-data ns0:name="global_app_hide_enable" ns0:value="true"/>
+		<meta-data ns0:name="app_hide_enable" ns0:value="true"/>
+		<meta-data ns0:name="disable_notifications_when_app_hide" ns0:value="true"/>
+		<meta-data ns0:name="app_description_title" ns0:resource="@7F11010E"/>
+		<meta-data ns0:name="app_description_content" ns0:resource="@7F11010D"/>
+		<meta-data ns0:name="app_remove_icon_description_title" ns0:resource="@7F11010E"/>
+		<meta-data ns0:name="app_remove_icon_description_content" ns0:resource="@7F11010D"/>
+		<activity ns0:theme="@7F120186" ns0:label="@7F11002B" ns0:name="com.android.fileexplorer.FileExplorerTabActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004B0" ns0:uiOptions="0x00000001">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.START_KUAIPAN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.FORCE_TOUCH_CLEAN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.FORCE_TOUCH_CLEAN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="https" ns0:host="fe.miui.com"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fe" ns0:host="fe.miui.com"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F140005"/>
+			<meta-data ns0:name="functionindex" ns0:resource="@7F140001"/>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F140009"/>
+		</activity>
+		<activity ns0:theme="@7F120189" ns0:label="" ns0:name="com.android.fileexplorer.privacy.PrivacyActivity" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<action ns0:name="fe.intent.action.PRIVACY"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120181" ns0:name="com.android.fileexplorer.activity.FileActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<data ns0:mimeType="*/*" ns0:scheme="content"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*" ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="audio/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.PICK_FOLDER"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.PICK_MULTIPLE"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.OPEN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.OPEN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*" ns0:scheme="content"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.OPEN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="@7F1100A0" ns0:name="com.android.fileexplorer.activity.ExtractFileActivity" ns0:exported="true" ns0:targetActivity="com.android.fileexplorer.activity.FileActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/zip" ns0:scheme="file"/>
+				<data ns0:mimeType="application/rar" ns0:scheme="file"/>
+				<data ns0:mimeType="application/x-rar-compressed" ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/zip" ns0:scheme="content"/>
+				<data ns0:mimeType="application/rar" ns0:scheme="content"/>
+				<data ns0:mimeType="application/x-rar-compressed" ns0:scheme="content"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F110091" ns0:name="com.android.fileexplorer.activity.CopyFileActivity" ns0:exported="true" ns0:targetActivity="com.android.fileexplorer.activity.FileActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*" ns0:scheme="file"/>
+				<data ns0:mimeType="video/*" ns0:scheme="file"/>
+				<data ns0:mimeType="application/zip" ns0:scheme="file"/>
+				<data ns0:mimeType="application/rar" ns0:scheme="file"/>
+				<data ns0:mimeType="application/x-rar-compressed" ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*" ns0:scheme="content"/>
+				<data ns0:mimeType="video/*" ns0:scheme="content"/>
+				<data ns0:mimeType="application/zip" ns0:scheme="content"/>
+				<data ns0:mimeType="application/rar" ns0:scheme="content"/>
+				<data ns0:mimeType="application/x-rar-compressed" ns0:scheme="content"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/*"/>
+				<data ns0:mimeType="audio/*"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*"/>
+				<data ns0:scheme="file"/>
+				<data ns0:scheme="content"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/*"/>
+				<data ns0:mimeType="audio/*"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="text/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F11013F" ns0:name="com.android.fileexplorer.activity.MoveFileActivity" ns0:exported="true" ns0:targetActivity="com.android.fileexplorer.activity.FileActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*" ns0:scheme="file"/>
+				<data ns0:mimeType="video/*" ns0:scheme="file"/>
+				<data ns0:mimeType="application/zip" ns0:scheme="file"/>
+				<data ns0:mimeType="application/rar" ns0:scheme="file"/>
+				<data ns0:mimeType="application/x-rar-compressed" ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*" ns0:scheme="content" ns0:host="com.mi.android.globalFileexplorer.myprovider"/>
+				<data ns0:mimeType="video/*" ns0:scheme="content" ns0:host="com.mi.android.globalFileexplorer.myprovider"/>
+				<data ns0:mimeType="application/zip" ns0:scheme="content" ns0:host="com.mi.android.globalFileexplorer.myprovider"/>
+				<data ns0:mimeType="application/rar" ns0:scheme="content" ns0:host="com.mi.android.globalFileexplorer.myprovider"/>
+				<data ns0:mimeType="application/x-rar-compressed" ns0:scheme="content" ns0:host="com.mi.android.globalFileexplorer.myprovider"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F120181" ns0:name="com.android.fileexplorer.activity.FileCategoryActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="miui.intent.action.PICK_INSTALLED_APPS"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.RINGTONE_PICKER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.mi.android.globalFileexplorer.action.FILE_CATEGORY"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fe" ns0:host="security.fe.miui.com"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="@7F110120" ns0:icon="@7F080239" ns0:name="com.android.fileexplorer.activity.PickImageActivity" ns0:exported="true" ns0:targetActivity="com.android.fileexplorer.activity.FileCategoryActivity">
+			<intent-filter>
+				<action ns0:name="miui.intent.action.PICK_MULTIPLE"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F110123" ns0:icon="@7F08023B" ns0:name="com.android.fileexplorer.activity.PickVideoActivity" ns0:exported="true" ns0:targetActivity="com.android.fileexplorer.activity.FileCategoryActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.PICK_MULTIPLE"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:label="@7F110121" ns0:icon="@7F08023A" ns0:name="com.android.fileexplorer.activity.PickAudioActivity" ns0:exported="true" ns0:targetActivity="com.android.fileexplorer.activity.FileCategoryActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="audio/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="miui.intent.action.PICK_MULTIPLE"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="audio/*"/>
+			</intent-filter>
+		</activity-alias>
+		<meta-data ns0:name="android.app.default_searchable" ns0:value=".FileExplorerTabActivity"/>
+		<activity ns0:theme="@7F12018C" ns0:name="com.android.fileexplorer.activity.SettingPreferenceActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F120181" ns0:name="com.android.fileexplorer.activity.RecentAppsAndFoldersActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.mi.android.globalFileexplorer.action.Apps"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F12018C" ns0:name="com.android.fileexplorer.activity.SettingAboutPreferenceActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F12018C" ns0:name="com.android.fileexplorer.activity.SettingVersionPreferenceActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F120181" ns0:name="com.android.fileexplorer.localepicker.LocaleListActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F120181" ns0:label="  " ns0:name="com.android.fileexplorer.activity.AdDetailActivity" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F120181" ns0:name="com.android.fileexplorer.activity.AppTagActivity" ns0:exported="true" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120181" ns0:label="" ns0:name="com.android.fileexplorer.activity.SearchDetailActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="com.mi.android.globalFileexplorer.action.SEARCH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120193" ns0:label="@7F1101BD" ns0:name="com.android.fileexplorer.activity.PrivateFolderActivity" ns0:exported="true" ns0:excludeFromRecents="true" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F120103" ns0:label="" ns0:name="com.android.fileexplorer.activity.StorageInfoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120197" ns0:label="" ns0:name="com.android.fileexplorer.activity.ViewLargeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120196" ns0:label="" ns0:name="com.android.fileexplorer.activity.VideoPlayerActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:theme="@7F12018C" ns0:name="com.android.fileexplorer.activity.FeedbackActivity" ns0:exported="true" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="com.mi.android.globalFileexplorer.action.FEEDBACK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F12018C" ns0:name="com.android.fileexplorer.activity.ShareActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F12018C" ns0:name="com.android.fileexplorer.activity.ShareViaQRCodeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120198" ns0:name="com.android.fileexplorer.activity.AuthWebActivity" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.mi.android.globalFileexplorer.action.AUTH"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120198" ns0:name="com.android.fileexplorer.activity.ScoreWebActivity" ns0:exported="false" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.mi.android.globalFileexplorer.action.SCORE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120181" ns0:name="com.android.fileexplorer.activity.CloudConfigActivity" ns0:exported="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.mi.android.globalFileexplorer.appauth.HANDLE_AUTHORIZATION_RESPONSE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120181" ns0:name="com.android.fileexplorer.RemoteActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.android.fileexplorer.provider.FileContentProvider" ns0:permission="com.mi.android.globalFileexplorer.permission.ACCESS_FILE_CONTENT" ns0:exported="true" ns0:authorities="com.mi.android.globalFileexplorer.dao.filecontent.provider"/>
+		<provider ns0:name="com.android.fileexplorer.provider.SearchExportProvider" ns0:exported="true" ns0:authorities="com.mi.android.globalFileexplorer.provider.searchexport"/>
+		<provider ns0:name="com.android.fileexplorer.provider.SystemAdContentProvider" ns0:exported="true" ns0:authorities="com.mi.android.globalFileexplorer.systemAd.splashAd"/>
+		<service ns0:name="com.android.fileexplorer.whatsapp.job.WhatsAppStatusSaveService"/>
+		<service ns0:name="com.android.fileexplorer.service.DirParseService" ns0:permission="com.mi.android.globalFileexplorer.permission.DIRPARSE" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.mi.android.globalFileexplorer.DirParseService"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.android.fileexplorer.provider.FileExplorerFileProvider" ns0:exported="false" ns0:authorities="com.mi.android.globalFileexplorer.myprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140000"/>
+		</provider>
+		<service ns0:name="com.android.fileexplorer.ota.OtaTransferService" ns0:exported="false"/>
+		<meta-data ns0:name="com.xiaomi.mobileads.columbus.APP_KEY" ns0:value="FILE_EXPLORER"/>
+		<meta-data ns0:name="com.xiaomi.mobileads.columbus.APP_SECRET" ns0:value="6a75640c500194189dabc2c6b1c1a2eb"/>
+		<activity ns0:theme="@7F120168" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-4062377952200160~8017942393"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0006"/>
+		<activity ns0:name="com.my.target.common.MyTargetActivity" ns0:configChanges="0x00000FB0"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:name="net.openid.appauth.RedirectUriReceiverActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="com.mi.android.globalfileexplorer"/>
+			</intent-filter>
+		</activity>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.mi.android.globalFileexplorer.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.mi.android.globalFileexplorer.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050007" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.my.target.common.MyTargetContentProvider" ns0:enabled="true" ns0:exported="false" ns0:authorities="com.mi.android.globalFileexplorer.mytargetcontentprovider"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.ads.AudienceNetworkActivity" ns0:exported="false" ns0:configChanges="0x000004A0"/>
+		<provider ns0:name="com.facebook.ads.AudienceNetworkContentProvider" ns0:exported="false" ns0:authorities="com.mi.android.globalFileexplorer.AudienceNetworkContentProvider"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<service ns0:name="com.miui.zeus.monitor.crash.CrashMonitorService" ns0:enabled="true" ns0:exported="false" ns0:process=":crash"/>
+		<activity ns0:name="com.zeus.gmc.sdk.mobileads.columbus.ad.videoads.player.GMCAdActivity" ns0:exported="false" ns0:screenOrientation="3" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.zeus.gmc.sdk.mobileads.columbus.ad.interstitialad.ColumbusActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030006" ns0:name="com.zeus.gmc.sdk.mobileads.msa.adjump.AdJumperLoadingActivity" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F1201A2" ns0:name="com.xiaomi.mobileads.admob.AppOpen.AdmobAppOpenAdActivity" ns0:exported="true" ns0:hardwareAccelerated="false"/>
+		<meta-data ns0:name="com.my.target.autoInitMode" ns0:value="0"/>
+		<meta-data ns0:name="devicebaseinfo" ns0:value="1.000000"/>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+	</application>
+</manifest>

@@ -1,0 +1,256 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="24" ns0:versionName="2.4" ns0:compileSdkVersion="30" ns0:compileSdkVersionCodename="11" package="com.gallery3d.trend" platformBuildVersionCode="30" platformBuildVersionName="11">
+	<uses-sdk ns0:minSdkVersion="23" ns0:targetSdkVersion="30"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true"/>
+	<uses-feature ns0:name="android.hardware.faketouch" ns0:required="false"/>
+	<protected-broadcast ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<application ns0:label="@7F110035" ns0:icon="@7F0E0000" ns0:name="com.gallery3d.trend.App" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:extractNativeLibs="false" ns0:usesCleartextTraffic="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<activity ns0:theme="@7F120008" ns0:name="com.gallery3d.trend.CarousalActivity" ns0:exported="true" ns0:launchMode="3"/>
+		<activity ns0:label="@7F110035" ns0:name="com.gallery3d.trend.PassActivity" ns0:exported="true" ns0:launchMode="3">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120008" ns0:label="@7F11027E" ns0:name="com.gallery3d.trend.SettingsActivity" ns0:exported="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F120008" ns0:name="com.gallery3d.trend.MainActivity" ns0:exported="true" ns0:launchMode="3" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F120008" ns0:label="@7F110296" ns0:name="com.simplemobiletools.gallery.pro.activities.MainActivity" ns0:exported="true" ns0:launchMode="3" ns0:resizeableActivity="true">
+			<meta-data ns0:name="android.app.default_searchable" ns0:resource="@7F140002"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/video"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120008" ns0:name="com.simplemobiletools.gallery.pro.activities.MediaActivity" ns0:exported="true" ns0:launchMode="3">
+			<meta-data ns0:name="android.app.default_searchable" ns0:resource="@7F140002"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120008" ns0:label="@7F110267" ns0:name="com.simplemobiletools.gallery.pro.activities.SearchActivity" ns0:exported="true" ns0:parentActivityName="com.simplemobiletools.gallery.pro.activities.MainActivity" ns0:resizeableActivity="true">
+			<meta-data ns0:name="android.app.default_searchable" ns0:resource="@7F140002"/>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120008" ns0:name="com.simplemobiletools.gallery.pro.activities.ViewPagerActivity" ns0:exported="true" ns0:launchMode="3" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F110090" ns0:name="com.simplemobiletools.commons.activities.CustomizationActivity" ns0:exported="true" ns0:parentActivityName="com.simplemobiletools.gallery.pro.activities.SettingsActivity"/>
+		<activity ns0:label="@7F11027B" ns0:name="com.simplemobiletools.gallery.pro.activities.SettingsActivity" ns0:exported="true"/>
+		<activity ns0:theme="@7F120008" ns0:name="com.simplemobiletools.gallery.pro.activities.PhotoVideoActivity" ns0:exported="true" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F120008" ns0:name="com.simplemobiletools.gallery.pro.activities.VideoPlayerActivity" ns0:exported="true" ns0:configChanges="0x000004A0" ns0:parentActivityName="com.simplemobiletools.gallery.pro.activities.MediaActivity"/>
+		<activity ns0:label="@7F11012E" ns0:name="com.simplemobiletools.gallery.pro.activities.IncludedFoldersActivity" ns0:exported="true" ns0:parentActivityName="com.simplemobiletools.gallery.pro.activities.SettingsActivity"/>
+		<activity ns0:label="@7F1100C2" ns0:name="com.simplemobiletools.gallery.pro.activities.ExcludedFoldersActivity" ns0:exported="true" ns0:parentActivityName="com.simplemobiletools.gallery.pro.activities.SettingsActivity"/>
+		<activity ns0:label="@7F11011F" ns0:name="com.simplemobiletools.gallery.pro.activities.HiddenFoldersActivity" ns0:exported="true" ns0:parentActivityName="com.simplemobiletools.gallery.pro.activities.SettingsActivity"/>
+		<activity ns0:theme="@7F120008" ns0:name="com.simplemobiletools.gallery.pro.activities.PhotoActivity" ns0:exported="true" ns0:launchMode="3" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120008" ns0:name="com.simplemobiletools.gallery.pro.activities.VideoActivity" ns0:exported="true" ns0:launchMode="3" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="http"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120008" ns0:label="@7F1100AD" ns0:name="com.simplemobiletools.gallery.pro.activities.EditActivity" ns0:exported="true" ns0:launchMode="3">
+			<intent-filter ns0:name="foss-editor">
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.CROP"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.ALTERNATIVE"/>
+				<category ns0:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120008" ns0:label="Set Wallpaper" ns0:name="com.simplemobiletools.gallery.pro.activities.SetWallpaperActivity" ns0:exported="true" ns0:launchMode="3">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.gallery3d.trend.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140000"/>
+		</provider>
+		<receiver ns0:name="com.simplemobiletools.gallery.pro.receivers.RefreshMediaReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.simplemobiletools.REFRESH_MEDIA"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:icon="@7F080110" ns0:name="com.simplemobiletools.gallery.pro.helpers.MyWidgetProvider" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F140008"/>
+		</receiver>
+		<receiver ns0:name="com.simplemobiletools.gallery.pro.receivers.BootCompletedReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.simplemobiletools.gallery.pro.jobs.NewPhotoFetcher" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="true"/>
+		<activity ns0:theme="@7F120008" ns0:label="@7F110035" ns0:name="com.gallery3d.trend.galery3d.media.component.BenimGallery" ns0:exported="true" ns0:launchMode="3" ns0:configChanges="0x000000A0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F120008" ns0:name="com.gallery3d.trend.galery3d.media.component.BenimMovieView" ns0:exported="true" ns0:configChanges="0x000000A0"/>
+		<service ns0:label="CacheService" ns0:name="com.gallery3d.trend.galery3d.cache.BenimCacheService"/>
+		<receiver ns0:label="BootReceiver" ns0:name="com.gallery3d.trend.galery3d.cache.BenimBootReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<action ns0:name="android.intent.action.BOOT_COMPLETE"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_EJECT"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-5945028639083299~4122573533"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.gallery3d.trend.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="androidx.work.impl.WorkManagerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.gallery3d.trend.workmanager-init" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050004" ns0:exported="true" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.gallery3d.trend.com.squareup.picasso"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.gallery3d.trend.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A000C"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F1202AB" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true">
+			<meta-data ns0:name="com.google.android.play.core.assetpacks.versionCode" ns0:value="11002"/>
+		</service>
+		<service ns0:name="com.google.android.play.core.assetpacks.ExtractionForegroundService" ns0:enabled="false" ns0:exported="false"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.gallery3d.trend.lifecycle-process"/>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F140009"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

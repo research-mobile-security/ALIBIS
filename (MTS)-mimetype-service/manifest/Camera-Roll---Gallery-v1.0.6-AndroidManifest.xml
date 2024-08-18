@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="36" ns0:versionName="v1.0.6" package="us.koller.cameraroll">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="27"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<application ns0:theme="@7F1000A7" ns0:label="@7F0F0032" ns0:icon="@7F0E0000" ns0:allowBackup="false" ns0:supportsRtl="true" ns0:roundIcon="@7F0E0001">
+		<activity ns0:theme="@7F1000BA" ns0:name="us.koller.cameraroll.ui.MainActivity" ns0:launchMode="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1000C0" ns0:name="us.koller.cameraroll.ui.AlbumActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1000BB" ns0:name="us.koller.cameraroll.ui.ItemActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F1000C4" ns0:name="us.koller.cameraroll.ui.VideoPlayerActivity" ns0:launchMode="2" ns0:configChanges="0x00000D80" ns0:supportsPictureInPicture="true"/>
+		<activity ns0:theme="@7F1000BD" ns0:name="us.koller.cameraroll.ui.SettingsActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1000BF" ns0:name="us.koller.cameraroll.ui.AboutActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1000C1" ns0:name="us.koller.cameraroll.ui.FileExplorerActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1000C2" ns0:name="us.koller.cameraroll.ui.FileOperationDialogActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1000AC" ns0:name="us.koller.cameraroll.ui.ExifEditorActivity" ns0:launchMode="1" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@7F1000AA" ns0:label="@7F0F004D" ns0:name="us.koller.cameraroll.ui.EditImageActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1000BC" ns0:label="@7F0F00E6" ns0:name="us.koller.cameraroll.ui.SetWallpaperActivity" ns0:launchMode="1" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1000AB" ns0:label="@7F0F0055" ns0:name="us.koller.cameraroll.ui.ExcludePathsActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F1000C5" ns0:label="@7F0F00E5" ns0:name="us.koller.cameraroll.ui.VirtualAlbumsActivity" ns0:launchMode="1"/>
+		<activity ns0:name="us.koller.cameraroll.IntentReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.REVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="video/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="android.support.v4.content.FileProvider" ns0:exported="false" ns0:authorities="us.koller.cameraroll.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130001"/>
+		</provider>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.Copy"/>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.Delete"/>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.Move"/>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.NewDirectory"/>
+		<service ns0:name="us.koller.cameraroll.data.fileOperations.Rename"/>
+	</application>
+</manifest>

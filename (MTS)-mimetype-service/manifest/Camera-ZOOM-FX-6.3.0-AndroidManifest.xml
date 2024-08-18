@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="173" ns0:versionName="6.3.0" ns0:installLocation="0" ns0:compileSdkVersion="28" ns0:compileSdkVersionCodename="9" package="slide.camZoomFree" platformBuildVersionCode="28" platformBuildVersionName="9">
+	<uses-sdk ns0:minSdkVersion="14" ns0:targetSdkVersion="28"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="com.android.vending.CHECK_LICENSE"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.flash" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.front" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<application ns0:theme="@7F0C00DF" ns0:label="@7F0B001A" ns0:icon="@7F0600BA" ns0:hardwareAccelerated="true" ns0:resizeableActivity="false" ns0:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:label="@7F0B001A" ns0:name="slide.cameraZoom.CheckPermissionsActivity" ns0:launchMode="2" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="slide.cameraZoom.CameraZoomActivity" ns0:screenOrientation="0">
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="slide.cameraZoom.EditActivity" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="slide.cameraZoom.ThumbnailActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="slide.cameraZoom.GalleryActivity" ns0:configChanges="0x00000480">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="slide.cameraZoom.BestShotActivity" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="slide.cameraZoom.SettingsActivity" ns0:finishOnTaskLaunch="true" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="slide.cameraZoom.FileDialogActivity" ns0:finishOnTaskLaunch="true"/>
+		<activity ns0:label="Camera ZOOM FX Help" ns0:name="slide.cameraZoom.HelpActivity" ns0:finishOnTaskLaunch="true"/>
+		<service ns0:label="Camera ZOOM FX Photo Processor" ns0:name="slide.cameraZoom.PhotoProcessorService" ns0:process=":PhotoProcessor"/>
+		<receiver ns0:label="@7F0B029C" ns0:name="slide.cameraZoom.WidgetRecentPhotos">
+			<intent-filter>
+				<action ns0:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data ns0:name="android.appwidget.provider" ns0:resource="@7F0E0000"/>
+		</receiver>
+		<receiver ns0:name="slide.cameraZoom.MyServerCheck"/>
+		<uses-library ns0:name="com.amazon.device.home" ns0:required="false"/>
+		<meta-data ns0:name="amazon_3d_icon" ns0:value="camerazoom:icon.scene"/>
+		<meta-data ns0:name="amazon_3d_icon_large" ns0:value="camerazoom:icon.scene"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F080005"/>
+	</application>
+</manifest>

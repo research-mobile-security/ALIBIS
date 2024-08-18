@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="64" ns0:versionName="6.4" ns0:compileSdkVersion="30" ns0:compileSdkVersionCodename="11" package="com.polaroid.universalapp" platformBuildVersionCode="30" platformBuildVersionName="11">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="30"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCEMEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<queries>
+		<package ns0:name="com.amazon.mShop.android.shopping"/>
+		<package ns0:name="com.walmart.android"/>
+	</queries>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F130007" ns0:label="@7F12002B" ns0:icon="@7F0F0001" ns0:name="com.polaroid.universalapp.controller.application.PolaroidApplication" ns0:allowBackup="false" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.polaroid.universalapp.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150000"/>
+		</provider>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.OpenSettingActivity" ns0:exported="false"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.AgreeActivity" ns0:exported="false"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.SplashActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F13021C" ns0:name="com.polaroid.universalapp.view.activity.SignUpActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F13021C" ns0:name="com.polaroid.universalapp.view.activity.LoginActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.AboutUsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.PrivacyPolicyActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.MainActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.MainSelectActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.ImageDetailActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.SelectPrintAreaActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.PrintPreviewActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.FindDeviceActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.ConnectToCameraActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.PrintAlertDiaogActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.SettingsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.TermsAndConditionsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.SettingsOptionsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.QuickTipsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.QuickTipsViewPagerActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.OrderPaperRefillActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.CollageLayoutActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.PhotoboothGallaryActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.PhotoboothEditActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.DeviceFirmwareInfoActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.DownloadFirmwareActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.DemoEditPhotoActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.SyncActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.SelectSyncStickersActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.SelectSyncFramesActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.PrintProgressStatusActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.SocialMediaActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.AdjustColorsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.polaroid.universalapp.view.activity.PrivacyPolicyDisagreeActivity" ns0:exported="false"/>
+		<service ns0:name="com.polaroid.universalapp.controller.printer.BluetoothConnController" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="SEND_MSG_FROM_BT_ACTION"/>
+				<action ns0:name="CONNECT_REQUEST_ACTION"/>
+				<action ns0:name="DISCONNECT_REQUEST_ACTION"/>
+				<action ns0:name="START_MONITOR_ACTION"/>
+				<action ns0:name="ITEM_ADDED_IN_QUEUE"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.polaroid.universalapp.controller.receivers.BtAutoConnect" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.bluetooth.device.action.PAIRING_REQUEST"/>
+				<action ns0:name="android.bluetooth.device.action.PAIRING_CANCEL"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.polaroid.universalapp.controller.printer.DownloadFileService"/>
+		<meta-data ns0:name="com.appsee.ApiKey" ns0:value="55c9207e699e44b0a4c76016256f14e1"/>
+		<activity ns0:theme="@7F13021D" ns0:name="com.polaroid.universalapp.view.activity.ForgotPasswordActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000013"/>
+		<activity ns0:theme="@7F13021D" ns0:name="com.polaroid.universalapp.view.activity.PasswordSentActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<meta-data ns0:name="com.copilot.ENVIRONMENT_URL" ns0:value="https://api.polaroid.bycopilot.com"/>
+		<meta-data ns0:name="com.copilot.APPLICATION_ID" ns0:value="POLAROIDAPP"/>
+		<meta-data ns0:name="com.copilot.IS_GDPR_COMPLIANT" ns0:value="false"/>
+		<meta-data ns0:name="com.copilot.MANAGE_TYPE" ns0:value="CopilotConnect"/>
+		<activity ns0:theme="@7F1301BB" ns0:label="@7F120227" ns0:name="ly.kite.socialmedia.instagramphotopicker.InstagramLoginActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@android:01030010" ns0:name="ly.kite.socialmedia.facebookphotopicker.FacebookPhotoPickerActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="ly.kite.socialmedia.googlephotopicker.GoogleLoginActivity"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<meta-data ns0:name="com.facebook.sdk.ApplicationId" ns0:value="@7F1200C1"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.polaroid.universalapp"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.polaroid.universalapp.com.squareup.picasso"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.firebase.auth.internal.FederatedSignInActivity" ns0:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" ns0:exported="true" ns0:excludeFromRecents="true" ns0:launchMode="2"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.polaroid.universalapp.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.polaroid.universalapp.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B0008"/>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<provider ns0:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.polaroid.universalapp.lifecycle-process"/>
+	</application>
+</manifest>

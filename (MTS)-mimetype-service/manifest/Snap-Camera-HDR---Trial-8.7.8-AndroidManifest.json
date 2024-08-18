@@ -1,0 +1,1150 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "1222",
+    "@ns0:versionName": "8.7.8",
+    "@ns0:installLocation": "0",
+    "@package": "com.marginz.snaptrial",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "14",
+      "@ns0:targetSdkVersion": "25"
+    },
+    "permission": [
+      {
+        "@ns0:name": "com.marginz.snaptrial.permission.GALLERY_PROVIDER",
+        "@ns0:protectionLevel": "0x00000003"
+      },
+      {
+        "@ns0:name": "com.marginz.snaptrial.filtershow.permission.READ",
+        "@ns0:protectionLevel": "0x00000002"
+      },
+      {
+        "@ns0:name": "com.marginz.snaptrial.filtershow.permission.WRITE",
+        "@ns0:protectionLevel": "0x00000002"
+      }
+    ],
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.ACCESS_COARSE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.NFC"
+      },
+      {
+        "@ns0:name": "android.permission.READ_SYNC_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.RECORD_AUDIO"
+      },
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_SYNC_SETTINGS"
+      },
+      {
+        "@ns0:name": "android.permission.MODIFY_AUDIO_SETTINGS"
+      },
+      {
+        "@ns0:name": "com.android.vending.CHECK_LICENSE"
+      }
+    ],
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "false",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true"
+    },
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera.any",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      }
+    ],
+    "application": {
+      "@ns0:theme": "@7F12003B",
+      "@ns0:label": "@7F110026",
+      "@ns0:icon": "@7F0E0005",
+      "@ns0:name": "com.marginz.snap.app.GalleryAppImpl",
+      "@ns0:logo": "@7F0E0005",
+      "@ns0:hardwareAccelerated": "true",
+      "@ns0:largeHeap": "true",
+      "activity": [
+        {
+          "@ns0:label": "@7F1100FB",
+          "@ns0:name": "com.marginz.snap.app.MovieActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": {
+                "@ns0:scheme": "rtsp"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "video/mpeg4"
+                },
+                {
+                  "@ns0:mimeType": "video/mp4"
+                },
+                {
+                  "@ns0:mimeType": "video/3gp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp2"
+                },
+                {
+                  "@ns0:mimeType": "video/webm"
+                },
+                {
+                  "@ns0:mimeType": "video/avi"
+                },
+                {
+                  "@ns0:mimeType": "application/sdp"
+                },
+                {
+                  "@ns0:mimeType": "video/x-msvideo"
+                },
+                {
+                  "@ns0:mimeType": "video/divx"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:mimeType": "audio/x-mpegurl"
+                },
+                {
+                  "@ns0:mimeType": "audio/mpegurl"
+                },
+                {
+                  "@ns0:mimeType": "application/vnd.apple.mpegurl"
+                },
+                {
+                  "@ns0:mimeType": "application/x-mpegurl"
+                }
+              ],
+              "#text": "!-- HTTP live support -->"
+            }
+          ]
+        },
+        {
+          "@ns0:name": "com.marginz.camera.HDRActivity",
+          "@ns0:process": ":hdredit",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:screenOrientation": "4"
+        },
+        {
+          "@ns0:theme": "@7F120038",
+          "@ns0:label": "@7F1102D0",
+          "@ns0:icon": "@7F0E0000",
+          "@ns0:name": "com.marginz.camera.CameraActivity",
+          "@ns0:taskAffinity": "com.marginz.camera.CameraActivity",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:screenOrientation": "5",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000023",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "com.android.keyguard.layout",
+            "@ns0:resource": "@7F0C0047"
+          }
+        },
+        {
+          "@ns0:theme": "@7F12003B",
+          "@ns0:label": "@7F110026",
+          "@ns0:name": "com.marginz.snap.app.Gallery",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.LAUNCHER"
+                },
+                {
+                  "@ns0:name": "android.intent.category.APP_GALLERY"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.OPENABLE"
+              },
+              "data": {
+                "@ns0:mimeType": "vnd.android.cursor.dir/image"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.GET_CONTENT"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.OPENABLE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "com.marginz.camera.action.REVIEW"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": ""
+                },
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/jpeg"
+                },
+                {
+                  "@ns0:mimeType": "image/gif"
+                },
+                {
+                  "@ns0:mimeType": "image/png"
+                },
+                {
+                  "@ns0:mimeType": "image/x-ms-bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/vnd.wap.wbmp"
+                },
+                {
+                  "@ns0:mimeType": "application/vnd.google.panorama360+jpg"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "com.marginz.camera.action.REVIEW"
+              },
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "video/mpeg4"
+                },
+                {
+                  "@ns0:mimeType": "video/mp4"
+                },
+                {
+                  "@ns0:mimeType": "video/3gp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp"
+                },
+                {
+                  "@ns0:mimeType": "video/3gpp2"
+                },
+                {
+                  "@ns0:mimeType": "application/sdp"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.PICK"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/image"
+                },
+                {
+                  "@ns0:mimeType": "vnd.android.cursor.dir/video"
+                }
+              ]
+            },
+            {
+              "action": [
+                {
+                  "@ns0:name": "android.intent.action.VIEW"
+                },
+                {
+                  "@ns0:name": "com.marginz.camera.action.REVIEW"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.BROWSABLE"
+                }
+              ],
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/jpeg"
+                },
+                {
+                  "@ns0:mimeType": "image/gif"
+                },
+                {
+                  "@ns0:mimeType": "image/png"
+                },
+                {
+                  "@ns0:mimeType": "image/x-ms-bmp"
+                },
+                {
+                  "@ns0:mimeType": "image/vnd.wap.wbmp"
+                },
+                {
+                  "@ns0:mimeType": "application/vnd.google.panorama360+jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F110025",
+          "@ns0:name": "com.marginz.snap.app.UsbDeviceActivity",
+          "@ns0:taskAffinity": "",
+          "@ns0:launchMode": "3",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.hardware.usb.action.USB_DEVICE_ATTACHED"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.hardware.usb.action.USB_DEVICE_ATTACHED",
+            "@ns0:resource": "@7F140001"
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.marginz.snap.app.Wallpaper",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "@ns0:label": "@7F110040",
+              "action": {
+                "@ns0:name": "android.intent.action.ATTACH_DATA"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "@ns0:label": "@7F110025",
+              "action": {
+                "@ns0:name": "android.intent.action.SET_WALLPAPER"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "android.wallpaper.preview",
+            "@ns0:resource": "@7F140002"
+          }
+        },
+        {
+          "@ns0:theme": "@7F12003B",
+          "@ns0:label": "@7F110055",
+          "@ns0:name": "com.marginz.snap.filtershow.crop.CropActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "@ns0:label": "@7F110057",
+              "action": {
+                "@ns0:name": "com.android.camera.action.CROP"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": ""
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.ALTERNATIVE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+                }
+              ]
+            },
+            {
+              "@ns0:label": "@7F110057",
+              "action": {
+                "@ns0:name": "com.android.camera.action.CROP"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.ALTERNATIVE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12003B",
+          "@ns0:label": "@7F110057",
+          "@ns0:name": "com.marginz.snap.app.CropImage",
+          "@ns0:process": ":crop",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "@ns0:label": "@7F110057",
+              "action": {
+                "@ns0:name": "com.marginz.camera.action.CROP"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": ""
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.ALTERNATIVE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+                }
+              ]
+            },
+            {
+              "@ns0:label": "@7F110057",
+              "action": {
+                "@ns0:name": "com.marginz.camera.action.CROP"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.ALTERNATIVE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F1102F2",
+          "@ns0:name": "com.marginz.snap.app.TrimVideo"
+        },
+        {
+          "@ns0:theme": "@7F12003B",
+          "@ns0:label": "@7F1102EE",
+          "@ns0:name": "com.marginz.snap.filtershow.FilterShowActivity",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.EDIT"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "action_snap_edit"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": {
+                "@ns0:mimeType": "image/*"
+              }
+            },
+            {
+              "@ns0:label": "@7F110057",
+              "action": {
+                "@ns0:name": "com.marginz.camera.action.EDITOR_CROP"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:scheme": ""
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.ALTERNATIVE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+                }
+              ]
+            },
+            {
+              "@ns0:label": "@7F110057",
+              "action": {
+                "@ns0:name": "com.marginz.camera.action.EDITOR_CROP"
+              },
+              "data": [
+                {
+                  "@ns0:scheme": "http"
+                },
+                {
+                  "@ns0:scheme": "https"
+                },
+                {
+                  "@ns0:scheme": "content"
+                },
+                {
+                  "@ns0:scheme": "file"
+                },
+                {
+                  "@ns0:mimeType": "image/*"
+                }
+              ],
+              "category": [
+                {
+                  "@ns0:name": "android.intent.category.DEFAULT"
+                },
+                {
+                  "@ns0:name": "android.intent.category.ALTERNATIVE"
+                },
+                {
+                  "@ns0:name": "android.intent.category.SELECTED_ALTERNATIVE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@ns0:theme": "@7F12003B",
+          "@ns0:name": "com.marginz.snap.settings.GallerySettings",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:name": "com.marginz.snap.gadget.WidgetClickHandler"
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:name": "com.marginz.snap.app.DialogPicker",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F120006",
+          "@ns0:name": "com.marginz.snap.app.AlbumPicker",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F12003C",
+          "@ns0:name": "com.marginz.snap.gadget.WidgetTypeChooser",
+          "@ns0:configChanges": "0x000004A0"
+        },
+        {
+          "@ns0:theme": "@7F12003A",
+          "@ns0:label": "@7F1102D0",
+          "@ns0:icon": "@7F0E0000",
+          "@ns0:name": "com.marginz.camera.SecureCameraActivity",
+          "@ns0:taskAffinity": "com.marginz.camera.SecureCameraActivity",
+          "@ns0:clearTaskOnLaunch": "true",
+          "@ns0:excludeFromRecents": "true",
+          "@ns0:screenOrientation": "5",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:windowSoftInputMode": "0x00000023",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE_SECURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ],
+          "meta-data": {
+            "@ns0:name": "com.android.keyguard.layout",
+            "@ns0:resource": "@7F0C0047"
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.marginz.snap.gadget.WidgetConfigure",
+          "@ns0:configChanges": "0x000004A0",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_CONFIGURE"
+            }
+          }
+        },
+        {
+          "@ns0:theme": "@android:01030055",
+          "@ns0:name": "com.marginz.camera.ProxyLauncher"
+        },
+        {
+          "@ns0:theme": "@7F12003E",
+          "@ns0:name": "com.marginz.snap.util.FileDialog"
+        },
+        {
+          "@ns0:name": "com.marginz.camera.CrashActivity",
+          "@ns0:process": ":exception_process",
+          "@ns0:taskAffinity": "com.marginz.snap.TASK.Crash",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            }
+          }
+        }
+      ],
+      "activity-alias": [
+        {
+          "@ns0:label": "@7F110300",
+          "@ns0:icon": "@7F0E0006",
+          "@ns0:name": "com.marginz.camera.VideoCamera",
+          "@ns0:targetActivity": "com.marginz.camera.CameraActivity",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.VIDEO_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F1102D0",
+          "@ns0:icon": "@7F0E0002",
+          "@ns0:name": "com.marginz.camera.CameraLauncher43",
+          "@ns0:enabled": "false",
+          "@ns0:targetActivity": "com.marginz.camera.CameraActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:label": "@7F1102D0",
+          "@ns0:icon": "@7F0E0004",
+          "@ns0:name": "com.marginz.camera.CameraLauncherOld",
+          "@ns0:enabled": "false",
+          "@ns0:targetActivity": "com.marginz.camera.CameraActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:label": "@7F1102D0",
+          "@ns0:icon": "@7F0E0003",
+          "@ns0:name": "com.marginz.camera.CameraLauncher44",
+          "@ns0:enabled": "false",
+          "@ns0:targetActivity": "com.marginz.camera.CameraActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:label": "@7F1102D0",
+          "@ns0:icon": "@7F0E0001",
+          "@ns0:name": "com.marginz.camera.CameraLauncher40",
+          "@ns0:enabled": "false",
+          "@ns0:targetActivity": "com.marginz.camera.CameraActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:label": "@7F1102D0",
+          "@ns0:icon": "@7F0E0000",
+          "@ns0:name": "com.marginz.camera.CameraLauncher",
+          "@ns0:targetActivity": "com.marginz.camera.CameraActivity",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            },
+            "category": [
+              {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:label": "@7F110026",
+          "@ns0:name": "com.cooliris.media.Gallery",
+          "@ns0:configChanges": "0x000004A0",
+          "@ns0:targetActivity": "com.marginz.snap.app.Gallery",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.MAIN"
+            }
+          }
+        }
+      ],
+      "provider": [
+        {
+          "@ns0:name": "com.marginz.snap.provider.DocumentProvider",
+          "@ns0:permission": "android.permission.MANAGE_DOCUMENTS",
+          "@ns0:enabled": "@7F040001",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.marginz.snaptrial.documentprovider",
+          "@ns0:grantUriPermissions": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.content.action.DOCUMENTS_PROVIDER"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.marginz.snap.filtershow.provider.SharedImageProvider",
+          "@ns0:readPermission": "com.marginz.snaptrial.filtershow.permission.READ",
+          "@ns0:writePermission": "com.marginz.snaptrial.filtershow.permission.WRITE",
+          "@ns0:authorities": "com.marginz.snaptrial.filtershow.provider.SharedImageProvider",
+          "@ns0:grantUriPermissions": "true"
+        },
+        {
+          "@ns0:name": "com.marginz.snap.provider.GalleryProvider",
+          "@ns0:permission": "com.marginz.snaptrial.permission.GALLERY_PROVIDER",
+          "@ns0:exported": "true",
+          "@ns0:authorities": "com.marginz.snaptrial.provider",
+          "@ns0:syncable": "false",
+          "@ns0:grantUriPermissions": "true"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.marginz.snap.filtershow.pipeline.ProcessingService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.marginz.camera.HdrService",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.marginz.snap.gadget.WidgetService",
+          "@ns0:permission": "android.permission.BIND_REMOTEVIEWS"
+        },
+        {
+          "@ns0:name": "com.marginz.snap.app.PackagesMonitor$AsyncService"
+        }
+      ],
+      "uses-library": [
+        {
+          "@ns0:name": "secmediarecorder",
+          "@ns0:required": "false"
+        },
+        {
+          "@ns0:name": "seccamera",
+          "@ns0:required": "false"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:label": "@7F110029",
+          "@ns0:name": "com.marginz.snap.gadget.PhotoAppWidgetProvider",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F140003"
+          }
+        },
+        {
+          "@ns0:name": "com.marginz.camera.CameraButtonIntentReceiver",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.intent.action.CAMERA_BUTTON"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.marginz.snap.app.PackagesMonitor",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "android.intent.action.PACKAGE_ADDED"
+              },
+              {
+                "@ns0:name": "android.intent.action.PACKAGE_REMOVED"
+              },
+              {
+                "@ns0:name": "android.intent.action.PACKAGE_CHANGED"
+              }
+            ],
+            "data": {
+              "@ns0:scheme": "package"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "75",
+    "@ns0:versionName": "8.2",
+    "@ns0:installLocation": "1",
+    "@ns0:compileSdkVersion": "30",
+    "@ns0:compileSdkVersionCodename": "11",
+    "@package": "cb56.FullScreenPic",
+    "@platformBuildVersionCode": "30",
+    "@platformBuildVersionName": "11",
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "9",
+      "@ns0:targetSdkVersion": "31"
+    },
+    "supports-screens": {
+      "@ns0:anyDensity": "true",
+      "@ns0:smallScreens": "true",
+      "@ns0:normalScreens": "true",
+      "@ns0:largeScreens": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER"
+      },
+      {
+        "@ns0:name": "android.permission.SET_WALLPAPER_HINTS"
+      },
+      {
+        "@ns0:name": "android.permission.SYSTEM_ALERT_WINDOW"
+      },
+      {
+        "@ns0:name": "android.permission.SCHEDULE_EXACT_ALARM"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.INTERNET"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "@ns0:name": "com.google.android.gms.permission.AD_ID"
+      },
+      {
+        "@ns0:name": "android.permission.VIBRATE"
+      },
+      {
+        "@ns0:name": "android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "@ns0:name": "com.google.android.c2dm.permission.RECEIVE"
+      },
+      {
+        "@ns0:name": "cb56.FullScreenPic.permission.C2D_MESSAGE"
+      }
+    ],
+    "permission": {
+      "@ns0:name": "cb56.FullScreenPic.permission.C2D_MESSAGE",
+      "@ns0:protectionLevel": "0x00000002"
+    },
+    "application": {
+      "@ns0:label": "Full Screen Pic Lite",
+      "@ns0:icon": "@7F070067",
+      "@ns0:name": "androidx.multidex.MultiDexApplication",
+      "@ns0:largeHeap": "true",
+      "provider": [
+        {
+          "@ns0:name": "androidx.core.content.FileProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "cb56.FullScreenPic.provider",
+          "@ns0:grantUriPermissions": "true",
+          "meta-data": {
+            "@ns0:name": "android.support.FILE_PROVIDER_PATHS",
+            "@ns0:resource": "@7F120003"
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.provider.FirebaseInitProvider",
+          "@ns0:exported": "false",
+          "@ns0:authorities": "cb56.FullScreenPic.firebaseinitprovider",
+          "@ns0:initOrder": "100"
+        }
+      ],
+      "meta-data": [
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0A0003"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.version",
+          "@ns0:value": "@7F0A0003"
+        }
+      ],
+      "activity": [
+        {
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:exported": "false",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@android:01030010",
+          "@ns0:name": "com.google.android.gms.common.api.GoogleApiActivity",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:theme": "@android:0103000F",
+          "@ns0:name": "com.google.android.gms.ads.AdActivity",
+          "@ns0:configChanges": "0x00000FB0"
+        },
+        {
+          "@ns0:theme": "@7F100039",
+          "@ns0:name": "com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+        },
+        {
+          "@ns0:theme": "@7F10002D",
+          "@ns0:label": "Full Screen Pic Lite",
+          "@ns0:name": ".main",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:windowSoftInputMode": "0x00000002",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.VIEW"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              },
+              "data": [
+                {
+                  "@ns0:mimeType": "image/*"
+                },
+                {
+                  "@ns0:mimeType": "video/*"
+                }
+              ]
+            }
+          ],
+          "#text": "\""
+        },
+        {
+          "@ns0:theme": "@7F10002C",
+          "@ns0:label": "Full Screen Pic Lite",
+          "@ns0:name": ".listfolders",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:windowSoftInputMode": "0x00000002"
+        },
+        {
+          "@ns0:theme": "@7F10002C",
+          "@ns0:label": "Full Screen Pic Lite",
+          "@ns0:name": ".listfiles",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:windowSoftInputMode": "0x00000002"
+        },
+        {
+          "@ns0:theme": "@7F10002E",
+          "@ns0:label": "Full Screen Pic Lite",
+          "@ns0:name": ".options1",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:windowSoftInputMode": "0x00000002"
+        },
+        {
+          "@ns0:theme": "@7F10002C",
+          "@ns0:label": "Full Screen Pic Lite",
+          "@ns0:name": ".playvideo",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:windowSoftInputMode": "0x00000002"
+        },
+        {
+          "@ns0:theme": "@7F10002C",
+          "@ns0:label": "Full Screen Pic Lite",
+          "@ns0:name": ".videocompress",
+          "@ns0:exported": "true",
+          "@ns0:launchMode": "1",
+          "@ns0:screenOrientation": "-1",
+          "@ns0:windowSoftInputMode": "0x00000002"
+        }
+      ],
+      "receiver": [
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.gms.measurement.UPLOAD"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.google.android.gms.measurement.UPLOAD"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+          "@ns0:permission": "com.google.android.c2dm.permission.SEND",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.google.android.c2dm.intent.RECEIVE"
+              },
+              {
+                "@ns0:name": "com.google.android.c2dm.intent.REGISTRATION"
+              }
+            ],
+            "category": {
+              "@ns0:name": "cb56.FullScreenPic"
+            }
+          }
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdInternalReceiver",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": ".fullscreenpicservice$fullscreenpicservice_BR",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:label": "Full Screen Pic 2x1",
+          "@ns0:name": ".fullscreenpicwidget1",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F120000"
+          }
+        },
+        {
+          "@ns0:label": "Full Screen Pic 4x2",
+          "@ns0:name": ".fullscreenpicwidget2",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F120001"
+          }
+        },
+        {
+          "@ns0:label": "Full Screen Pic 5x3",
+          "@ns0:name": ".fullscreenpicwidget3",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "android.appwidget.action.APPWIDGET_UPDATE"
+            }
+          },
+          "meta-data": {
+            "@ns0:name": "android.appwidget.provider",
+            "@ns0:resource": "@7F120002"
+          }
+        },
+        {
+          "@ns0:name": ".startactivityservice",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": ".starter$starter_BR",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": ".httputils2service$httputils2service_BR",
+          "@ns0:exported": "true"
+        }
+      ],
+      "service": [
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.android.gms.measurement.AppMeasurementService",
+          "@ns0:enabled": "true",
+          "@ns0:exported": "false"
+        },
+        {
+          "@ns0:name": "com.google.firebase.iid.FirebaseInstanceIdService",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "@ns0:priority": "-500",
+            "action": {
+              "@ns0:name": "com.google.firebase.INSTANCE_ID_EVENT"
+            }
+          }
+        },
+        {
+          "@ns0:name": ".fullscreenpicservice",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": ".starter",
+          "@ns0:exported": "true"
+        },
+        {
+          "@ns0:name": ".httputils2service",
+          "@ns0:exported": "true"
+        }
+      ]
+    }
+  }
+}

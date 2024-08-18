@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="20080613" ns0:versionName="2.8.613" ns0:compileSdkVersion="28" ns0:compileSdkVersionCodename="9" package="com.razer.camera" platformBuildVersionCode="20080613" platformBuildVersionName="2.8.613">
+	<uses-sdk ns0:minSdkVersion="27" ns0:targetSdkVersion="28"/>
+	<uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.NFC"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.MANAGE_DOCUMENTS"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<permission ns0:name="com.razer.permission.CAMERA_ACTION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.razer.permission.CAMERA_ACTION"/>
+	<uses-feature ns0:name="com.razer.camera"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="false" ns0:normalScreens="true" ns0:largeScreens="true"/>
+	<application ns0:theme="@7F120163" ns0:label="@7F11003B" ns0:icon="@7F0E0000" ns0:name="com.android.camera.app.CameraApp" ns0:restoreAnyVersion="true" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:usesCleartextTraffic="false" ns0:resizeableActivity="false" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity ns0:theme="@7F120163" ns0:label="@7F11003B" ns0:name="com.android.camera.CameraActivity" ns0:taskAffinity="com.android.camera.CameraActivity" ns0:clearTaskOnLaunch="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000023">
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="com.android.keyguard.layout" ns0:resource="@7F0D004C"/>
+		</activity>
+		<activity-alias ns0:label="@7F11003B" ns0:name="com.android.camera.CameraLauncher" ns0:targetActivity="com.android.camera.CameraActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F120163" ns0:label="@7F11003B" ns0:name="com.android.camera.CaptureActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000023" ns0:visibleToInstantApps="true">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity-alias ns0:label="@7F1101A5" ns0:name="com.android.camera.VideoCamera" ns0:screenOrientation="1" ns0:targetActivity="com.android.camera.CaptureActivity" ns0:visibleToInstantApps="true">
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.VIDEO_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:theme="@7F12017B" ns0:label="@7F11003B" ns0:name="com.android.camera.SecureCameraActivity" ns0:taskAffinity="com.android.camera.SecureCameraActivity" ns0:clearTaskOnLaunch="true" ns0:excludeFromRecents="true" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000023">
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<meta-data ns0:name="com.android.keyguard.layout" ns0:resource="@7F0D004C"/>
+		</activity>
+		<activity ns0:theme="@7F120164" ns0:label="@7F1100DA" ns0:name="com.android.camera.settings.SettingsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F120164" ns0:label="@7F110027" ns0:name="com.android.camera.settings.AboutActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.android.camera.burst.gallery.BurstGalleryActivity" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.android.camera.sdcard.SecureModeDataActivity"/>
+		<receiver ns0:name="com.android.camera.DisableCameraReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="a9c70b7afcb0953d7e812aa8a8a1e9085e5847d6"/>
+		<meta-data ns0:name="synapse_service_code" ns0:value="560"/>
+		<meta-data ns0:name="synapse_project_name" ns0:value="cheryl-camera"/>
+		<meta-data ns0:name="synapse_app_id" ns0:value="f60b708f912414f5bc5ed9bc1771a0f3610a65c8"/>
+		<meta-data ns0:name="synapse_scopes" ns0:value="cop sso"/>
+		<service ns0:name="com.android.camera.processing.ProcessingService"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.razer.camera.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140000"/>
+		</provider>
+		<receiver ns0:name="com.android.camera.services.CardRemovalReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_REMOVED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_EJECT"/>
+				<action ns0:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000F"/>
+		<provider ns0:name="com.crashlytics.android.CrashlyticsInitProvider" ns0:exported="false" ns0:authorities="com.razer.camera.crashlyticsinitprovider" ns0:initOrder="90"/>
+	</application>
+</manifest>

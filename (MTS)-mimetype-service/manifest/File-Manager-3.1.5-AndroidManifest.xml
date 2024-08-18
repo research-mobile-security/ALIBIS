@@ -1,0 +1,299 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2103015" ns0:versionName="3.1.5" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.alphainventor.filemanager" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:xlargeScreens="true"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS" ns0:maxSdkVersion="26"/>
+	<uses-permission-sdk-23 ns0:name="android.permission.PACKAGE_USAGE_STATS"/>
+	<uses-permission-sdk-23 ns0:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+	<uses-permission-sdk-23 ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission-sdk-23 ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission-sdk-23 ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-feature ns0:name="android.hardware.usb.host" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.bluetooth" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<uses-feature ns0:name="android.software.leanback" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.faketouch" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.telephony" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.nfc" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.gps" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.sensor" ns0:required="false"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<application ns0:label="@7F120034" ns0:icon="@7F0F0000" ns0:name="com.alphainventor.filemanager.FileManagerApp" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="false" ns0:banner="@7F080226" ns0:fullBackupOnly="true" ns0:fullBackupContent="@7F150002" ns0:usesCleartextTraffic="true" ns0:networkSecurityConfig="@7F150007" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-2353536094017743~6846372328"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.400000"/>
+		<meta-data ns0:name="firebase_analytics_collection_enabled" ns0:value="false"/>
+		<activity ns0:theme="@7F130313" ns0:label="@7F120034" ns0:name="com.alphainventor.filemanager.activity.MainActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x00000FB0" ns0:allowTaskReparenting="true" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.MONKEY"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LEANBACK_LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1301CC" ns0:label="@7F1202AD" ns0:name="com.alphainventor.filemanager.oss.OssLicenseActivity"/>
+		<activity ns0:theme="@7F130313" ns0:label="@7F1201CC" ns0:name="com.alphainventor.filemanager.activity.ArchiveActivity" ns0:exported="true" ns0:configChanges="0x00000FB0" ns0:resizeableActivity="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="application/zip"/>
+				<data ns0:mimeType="multipart/*zip"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130313" ns0:label="@7F120339" ns0:name="com.alphainventor.filemanager.texteditor.TextEditorActivity" ns0:exported="true" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000010">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*" ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*" ns0:scheme="content" ns0:host="com.alphainventor.filemanager.fileprovider"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130252" ns0:label="@7F120355" ns0:name="com.alphainventor.filemanager.viewer.VideoPlayerActivity" ns0:enabled="@7F050008" ns0:exported="true" ns0:taskAffinity="com.alphainventor.filemanager.videoplayer" ns0:launchMode="1" ns0:configChanges="0x00000FB0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="http"/>
+				<data ns0:scheme="https"/>
+				<data ns0:scheme="content"/>
+				<data ns0:mimeType="video/mp4"/>
+				<data ns0:mimeType="video/3gpp"/>
+				<data ns0:mimeType="video/webm"/>
+				<data ns0:mimeType="video/x-matroska"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="file"/>
+				<data ns0:mimeType="video/mp4"/>
+				<data ns0:mimeType="video/3gpp"/>
+				<data ns0:mimeType="video/webm"/>
+				<data ns0:mimeType="video/x-matroska"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="filemanager.intent.videoplayer.action.VIEW_LIST"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130313" ns0:name="com.alphainventor.filemanager.activity.SettingsActivity" ns0:exported="false" ns0:configChanges="0x00000FB0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.APPLICATION_PREFERENCES"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F1301BE" ns0:name="com.alphainventor.filemanager.activity.DevSettingsActivity"/>
+		<activity ns0:theme="@7F130251" ns0:label="@7F120225" ns0:icon="@7F08020D" ns0:name="com.alphainventor.filemanager.activity.OpenAsActivity"/>
+		<activity ns0:theme="@7F130251" ns0:label="@7F120034" ns0:name="com.alphainventor.filemanager.activity.LaunchActivity" ns0:exported="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="com.example.android.uamp.open_ui"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="resource/folder"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130251" ns0:label="" ns0:name="com.alphainventor.filemanager.activity.ShortcutActivity" ns0:exported="true" ns0:taskAffinity="com.alphainventor.filemanager.shortcut">
+			<intent-filter>
+				<action ns0:name="com.alphainventor.filemanager.OPEN_SHORTCUT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130251" ns0:label="@7F120034" ns0:name="com.alphainventor.filemanager.activity.UsbAttachActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+			</intent-filter>
+			<meta-data ns0:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" ns0:resource="@7F150004"/>
+		</activity>
+		<activity ns0:theme="@7F130313" ns0:label="@7F120034" ns0:name="com.alphainventor.filemanager.activity.PickerActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.OPEN_DOCUMENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130251" ns0:label="@7F120034" ns0:name="com.alphainventor.filemanager.activity.SaveToActivity" ns0:exported="true" ns0:launchMode="2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F130313" ns0:name="com.alphainventor.filemanager.activity.FileProgressActivity" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F130313" ns0:label="@7F1201B0" ns0:name="com.alphainventor.filemanager.viewer.ImageViewer" ns0:exported="false"/>
+		<activity ns0:theme="@7F130313" ns0:label="@7F120296" ns0:name="com.alphainventor.filemanager.viewer.MusicPlayer" ns0:exported="false"/>
+		<activity ns0:theme="@7F1300F9" ns0:label="@7F1201B0" ns0:name="com.alphainventor.filemanager.viewer.ImageViewerActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F130251" ns0:name="com.alphainventor.filemanager.activity.ResultActivity" ns0:launchMode="2"/>
+		<activity ns0:theme="@7F130104" ns0:label="@7F120296" ns0:name="com.alphainventor.filemanager.musicplayer.FullScreenPlayerActivity" ns0:launchMode="1" ns0:parentActivityName="com.alphainventor.filemanager.activity.MainActivity">
+			<meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value=".activity.MainActivity"/>
+		</activity>
+		<activity ns0:theme="@7F130313" ns0:label="@7F12030E" ns0:name="com.alphainventor.filemanager.activity.DefaultsSettingsActivity" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F130313" ns0:label="@7F120341" ns0:name="com.alphainventor.filemanager.activity.PaymentActivity" ns0:configChanges="0x00000FB0"/>
+		<service ns0:name="com.alphainventor.filemanager.service.FtpServerService" ns0:exported="false"/>
+		<service ns0:name="com.alphainventor.filemanager.service.FileObserverService" ns0:exported="false"/>
+		<service ns0:name="com.alphainventor.filemanager.service.ScanService" ns0:exported="false"/>
+		<service ns0:name="com.alphainventor.filemanager.service.HttpServerService" ns0:exported="false"/>
+		<service ns0:name="com.alphainventor.filemanager.service.CommandService" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.alphainventor.service.FILEPROGRESSSERVICE"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.alphainventor.filemanager.receiver.MultipleInstallReferrerReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.alphainventor.filemanager.receiver.BootReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.alphainventor.filemanager.receiver.PackageCommitReceiver"/>
+		<receiver ns0:name="com.alphainventor.filemanager.receiver.StorageCheckReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="filemanager.intent.action.STORAGE_CHECK"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.alphainventor.filemanager.bookmark.BookmarkProvider" ns0:exported="false" ns0:authorities="com.alphainventor.filemanager.bookmark"/>
+		<provider ns0:name="com.alphainventor.filemanager.provider.MyFileProvider" ns0:exported="false" ns0:authorities="com.alphainventor.filemanager.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150005"/>
+		</provider>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000A"/>
+		<activity ns0:name="com.dropbox.core.android.AuthActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x00000090">
+			<intent-filter>
+				<data ns0:scheme="@7F120113"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.alphainventor.filemanager.androidx-startup"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.alphainventor.filemanager.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.example.android.uamp.MusicService" ns0:exported="true" ns0:foregroundServiceType="0x00000002">
+			<intent-filter>
+				<action ns0:name="android.media.browse.MediaBrowserService"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="androidx.media.session.MediaButtonReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_BUTTON"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.alphainventor.filemanager.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050007" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050006" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.box.androidsdk.content.auth.OAuthActivity" ns0:exported="true" ns0:configChanges="0x00000480"/>
+		<activity ns0:name="com.box.androidsdk.content.auth.BlockedIPErrorActivity" ns0:launchMode="3"/>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="4.1.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+	</application>
+</manifest>

@@ -1,0 +1,153 @@
+{
+  "manifest": {
+    "@xmlns:ns0": "http://schemas.android.com/apk/res/android",
+    "@ns0:versionCode": "55",
+    "@ns0:versionName": "2.44",
+    "@ns0:installLocation": "0",
+    "@package": "com.almalence.hdr",
+    "@platformBuildVersionCode": "21",
+    "@platformBuildVersionName": "5.0.1-1624448",
+    "application": {
+      "@ns0:label": "@7F0A0000",
+      "@ns0:icon": "@7F020027",
+      "@ns0:allowBackup": "true",
+      "activity": [
+        {
+          "@ns0:theme": "@7F0B0005",
+          "@ns0:label": "@7F0A0000",
+          "@ns0:name": ".MainScreen",
+          "@ns0:screenOrientation": "1",
+          "intent-filter": [
+            {
+              "action": {
+                "@ns0:name": "android.intent.action.MAIN"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.LAUNCHER"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.IMAGE_CAPTURE"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            },
+            {
+              "action": {
+                "@ns0:name": "android.media.action.STILL_IMAGE_CAMERA"
+              },
+              "category": {
+                "@ns0:name": "android.intent.category.DEFAULT"
+              }
+            }
+          ]
+        },
+        {
+          "@ns0:label": "@7F0A0002",
+          "@ns0:name": ".Preferences"
+        },
+        {
+          "@ns0:label": "@7F0A0003",
+          "@ns0:name": ".PreferencesAdvanced"
+        },
+        {
+          "@ns0:label": "@7F0A0016",
+          "@ns0:name": ".FolderPicker"
+        },
+        {
+          "@ns0:theme": "@7F0B0005",
+          "@ns0:label": "@7F0A0005",
+          "@ns0:name": ".Processing",
+          "@ns0:screenOrientation": "1"
+        },
+        {
+          "@ns0:theme": "@7F0B0005",
+          "@ns0:name": ".ActivityAdjustments"
+        },
+        {
+          "@ns0:theme": "@7F0B0005",
+          "@ns0:name": ".ActivityAds"
+        }
+      ],
+      "service": {
+        "@ns0:name": ".BillingService"
+      },
+      "receiver": [
+        {
+          "@ns0:name": ".BillingReceiver",
+          "intent-filter": {
+            "action": [
+              {
+                "@ns0:name": "com.android.vending.billing.IN_APP_NOTIFY"
+              },
+              {
+                "@ns0:name": "com.android.vending.billing.RESPONSE_CODE"
+              },
+              {
+                "@ns0:name": "com.android.vending.billing.PURCHASE_STATE_CHANGED"
+              }
+            ]
+          }
+        },
+        {
+          "@ns0:name": "com.google.android.apps.analytics.AnalyticsReceiver",
+          "@ns0:exported": "true",
+          "intent-filter": {
+            "action": {
+              "@ns0:name": "com.android.vending.INSTALL_REFERRER"
+            }
+          }
+        }
+      ]
+    },
+    "uses-permission": [
+      {
+        "@ns0:name": "android.permission.CAMERA"
+      },
+      {
+        "@ns0:name": "android.permission.WAKE_LOCK"
+      },
+      {
+        "@ns0:name": "android.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "@ns0:name": "android.permission.ACCESS_FINE_LOCATION"
+      },
+      {
+        "@ns0:name": "com.android.vending.BILLING"
+      }
+    ],
+    "uses-feature": [
+      {
+        "@ns0:name": "android.hardware.camera"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.front",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.camera.autofocus",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.location",
+        "@ns0:required": "false"
+      },
+      {
+        "@ns0:name": "android.hardware.location.gps",
+        "@ns0:required": "false"
+      }
+    ],
+    "supports-screens": {
+      "@ns0:largeScreens": "true",
+      "@ns0:xlargeScreens": "true"
+    },
+    "uses-sdk": {
+      "@ns0:minSdkVersion": "8",
+      "@ns0:targetSdkVersion": "21"
+    },
+    "#text": "//"
+  }
+}

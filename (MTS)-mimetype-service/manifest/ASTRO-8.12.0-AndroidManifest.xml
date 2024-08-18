@@ -1,0 +1,356 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="2023022712" ns0:versionName="8.12.0" ns0:installLocation="0" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="13" package="com.metago.astro" platformBuildVersionCode="33" platformBuildVersionName="13">
+	<uses-sdk ns0:minSdkVersion="23" ns0:targetSdkVersion="33"/>
+	<uses-feature ns0:name="android.hardware.usb.host" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.RESTART_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE" ns0:maxSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.QUERY_ALL_PACKAGES"/>
+	<uses-permission ns0:name="android.permission.PACKAGE_USAGE_STATS"/>
+	<uses-permission ns0:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+	<uses-permission ns0:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission ns0:name="android.permission.GET_ACCOUNTS" ns0:maxSdkVersion="25"/>
+	<uses-permission ns0:name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC"/>
+	<queries>
+		<package ns0:name="com.dropbox.android"/>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="http"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.GET_CONTENT"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.OPEN_DOCUMENT"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.GET_CONTENT"/>
+			<data ns0:mimeType="*/*"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_AUDIO"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE" ns0:maxSdkVersion="32"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<permission ns0:name="com.metago.astro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.metago.astro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<application ns0:theme="@7F120013" ns0:label="@7F11005A" ns0:icon="@7F0E0000" ns0:name="com.metago.astro.ASTRO" ns0:allowBackup="false" ns0:hardwareAccelerated="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:extractNativeLibs="false" ns0:fullBackupContent="@7F140000" ns0:networkSecurityConfig="@7F140005" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<meta-data ns0:name="com.sec.android.support.multiwindow" ns0:value="true"/>
+		<meta-data ns0:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" ns0:value="632.0dip"/>
+		<meta-data ns0:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" ns0:value="598.0dip"/>
+		<meta-data ns0:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" ns0:value="632.0dip"/>
+		<meta-data ns0:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" ns0:value="598.0dip"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A000E"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_icon" ns0:resource="@7F080062"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_color" ns0:resource="@7F060269"/>
+		<meta-data ns0:name="com.google.firebase.messaging.default_notification_channel_id" ns0:value="@7F1102B2"/>
+		<meta-data ns0:name="com.appannie.appsupport.HIBERNATION_NOTIFICATION_VERSION_NAME" ns0:value="8.12.0"/>
+		<meta-data ns0:name="com.appannie.appsupport.HIBERNATION_NOTIFICATION_CHANNEL_ID" ns0:value="@7F1102B3"/>
+		<uses-library ns0:name="proguard.annotations" ns0:required="false"/>
+		<uses-library ns0:name="com.sec.android.app.multiwindow" ns0:required="false"/>
+		<receiver ns0:name="com.metago.astro.receiver.ActionMediaReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.metago.astro.receiver.ShareBroadcastReceiver" ns0:exported="false"/>
+		<activity ns0:name="com.metago.astro.gui.settings.FAQWebViewActivity"/>
+		<activity ns0:name="com.metago.astro.gui.home.TypeformWebViewActivity"/>
+		<activity ns0:label="@7F11005A" ns0:name="com.metago.astro.gui.appmanager.ui.InstallUninstallAPKActivity"/>
+		<activity ns0:label="@7F1100B0" ns0:name="com.metago.astro.MainActivity2" ns0:exported="true" ns0:launchMode="2" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEARCH"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.searchable" ns0:resource="@7F140007"/>
+		</activity>
+		<activity-alias ns0:name="com.metago.astro.FileManagerActivity2" ns0:exported="true" ns0:targetActivity="com.metago.astro.MainActivity2">
+			<intent-filter>
+				<action ns0:name="com.metago.astro.action.VIEW_FILE_MANAGER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.metago.astro.action.VIEW_URI"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:scheme="file"/>
+				<data ns0:scheme="content"/>
+				<data ns0:scheme="sftp"/>
+				<data ns0:scheme="smb"/>
+				<data ns0:scheme="btgoep"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.cursor.item/com.metago.filemanager.dir"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.metago.astro.MainActivity" ns0:exported="true" ns0:targetActivity="com.metago.astro.MainActivity2">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+				<category ns0:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+		<activity ns0:label="@7F11005A" ns0:name="com.metago.astro.FileChooserActivity" ns0:exported="true" ns0:launchMode="1" ns0:configChanges="0x000000B0">
+			<intent-filter>
+				<action ns0:name="com.metago.astro.action.FILE_CHOOSER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.CREATE_SHORTCUT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.metago.astro.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F1101C0" ns0:icon="@7F0800F2" ns0:name="com.metago.astro.gui.files.ui.texteditor.TextEditorActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120015" ns0:label="@7F11036F" ns0:name="com.metago.astro.gui.imageviewer.ImageViewerActivity" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120014" ns0:name="com.metago.astro.futures.ActivityResultActivity"/>
+		<activity ns0:name="com.dropbox.core.android.AuthActivity" ns0:exported="true" ns0:launchMode="2" ns0:configChanges="0x00000090">
+			<intent-filter>
+				<data ns0:scheme="db-vmdmymv5t28e1ym"/>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F1102D1" ns0:name="com.metago.astro.gui.appmanager.ui.PackageInfoActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:scheme="package"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="application/vnd.android.package-archive" ns0:scheme="content"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<data ns0:mimeType="application/vnd.android.package-archive"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:01030010" ns0:name="com.metago.astro.util.ProcessPhoenix" ns0:exported="false" ns0:process=":phoenix"/>
+		<provider ns0:name="com.metago.astro.data.search.SearchContentProvider" ns0:exported="false" ns0:authorities="com.metago.astro.index"/>
+		<provider ns0:name="com.metago.astro.provider.FileContentProvider" ns0:exported="false" ns0:multiprocess="true" ns0:authorities="com.metago.astro.filecontent" ns0:grantUriPermissions="true"/>
+		<service ns0:name="com.metago.astro.jobs.JobService"/>
+		<service ns0:name="com.metago.astro.jobs.ContentMediaUpdateJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.metago.astro.filesystem.index.IndexJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.leanplum.LeanplumPushFirebaseMessagingService" ns0:enabled="false" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.metago.astro.analytics.firebase.FirebaseMessagingManager" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.metago.astro.util.EmptyContentProvider" ns0:exported="false" ns0:authorities="com.metago.astro"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.metago.astro.fileprovider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140006"/>
+		</provider>
+		<receiver ns0:name="com.metago.astro.receiver.AuthExceptionReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.metago.astro.AUTH_EXCEPTION"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.metago.astro.receiver.ActionUsbDeviceReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.hardware.usb.action.USB_STATE"/>
+				<action ns0:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+				<action ns0:name="android.hardware.usb.action.USB_DEVICE_DETACHED"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="firebase_crashlytics_collection_enabled" ns0:value="false"/>
+		<activity ns0:name="zendesk.support.request.RequestActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:label="@7F110313" ns0:name="zendesk.support.requestlist.RequestListActivity" ns0:exported="false"/>
+		<receiver ns0:name="zendesk.support.DeepLinkingBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="zendesk.support"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="zendesk.support.SupportSdkStartupProvider" ns0:enabled="true" ns0:exported="false" ns0:authorities="com.metago.astro.zendesk.support.SupportSdkStartupProvider"/>
+		<service ns0:name="com.appannie.tbird.sdk.debug.TweetyBirdDebugJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:process=":remote"/>
+		<service ns0:name="com.appannie.tbird.sdk.job.ActiveUserHeartbeatJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true"/>
+		<service ns0:name="com.appannie.tbird.sdk.job.TweetyBirdCollectionJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:process=":remote"/>
+		<service ns0:name="com.appannie.tbird.sdk.job.TweetyBirdConsentSyncJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:process=":remote"/>
+		<service ns0:name="com.appannie.tbird.sdk.job.TweetyBirdSyncJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:process=":remote"/>
+		<receiver ns0:name="com.appannie.tbird.sdk.broadcastreceiver.TweetyBirdBroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:process=":remote">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.appannie.tbird.sdk.contentprovider.TweetyBirdContentProvider" ns0:exported="false" ns0:process=":remote" ns0:authorities="com.metago.astro.tb.provider"/>
+		<activity ns0:label="@7F110434" ns0:name="zendesk.support.guide.ViewArticleActivity" ns0:exported="false" ns0:configChanges="0x00000480"/>
+		<activity ns0:label="@7F110385" ns0:name="zendesk.support.guide.HelpCenterActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<provider ns0:name="zendesk.support.guide.GuideSdkStartupProvider" ns0:enabled="true" ns0:exported="false" ns0:authorities="com.metago.astro.zendesk.support.GuideSdkStartupProvider"/>
+		<activity ns0:name="zendesk.messaging.MessagingActivity" ns0:exported="false" ns0:windowSoftInputMode="0x00000010"/>
+		<receiver ns0:name="com.leanplum.LeanplumPushReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.leanplum.LeanplumPushFirebaseMessagingService"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.leanplum.LeanplumJobStartReceiver"/>
+		<service ns0:name="com.leanplum.LeanplumLocalPushListenerService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="zendesk.belvedere.BelvedereFileProvider" ns0:readPermission="true" ns0:exported="false" ns0:authorities="com.metago.astro.belvedere2.attachments" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140001"/>
+		</provider>
+		<uses-library ns0:name="androidx.window.extensions" ns0:required="false"/>
+		<uses-library ns0:name="androidx.window.sidecar" ns0:required="false"/>
+		<provider ns0:name="com.squareup.picasso.PicassoProvider" ns0:exported="false" ns0:authorities="com.metago.astro.com.squareup.picasso"/>
+		<activity ns0:name="com.appannie.appsupport.dataexport.DataExportActivity" ns0:exported="false"/>
+		<service ns0:name="com.appannie.appsupport.versionCheck.ClientVersionCheckService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<activity ns0:name="com.appannie.appsupport.feedback.FeedbackActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000020"/>
+		<provider ns0:name="com.appannie.appsupport.update.UpdateFileProvider" ns0:exported="false" ns0:authorities="com.metago.astro.update.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140011"/>
+		</provider>
+		<receiver ns0:name="com.appannie.appsupport.consent.notification.UpdatedAppReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.appannie.appsupport.hibernation.UpdatedAppReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+				<action ns0:name="com.appannie.appsupport.intent.action.FORCE_HIBERNATION_NOTIFICATION"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050006" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050005" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F140012"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="1"/>
+	</application>
+</manifest>

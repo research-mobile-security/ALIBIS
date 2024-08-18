@@ -1,0 +1,227 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="360" ns0:versionName="3.6.0" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="media.album.photo.gallery" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="19" ns0:targetSdkVersion="31"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission ns0:name="android.permission.USE_FINGERPRINT"/>
+	<uses-permission ns0:name="android.permission.USE_BIOMETRIC"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="true"/>
+	<uses-feature ns0:glEsVersion="0x00020000" ns0:required="true"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<queries>
+		<intent>
+			<action ns0:name="android.intent.action.MAIN"/>
+			<category ns0:name="android.intent.category.LAUNCHER"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<application ns0:theme="@7F11000D" ns0:label="@7F10004D" ns0:icon="@7F0801D9" ns0:name="com.ijoysoft.gallery.base.MyApplication" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="false" ns0:usesCleartextTraffic="true" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:preserveLegacyExternalStorage="true">
+		<activity ns0:theme="@7F110231" ns0:name="com.ijoysoft.gallery.activity.WelcomeActivity" ns0:exported="true" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.ijoysoft.gallery.activity.MainActivity" ns0:launchMode="2" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.PhotoPreviewActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.PhotoPreviewTrashActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:label="@7F10004D" ns0:name="com.ijoysoft.gallery.activity.PhotoPreviewIntentActivity" ns0:exported="true" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.ijoysoft.gallery.activity.AddSelectPictureActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.AddSelectPrivacyActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.AddPrivacyActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.AlbumPrivacyActivity" ns0:launchMode="2"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.MoveToAlbumActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.MoveToPrivacyAlbumActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.SettingActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.AlbumImageActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.VideoAlbumActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.SecuritySettingActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.AddressAlbumActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11000E" ns0:name="com.ijoysoft.gallery.activity.DetailActivity" ns0:launchMode="1"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.SimilarPhotoActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.OtherAlbumActivity" ns0:launchMode="1" ns0:configChanges="0x000004B4"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.PrivacyActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.TrashActivity" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.SearchActivity" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000002"/>
+		<provider ns0:name="com.ijoysoft.gallery.module.hide.provider.PrivacyProvider" ns0:exported="false" ns0:authorities="@7F100104" ns0:grantUriPermissions="true"/>
+		<meta-data ns0:name="android.max_aspect" ns0:value="2.300000"/>
+		<activity ns0:theme="@7F110230" ns0:name="com.ijoysoft.gallery.activity.VideoPlayActivity" ns0:launchMode="2" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:theme="@7F110230" ns0:name="com.ijoysoft.gallery.activity.VideoCutActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11000E" ns0:name="com.ijoysoft.gallery.activity.DetailPreviewActivity" ns0:launchMode="1"/>
+		<activity ns0:theme="@7F11000E" ns0:name="com.ijoysoft.gallery.activity.DetailPrivacyActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11000E" ns0:name="com.ijoysoft.gallery.activity.DetailAlbumActivity" ns0:launchMode="1"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.ExcludeAlbumActivity"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.LockActivity" ns0:launchMode="2" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.PickPhotoActivity" ns0:exported="true" ns0:configChanges="0x000004B0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PICK"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+				<data ns0:mimeType="vnd.android.cursor.dir/image"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:name="com.ijoysoft.gallery.activity.PickImageActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.SetCoverActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.SetPasswordActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.SetSecurityActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.ShareActivity" ns0:launchMode="1"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.SimilarPhotoScanActivity" ns0:launchMode="1" ns0:screenOrientation="1"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.SetWallpaperActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x000004B0">
+			<intent-filter ns0:label="@7F1004D7">
+				<action ns0:name="android.intent.action.ATTACH_DATA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter ns0:label="@7F10004D">
+				<action ns0:name="android.intent.action.SET_WALLPAPER"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F110109" ns0:name="com.ijoysoft.gallery.activity.CollageSelectActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.ActivitySubtitleList" ns0:configChanges="0x000004B0"/>
+		<activity ns0:name="com.ijoysoft.gallery.activity.ActivitySubtitleBrowser" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F110109" ns0:name="com.ijoysoft.photoeditor.activity.ShopActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.PhotoSelectActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.PhotoEditorActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:windowSoftInputMode="0x00000022" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.CollageActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:windowSoftInputMode="0x00000022" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.FreestyleActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:windowSoftInputMode="0x00000022" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.StitchActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:windowSoftInputMode="0x00000022" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.MultiFitActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F110109" ns0:name="com.ijoysoft.photoeditor.activity.TemplateListActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.TemplateActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:windowSoftInputMode="0x00000022" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.CropImageActivity" ns0:exported="true" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false">
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.CROP"/>
+				<data ns0:mimeType="image/*"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.ALTERNATIVE"/>
+				<category ns0:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.CropActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.CutoutActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010B" ns0:name="com.ijoysoft.photoeditor.activity.MosaicActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F110109" ns0:name="com.ijoysoft.photoeditor.activity.ShopDetailsActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<activity ns0:theme="@7F11010C" ns0:name="com.ijoysoft.photoeditor.activity.ShareActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x00000200" ns0:resizeableActivity="false"/>
+		<provider ns0:name="com.lb.library.CustomFileProvider" ns0:exported="false" ns0:authorities="@7F100103" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F130000"/>
+		</provider>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0008"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="@7F100026"/>
+		<meta-data ns0:name="com.ijoysoft.ads.library.version" ns0:value="@7F10001D"/>
+		<meta-data ns0:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" ns0:value="true"/>
+		<meta-data ns0:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" ns0:value="true"/>
+		<activity ns0:theme="@7F110001" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F1101BF" ns0:name="com.ijoysoft.appwall.display.GiftActivity"/>
+		<activity ns0:theme="@android:010300F0" ns0:name="com.ijoysoft.appwall.display.GiftDisplayActivity" ns0:configChanges="0x40000FFC"/>
+		<service ns0:name="com.ijoysoft.push.service.DaemonServiceFirst"/>
+		<activity ns0:theme="@7F1101BF" ns0:name="com.ijoysoft.privacy.PrivacyPolicyActivity" ns0:configChanges="0x00000DB0" ns0:hardwareAccelerated="true"/>
+		<receiver ns0:name="com.ijoysoft.test.TestTriggerReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.ijoysoft.ad.ACTION_AUTO_TEST"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F110310" ns0:name="com.ijoysoft.file.dialog.DialogCommon" ns0:excludeFromRecents="true" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F110310" ns0:name="com.ijoysoft.file.dialog.DialogProgress" ns0:excludeFromRecents="true" ns0:launchMode="3" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F11030E" ns0:name="com.ijoysoft.file.dialog.ActivityAccredit" ns0:excludeFromRecents="true" ns0:configChanges="0x00000030"/>
+		<activity ns0:theme="@7F110310" ns0:name="com.ijoysoft.file.dialog.ActivityScopeAccredit" ns0:excludeFromRecents="true" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F1100F8" ns0:name="com.lb.library.permission.AppSettingsDialogHolderActivity" ns0:configChanges="0x000004B0"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="media.album.photo.gallery.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="media.album.photo.gallery.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@7F1101F9" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="media.album.photo.gallery.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050005" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050004" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.stamp.source" ns0:value="https://play.google.com/store"/>
+		<meta-data ns0:name="com.android.stamp.type" ns0:value="STAMP_TYPE_STANDALONE_APK"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:resource="@7F130007"/>
+		<meta-data ns0:name="com.android.vending.derived.apk.id" ns0:value="14"/>
+	</application>
+</manifest>

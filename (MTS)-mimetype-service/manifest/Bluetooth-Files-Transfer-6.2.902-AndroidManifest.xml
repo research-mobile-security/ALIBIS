@@ -1,0 +1,237 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="629" ns0:versionName="6.2.902" ns0:installLocation="0" ns0:compileSdkVersion="29" ns0:compileSdkVersionCodename="10" package="com.modernappdev.btfiletf" platformBuildVersionCode="29" platformBuildVersionName="10">
+	<uses-sdk ns0:minSdkVersion="17" ns0:targetSdkVersion="29"/>
+	<permission ns0:name="android.permission.MANAGE_DOCUMENTS" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+	<uses-permission ns0:name="android.permission.ACCESS_SUPERUSER"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission ns0:name="android.permission.BLUETOOTH"/>
+	<uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-feature ns0:name="android.hardware.touchscreen" ns0:required="false"/>
+	<uses-feature ns0:name="android.software.leanback" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.usb.host" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.wifi" ns0:required="false"/>
+	<permission ns0:name="com.modernappdev.btfiletf.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.READ"/>
+	<uses-permission ns0:name="com.sec.android.provider.badge.permission.WRITE"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+	<uses-permission ns0:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+	<uses-permission ns0:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+	<uses-permission ns0:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+	<uses-permission ns0:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="android.permission.READ_APP_BADGE"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+	<uses-permission ns0:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+	<application ns0:label="@7F0F008E" ns0:icon="@7F0800B5" ns0:name="com.modernappdev.btfiletf.DocumentsApplication" ns0:allowBackup="true" ns0:supportsRtl="true" ns0:banner="@7F08005E" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory">
+		<activity ns0:theme="@7F100184" ns0:name="com.modernappdev.btfiletf.Splash_loading" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LEANBACK_LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F100184" ns0:name="com.modernappdev.btfiletf.ExitActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100184" ns0:name="com.modernappdev.btfiletf.MainSplash" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F100184" ns0:name="com.modernappdev.btfiletf.DocumentsActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.OPEN_DOCUMENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.CREATE_DOCUMENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.GET_CONTENT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.OPENABLE"/>
+				<data ns0:mimeType="*/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.provider.action.MANAGE_ROOT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="vnd.android.document/root"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.OPEN_DOCUMENT_TREE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+			</intent-filter>
+			<meta-data ns0:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" ns0:resource="@7F120002"/>
+		</activity>
+		<activity ns0:theme="@7F100169" ns0:name="com.modernappdev.btfiletf.StandaloneActivity"/>
+		<activity ns0:theme="@7F100183" ns0:label="@7F0F0085" ns0:name="com.modernappdev.btfiletf.setting.SettingsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F100169" ns0:label="About" ns0:name="com.modernappdev.btfiletf.AboutActivity"/>
+		<receiver ns0:name="com.modernappdev.btfiletf.receiver.PackageReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+				<action ns0:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+				<data ns0:scheme="package"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.modernappdev.btfiletf.receiver.MountReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action ns0:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.os.storage.action.VOLUME_STATE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F100182" ns0:name="com.modernappdev.btfiletf.NoteActivity" ns0:screenOrientation="4" ns0:configChanges="0x000000A0">
+			<intent-filter ns0:label="Text Viewer" ns0:scheme="http">
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="text/*"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.modernappdev.btfiletf.receiver.ConnectionsReceiver" ns0:enabled="true" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.START_FTPSERVER"/>
+				<action ns0:name="com.modernappdev.btfiletf.action.STOP_FTPSERVER"/>
+				<action ns0:name="com.modernappdev.btfiletf.action.FTPSERVER_STARTED"/>
+				<action ns0:name="com.modernappdev.btfiletf.action.FTPSERVER_STOPPED"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.modernappdev.btfiletf.service.ConnectionsService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:label="@7F0F0023" ns0:name="com.modernappdev.btfiletf.service.AppStopperService" ns0:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" ns0:enabled="false">
+			<intent-filter>
+				<action ns0:name="android.accessibilityservice.AccessibilityService"/>
+			</intent-filter>
+			<meta-data ns0:name="android.accessibilityservice" ns0:resource="@7F120000"/>
+		</service>
+		<service ns0:label="@7F0F00EF" ns0:icon="@7F0800ED" ns0:name="com.modernappdev.btfiletf.service.ServerService" ns0:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+			<intent-filter>
+				<action ns0:name="android.service.quicksettings.action.QS_TILE"/>
+			</intent-filter>
+		</service>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.RecentsProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.modernappdev.btfiletf.recents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.ExternalStorageProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.modernappdev.btfiletf.externalstorage.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.MediaDocumentsProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.modernappdev.btfiletf.media.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.NonMediaDocumentsProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.modernappdev.btfiletf.nonmedia.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.AppsProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.modernappdev.btfiletf.apps.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.RootedStorageProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.modernappdev.btfiletf.rootedstorage.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.HeatMapProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:enabled="false" ns0:exported="false" ns0:authorities="com.modernappdev.btfiletf.heatmap.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.DownloadStorageProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:enabled="false" ns0:exported="false" ns0:authorities="com.modernappdev.btfiletf.downloads.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.ExplorerProvider" ns0:enabled="true" ns0:exported="false" ns0:authorities="com.modernappdev.btfiletf.explorer"/>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.UsbStorageProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.modernappdev.btfiletf.usbstorage.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<provider ns0:name="com.modernappdev.btfiletf.provider.NetworkStorageProvider" ns0:permission="android.permission.MANAGE_DOCUMENTS" ns0:exported="true" ns0:authorities="com.modernappdev.btfiletf.networkstorage.documents" ns0:grantUriPermissions="true">
+			<intent-filter>
+				<action ns0:name="com.modernappdev.btfiletf.action.DOCUMENTS_PROVIDER"/>
+			</intent-filter>
+		</provider>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="@7F0F006A"/>
+		<meta-data ns0:name="onesignal_app_id" ns0:value="bface02f-ee84-4aae-bf6d-b3ec2e24675c"/>
+		<meta-data ns0:name="onesignal_google_project_number" ns0:value="str:REMOTE"/>
+		<receiver ns0:name="com.onesignal.GcmBroadcastReceiver" ns0:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter ns0:priority="999">
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<category ns0:name="com.modernappdev.btfiletf"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.onesignal.NotificationOpenedReceiver"/>
+		<service ns0:name="com.onesignal.GcmIntentService"/>
+		<service ns0:name="com.onesignal.GcmIntentJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.RestoreJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.RestoreKickoffJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<service ns0:name="com.onesignal.SyncService" ns0:stopWithTask="true"/>
+		<service ns0:name="com.onesignal.SyncJobService" ns0:permission="android.permission.BIND_JOB_SERVICE"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.onesignal.PermissionsActivity"/>
+		<service ns0:name="com.onesignal.NotificationRestoreService"/>
+		<receiver ns0:name="com.onesignal.BootUpReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.QUICKBOOT_POWERON"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.onesignal.UpgradeReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.modernappdev.btfiletf.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.iid.FirebaseInstanceIdService" ns0:exported="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.modernappdev.btfiletf.firebaseinitprovider" ns0:initOrder="100"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A000B"/>
+	</application>
+</manifest>

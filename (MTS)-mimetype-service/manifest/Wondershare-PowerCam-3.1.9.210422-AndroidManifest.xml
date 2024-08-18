@@ -1,0 +1,187 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="86" ns0:versionName="3.1.9.210422" ns0:installLocation="0" ns0:compileSdkVersion="29" ns0:compileSdkVersionCodename="10" package="powercam.activity" platformBuildVersionCode="29" platformBuildVersionName="10">
+	<uses-sdk ns0:minSdkVersion="21" ns0:targetSdkVersion="29"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.READ_SETTINGS"/>
+	<uses-permission ns0:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+	<uses-permission ns0:name="com.google.android.gms.permisstion.ACTIVITY_RECOGNITION"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission ns0:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<application ns0:theme="@7F0E0002" ns0:label="@7F0D0026" ns0:icon="@7F070289" ns0:name="powercam.activity.WSApplication" ns0:allowBackup="true" ns0:largeHeap="true" ns0:networkSecurityConfig="@7F100001" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true">
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@7F0E0122" ns0:label="@7F0D0026" ns0:name="powercam.activity.LaunchActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0E0122" ns0:name="powercam.activity.HomeActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0002" ns0:label="@7F0D0026" ns0:name="powercam.activity.wxapi.WXEntryActivity" ns0:exported="true"/>
+		<activity ns0:theme="@7F0E0001" ns0:name="powercam.activity.CaptureActivity" ns0:launchMode="1" ns0:screenOrientation="1" ns0:configChanges="0x000004A0">
+			<intent-filter>
+				<action ns0:name="android.media.action.IMAGE_CAPTURE"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.media.action.STILL_IMAGE_CAMERA"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.activity.LoadPictureActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.AutoReviewActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.activity.PuzzleActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.gallery.NewGalleryActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.activity.share.ShareActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000002"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.activity.share.ShareMultiActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*" ns0:scheme="file" ns0:host=".share.ShareActivity"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.SettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.activity.share.ShareTasksActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000010"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.activity.PopularizeActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.activity.EditActivity" ns0:screenOrientation="1">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.activity.AlbumActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.setting.InstantSettingActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.setting.FileBrowserActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.setting.StartupOptionsActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.setting.AboutActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.setting.ProductPlacardActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.setting.FeedbackActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.setting.ProductIntroductionActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.activity.SaveAndShareActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.setting.CaptureSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.activity.setting.PhotoSettingActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0006" ns0:name="powercam.activity.share.MentionActivity" ns0:screenOrientation="1" ns0:windowSoftInputMode="0x00000030"/>
+		<activity ns0:theme="@7F0E0006" ns0:name="powercam.activity.share.location.LocationActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="com.ironsource.mobilcore.InterstitialVideoActivity" ns0:configChanges="0x000004A0" ns0:keepScreenOn="true"/>
+		<activity ns0:theme="@7F0E0002" ns0:name="powercam.mall.MallActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.mall.DetailFiltersActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@7F0E0004" ns0:name="powercam.mall.PersonalFiltersActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004A0"/>
+		<service ns0:name="powercam.activity.DetectAppBackGroundService"/>
+		<service ns0:name="powercam.update.UpdateService"/>
+		<service ns0:name="powercam.mall.MallService"/>
+		<service ns0:name="powercam.activity.share.ShareTaskService"/>
+		<service ns0:name="com.downloader.DownLoadService"/>
+		<receiver ns0:name="powercam.update.SdcardReceiver">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MEDIA_EJECT"/>
+				<action ns0:name="android.intent.action.MEDIA_MOUNTED"/>
+				<data ns0:scheme="file"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F0E0002" ns0:name="com.google.android.gms.ads.AdActivity" ns0:configChanges="0x00000FB0"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F090007"/>
+		<service ns0:name="com.ironsource.mobilcore.MobileCoreReport" ns0:enabled="true" ns0:exported="false" ns0:process=":mcServiceProcess"/>
+		<receiver ns0:name="com.ironsource.mobilcore.InstallationTracker" ns0:enabled="true" ns0:process=":installationTracker"/>
+		<activity ns0:theme="@7F0E0002" ns0:label="@7F0D0026" ns0:name="com.baidu.android.feedback.ui.FeedbackActivity" ns0:launchMode="3"/>
+		<service ns0:name="powercam.push.MyFirebaseMessagingService">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="powercam.push.MyFeedbackReceiver">
+			<intent-filter>
+				<action ns0:name="com.baidu.android.pushservice.action.FB_MESSAGE"/>
+			</intent-filter>
+		</receiver>
+		<meta-data ns0:name="api_key" ns0:value="2o3GWGwxKOfxR0u2eFxQPGj2"/>
+		<meta-data ns0:name="io.fabric.ApiKey" ns0:value="a74a5ee1e3519cc7fd099bb41ce523130432c2f8"/>
+		<meta-data ns0:name="presage_key" ns0:value="269124"/>
+		<service ns0:name="io.presage.PresageService" ns0:enabled="true" ns0:exported="true" ns0:process=":remote">
+			<intent-filter>
+				<action ns0:name="io.presage.PresageService.PIVOT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@android:01030010" ns0:label="@7F0D0026" ns0:name="io.presage.activities.PresageActivity" ns0:configChanges="0x000004B0" ns0:hardwareAccelerated="true">
+			<intent-filter>
+				<action ns0:name="io.presage.intent.action.LAUNCH_WEBVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="io.presage.receiver.NetworkChangeReceiver">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+				<action ns0:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+				<action ns0:name="io.presage.receiver.NetworkChangeReceiver.ONDESTROY"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="io.presage.receiver.AlarmReceiver"/>
+		<provider ns0:name="io.presage.provider.PresageProvider" ns0:enabled="true" ns0:exported="true" ns0:authorities="powercam.activity.PresageProvider"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="powercam.activity.fileProvider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F100000"/>
+		</provider>
+		<provider ns0:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider" ns0:exported="false" ns0:authorities="powercam.activity.TTMultiProvider"/>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.iid.Registrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<provider ns0:name="com.flurry.android.agent.FlurryContentProvider" ns0:exported="false" ns0:authorities="powercam.activity.FlurryContentProvider"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" ns0:launchMode="0" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" ns0:launchMode="0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" ns0:launchMode="0"/>
+		<service ns0:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"/>
+		<activity ns0:name="com.bytedance.sdk.openadsdk.adapter.PangleAdInterstitialActivity"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="powercam.activity.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<activity ns0:theme="@7F0E0125" ns0:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"/>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+	</application>
+</manifest>

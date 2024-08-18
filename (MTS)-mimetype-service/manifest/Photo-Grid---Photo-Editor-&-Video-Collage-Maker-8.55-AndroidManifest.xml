@@ -1,0 +1,456 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="85500006" ns0:versionName="8.55" ns0:installLocation="0" ns0:compileSdkVersion="31" ns0:compileSdkVersionCodename="12" package="com.gridplus.collagemaker" platformBuildVersionCode="31" platformBuildVersionName="12">
+	<uses-sdk ns0:minSdkVersion="23" ns0:targetSdkVersion="31"/>
+	<supports-screens ns0:anyDensity="true" ns0:smallScreens="true" ns0:normalScreens="true" ns0:largeScreens="true" ns0:resizeable="false" ns0:xlargeScreens="true"/>
+	<uses-feature ns0:name="android.hardware.location" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.location.network" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_VIDEO"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_AUDIO"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.VIBRATE"/>
+	<uses-permission ns0:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission ns0:name="android.permission.GET_TASKS"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission ns0:name="android.permission.WAKE_LOCK"/>
+	<uses-permission ns0:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission ns0:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<permission ns0:name="com.gridplus.collagemaker.permission.C2D_MESSAGE" ns0:protectionLevel="0x00000002"/>
+	<uses-permission ns0:name="com.gridplus.collagemaker.permission.C2D_MESSAGE"/>
+	<uses-permission ns0:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission ns0:name="com.google.android.gms.permission.AD_ID"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.microphone" ns0:required="false"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.FLASHLIGHT"/>
+	<queries>
+		<package ns0:name="com.google.android.apps.photos"/>
+		<package ns0:name="com.tencent.mm"/>
+		<package ns0:name="com.whatsapp"/>
+		<package ns0:name="com.sina.weibo"/>
+		<package ns0:name="com.tencent.mm_friends"/>
+		<package ns0:name="com.viber.voip"/>
+		<package ns0:name="com.twitter.android"/>
+		<package ns0:name="com.snapchat.android"/>
+		<package ns0:name="com.tencent.mobileqq"/>
+		<package ns0:name="com.path"/>
+		<package ns0:name="jp.naver.line.android"/>
+		<package ns0:name="com.instagram.android"/>
+		<package ns0:name="com.instagram.android_story"/>
+		<package ns0:name="com.android.mms"/>
+		<intent>
+			<action ns0:name="android.intent.action.SEND"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.intent.action.VIEW"/>
+			<category ns0:name="android.intent.category.BROWSABLE"/>
+			<data ns0:scheme="https"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.support.customtabs.action.CustomTabsService"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+		</intent>
+		<intent>
+			<action ns0:name="android.media.browse.MediaBrowserService"/>
+		</intent>
+		<intent>
+			<action ns0:name="com.android.vending.billing.InAppBillingService.BIND"/>
+		</intent>
+	</queries>
+	<uses-permission ns0:name="android.permission.FOREGROUND_SERVICE"/>
+	<uses-permission ns0:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+	<uses-permission ns0:name="android.permission.POST_NOTIFICATIONS"/>
+	<uses-permission ns0:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+	<uses-permission ns0:name="com.android.vending.BILLING"/>
+	<application ns0:theme="@7F120230" ns0:label="PhotoGrid" ns0:icon="@7F080673" ns0:name="com.photoedit.app.common.BaseApplication" ns0:allowBackup="false" ns0:hardwareAccelerated="@7F050005" ns0:largeHeap="@7F050006" ns0:supportsRtl="false" ns0:extractNativeLibs="true" ns0:fullBackupContent="@00000000" ns0:resizeableActivity="false" ns0:networkSecurityConfig="@7F140014" ns0:appComponentFactory="androidx.core.app.CoreComponentFactory" ns0:requestLegacyExternalStorage="true" ns0:preserveLegacyExternalStorage="true">
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0B000C"/>
+		<meta-data ns0:name="com.google.android.gms.ads.APPLICATION_ID" ns0:value="ca-app-pub-5155028328147155~1468095659"/>
+		<meta-data ns0:name="com.google.android.gms.ads.AD_MANAGER_APP" ns0:value="true"/>
+		<activity ns0:name="com.photoedit.app.video.MusicSelectorActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.video.MyMusicActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.release.ImageSelector" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.release.PhotoSelectorWithLayoutActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.release.PhotoSelectorAsGalleryActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.release.SelectFolderActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.release.ImageEditorPhotoActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:name="com.photoedit.app.release.EffectsList" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:label="@7F110327" ns0:icon="@7F080708" ns0:name="com.photoedit.app.release.ShareEntryFilter" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/mpo"/>
+				<data ns0:mimeType="image/webp"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F110948" ns0:icon="@7F080755" ns0:name="com.photoedit.app.release.ShareEntryFreeActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/mpo"/>
+				<data ns0:mimeType="image/webp"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/mpo"/>
+				<data ns0:mimeType="image/webp"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F110949" ns0:icon="@7F080758" ns0:name="com.photoedit.app.release.ShareEntryGridActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/mpo"/>
+				<data ns0:mimeType="image/webp"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F11094B" ns0:icon="@7F080763" ns0:name="com.photoedit.app.release.ShareEntryVideo" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND_MULTIPLE"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/mpo"/>
+				<data ns0:mimeType="image/webp"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:label="@7F11094A" ns0:icon="@7F08075F" ns0:name="com.photoedit.app.release.ShareEntrySingleActivity" ns0:exported="true" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000020">
+			<intent-filter>
+				<action ns0:name="android.intent.action.SEND"/>
+				<data ns0:mimeType="image/png"/>
+				<data ns0:mimeType="image/jpeg"/>
+				<data ns0:mimeType="image/gif"/>
+				<data ns0:mimeType="image/bmp"/>
+				<data ns0:mimeType="image/x-ms-bmp"/>
+				<data ns0:mimeType="image/mpo"/>
+				<data ns0:mimeType="image/webp"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F12023B" ns0:name="com.photoedit.app.release.EditorActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000030" ns0:hardwareAccelerated="true"/>
+		<activity ns0:label="@7F110327" ns0:icon="@7F08075F" ns0:name="com.photoedit.app.filter.PhotoEditGLESActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.sketch.PhotoEditSketchActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:label="@7F110327" ns0:icon="@7F08075F" ns0:name="com.photoedit.app.filter.selfiecam.SystemCameraActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:label="@7F110327" ns0:icon="@7F08075F" ns0:name="com.photoedit.app.filter.selfiecam.SelfiePhotoEditCamGLESActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F12023B" ns0:label="@7F110327" ns0:icon="@7F08075F" ns0:name="com.photoedit.app.filter.selfiecam.SelfieCamImageShowActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.release.RetouchActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.release.ImageMattingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.release.MaskActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.release.FocusActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F12023F" ns0:name="com.photoedit.app.MainPage" ns0:exported="true" ns0:launchMode="0" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000022" ns0:hardwareAccelerated="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@7F120273" ns0:name="com.photoedit.app.SplashActivity" ns0:exported="true" ns0:launchMode="0" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000022" ns0:hardwareAccelerated="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="PhotoGrid"/>
+			</intent-filter>
+			<meta-data ns0:name="android.app.shortcuts" ns0:resource="@7F140015"/>
+		</activity>
+		<activity ns0:theme="@7F12023D" ns0:name="com.photoedit.app.release.PhotoPreferenceActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F12023D" ns0:name="com.photoedit.app.release.ClearCacheActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F12023D" ns0:name="com.photoedit.app.common.SecurityPolicyActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F12023D" ns0:name="com.photoedit.app.common.EulaActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.release.SavePathSelectorActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.MyProfileActivity" ns0:screenOrientation="1"/>
+		<receiver ns0:name="com.appsflyer.MultipleInstallBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.photoedit.app.analysis.CampaignTrackingReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.android.vending.INSTALL_REFERRER"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.photoedit.app.video.MusicPlayerService"/>
+		<activity ns0:name="com.photoedit.cloudlib.AccountMgrActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.cloud.GoogleSearchSelectorActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:theme="@7F120274" ns0:name="com.photoedit.cloudlib.google.GoogleSignInActivity" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:name="com.photoedit.app.cloud.GooglePhotoSelectorActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.cloudlib.googlephoto.GooglePhotoAlbumListActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F12023D" ns0:name="com.photoedit.app.cloud.PosterSelectorActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.cloud.PosterChangeActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F12022F" ns0:name="com.photoedit.app.release.PrevImageEditFreeCropActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.cloud.share.newshare.ResultPageActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000020" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.video.SlideshowPictureActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<service ns0:name="com.photoedit.videolib.core.VideoEncodeService" ns0:exported="false" ns0:process=":video"/>
+		<activity ns0:theme="@7F12022F" ns0:name="com.photoedit.app.release.BackgroundImageCropActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F120233" ns0:name="com.photoedit.app.release.CameraPreviewActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F12023B" ns0:name="com.photoedit.app.release.VideoPreviewActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.release.VideoCuttingActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.store.ui.StoreActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.baselib.common.SimpleFragmentActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<receiver ns0:name="com.photoedit.cloudlib.push.GcmBroadcastReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.photoedit.notification"/>
+			</intent-filter>
+		</receiver>
+		<provider ns0:name="com.photoedit.baselib.provider.ConfigProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.config"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.provider" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F140002"/>
+		</provider>
+		<activity ns0:theme="@7F1202A7" ns0:name="com.photoedit.app.sns.deleteaccount.activity.DeleteAccountActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F1202A7" ns0:name="com.photoedit.app.sns.downloadaccount.activity.DownloadAccountDataActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F1202A7" ns0:name="com.photoedit.app.social.downloadaccount.activity.DownloadSocialAccountDataActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F1202A7" ns0:name="com.photoedit.app.cloud.share.newshare.PreviewLightBoxActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.baselib.common.SimpleWebViewActivity" ns0:screenOrientation="1" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F120173" ns0:name="com.photoedit.baselib.permission.StoragePermissionActivity"/>
+		<activity ns0:theme="@7F120173" ns0:name="com.photoedit.baselib.permission.StorageCameraPermissionActivity"/>
+		<activity ns0:theme="@7F12023D" ns0:name="com.photoedit.app.release.SubscriptionDetailsActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.store.ui.StoreManagerActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.FatalErrorActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<service ns0:name="com.photoedit.ffmpeg.AMFService" ns0:exported="false" ns0:process=":amf"/>
+		<activity ns0:name="com.photoedit.app.FeedBackActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000020" ns0:windowSoftInputMode="0x00000020"/>
+		<meta-data ns0:name="firebase_performance_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="firebase_analytics_collection_enabled" ns0:value="false"/>
+		<meta-data ns0:name="firebase_messaging_auto_init_enabled" ns0:value="false"/>
+		<service ns0:name="com.photoedit.app.videoedit.service.VideoEditorStubService" ns0:exported="false" ns0:process=":videoedit"/>
+		<activity ns0:theme="@7F12023B" ns0:name="com.photoedit.app.videoedit.VideoEditActivity" ns0:process=":videoedit" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F12023B" ns0:name="com.photoedit.app.videoedit.VideoEditCropActivity" ns0:screenOrientation="1"/>
+		<activity ns0:theme="@7F12023B" ns0:name="com.photoedit.app.videoedit.VideoEditTrimActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:theme="@7F120240" ns0:name="com.photoedit.app.videoedit.activity.MainProcessDialogActivity"/>
+		<activity ns0:theme="@7F120240" ns0:name="com.photoedit.app.release.MainProcessPremiumDialogActivity"/>
+		<receiver ns0:name="com.photoedit.app.videoedit.receiver.ResourceChangeReceiver" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.photoedit.resources.bg.insert"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.photoedit.resources.bg.delete"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.photoedit.resources.filter.insert"/>
+			</intent-filter>
+			<intent-filter>
+				<action ns0:name="com.photoedit.resources.filter.delete"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.photoedit.app.cloud.share.newshare.CrossProcessResultPageService" ns0:exported="false"/>
+		<activity ns0:theme="@7F120240" ns0:name="com.photoedit.app.cloud.share.newshare.CrossProcessVideoEditorStubActivity" ns0:exported="false" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0"/>
+		<activity ns0:name="com.photoedit.app.release.MusicConfessActivity" ns0:screenOrientation="1" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.release.GdprToggleActivity" ns0:screenOrientation="1" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.material.promotion.MaterialPromotionActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004B0" ns0:hardwareAccelerated="true"/>
+		<service ns0:name="com.photoedit.cloudlib.push.FcmMessageService" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<receiver ns0:name="com.photoedit.app.BootCompleteReceiver" ns0:enabled="true" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:name="com.photoedit.app.store.ui.SearchActivity" ns0:screenOrientation="1" ns0:configChanges="0x000004B0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.release.draft.DraftActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F120273" ns0:name="com.photoedit.app.social.activity.SocialActivity" ns0:launchMode="2" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000022" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@7F1202A7" ns0:name="com.photoedit.app.social.activity.FeedLightBoxActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.photoedit.app.social.share.PGShareActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000022"/>
+		<service ns0:name="com.photoedit.app.social.upload.UploadPGService" ns0:exported="false"/>
+		<activity ns0:name="com.photoedit.app.release.PikaAiActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:name="com.photoedit.app.ai.avatar.AvatarAiActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000022"/>
+		<activity ns0:name="com.photoedit.app.ai.avatar.AIAvatarResultActivity" ns0:screenOrientation="1" ns0:configChanges="0x00000FB0" ns0:windowSoftInputMode="0x00000022"/>
+		<meta-data ns0:name="com.google.mlkit.vision.DEPENDENCIES" ns0:value="face"/>
+		<uses-library ns0:name="android.test.runner" ns0:required="false"/>
+		<uses-library ns0:name="android.test.base" ns0:required="false"/>
+		<uses-library ns0:name="android.test.mock" ns0:required="false"/>
+		<service ns0:name="com.google.firebase.components.ComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<activity ns0:theme="@7F12038F" ns0:name="com.facebook.FacebookActivity" ns0:configChanges="0x000005B0"/>
+		<activity ns0:name="com.facebook.CustomTabMainActivity"/>
+		<activity ns0:name="com.facebook.CustomTabActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<category ns0:name="android.intent.category.BROWSABLE"/>
+				<data ns0:scheme="fbconnect" ns0:host="cct.com.gridplus.collagemaker"/>
+			</intent-filter>
+		</activity>
+		<activity ns0:theme="@android:0103000F" ns0:name="com.google.android.gms.ads.AdActivity" ns0:exported="false" ns0:configChanges="0x00000FB0"/>
+		<provider ns0:name="com.google.android.gms.ads.MobileAdsInitProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.mobileadsinitprovider" ns0:initOrder="100"/>
+		<service ns0:name="com.google.android.gms.ads.AdService" ns0:enabled="true" ns0:exported="false"/>
+		<provider ns0:name="androidx.startup.InitializationProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.androidx-startup">
+			<meta-data ns0:name="androidx.work.WorkManagerInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="androidx.lifecycle.ProcessLifecycleInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.unity3d.services.core.configuration.AdsSdkInitializer" ns0:value="androidx.startup"/>
+			<meta-data ns0:name="com.unity3d.services.identifiers.UnitySharedLibraryInitializer" ns0:value="androidx.startup"/>
+		</provider>
+		<service ns0:name="androidx.work.impl.background.systemalarm.SystemAlarmService" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.background.systemjob.SystemJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="@7F050004" ns0:exported="true" ns0:directBootAware="false"/>
+		<service ns0:name="androidx.work.impl.foreground.SystemForegroundService" ns0:enabled="@7F050003" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" ns0:enabled="true" ns0:exported="false" ns0:directBootAware="false"/>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action ns0:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BATTERY_OKAY"/>
+				<action ns0:name="android.intent.action.BATTERY_LOW"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action ns0:name="android.intent.action.DEVICE_STORAGE_OK"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" ns0:enabled="false" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="android.intent.action.BOOT_COMPLETED"/>
+				<action ns0:name="android.intent.action.TIME_SET"/>
+				<action ns0:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" ns0:enabled="@7F050002" ns0:exported="false" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" ns0:permission="android.permission.DUMP" ns0:enabled="true" ns0:exported="true" ns0:directBootAware="false">
+			<intent-filter>
+				<action ns0:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="androidx.room.MultiInstanceInvalidationService" ns0:exported="false" ns0:directBootAware="true"/>
+		<provider ns0:name="com.facebook.marketing.internal.MarketingInitProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.MarketingInitProvider"/>
+		<provider ns0:name="com.facebook.internal.FacebookInitProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.FacebookInitProvider"/>
+		<receiver ns0:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" ns0:exported="false">
+			<intent-filter>
+				<action ns0:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" ns0:permission="com.google.android.c2dm.permission.SEND" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</receiver>
+		<service ns0:name="com.google.firebase.messaging.FirebaseMessagingService" ns0:exported="false" ns0:directBootAware="true">
+			<intent-filter ns0:priority="-500">
+				<action ns0:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<activity ns0:theme="@7F12022D" ns0:name="com.google.android.gms.appinvite.PreviewActivity" ns0:exported="true">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.appinvite.ACTION_PREVIEW"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<receiver ns0:name="com.google.android.gms.measurement.AppMeasurementReceiver" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementService" ns0:enabled="true" ns0:exported="false"/>
+		<service ns0:name="com.google.android.gms.measurement.AppMeasurementJobService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:enabled="true" ns0:exported="false"/>
+		<activity ns0:name="com.vungle.warren.ui.VungleActivity" ns0:launchMode="1" ns0:configChanges="0x00000FA0"/>
+		<provider ns0:name="com.vungle.warren.utility.VungleProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.vungle-provider"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" ns0:exported="false" ns0:excludeFromRecents="true"/>
+		<service ns0:name="com.google.android.gms.auth.api.signin.RevocationBoundService" ns0:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" ns0:exported="true" ns0:visibleToInstantApps="true"/>
+		<service ns0:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" ns0:exported="false" ns0:directBootAware="true">
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+			<meta-data ns0:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" ns0:value="com.google.firebase.components.ComponentRegistrar"/>
+		</service>
+		<provider ns0:name="com.google.firebase.provider.FirebaseInitProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.firebaseinitprovider" ns0:initOrder="100" ns0:directBootAware="true"/>
+		<provider ns0:name="com.applovin.sdk.AppLovinInitProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.applovininitprovider" ns0:initOrder="101"/>
+		<activity ns0:name="com.applovin.adview.AppLovinFullscreenActivity" ns0:exported="false" ns0:launchMode="1" ns0:screenOrientation="3" ns0:configChanges="0x40000FB4" ns0:hardwareAccelerated="true"/>
+		<activity ns0:name="com.applovin.sdk.AppLovinWebViewActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F12037E" ns0:name="com.applovin.mediation.MaxDebuggerActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F12037E" ns0:name="com.applovin.mediation.MaxDebuggerDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F12037E" ns0:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F12037E" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F12037E" ns0:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F12037E" ns0:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F12037E" ns0:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F120375" ns0:name="com.applovin.creative.MaxCreativeDebuggerActivity" ns0:configChanges="0x40000FB4"/>
+		<activity ns0:theme="@7F120375" ns0:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" ns0:configChanges="0x40000FB4"/>
+		<service ns0:name="com.applovin.impl.sdk.utils.AppKilledService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<service ns0:name="com.applovin.impl.adview.activity.FullscreenAdService" ns0:exported="false" ns0:stopWithTask="false"/>
+		<provider ns0:name="com.google.mlkit.common.internal.MlKitInitProvider" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.mlkitinitprovider" ns0:initOrder="99"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<service ns0:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" ns0:exported="false">
+			<meta-data ns0:name="backend:com.google.android.datatransport.cct.CctBackendFactory" ns0:value="cct"/>
+		</service>
+		<service ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" ns0:permission="android.permission.BIND_JOB_SERVICE" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.services.ads.adunit.AdUnitActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="true"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" ns0:exported="false" ns0:configChanges="0x40000FFF" ns0:hardwareAccelerated="false"/>
+		<provider ns0:name="com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider" ns0:enabled="true" ns0:exported="false" ns0:authorities="com.gridplus.collagemaker.SensorsDataContentProvider"/>
+		<meta-data ns0:name="com.sensorsdata.analytics.android.MainProcessName" ns0:value="com.gridplus.collagemaker"/>
+		<meta-data ns0:name="com.sensorsdata.analytics.android.version" ns0:value="5.2.1"/>
+		<activity ns0:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" ns0:enabled="false" ns0:exported="false" ns0:process=":playcore_missing_splits_activity" ns0:stateNotNeeded="true" ns0:launchMode="3"/>
+		<activity ns0:theme="@7F120272" ns0:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" ns0:enabled="false" ns0:exported="false" ns0:stateNotNeeded="true"/>
+		<service ns0:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" ns0:enabled="false" ns0:exported="true"/>
+		<meta-data ns0:name="com.google.android.play.billingclient.version" ns0:value="5.2.0"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.android.billingclient.api.ProxyBillingActivity" ns0:exported="false" ns0:configChanges="0x000005B0"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.anythink.core.activity.AnyThinkGdprAuthActivity" ns0:launchMode="2" ns0:configChanges="0x000004A0"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.anythink.basead.ui.AdLandscapeActivity" ns0:screenOrientation="6" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@android:01030007" ns0:name="com.anythink.basead.ui.AdPortraitActivity" ns0:screenOrientation="7" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F120368" ns0:name="com.anythink.basead.ui.AdLandscapeTranslucentActivity" ns0:screenOrientation="6" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@7F120368" ns0:name="com.anythink.basead.ui.AdPortraitTranslucentActivity" ns0:screenOrientation="7" ns0:configChanges="0x000004B0"/>
+		<activity ns0:theme="@android:0103000D" ns0:name="com.anythink.core.basead.ui.web.WebLandPageActivity" ns0:launchMode="1" ns0:configChanges="0x000004B0" ns0:windowSoftInputMode="0x00000020"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.anythink.basead.ui.RewardExitConfirmDialogActivity"/>
+		<activity ns0:theme="@android:01030011" ns0:name="com.anythink.expressad.reward.player.ATRewardVideoActivity" ns0:excludeFromRecents="true" ns0:configChanges="0x000004A0"/>
+		<meta-data ns0:name="com.android.dynamic.apk.fused.modules" ns0:value="base"/>
+		<meta-data ns0:name="com.android.vending.splits" ns0:value="@7F14001B"/>
+	</application>
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="1254353" ns0:versionName="2.20.0.527643230" ns0:installLocation="0" ns0:compileSdkVersion="33" ns0:compileSdkVersionCodename="VanillaIceCream" package="com.niksoftware.snapseed" platformBuildVersionCode="33" platformBuildVersionName="VanillaIceCream">
+	<uses-sdk ns0:minSdkVersion="30" ns0:targetSdkVersion="33"/>
+	<uses-feature ns0:glEsVersion="0x00020000"/>
+	<uses-feature ns0:name="android.hardware.camera" ns0:required="false"/>
+	<uses-permission ns0:name="android.permission.READ_MEDIA_IMAGES"/>
+	<uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission ns0:name="android.permission.SET_WALLPAPER"/>
+	<uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission ns0:name="android.permission.INTERNET"/>
+	<uses-permission ns0:name="android.permission.CAMERA"/>
+	<uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"/>
+	<permission ns0:name="com.niksoftware.snapseed.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" ns0:protectionLevel="0x00000002"/>
+	<application ns0:theme="@7F130247" ns0:label="@7F120046" ns0:icon="@7F080212" ns0:name="com.google.android.apps.snapseed.application.SnapseedApplication" ns0:taskAffinity="" ns0:backupAgent="com.google.android.apps.snapseed.core.SnapseedBackupAgent" ns0:allowBackup="true" ns0:largeHeap="true" ns0:supportsRtl="true" ns0:fullBackupOnly="false" ns0:usesCleartextTraffic="false">
+		<meta-data ns0:name="com.google.android.geo.API_KEY" ns0:value="AIzaSyCqv_RYKFgn_ASSHgoVgowtrfzWcCwilDI"/>
+		<meta-data ns0:name="com.google.android.backup.api_key" ns0:value="AEdPqrEAAAAIqw43YPidqus0N-726ywlTxlQ55tIcsmTebDafg"/>
+		<service ns0:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" ns0:enabled="false" ns0:exported="false" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+			</intent-filter>
+			<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.consentverifier" ns0:resource="@7F110003"/>
+		</service>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" ns0:resource="@7F150000"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" ns0:resource="@7F110004"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.feedback" ns0:resource="@7F110001"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.usagereporting" ns0:resource="@7F110002"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.performance.primes" ns0:resource="@7F110005"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" ns0:resource="@7F150001"/>
+		<meta-data ns0:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" ns0:resource="@7F110006"/>
+		<activity ns0:theme="@7F130247" ns0:name="com.google.android.apps.snapseed.activities.crop.CropActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F13010B" ns0:name="com.google.android.apps.snapseed.activities.edit.MainActivity" ns0:exported="true" ns0:autoRemoveFromRecents="true"/>
+		<activity ns0:theme="@7F130104" ns0:name="com.google.android.apps.snapseed.activities.filter.FilterActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F130247" ns0:name="com.google.android.apps.snapseed.activities.filterstack.FilterStackActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F130246" ns0:label="@7F120220" ns0:name="com.google.android.apps.snapseed.activities.helpandfeedback.HelpAndFeedbackActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F130246" ns0:label="@7F1202DB" ns0:name="com.google.android.apps.snapseed.activities.imagedetails.ImageDetailsActivity" ns0:exported="false"/>
+		<uses-library ns0:name="org.apache.http.legacy" ns0:required="false"/>
+		<activity ns0:theme="@7F130109" ns0:label="@7F120230" ns0:name="com.google.android.apps.snapseed.activities.localstacks.LocalStacksActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F130248" ns0:name="com.google.android.apps.snapseed.activities.qrlooks.ShareQrLookActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F130144" ns0:name="com.google.android.apps.snapseed.activities.qrlooks.ScanQrLookActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F130247" ns0:name="com.google.android.apps.snapseed.activities.welcomescreen.WelcomeScreenActivity" ns0:exported="true"/>
+		<service ns0:name="com.google.android.apps.snapseed.core.SaveFilteredImageLocalService" ns0:exported="false"/>
+		<activity ns0:theme="@7F130246" ns0:label="@7F1202DD" ns0:name="com.google.android.apps.snapseed.core.flags.FlagsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@7F130246" ns0:label="@7F1202ED" ns0:name="com.google.android.apps.snapseed.core.flags.ExportExifSettingsActivity" ns0:exported="false"/>
+		<activity ns0:theme="@android:01030010" ns0:name="com.google.android.gms.common.api.GoogleApiActivity" ns0:exported="false"/>
+		<meta-data ns0:name="com.google.android.gms.version" ns0:value="@7F0A0009"/>
+		<receiver ns0:name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" ns0:exported="false" ns0:process=":primes_lifeboat"/>
+		<receiver ns0:name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" ns0:exported="true" ns0:process="">
+			<intent-filter>
+				<action ns0:name="android.accounts.action.ACCOUNT_REMOVED"/>
+			</intent-filter>
+		</receiver>
+		<receiver ns0:name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" ns0:permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" ns0:exported="true" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.gms.phenotype.UPDATE"/>
+			</intent-filter>
+		</receiver>
+		<activity ns0:theme="@7F1302BB" ns0:name="com.google.android.libraries.snapseed.insights.insightspanelactivity.InsightsPanelActivity" ns0:exported="false"/>
+		<provider ns0:name="androidx.core.content.FileProvider" ns0:exported="false" ns0:authorities="com.google.android.apps.snapseed" ns0:grantUriPermissions="true">
+			<meta-data ns0:name="android.support.FILE_PROVIDER_PATHS" ns0:resource="@7F150005"/>
+		</provider>
+		<activity ns0:theme="@7F130206" ns0:label="@7F12033E" ns0:name="com.google.android.libraries.social.licenses.LicenseMenuActivity" ns0:exported="true"/>
+		<activity ns0:theme="@7F130206" ns0:label="@7F12033E" ns0:name="com.google.android.libraries.social.licenses.LicenseActivity" ns0:exported="false"/>
+		<receiver ns0:name="com.google.android.libraries.social.silentfeedback.impl.SilentFeedbackReceiver" ns0:exported="false" ns0:process=":crash_report"/>
+		<service ns0:name="com.google.android.build.data.PropertiesServiceHolder" ns0:enabled="false" ns0:exported="false" ns0:process="">
+			<intent-filter>
+				<action ns0:name="com.google.android.build.data.Properties"/>
+			</intent-filter>
+			<meta-data ns0:name="com.google.android.build.data.properties" ns0:resource="@7F110000"/>
+		</service>
+		<activity-alias ns0:name="com.google.android.apps.snapseed.CropActivity" ns0:exported="true" ns0:targetActivity="com.google.android.apps.snapseed.activities.crop.CropActivity">
+			<intent-filter>
+				<action ns0:name="com.android.camera.action.CROP"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.google.android.apps.snapseed.MainActivity" ns0:exported="true" ns0:targetActivity="com.google.android.apps.snapseed.activities.edit.MainActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.VIEW"/>
+				<action ns0:name="android.intent.action.EDIT"/>
+				<action ns0:name="android.intent.action.SEND"/>
+				<category ns0:name="android.intent.category.DEFAULT"/>
+				<data ns0:mimeType="image/*"/>
+			</intent-filter>
+		</activity-alias>
+		<activity-alias ns0:name="com.google.android.apps.snapseed.WelcomeScreenActivity" ns0:exported="true" ns0:targetActivity="com.google.android.apps.snapseed.activities.welcomescreen.WelcomeScreenActivity">
+			<intent-filter>
+				<action ns0:name="android.intent.action.MAIN"/>
+				<category ns0:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity-alias>
+	</application>
+</manifest>
