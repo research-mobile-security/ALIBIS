@@ -25,4 +25,4 @@ The architecture of REALME is as follows:
     - Code Summarization Module
         - (CSS)-code-summarization-service
 ## 3. Citation
-If you use REALME results, please cite the following information. Thank.
+If you use REALME results, please cite the following information. Thank you.
