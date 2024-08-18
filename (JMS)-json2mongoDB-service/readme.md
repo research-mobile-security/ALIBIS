@@ -1,8 +1,8 @@
 ## 1. Introduction
 
-The **Json2MongoDB service** is part of the **MetaLeak-LLM-based** system architecture.
+The **(JMS)-json2mongoDB-service** is part of the **REALME** system architecture.
 
-This service is used to insert all EXIF-related code blocks obtained by **CodeSearch service** (JSON file) into MongoDB.
+This service is used to insert all EXIF-related code blocks obtained by **(CES)-code-extraction-service** (JSON file) into MongoDB.
 
 <img src="https://github.com/research-mobile-security/REALME/blob/main/(JMS)-json2mongoDB-service/readme-image/metaLeak-ml-overview.png">
 
