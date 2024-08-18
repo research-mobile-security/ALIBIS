@@ -9,4 +9,4 @@ This service is used to determine the purpose of EXIF-related codebooks, includi
 
 This service is applicable to **Group-1** and **Group-2**.
 
-<img src="https://github.com/thanhlam2110/metaLeak-ml-code-purpose/blob/main/readme-image/metaLeak-ml-overview.png">
+<img src="https://github.com/research-mobile-security/REALME/blob/main/(CSS)-code-summarization-service/group-1/group-1-code-purpose/readme-image/metaLeak-ml-overview.png">
