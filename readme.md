@@ -2,6 +2,10 @@
 
 This is the source code of the paper **REALME: Risk Estimation in Android Apps for Leakage of Metadata**.
 
+**REALME** is a framework that automatically estimates the risk of sensitive metadata leakage when users share images online by combining static analysis and Large Language Models (LLMs).
+
+**REALME** advances **[MetaLeak's](https://github.com/research-mobile-security/MetaLeak)** foundation (our previous research) by replacing the semi-automated dynamic analysis process with LLMs' code summarization capabilities to determine whether an app deletes or retains sensitive metadata and, if it keeps sensitive metadata, identifies metadata types.
+
 The architecture of REALME is as follows:
 
 <img src="https://github.com/research-mobile-security/REALME/blob/main/images/realme-architecture-1.png">
