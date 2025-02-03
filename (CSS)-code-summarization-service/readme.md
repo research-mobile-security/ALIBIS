@@ -1,6 +1,6 @@
 ## 1. Introduction
 
-The **(CSS)-code-summarization-service** is part of the **REALME** system architecture.
+The **(CSS)-code-summarization-service** is part of the **ALIBIS** system architecture.
 
 This service is used to determine the purpose of EXIF-related codebooks, including:
 
@@ -12,4 +12,4 @@ This service is applicable to **Group-1** and **Group-2** with:
 - Group-1: using mapping function and cosine-similarity
 - Group-2: using LLM-RAG
 
-<img src="https://github.com/research-mobile-security/REALME/blob/main/(CSS)-code-summarization-service/group-1/group-1-code-purpose/readme-image/metaLeak-ml-overview.png">
+<img src="https://github.com/research-mobile-security/ALIBIS/blob/main/(CSS)-code-summarization-service/group-1/group-1-code-purpose/readme-image/metaLeak-ml-overview.png">
